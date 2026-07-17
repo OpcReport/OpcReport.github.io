@@ -1,0 +1,31 @@
+/* OPC Report — Cyberpunk Neon Theme (custom, higher priority) */
+/* 首页列表截断规则（与主题 article.ejs 配合） */
+body.page-list .article .article-entry {
+  max-height: 180px;
+  overflow: hidden;
+  position: relative;
+  -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
+          mask-image: linear-gradient(180deg, #000 60%, transparent);
+}
+body.page-list .article .article-entry p { color: var(--text-dim, #8aa0bf); }
+
+/* 文章页阅读体验 */
+.article-entry { font-size: 15px; color: #d7e3f4; }
+.article-entry h2, .article-entry h3 {
+  margin-top: 1.6em; border-left: 3px solid #00e5ff; padding-left: 10px;
+}
+.article-entry ul li { margin: .4em 0; }
+.article-entry strong { color: #ff2e97; }
+
+/* 标签/归档页 */
+.tagcloud a { transition: .2s; }
+.archives .archive-article { background: var(--panel, #161d2e); }
+
+/* 顶部标题霓虹渐变 */
+#header .blog-title a {
+  background: linear-gradient(90deg, #00e5ff, #ff2e97, #b14bff);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  font-weight: 800;
+}
+
+/* 暗色滚动条已统一 */

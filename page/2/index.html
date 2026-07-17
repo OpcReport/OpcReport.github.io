@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>OPC One-Person Company AI Entrepreneurship Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Your weekly source for OPC (One-Person Company) trends, AI entrepreneurship insights, and actionable strategies for building a solo business with AI.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="OPC One-Person Company AI Entrepreneurship Report">
+<meta property="og:url" content="https://opcreport.github.io/page/2/index.html">
+<meta property="og:site_name" content="OPC One-Person Company AI Entrepreneurship Report">
+<meta property="og:description" content="Your weekly source for OPC (One-Person Company) trends, AI entrepreneurship insights, and actionable strategies for building a solo business with AI.">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="OPC Observer">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="OPC One-Person Company AI Entrepreneurship Report" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <style id="opc-override">
+/* OPC Report — Cyberpunk Neon Theme (color-only overrides, no layout) */
+:root {
+  --bg: #0a0e17;
+  --bg-soft: #121826;
+  --panel: #161d2e;
+  --primary: #00e5ff;
+  --primary-2: #ff2e97;
+  --accent: #b14bff;
+  --text: #d7e3f4;
+  --text-dim: #9fb3d1;
+  --border: #233149;
+}
+
+/* 全局文字在深色背景上必须清晰 */
+body {
+  background: radial-gradient(1200px 600px at 70% -10%, rgba(177,75,255,.10), transparent 60%),
+              radial-gradient(900px 500px at 0% 0%, rgba(0,229,255,.07), transparent 55%),
+              var(--bg);
+  color: var(--text);
+  font-family: "Source Sans Pro", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  line-height: 1.7;
+}
+
+/* 链接 */
+a { color: var(--primary); transition: .2s; text-decoration: none; }
+a:hover { color: var(--primary-2); text-shadow: 0 0 6px rgba(255,46,151,.5); }
+
+/* 标题 */
+h1, h2, h3, h4, h5, h6 { color: #eaf4ff; text-shadow: 0 0 6px rgba(0,229,255,.12); }
+.article-title, .archive-article-title { color: #eaf4ff; }
+.article-title:hover { color: var(--primary); }
+
+/* 主体与文章卡片 */
+#main { background: var(--bg-soft); box-shadow: 0 0 0 1px var(--border), 0 20px 60px rgba(0,0,0,.4); }
+.article, .archive-article {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 22px;
+  margin-bottom: 18px;
+  transition: .25s;
+}
+.article:hover, .archive-article:hover {
+  border-color: rgba(0,229,255,.5);
+  box-shadow: 0 0 18px rgba(0,229,255,.18);
+}
+
+/* 正文文字：明确浅色，禁止被深色背景吞掉 */
+.article-entry, .article-entry p, .article-entry li, .article-entry blockquote, .article-entry td, .article-entry th {
+  color: #cdd9ee !important;
+}
+.article-entry a { color: var(--primary); }
+.article-entry strong, .article-entry b { color: #ffd2e8; }
+.article-entry h2, .article-entry h3, .article-entry h4 { color: #eaf4ff; border-left: 3px solid var(--primary); padding-left: 10px; }
+.article-entry ul li { margin: .4em 0; }
+.article-entry blockquote { border-left: 3px solid var(--accent); color: var(--text-dim); padding-left: 12px; }
+
+/* 首页截断 + Read More */
+body.page-list .article .article-entry { max-height: 180px; overflow: hidden; position: relative; }
+body.page-list .article .article-entry::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 56px;
+  background: linear-gradient(transparent, var(--panel));
+}
+.article-more-link a {
+  display: inline-block; margin-top: 10px; padding: 6px 16px;
+  border: 1px solid var(--primary); border-radius: 999px;
+  color: var(--primary); font-weight: 600;
+}
+.article-more-link a:hover { background: var(--primary); color: #061018; box-shadow: 0 0 14px rgba(0,229,255,.6); }
+
+/* 侧边栏 */
+#sidebar .widget {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+}
+#sidebar .widget-title { color: var(--primary); border-bottom: 1px solid var(--border); padding-bottom: 6px; margin-bottom: 10px; }
+#sidebar a, #sidebar .category-list-link, #sidebar .archive-list-link, #sidebar .tag-list-link { color: var(--text-dim); }
+#sidebar a:hover { color: var(--primary); }
+#sidebar .category-list-count, #sidebar .archive-list-count, #sidebar .tag-list-count { color: var(--primary-2); }
+
+/* 标签云 */
+.tagcloud a, .tag-page-cloud a {
+  display: inline-block; margin: 4px 6px; padding: 3px 10px;
+  border-radius: 999px; border: 1px solid var(--border); color: var(--text-dim);
+  transition: .2s;
+}
+.tagcloud a:hover, .tag-page-cloud a:hover { color: var(--primary); border-color: var(--primary); }
+.tag-page-cloud { margin: 20px 0; }
+
+/* 页头/页脚 */
+#header { background: linear-gradient(135deg, rgba(0,229,255,.08), rgba(255,46,151,.08)); border-bottom: 1px solid var(--border); }
+#header .blog-title a { color: #fff; text-shadow: 0 0 8px rgba(0,229,255,.35); letter-spacing: .5px; }
+#header .blog-subtitle { color: var(--text-dim); }
+#footer { background: var(--bg-soft); color: var(--text-dim); border-top: 1px solid var(--border); }
+#footer a { color: var(--text-dim); }
+#footer a:hover { color: var(--primary); }
+
+/* 代码块 */
+pre, code { background: #0c1320 !important; border: 1px solid var(--border); color: #c8f5ff; }
+code { padding: 2px 6px; border-radius: 4px; }
+
+/* 表格 */
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid var(--border); padding: 8px 12px; }
+th { background: var(--panel); color: var(--primary); }
+
+/* 导航/分页 */
+#page-nav a, .pagination a { color: var(--primary); }
+.article-nav a { color: var(--text-dim); }
+
+/* 滚动条 */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: #233149; border-radius: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+
+/* ===== 布局修复：解除 #wrap 绝对定位，sidebar 跟随主内容撑高 ===== */
+#wrap { position: static !important; height: auto !important; width: 100% !important; }
+#container { height: auto !important; min-height: 100%; }
+#main { float: left; }
+#sidebar { float: left; }
+/* 清浮动，避免父容器塌缩 */
+#container::after { content: ""; display: block; clear: both; }
+#footer { clear: both; }
+
+</style>
+  <style id="opc-custom">
+/* OPC Report — Cyberpunk Neon Theme (custom, higher priority) */
+/* 首页列表截断规则（与主题 article.ejs 配合） */
+body.page-list .article .article-entry {
+  max-height: 180px;
+  overflow: hidden;
+  position: relative;
+  -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
+          mask-image: linear-gradient(180deg, #000 60%, transparent);
+}
+body.page-list .article .article-entry p { color: var(--text-dim, #8aa0bf); }
+
+/* 文章页阅读体验 */
+.article-entry { font-size: 15px; color: #d7e3f4; }
+.article-entry h2, .article-entry h3 {
+  margin-top: 1.6em; border-left: 3px solid #00e5ff; padding-left: 10px;
+}
+.article-entry ul li { margin: .4em 0; }
+.article-entry strong { color: #ff2e97; }
+
+/* 标签/归档页 */
+.tagcloud a { transition: .2s; }
+.archives .archive-article { background: var(--panel, #161d2e); }
+
+/* 顶部标题霓虹渐变 */
+#header .blog-title a {
+  background: linear-gradient(90deg, #00e5ff, #ff2e97, #b14bff);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  font-weight: 800;
+}
+
+/* 暗色滚动条已统一 */
+
+</style>
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-92GE48C3Y0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-92GE48C3Y0');
+  </script>
+  <!-- busuanzi visitor counter -->
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+
+
+
+<body class="page-list">
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">OPC One-Person Company AI Entrepreneurship Report</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Weekly insights on AI-powered solopreneurship and one-person company trends</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://opcreport.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-opc-report-2026-07-16-1704" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/07/16/opc-report-2026-07-16-1704/" class="article-date">
+  <time class="dt-published" datetime="2026-07-16T01:04:00.000Z" itemprop="datePublished">2026-07-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/AI-Entrepreneurship/">AI Entrepreneurship</a>►<a class="article-category-link" href="/categories/AI-Entrepreneurship/Solo-Business/">Solo Business</a>►<a class="article-category-link" href="/categories/AI-Entrepreneurship/Solo-Business/China-Tech/">China Tech</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/07/16/opc-report-2026-07-16-1704/">China&#39;s OPC Ecosystem Accelerates: Jinan Launches First City-Level Community, Hainan Rolls Out Provincial Incentives</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>China’s one-person company (OPC) ecosystem is accelerating rapidly in mid-2026, with Jinan launching the nation’s first city-level OPC community and Hainan rolling out provincial-level incentive policies — signaling institutional validation alongside grassroots adoption.</p>
+        
+          <p class="article-more-link">
+            <a href="/2026/07/16/opc-report-2026-07-16-1704/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://opcreport.github.io/2026/07/16/opc-report-2026-07-16-1704/" data-id="cuidfo-ypQ_nngBSkIEwum2K4" data-title="China&#39;s OPC Ecosystem Accelerates: Jinan Launches First City-Level Community, Hainan Rolls Out Provincial Incentives" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AI-startup/" rel="tag">AI startup</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/China/" rel="tag">China</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OPC/" rel="tag">OPC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/indie-hacker/" rel="tag">indie hacker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/one-person-company/" rel="tag">one-person company</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/solopreneur/" rel="tag">solopreneur</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-opc-report-2026-07-16-1606" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/07/16/opc-report-2026-07-16-1606/" class="article-date">
+  <time class="dt-published" datetime="2026-07-16T00:00:00.000Z" itemprop="datePublished">2026-07-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Policy/">Policy</a>►<a class="article-category-link" href="/categories/Policy/AI/">AI</a>►<a class="article-category-link" href="/categories/Policy/AI/Solo-Business/">Solo Business</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/07/16/opc-report-2026-07-16-1606/">Yunnan Launches First OPC-Focused AI Entrepreneurship Policy Package</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><em>This update covers 12 items across Chinese and English sources.</em></p>
+<hr>
+<p><strong>Yunnan Province issued China’s first government policy package specifically targeting AI OPC (One-Person Company) entrepreneurship, with financing support up to ¥50 million per applicant.</strong></p>
+<hr>
+<h3 id="China-Mainland"><a href="#China-Mainland" class="headerlink" title="China &#x2F; Mainland"></a>China &#x2F; Mainland</h3><ul>
+<li><p><strong>Yunnan rolls out 9-point AI OPC support policy — corporate founders eligible for up to ¥30M in loans</strong> (腾讯网, Jul 16) — Yunnan Human Resources and Social Security Department released dedicated measures covering workspace, financing, talent, and services. Corporate legal representatives can access up to ¥5M credit loan + ¥30M secured loan; individual founders up to ¥500K credit + ¥10M secured. One-time startup subsidy of ¥5,000; monthly internship subsidy up to ¥2,000 per hire. Skills training subsidy up to ¥7,280. Government commits to full lifecycle support via an OPC guidance expert database, and actively courts “super-individual” OPC founders domestically and internationally.</p>
+</li>
+<li><p><strong>WAIC 2026 kicks off Jul 17–20 in Shanghai; solo-founder and AI super-individual theme central</strong> (企鹅号, Jul 16) — World AI Conference 2026 runs Jul 17–20 in Shanghai with a new “WAIC City Walk 2026” program connecting 24 AI-themed venues across 6 districts. The conference highlights “一个人就是一支队伍” (one person &#x3D; an entire team) as a core AI-era entrepreneurship narrative.</p>
+</li>
+<li><p><strong>Chengdu tech island case study: 10-year veteran shifts from “manpower stacking” to “AI leverage”</strong> (四川天府新区, Jul 15) — At Chengdu Xinglong Lake Science &amp; Technology Ecology Island, brand strategy consultant Wu Qihuan operates his business with one laptop and multiple AI “employees.” The island ecosystem integrates computing power, green energy, data, and market channels into a one-stop incubation environment.</p>
+</li>
+<li><p><strong>AI agent development training camp: Coze, Vibe Coding, ADK, LangChain, AutoGen in one curriculum</strong> (企鹅号, Jul 16) — A practical training camp covering five mainstream tech stacks (Coze, Vibe Coding, ADK, LangChain, AutoGen) from zero foundation to advanced multi-agent collaborative development, targeting enterprise cost reduction and individual competitiveness.</p>
+</li>
+<li><p><strong>2026 AI Agent tools comparison: Feishu aily, Real Agent, Baidu DuMate, OpenClaw</strong> (企鹅号, Jul 16) — Feishu aily integrates natively with enterprise collaboration workflows; Real Agent (ZaiShi) connects to WeChat and DingTalk via TARS model + ISSUT screen semantic tech; Baidu DuMate leverages Wenxin large model for office scenarios; OpenClaw positions as a super-individual agent platform with multi-agent coordination.</p>
+</li>
+<li><p><strong>2026 AI coding tools ranking: Trae leads, GitHub Copilot, Cursor, Cline compete</strong> (CSDN, Jul 13) — ByteDance’s AI-native IDE Trae became a phenomenon with its SOLO dual-agent mode (Builder + Coder) and completely free domestic version with Doubao-1.5-pro and DeepSeek R1&#x2F;V3 models. GitHub Copilot maintains global commercial leadership; Cursor attracts indie developers with AI-first design.</p>
+</li>
+<li><p><strong>Best AI agent platforms 2026: Mistral Vibe, June, Claude Cowork reviewed</strong> (企鹅号, Jul 14) — Mistral Vibe connects 100+ tools via MCP protocol for deep research and overnight coding; June is macOS-exclusive open-source privacy-first agent combining chat, voice dictation, and meeting notes with zero data retention; Claude Cowork operates across files, apps, and plugins to deliver complete documents and reports.</p>
+</li>
+<li><p><strong>AI side-hustle guide: 5 paths for ordinary people, AI agent deployment pays ¥100–500 per job</strong> (CSDN, Jul 14) — Five paths: AI mini-tool development, efficiency-driven freelancing, AI training camps, content matrix creation, digital asset production. AI agent deployment services on Xianyu&#x2F;Xiaohongshu: ¥100–200 remote, ¥400–500 on-site.</p>
+</li>
+<li><p><strong>LibTV launches: AI video platform with “human + agent dual-entry” design</strong> (AI How Hub, Jul 15) — LibTV by LiblibAI (Mar 2026) enables full creative workflow from script to final cut on an infinite canvas, with AI agents handling material processing and style transfer automation.</p>
+</li>
+</ul>
+<hr>
+<h3 id="English-International"><a href="#English-International" class="headerlink" title="English &#x2F; International"></a>English &#x2F; International</h3><ul>
+<li><p><strong>Soleur.ai launches “Company-as-a-Service” platform with 60+ AI agents across 8 departments for solo founders</strong> (soleur.ai, Jul 14 20:37) — Soleur positions as a platform giving one founder the operational capacity of an entire company. 60+ AI agents across engineering, marketing, legal, finance, operations, product, sales, and support, all sharing a compounding knowledge base. Built on Claude Code and Model Context Protocol; source-available (BSL 1.1); free self-hosting available. Claims differentiator vs Cursor&#x2F;Copilot: not just code assistance, but full company operations coverage.</p>
+</li>
+<li><p><strong>OPC Community launches as global network platform for AI-era one-person companies</strong> (opc.community, Jul 15) — OPC Community officially launches, defining One-Person Company as “a real, scalable business operated by a single founder using AI tools, automation, software, and global distribution — instead of full-time employees.” Platform aims to connect global OPC founders with resources, peer knowledge, and collaboration opportunities.</p>
+</li>
+<li><p><strong>OneManDB launches database of 1,000+ successful solopreneurs earning $10K+ per month</strong> (onemandb.com, Jul 15) — OneManDB launches as a database of successful indie hackers and founders with $10K+ monthly revenue, providing direct research links. Complementary resource: Goad.net continues publishing practical tools and resources for indie hackers and bootstrappers.</p>
+</li>
+<li><p><strong>Y Combinator Fall 2026 applications close July 27; $500k per batch, SF residency required</strong> (ycombinator.com, Jul 16) — Y Combinator’s Fall 2026 batch deadline is July 27. Each batch invests $500,000 in selected startups moving to San Francisco for three months. Priority areas: AI economic worker retraining, AI video generation, 10-person billion-dollar companies, multi-agent infrastructure, and AI-native enterprise software.</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://opcreport.github.io/2026/07/16/opc-report-2026-07-16-1606/" data-id="cuidZoVh4Rd39KJ_M1ARrXtFP" data-title="Yunnan Launches First OPC-Focused AI Entrepreneurship Policy Package" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AI-entrepreneurship/" rel="tag">AI entrepreneurship</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/China-policy/" rel="tag">China policy</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OPC/" rel="tag">OPC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Yunnan/" rel="tag">Yunnan</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/solopreneur/" rel="tag">solopreneur</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-opc-report-2026-07-16-2104" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/07/16/opc-report-2026-07-16-2104/" class="article-date">
+  <time class="dt-published" datetime="2026-07-16T00:00:00.000Z" itemprop="datePublished">2026-07-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/AI-Entrepreneurship/">AI Entrepreneurship</a>►<a class="article-category-link" href="/categories/AI-Entrepreneurship/Solopreneur/">Solopreneur</a>►<a class="article-category-link" href="/categories/AI-Entrepreneurship/Solopreneur/AI-Agent/">AI Agent</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/07/16/opc-report-2026-07-16-2104/">Solo Founders Hit One-Third of New Companies as AI Slashes Startup Costs</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Solo founders now account for more than one-third of all new companies founded—a 53% surge in six years—driven by AI tools that let one person do the work of a five-person team in 48 hours.</p>
+        
+          <p class="article-more-link">
+            <a href="/2026/07/16/opc-report-2026-07-16-2104/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://opcreport.github.io/2026/07/16/opc-report-2026-07-16-2104/" data-id="cuidu9xa7UPwVXQobNj9gaQEl" data-title="Solo Founders Hit One-Third of New Companies as AI Slashes Startup Costs" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AI-agent/" rel="tag">AI agent</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AI-startup/" rel="tag">AI startup</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OPC/" rel="tag">OPC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Y-Combinator/" rel="tag">Y Combinator</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/one-person-company/" rel="tag">one-person company</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/solopreneur/" rel="tag">solopreneur</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-opc-report-2026-07-16-1204" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/07/16/opc-report-2026-07-16-1204/" class="article-date">
+  <time class="dt-published" datetime="2026-07-15T20:04:00.000Z" itemprop="datePublished">2026-07-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/AI-Entrepreneurship/">AI Entrepreneurship</a>►<a class="article-category-link" href="/categories/AI-Entrepreneurship/Solo-Business/">Solo Business</a>►<a class="article-category-link" href="/categories/AI-Entrepreneurship/Solo-Business/Automation/">Automation</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/07/16/opc-report-2026-07-16-1204/">Jinan Launches China&#39;s First City-Level OPC Digital Community</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>China’s OPC ecosystem is accelerating: Jinan launched the nation’s first city-level OPC digital community, attracting over 260 registered projects, while national one-person LLC registrations surged 47% YoY in H1 2025.</p>
+<h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market &amp; Trends"></a>Market &amp; Trends</h2><ul>
+<li><p><strong>TrustMRR &#x2F; 腾讯云 (Jul 16):</strong> AI solopreneurs earning $10K+&#x2F;month operate with an average team size of just 1.7 people; over 60% spend ≤$150&#x2F;month on their tech stack. The game has changed — AI coding evolved from “AI writes code” to intent-driven systematic development, with solo developers matching small-team output.</p>
+</li>
+<li><p><strong>企鹅号 (Jul 15):</strong> AI Agent e-commerce operations are scaling from PPT concepts to real deployment. Unlike traditional chat-with-AI models, modern agents receive a goal, autonomously decompose steps, call tools, execute tasks, and verify results end-to-end.</p>
+</li>
+<li><p><strong>CSDN &#x2F; OpenCSG (Jul 2):</strong> WAIC and OpenCSG launched the OPC Independent Pioneer Challenge — the world’s first top-tier incubator exclusively for super-individuals and AI entrepreneurs. Core formula: “Carbon-based wisdom (human) + Silicon-based execution (AI) &#x3D; complete company.” One AI agent handles the daily task volume equivalent to 3-5 full-time employees at less than 1&#x2F;10 the cost.</p>
+</li>
+<li><p><strong>CSDN (Jul 1):</strong> China’s national one-person LLC count exceeded 16 million as of June 2025. First-half 2025 registrations hit 2.86 million, up 47% YoY, accounting for 23.8% of all new businesses. AI LLMs and agents have become the “standard toolkit” for solo entrepreneurship.</p>
+</li>
+<li><p><strong>搜狐 (Mar 3):</strong> Mobile AI app MAU surpassed 722 million in 2026. Doubao leads with 226M MAU, followed by DeepSeek at 135M. Native AI apps show strong retention: 69.2 avg monthly sessions, 143.2 minutes monthly usage time.</p>
+</li>
+</ul>
+<h2 id="Tools-Platforms"><a href="#Tools-Platforms" class="headerlink" title="Tools &amp; Platforms"></a>Tools &amp; Platforms</h2><ul>
+<li><p><strong>CSDN (Jun 4):</strong> Top 10 AI tools for indie developers in 2026 — Cursor (AI IDE), A9 (AI marketing agent generating video&#x2F;social content from product URLs), Bika.ai (OPC AI team assistant), and others that enable one person to do what previously required 5+ people.</p>
+</li>
+<li><p><strong>Bika.ai (Jul 14):</strong> Released “AI team for one-person company”: AI Messenger for multi-agent collaboration, X&#x2F;Twitter Manager (auto-polish + scheduled posting), AI Programmer (converts ideas to publishable HTML), Finance AI (extracts expenses from emails + generates daily reports).</p>
+</li>
+<li><p><strong>CSDN (May 27):</strong> Solopreneur OS skill package released — core concept of “workflow rearchitecture” rather than simple AI replacement. Formula: OPC &#x3D; Personal Brand + Agent Workforce + Automation Bus. Covers full lifecycle from 0→1 launch, business model design, AI stack setup, compliance, and cash flow management.</p>
+</li>
+<li><p><strong>GitHub (Mar 27):</strong> GitHub Topics “solopreneur” tag now收录 123 public repositories including Awesome list for indie hackers, ElizaOS (cross-provider AI dev team), NextJS BoilerPlate (ShipFast alternative), and Claude Code-powered SaaS starter kits.</p>
+</li>
+<li><p><strong>TechCrunch (Aug 20, 2025):</strong> Y Combinator alum SRE.ai raised $7.2M for DevOps AI agents — natural language agents that automate complex enterprise workflows like CI&#x2F;CD across Salesforce, AWS, GCP, and Azure. Founded by two ex-Google Research engineers.</p>
+</li>
+</ul>
+<h2 id="Case-Studies-Monetization"><a href="#Case-Studies-Monetization" class="headerlink" title="Case Studies &amp; Monetization"></a>Case Studies &amp; Monetization</h2><ul>
+<li><p><strong>CSDN (Jun 9):</strong> Indie dev case study — months spent building a full AI video generator got minimal traction; a throwaway “split video in half” app went viral: 60 new users in 28 days, $3 revenue, 147% growth. Lesson: AI apps are oversaturated; simple, direct tools win.</p>
+</li>
+<li><p><strong>企鹅号 (Jul 15):</strong> 2026 Beike Financial Youth Entrepreneurship “Open Mic” featured a gaming veteran pivoting to super-individual via AI tools. OPC is emerging as the new path for young entrepreneurs.</p>
+</li>
+<li><p><strong>CSDN (Dec 29, 2025):</strong> MuleRun Creator Studio upgrade — workbench for building monetizable workflow agents. Natural-language-based Mule Agent Builder (Base Agent + Skills + Knowledge paradigm) lets non-coders deploy commercial agents; platform handles payments, hosting, and model APIs.</p>
+</li>
+</ul>
+<h2 id="Frameworks-Technology"><a href="#Frameworks-Technology" class="headerlink" title="Frameworks &amp; Technology"></a>Frameworks &amp; Technology</h2><ul>
+<li><p><strong>CSDN (May 31):</strong> 2026 AI Agent framework roundup — LangGraph, AutoGen&#x2F;Microsoft Agent Framework, CrewAI, OpenClaw. These are moving from concept verification to large-scale commercial deployment, with architecture and selection strategies becoming critical for tech decision-makers.</p>
+</li>
+<li><p><strong>CSDN &#x2F; SITS2026 (May 10):</strong> 2026 Singularity Intelligence Technology Conference released the AI Agent production-grade observability pattern set — focused on composability, observability, and autonomous evolution. Open-sourced decision confidence quantification toolchain v1.3 (trustscore-cli, audit-trace visualizer, policy-sandbox). Decision confidence SHAP correlation coefficient reached 0.91.</p>
+</li>
+<li><p><strong>搜狐 (Jun 8):</strong> China’s enterprise AI agent market projected at 44.9 billion RMB in 2026, growing 107% YoY, with on-premise deployment accounting for &gt;60%. The AI Act mandates domestic private deployment for critical data, making localized customization a hard requirement.</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://opcreport.github.io/2026/07/16/opc-report-2026-07-16-1204/" data-id="cuidCvWsYzD44CvHG5IxsFGRg" data-title="Jinan Launches China&#39;s First City-Level OPC Digital Community" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ai-agent/" rel="tag">ai-agent</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ai-startup/" rel="tag">ai-startup</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/indie-hacker/" rel="tag">indie-hacker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/one-person-company/" rel="tag">one-person-company</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/opc/" rel="tag">opc</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/solopreneur/" rel="tag">solopreneur</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-opc-report-2026-07-16-1006" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/07/16/opc-report-2026-07-16-1006/" class="article-date">
+  <time class="dt-published" datetime="2026-07-15T18:06:00.000Z" itemprop="datePublished">2026-07-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/AI-Entrepreneurship/">AI Entrepreneurship</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/07/16/opc-report-2026-07-16-1006/">China&#39;s One-Person Companies Surge Past 16 Million, Up 47% YoY</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><strong>Headline:</strong> China’s one-person company (OPC) registrations surge to 16M+, with 2.86M new registrations in H1 2025 alone — up 47% YoY, signaling explosive growth in AI-enabled solopreneurship.</p>
+<hr>
+<ul>
+<li><p><strong>CSDN (2026-07-01)</strong> — One-person companies in China reach 16 million registered entities. H1 2025 saw 2.86M new registrations (+47% YoY), accounting for 23.8% of all new enterprises. AI tools and agents enable individuals to complete product development, content creation, and marketing independently.</p>
+</li>
+<li><p><strong>CSDN (2026-07-02)</strong> — WAIC and OpenCSG launch the OPC Independent Pioneer Challenge, the world’s first incubation platform dedicated to super individuals and AI entrepreneurs. One-third of new companies are founded by solo founders, a 53% increase over six years.</p>
+</li>
+<li><p><strong>GitHub (2026-04-15)</strong> — <code>awesome-solopreneur-ai</code> repository curates 367 AI tools across 19 categories for solopreneurs. The most comprehensive toolkit for one-person businesses and indie makers.</p>
+</li>
+<li><p><strong>bika.ai (2026-07-03)</strong> — Bika.ai positions as “Your AI team. Your workflow. Your superpower.” Multi-agent messaging platform enables solopreneurs to collaborate with multiple AI agents in a single conversation flow.</p>
+</li>
+<li><p><strong>企鹅号 (2026-03-19)</strong> — Jinan launches China’s first city-level “Digital Ecology OPC Community.” 260+ OPC projects have applied since the release of the “Ten Measures” support policy.</p>
+</li>
+<li><p><strong>CSDN (2026-07-06)</strong> — Analysis of 100+ OPC success cases reveals three profitable paths: tech experts with moats (Tsinghua PhD raised ¥10M+ in 6 months), niche vertical players (Nanjing U grad built 3D game with AI-assisted coding), service-type OPCs leveraging AI efficiency (content creation time cut from 2-3h to &lt;1h).</p>
+</li>
+<li><p><strong>CSDN (2026-05-22)</strong> — 2026 indie development paradigm: SaaS products that required 5-person teams can now be built by one person in 48 hours using AI toolchains from v0 to Cursor. Core efficiency formula: P_efficiency &#x3D; (Idea × AI_Leverage^n) &#x2F; Complexity.</p>
+</li>
+<li><p><strong>企鹅号 (2026-03-27)</strong> — Y Combinator Winter 2026 batch showcases ~190 startups at Demo Day. Generative AI dominates, with companies building in legal, transportation, and healthcare sectors.</p>
+</li>
+<li><p><strong>indiemaker.co (2026-06-25)</strong> — Indiemaker marketplace for buying and selling micro-startups and side-hustles. Listings range from $1K experiments to $500K micro-businesses, enabling indie makers to cash out or acquire.</p>
+</li>
+<li><p><strong>codeless.how (2026-07-15)</strong> — No-code automation platform claims 85% business automation capability. Courses cover marketing and sales automation for solopreneurs seeking “autopilot” operations.</p>
+</li>
+<li><p><strong>搜狐 (2026-05-28)</strong> — Hangzhou car repair shop with zero offline foot traffic uses AI Agent for online customer acquisition: competitor analysis, bulk posting, comment interception, auto-reply. One person handles what previously required a full operations team.</p>
+</li>
+<li><p><strong>企鹅号 (2026-04-15)</strong> — Nanjing Ring Technology, a university student-led OPC, achieved ~¥2.6M revenue in 2025. The team pivoted from digital modeling to AI, building custom “digital employees” for efficient small-team operations.</p>
+</li>
+<li><p><strong>CSDN (2026-07-11)</strong> — 50%+ of enterprises globally have deployed AI Agents in production, up from 18% in 2024. 2026 is recognized as the “watershed year” for enterprise AI adoption, with leading companies averaging 23 deployed agents.</p>
+</li>
+<li><p><strong>企鹅号 (2026-05-20)</strong> — 2026 AI startup landscape: content generation and creative assistance ranked as the highest-potential sector (★★★★★). Core strategy: use AI as a “super leverage” to become a solution provider.</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://opcreport.github.io/2026/07/16/opc-report-2026-07-16-1006/" data-id="cuidqP7onyI44Y0BEUzauiD17" data-title="China&#39;s One-Person Companies Surge Past 16 Million, Up 47% YoY" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ai-startup/" rel="tag">ai-startup</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/indie-hacker/" rel="tag">indie-hacker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/one-person-company/" rel="tag">one-person-company</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/opc/" rel="tag">opc</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/solopreneur/" rel="tag">solopreneur</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-opc-report-2026-07-16-1304" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/07/16/opc-report-2026-07-16-1304/" class="article-date">
+  <time class="dt-published" datetime="2026-07-15T16:00:00.000Z" itemprop="datePublished">2026-07-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/monitoring/">monitoring</a>►<a class="article-category-link" href="/categories/monitoring/AI-business/">AI-business</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/07/16/opc-report-2026-07-16-1304/">Shenzhen Action Plan Targets 1,000+ AI Startups by 2027</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Shenzhen-Action-Plan-Targets-1-000-AI-Startups-by-2027"><a href="#Shenzhen-Action-Plan-Targets-1-000-AI-Startups-by-2027" class="headerlink" title="Shenzhen Action Plan Targets 1,000+ AI Startups by 2027"></a>Shenzhen Action Plan Targets 1,000+ AI Startups by 2027</h1><p>本期最重要的一条发现：深圳已发布专项行动计划，到 2027 年底建成超 10 家 OPC 社区、培育超千家高成长性 AI 创业企业，表明一人公司正从概念进入地方政府生态建设阶段。</p>
+<ul>
+<li><strong>中文 · 企鹅号&#x2F;中新社 · 2026-07-04</strong> — 全球 OPC 共创节汇集内容营销、音乐创作等赛道的”一人公司”代表，呈现 AI 浪潮下的创业新图景；北京未来潮汐科技创始人携 5 名”AI 员工”创业，推出 AI 数字员工工程化交付平台。</li>
+<li><strong>中文 · 搜狐 · 2026-06-07</strong> — 深圳发布《打造人工智能 OPC 创业生态引领地行动计划（2026—2027年）》，提出到 2027 年底建成超 10 家 OPC 社区、培育超千家高成长性 AI 创业企业、集聚超万名 AI 创新创业人才；济南、重庆、北京、杭州、苏州等地亦出现 OPC 社区载体。</li>
+<li><strong>中文 · 搜狐 · 2026-05-31</strong> — AI 一人公司规模化落地案例集中爆发：瑞典 Lovable 8 个月实现 1 亿美元年化收入、估值 66 亿美元；以色列 Base44 以 8 人团队（90% 代码由 AI 生成）3 周达成 150 万美元 ARR，最终 8000 万美元被收购；苏州画宗科技 28 天完成传统团队半年工作量的 2600 分镜 AI 漫剧。</li>
+<li><strong>中文 · CSDN · 2026-04-13</strong> — 美图推出 Meitu CLI 助力一人公司与初创团队调用影像能力；鸿鹄汇 Honghub 发布《2026 一人公司洞察报告》，提出 HACR（人机成本比）指标，中国市场基准值显示每投入 1 元 AI 成本等效替代约 72 元开发人力支出。</li>
+<li><strong>中文 · 企鹅号 · 2026-05-27</strong> — 芝麻企业信用为”一人公司”推出 OPC 工具箱；上海、北京、深圳、浙江、江苏等地密集出台支持政策，从免费工位、财政补贴到算力券，为一人公司打造低成本创业环境。</li>
+<li><strong>中文 · 企鹅号 · 2026-06-01</strong> — 字节跳动 Trae（AI 原生 IDE）面向独立开发者，SOLO 模式支持单人凭自然语言从零搭建完整可运行项目，自动完成环境配置与依赖安装，AI 代码贡献率可达 93%。</li>
+<li><strong>中文 · 企鹅号 · 2026-07-15</strong> — AI Agent 开始接管电商运营，从”对话交互”升级为”端到端业务执行载体”，可自主拆解目标、调用工具、执行任务、检查结果，电商领域落地加速。</li>
+<li><strong>English · GitHub · 2026-04-15</strong> — jakeolschewski&#x2F;awesome-solopreneur-ai curates 367 AI tools for solopreneurs across 19 categories, billed as the most comprehensive toolkit list.</li>
+<li><strong>English · Y Combinator · 2026-03-27</strong> — YC W26 Demo Day featured nearly 190 companies, with generative AI again a dominant keyword across legal, transport, and healthcare pitches.</li>
+<li><strong>English · Indie Hackers · 2026-06-19</strong> — Threads like “OpenClaw hosting first month revenue” discuss solo founders using AI agents to build hosting services and land first-month revenue.</li>
+<li><strong>English · Bika.ai · 2026-07-14</strong> — Bika.ai launches an AI Organizer for One-Person Companies: an AI team messenger, cloneable agentic app templates, and an AI Programmer that generates publish-ready web pages.</li>
+<li><strong>English · The Kevin Rose Show · 2026-04-16</strong> — a16z partner Anish Acharya noted a personal-injury lawyer won the global Claude Code hackathon building software rivaling VC-backed startups; predicts SaaS is being dismantled by AI.</li>
+<li><strong>English · toolmark.ai · 2026-06-10</strong> — toolmark.ai is a no-code AI tool builder that turns ideas into AI apps (summarizer, blog writer, outfit try-on) with no coding, with a community marketplace.</li>
+<li><strong>English · Solopreneur Grind · 2026-07-14</strong> — Solopreneur Grind remains an active community for solo founders, offering peer support from launch through growing a solo business.</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://opcreport.github.io/2026/07/16/opc-report-2026-07-16-1304/" data-id="cuidTRd05stMLf7_TBpUEUUXG" data-title="Shenzhen Action Plan Targets 1,000+ AI Startups by 2027" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OPC/" rel="tag">OPC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/indie-hacker/" rel="tag">indie hacker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/one-person-company/" rel="tag">one-person company</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/solopreneur/" rel="tag">solopreneur</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-opc-report-2026-07-16-1713" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/07/16/opc-report-2026-07-16-1713/" class="article-date">
+  <time class="dt-published" datetime="2026-07-15T16:00:00.000Z" itemprop="datePublished">2026-07-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/OPC-Monitor/">OPC Monitor</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/07/16/opc-report-2026-07-16-1713/">Solo Founders Now Launch One-Third of All New Companies</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Solo founders now start roughly one-third of all new companies — a share that has climbed 53% in six years, according to multiple independent sources tracked this hour.</p>
+<ul>
+<li><strong>Tencent Cloud (Developer)</strong> — 2026-07-16: A deep-dive reports the share of companies founded by solo founders rose from 23.7% in 2019 to 36.3% in 2025, a 53% jump. It argues 2026 is becoming the “year of AI Agent landing,” with one-person companies carrying vertical-disruption capability and zero organizational drag.</li>
+<li><strong>OpenCSG (CSDN &#x2F; CNBlogs)</strong> — 2026-07-14: Coverage of the “OPC Independent Pioneer Challenge” cites the same one-third figure and six-year 53% surge, framing the core formula as “carbon-based intelligence (human) + silicon-based execution (AI) &#x3D; a complete company.”</li>
+<li><strong>Sohu Tech</strong> — 2026-05-31: Roundup of scaled OPC wins — Sweden’s Lovable hit $100M ARR in 8 months at a $6.6B valuation; Israel’s Base44 (90% AI-generated code, 8 people) reached $1.5M ARR in 3 weeks before an $80M acquisition; Suzhou Huazong finished 2,600 AI-anime storyboards in 28 days.</li>
+<li><strong>China News Service &#x2F; Penguin</strong> — 2026-07-04: At the Global OPC Co-creation Festival, Beijing Future Tide founder Liu Yefei runs a company with 5 “AI employees” handling strategy, coding, code review, cloud deployment and research; his platform ships digital-employee kits for SMEs and expert avatars.</li>
+<li><strong>Penguin</strong> — 2026-05-27: Zhima Enterprise Credit launched an “OPC toolbox” for one-person companies; Shanghai, Beijing, Shenzhen, Zhejiang and Jiangsu have rolled out support policies (free desks, subsidies, compute vouchers).</li>
+<li><strong>Penguin</strong> — 2026-04-28: “Seven ways to run a one-person company” names the single-person short-drama content factory as a rising trend, with AI scripting the first role replaced from professional teams.</li>
+<li><strong>Tencent</strong> — 2026-06-05: At its AI industry conference, Tencent Cloud’s Liu Yi framed “AI Agent second half: from super-individual to super-team,” launching WorkBuddy Enterprise and an office-agent suite.</li>
+<li><strong>GitHub · Solo Founders</strong> — 2026-03-14: The Solo Founders Program (SFP) is a 3-month San Francisco residency with $100K investment and a 6-founder cohort (“If you’re already solo, you’re early”). Its “State of Solo Founding” report with Carta concludes solo founders now start 1&#x2F;3 of all new companies.</li>
+<li><strong>Y Combinator · Lightcone Podcast</strong> — 2026-06-23: Webflow co-founder Bryant Chou returns with Ploy, an AI website + marketing platform wired into analytics, CRM and search console. The episode argues domain-expert founders are making a comeback as AI lowers build cost.</li>
+<li><strong>Indie Hackers</strong> — 2026-06-19: Fresh OPC field notes — a self-built cold-email tool (43 sent, 17 replies, 1 paid), IbexAI’s “Stop building the same product as others,” and a 3-week Stripe+auth+LLM-routing war story; the site added a Vibe Coding Tools section.</li>
+<li><strong>The Kevin Rose Show · a16z</strong> — 2026-04-16: a16z’s Anish Acharya notes a personal-injury lawyer won a global Claude Code hackathon with software rivaling VC-backed startups, and predicts “SaaS is getting demolished” as agents let one person match a small team.</li>
+<li><strong>GitHub · rouor&#x2F;one-person-company</strong> — 2026-07-12: A curated OPC AI-tools repo (29 commits) benchmarks v0.dev, Lovable, Bolt.new and Replit on time, features and price for one-click site&#x2F;app&#x2F;game generation.</li>
+<li><strong>GitHub Topics · solopreneur</strong> — 2026-03-27: 123 public repos now carry the solopreneur topic, including high-signal lists (real products, real revenue, real retros) and an open-source cross-provider AI dev team built on Claude Code + Codex CLI.</li>
+<li><strong>No-Code AI platforms (VirtusFlow &#x2F; Botminds &#x2F; Activepieces &#x2F; Shnoco)</strong> — 2026-07: The no-code + agentic-automation lane is heating up — VirtusFlow pushes zero-code BPA, Botminds targets lending&#x2F;credit agents, Activepieces ships open-source automation (280+ integrations), and Shnoco curates 500+ tools for AI&#x2F;no-code makers.</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://opcreport.github.io/2026/07/16/opc-report-2026-07-16-1713/" data-id="cuidbqruRGAE2YAqozhkuh6AN" data-title="Solo Founders Now Launch One-Third of All New Companies" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AI-agent/" rel="tag">AI agent</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OPC/" rel="tag">OPC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/indie-hacker/" rel="tag">indie hacker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/one-person-company/" rel="tag">one-person company</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/solopreneur/" rel="tag">solopreneur</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/startup/" rel="tag">startup</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-opc-report-2026-07-16-2004" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/07/16/opc-report-2026-07-16-2004/" class="article-date">
+  <time class="dt-published" datetime="2026-07-15T16:00:00.000Z" itemprop="datePublished">2026-07-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/OPC/">OPC</a>►<a class="article-category-link" href="/categories/OPC/AI-Startups/">AI Startups</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/07/16/opc-report-2026-07-16-2004/">Solo Founders Now Launch 36% of New Companies, Up 53% in Six Years</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Solo founders now account for 36.3% of all new companies — up 53% from 23.7% in 2019 — as AI agents mature from chat tools into “hands-on employees,” according to a Tencent Cloud analysis published today.</p>
+<ul>
+<li><strong>Tencent Cloud</strong> (2026-07-16 20:05 UTC+8): New analysis reports that the share of companies founded by solo founders climbed from 23.7% in 2019 to 36.3% in 2025, a 53% jump in six years. It calls 2026 the “landing year” for AI agents, shifting from chatbots to workers that handle real tasks.</li>
+<li><strong>China News &#x2F; Penguin</strong> (2026-07-04): The Global OPC Co-Creation Festival gathered one-person-company founders across content marketing and music. A Beijing founder runs a startup with 5 “AI employees” covering planning, coding, review, deployment, and research.</li>
+<li><strong>Sohu</strong> (2026-05-31): OPC scale-up cases surface — Sweden’s Lovable hit $100M annualized revenue in 8 months at a $6.6B valuation; Israel’s Base44 (8 people, 90% AI-generated code) reached $1.5M ARR in 3 weeks before an $80M acquisition.</li>
+<li><strong>Penguin</strong> (2026-05-27): Zhima Business Credit launched an “OPC toolkit” for solo companies. Shanghai, Beijing, Shenzhen, Zhejiang and Jiangsu rolled out support policies — free desks, subsidies, compute vouchers.</li>
+<li><strong>CSDN &#x2F; OpenCSG</strong> (2026-07-14): OPC Independence Pioneer Challenge opens, echoing Sam Altman’s claim that “one person could build a $1B unicorn” in the AI era; over one-third of new companies are now solo-founded.</li>
+<li><strong>Tencent</strong> (2026-02-08): 2026 framed as AI’s application-breakout year. A pure AI-agent social network, MoltBook, drew 100K+ agents and 10M+ spectators within 48 hours, with humans only watching.</li>
+<li><strong>IT168</strong> (2026-06-05): Tencent Cloud launched WorkBuddy Enterprise and an office-agent suite at its AI industry conference, aiming to connect “super individuals” into AI-native “super teams.”</li>
+<li><strong>GitHub (rouor&#x2F;one-person-company)</strong> (2026-07-12): A continuously updated “one-person-company AI tools” repo covers AI chat, image&#x2F;video, AI IDEs, smart browsers, and one-click website&#x2F;App&#x2F;game generation.</li>
+<li><strong>Indie Hackers</strong> (2026-06-19): Solo MRR cases keep appearing — Jack Friks hit $35k MRR after three years of failure and learning to code; another maker reached $10k MRR by building an app off a physical-product audience.</li>
+<li><strong>TechCrunch</strong> (2026-03-20): WordPress.com now lets AI agents draft, edit and publish posts, plus manage other site tasks — a move that could reshape how the web is maintained.</li>
+<li><strong>Indiemaker.co</strong> (2026-07-15): A marketplace for buying and selling micro-startups launched, making indie projects “liquid assets” — from $1K experiments to $500K micro-companies.</li>
+<li><strong>PDFAssistant.ai</strong> (2026-07-15): No-code AI PDF workflow automation built on the Adobe PDF Library — turn a conversation into a reusable, batch-runnable automation with zero code and end-to-end encryption.</li>
+<li><strong>The Kevin Rose Show (a16z’s Anish Acharya)</strong> (2026-04-16): A personal-injury lawyer won a Claude Code hackathon with software rivaling VC-backed startups; Acharya predicts SaaS is being demolished and a four-day workweek is coming.</li>
+<li><strong>GitHub (iAmCorey&#x2F;awesome-indie-hacker-tools)</strong> (2026-07-15): A daily-updated stack and tool list for indie&#x2F;overseas developers, pulling inspiration from Product Hunt, Indie Hackers and Hacker News across the full build lifecycle.</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://opcreport.github.io/2026/07/16/opc-report-2026-07-16-2004/" data-id="cuidxcF1bSaDS3SvuOG9haLAj" data-title="Solo Founders Now Launch 36% of New Companies, Up 53% in Six Years" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AI-agents/" rel="tag">AI agents</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/indie-hacker/" rel="tag">indie hacker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/one-person-company/" rel="tag">one-person company</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/solopreneur/" rel="tag">solopreneur</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/startup/" rel="tag">startup</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-opc-report-2026-07-16-2304" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/07/16/opc-report-2026-07-16-2304/" class="article-date">
+  <time class="dt-published" datetime="2026-07-15T16:00:00.000Z" itemprop="datePublished">2026-07-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/AI-Entrepreneurship/">AI Entrepreneurship</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/07/16/opc-report-2026-07-16-2304/">China&#39;s Million-AI-OPC Initiative Aims to Spawn 1M Solopreneurs in a Decade</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>China’s Ministry of Science and Technology, along with three other government bodies, has inaugurated an AI OPC track within the national AIGC multimodal competition — the first time a state-level platform has opened an independent category for one-person companies. The organizer, Jinshang AI OPC Incubation Platform, simultaneously launched the “Million AI OPC Entrepreneurship Incubation Project,” targeting 1 million AI one-person companies within 10 years, expected to drive employment for 3 million people.</p>
+<hr>
+<ul>
+<li><strong>Tech&#x2F;Government · 2026-07-14</strong> — National AIGC Competition opens first-ever OPC track at state level, backed by four ministries; Million AI OPC project targets 1M companies in a decade</li>
+<li><strong>Policy · 2026-06-07</strong> — Hainan Free Trade Port rolls out China’s first provincial OPC policy, effective June 20; up to 8M yuan in one-time rewards for qualifying OPC communities; dual 15% tax rate on corporate and personal income</li>
+<li><strong>Community · 2026-07-13</strong> — China’s first WorkBuddy OPC Cooperative Community launches in Chengdu, exploring a three-party model combining government support, platform resources, and community co-creation</li>
+<li><strong>Cloud Platform · 2026-06-09</strong> — Alibaba Cloud launches OPC Innovation Support Program for 5,000 AI teams, offering token subsidies, technical services, and ecosystem access; capped at 1M yuan in token support per team</li>
+<li><strong>Policy Analysis · 2026-07-14</strong> — Analysis of 20+ Chinese city OPC policies identifies Jiangsu (39 full-chain policies), Guangdong (up to 5M yuan in awards), and Zhejiang (digital+green dual transformation) as the three leading policy hubs</li>
+<li><strong>Startup Case · 2026-07-06</strong> — Nanjing University graduate builds 3D game solo via AI self-learning; Tsinghua PhD raises 10M+ yuan for smart wristband product within six months of registering a one-person company in Shenzhen</li>
+<li><strong>AI Tools · 2026-03-12</strong> — Google Cloud AI Agents report (3,466 global executives surveyed): 52% of GenAI enterprises have deployed agents; Telus saves 40 minutes per AI interaction across 57,000 employees; Danfoss cuts order response from 42 hours to real-time</li>
+<li><strong>Developer Tools · 2026-03-27</strong> — GitHub solopreneur topic reaches 123 open-source repositories; awesome-founder-communities list curates Indie Hackers, On Deck, WIP, and other top founder communities</li>
+<li><strong>Startup Case · 2026-02-14</strong> — Tsinghua product manager with zero coding background ships a simplified Bing search product in one week using ChatGPT and Copilot, at a cost of approximately $5</li>
+<li><strong>OS&#x2F;Framework · 2026-05-27</strong> — Solopreneur OS launches on GitHub: workflow-reconstruction framework for one-person companies covering four business models — AI-native agencies (70% margin), AI consulting (80%), AI digital products (90%), AI software services (95%)</li>
+<li><strong>City Strategy · 2026-05-30</strong> — Shenzhen releases AI OPC Ecosystem Action Plan (2026–2027), targeting 10+ OPC communities and 10,000+ AI entrepreneurship talents by end of 2027</li>
+<li><strong>Indie Case · 2026-03</strong> — Indie Hackers case study: marketer Sveta Bay quits job, ships product in a month, validates in two weeks; two years later earns $20k&#x2F;mo building marketing tools for solopreneurs</li>
+<li><strong>City Ecosystem · 2026-05-26</strong> — Jinan Digital Intelligence OPC Community launches with first cohort covering AI content development and AI agent services; OPC communities also emerging in Beijing, Shanghai, Suzhou, Nanjing, and Hangzhou</li>
+<li><strong>Competition · 2026-03-23</strong> — WAIC and OpenCSG launch OPC Independent Pioneer Challenge for super-individuals and AI entrepreneurs; 10 competition zones nationwide; finals at WAIC Expo in Shanghai, July 2026</li>
+<li><strong>Legal&#x2F;Structure · 2026-03-16</strong> — Shenzhen releases full OPC registration guide: 7 steps, free seal engraving for new enterprises, residential address registration permitted under compliance</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://opcreport.github.io/2026/07/16/opc-report-2026-07-16-2304/" data-id="cuidUvmQC0O2ef6ANvlnY51rU" data-title="China&#39;s Million-AI-OPC Initiative Aims to Spawn 1M Solopreneurs in a Decade" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AI-startup/" rel="tag">AI startup</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/China/" rel="tag">China</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OPC/" rel="tag">OPC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/one-person-company/" rel="tag">one-person company</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/solopreneur/" rel="tag">solopreneur</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-opc-report-2026-07-15-2205" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/07/15/opc-report-2026-07-15-2205/" class="article-date">
+  <time class="dt-published" datetime="2026-07-15T14:05:00.000Z" itemprop="datePublished">2026-07-15</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/OPC-Report/">OPC Report</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/07/15/opc-report-2026-07-15-2205/">Beijing Grants First Batch of 8 OPC Community Certifications</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><strong>Beijing Jingkai District issued the first batch of 8 OPC community certifications, marking the transition from scattered incubation to systematic, large-scale development.</strong></p>
+<h2 id="Key-Updates"><a href="#Key-Updates" class="headerlink" title="Key Updates"></a>Key Updates</h2><ul>
+<li><p><strong>人民网 | 2026-07-15 16:20</strong> — Beijing Economic-Technological Development Area conducted the first OPC community certification ceremony, granting credentials to 8 high-quality incubation carriers. This signals OPC industry evolution from fragmented cultivation to comprehensive, systematic, and large-scale development.</p>
+</li>
+<li><p><strong>企鹅号 | 2026-07-15 11:57</strong> — Morgan Stanley executive Luo Yongxiang led angel investment in Lingzhu, noting OPC market potential is vast. Lingzhu’s core users (small B-side merchants, university students) have validated that “AI enables ordinary people to start businesses.” User coverage spans 301 cities across 34 provincial administrative regions.</p>
+</li>
+<li><p><strong>企鹅号 | 2026-07-15 00:29</strong> — Shen Meng founded Yukun Zhihe (Beijing) Information Technology Co., focusing on brand IP planning, AIGC video industrialized production, and film&#x2F;TV training curriculum. Core team: 3 people. OPC model defined as “core decision-maker + AI digital employees + flexible outsourcing network.”</p>
+</li>
+<li><p><strong>CSDN | 2026-07-13</strong> — Through AI super-employees (AI Agents), automation toolchains, and cloud services, individual entrepreneurs can build and operate micro-enterprises covering entire business chains with unprecedented efficiency. AI tools have evolved from supporting roles to programmable, collaborative core productivity units.</p>
+</li>
+<li><p><strong>CSDN | 2026-06-20</strong> — China Academy of ICT definition: OPC in the AI era isn’t about reducing company size but reconstructing the minimum production unit. It’s a lightweight organizational model: “one core decision-maker + multiple digital employees + platform-based resources.”</p>
+</li>
+<li><p><strong>CSDN | 2026-07-05</strong> — Moxun Technology launched SoloFounder OPC one-stop solution, using 7-step AI full-process system to convert individual professional skills into implementable, profitable business models, creating a “super individual operating system” from 0 to 1 for freelancers.</p>
+</li>
+<li><p><strong>CSDN | 2026-05-28</strong> — Million-dollar solo founder’s real AI stack: Write CLAUDE.md (document all implicit codebase rules), build skill files (teach agents to complete task types), configure automation flows. Key to achieving scalable solo operations.</p>
+</li>
+<li><p><strong>GitHub | 2026-07-12</strong> — one-person-company repository updated with AI tools series including AI dialogue, graphics&#x2F;video, IDE development, and command-line tools. Website generation platform tests: v0.dev (2 min), lovable (3 min), bolt.new (3 min), heyboss (12 min).</p>
+</li>
+<li><p><strong>CSDN | 2026-06-26</strong> — Solopreneur, indie developer, and OPC concepts have moved from tech community edge terms to center stage of business discussions. Systematic deconstruction of the “one-person company” phenomenon from technical architecture, economic model, and organizational behavior perspectives.</p>
+</li>
+<li><p><strong>CSDN | 2026-03-03</strong> — UI designer launched paid service in 3 weeks via SoloFounder OPC, earning 50K RMB monthly. Converted day-rate pricing to packaged “homepage + login page + motion demo” with “Mobile Visual Acceptance Checklist” bonus. Two weeks in, 4 small enterprises signed; 2 added brand VI extension requests.</p>
+</li>
+<li><p><strong>SkillHub | 2026-05-27</strong> — solopreneur-os skill released. Core capability: workflow reconstruction—refactoring complex workflows in any domain into AI-assisted solo-completable methods. Process: decompose human limitation compensation layer → eliminate → reorganize based on AI capability model.</p>
+</li>
+<li><p><strong>企鹅号 | 2026-05-02</strong> — Baidu Create 2026 AI Developer Conference dedicated a main forum to AI-era super individuals, signaling mainstream recognition of OPC as viable entrepreneurial path.</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://opcreport.github.io/2026/07/15/opc-report-2026-07-15-2205/" data-id="cuidaXR4ddmdKQ2V2gpaa39dg" data-title="Beijing Grants First Batch of 8 OPC Community Certifications" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AI-agent/" rel="tag">AI agent</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AI-startup/" rel="tag">AI startup</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OPC/" rel="tag">OPC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/one-person-company/" rel="tag">one-person company</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/solopreneur/" rel="tag">solopreneur</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/28/">28</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/AI/">AI</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI/Entrepreneurship/">Entrepreneurship</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI/Entrepreneurship/Solo-Founder/">Solo Founder</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI/Entrepreneurship/Solopreneurship/">Solopreneurship</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI/Entrepreneurship/Trends/">Trends</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI/Entrepreneurship/Weekly-Report/">Weekly Report</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI/OPC/">OPC</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI/OPC/Entrepreneurship/">Entrepreneurship</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI/OPC/Entrepreneurship/One-Person-Company/">One-Person Company</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI/OPC/Entrepreneurship/One-Person-Company/AI-Startup/">AI Startup</a></li></ul></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI/Startup/">Startup</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI/Startup/OPC/">OPC</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI/Startup/OPC/Solopreneur/">Solopreneur</a></li></ul></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business/">AI Business</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business/Startup/">Startup</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business/Startup/Entrepreneurship/">Entrepreneurship</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business/Startup/Entrepreneurship/Automation/">Automation</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business/Startup/Independent-Developer/">Independent Developer</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business/Startup/Independent-Developer/Remote-Work/">Remote Work</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business/Startup-Trends/">Startup Trends</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business/Startup-Trends/Digital-Economy/">Digital Economy</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business/Startup-Trends/Digital-Economy/One-Person-Company/">One-Person Company</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business/Startup-Trends/Digital-Nomad/">Digital Nomad</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business/Startup-Trends/Entrepreneurship/">Entrepreneurship</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business/Startup-Trends/Entrepreneurship/China-AI-Policy/">China AI Policy</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business/Startup-Trends/Independent-Development/">Independent Development</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business/Startup-Trends/OPC/">OPC</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business/Startup-Trends/OPC/Solopreneur/">Solopreneur</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business/Startup-Trends/One-Person-Company/">One Person Company</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business/Startup-Trends/Super-Individual/">Super Individual</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business/Startup-Trends/Technology/">Technology</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business-Trends/">AI Business Trends</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business-Trends/OPC-Research/">OPC Research</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business-Trends/OPC-Research/Startup-Ecosystem/">Startup Ecosystem</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business-Trends/One-Person-Company/">One Person Company</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business-Trends/One-Person-Company/Startup-Ecosystem/">Startup Ecosystem</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business-Trends/Startup-Insights/">Startup Insights</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business-Trends/Startup-Insights/Digital-Economy/">Digital Economy</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business-Trends/Startup-Insights/Digital-Transformation/">Digital Transformation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business-Trends/Startup-Insights/Technology/">Technology</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business-Trends/Startup-Report/">Startup Report</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Business-Trends/Startup-Report/2026-Trends/">2026 Trends</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/">AI Entrepreneurship</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC/">OPC</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC/One-Person-Company/">One-Person Company</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC/One-Person-Company/AI-Trends/">AI Trends</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC/Solo-Founder/">Solo Founder</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC/Solo-Founder/AI-Agent/">AI Agent</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC/Solo-Founder/ai-tools/">AI Tools</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC/Solo-Founder/Indie-Hacker/">Indie Hacker</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC/Solopreneur/">Solopreneur</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC/Solopreneur/AI-Agent/">AI Agent</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC/Solopreneur/AI-Trends/">AI Trends</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC/Startup-Guide/">Startup Guide</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC/Startup-Trends/">Startup Trends</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC/Weekly-Report/">Weekly Report</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Analysis/">OPC Analysis</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Analysis/Industry-Report/">Industry Report</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Analysis/Weekly-Report/">Weekly Report</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Industry-Trends/">OPC Industry Trends</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Monitor/">OPC Monitor</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Report/">OPC Report</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Report/Weekly-Monitor/">Weekly Monitor</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Trend-Report/">OPC Trend Report</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Trend-Report/2026/">2026</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Trend-Report/Solopreneur-Guide/">Solopreneur Guide</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Trend-Report/Weekly-Analysis/">Weekly Analysis</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Trends/">OPC Trends</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Trends/China-Policy/">China Policy</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Trends/China-Tech/">China Tech</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Trends/market-analysis/">Market Analysis</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Trends/Startup-Analysis/">Startup Analysis</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Trends/Startup-Ecosystem/">Startup Ecosystem</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Trends/Startup-Ecosystem/China-AI/">China AI</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Trends/Startup-Ecosystem/Policy-Analysis/">Policy Analysis</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Trends/Startup-Guide/">Startup Guide</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Trends/Startup-Insights/">Startup Insights</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Trends/Startup-Intelligence/">Startup Intelligence</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Trends/Startup-Monitor/">Startup Monitor</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Trends/Startup-Policy/">Startup Policy</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Trends/Startup-Policy/Super-Individual-Economy/">Super Individual Economy</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Trends/Weekly-Report/">Weekly Report</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/OPC-Weekly-Report/">OPC Weekly Report</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/One-Person-Company/">One Person Company</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/One-Person-Company/OPC-Trend-Report/">OPC Trend Report</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/One-Person-Company/Policy-Analysis/">Policy Analysis</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/One-Person-Company/Policy-Analysis/Startup-Tools/">Startup Tools</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/One-Person-Company/Solopreneur/">Solopreneur</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/One-Person-Company/Solopreneur/OPC/">OPC</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/One-Person-Company/">One-Person Company</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/One-Person-Company/Indie-Hacker/">Indie Hacker</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/One-Person-Company/OPC-Trends/">OPC Trends</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/One-Person-Company/Solopreneur/">Solopreneur</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/One-Person-Company/Solopreneur/ai-tools/">AI Tools</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/One-Person-Company/Solopreneur/Independent-Developer/">Independent Developer</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/One-Person-Company/Solopreneur/OPC/">OPC</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/One-Person-Company/Startup-Trends/">Startup Trends</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Solo-Business/">Solo Business</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Solo-Business/Automation/">Automation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Solo-Business/China-Tech/">China Tech</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Solo-Founder-Trends/">Solo Founder Trends</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Solo-Founder-Trends/market-analysis/">Market Analysis</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Solopreneur/">Solopreneur</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Solopreneur/AI-Agent/">AI Agent</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Solopreneur/One-Person-Company/">One-Person Company</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Solopreneur/Startup-Intelligence/">Startup Intelligence</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Solopreneur/Startup-Intelligence/AI-Agents/">AI Agents</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Solopreneur/Startup-Intelligence/AI-Agents/Global-Tech-Trends/">Global Tech Trends</a></li></ul></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Solopreneurship/">Solopreneurship</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Solopreneurship/ai-tools/">AI Tools</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Solopreneurship/One-Person-Company/">One-Person Company</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Solopreneurship/Startup-Trends/">Startup Trends</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Startup-Trends/">Startup Trends</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Startup-Trends/AI-Agent/">AI Agent</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Startup-Trends/Artificial-Intelligence/">Artificial Intelligence</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Startup-Trends/Artificial-Intelligence/Web3/">Web3</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Startup-Trends/Automation/">Automation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Startup-Trends/Business-Innovation/">Business Innovation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Startup-Trends/Digital-Economy/">Digital Economy</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Startup-Trends/Digital-Transformation/">Digital Transformation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Startup-Trends/Indie-Maker/">Indie Maker</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Startup-Trends/OPC/">OPC</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Startup-Trends/OPC-Intelligence/">OPC Intelligence</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Startup-Trends/OPC-Reports/">OPC Reports</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Startup-Trends/OPC-Research/">OPC Research</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Startup-Trends/One-Person-Company/">One Person Company</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Startup-Trends/One-Person-Company/">One-Person Company</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Startup-Trends/One-Person-Company/ai-tools/">AI Tools</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Startup-Trends/One-Person-Company/ai-tools/Business-Strategy/">Business Strategy</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Startup-Trends/Solo-Founder-Guide/">Solo Founder Guide</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Startup-Trends/Solopreneur-Guide/">Solopreneur Guide</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Startup-Trends/Technology/">Technology</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Trend-Report/">Trend Report</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship/Weekly-Report/">Weekly Report</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship-Report/">AI Entrepreneurship Report</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship-%C2%B7-OPC-%C2%B7-Digital-Economy/">AI Entrepreneurship · OPC · Digital Economy</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Entrepreneurship-One-Person-Company-Startup-Trends/">AI Entrepreneurship, One-Person Company, Startup Trends</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Industry/">AI Industry</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Industry/Entrepreneurship/">Entrepreneurship</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Industry/Entrepreneurship/Startup-Trends/">Startup Trends</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Industry/Startup-Trends/">Startup Trends</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Industry/Startup-Trends/Business-Innovation/">Business Innovation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Industry/Startup-Trends/OPC/">OPC</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Industry/Startup-Trends/OPC/AI-Agent/">AI Agent</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Industry/Startup-Trends/Productivity-Tools/">Productivity Tools</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Industry-Report/">AI Industry Report</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Industry-Report/Startup-Trends/">Startup Trends</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Industry-Report/Startup-Trends/Digital-Transformation/">Digital Transformation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Industry-Report/Startup-Trends/One-Person-Company/">One-Person Company</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-OPC-Weekly-Report/">AI OPC Weekly Report</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/">AI Startup</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/Entrepreneurship/">Entrepreneurship</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/Entrepreneurship/Business-Innovation/">Business Innovation</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/Entrepreneurship/Business-Innovation/One-Person-Company/">One-Person Company</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/OPC/">OPC</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/OPC/Entrepreneurship/">Entrepreneurship</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/OPC/Entrepreneurship/China-Tech/">China Tech</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/OPC/Solo-Founder/">Solo Founder</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/OPC/Solo-Founder/AI-Trend/">AI Trend</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/OPC/Solopreneur/">Solopreneur</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/OPC/Solopreneur/AI-Agent/">AI Agent</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/OPC/%E5%88%9B%E4%B8%9A%E8%B6%8B%E5%8A%BF/">创业趋势</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/OPC-Monitoring/">OPC Monitoring</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/OPC-Monitoring/Solo-Founder-Trends/">Solo Founder Trends</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/OPC-Trend/">OPC Trend</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/OPC-Trend/One-Person-Company/">One-Person Company</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/OPC-Trend/One-Person-Company/China-AI-Policy/">China AI Policy</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/OPC-Trend-Report/">OPC Trend Report</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/One-Person-Company/">One Person Company</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/One-Person-Company/Solopreneur/">Solopreneur</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/One-Person-Company/">One-Person Company</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/One-Person-Company/Solo-Founder/">Solo Founder</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/One-Person-Company/Solopreneur/">Solopreneur</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/Solo-Founder/">Solo Founder</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/Solo-Founder/OPC/">OPC</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/Solo-Founder/OPC/AI-Agent/">AI Agent</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/Solopreneur/">Solopreneur</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/Solopreneur/Automation/">Automation</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/Solopreneur/OPC/">OPC</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup/Solopreneur/OPC/Indie-Maker/">Indie Maker</a></li></ul></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup-Trends/">AI Startup Trends</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup-Trends/OPC-Monitor/">OPC Monitor</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup-Trends/OPC-Monitor/Solo-Founder/">Solo Founder</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup-Trends/OPC-Monitoring-Report/">OPC Monitoring Report</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup-Trends/OPC-Weekly-Report/">OPC Weekly Report</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup-Trends/One-Person-Company/">One-Person Company</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup-Trends/One-Person-Company/Entrepreneurship/">Entrepreneurship</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup-Trends/One-Person-Company/Policy-Analysis/">Policy Analysis</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup-Trends/One-Person-Company/Policy-Analysis/Entrepreneurship/">Entrepreneurship</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startup-Trends/One-Person-Company/Solopreneurship/">Solopreneurship</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/">AI Startups</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/Business-Trends/">Business Trends</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/Business-Trends/Entrepreneurship/">Entrepreneurship</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/Entrepreneurship/">Entrepreneurship</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/Entrepreneurship/AI-Trends/">AI Trends</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/Entrepreneurship/OPC/">OPC</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/Entrepreneurship/OPC/AI-Industry/">AI Industry</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/OPC/">OPC</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/OPC/Entrepreneurship/">Entrepreneurship</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/OPC/Solopreneur/">Solopreneur</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/OPC/Solopreneur/One-Person-Company/">One Person Company</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/OPC-Trend-Report/">OPC Trend Report</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/OPC-Trend-Report/Weekly-Digest/">Weekly Digest</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/OPC-Trends/">OPC Trends</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/OPC-Trends/Business-Innovation/">Business Innovation</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/OPC-Trends/Business-Innovation/One-Person-Company/">One-Person Company</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/One-Person-Business/">One-Person Business</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/One-Person-Business/Industry-Trends/">Industry Trends</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/One-Person-Business/Industry-Trends/Entrepreneurial-Insights/">Entrepreneurial Insights</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/One-Person-Company/">One-Person Company</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/One-Person-Company/Business-Trend/">Business Trend</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/One-Person-Company/Business-Trend/Digital-Economy/">Digital Economy</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Startups/One-Person-Company/Solopreneur/">Solopreneur</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Trends/">AI Trends</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Trends/OPC-Report/">OPC Report</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Trends/OPC-Report/Startup-Ecosystem/">Startup Ecosystem</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Trends/OPC-Report/Startup-Ecosystem/AI-Entrepreneurship/">AI Entrepreneurship</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Trends/Startup/">Startup</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Trends/Startup/Business-Innovation/">Business Innovation</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Trends/Startup/Business-Innovation/AI-Technology/">AI Technology</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI-Trends/Startup/Business-Innovation/Artificial-Intelligence/">Artificial Intelligence</a></li></ul></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI%E5%88%9B%E4%B8%9A/">AI创业</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI%E5%88%9B%E4%B8%9A/OPC/">OPC</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI%E5%88%9B%E4%B8%9A/OPC/%E4%B8%80%E4%BA%BA%E5%85%AC%E5%8F%B8/">一人公司</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI%E5%88%9B%E4%B8%9A/OPC-Monitor/">OPC Monitor</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/AI%E5%88%9B%E4%B8%9A/%E4%B8%80%E4%BA%BA%E5%85%AC%E5%8F%B8/">一人公司</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AI%E5%88%9B%E4%B8%9A/%E4%B8%80%E4%BA%BA%E5%85%AC%E5%8F%B8/OPC%E8%B6%8B%E5%8A%BF/">OPC趋势</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Artificial-Intelligence/">Artificial Intelligence</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Artificial-Intelligence/Entrepreneurship/">Entrepreneurship</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Artificial-Intelligence/Entrepreneurship/OPC/">OPC</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Artificial-Intelligence/Entrepreneurship/OPC/Solopreneur/">Solopreneur</a></li></ul></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/">OPC</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/AI/">AI</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/AI/Entrepreneurship/">Entrepreneurship</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/AI/Entrepreneurship/Solopreneur/">Solopreneur</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/AI-Entrepreneurship/">AI Entrepreneurship</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/AI-Entrepreneurship/Solo-Founder/">Solo Founder</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/AI-Entrepreneurship/Solo-Founder/One-Person-Company/">One-Person Company</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/AI-Entrepreneurship/Solopreneur/">Solopreneur</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/AI-Entrepreneurship/Solopreneur/One-Person-Company/">One-Person Company</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/AI-Entrepreneurship/Solopreneur/One-Person-Company/ai-tools/">AI Tools</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/AI-Entrepreneurship/Solopreneur/Startup-Trends/">Startup Trends</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/AI-Startup/">AI Startup</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/AI-Startup/Solo-Entrepreneurship/">Solo Entrepreneurship</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/AI-Startup/Solo-Founder/">Solo Founder</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/AI-Startup/Solo-Founder/Agent/">Agent</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/AI-Startup/Solo-Founder/Trend-Report/">Trend Report</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/AI-Startup/Solopreneur/">Solopreneur</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/AI-Startup/Solopreneur/AI-Agent/">AI Agent</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/AI-Startup/Solopreneur/AI-Agent/AI-Policy/">AI Policy</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/AI-Startup/Solopreneur/One-Person-Company/">One Person Company</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/AI-Startups/">AI Startups</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/AI-Trends/">AI Trends</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/AI-Trends/Entrepreneurship/">Entrepreneurship</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/One-Person-Company/">One Person Company</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/One-Person-Company/AI-Entrepreneurship/">AI Entrepreneurship</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/One-Person-Company/AI-Entrepreneurship/Solopreneur/">Solopreneur</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/One-Person-Company/AI-Entrepreneurship/Solopreneur/AI-Agent/">AI Agent</a></li></ul></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/One-Person-Company/">One-Person Company</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/One-Person-Company/AI-Entrepreneurship/">AI Entrepreneurship</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/One-Person-Company/AI-Entrepreneurship/Solopreneur/">Solopreneur</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/One-Person-Company/AI-Entrepreneurship/Solopreneur/AI-Agent/">AI Agent</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC/One-Person-Company/AI-Entrepreneurship/Solopreneur/Indie-Hacker/">Indie Hacker</a></li></ul></li></ul></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Monitor/">OPC Monitor</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Monitor/AI-Entrepreneurship/">AI Entrepreneurship</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Monitoring/">OPC Monitoring</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Report/">OPC Report</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Report/AI-Entrepreneurship/">AI Entrepreneurship</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Report/AI-Trends/">AI Trends</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Report/Weekly-Digest/">Weekly Digest</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Report/Weekly-Monitor/">Weekly Monitor</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Report/Weekly-Trend/">Weekly Trend</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Signals/">OPC Signals</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Tracking/">OPC Tracking</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Trend-Report/">OPC Trend Report</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Trend-Report/AI-Entrepreneurship/">AI Entrepreneurship</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Trends/">OPC Trends</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Trends/AI-Entrepreneurship/">AI Entrepreneurship</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Trends/AI-Entrepreneurship/Solo-Founder/">Solo Founder</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Trends/AI-Entrepreneurship/Solo-Founders/">Solo Founders</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Trends/AI-Startup/">AI Startup</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Trends/AI-Startup/Solopreneur/">Solopreneur</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Trends/AI-Startup-Report/">AI Startup Report</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Update/">OPC Update</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Update/AI-Entrepreneurship/">AI Entrepreneurship</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Weekly-Report/">OPC Weekly Report</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Weekly-Report/AI-Entrepreneurship/">AI Entrepreneurship</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Weekly-Report/AI-Entrepreneurship-Trends/">AI Entrepreneurship Trends</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Weekly-Report/AI-Entrepreneurship-Trends/Solopreneur-Strategy/">Solopreneur Strategy</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Weekly-Report/AI-Trends/">AI Trends</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Report/">OPC-Report</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OPC-Report/Weekly/">Weekly</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/One-Person-Company/">One-Person Company</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/One-Person-Company/AI-Entrepreneurship/">AI Entrepreneurship</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/One-Person-Company/AI-Entrepreneurship/Solo-Founder/">Solo Founder</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/One-Person-Company/AI-Entrepreneurship/Solo-Founder/Indie-Hacker/">Indie Hacker</a></li></ul></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Policy/">Policy</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Policy/AI/">AI</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Policy/AI/Solo-Business/">Solo Business</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Trend-Report/">Trend Report</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Trend-Report/AI-Entrepreneurship/">AI Entrepreneurship</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Trends-Report/">Trends Report</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Trends-Report/AI-Entrepreneurship/">AI Entrepreneurship</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Weekly-Report/">Weekly Report</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Weekly-Report/AI-Trends/">AI Trends</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/ai-entrepreneurship/">ai-entrepreneurship</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ai-entrepreneurship/indie-maker/">indie-maker</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ai-entrepreneurship/indie-maker/automation/">automation</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/ai-entrepreneurship/solopreneur/">solopreneur</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/ai-entrepreneurship/solopreneur/automation/">automation</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/monitoring/">monitoring</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/monitoring/AI-business/">AI-business</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/opc/">opc</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/opc/ai-agent/">ai-agent</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/opc/ai-agent/startup/">startup</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/opc/ai-agent/startup/solopreneur/">solopreneur</a></li></ul></li></ul></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/10-billion-USD-OPC/" rel="tag">10 billion USD OPC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/15th-Five-Year-Plan/" rel="tag">15th Five-Year Plan</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/2026/" rel="tag">2026</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/2026-AI-Trends/" rel="tag">2026 AI Trends</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/2026-AI-first-year/" rel="tag">2026 AI first year</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/2026-Trends/" rel="tag">2026 Trends</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/2026-trends/" rel="tag">2026 trends</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/2026-trends/" rel="tag">2026-trends</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI/" rel="tag">AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Agent/" rel="tag">AI Agent</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Agents/" rel="tag">AI Agents</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Business/" rel="tag">AI Business</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Business-Model/" rel="tag">AI Business Model</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-CEO/" rel="tag">AI CEO</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Coding/" rel="tag">AI Coding</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Ecosystem/" rel="tag">AI Ecosystem</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Employee/" rel="tag">AI Employee</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Entrepreneurship/" rel="tag">AI Entrepreneurship</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Entrepreneurship-2026/" rel="tag">AI Entrepreneurship 2026</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Factory/" rel="tag">AI Factory</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Financing/" rel="tag">AI Financing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Monetization/" rel="tag">AI Monetization</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-OPC/" rel="tag">AI OPC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Regulation/" rel="tag">AI Regulation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-SaaS/" rel="tag">AI SaaS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Short-Film/" rel="tag">AI Short Film</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Solopreneur/" rel="tag">AI Solopreneur</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Startup/" rel="tag">AI Startup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Startup-2026/" rel="tag">AI Startup 2026</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Startup-Trends/" rel="tag">AI Startup Trends</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Super-Individual/" rel="tag">AI Super Individual</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Tools/" rel="tag">AI Tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Trends/" rel="tag">AI Trends</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Unicorn/" rel="tag">AI Unicorn</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-agent/" rel="tag">AI agent</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-agents/" rel="tag">AI agents</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-automation/" rel="tag">AI automation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-coding/" rel="tag">AI coding</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-employees/" rel="tag">AI employees</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-entrepreneurship/" rel="tag">AI entrepreneurship</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-policy/" rel="tag">AI policy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-startup/" rel="tag">AI startup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-tools/" rel="tag">AI tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-tools-2026/" rel="tag">AI tools 2026</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-Powered-Business/" rel="tag">AI-Powered Business</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-agent/" rel="tag">AI-agent</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-agents/" rel="tag">AI-agents</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-coding/" rel="tag">AI-coding</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-entrepreneurship/" rel="tag">AI-entrepreneurship</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-startup/" rel="tag">AI-startup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI-tools/" rel="tag">AI-tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AIGC/" rel="tag">AIGC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AIOPC/" rel="tag">AIOPC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI%E5%88%9B%E4%B8%9A/" rel="tag">AI创业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI%E5%B7%A5%E5%85%B7/" rel="tag">AI工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI%E5%B7%A5%E5%85%B7%E9%93%BE/" rel="tag">AI工具链</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/AI%E8%87%AA%E5%8A%A8%E5%8C%96/" rel="tag">AI自动化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Accio-Work/" rel="tag">Accio Work</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Agent-Engineering/" rel="tag">Agent Engineering</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Agentic-AI/" rel="tag">Agentic AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Agentic-Workflows/" rel="tag">Agentic Workflows</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Anthropic/" rel="tag">Anthropic</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Artificial-Intelligence/" rel="tag">Artificial Intelligence</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Automation/" rel="tag">Automation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Automation-Workflow/" rel="tag">Automation Workflow</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Autonomous-Company/" rel="tag">Autonomous Company</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Base44/" rel="tag">Base44</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bika-ai/" rel="tag">Bika.ai</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bootstrap/" rel="tag">Bootstrap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bootstrapped/" rel="tag">Bootstrapped</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bootstrapped-SaaS/" rel="tag">Bootstrapped SaaS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bootstrapped-Startup/" rel="tag">Bootstrapped Startup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bootstrapping/" rel="tag">Bootstrapping</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Business-Automation/" rel="tag">Business Automation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Business-Innovation/" rel="tag">Business Innovation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Business-Model/" rel="tag">Business Model</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ChatGPT/" rel="tag">ChatGPT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/China/" rel="tag">China</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/China-AI/" rel="tag">China AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/China-AI-Policy/" rel="tag">China AI Policy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/China-Tech/" rel="tag">China Tech</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/China-Tech-Policy/" rel="tag">China Tech Policy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/China-policy/" rel="tag">China policy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/China-tech/" rel="tag">China tech</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chinese-AI/" rel="tag">Chinese AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chinese-AI-Models/" rel="tag">Chinese AI Models</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chongqing/" rel="tag">Chongqing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chongqing-Nanan/" rel="tag">Chongqing Nanan</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chongqing-Policy/" rel="tag">Chongqing Policy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Claude/" rel="tag">Claude</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Claude-Code/" rel="tag">Claude Code</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Claude-for-Small-Business/" rel="tag">Claude for Small Business</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Coding-Tools/" rel="tag">Coding Tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Compute-Voucher/" rel="tag">Compute Voucher</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Coze/" rel="tag">Coze</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Cursor/" rel="tag">Cursor</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Decision-AI/" rel="tag">Decision AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DeepSeek/" rel="tag">DeepSeek</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Digital-Employee/" rel="tag">Digital Employee</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Digital-Employees/" rel="tag">Digital Employees</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Digital-Entrepreneurship/" rel="tag">Digital Entrepreneurship</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Digital-Nomad/" rel="tag">Digital Nomad</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Digital-Products/" rel="tag">Digital Products</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Digital-Transformation/" rel="tag">Digital Transformation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Domestic-Large-Model/" rel="tag">Domestic Large Model</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Entrepreneurship/" rel="tag">Entrepreneurship</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Entrepreneurship-2026/" rel="tag">Entrepreneurship 2026</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Entrepreneurship-Trends/" rel="tag">Entrepreneurship Trends</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GEO/" rel="tag">GEO</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GPT-5-6/" rel="tag">GPT-5.6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitHub-Copilot/" rel="tag">GitHub Copilot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Guangdong-AI-policy/" rel="tag">Guangdong AI policy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HACR/" rel="tag">HACR</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hainan-Free-Trade-Port/" rel="tag">Hainan Free Trade Port</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hainan-Policy/" rel="tag">Hainan Policy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hangzhou/" rel="tag">Hangzhou</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hong-Kong/" rel="tag">Hong Kong</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Human-AI-Cost-Ratio/" rel="tag">Human-AI Cost Ratio</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Independent-Developer/" rel="tag">Independent Developer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Indie-Developer/" rel="tag">Indie Developer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Indie-Hacker/" rel="tag">Indie Hacker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IndieHacker/" rel="tag">IndieHacker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Intelligent-Agent/" rel="tag">Intelligent Agent</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kling-AI/" rel="tag">Kling AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LangGraph/" rel="tag">LangGraph</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Lovable/" rel="tag">Lovable</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Low-Code/" rel="tag">Low-Code</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MCP/" rel="tag">MCP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MCP-protocol/" rel="tag">MCP protocol</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Marc-Lou/" rel="tag">Marc Lou</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Market-Trends/" rel="tag">Market Trends</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Micro-SaaS/" rel="tag">Micro SaaS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Micro-SaaS/" rel="tag">Micro-SaaS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Microsoft-Frontier/" rel="tag">Microsoft-Frontier</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NVIDIA/" rel="tag">NVIDIA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/No-Code/" rel="tag">No-Code</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OPC/" rel="tag">OPC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OPC-Challenge/" rel="tag">OPC Challenge</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OPC-Community/" rel="tag">OPC Community</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OPC-Ecosystem/" rel="tag">OPC Ecosystem</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OPC-Hub-Hong-Kong/" rel="tag">OPC Hub Hong Kong</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OPC-Standard/" rel="tag">OPC Standard</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OPC%E7%A4%BE%E5%8C%BA/" rel="tag">OPC社区</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OPE/" rel="tag">OPE</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/One-Person-Company/" rel="tag">One Person Company</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/One-Person-Company/" rel="tag">One-Person Company</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenCSG/" rel="tag">OpenCSG</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OpenClaw/" rel="tag">OpenClaw</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Personal-Branding/" rel="tag">Personal Branding</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Policy/" rel="tag">Policy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Policy-Support/" rel="tag">Policy Support</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Product-Hunt/" rel="tag">Product Hunt</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SaaS/" rel="tag">SaaS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Seede-AI/" rel="tag">Seede AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Side-Hustle/" rel="tag">Side Hustle</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Solo-Business/" rel="tag">Solo Business</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Solo-CEO/" rel="tag">Solo CEO</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Solo-Entrepreneur/" rel="tag">Solo Entrepreneur</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Solo-Founder/" rel="tag">Solo Founder</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Solo-Unicorn/" rel="tag">Solo Unicorn</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Solopreneur/" rel="tag">Solopreneur</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Solopreneur-AI/" rel="tag">Solopreneur AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Startup/" rel="tag">Startup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Startup-Policy/" rel="tag">Startup Policy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Startup-Trends/" rel="tag">Startup Trends</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Super-Individual/" rel="tag">Super Individual</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TRAE/" rel="tag">TRAE</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tsinghua-University-OPC-Report/" rel="tag">Tsinghua University OPC Report</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tycoon/" rel="tag">Tycoon</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Unicorn/" rel="tag">Unicorn</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Venture-Capital/" rel="tag">Venture Capital</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vertical-AI/" rel="tag">Vertical AI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vibe-Coding/" rel="tag">Vibe Coding</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WAIC/" rel="tag">WAIC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WAIC-2026/" rel="tag">WAIC 2026</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WAIC-OPC-Challenge/" rel="tag">WAIC OPC Challenge</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WAIC2026/" rel="tag">WAIC2026</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Weekly-Report/" rel="tag">Weekly Report</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windsurf/" rel="tag">Windsurf</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WorkBuddy/" rel="tag">WorkBuddy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/World-AI-Conference/" rel="tag">World AI Conference</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Y-Combinator/" rel="tag">Y Combinator</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Yunnan/" rel="tag">Yunnan</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ZHC/" rel="tag">ZHC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/agentic-workflows/" rel="tag">agentic workflows</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ai-agent/" rel="tag">ai-agent</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ai-startup/" rel="tag">ai-startup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/artificial-intelligence/" rel="tag">artificial intelligence</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/automation/" rel="tag">automation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/automation-tools/" rel="tag">automation tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bootstrapped-SaaS/" rel="tag">bootstrapped SaaS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bootstrapped-startup/" rel="tag">bootstrapped startup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bootstrapping/" rel="tag">bootstrapping</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/compute-vouchers/" rel="tag">compute vouchers</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/digital-employees/" rel="tag">digital employees</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/digital-entrepreneurship/" rel="tag">digital entrepreneurship</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/digital-employees/" rel="tag">digital-employees</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/entrepreneurship/" rel="tag">entrepreneurship</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/entrepreneurship-trends/" rel="tag">entrepreneurship trends</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/independent-developer/" rel="tag">independent developer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/indie-hacker/" rel="tag">indie hacker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/indie-maker/" rel="tag">indie maker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/indie-developer/" rel="tag">indie-developer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/indie-hacker/" rel="tag">indie-hacker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/indie-maker/" rel="tag">indie-maker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/micro-SaaS/" rel="tag">micro SaaS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/micro-SaaS/" rel="tag">micro-SaaS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/micro-saas/" rel="tag">micro-saas</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/monitoring/" rel="tag">monitoring</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/n8n/" rel="tag">n8n</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/no-code/" rel="tag">no-code</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/one-person-company/" rel="tag">one person company</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/one-person-company/" rel="tag">one-person company</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/one-person-company/" rel="tag">one-person-company</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/opc/" rel="tag">opc</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/passive-income/" rel="tag">passive income</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/policy/" rel="tag">policy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/report/" rel="tag">report</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/solo-founder/" rel="tag">solo founder</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/solo-founder/" rel="tag">solo-founder</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/solopreneur/" rel="tag">solopreneur</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/startup/" rel="tag">startup</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/startup-policy/" rel="tag">startup policy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/startup-trends/" rel="tag">startup trends</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/startup-trend/" rel="tag">startup-trend</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/startup-trends/" rel="tag">startup-trends</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/startup-trends-2026/" rel="tag">startup-trends-2026</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/trends/" rel="tag">trends</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/v0-dev/" rel="tag">v0.dev</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vertical-SaaS/" rel="tag">vertical SaaS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vertical-agent/" rel="tag">vertical agent</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vibe-coding/" rel="tag">vibe coding</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%80%E4%BA%BA%E5%85%AC%E5%8F%B8/" rel="tag">一人公司</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%88%9B%E4%B8%9A/" rel="tag">创业</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E5%AD%97%E5%91%98%E5%B7%A5/" rel="tag">数字员工</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%A0%E6%9D%86%E5%8C%96%E7%B3%BB%E7%BB%9F/" rel="tag">杠杆化系统</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%AD%E5%B7%9E/" rel="tag">杭州</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%B7%E5%8D%97%E8%87%AA%E8%B4%B8%E6%B8%AF/" rel="tag">海南自贸港</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E8%80%85/" rel="tag">独立开发者</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B6%85%E7%BA%A7%E4%B8%AA%E4%BD%93/" rel="tag">超级个体</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+
+      <a href="/tags/OPC/">OPC</a>
+
+      <a href="/tags/Solopreneur/">Solopreneur</a>
+
+      <a href="/tags/AI-Agent/">AI Agent</a>
+
+      <a href="/tags/One-Person-Company/">One-Person Company</a>
+
+      <a href="/tags/Independent-Developer/">Independent Developer</a>
+
+      <a href="/tags/AI-Tools/">AI Tools</a>
+
+      <a href="/tags/Cursor/">Cursor</a>
+
+      <a href="/tags/Windsurf/">Windsurf</a>
+
+      <a href="/tags/TRAE/">TRAE</a>
+
+      <a href="/tags/Indie-Hacker/">Indie Hacker</a>
+
+      <a href="/tags/AI%E5%88%9B%E4%B8%9A/">AI创业</a>
+
+      <a href="/tags/%E4%B8%80%E4%BA%BA%E5%85%AC%E5%8F%B8/">一人公司</a>
+
+      <a href="/tags/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E8%80%85/">独立开发者</a>
+
+      <a href="/tags/One-Person-Company/">One Person Company</a>
+
+      <a href="/tags/AI-Entrepreneurship/">AI Entrepreneurship</a>
+
+      <a href="/tags/Solo-Entrepreneur/">Solo Entrepreneur</a>
+
+      <a href="/tags/2026-Trends/">2026 Trends</a>
+
+      <a href="/tags/NVIDIA/">NVIDIA</a>
+
+      <a href="/tags/WAIC/">WAIC</a>
+
+      <a href="/tags/AI-Factory/">AI Factory</a>
+
+      <a href="/tags/AI-Startup/">AI Startup</a>
+
+      <a href="/tags/Super-Individual/">Super Individual</a>
+
+      <a href="/tags/OPE/">OPE</a>
+
+      <a href="/tags/Seede-AI/">Seede AI</a>
+
+      <a href="/tags/Startup-Trends/">Startup Trends</a>
+
+      <a href="/tags/Micro-SaaS/">Micro SaaS</a>
+
+      <a href="/tags/Entrepreneurship/">Entrepreneurship</a>
+
+      <a href="/tags/Low-Code/">Low-Code</a>
+
+      <a href="/tags/SaaS/">SaaS</a>
+
+      <a href="/tags/WAIC-2026/">WAIC 2026</a>
+
+      <a href="/tags/Entrepreneurship-Trends/">Entrepreneurship Trends</a>
+
+      <a href="/tags/Artificial-Intelligence/">Artificial Intelligence</a>
+
+      <a href="/tags/Bootstrapped-Startup/">Bootstrapped Startup</a>
+
+      <a href="/tags/AI-Trends/">AI Trends</a>
+
+      <a href="/tags/Weekly-Report/">Weekly Report</a>
+
+      <a href="/tags/one-person-company/">one-person-company</a>
+
+      <a href="/tags/solopreneur/">solopreneur</a>
+
+      <a href="/tags/AI-startup/">AI-startup</a>
+
+      <a href="/tags/indie-hacker/">indie-hacker</a>
+
+      <a href="/tags/2026-trends/">2026-trends</a>
+
+      <a href="/tags/automation/">automation</a>
+
+      <a href="/tags/AI-agents/">AI-agents</a>
+
+      <a href="/tags/ai-agent/">ai-agent</a>
+
+      <a href="/tags/solo-founder/">solo-founder</a>
+
+      <a href="/tags/startup-trends/">startup-trends</a>
+
+      <a href="/tags/entrepreneurship/">entrepreneurship</a>
+
+      <a href="/tags/2026/">2026</a>
+
+      <a href="/tags/OPC-Ecosystem/">OPC Ecosystem</a>
+
+      <a href="/tags/Chongqing/">Chongqing</a>
+
+      <a href="/tags/Solo-Founder/">Solo Founder</a>
+
+      <a href="/tags/China-Tech-Policy/">China Tech Policy</a>
+
+      <a href="/tags/v0-dev/">v0.dev</a>
+
+      <a href="/tags/LangGraph/">LangGraph</a>
+
+      <a href="/tags/OpenClaw/">OpenClaw</a>
+
+      <a href="/tags/Marc-Lou/">Marc Lou</a>
+
+      <a href="/tags/Chinese-AI-Models/">Chinese AI Models</a>
+
+      <a href="/tags/Hainan-Free-Trade-Port/">Hainan Free Trade Port</a>
+
+      <a href="/tags/Chongqing-Nanan/">Chongqing Nanan</a>
+
+      <a href="/tags/WAIC-OPC-Challenge/">WAIC OPC Challenge</a>
+
+      <a href="/tags/Bootstrapped/">Bootstrapped</a>
+
+      <a href="/tags/Digital-Entrepreneurship/">Digital Entrepreneurship</a>
+
+      <a href="/tags/Business-Model/">Business Model</a>
+
+      <a href="/tags/Personal-Branding/">Personal Branding</a>
+
+      <a href="/tags/Digital-Products/">Digital Products</a>
+
+      <a href="/tags/AI-startup/">AI startup</a>
+
+      <a href="/tags/one-person-company/">one-person company</a>
+
+      <a href="/tags/GPT-5-6/">GPT-5.6</a>
+
+      <a href="/tags/AI/">AI</a>
+
+      <a href="/tags/startup-trends/">startup trends</a>
+
+      <a href="/tags/AI-agents/">AI agents</a>
+
+      <a href="/tags/AI-tools/">AI tools</a>
+
+      <a href="/tags/indie-hacker/">indie hacker</a>
+
+      <a href="/tags/passive-income/">passive income</a>
+
+      <a href="/tags/solo-founder/">solo founder</a>
+
+      <a href="/tags/2026-AI-Trends/">2026 AI Trends</a>
+
+      <a href="/tags/Digital-Employee/">Digital Employee</a>
+
+      <a href="/tags/Digital-Employees/">Digital Employees</a>
+
+      <a href="/tags/AI-Agents/">AI Agents</a>
+
+      <a href="/tags/Bootstrap/">Bootstrap</a>
+
+      <a href="/tags/ChatGPT/">ChatGPT</a>
+
+      <a href="/tags/Claude/">Claude</a>
+
+      <a href="/tags/Anthropic/">Anthropic</a>
+
+      <a href="/tags/micro-SaaS/">micro-SaaS</a>
+
+      <a href="/tags/AI-agent/">AI-agent</a>
+
+      <a href="/tags/Bootstrapping/">Bootstrapping</a>
+
+      <a href="/tags/Indie-Developer/">Indie Developer</a>
+
+      <a href="/tags/China-Tech/">China Tech</a>
+
+      <a href="/tags/AI-agent/">AI agent</a>
+
+      <a href="/tags/startup-policy/">startup policy</a>
+
+      <a href="/tags/OPC%E7%A4%BE%E5%8C%BA/">OPC社区</a>
+
+      <a href="/tags/AI%E5%B7%A5%E5%85%B7%E9%93%BE/">AI工具链</a>
+
+      <a href="/tags/%E8%B6%85%E7%BA%A7%E4%B8%AA%E4%BD%93/">超级个体</a>
+
+      <a href="/tags/China-AI-Policy/">China AI Policy</a>
+
+      <a href="/tags/Hainan-Policy/">Hainan Policy</a>
+
+      <a href="/tags/Coding-Tools/">Coding Tools</a>
+
+      <a href="/tags/AI%E5%B7%A5%E5%85%B7/">AI工具</a>
+
+      <a href="/tags/IndieHacker/">IndieHacker</a>
+
+      <a href="/tags/AI%E8%87%AA%E5%8A%A8%E5%8C%96/">AI自动化</a>
+
+      <a href="/tags/%E6%9D%A0%E6%9D%86%E5%8C%96%E7%B3%BB%E7%BB%9F/">杠杆化系统</a>
+
+      <a href="/tags/AI-Powered-Business/">AI-Powered Business</a>
+
+      <a href="/tags/Product-Hunt/">Product Hunt</a>
+
+      <a href="/tags/DeepSeek/">DeepSeek</a>
+
+      <a href="/tags/Digital-Nomad/">Digital Nomad</a>
+
+      <a href="/tags/Automation/">Automation</a>
+
+      <a href="/tags/Chongqing-Policy/">Chongqing Policy</a>
+
+      <a href="/tags/AI-Short-Film/">AI Short Film</a>
+
+      <a href="/tags/GitHub-Copilot/">GitHub Copilot</a>
+
+      <a href="/tags/Unicorn/">Unicorn</a>
+
+      <a href="/tags/digital-entrepreneurship/">digital entrepreneurship</a>
+
+      <a href="/tags/vertical-SaaS/">vertical SaaS</a>
+
+      <a href="/tags/Market-Trends/">Market Trends</a>
+
+      <a href="/tags/Solo-Unicorn/">Solo Unicorn</a>
+
+      <a href="/tags/AI-Ecosystem/">AI Ecosystem</a>
+
+      <a href="/tags/Lovable/">Lovable</a>
+
+      <a href="/tags/Base44/">Base44</a>
+
+      <a href="/tags/Policy-Support/">Policy Support</a>
+
+      <a href="/tags/one-person-company/">one person company</a>
+
+      <a href="/tags/AI-entrepreneurship/">AI entrepreneurship</a>
+
+      <a href="/tags/10-billion-USD-OPC/">10 billion USD OPC</a>
+
+      <a href="/tags/2026-AI-first-year/">2026 AI first year</a>
+
+      <a href="/tags/startup/">startup</a>
+
+      <a href="/tags/monitoring/">monitoring</a>
+
+      <a href="/tags/report/">report</a>
+
+      <a href="/tags/OpenCSG/">OpenCSG</a>
+
+      <a href="/tags/Intelligent-Agent/">Intelligent Agent</a>
+
+      <a href="/tags/Startup-Policy/">Startup Policy</a>
+
+      <a href="/tags/Chinese-AI/">Chinese AI</a>
+
+      <a href="/tags/Domestic-Large-Model/">Domestic Large Model</a>
+
+      <a href="/tags/Business-Automation/">Business Automation</a>
+
+      <a href="/tags/Digital-Transformation/">Digital Transformation</a>
+
+      <a href="/tags/trends/">trends</a>
+
+      <a href="/tags/entrepreneurship-trends/">entrepreneurship trends</a>
+
+      <a href="/tags/micro-saas/">micro-saas</a>
+
+      <a href="/tags/vertical-agent/">vertical agent</a>
+
+      <a href="/tags/micro-SaaS/">micro SaaS</a>
+
+      <a href="/tags/no-code/">no-code</a>
+
+      <a href="/tags/AI-coding/">AI coding</a>
+
+      <a href="/tags/2026-trends/">2026 trends</a>
+
+      <a href="/tags/startup-trend/">startup-trend</a>
+
+      <a href="/tags/AI-coding/">AI-coding</a>
+
+      <a href="/tags/Tsinghua-University-OPC-Report/">Tsinghua University OPC Report</a>
+
+      <a href="/tags/AI-Business-Model/">AI Business Model</a>
+
+      <a href="/tags/AI-Financing/">AI Financing</a>
+
+      <a href="/tags/AI-Solopreneur/">AI Solopreneur</a>
+
+      <a href="/tags/policy/">policy</a>
+
+      <a href="/tags/AI-Entrepreneurship-2026/">AI Entrepreneurship 2026</a>
+
+      <a href="/tags/independent-developer/">independent developer</a>
+
+      <a href="/tags/bootstrapping/">bootstrapping</a>
+
+      <a href="/tags/Solo-Business/">Solo Business</a>
+
+      <a href="/tags/digital-employees/">digital employees</a>
+
+      <a href="/tags/Agent-Engineering/">Agent Engineering</a>
+
+      <a href="/tags/WAIC2026/">WAIC2026</a>
+
+      <a href="/tags/%E6%B5%B7%E5%8D%97%E8%87%AA%E8%B4%B8%E6%B8%AF/">海南自贸港</a>
+
+      <a href="/tags/AI-tools-2026/">AI tools 2026</a>
+
+      <a href="/tags/Kling-AI/">Kling AI</a>
+
+      <a href="/tags/compute-vouchers/">compute vouchers</a>
+
+      <a href="/tags/AI-tools/">AI-tools</a>
+
+      <a href="/tags/GEO/">GEO</a>
+
+      <a href="/tags/Microsoft-Frontier/">Microsoft-Frontier</a>
+
+      <a href="/tags/Vibe-Coding/">Vibe Coding</a>
+
+      <a href="/tags/Automation-Workflow/">Automation Workflow</a>
+
+      <a href="/tags/Claude-Code/">Claude Code</a>
+
+      <a href="/tags/AIGC/">AIGC</a>
+
+      <a href="/tags/Solopreneur-AI/">Solopreneur AI</a>
+
+      <a href="/tags/AI-Business/">AI Business</a>
+
+      <a href="/tags/digital-employees/">digital-employees</a>
+
+      <a href="/tags/Agentic-AI/">Agentic AI</a>
+
+      <a href="/tags/Autonomous-Company/">Autonomous Company</a>
+
+      <a href="/tags/AI-Startup-Trends/">AI Startup Trends</a>
+
+      <a href="/tags/AI-entrepreneurship/">AI-entrepreneurship</a>
+
+      <a href="/tags/Side-Hustle/">Side Hustle</a>
+
+      <a href="/tags/AI-Monetization/">AI Monetization</a>
+
+      <a href="/tags/AIOPC/">AIOPC</a>
+
+      <a href="/tags/Compute-Voucher/">Compute Voucher</a>
+
+      <a href="/tags/15th-Five-Year-Plan/">15th Five-Year Plan</a>
+
+      <a href="/tags/AI-Regulation/">AI Regulation</a>
+
+      <a href="/tags/AI-Startup-2026/">AI Startup 2026</a>
+
+      <a href="/tags/MCP/">MCP</a>
+
+      <a href="/tags/Entrepreneurship-2026/">Entrepreneurship 2026</a>
+
+      <a href="/tags/Decision-AI/">Decision AI</a>
+
+      <a href="/tags/%E5%88%9B%E4%B8%9A/">创业</a>
+
+      <a href="/tags/Bootstrapped-SaaS/">Bootstrapped SaaS</a>
+
+      <a href="/tags/AI-Super-Individual/">AI Super Individual</a>
+
+      <a href="/tags/OPC-Challenge/">OPC Challenge</a>
+
+      <a href="/tags/Agentic-Workflows/">Agentic Workflows</a>
+
+      <a href="/tags/indie-maker/">indie maker</a>
+
+      <a href="/tags/agentic-workflows/">agentic workflows</a>
+
+      <a href="/tags/Business-Innovation/">Business Innovation</a>
+
+      <a href="/tags/startup-trends-2026/">startup-trends-2026</a>
+
+      <a href="/tags/artificial-intelligence/">artificial intelligence</a>
+
+      <a href="/tags/AI-OPC/">AI OPC</a>
+
+      <a href="/tags/OPC-Community/">OPC Community</a>
+
+      <a href="/tags/Vertical-AI/">Vertical AI</a>
+
+      <a href="/tags/Coze/">Coze</a>
+
+      <a href="/tags/Solo-CEO/">Solo CEO</a>
+
+      <a href="/tags/HACR/">HACR</a>
+
+      <a href="/tags/AI-employees/">AI employees</a>
+
+      <a href="/tags/bootstrapped-SaaS/">bootstrapped SaaS</a>
+
+      <a href="/tags/AI-policy/">AI policy</a>
+
+      <a href="/tags/automation-tools/">automation tools</a>
+
+      <a href="/tags/MCP-protocol/">MCP protocol</a>
+
+      <a href="/tags/indie-developer/">indie-developer</a>
+
+      <a href="/tags/AI-Employee/">AI Employee</a>
+
+      <a href="/tags/OPC-Standard/">OPC Standard</a>
+
+      <a href="/tags/China-AI/">China AI</a>
+
+      <a href="/tags/Human-AI-Cost-Ratio/">Human-AI Cost Ratio</a>
+
+      <a href="/tags/Accio-Work/">Accio Work</a>
+
+      <a href="/tags/AI-CEO/">AI CEO</a>
+
+      <a href="/tags/Tycoon/">Tycoon</a>
+
+      <a href="/tags/Bika-ai/">Bika.ai</a>
+
+      <a href="/tags/n8n/">n8n</a>
+
+      <a href="/tags/AI-SaaS/">AI SaaS</a>
+
+      <a href="/tags/%E6%9D%AD%E5%B7%9E/">杭州</a>
+
+      <a href="/tags/Hangzhou/">Hangzhou</a>
+
+      <a href="/tags/%E6%95%B0%E5%AD%97%E5%91%98%E5%B7%A5/">数字员工</a>
+
+      <a href="/tags/No-Code/">No-Code</a>
+
+      <a href="/tags/WorkBuddy/">WorkBuddy</a>
+
+      <a href="/tags/Startup/">Startup</a>
+
+      <a href="/tags/vibe-coding/">vibe coding</a>
+
+      <a href="/tags/China-tech/">China tech</a>
+
+      <a href="/tags/Policy/">Policy</a>
+
+      <a href="/tags/ai-startup/">ai-startup</a>
+
+      <a href="/tags/OPC-Hub-Hong-Kong/">OPC Hub Hong Kong</a>
+
+      <a href="/tags/AI-automation/">AI automation</a>
+
+      <a href="/tags/ZHC/">ZHC</a>
+
+      <a href="/tags/Claude-for-Small-Business/">Claude for Small Business</a>
+
+      <a href="/tags/Micro-SaaS/">Micro-SaaS</a>
+
+      <a href="/tags/Hong-Kong/">Hong Kong</a>
+
+      <a href="/tags/World-AI-Conference/">World AI Conference</a>
+
+      <a href="/tags/AI-Unicorn/">AI Unicorn</a>
+
+      <a href="/tags/Venture-Capital/">Venture Capital</a>
+
+      <a href="/tags/Guangdong-AI-policy/">Guangdong AI policy</a>
+
+      <a href="/tags/AI-Coding/">AI Coding</a>
+
+      <a href="/tags/Y-Combinator/">Y Combinator</a>
+
+      <a href="/tags/bootstrapped-startup/">bootstrapped startup</a>
+
+      <a href="/tags/opc/">opc</a>
+
+      <a href="/tags/indie-maker/">indie-maker</a>
+
+      <a href="/tags/China-policy/">China policy</a>
+
+      <a href="/tags/Yunnan/">Yunnan</a>
+
+      <a href="/tags/China/">China</a>
+
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/07/">July 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/06/">June 2026</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/07/17/opc-report-2026-07-17-0933/">WAIC and OpenCSG Launch First Global Challenge for Solo AI Founders</a>
+          </li>
+        
+          <li>
+            <a href="/2026/07/17/opc-report-2026-07-17-0924/">Solo Founders Now Launch Over One-Third of New Startups, Up 53% in Six Years</a>
+          </li>
+        
+          <li>
+            <a href="/2026/07/17/opc-report-2026-07-17-0857/">China Launches First National AI OPC Policy as WAIC 2026 Opens Tomorrow</a>
+          </li>
+        
+          <li>
+            <a href="/2026/07/16/opc-report-2026-07-16-2204/">Two-Person Medvi Targets $1.8B Revenue as One-Person Unicorns Rise</a>
+          </li>
+        
+          <li>
+            <a href="/2026/07/16/opc-report-2026-07-16-1904/">China OPC Market Hits 800 Billion Yuan as Solo Founders Now Run 36.3% of New Companies</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 OPC Observer<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
