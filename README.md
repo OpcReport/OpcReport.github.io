@@ -49,7 +49,7 @@ OPC Report is a Hexo-powered blog that tracks the global rise of the One-Person 
 | Static site generator | [Hexo 8.x](https://hexo.io/) |
 | Theme | hexo-theme-landscape (heavily customized) |
 | Hosting | GitHub Pages (`gh-pages` branch) |
-| Analytics | Google Analytics 4 (`G-92GE48C3Y0`) |
+| Analytics | Google Analytics 4 |
 | Visitor counter | [busuanzi](https://busuanzi.ibruce.info/) |
 | SEO | JSON-LD structured data, Open Graph, canonical URLs, auto sitemap |
 | Search | hexo-generator-search (client-side) |
@@ -161,11 +161,6 @@ A donation card in the footer accepts **USDT on the TRC20 (Tron) network**.
 - Warning text reminds senders to use TRC20 only
 
 > ⚠️ Sending tokens on other networks (ERC20, BEP20, etc.) may result in permanent loss.
-
-## Analytics
-
-Google Analytics 4 is loaded via `gtag.js` on every page.
-Property ID: `G-92GE48C3Y0`. Historical data is preserved — do not reset.
 
 ## Adding a New Report
 
