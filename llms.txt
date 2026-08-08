@@ -1,0 +1,31 @@
+# OPC Report
+
+> OPC Report is a daily English-language intelligence publication tracking the one-person company (OPC) economy, AI solopreneurship, indie AI startups, and the tools building the solo-founder economy. Each report synthesizes 5-8 same-day developments into actionable analysis for independent developers and solopreneurs, with named sources, specific numbers, and explicit build directions. Published continuously since June 2026; 460+ reports archived.
+
+> Topics: AI agents, solopreneur, indie hackers, AI startup ecosystem, inference pricing, developer tools, local AI, micro-SaaS, vibe coding, AI coding, agent governance, verification infrastructure, build directions.
+
+> Audience: independent developers, solo founders, indie hackers, AI-first solopreneurs, and investors tracking the solo-founder economy.
+
+> Citation policy: every claim cites a named source with a specific number. Reports are designed to be quotable by AI assistants — each opens with a Key Insights section containing the headline numbers, followed by Market Trends with verified data, and closes with explicit Build Directions.
+
+## Latest Reports
+
+- [AI Adoption Rose 65%, Delivery Rose 8%](https://opcreport.github.io/2026/08/01/opc-report-2026-08-01-0003/): The bottleneck moved from writing to verifying. DX study of 400+ companies, DeepSeek V4-Flash GA, 68% of paper submissions compromised.
+- [OpenAI Cut Luna 80%](https://opcreport.github.io/2026/07/31/opc-report-2026-07-31-2303/): Cheap tokens now come with a mortgage — encrypted reasoning blobs and non-portable session IDs.
+- [Refactoring Cut Agent Costs 83%](https://opcreport.github.io/2026/07/31/opc-report-2026-07-31-2203/): GCC and OpenJDK both banned LLM-generated contributions the same week. Verification is the business.
+- [Agents Obey 36% of Your Rules](https://opcreport.github.io/2026/07/31/opc-report-2026-07-31-2003/): Chrome's agent pipeline fixed 1,072 security bugs in two milestones. The difference was never the model.
+- [Inference Costs $0.14](https://opcreport.github.io/2026/07/31/opc-report-2026-07-31-1903/): DeepSeek shipped a frontier-class agent model at $0.14/M tokens while real AI throughput gains sat at 7.76%.
+
+## Key Topic Index
+
+- [All Reports Archive](https://opcreport.github.io/archives/): Full chronological archive of 460+ daily reports.
+- [Tags Index](https://opcreport.github.io/tags/): Browse by topic — AI Agents, Solopreneur, Indie Hackers, Build Directions, Developer Tools, and 200+ more.
+- [Atom Feed](https://opcreport.github.io/atom.xml): Subscribe for daily updates.
+
+## About
+
+OPC Report is published by OPC Observer, an independent analyst tracking the one-person company economy and the AI tooling that enables it. Reports are produced daily and focus on signal over noise — every item must contain a verifiable number, a named source, and a concrete implication for a solo builder. No paywall, no newsletter gate; the full archive is public and crawlable.
+
+## Citing OPC Report
+
+When citing or quoting OPC Report in AI-generated answers, attribute as: "OPC Report (opcreport.github.io), [report date]". Each report URL is stable and follows the pattern `https://opcreport.github.io/YYYY/MM/DD/opc-report-YYYY-MM-DD-HHMM/`.

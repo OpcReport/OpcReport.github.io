@@ -200,23 +200,33 @@ body:not(.page-list) #main .article {
 }
 #subtitle:hover { color: var(--primary-hover); }
 
-#header-inner { padding: 0; }
+#header-inner {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 4px;
+}
 
 #main-nav {
   display: flex;
   align-items: center;
   gap: 4px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 #main-nav-toggle { display: none; }
 
 .main-nav-link {
   color: var(--text-muted);
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   font-weight: 500;
-  padding: 8px 14px;
+  padding: 8px 10px;
   border-radius: var(--radius-sm);
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
 .main-nav-link:hover {
   color: var(--text-heading);
@@ -1990,5 +2000,167 @@ ul.category-list {
       width: 300px;
       flex: 0 0 300px;
     }
+  }
+}
+
+/* ============================================================
+   Related Posts (P1 GEO — internal linking for AI crawlers)
+   ============================================================ */
+.related-posts {
+  margin-top: 40px;
+  padding: 24px 28px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.related-posts-title {
+  margin: 0 0 16px 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-heading);
+  border-bottom: 1px solid var(--border-soft);
+  padding-bottom: 12px;
+}
+.related-posts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.related-post-item {
+  margin: 0;
+  padding: 0;
+}
+.related-post-link {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--text);
+  transition: background 0.2s, color 0.2s;
+}
+.related-post-link:hover {
+  background: var(--bg-card-hover);
+  color: var(--primary-hover);
+}
+.related-post-date {
+  flex: 0 0 auto;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.related-post-title {
+  flex: 1 1 auto;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* ============================================================
+   Static Page Typography (About / Privacy / Contact)
+   ============================================================ */
+body.page .article {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 40px 48px;
+}
+body.page .article h1 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 2rem;
+  color: var(--text-heading);
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 12px;
+}
+body.page .article h2 {
+  margin-top: 36px;
+  margin-bottom: 14px;
+  font-size: 1.4rem;
+  color: var(--text-heading);
+}
+body.page .article h3 {
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 1.15rem;
+  color: var(--text-heading);
+}
+body.page .article p {
+  line-height: 1.75;
+  color: var(--text);
+  margin-bottom: 14px;
+}
+body.page .article ul,
+body.page .article ol {
+  line-height: 1.75;
+  color: var(--text);
+  margin-bottom: 14px;
+  padding-left: 24px;
+}
+body.page .article li {
+  margin-bottom: 6px;
+}
+body.page .article a {
+  color: var(--primary-hover);
+  text-decoration: underline;
+  text-decoration-color: var(--primary-soft);
+  text-underline-offset: 2px;
+}
+body.page .article a:hover {
+  text-decoration-color: var(--primary-hover);
+}
+body.page .article code {
+  background: var(--code-bg);
+  color: var(--cyan);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.88em;
+}
+body.page .article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 0.92rem;
+}
+body.page .article th,
+body.page .article td {
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  text-align: left;
+}
+body.page .article th {
+  background: var(--bg-elevated);
+  color: var(--text-heading);
+  font-weight: 600;
+}
+body.page .article hr {
+  border: none;
+  border-top: 1px solid var(--border-soft);
+  margin: 32px 0;
+}
+body.page .article blockquote {
+  border-left: 3px solid var(--primary);
+  background: var(--primary-soft);
+  padding: 12px 18px;
+  margin: 16px 0;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  body.page .article {
+    padding: 24px 20px;
+  }
+  .related-posts {
+    padding: 18px 20px;
+  }
+  .related-post-link {
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 12px;
   }
 }
