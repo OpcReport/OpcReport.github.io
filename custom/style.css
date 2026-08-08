@@ -99,24 +99,24 @@ body:not(.page-list) .outer:has(#main) {
 }
 body:not(.page-list) #main {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 48px 32px 60px;
+  padding: 48px 56px 60px;
   float: none !important;
 }
 body:not(.page-list) .outer:has(#main) #sidebar {
   display: none;
 }
 body:not(.page-list) #main .article {
-  padding: 40px 48px;
+  padding: 0;
+  max-width: 100%;
 }
-@media screen and (min-width: 1400px) {
-  body:not(.page-list) #main { max-width: 1200px; padding: 56px 48px 72px; }
-  body:not(.page-list) #main .article { padding: 48px 60px; }
+@media screen and (min-width: 1600px) {
+  body:not(.page-list) #main { max-width: 1500px; padding: 56px 64px 72px; }
 }
 @media screen and (max-width: 768px) {
   body:not(.page-list) #main { padding: 24px 16px 40px; }
-  body:not(.page-list) #main .article { padding: 22px 18px; }
+  body:not(.page-list) #main .article { padding: 0; }
 }
 
 #main,
