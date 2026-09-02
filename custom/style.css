@@ -1036,18 +1036,14 @@ body.page-list .article-excerpt {
 }
 .widget li a:hover { color: var(--primary-hover); }
 
-/* Tag cloud in sidebar — scrollable to prevent page stretching */
-.widget.tagcloud {
-  max-height: 320px;
-  overflow-y: auto;
-  padding-right: 4px;
-}
-.widget.tagcloud .tag-list,
+/* Tag cloud in sidebar — collapsible with "expand to see all" */
 .widget.tagcloud {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
   align-content: flex-start;
+  padding-right: 4px;
+  transition: max-height 0.35s ease;
 }
 .widget.tagcloud a {
   display: inline-block;
@@ -1065,6 +1061,62 @@ body.page-list .article-excerpt {
   border-color: var(--primary);
   color: #fff !important;
   box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+/* Collapsed state — partial view with fade gradient */
+.widget.tagcloud.tagcloud-collapsed {
+  max-height: 180px;
+  overflow: hidden;
+  position: relative;
+}
+.widget.tagcloud.tagcloud-collapsed::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 48px;
+  background: linear-gradient(to top, var(--bg-card) 10%, transparent 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Expanded state — scrollable full view */
+.widget.tagcloud.tagcloud-expanded {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Toggle button — "展开看全部" / "收起" */
+.tagcloud-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: var(--bg-alt);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.tagcloud-toggle:hover {
+  background: var(--primary-soft);
+  color: var(--primary-hover);
+  border-color: var(--primary);
+}
+.tagcloud-toggle .toggle-icon {
+  font-size: 0.7rem;
+  transition: transform 0.25s ease;
+}
+.tagcloud-toggle.is-expanded .toggle-icon {
+  transform: rotate(180deg);
 }
 
 /* Archive list in sidebar — scrollable to prevent page stretching */
@@ -1098,21 +1150,21 @@ body.page-list .article-excerpt {
 }
 
 /* Custom scrollbar for sidebar widgets */
-.widget.tagcloud::-webkit-scrollbar,
+.widget.tagcloud.tagcloud-expanded::-webkit-scrollbar,
 .widget .archive-list::-webkit-scrollbar {
   width: 5px;
 }
-.widget.tagcloud::-webkit-scrollbar-track,
+.widget.tagcloud.tagcloud-expanded::-webkit-scrollbar-track,
 .widget .archive-list::-webkit-scrollbar-track {
   background: var(--bg-alt);
   border-radius: 3px;
 }
-.widget.tagcloud::-webkit-scrollbar-thumb,
+.widget.tagcloud.tagcloud-expanded::-webkit-scrollbar-thumb,
 .widget .archive-list::-webkit-scrollbar-thumb {
   background: var(--border);
   border-radius: 3px;
 }
-.widget.tagcloud::-webkit-scrollbar-thumb:hover,
+.widget.tagcloud.tagcloud-expanded::-webkit-scrollbar-thumb:hover,
 .widget .archive-list::-webkit-scrollbar-thumb:hover {
   background: var(--primary);
 }
