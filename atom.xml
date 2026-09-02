@@ -11,445 +11,302 @@
   <rights>All rights reserved 2026, OPC Observer</rights>
   <subtitle>Daily Intelligence on AI Solopreneurship and the One-Person Company Economy</subtitle>
   <title>OPC Report</title>
-  <updated>2026-08-07T16:04:06.515Z</updated>
+  <updated>2026-09-02T05:46:51.418Z</updated>
   <entry>
     <author>
       <name>OPC Observer</name>
     </author>
     <category term="AI Trends" scheme="https://opcreport.github.io/categories/AI-Trends/"/>
-    <category term="Build Directions" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/"/>
-    <category term="Agent Infrastructure" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/Agent-Infrastructure/"/>
+    <category term="Solo Founder Report" scheme="https://opcreport.github.io/categories/AI-Trends/Solo-Founder-Report/"/>
+    <category term="Startup Ecosystem" scheme="https://opcreport.github.io/categories/AI-Trends/Solo-Founder-Report/Startup-Ecosystem/"/>
     <category term="Solopreneur" scheme="https://opcreport.github.io/tags/Solopreneur/"/>
-    <category term="MCP" scheme="https://opcreport.github.io/tags/MCP/"/>
-    <category term="Open Source" scheme="https://opcreport.github.io/tags/Open-Source/"/>
-    <category term="Agent Security" scheme="https://opcreport.github.io/tags/Agent-Security/"/>
-    <category term="Local-First" scheme="https://opcreport.github.io/tags/Local-First/"/>
-    <category term="Indie Hacking" scheme="https://opcreport.github.io/tags/Indie-Hacking/"/>
-    <category term="Capability Sandboxing" scheme="https://opcreport.github.io/tags/Capability-Sandboxing/"/>
-    <category term="Chat-Native Agents" scheme="https://opcreport.github.io/tags/Chat-Native-Agents/"/>
-    <id>https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-2353/</id>
-    <link href="https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-2353/"/>
-    <published>2026-08-07T07:53:00.000Z</published>
-    <summary>409,000 approve/deny decisions say the human-in-the-loop is not a security boundary. Cloudflare open-sourced the alternative the same week. Plus: why chat is the deployment surface, and why 'reads like AI' now costs you customers.</summary>
-    <title>Humans Missed 1 in 3 Rogue Agent Commands. That Gap Is Your Next Product</title>
-    <updated>2026-08-07T16:04:06.515Z</updated>
+    <category term="One-Person-Company" scheme="https://opcreport.github.io/tags/One-Person-Company/"/>
+    <category term="AI-Agents" scheme="https://opcreport.github.io/tags/AI-Agents/"/>
+    <category term="Product-Hunt" scheme="https://opcreport.github.io/tags/Product-Hunt/"/>
+    <category term="Claude-Code" scheme="https://opcreport.github.io/tags/Claude-Code/"/>
+    <category term="Y-Combinator" scheme="https://opcreport.github.io/tags/Y-Combinator/"/>
+    <category term="Agent-Infrastructure" scheme="https://opcreport.github.io/tags/Agent-Infrastructure/"/>
+    <id>https://opcreport.github.io/2026/08/30/opc-report-2026-08-30-1404/</id>
+    <link href="https://opcreport.github.io/2026/08/30/opc-report-2026-08-30-1404/"/>
+    <published>2026-08-30T06:04:00.000Z</published>
+    <summary>Hourly OPC AI startup trend report — August 30, 2026. YC W26 admits 22 solo founders; August Product Hunt floods with agent infrastructure (cloud-hosted agents, persistent compute, observability, cost governance) that finally lets one person run a full company loop.</summary>
+    <title>The Solo Founder Revival: 22 One-Person Founders Made YC W26 as Agent Infrastructure Closes the Final Gaps</title>
+    <updated>2026-09-02T05:46:51.418Z</updated>
   </entry>
   <entry>
     <author>
       <name>OPC Observer</name>
     </author>
     <category term="AI Trends" scheme="https://opcreport.github.io/categories/AI-Trends/"/>
-    <category term="Build Directions" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/"/>
-    <category term="Agent Infrastructure" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/Agent-Infrastructure/"/>
+    <category term="Solopreneur Report" scheme="https://opcreport.github.io/categories/AI-Trends/Solopreneur-Report/"/>
+    <category term="Agent Economy" scheme="https://opcreport.github.io/categories/AI-Trends/Solopreneur-Report/Agent-Economy/"/>
+    <category term="Startup Ecosystem" scheme="https://opcreport.github.io/categories/AI-Trends/Solopreneur-Report/Agent-Economy/Startup-Ecosystem/"/>
     <category term="Solopreneur" scheme="https://opcreport.github.io/tags/Solopreneur/"/>
-    <category term="MCP" scheme="https://opcreport.github.io/tags/MCP/"/>
-    <category term="Open Source" scheme="https://opcreport.github.io/tags/Open-Source/"/>
-    <category term="Local-First" scheme="https://opcreport.github.io/tags/Local-First/"/>
-    <category term="Indie Hacking" scheme="https://opcreport.github.io/tags/Indie-Hacking/"/>
-    <category term="Agent Runtime" scheme="https://opcreport.github.io/tags/Agent-Runtime/"/>
-    <category term="Plugin Ecosystem" scheme="https://opcreport.github.io/tags/Plugin-Ecosystem/"/>
-    <category term="Model Cost Routing" scheme="https://opcreport.github.io/tags/Model-Cost-Routing/"/>
-    <id>https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-1803/</id>
-    <link href="https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-1803/"/>
-    <published>2026-08-07T02:03:00.000Z</published>
-    <summary>Herdr's solo author says stop shipping agents and start shipping the thing agents run on. Plus a 36x price spread that buys 11 points of intelligence, and why 'writes like AI' is now a real reputation cost.</summary>
-    <title>A Solo Terminal Runtime Hit 25k Stars and 500 Plugins in a Month — Then Got Into YC</title>
-    <updated>2026-08-07T10:13:04.291Z</updated>
+    <category term="One-Person-Company" scheme="https://opcreport.github.io/tags/One-Person-Company/"/>
+    <category term="Micro-SaaS" scheme="https://opcreport.github.io/tags/Micro-SaaS/"/>
+    <category term="AI-Agents" scheme="https://opcreport.github.io/tags/AI-Agents/"/>
+    <category term="DeepSeek" scheme="https://opcreport.github.io/tags/DeepSeek/"/>
+    <category term="Lovable" scheme="https://opcreport.github.io/tags/Lovable/"/>
+    <category term="AI-Coding" scheme="https://opcreport.github.io/tags/AI-Coding/"/>
+    <category term="Y-Combinator" scheme="https://opcreport.github.io/tags/Y-Combinator/"/>
+    <category term="Agent-Orchestration" scheme="https://opcreport.github.io/tags/Agent-Orchestration/"/>
+    <category term="Meta-Muse-Code" scheme="https://opcreport.github.io/tags/Meta-Muse-Code/"/>
+    <id>https://opcreport.github.io/2026/08/29/opc-report-2026-08-29-1404/</id>
+    <link href="https://opcreport.github.io/2026/08/29/opc-report-2026-08-29-1404/"/>
+    <published>2026-08-29T06:04:00.000Z</published>
+    <summary>Weekly OPC trend report — August 29, 2026. Terminal coding agents turn into a three-way race (Claude Code, Codex, Meta Muse Code), the agent orchestration stack splits toward human-attention management, and software is being rebuilt for agents. Concrete build directions and tool stacks for solo founders.</summary>
+    <title>Terminal Coding Agents Go Three-Way and the Orchestration Stack Splits: Where One-Person Founders Should Bet This Week</title>
+    <updated>2026-09-02T05:46:51.418Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OPC Observer</name>
+    </author>
+    <category term="OPC Trend Report" scheme="https://opcreport.github.io/categories/OPC-Trend-Report/"/>
+    <category term="Solopreneur" scheme="https://opcreport.github.io/tags/Solopreneur/"/>
+    <category term="AI-Agent" scheme="https://opcreport.github.io/tags/AI-Agent/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.github.io/tags/One-Person-Company/"/>
+    <category term="Claude-Code" scheme="https://opcreport.github.io/tags/Claude-Code/"/>
+    <category term="Agent-Economy" scheme="https://opcreport.github.io/tags/Agent-Economy/"/>
+    <category term="Cloudflare-X402" scheme="https://opcreport.github.io/tags/Cloudflare-X402/"/>
+    <id>https://opcreport.github.io/2026/08/29/opc-report-2026-08-29-1006/</id>
+    <link href="https://opcreport.github.io/2026/08/29/opc-report-2026-08-29-1006/"/>
+    <published>2026-08-29T02:06:00.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="Agents-Become-the-Customer-How-Solo-Founders-Capture-the-August-2026-Agent-Stack-Dividend"><a]]>
+    </summary>
+    <title>Agents Become the Customer: How Solo Founders Capture the August 2026 Agent-Stack Dividend</title>
+    <updated>2026-09-02T05:46:51.411Z</updated>
   </entry>
   <entry>
     <author>
       <name>OPC Observer</name>
     </author>
     <category term="AI Trends" scheme="https://opcreport.github.io/categories/AI-Trends/"/>
-    <category term="Build Directions" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/"/>
-    <category term="Agent Economy" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/Agent-Economy/"/>
+    <category term="OPC Report" scheme="https://opcreport.github.io/categories/AI-Trends/OPC-Report/"/>
+    <category term="Solopreneur" scheme="https://opcreport.github.io/categories/AI-Trends/OPC-Report/Solopreneur/"/>
+    <category term="Agent Infrastructure" scheme="https://opcreport.github.io/categories/AI-Trends/OPC-Report/Solopreneur/Agent-Infrastructure/"/>
     <category term="Solopreneur" scheme="https://opcreport.github.io/tags/Solopreneur/"/>
-    <category term="Bootstrapping" scheme="https://opcreport.github.io/tags/Bootstrapping/"/>
-    <category term="AI Agents" scheme="https://opcreport.github.io/tags/AI-Agents/"/>
-    <category term="MCP" scheme="https://opcreport.github.io/tags/MCP/"/>
-    <category term="Agent Security" scheme="https://opcreport.github.io/tags/Agent-Security/"/>
-    <category term="Indie Hacking" scheme="https://opcreport.github.io/tags/Indie-Hacking/"/>
-    <category term="x402" scheme="https://opcreport.github.io/tags/x402/"/>
-    <category term="Machine-Readable Web" scheme="https://opcreport.github.io/tags/Machine-Readable-Web/"/>
-    <id>https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-1703/</id>
-    <link href="https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-1703/"/>
-    <published>2026-08-07T01:03:00.000Z</published>
-    <summary>TIME is serving AI crawlers a separate markdown site with ads humans never see, billed per token. Meanwhile 40,000 runs of human-in-the-loop testing show people miss 1 in 3 agent threats. Four build directions with concrete stacks and costs.</summary>
-    <title>Websites Are Now Serving Ads to Robots — And Your Next Users Might Not Include a Single Human</title>
-    <updated>2026-08-07T09:10:48.332Z</updated>
+    <category term="One-Person-Company" scheme="https://opcreport.github.io/tags/One-Person-Company/"/>
+    <category term="Indie-Hacker" scheme="https://opcreport.github.io/tags/Indie-Hacker/"/>
+    <category term="Startup-Trends" scheme="https://opcreport.github.io/tags/Startup-Trends/"/>
+    <category term="AI-Agents" scheme="https://opcreport.github.io/tags/AI-Agents/"/>
+    <category term="AI-Coding" scheme="https://opcreport.github.io/tags/AI-Coding/"/>
+    <category term="Y-Combinator" scheme="https://opcreport.github.io/tags/Y-Combinator/"/>
+    <category term="Agent-OS" scheme="https://opcreport.github.io/tags/Agent-OS/"/>
+    <id>https://opcreport.github.io/2026/08/29/opc-report-2026-08-29-0940/</id>
+    <link href="https://opcreport.github.io/2026/08/29/opc-report-2026-08-29-0940/"/>
+    <published>2026-08-29T01:40:00.000Z</published>
+    <summary>August 29, 2026 OPC trend monitor: AI coding moves to swarm-native, solo-founder operating systems become a category, and the agent orchestration stack splits into three layers — with build directions and tool stacks for independent developers.</summary>
+    <title>One-Person Companies Enter the Self-Writing-Code Era as YC's Newest Batch Ships $1M ARR on Sub-5 Headcount</title>
+    <updated>2026-09-02T05:46:51.411Z</updated>
   </entry>
   <entry>
     <author>
       <name>OPC Observer</name>
     </author>
-    <category term="AI Trends" scheme="https://opcreport.github.io/categories/AI-Trends/"/>
-    <category term="Solopreneur Playbook" scheme="https://opcreport.github.io/categories/AI-Trends/Solopreneur-Playbook/"/>
-    <category term="Agent Infrastructure" scheme="https://opcreport.github.io/categories/AI-Trends/Solopreneur-Playbook/Agent-Infrastructure/"/>
-    <category term="One Person Company" scheme="https://opcreport.github.io/tags/One-Person-Company/"/>
+    <category term="AI Startup Trends" scheme="https://opcreport.github.io/categories/AI-Startup-Trends/"/>
     <category term="Solopreneur" scheme="https://opcreport.github.io/tags/Solopreneur/"/>
-    <category term="AI Agents" scheme="https://opcreport.github.io/tags/AI-Agents/"/>
-    <category term="Y Combinator" scheme="https://opcreport.github.io/tags/Y-Combinator/"/>
-    <category term="Indie Hackers" scheme="https://opcreport.github.io/tags/Indie-Hackers/"/>
-    <category term="Build in Public" scheme="https://opcreport.github.io/tags/Build-in-Public/"/>
-    <category term="Agent Runtime" scheme="https://opcreport.github.io/tags/Agent-Runtime/"/>
-    <category term="LLM Inference" scheme="https://opcreport.github.io/tags/LLM-Inference/"/>
-    <id>https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-1603/</id>
-    <link href="https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-1603/"/>
-    <published>2026-08-07T00:03:00.000Z</published>
-    <summary>New benchmarks show the same open-weights model scoring 22% vs 37% on tool calling depending purely on which API endpoint you use. Meanwhile a solo dev hit 25k stars building a runtime instead of another agent. The moat has moved to invisible choices.</summary>
-    <title>Same Model, Half the Accuracy: Why Your Provider Choice Is Now Your Product</title>
-    <updated>2026-08-07T08:10:24.529Z</updated>
+    <category term="AI-Agents" scheme="https://opcreport.github.io/tags/AI-Agents/"/>
+    <category term="Model-Routing" scheme="https://opcreport.github.io/tags/Model-Routing/"/>
+    <category term="Indie-Hackers" scheme="https://opcreport.github.io/tags/Indie-Hackers/"/>
+    <category term="Agent-Security" scheme="https://opcreport.github.io/tags/Agent-Security/"/>
+    <category term="Verification" scheme="https://opcreport.github.io/tags/Verification/"/>
+    <id>https://opcreport.github.io/2026/08/29/opc-report-2026-08-29-1353/</id>
+    <link href="https://opcreport.github.io/2026/08/29/opc-report-2026-08-29-1353/"/>
+    <published>2026-08-28T16:00:00.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="Coding-Agents-Are-Installing-Code-Nobody-Owns-—-And-That-Just-Created-a-Product-Category"><a]]>
+    </summary>
+    <title>Coding Agents Are Installing Code Nobody Owns — And That Just Created a Product Category</title>
+    <updated>2026-09-02T05:46:51.416Z</updated>
   </entry>
   <entry>
     <author>
       <name>OPC Observer</name>
     </author>
-    <category term="AI Trends" scheme="https://opcreport.github.io/categories/AI-Trends/"/>
-    <category term="Solopreneur Playbook" scheme="https://opcreport.github.io/categories/AI-Trends/Solopreneur-Playbook/"/>
-    <category term="Agent Infrastructure" scheme="https://opcreport.github.io/categories/AI-Trends/Solopreneur-Playbook/Agent-Infrastructure/"/>
-    <category term="One Person Company" scheme="https://opcreport.github.io/tags/One-Person-Company/"/>
+    <category term="AI Startup Trends" scheme="https://opcreport.github.io/categories/AI-Startup-Trends/"/>
     <category term="Solopreneur" scheme="https://opcreport.github.io/tags/Solopreneur/"/>
-    <category term="AI Agents" scheme="https://opcreport.github.io/tags/AI-Agents/"/>
-    <category term="Claude Code" scheme="https://opcreport.github.io/tags/Claude-Code/"/>
-    <category term="AI SaaS" scheme="https://opcreport.github.io/tags/AI-SaaS/"/>
-    <category term="Indie Hackers" scheme="https://opcreport.github.io/tags/Indie-Hackers/"/>
-    <category term="Build in Public" scheme="https://opcreport.github.io/tags/Build-in-Public/"/>
-    <id>https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-1503/</id>
-    <link href="https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-1503/"/>
-    <published>2026-08-06T23:03:00.000Z</published>
-    <summary>When 95% of developers code with AI weekly and Claude Code writes nearly all its own code, building isn't the bottleneck anymore. The edge has moved to reliability, vertical depth, and proprietary data. Here's where solo founders should build — and with which tools.</summary>
-    <title>Shipping Code Is the Easy Part Now — Your Real Moat Is Getting Agents to Survive Production</title>
-    <updated>2026-08-07T07:08:19.244Z</updated>
+    <category term="AI-Agents" scheme="https://opcreport.github.io/tags/AI-Agents/"/>
+    <category term="Y-Combinator" scheme="https://opcreport.github.io/tags/Y-Combinator/"/>
+    <category term="Coding-Agents" scheme="https://opcreport.github.io/tags/Coding-Agents/"/>
+    <category term="Agent-Payments" scheme="https://opcreport.github.io/tags/Agent-Payments/"/>
+    <category term="Voice-AI" scheme="https://opcreport.github.io/tags/Voice-AI/"/>
+    <id>https://opcreport.github.io/2026/08/29/opc-report-2026-08-29-1136/</id>
+    <link href="https://opcreport.github.io/2026/08/29/opc-report-2026-08-29-1136/"/>
+    <published>2026-08-28T16:00:00.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="The-One-Person-Company-Stack-Is-Taking-Shape—Here’s-What-to-Build-With-It"><a]]>
+    </summary>
+    <title>The One-Person Company Stack Is Taking Shape—Here's What to Build With It</title>
+    <updated>2026-09-02T05:46:51.414Z</updated>
   </entry>
   <entry>
     <author>
       <name>OPC Observer</name>
     </author>
-    <category term="AI Trends" scheme="https://opcreport.github.io/categories/AI-Trends/"/>
-    <category term="Build Directions" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/"/>
-    <category term="Startup Ecosystem" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/Startup-Ecosystem/"/>
-    <category term="Solopreneur" scheme="https://opcreport.github.io/tags/Solopreneur/"/>
-    <category term="AI Agents" scheme="https://opcreport.github.io/tags/AI-Agents/"/>
-    <category term="GEO" scheme="https://opcreport.github.io/tags/GEO/"/>
-    <category term="MCP" scheme="https://opcreport.github.io/tags/MCP/"/>
-    <category term="Vertical SaaS" scheme="https://opcreport.github.io/tags/Vertical-SaaS/"/>
-    <category term="Indie Hackers" scheme="https://opcreport.github.io/tags/Indie-Hackers/"/>
-    <category term="Voice AI" scheme="https://opcreport.github.io/tags/Voice-AI/"/>
-    <category term="AEO" scheme="https://opcreport.github.io/tags/AEO/"/>
-    <id>https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-1403/</id>
-    <link href="https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-1403/"/>
-    <published>2026-08-06T22:03:00.000Z</published>
-    <summary>With models commoditized this week, capital stopped funding chatbots and started funding narrow agents that replace a specific role: FONIO.AI (€14.5M) turned the switchboard into a voice agent, ORBIO (€18M) put an agent in the frontline-manager seat, CameraMatics (€49M) took over fleet ops. The signal for solopreneurs: build the agent that finishes one job in one industry.</summary>
-    <title>The Money This Week Went to Agents That Do a Job — Voice, Frontline Ops, Fleets, Not Chatbots</title>
-    <updated>2026-08-07T06:09:53.946Z</updated>
+    <id>https://opcreport.github.io/2026/08/27/opc-report-2026-08-27-0803/</id>
+    <link href="https://opcreport.github.io/2026/08/27/opc-report-2026-08-27-0803/"/>
+    <published>2026-08-27T07:17:49.800Z</published>
+    <summary>
+      <![CDATA[<p>  1→—<br>  2→title: “The Company-in-a-Box Ships: Local Agents and the Solo Founder OS Wave”<br>  3→date: 2026-08-27T08:03:00+08:00<br>]]>
+    </summary>
+    <updated>2026-08-27T15:14:50.833Z</updated>
   </entry>
   <entry>
     <author>
       <name>OPC Observer</name>
     </author>
-    <category term="AI Trends" scheme="https://opcreport.github.io/categories/AI-Trends/"/>
-    <category term="Build Directions" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/"/>
-    <category term="Startup Ecosystem" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/Startup-Ecosystem/"/>
-    <category term="Solopreneur" scheme="https://opcreport.github.io/tags/Solopreneur/"/>
-    <category term="AI Agents" scheme="https://opcreport.github.io/tags/AI-Agents/"/>
-    <category term="MCP" scheme="https://opcreport.github.io/tags/MCP/"/>
-    <category term="Coding Agents" scheme="https://opcreport.github.io/tags/Coding-Agents/"/>
-    <category term="Indie Hackers" scheme="https://opcreport.github.io/tags/Indie-Hackers/"/>
-    <category term="Open Weights" scheme="https://opcreport.github.io/tags/Open-Weights/"/>
-    <category term="Agent Skills" scheme="https://opcreport.github.io/tags/Agent-Skills/"/>
-    <category term="Vibe Coding Security" scheme="https://opcreport.github.io/tags/Vibe-Coding-Security/"/>
-    <id>https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-1303/</id>
-    <link href="https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-1303/"/>
-    <published>2026-08-06T21:03:00.000Z</published>
-    <summary>In one week Meta shipped a terminal coding agent, DeepSeek open-weighted a 304B model that jumped Terminal-Bench from 61.8 to 82.7, and Qwen took the #1 agentic slot for $2/$6. The ability to build software is now a commodity. What isn't: the skills you equip an agent with, and whether the app it ships can survive being attacked.</summary>
-    <title>Coding Got Commoditized This Week. The Moat Moved to Skills and Security.</title>
-    <updated>2026-08-07T05:08:23.292Z</updated>
+    <id>https://opcreport.github.io/2026/08/27/opc-report-2026-08-27-0728/</id>
+    <link href="https://opcreport.github.io/2026/08/27/opc-report-2026-08-27-0728/"/>
+    <published>2026-08-27T07:16:51.642Z</published>
+    <summary>
+      <![CDATA[<p>  1→—<br>  2→title: “AI Coding Crosses Into Self-Writing Code: How Solo Founders Replace a Team With a $200&#x2F;Month Stack”<br>]]>
+    </summary>
+    <updated>2026-08-27T15:14:54.019Z</updated>
   </entry>
   <entry>
     <author>
       <name>OPC Observer</name>
     </author>
-    <category term="AI Trends" scheme="https://opcreport.github.io/categories/AI-Trends/"/>
-    <category term="Build Directions" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/"/>
-    <category term="Startup Ecosystem" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/Startup-Ecosystem/"/>
-    <category term="Solopreneur" scheme="https://opcreport.github.io/tags/Solopreneur/"/>
-    <category term="AI Agents" scheme="https://opcreport.github.io/tags/AI-Agents/"/>
-    <category term="Indie Hackers" scheme="https://opcreport.github.io/tags/Indie-Hackers/"/>
-    <category term="Model Routing" scheme="https://opcreport.github.io/tags/Model-Routing/"/>
-    <category term="Developer Tools" scheme="https://opcreport.github.io/tags/Developer-Tools/"/>
-    <category term="Token Economics" scheme="https://opcreport.github.io/tags/Token-Economics/"/>
-    <category term="Inference Providers" scheme="https://opcreport.github.io/tags/Inference-Providers/"/>
-    <category term="Evals" scheme="https://opcreport.github.io/tags/Evals/"/>
-    <id>https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-1203/</id>
-    <link href="https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-1203/"/>
-    <published>2026-08-06T20:03:00.000Z</published>
-    <summary>Artificial Analysis started measuring how much of an open-weights model's accuracy each serverless endpoint actually preserves. On gpt-oss-120b, some providers score 22% on tool calling against a 37% reference. Same weights, same model name on your invoice, roughly half the capability. If you route agents through cheap endpoints, you are shipping a quality variable you never measured.</summary>
-    <title>Same Model, 22% or 37% Tool-Calling Accuracy Depending on Who Serves It</title>
-    <updated>2026-08-07T04:13:29.763Z</updated>
+    <id>https://opcreport.github.io/2026/08/27/opc-report-2026-08-23-1703/</id>
+    <link href="https://opcreport.github.io/2026/08/27/opc-report-2026-08-23-1703/"/>
+    <published>2026-08-26T16:23:21.076Z</published>
+    <summary>
+      <![CDATA[<p>  1→—<br>  2→title: “Why 2026 Is the Real Inflection Point for Solo Founders Building with AI Agents”<br>  3→date: 2026-08-23<br>]]>
+    </summary>
+    <updated>2026-08-27T15:15:21.714Z</updated>
   </entry>
   <entry>
     <author>
       <name>OPC Observer</name>
     </author>
-    <category term="AI Trends" scheme="https://opcreport.github.io/categories/AI-Trends/"/>
-    <category term="Build Directions" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/"/>
-    <category term="Startup Ecosystem" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/Startup-Ecosystem/"/>
-    <category term="Solopreneur" scheme="https://opcreport.github.io/tags/Solopreneur/"/>
-    <category term="AI Agents" scheme="https://opcreport.github.io/tags/AI-Agents/"/>
-    <category term="Indie Hackers" scheme="https://opcreport.github.io/tags/Indie-Hackers/"/>
-    <category term="Developer Tools" scheme="https://opcreport.github.io/tags/Developer-Tools/"/>
-    <category term="Agent Security" scheme="https://opcreport.github.io/tags/Agent-Security/"/>
-    <category term="Token Economics" scheme="https://opcreport.github.io/tags/Token-Economics/"/>
-    <category term="AI Search" scheme="https://opcreport.github.io/tags/AI-Search/"/>
-    <category term="Autonomous Business" scheme="https://opcreport.github.io/tags/Autonomous-Business/"/>
-    <id>https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-1103/</id>
-    <link href="https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-1103/"/>
-    <published>2026-08-06T19:03:00.000Z</published>
-    <summary>Naïve raised $28.5M packaging LLC formation, payments, phone numbers and infrastructure behind one API for your agents to call. The same day, 409,000 human approve/deny decisions showed the human-in-the-loop misses a third of threats. The bottleneck moved from can you build it to how big is your blast radius.</summary>
-    <title>Incorporation Is Now an API Call, and Humans Approving Agent Commands Miss One Threat in Three</title>
-    <updated>2026-08-07T03:16:11.291Z</updated>
+    <id>https://opcreport.github.io/2026/08/27/opc-report-2026-08-23-0744/</id>
+    <link href="https://opcreport.github.io/2026/08/27/opc-report-2026-08-23-0744/"/>
+    <published>2026-08-26T16:22:43.518Z</published>
+    <summary>
+      <![CDATA[<p>  1→—<br>  2→title: “AI Coding Enters the Autonomous Era: Where Solo Founders Should Point Their Stack in August 2026”<br>  3→date:]]>
+    </summary>
+    <updated>2026-08-27T15:15:37.006Z</updated>
   </entry>
   <entry>
     <author>
       <name>OPC Observer</name>
     </author>
-    <category term="AI Trends" scheme="https://opcreport.github.io/categories/AI-Trends/"/>
-    <category term="Build Directions" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/"/>
-    <category term="Startup Ecosystem" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/Startup-Ecosystem/"/>
-    <category term="Solopreneur" scheme="https://opcreport.github.io/tags/Solopreneur/"/>
-    <category term="AI Agents" scheme="https://opcreport.github.io/tags/AI-Agents/"/>
-    <category term="MCP" scheme="https://opcreport.github.io/tags/MCP/"/>
-    <category term="Y Combinator" scheme="https://opcreport.github.io/tags/Y-Combinator/"/>
-    <category term="Indie Hackers" scheme="https://opcreport.github.io/tags/Indie-Hackers/"/>
-    <category term="Model Routing" scheme="https://opcreport.github.io/tags/Model-Routing/"/>
-    <category term="Developer Tools" scheme="https://opcreport.github.io/tags/Developer-Tools/"/>
-    <category term="Token Economics" scheme="https://opcreport.github.io/tags/Token-Economics/"/>
-    <id>https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-1007/</id>
-    <link href="https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-1007/"/>
-    <published>2026-08-06T18:07:00.000Z</published>
-    <summary>DeepSeek told users to expect a large across-the-board API increase. On the same benchmark board, a single task ranges from $0.05 to $1.80 across only eleven points of intelligence. The cheap-token assumption that most one-person products are priced on just stopped being safe.</summary>
-    <title>DeepSeek Warns of a Steep Price Hike, and the Same Task Now Costs 36x More or Less</title>
-    <updated>2026-08-07T02:16:13.209Z</updated>
+    <id>https://opcreport.github.io/2026/08/27/opc-report-2026-08-23-0810/</id>
+    <link href="https://opcreport.github.io/2026/08/27/opc-report-2026-08-23-0810/"/>
+    <published>2026-08-26T16:22:22.493Z</published>
+    <summary>
+      <![CDATA[<p>  1→—<br>  2→title: “The AI Coding Price War Just Made One-Person SaaS Cheap Enough to Ship in a Weekend”<br>  3→date:]]>
+    </summary>
+    <updated>2026-08-27T15:15:33.968Z</updated>
   </entry>
   <entry>
     <author>
       <name>OPC Observer</name>
     </author>
-    <category term="AI Trends" scheme="https://opcreport.github.io/categories/AI-Trends/"/>
-    <category term="Build Directions" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/"/>
-    <category term="Startup Ecosystem" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/Startup-Ecosystem/"/>
-    <category term="Solopreneur" scheme="https://opcreport.github.io/tags/Solopreneur/"/>
-    <category term="AI Agents" scheme="https://opcreport.github.io/tags/AI-Agents/"/>
-    <category term="Indie Hackers" scheme="https://opcreport.github.io/tags/Indie-Hackers/"/>
-    <category term="Developer Tools" scheme="https://opcreport.github.io/tags/Developer-Tools/"/>
-    <category term="CI/CD" scheme="https://opcreport.github.io/tags/CI-CD/"/>
-    <category term="Bot Traffic" scheme="https://opcreport.github.io/tags/Bot-Traffic/"/>
-    <category term="Analytics" scheme="https://opcreport.github.io/tags/Analytics/"/>
-    <category term="Infrastructure Risk" scheme="https://opcreport.github.io/tags/Infrastructure-Risk/"/>
-    <id>https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-0910/</id>
-    <link href="https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-0910/"/>
-    <published>2026-08-06T17:10:00.000Z</published>
-    <summary>A critical GitHub Actions outage ran ~8h44m with job success rates bottoming at 30-40% and webhooks throttled to 15%. On the same day an indie hacker found his analytics were mostly bots. Two failures of the same assumption: that the pipe you build on and the traffic you measure are both real.</summary>
-    <title>GitHub Actions Went Dark for Nine Hours — And Half Your Traffic Was Never Human</title>
-    <updated>2026-08-07T01:18:25.333Z</updated>
+    <id>https://opcreport.github.io/2026/08/27/opc-report-2026-08-23-0907/</id>
+    <link href="https://opcreport.github.io/2026/08/27/opc-report-2026-08-23-0907/"/>
+    <published>2026-08-26T16:21:54.607Z</published>
+    <summary>
+      <![CDATA[<p>  1→—<br>  2→title: “Coding Agents Turn into a Price War as Solo Teams Hit $1M ARR on Sub-$100 Stacks”<br>  3→date:]]>
+    </summary>
+    <updated>2026-08-27T15:15:30.953Z</updated>
   </entry>
   <entry>
     <author>
       <name>OPC Observer</name>
     </author>
-    <category term="AI Trends" scheme="https://opcreport.github.io/categories/AI-Trends/"/>
-    <category term="Build Directions" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/"/>
-    <category term="Startup Ecosystem" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/Startup-Ecosystem/"/>
-    <category term="Solopreneur" scheme="https://opcreport.github.io/tags/Solopreneur/"/>
-    <category term="AI Agents" scheme="https://opcreport.github.io/tags/AI-Agents/"/>
-    <category term="Indie Hackers" scheme="https://opcreport.github.io/tags/Indie-Hackers/"/>
-    <category term="Model Routing" scheme="https://opcreport.github.io/tags/Model-Routing/"/>
-    <category term="Developer Tools" scheme="https://opcreport.github.io/tags/Developer-Tools/"/>
-    <category term="Agent Security" scheme="https://opcreport.github.io/tags/Agent-Security/"/>
-    <category term="Distribution" scheme="https://opcreport.github.io/tags/Distribution/"/>
-    <category term="Sandboxing" scheme="https://opcreport.github.io/tags/Sandboxing/"/>
-    <id>https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-0855/</id>
-    <link href="https://opcreport.github.io/2026/08/07/opc-report-2026-08-07-0855/"/>
-    <published>2026-08-06T16:55:00.000Z</published>
-    <summary>40,000 plays and 409,000 approve/deny decisions show human-in-the-loop accuracy is 66.3%. Meanwhile Naive raised $28.5M for an API that lets agents incorporate a company. The gap between those two facts is the opportunity.</summary>
-    <title>Humans Miss 1 in 3 Agent Threats — And Agents Can Now Incorporate Your Company</title>
-    <updated>2026-08-07T01:01:03.185Z</updated>
+    <id>https://opcreport.github.io/2026/08/27/opc-report-2026-08-23-1512/</id>
+    <link href="https://opcreport.github.io/2026/08/27/opc-report-2026-08-23-1512/"/>
+    <published>2026-08-26T16:21:29.320Z</published>
+    <summary>
+      <![CDATA[<p>  1→—<br>  2→title: “Coding Agents Price War Begins as Agent Back-Office Becomes the Solo Founder Edge”<br>  3→date: 2026-08-23]]>
+    </summary>
+    <updated>2026-08-27T15:15:27.905Z</updated>
   </entry>
   <entry>
     <author>
       <name>OPC Observer</name>
     </author>
-    <category term="AI Trends" scheme="https://opcreport.github.io/categories/AI-Trends/"/>
-    <category term="Build Directions" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/"/>
-    <category term="Startup Ecosystem" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/Startup-Ecosystem/"/>
-    <category term="Solopreneur" scheme="https://opcreport.github.io/tags/Solopreneur/"/>
-    <category term="AI Agents" scheme="https://opcreport.github.io/tags/AI-Agents/"/>
-    <category term="Vertical AI" scheme="https://opcreport.github.io/tags/Vertical-AI/"/>
-    <category term="Indie Hackers" scheme="https://opcreport.github.io/tags/Indie-Hackers/"/>
-    <category term="Agent Security" scheme="https://opcreport.github.io/tags/Agent-Security/"/>
-    <category term="Unit Economics" scheme="https://opcreport.github.io/tags/Unit-Economics/"/>
-    <category term="Local Inference" scheme="https://opcreport.github.io/tags/Local-Inference/"/>
-    <category term="Fine-Tuning" scheme="https://opcreport.github.io/tags/Fine-Tuning/"/>
-    <id>https://opcreport.github.io/2026/08/06/opc-report-2026-08-06-1203/</id>
-    <link href="https://opcreport.github.io/2026/08/06/opc-report-2026-08-06-1203/"/>
-    <published>2026-08-05T20:03:00.000Z</published>
-    <summary>Castform post-trained a 4B open model to match GPT-5.6 Sol on retrieval at 100x lower cost. Soup fine-tunes 8B on a 4GB laptop GPU. Meanwhile Atlassian Rovo has leaked data unpatched since May. Here is what to build and what it costs.</summary>
-    <title>A 4B Model Matched Frontier Retrieval at 1/100 the Cost — Rethink Your Margins</title>
-    <updated>2026-08-06T04:10:17.427Z</updated>
+    <id>https://opcreport.github.io/2026/08/27/opc-report-2026-08-23-1603/</id>
+    <link href="https://opcreport.github.io/2026/08/27/opc-report-2026-08-23-1603/"/>
+    <published>2026-08-26T16:20:40.332Z</published>
+    <summary>
+      <![CDATA[<p>  1→—<br>  2→title: “Agent Stacks Are Eating Vibe Coding: Three Open Plays for Solo Builders in August 2026”<br>  3→date:]]>
+    </summary>
+    <updated>2026-08-27T15:15:24.827Z</updated>
   </entry>
   <entry>
     <author>
       <name>OPC Observer</name>
     </author>
-    <category term="AI Trends" scheme="https://opcreport.github.io/categories/AI-Trends/"/>
-    <category term="Build Directions" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/"/>
-    <category term="Startup Ecosystem" scheme="https://opcreport.github.io/categories/AI-Trends/Build-Directions/Startup-Ecosystem/"/>
-    <category term="Solopreneur" scheme="https://opcreport.github.io/tags/Solopreneur/"/>
-    <category term="AI Agents" scheme="https://opcreport.github.io/tags/AI-Agents/"/>
-    <category term="Open Source" scheme="https://opcreport.github.io/tags/Open-Source/"/>
-    <category term="Vertical SaaS" scheme="https://opcreport.github.io/tags/Vertical-SaaS/"/>
-    <category term="Indie Hackers" scheme="https://opcreport.github.io/tags/Indie-Hackers/"/>
-    <category term="Developer Tools" scheme="https://opcreport.github.io/tags/Developer-Tools/"/>
-    <category term="Local Inference" scheme="https://opcreport.github.io/tags/Local-Inference/"/>
-    <id>https://opcreport.github.io/2026/08/06/opc-report-2026-08-06-1103/</id>
-    <link href="https://opcreport.github.io/2026/08/06/opc-report-2026-08-06-1103/"/>
-    <published>2026-08-05T19:03:00.000Z</published>
-    <summary>Prime Agent, Warp Agent CLI, and Cloudflare OS all shipped open in the same week. The harness layer is commoditized. Here is what to build now and which stack to build it with.</summary>
-    <title>Agent Harnesses Just Went Free — Domain Expertise Is the Only Moat Left for Solo Builders</title>
-    <updated>2026-08-06T03:09:28.855Z</updated>
+    <id>https://opcreport.github.io/2026/08/27/opc-report-2026-08-23-1803/</id>
+    <link href="https://opcreport.github.io/2026/08/27/opc-report-2026-08-23-1803/"/>
+    <published>2026-08-26T16:20:07.507Z</published>
+    <summary>
+      <![CDATA[<p> 1→—<br> 2→title: “Coding Agents Reset the Solo Founder Math, and Voice Plus GEO Are the New Bets”<br> 3→date: 2026-08-23<br> 4→tags:]]>
+    </summary>
+    <updated>2026-08-27T15:15:18.717Z</updated>
   </entry>
   <entry>
     <author>
       <name>OPC Observer</name>
     </author>
-    <category term="AI Trends" scheme="https://opcreport.github.io/categories/AI-Trends/"/>
-    <category term="Startup Strategy" scheme="https://opcreport.github.io/categories/AI-Trends/Startup-Strategy/"/>
-    <category term="Indie Business" scheme="https://opcreport.github.io/categories/AI-Trends/Startup-Strategy/Indie-Business/"/>
-    <category term="Solopreneur" scheme="https://opcreport.github.io/tags/Solopreneur/"/>
-    <category term="AI Agents" scheme="https://opcreport.github.io/tags/AI-Agents/"/>
-    <category term="Open Source" scheme="https://opcreport.github.io/tags/Open-Source/"/>
-    <category term="Indie Hackers" scheme="https://opcreport.github.io/tags/Indie-Hackers/"/>
-    <category term="Agent Security" scheme="https://opcreport.github.io/tags/Agent-Security/"/>
-    <category term="Unit Economics" scheme="https://opcreport.github.io/tags/Unit-Economics/"/>
-    <category term="Prompt Injection" scheme="https://opcreport.github.io/tags/Prompt-Injection/"/>
-    <category term="Post-Training" scheme="https://opcreport.github.io/tags/Post-Training/"/>
-    <category term="Gross Margin" scheme="https://opcreport.github.io/tags/Gross-Margin/"/>
-    <id>https://opcreport.github.io/2026/08/06/opc-report-2026-08-06-1035/</id>
-    <link href="https://opcreport.github.io/2026/08/06/opc-report-2026-08-06-1035/"/>
-    <published>2026-08-05T18:35:00.000Z</published>
-    <summary>Meta, Google, Cloudflare and Prime Intellect all shipped or open-sourced agent harnesses within four days. In the same week a 4B open model matched a frontier model on retrieval at 1/100th the cost, and AI product gross margins were measured at 52%. Capability is free at the top and expensive at the bottom. What's left to sell is evidence.</summary>
-    <title>Four Agent Harnesses Went Free in 72 Hours. The Money Moved to Proof.</title>
-    <updated>2026-08-06T02:40:23.891Z</updated>
+    <id>https://opcreport.github.io/2026/08/27/opc-report-2026-08-23-1903/</id>
+    <link href="https://opcreport.github.io/2026/08/27/opc-report-2026-08-23-1903/"/>
+    <published>2026-08-26T16:19:44.114Z</published>
+    <summary>
+      <![CDATA[<p>  1→—<br>  2→title: “Same Model, 30% to 100%: The Harness Is the Moat, and Agent Distribution Just Opened”<br>  3→date: 2026-08-23<br>]]>
+    </summary>
+    <updated>2026-08-27T15:15:15.566Z</updated>
   </entry>
   <entry>
     <author>
       <name>OPC Observer</name>
     </author>
-    <category term="AI Trends" scheme="https://opcreport.github.io/categories/AI-Trends/"/>
-    <category term="Startup Strategy" scheme="https://opcreport.github.io/categories/AI-Trends/Startup-Strategy/"/>
-    <category term="Indie Business" scheme="https://opcreport.github.io/categories/AI-Trends/Startup-Strategy/Indie-Business/"/>
-    <category term="Solopreneur" scheme="https://opcreport.github.io/tags/Solopreneur/"/>
-    <category term="AI Agents" scheme="https://opcreport.github.io/tags/AI-Agents/"/>
-    <category term="Indie Hackers" scheme="https://opcreport.github.io/tags/Indie-Hackers/"/>
-    <category term="Unit Economics" scheme="https://opcreport.github.io/tags/Unit-Economics/"/>
-    <category term="Agent Traffic" scheme="https://opcreport.github.io/tags/Agent-Traffic/"/>
-    <category term="Cloudflare OS" scheme="https://opcreport.github.io/tags/Cloudflare-OS/"/>
-    <category term="On-Device Inference" scheme="https://opcreport.github.io/tags/On-Device-Inference/"/>
-    <category term="llms.txt" scheme="https://opcreport.github.io/tags/llms-txt/"/>
-    <category term="WebMCP" scheme="https://opcreport.github.io/tags/WebMCP/"/>
-    <id>https://opcreport.github.io/2026/08/05/opc-report-2026-08-05-2303/</id>
-    <link href="https://opcreport.github.io/2026/08/05/opc-report-2026-08-05-2303/"/>
-    <published>2026-08-05T07:03:00.000Z</published>
-    <summary>TIME serves ClaudeBot a 13KB markdown page with sponsored FAQs no human will ever see, billed per token instead of per pageview. Cloudflare open-sourced its entire internal agent platform the same day. Your front door is switching from browsers to models.</summary>
-    <title>The Web Just Forked: Humans Get HTML, AI Crawlers Get Markdown With Ads Baked In</title>
-    <updated>2026-08-05T15:14:40.567Z</updated>
+    <id>https://opcreport.github.io/2026/08/27/opc-report-2026-08-23-2004/</id>
+    <link href="https://opcreport.github.io/2026/08/27/opc-report-2026-08-23-2004/"/>
+    <published>2026-08-26T16:19:07.083Z</published>
+    <summary>
+      <![CDATA[<p>  1→—<br>  2→title: “Specialist Agent Stacks and $0.20 Tokens: How Solo Founders Are Quietly Out-Shipping Small Teams”<br>  3→date:]]>
+    </summary>
+    <updated>2026-08-27T15:15:12.519Z</updated>
   </entry>
   <entry>
     <author>
       <name>OPC Observer</name>
     </author>
-    <category term="AI Trends" scheme="https://opcreport.github.io/categories/AI-Trends/"/>
-    <category term="Startup Strategy" scheme="https://opcreport.github.io/categories/AI-Trends/Startup-Strategy/"/>
-    <category term="Indie Business" scheme="https://opcreport.github.io/categories/AI-Trends/Startup-Strategy/Indie-Business/"/>
-    <category term="Solopreneur" scheme="https://opcreport.github.io/tags/Solopreneur/"/>
-    <category term="MCP" scheme="https://opcreport.github.io/tags/MCP/"/>
-    <category term="Open Source" scheme="https://opcreport.github.io/tags/Open-Source/"/>
-    <category term="Indie Hackers" scheme="https://opcreport.github.io/tags/Indie-Hackers/"/>
-    <category term="AI Coding Agents" scheme="https://opcreport.github.io/tags/AI-Coding-Agents/"/>
-    <category term="Unit Economics" scheme="https://opcreport.github.io/tags/Unit-Economics/"/>
-    <category term="Local Inference" scheme="https://opcreport.github.io/tags/Local-Inference/"/>
-    <category term="Harness Engineering" scheme="https://opcreport.github.io/tags/Harness-Engineering/"/>
-    <id>https://opcreport.github.io/2026/08/05/opc-report-2026-08-05-2203/</id>
-    <link href="https://opcreport.github.io/2026/08/05/opc-report-2026-08-05-2203/"/>
-    <published>2026-08-05T06:03:00.000Z</published>
-    <summary>Databricks benchmarked coding agents on a multi-million-line codebase and found the harness — not the model — swung cost by more than 2x at identical quality. Meanwhile hyperscaler bond issuance is up 973% and hidden AI debt hit $1.65T. Token prices are subsidized. Your harness is not.</summary>
-    <title>The Harness Is Now the Margin: Same Model, Same Quality, Half the Cost</title>
-    <updated>2026-08-05T14:13:27.950Z</updated>
+    <id>https://opcreport.github.io/2026/08/27/opc-report-2026-08-23-2103/</id>
+    <link href="https://opcreport.github.io/2026/08/27/opc-report-2026-08-23-2103/"/>
+    <published>2026-08-26T16:18:14.019Z</published>
+    <summary>
+      <![CDATA[<p>  1→—<br>  2→title: “One-Person AI Companies Pull Ahead as Coding Agents Default to Autonomy”<br>  3→date: 2026-08-23<br>  4→tags:]]>
+    </summary>
+    <updated>2026-08-27T15:15:09.487Z</updated>
   </entry>
   <entry>
     <author>
       <name>OPC Observer</name>
     </author>
-    <category term="AI Trends" scheme="https://opcreport.github.io/categories/AI-Trends/"/>
-    <category term="Startup Strategy" scheme="https://opcreport.github.io/categories/AI-Trends/Startup-Strategy/"/>
-    <category term="Indie Business" scheme="https://opcreport.github.io/categories/AI-Trends/Startup-Strategy/Indie-Business/"/>
-    <category term="Solopreneur" scheme="https://opcreport.github.io/tags/Solopreneur/"/>
-    <category term="Open Source" scheme="https://opcreport.github.io/tags/Open-Source/"/>
-    <category term="Indie Hackers" scheme="https://opcreport.github.io/tags/Indie-Hackers/"/>
-    <category term="Developer Tools" scheme="https://opcreport.github.io/tags/Developer-Tools/"/>
-    <category term="Supply Chain Security" scheme="https://opcreport.github.io/tags/Supply-Chain-Security/"/>
-    <category term="LLM Slop" scheme="https://opcreport.github.io/tags/LLM-Slop/"/>
-    <category term="Verification Economy" scheme="https://opcreport.github.io/tags/Verification-Economy/"/>
-    <category term="Expertise Premium" scheme="https://opcreport.github.io/tags/Expertise-Premium/"/>
-    <id>https://opcreport.github.io/2026/08/05/opc-report-2026-08-05-2103/</id>
-    <link href="https://opcreport.github.io/2026/08/05/opc-report-2026-08-05-2103/"/>
-    <published>2026-08-05T05:03:00.000Z</published>
-    <summary>JFrog proved a batch of critical-rated SQLite CVEs were AI-fabricated after NVD and CISA accepted them. The same week a worm poisoned 444 npm packages totaling 2 billion monthly installs, each malicious version carrying valid GitHub Actions provenance. Polish is no longer evidence of work.</summary>
-    <title>Generation Went Free, Verification Didn't: Fake AI CVEs Fooled NVD While a Worm Signed Itself Legitimate</title>
-    <updated>2026-08-05T13:15:03.932Z</updated>
+    <id>https://opcreport.github.io/2026/08/27/opc-report-2026-08-25-1817/</id>
+    <link href="https://opcreport.github.io/2026/08/27/opc-report-2026-08-25-1817/"/>
+    <published>2026-08-26T16:17:50.177Z</published>
+    <summary>
+      <![CDATA[<p>  1→—<br>  2→title: “Frontier Coding Now Runs on a $3,000 Machine — Stop Selling Code, Start Selling Control”<br>  3→date: 2026-08-25]]>
+    </summary>
+    <updated>2026-08-27T15:15:06.334Z</updated>
   </entry>
   <entry>
     <author>
       <name>OPC Observer</name>
     </author>
-    <category term="AI Trends" scheme="https://opcreport.github.io/categories/AI-Trends/"/>
-    <category term="Startup Strategy" scheme="https://opcreport.github.io/categories/AI-Trends/Startup-Strategy/"/>
-    <category term="Indie Business" scheme="https://opcreport.github.io/categories/AI-Trends/Startup-Strategy/Indie-Business/"/>
-    <category term="Solopreneur" scheme="https://opcreport.github.io/tags/Solopreneur/"/>
-    <category term="Coding Agents" scheme="https://opcreport.github.io/tags/Coding-Agents/"/>
-    <category term="Indie Hackers" scheme="https://opcreport.github.io/tags/Indie-Hackers/"/>
-    <category term="Open Weights" scheme="https://opcreport.github.io/tags/Open-Weights/"/>
-    <category term="Agent Memory" scheme="https://opcreport.github.io/tags/Agent-Memory/"/>
-    <category term="Harness Economics" scheme="https://opcreport.github.io/tags/Harness-Economics/"/>
-    <category term="Context Discipline" scheme="https://opcreport.github.io/tags/Context-Discipline/"/>
-    <category term="Flowise" scheme="https://opcreport.github.io/tags/Flowise/"/>
-    <id>https://opcreport.github.io/2026/08/05/opc-report-2026-08-05-2003/</id>
-    <link href="https://opcreport.github.io/2026/08/05/opc-report-2026-08-05-2003/"/>
-    <published>2026-08-05T04:03:00.000Z</published>
-    <summary>Databricks benchmarked coding agents on its own multi-million line codebase and found that running the same model through a different harness changed cost per task by more than 2x with no change in quality. The same week, Flowise announced it was winding down because rigid low-code workflows hit a ceiling once models could reason. The middle layer is being deleted.</summary>
-    <title>Same Model, Double the Bill: Databricks Points at the Harness as Flowise Shuts Down</title>
-    <updated>2026-08-05T12:12:09.144Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>OPC Observer</name>
-    </author>
-    <category term="AI Trends" scheme="https://opcreport.github.io/categories/AI-Trends/"/>
-    <category term="Startup Strategy" scheme="https://opcreport.github.io/categories/AI-Trends/Startup-Strategy/"/>
-    <category term="Indie Business" scheme="https://opcreport.github.io/categories/AI-Trends/Startup-Strategy/Indie-Business/"/>
-    <category term="Solopreneur" scheme="https://opcreport.github.io/tags/Solopreneur/"/>
-    <category term="AI Agents" scheme="https://opcreport.github.io/tags/AI-Agents/"/>
-    <category term="MCP" scheme="https://opcreport.github.io/tags/MCP/"/>
-    <category term="Indie Hackers" scheme="https://opcreport.github.io/tags/Indie-Hackers/"/>
-    <category term="Open Weights" scheme="https://opcreport.github.io/tags/Open-Weights/"/>
-    <category term="Agent Memory" scheme="https://opcreport.github.io/tags/Agent-Memory/"/>
-    <category term="Stateless MCP" scheme="https://opcreport.github.io/tags/Stateless-MCP/"/>
-    <category term="Domain Expertise" scheme="https://opcreport.github.io/tags/Domain-Expertise/"/>
-    <id>https://opcreport.github.io/2026/08/05/opc-report-2026-08-05-1903/</id>
-    <link href="https://opcreport.github.io/2026/08/05/opc-report-2026-08-05-1903/"/>
-    <published>2026-08-05T03:03:00.000Z</published>
-    <summary>The MCP 2.0 spec removed sessions and handshakes, making a tool server deployable behind a plain load balancer. The same week, Steve Yegge described why his reusable agent framework collapsed, and the top post on Hacker News argued domain expertise is the real multiplier. Together they define what a one-person software business should build next.</summary>
-    <title>MCP Went Stateless and Yegge's Agent Framework Burned Down: Distribution Got Cheap, Generic Got Worthless</title>
-    <updated>2026-08-05T11:11:01.125Z</updated>
+    <id>https://opcreport.github.io/2026/08/27/opc-report-2026-08-26-0905/</id>
+    <link href="https://opcreport.github.io/2026/08/27/opc-report-2026-08-26-0905/"/>
+    <published>2026-08-26T16:17:17.387Z</published>
+    <summary>
+      <![CDATA[<p>  1→—<br>  2→title: “The Agent Fleet Era: Solo Founders Are Shipping Products With Coordinated AI Teams, Not Single Copilots”<br>]]>
+    </summary>
+    <updated>2026-08-27T15:15:03.247Z</updated>
   </entry>
 </feed>

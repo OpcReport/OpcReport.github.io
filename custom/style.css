@@ -139,6 +139,10 @@ body:not(.page-list) #main .article {
     flex: 0 0 300px;
     width: 300px;
     padding: 40px 0;
+    position: sticky;
+    top: 20px;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
   }
 }
 
@@ -1032,11 +1036,18 @@ body.page-list .article-excerpt {
 }
 .widget li a:hover { color: var(--primary-hover); }
 
-/* Tag cloud in sidebar */
-.widget.tagcloud .tag-list {
+/* Tag cloud in sidebar — scrollable to prevent page stretching */
+.widget.tagcloud {
+  max-height: 320px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+.widget.tagcloud .tag-list,
+.widget.tagcloud {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+  align-content: flex-start;
 }
 .widget.tagcloud a {
   display: inline-block;
@@ -1056,11 +1067,13 @@ body.page-list .article-excerpt {
   box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
 }
 
-/* Archive list in sidebar */
-.archive-list {
+/* Archive list in sidebar — scrollable to prevent page stretching */
+.widget .archive-list {
   list-style: none;
   padding: 0;
   margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
 }
 .archive-list li {
   padding: 7px 0;
@@ -1082,6 +1095,26 @@ body.page-list .article-excerpt {
   padding: 1px 8px;
   border-radius: 999px;
   margin-left: 8px;
+}
+
+/* Custom scrollbar for sidebar widgets */
+.widget.tagcloud::-webkit-scrollbar,
+.widget .archive-list::-webkit-scrollbar {
+  width: 5px;
+}
+.widget.tagcloud::-webkit-scrollbar-track,
+.widget .archive-list::-webkit-scrollbar-track {
+  background: var(--bg-alt);
+  border-radius: 3px;
+}
+.widget.tagcloud::-webkit-scrollbar-thumb,
+.widget .archive-list::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+.widget.tagcloud::-webkit-scrollbar-thumb:hover,
+.widget .archive-list::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
 }
 
 /* ============== TAGS PAGE — COLORFUL ============== */
