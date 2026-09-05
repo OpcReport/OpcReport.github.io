@@ -1,0 +1,2265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>The Entire Agent Stack Just Shrank to Fit on a Raspberry Pi — So What Are You Actually Selling? | OPC Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="The Entire Agent Stack Just Shrank to Fit on a Raspberry Pi — So What Are You Actually Selling?August 11, 2026 Key InsightsIn the last 24 hours the agent sta...">
+  <link rel="canonical" href="https://opcreport.github.io/2026/08/11/opc-report-2026-08-11-1203/">
+  <meta name="description" content="Ante packed a full coding agent into a 15MB offline binary. Cactus packed a tool-calling agent model into 14MB that runs on an ESP32. Meanwhile Spotify published what actually breaks at scale: not cap">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Entire Agent Stack Just Shrank to Fit on a Raspberry Pi — So What Are You Actually Selling?">
+<meta property="og:url" content="https://opcreport.github.io/2026/08/11/opc-report-2026-08-11-1203/index.html">
+<meta property="og:site_name" content="OPC Report">
+<meta property="og:description" content="Ante packed a full coding agent into a 15MB offline binary. Cactus packed a tool-calling agent model into 14MB that runs on an ESP32. Meanwhile Spotify published what actually breaks at scale: not cap">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-08-11T04:03:00.000Z">
+<meta property="article:modified_time" content="2026-09-02T05:46:51.186Z">
+<meta property="article:author" content="OPC Observer">
+<meta property="article:tag" content="Agent-Stack">
+<meta property="article:tag" content="Context-Layer">
+<meta property="article:tag" content="Edge-AI">
+<meta property="article:tag" content="Indie-Hacking">
+<meta property="article:tag" content="Local-Models">
+<meta property="article:tag" content="Open-Weights">
+<meta property="article:tag" content="Solopreneur">
+<meta property="article:tag" content="Voice-Agents">
+<meta name="twitter:card" content="summary">
+  
+  <meta name="keywords" content="OPC, one-person company, AI startup, solopreneur, indie hacker, AI entrepreneurship, solo founder, AI agent, digital employee, micro-SaaS, AI coding, vibe coding, agent harness, inference pricing, local AI, developer tools, build directions, indie developers, solo business, AI agents">
+  
+  <meta name="author" content="OPC Observer">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Entire Agent Stack Just Shrank to Fit on a Raspberry Pi — So What Are You Actually Selling? | OPC Report">
+  <meta name="twitter:description" content="The Entire Agent Stack Just Shrank to Fit on a Raspberry Pi — So What Are You Actually Selling?August 11, 2026 Key InsightsIn the last 24 hours the agent sta...">
+  <meta name="twitter:image" content="https://opcreport.github.io/images/logo.png">
+  <meta name="twitter:site" content="@opcreport">
+  
+    <link rel="alternate" href="/atom.xml" title="OPC Report" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/theme-override.css">
+
+  
+<link rel="stylesheet" href="/custom/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+
+  
+  
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "The Entire Agent Stack Just Shrank to Fit on a Raspberry Pi — So What Are You Actually Selling?",
+    "description": "The Entire Agent Stack Just Shrank to Fit on a Raspberry Pi — So What Are You Actually Selling?August 11, 2026 Key InsightsIn the last 24 hours the agent sta...",
+    "datePublished": "2026-08-11T04:03:00.000Z",
+    "dateModified": "2026-09-02T05:46:51.186Z",
+    "author": {
+      "@type": "Person",
+      "name": "OPC Observer",
+      "url": "https://opcreport.github.io/about/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "OPC Report",
+      "url": "https://opcreport.github.io",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://opcreport.github.io/images/logo.png",
+        "width": 512,
+        "height": 512
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://opcreport.github.io/2026/08/11/opc-report-2026-08-11-1203/"
+    },
+    "url": "https://opcreport.github.io/2026/08/11/opc-report-2026-08-11-1203/",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://opcreport.github.io/images/logo.png",
+      "width": 1200,
+      "height": 630
+    },
+    "articleSection": "AI Trends",
+    "wordCount": 3082,
+    "inLanguage": "en-US"
+    
+    ,"keywords": "Solopreneur, Voice-Agents, Open-Weights, Indie-Hacking, Edge-AI, Local-Models, Agent-Stack, Context-Layer"
+    
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://opcreport.github.io/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Archives",
+        "item": "https://opcreport.github.io/archives/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "The Entire Agent Stack Just Shrank to Fit on a Raspberry Pi — So What Are You Actually Selling?",
+        "item": "https://opcreport.github.io/2026/08/11/opc-report-2026-08-11-1203/"
+      }
+    ]
+  }
+  </script>
+  
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-92GE48C3Y0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-92GE48C3Y0');
+  </script>
+  <!-- busuanzi visitor counter -->
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+<body class="">
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">
+          <img src="/images/logo.png" alt="OPC Report" class="logo-img">
+          <span class="logo-text">OPC Report</span>
+        </a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">AI One-Person Company Entrepreneurship Insights</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/dates/">Browse</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+          <a class="main-nav-link" href="/about/">About</a>
+        
+          <a class="main-nav-link" href="/privacy/">Privacy</a>
+        
+          <a class="main-nav-link" href="/contact/">Contact</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          
+            <a class="nav-icon" href="https://github.com/OpcReport/OpcReport.github.io" target="_blank" rel="noopener" title="github"><span class="fa fa-github"></span></a>
+          
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://opcreport.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-opc-report-2026-08-11-1203" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/08/11/opc-report-2026-08-11-1203/" class="article-date">
+  <time class="dt-published" datetime="2026-08-11T04:03:00.000Z" itemprop="datePublished">2026-08-11</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/AI-Trends/">AI Trends</a>►<a class="article-category-link" href="/categories/AI-Trends/Build-Directions/">Build Directions</a>►<a class="article-category-link" href="/categories/AI-Trends/Build-Directions/Startup-Ecosystem/">Startup Ecosystem</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      The Entire Agent Stack Just Shrank to Fit on a Raspberry Pi — So What Are You Actually Selling?
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="The-Entire-Agent-Stack-Just-Shrank-to-Fit-on-a-Raspberry-Pi-—-So-What-Are-You-Actually-Selling"><a href="#The-Entire-Agent-Stack-Just-Shrank-to-Fit-on-a-Raspberry-Pi-—-So-What-Are-You-Actually-Selling" class="headerlink" title="The Entire Agent Stack Just Shrank to Fit on a Raspberry Pi — So What Are You Actually Selling?"></a>The Entire Agent Stack Just Shrank to Fit on a Raspberry Pi — So What Are You Actually Selling?</h1><p><strong>August 11, 2026</strong></p>
+<hr>
+<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><p>In the last 24 hours the agent stack collapsed from both ends simultaneously.</p>
+<p>At the top, <strong>Ante</strong> shipped a complete coding agent — TUI, embedded ripgrep, local PDF&#x2F;OCR, and a natively managed llama.cpp engine — as a <strong>single ~15MB Rust binary</strong> under Apache 2.0. No runtime dependencies, no node_modules, no account, fully offline. At the bottom, <strong>Cactus released Needle 2</strong>: a 45-million-parameter model for tool calling, device use, and structured extraction that ships as a <strong>14MB file running a full session in 28MB of RAM</strong>, small enough to run on an <strong>ESP32-S3 microcontroller</strong>.</p>
+<p>Read those two together and the conclusion is uncomfortable but clear: <strong>running an agent is no longer worth money.</strong> The harness is free. The model is becoming free. The only genuinely scarce thing left is context.</p>
+<p>Which is exactly what Spotify published the same day. After thousands of engineers ran thousands of agent sessions, their bottleneck wasn’t speed — it was that “agents in one session would expend cycles rediscovering what another session had already resolved.” Their answer was Xirp, a vendor-neutral agentic development environment wired into their organizational knowledge source.</p>
+<p>For a one-person business the instruction is blunt: <strong>stop building the Nth agent wrapper. Build the context layer, the verification layer, or the distribution channel that keeps agents from wasting motion.</strong></p>
+<p><strong>Numbers that should change what you do this week:</strong></p>
+<ul>
+<li><strong>14MB &#x2F; 28MB &#x2F; 500 tok&#x2F;s</strong> — Needle 2’s file size, peak session RAM, and decode speed on a Raspberry Pi 5. 45M parameters, Apache 2.0, weights on Hugging Face, 300–700 tok&#x2F;s on sub-$200 Android phones. Marginal inference cost for an edge agent is now zero.</li>
+<li><strong>15MB single binary, 998 stars, Rust</strong> — Ante’s entire footprint, with a pinned checksum-verified llama.cpp build (Metal on Apple silicon; CUDA, Vulkan, or CPU on Linux). The author’s own framing: <em>“We care about the harness, not the model or the prompts.”</em></li>
+<li><strong>12,987 stars, MIT</strong> — yc-software&#x2F;qm, a “multiplayer agent harness for work,” in roughly three weeks. Open-source supply at the harness layer is now oversaturated.</li>
+<li><strong>$0 free tier, $9&#x2F;user&#x2F;month Pro</strong> — Docker Sandboxes pricing. Isolating agents costs nothing, which removes the last excuse for not doing it.</li>
+</ul>
+<hr>
+<h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><h3 id="1-The-harness-layer-commoditized-and-open-source-did-the-killing"><a href="#1-The-harness-layer-commoditized-and-open-source-did-the-killing" class="headerlink" title="1. The harness layer commoditized, and open source did the killing"></a>1. The harness layer commoditized, and open source did the killing</h3><p>A year ago “an agent shell that loops, calls tools, and recovers from failure” was a product. Today it’s a weekend project.</p>
+<p>Ante hit the Hacker News front page as a single-file binary (122 points, 75 comments). yc-software’s <strong>qm</strong> shipped a multiplayer agent harness under MIT and reached <strong>12,987 stars and 1,505 forks</strong>. Perplexity open-sourced <strong>numbat</strong> (Apache 2.0, 879 stars) for on-device visibility into agent activity with optional pre-action blocking. Three different bets, three different shapes, one shared property: <strong>all free, and none of them expect the harness itself to be the business.</strong></p>
+<p>The more instructive part is the backlash. The top-voted objections to Ante weren’t technical — they were about distribution:</p>
+<blockquote>
+<p>“Linking to a github repo for a binary release (no source code related to the agent that I could see) is a bit iffy IMO.”</p>
+</blockquote>
+<blockquote>
+<p>“no source code”</p>
+</blockquote>
+<p>And one commenter punctured the performance narrative entirely: <em>“harnesses are simple loops, in theory should take very little memory even if written in python or typescript.”</em> Another questioned the strategy itself: if frontier labs are betting the model matters most and bundling subsidized harnesses, betting purely on the harness is betting against the people who set the prices.</p>
+<p><strong>Translation:</strong> if your core pitch is “our agent loop is faster &#x2F; leaner &#x2F; better packaged,” three free projects erased your pricing power this week. And if you distribute as a closed binary, developers will question your trustworthiness before they evaluate your features.</p>
+<h3 id="2-Models-are-shrinking-past-the-point-where-cloud-is-required-—-at-two-scales-at-once"><a href="#2-Models-are-shrinking-past-the-point-where-cloud-is-required-—-at-two-scales-at-once" class="headerlink" title="2. Models are shrinking past the point where cloud is required — at two scales at once"></a>2. Models are shrinking past the point where cloud is required — at two scales at once</h3><p>Two data points, opposite ends, same direction.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Muse Glimmer (Meta)</th>
+<th>Needle 2 (Cactus)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Parameters</td>
+<td>30B</td>
+<td>45M</td>
+</tr>
+<tr>
+<td>Quantized size</td>
+<td>&lt;20GB (~4-bit)</td>
+<td><strong>14MB</strong> (CQ2, 2-bit)</td>
+</tr>
+<tr>
+<td>Session RAM</td>
+<td>Fits 24–32GB envelope</td>
+<td><strong>28MB</strong></td>
+</tr>
+<tr>
+<td>License</td>
+<td>Apache 2.0</td>
+<td>Apache 2.0</td>
+</tr>
+<tr>
+<td>Target hardware</td>
+<td>M4-Max, RTX 5090</td>
+<td>ESP32-S3, Pi 5, Quest 3S, $200 phones</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>Real-time via speculative decoding</td>
+<td>500+ tok&#x2F;s decode on Pi 5; 400–1,500 on VR headsets</td>
+</tr>
+<tr>
+<td>Built for</td>
+<td>Long-horizon execution, failure recovery</td>
+<td>Tool calling, device use, structured extraction</td>
+</tr>
+<tr>
+<td>HN reception</td>
+<td>1,063 points &#x2F; 588 comments</td>
+<td>222 points &#x2F; 91 comments</td>
+</tr>
+</tbody></table>
+<p>Needle 2 trades wins with FunctionGemma 270M, LFM2.5 230M, and Apple FM on mobile device-use and tool-call benchmarks while being <strong>5× to 70× smaller</strong>, and running at 2 bits against their f16.</p>
+<p>The same day, Zuckerberg publicly attacked “closed” AI rivals in the FT as Meta returned to open models (419 points, 405 comments). Whatever you think of the messaging, the practical effect for builders is two Apache-2.0 options with no revenue thresholds and no rider clauses.</p>
+<ul>
+<li><strong>The story isn’t benchmarks, it’s the deployment envelope.</strong> Needle 2 fitting on an ESP32-S3 means agents can now live in sensors, wearables, robots, and vehicles — categories that were previously not even worth scoping.</li>
+<li><strong>Two sizes, two businesses.</strong> 30B local solves privacy-sensitive desktop agents. 45M edge solves “put a small tool-calling brain inside a physical product.” Competitive density in the second is dramatically lower.</li>
+<li><strong>Both licenses are actually usable commercially.</strong> That’s a hard prerequisite for hardware and client delivery work, and it is now satisfied.</li>
+</ul>
+<h3 id="3-The-real-bottleneck-surfaced-context-not-capability"><a href="#3-The-real-bottleneck-surfaced-context-not-capability" class="headerlink" title="3. The real bottleneck surfaced: context, not capability"></a>3. The real bottleneck surfaced: context, not capability</h3><p>Spotify’s postmortem, published yesterday by Tyson Singer, is the highest-signal primary source this cycle. Every CTO he speaks with has moved past the adoption question. What happens next is the interesting part:</p>
+<ul>
+<li>Engineers — and later non-engineers — began <strong>orchestrating multiple agents in parallel</strong>, across sessions, tools, repositories, and branches.</li>
+<li>Context accumulated in one session but was needed in another. Institutional knowledge fragmented into individual configurations: scattered CLAUDE.md files, bespoke MCP setups, personal prompt libraries.</li>
+<li>The result: “PRs increased, but so did rework, inconsistency, and <strong>wasted tokens</strong>. Agents in one session would expend cycles rediscovering what another session had already resolved.”</li>
+<li>Engineers were “investing as much effort reconstructing context as they were on building new capabilities.”</li>
+</ul>
+<p>Their stated motivation for building vendor-neutral is worth quoting because it’s a pricing observation, not an architecture one: new models, new agents, rising costs, and <strong>“pricing structures that shift quarter to quarter.”</strong> The goal was flexibility to swap any layer “without accumulating vendor dependency or compounding costs as you scale.”</p>
+<p>Corroborating signal from the indie side: VictorTaelin’s <strong>OptMem</strong> — “Permanent memory for AI agents. A 426-token prompt, a script, plug and play” — pulled <strong>1,226 stars in about three weeks</strong>. When a 426-token memory hack earns four figures in stars, the underlying need is wildly underserved.</p>
+<h3 id="4-“Token-efficient-language”-folk-wisdom-just-failed-replication"><a href="#4-“Token-efficient-language”-folk-wisdom-just-failed-replication" class="headerlink" title="4. “Token-efficient language” folk wisdom just failed replication"></a>4. “Token-efficient language” folk wisdom just failed replication</h3><p>Dan Luu published a systematic teardown (87 points on HN) of the widely-cited claim that dynamic languages are more token-efficient and therefore better for AI coding. The original work claimed a <strong>2.6× gap</strong> between C and Clojure, and that J averaged just 70 tokens, “dominating” everything.</p>
+<p>He re-ran it on a task with actual surface area: hand an agent the zstd RFC and have it implement a complete zstd decoder, in a container with no internet, with no tests provided.</p>
+<ul>
+<li>At medium effort, dynamic languages did cluster slightly better. <strong>At ultra effort the results were thoroughly mixed, with more static than dynamic languages among the top performers.</strong></li>
+<li>The original evaluation used Rosetta Code problems. A task solvable in 70 tokens isn’t a task. <strong>Performance on trivial problems doesn’t generalize</strong> — the same pattern he found when comparing trivial vs. non-trivial “caveman mode” evals.</li>
+<li>The second commonly-cited benchmark had a fatal defect: a test executed a nonexistent path, and a later agent <strong>symlinked that path to its own executable</strong> — so every subsequent test ran that one agent’s binary. Conclusions drawn about Rust’s failure rate from that data are meaningless.</li>
+<li>The robust finding: a weak-to-moderate positive correlation where <strong>more popular languages produce more correct and cheaper solutions</strong>, plausibly because labs invest little or no synthetic RL environment effort on obscure languages.</li>
+</ul>
+<p><strong>Actionable version:</strong> don’t pick Clojure, J, or anything exotic to save tokens. Pick whichever of TypeScript, Python, Go, or Rust you know best. Token savings won’t cover the rework cost of thin training coverage.</p>
+<h3 id="5-A-deployment-reality-check-a-pharmacy-chain-pulled-its-voice-agent"><a href="#5-A-deployment-reality-check-a-pharmacy-chain-pulled-its-voice-agent" class="headerlink" title="5. A deployment reality check: a pharmacy chain pulled its voice agent"></a>5. A deployment reality check: a pharmacy chain pulled its voice agent</h3><p>Kinney Drugs launched <strong>Burt</strong>, an AI phone assistant handling prescriptions and refills, in May. In August, after <strong>hundreds of customer complaints</strong>, they reverted inbound calls to a classic touch-tone system. Reported failures: incoherent calls, <strong>wrong dosages</strong>, missed prescription notifications.</p>
+<p>President John Marraffa’s line is worth memorizing verbatim:</p>
+<blockquote>
+<p>“Getting privacy and security right does not mean we got the experience right. We did not, and we own that.”</p>
+</blockquote>
+<p>He noted Burt is fully HIPAA compliant, not open-source, and doesn’t generate or manipulate data. None of that saved it.</p>
+<p><strong>What they kept is the actual lesson.</strong> Burt survives for <strong>outbound</strong> communication — refill texts — and patients must <strong>opt in</strong>. That draws a hard product boundary:</p>
+<ul>
+<li><strong>Outbound + structured + opt-in &#x3D; viable.</strong></li>
+<li><strong>Inbound + open-ended + high-stakes domain &#x3D; not viable today.</strong></li>
+</ul>
+<p>Compliance is not armor. They cleared HIPAA and still got pulled on experience.</p>
+<hr>
+<h2 id="Build-Directions"><a href="#Build-Directions" class="headerlink" title="Build Directions"></a>Build Directions</h2><p>The four trends converge on one gap: <strong>running an agent is worthless; making it run correctly, cheaply, or somewhere nobody else can run it is valuable.</strong> Ordered by ascending competitive density.</p>
+<h3 id="1-Embedded-agents-—-tool-calling-inside-hardware-lowest-competition"><a href="#1-Embedded-agents-—-tool-calling-inside-hardware-lowest-competition" class="headerlink" title="1. Embedded agents — tool calling inside hardware (lowest competition)"></a>1. Embedded agents — tool calling inside hardware (lowest competition)</h3><p><strong>What to build:</strong> Needle 2 makes a 45M-param, 14MB, 28MB-RAM tool-calling model viable on ESP32-S3, Pi 5, and Quest 3S. That unlocks a class of products that simply didn’t scope before: smart-home controllers that parse natural language locally, retail kiosk voice ordering, industrial sensors doing on-device anomaly triage, robots sequencing multi-step actions. The shared trait is <strong>can’t or won’t connect to the cloud, and latency matters</strong>.</p>
+<p><strong>Stack:</strong> Needle 2 (Apache 2.0, weights on Hugging Face) + the Cactus engine (5,599 stars — quantization, kernels, runtime) + ESP32-S3 (<del>$3–8&#x2F;unit) or Raspberry Pi 5 (</del>$60–80).<br><strong>Fit:</strong> tool calling, device use, structured extraction, intent routing. Do not expect long-form reasoning.<br><strong>Cost &amp; timeline:</strong> zero marginal inference cost; 2–4 weeks to prototype. Your real costs are hardware sourcing and field debugging, not tokens.</p>
+<h3 id="2-A-context-layer-for-small-teams-—-Spotify’s-problem-at-SMB-pricing"><a href="#2-A-context-layer-for-small-teams-—-Spotify’s-problem-at-SMB-pricing" class="headerlink" title="2. A context layer for small teams — Spotify’s problem at SMB pricing"></a>2. A context layer for small teams — Spotify’s problem at SMB pricing</h3><p><strong>What to build:</strong> Spotify solved context fragmentation with Xirp + Portal. The same pathology exists in any 5–50 person engineering team, and none of them can afford or staff a Backstage deployment. Build a lightweight repo-level context service: unify CLAUDE.md&#x2F;AGENTS.md, MCP configs, prompt libraries, and architecture decision records, then expose them to any harness over MCP. The headline feature is <strong>vendor neutrality</strong> — Spotify said it themselves, pricing structures shift quarterly and customers want the freedom to swap.</p>
+<p><strong>Stack:</strong> an MCP server (TypeScript&#x2F;Python) + Supabase or Postgres with pgvector for retrieval + the minimalist memory approach OptMem validated (1,226 stars). Do not start with heavyweight RAG.<br><strong>Fit:</strong> teams already running Claude Code &#x2F; Codex &#x2F; qm across parallel sessions — i.e. teams already burning tokens on rediscovery.<br><strong>Cost &amp; timeline:</strong> 4–8 weeks to MVP. Price in the $15–16&#x2F;user&#x2F;month band Docker Team occupies; buying decisions at that tier are fast.</p>
+<h3 id="3-Agent-governance-and-audit-trails-for-regulated-small-shops"><a href="#3-Agent-governance-and-audit-trails-for-regulated-small-shops" class="headerlink" title="3. Agent governance and audit trails for regulated small shops"></a>3. Agent governance and audit trails for regulated small shops</h3><p><strong>What to build:</strong> Docker put sandboxing in the free tier and Perplexity open-sourced endpoint-level agent visibility with pre-action blocking (numbat, Apache 2.0). The primitives are free; assembling them into an <strong>auditable evidence chain</strong> is not being done. Target small organizations that must prove what an agent touched: accounting firms, small healthcare providers, law practices, contractors serving government clients. You’re not selling interception — you’re selling <strong>exportable behavior logs and forensic reconstruction reports</strong>.</p>
+<p><strong>Stack:</strong> Docker Sandboxes (from $0) for isolation + numbat for on-device detection and pre-action blocking + your own audit event stream and report export.<br><strong>Fit:</strong> invert the Kinney lesson — plenty of small shops can tolerate imperfect UX but cannot produce an evidence chain when asked.<br><strong>Cost &amp; timeline:</strong> zero-cost primitives; 6–10 weeks to a demoable product. Classic high-ticket, low-logo-count business.</p>
+<h3 id="4-Offline-and-air-gapped-agent-delivery"><a href="#4-Offline-and-air-gapped-agent-delivery" class="headerlink" title="4. Offline and air-gapped agent delivery"></a>4. Offline and air-gapped agent delivery</h3><p><strong>What to build:</strong> Ante proved a full coding agent fits in a 15MB offline binary; Muse Glimmer supplies an Apache-2.0 30B under 20GB. Package both into a drop-in offline agent workstation for clients who cannot send code or data to the cloud. Note that Ante got hammered on HN for binary-only distribution — <strong>that’s your opening. Do the same thing with auditable source. Trust is the differentiator.</strong></p>
+<p><strong>Stack:</strong> Muse Glimmer 30B (Apache 2.0, &lt;20GB at 4-bit) + llama.cpp &#x2F; Ollama &#x2F; MLX runtime + your own auditable harness. Hardware: an M4-Max or a single 5090.<br><strong>Fit:</strong> defense-adjacent contracting, healthcare data work, M&amp;A diligence, any engagement under a strict NDA.<br><strong>Cost &amp; timeline:</strong> $3,000–6,000 one-time hardware. Bill per project, not per seat. Zero marginal inference cost is your core price advantage against cloud-based competitors.</p>
+<h3 id="5-Narrow-voice-agents-—-outbound-only-structured-only-highest-competition-but-the-boundary-is-now-known"><a href="#5-Narrow-voice-agents-—-outbound-only-structured-only-highest-competition-but-the-boundary-is-now-known" class="headerlink" title="5. Narrow voice agents — outbound only, structured only (highest competition, but the boundary is now known)"></a>5. Narrow voice agents — outbound only, structured only (highest competition, but the boundary is now known)</h3><p><strong>What to build:</strong> Kinney Drugs ran the market research for everyone at the cost of hundreds of complaints. The viable half is <strong>outbound, structured, opt-in</strong>. So don’t build an AI receptionist. Build appointment confirmations, refill reminders, delivery notifications, satisfaction follow-ups — flows where the script is deterministic and <strong>failure degrades silently to SMS</strong>. Any time the model is uncertain, hand off to a human or drop to text. Never improvise.</p>
+<p><strong>Stack:</strong> a realtime voice runtime (qwen-audio-agent, 2,063 stars, is one open option) or a commercial voice API + a <strong>deterministic state machine controlling flow — do not let the LLM drive control flow</strong> + a mandatory human fallback path.<br><strong>Fit:</strong> dental practices, auto shops, veterinary clinics, local service businesses. Low stakes, high repetition, scripted.<br><strong>Cost &amp; timeline:</strong> 4–6 weeks. Categorically avoid medical dosing, financial advice, and legal opinions.</p>
+<hr>
+<h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><ul>
+<li><strong>The harness layer is a red ocean and your competitors are free.</strong> qm at 12,987 stars, Ante at 998, numbat at 879 — mostly MIT or Apache 2.0. Any paid product whose core value proposition is “a better agent shell” lost its pricing power this week.</li>
+<li><strong>Closed-binary distribution kills trust before it kills conversion.</strong> The top-voted criticism of Ante was “no source code,” not any technical flaw. When selling to developers, how you ship <em>is</em> part of the product.</li>
+<li><strong>Passing compliance does not mean the product works.</strong> Burt was fully HIPAA compliant, closed-source, and non-generative, and still got pulled from inbound service for stating wrong dosages. In high-stakes verticals, an experience failure means removal, not iteration.</li>
+<li><strong>Most “token-saving tricks” are untested folklore.</strong> The widely-cited 2.6× dynamic-language advantage rests on trivial problems and a benchmark corrupted by a symlink. Before adopting any such finding, check what difficulty of task produced it.</li>
+<li><strong>Vendor lock-in compounds faster than it used to.</strong> Spotify explicitly flagged that models, agents, and <strong>pricing structures shift quarter to quarter</strong>. Any architecture that hard-codes business logic into one model API is accruing a liability that gets repriced every quarter.</li>
+</ul>
+<hr>
+<h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><h3 id="If-you’re-starting-out-no-paying-users-yet"><a href="#If-you’re-starting-out-no-paying-users-yet" class="headerlink" title="If you’re starting out (no paying users yet)"></a>If you’re starting out (no paying users yet)</h3><ul>
+<li><strong>Run Needle 2 this week.</strong> There’s a WebAssembly playground in the browser with smart-home multi-step, three-move robot, form-filling, and off-topic-refusal examples. Spend two hours mapping what 45M parameters can and cannot do. That boundary is your idea filter.</li>
+<li><strong>Don’t build a harness. Build context.</strong> If your concept includes “a better agent loop,” pivot. Redirect that effort toward stopping agents from rediscovering known information.</li>
+<li><strong>Default to a mainstream language.</strong> TypeScript, Python, Go, or Rust — whichever you know best. Exotic-language token savings don’t cover the rework from thin training coverage.</li>
+<li><strong>If you do voice, do outbound only.</strong> Write the Kinney boundary into your product definition as a hard constraint: outbound, structured, opt-in, always degradable to SMS.</li>
+</ul>
+<h3 id="If-you’re-already-operating-revenue-customers"><a href="#If-you’re-already-operating-revenue-customers" class="headerlink" title="If you’re already operating (revenue, customers)"></a>If you’re already operating (revenue, customers)</h3><ul>
+<li><strong>Audit context waste this week.</strong> Use Spotify’s checklist: across your parallel agent sessions, how many tokens go to rediscovering what another session already resolved? The number is usually uncomfortable.</li>
+<li><strong>Make the model layer swappable.</strong> Spotify says pricing shifts quarterly. A thin abstraction between your calls and your business logic is a day of work now and a quarter of work when you’re forced to migrate.</li>
+<li><strong>Evaluate moving workloads local.</strong> Muse Glimmer is Apache 2.0 and under 20GB at 4-bit; an M4-Max or a single 5090 carries it. For always-on, non-peak background tasks, marginal inference cost can go to zero.</li>
+<li><strong>Sandbox your agents now.</strong> Docker Sandboxes is in the free tier. Solve isolation before a customer asks what your agent can touch — and they will ask.</li>
+<li><strong>If you’re shipping closed binaries, reconsider.</strong> Ante’s comment thread is free user research: developers interrogate distribution before they evaluate features.</li>
+</ul>
+<hr>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><ul>
+<li><strong>14MB file &#x2F; 28MB session RAM &#x2F; 45M params</strong> — Needle 2, Apache 2.0. 800+ tok&#x2F;s prefill and 500+ tok&#x2F;s decode on a Raspberry Pi 5; 300–700 tok&#x2F;s on sub-$200 phones; runs on ESP32-S3. <strong>5× to 70× smaller</strong> than comparable small models.</li>
+<li><strong>~15MB single binary</strong> — Ante coding agent, Rust, Apache 2.0, 998 stars, 23 forks. Embeds TUI, ripgrep, PDF&#x2F;OCR, and a verified llama.cpp build. Fully offline, no account.</li>
+<li><strong>30B &#x2F; 4-bit &#x2F; &lt;20GB</strong> — Meta Muse Glimmer, Apache 2.0, trained for long-horizon execution and failure recovery. 1,063 points on HN. Runs on a single consumer GPU.</li>
+<li><strong>12,987 stars &#x2F; 1,505 forks (MIT)</strong> — yc-software&#x2F;qm. For comparison: Comp AI’s agent-first CRM 8,130 (MIT), Perplexity numbat 879 (Apache 2.0), Cactus engine 5,599.</li>
+<li><strong>$0 free &#x2F; $9 Pro &#x2F; $15 Team &#x2F; $24 Business per user&#x2F;month</strong> — Docker pricing (annual). Agent isolation has no cost barrier left.</li>
+<li><strong>~7.4% spread</strong> — Stoa Markets (YC S26) illustrative gap on an 8-node H100 trade: $1.95M on-venue vs $2.10M off-market. GPU spot markets still lack shared price discovery, and that spread is the intermediary’s business model.</li>
+</ul>
+<hr>
+<h2 id="What-It-Means"><a href="#What-It-Means" class="headerlink" title="What It Means"></a>What It Means</h2><p>Both ends of the agent stack collapsed in the same 24 hours. A full coding agent now fits in 15MB offline; a working tool-calling model fits in 14MB on a microcontroller. When execution becomes free, value migrates to whatever execution still can’t supply on its own — and Spotify just told us what that is, at the cost of thousands of wasted sessions: <strong>context</strong>.</p>
+<p>The teams shipping free harnesses aren’t being generous. They’re conceding that the layer is worthless and racing to own what sits above and below it. A one-person business should draw the same conclusion faster, because you can act on it in a week rather than a quarter. Build the memory, the audit trail, the offline delivery, or the embedded product — the places where being small is an advantage and where “we run an agent” is a feature, not the pitch.</p>
+
+      
+    </div>
+    
+    <footer class="article-footer">
+      <a data-url="https://opcreport.github.io/2026/08/11/opc-report-2026-08-11-1203/" data-id="cuidxfNY-gJQ01EosM0WpmVoq" data-title="The Entire Agent Stack Just Shrank to Fit on a Raspberry Pi — So What Are You Actually Selling?" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Agent-Stack/" rel="tag">Agent-Stack</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Context-Layer/" rel="tag">Context-Layer</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Edge-AI/" rel="tag">Edge-AI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Indie-Hacking/" rel="tag">Indie-Hacking</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Local-Models/" rel="tag">Local-Models</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Open-Weights/" rel="tag">Open-Weights</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Solopreneur/" rel="tag">Solopreneur</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Voice-Agents/" rel="tag">Voice-Agents</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2026/08/11/opc-report-2026-08-11-1230/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          181,874 Meetings Left Wide Open and an AI Pharmacist Sent Home: Trust Just Became the Product
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2026/08/11/opc-report-2026-08-11-1141/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">A 14MB Agent Model Runs on a $200 Phone: Inference Cost Is Going to Zero and Distribution Is the New Moat</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+<section class="related-posts">
+  <h3 class="related-posts-title">Related Reports</h3>
+  <ul class="related-posts-list">
+    
+    <li class="related-post-item">
+      <a href="/2026/08/10/opc-report-2026-08-10-1903/" class="related-post-link">
+        <span class="related-post-date">2026-08-10</span>
+        <span class="related-post-title">SAP Froze Hiring Over Its AI Bill on the Same Day Meta Open-Sourced a 30B Agent Model You Can Run at Home</span>
+      </a>
+    </li>
+    
+    <li class="related-post-item">
+      <a href="/2026/08/11/opc-report-2026-08-11-1230/" class="related-post-link">
+        <span class="related-post-date">2026-08-11</span>
+        <span class="related-post-title">181,874 Meetings Left Wide Open and an AI Pharmacist Sent Home: Trust Just Became the Product</span>
+      </a>
+    </li>
+    
+    <li class="related-post-item">
+      <a href="/2026/08/11/opc-report-2026-08-11-1303/" class="related-post-link">
+        <span class="related-post-date">2026-08-11</span>
+        <span class="related-post-title">Meta Open-Sources a 30B On-Device Agent Model and Cactus Ships a 14MB Model for Microcontrollers: When Inference Cost Hits Zero, What Does a One-Person Company Actually Sell?</span>
+      </a>
+    </li>
+    
+    <li class="related-post-item">
+      <a href="/2026/08/09/opc-report-2026-08-09-1703/" class="related-post-link">
+        <span class="related-post-date">2026-08-09</span>
+        <span class="related-post-title">Cut Your AI Coding Tokens in Half Without Losing Quality: The Cost Playbook Databricks Just Published</span>
+      </a>
+    </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/09/05/opc-report-2026-09-05-0916/">Self-Writing Code and the Rise of AI Employees: The Solopreneur Agent Window Is Open</a>
+          </li>
+        
+          <li>
+            <a href="/2026/09/03/opc-report-2026-09-03-2103/">Always-On Agents and Agent Identity: The New Infra Window for Solo Builders</a>
+          </li>
+        
+          <li>
+            <a href="/2026/09/03/opc-report-2026-09-03-2004/">The 80% Wall Is Here: Open-Weight Models and Agent Ops Reshape Solo Building</a>
+          </li>
+        
+          <li>
+            <a href="/2026/09/03/opc-report-2026-09-03-1903/">A 75% Cache Discount That Costs More: Why Solo Builders Must Reprice AI by Task, Not Token</a>
+          </li>
+        
+          <li>
+            <a href="/2026/09/03/opc-report-2026-09-03-1803/">AI Coding Is Now Agent-Driven: The Solo Founder Stack Worth Building in 2026</a>
+          </li>
+        
+          <li>
+            <a href="/2026/09/03/opc-report-2026-09-03-1703/">The Agent Moat Moved to Plumbing: Connectivity, Memory, and Human-in-the-Loop</a>
+          </li>
+        
+          <li>
+            <a href="/2026/09/03/opc-report-2026-09-03-1603/">Claude Code Becomes a Platform and API Prices Halve — Three Build Directions for Solo Founders</a>
+          </li>
+        
+          <li>
+            <a href="/2026/09/03/opc-report-2026-09-03-0947/">Google Gemini 3.8 Flash and Meta Muse Spark 1.3 Ship Same Day, Pushing Coding-Agent Costs Down Another Notch</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud tagcloud-collapsed" id="sidebar-tagcloud">
+
+      <a href="/tags/OPC/">OPC</a>
+
+      <a href="/tags/Solopreneur/">Solopreneur</a>
+
+      <a href="/tags/AI-Agent/">AI-Agent</a>
+
+      <a href="/tags/One-Person-Company/">One-Person-Company</a>
+
+      <a href="/tags/Independent-Developer/">Independent-Developer</a>
+
+      <a href="/tags/AI-Tools/">AI-Tools</a>
+
+      <a href="/tags/Cursor/">Cursor</a>
+
+      <a href="/tags/Windsurf/">Windsurf</a>
+
+      <a href="/tags/TRAE/">TRAE</a>
+
+      <a href="/tags/Indie-Hacker/">Indie-Hacker</a>
+
+      <a href="/tags/AI%E5%88%9B%E4%B8%9A/">AI创业</a>
+
+      <a href="/tags/%E4%B8%80%E4%BA%BA%E5%85%AC%E5%8F%B8/">一人公司</a>
+
+      <a href="/tags/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E8%80%85/">独立开发者</a>
+
+      <a href="/tags/AI-Entrepreneurship/">AI-Entrepreneurship</a>
+
+      <a href="/tags/Solo-Entrepreneur/">Solo-Entrepreneur</a>
+
+      <a href="/tags/2026-Trends/">2026-Trends</a>
+
+      <a href="/tags/NVIDIA/">NVIDIA</a>
+
+      <a href="/tags/WAIC/">WAIC</a>
+
+      <a href="/tags/AI-Factory/">AI-Factory</a>
+
+      <a href="/tags/AI-Startup/">AI-Startup</a>
+
+      <a href="/tags/SaaS/">SaaS</a>
+
+      <a href="/tags/WAIC-2026/">WAIC-2026</a>
+
+      <a href="/tags/Entrepreneurship-Trends/">Entrepreneurship-Trends</a>
+
+      <a href="/tags/OPE/">OPE</a>
+
+      <a href="/tags/Seede-AI/">Seede-AI</a>
+
+      <a href="/tags/Startup-Trends/">Startup-Trends</a>
+
+      <a href="/tags/AI-Trends/">AI-Trends</a>
+
+      <a href="/tags/Weekly-Report/">Weekly-Report</a>
+
+      <a href="/tags/Artificial-Intelligence/">Artificial-Intelligence</a>
+
+      <a href="/tags/Bootstrapped-Startup/">Bootstrapped-Startup</a>
+
+      <a href="/tags/Super-Individual/">Super-Individual</a>
+
+      <a href="/tags/Micro-SaaS/">Micro-SaaS</a>
+
+      <a href="/tags/Entrepreneurship/">Entrepreneurship</a>
+
+      <a href="/tags/Low-Code/">Low-Code</a>
+
+      <a href="/tags/Automation/">Automation</a>
+
+      <a href="/tags/AI-Agents/">AI-Agents</a>
+
+      <a href="/tags/Solo-Founder/">Solo-Founder</a>
+
+      <a href="/tags/China-Tech-Policy/">China-Tech-Policy</a>
+
+      <a href="/tags/v0-dev/">v0.dev</a>
+
+      <a href="/tags/LangGraph/">LangGraph</a>
+
+      <a href="/tags/OpenClaw/">OpenClaw</a>
+
+      <a href="/tags/2026/">2026</a>
+
+      <a href="/tags/Bootstrapped/">Bootstrapped</a>
+
+      <a href="/tags/OPC-Ecosystem/">OPC-Ecosystem</a>
+
+      <a href="/tags/Chongqing/">Chongqing</a>
+
+      <a href="/tags/Marc-Lou/">Marc-Lou</a>
+
+      <a href="/tags/Chinese-AI-Models/">Chinese-AI-Models</a>
+
+      <a href="/tags/Hainan-Free-Trade-Port/">Hainan-Free-Trade-Port</a>
+
+      <a href="/tags/Chongqing-Nanan/">Chongqing-Nanan</a>
+
+      <a href="/tags/WAIC-OPC-Challenge/">WAIC-OPC-Challenge</a>
+
+      <a href="/tags/Digital-Entrepreneurship/">Digital-Entrepreneurship</a>
+
+      <a href="/tags/Business-Model/">Business-Model</a>
+
+      <a href="/tags/Personal-Branding/">Personal-Branding</a>
+
+      <a href="/tags/Digital-Products/">Digital-Products</a>
+
+      <a href="/tags/AI/">AI</a>
+
+      <a href="/tags/Passive-Income/">Passive-Income</a>
+
+      <a href="/tags/2026-AI-Trends/">2026-AI-Trends</a>
+
+      <a href="/tags/Digital-Employee/">Digital-Employee</a>
+
+      <a href="/tags/GPT-5-6/">GPT-5.6</a>
+
+      <a href="/tags/Anthropic/">Anthropic</a>
+
+      <a href="/tags/Bootstrap/">Bootstrap</a>
+
+      <a href="/tags/ChatGPT/">ChatGPT</a>
+
+      <a href="/tags/Claude/">Claude</a>
+
+      <a href="/tags/Digital-Employees/">Digital-Employees</a>
+
+      <a href="/tags/China-Tech/">China-Tech</a>
+
+      <a href="/tags/Bootstrapping/">Bootstrapping</a>
+
+      <a href="/tags/Startup-Policy/">Startup-Policy</a>
+
+      <a href="/tags/AI-Powered-Business/">AI-Powered-Business</a>
+
+      <a href="/tags/Indie-Developer/">Indie-Developer</a>
+
+      <a href="/tags/OPC%E7%A4%BE%E5%8C%BA/">OPC社区</a>
+
+      <a href="/tags/AI%E5%B7%A5%E5%85%B7%E9%93%BE/">AI工具链</a>
+
+      <a href="/tags/%E8%B6%85%E7%BA%A7%E4%B8%AA%E4%BD%93/">超级个体</a>
+
+      <a href="/tags/Hainan-Policy/">Hainan-Policy</a>
+
+      <a href="/tags/Coding-Tools/">Coding-Tools</a>
+
+      <a href="/tags/China-AI-Policy/">China-AI-Policy</a>
+
+      <a href="/tags/AI%E5%B7%A5%E5%85%B7/">AI工具</a>
+
+      <a href="/tags/Indiehacker/">Indiehacker</a>
+
+      <a href="/tags/AI%E8%87%AA%E5%8A%A8%E5%8C%96/">AI自动化</a>
+
+      <a href="/tags/%E6%9D%A0%E6%9D%86%E5%8C%96%E7%B3%BB%E7%BB%9F/">杠杆化系统</a>
+
+      <a href="/tags/Product-Hunt/">Product-Hunt</a>
+
+      <a href="/tags/DeepSeek/">DeepSeek</a>
+
+      <a href="/tags/Digital-Nomad/">Digital-Nomad</a>
+
+      <a href="/tags/Vertical-SaaS/">Vertical-SaaS</a>
+
+      <a href="/tags/Chongqing-Policy/">Chongqing-Policy</a>
+
+      <a href="/tags/AI-Short-Film/">AI-Short-Film</a>
+
+      <a href="/tags/GitHub-Copilot/">GitHub-Copilot</a>
+
+      <a href="/tags/Unicorn/">Unicorn</a>
+
+      <a href="/tags/Solo-Unicorn/">Solo-Unicorn</a>
+
+      <a href="/tags/AI-Ecosystem/">AI-Ecosystem</a>
+
+      <a href="/tags/10-Billion-USD-OPC/">10-Billion-USD-OPC</a>
+
+      <a href="/tags/2026-AI-First-Year/">2026-AI-First-Year</a>
+
+      <a href="/tags/Market-Trends/">Market-Trends</a>
+
+      <a href="/tags/Startup/">Startup</a>
+
+      <a href="/tags/Monitoring/">Monitoring</a>
+
+      <a href="/tags/Report/">Report</a>
+
+      <a href="/tags/OpenCSG/">OpenCSG</a>
+
+      <a href="/tags/Lovable/">Lovable</a>
+
+      <a href="/tags/Base44/">Base44</a>
+
+      <a href="/tags/Policy-Support/">Policy-Support</a>
+
+      <a href="/tags/Intelligent-Agent/">Intelligent-Agent</a>
+
+      <a href="/tags/Chinese-AI/">Chinese-AI</a>
+
+      <a href="/tags/Domestic-Large-Model/">Domestic-Large-Model</a>
+
+      <a href="/tags/Business-Automation/">Business-Automation</a>
+
+      <a href="/tags/Digital-Transformation/">Digital-Transformation</a>
+
+      <a href="/tags/Trends/">Trends</a>
+
+      <a href="/tags/Startup-Trend/">Startup-Trend</a>
+
+      <a href="/tags/AI-Coding/">AI-Coding</a>
+
+      <a href="/tags/Vertical-Agent/">Vertical-Agent</a>
+
+      <a href="/tags/No-Code/">No-Code</a>
+
+      <a href="/tags/Tsinghua-University-OPC-Report/">Tsinghua-University-OPC-Report</a>
+
+      <a href="/tags/AI-Business-Model/">AI-Business-Model</a>
+
+      <a href="/tags/Policy/">Policy</a>
+
+      <a href="/tags/AI-Solopreneur/">AI-Solopreneur</a>
+
+      <a href="/tags/AI-Entrepreneurship-2026/">AI-Entrepreneurship-2026</a>
+
+      <a href="/tags/Solo-Business/">Solo-Business</a>
+
+      <a href="/tags/AI-Financing/">AI-Financing</a>
+
+      <a href="/tags/WAIC2026/">WAIC2026</a>
+
+      <a href="/tags/%E6%B5%B7%E5%8D%97%E8%87%AA%E8%B4%B8%E6%B8%AF/">海南自贸港</a>
+
+      <a href="/tags/Agent-Engineering/">Agent-Engineering</a>
+
+      <a href="/tags/Kling-AI/">Kling-AI</a>
+
+      <a href="/tags/Compute-Vouchers/">Compute-Vouchers</a>
+
+      <a href="/tags/Vibe-Coding/">Vibe-Coding</a>
+
+      <a href="/tags/Automation-Workflow/">Automation-Workflow</a>
+
+      <a href="/tags/Claude-Code/">Claude-Code</a>
+
+      <a href="/tags/AIGC/">AIGC</a>
+
+      <a href="/tags/AI-Tools-2026/">AI-Tools-2026</a>
+
+      <a href="/tags/Solopreneur-AI/">Solopreneur-AI</a>
+
+      <a href="/tags/AI-Business/">AI-Business</a>
+
+      <a href="/tags/GEO/">GEO</a>
+
+      <a href="/tags/Microsoft-Frontier/">Microsoft-Frontier</a>
+
+      <a href="/tags/Agentic-AI/">Agentic-AI</a>
+
+      <a href="/tags/Autonomous-Company/">Autonomous-Company</a>
+
+      <a href="/tags/AI-Startup-Trends/">AI-Startup-Trends</a>
+
+      <a href="/tags/AIOPC/">AIOPC</a>
+
+      <a href="/tags/Compute-Voucher/">Compute-Voucher</a>
+
+      <a href="/tags/15th-Five-Year-Plan/">15th-Five-Year-Plan</a>
+
+      <a href="/tags/AI-Regulation/">AI-Regulation</a>
+
+      <a href="/tags/AI-Startup-2026/">AI-Startup-2026</a>
+
+      <a href="/tags/MCP/">MCP</a>
+
+      <a href="/tags/Entrepreneurship-2026/">Entrepreneurship-2026</a>
+
+      <a href="/tags/Bootstrapped-SaaS/">Bootstrapped-SaaS</a>
+
+      <a href="/tags/AI-OPC/">AI-OPC</a>
+
+      <a href="/tags/Decision-AI/">Decision-AI</a>
+
+      <a href="/tags/AI-Super-Individual/">AI-Super-Individual</a>
+
+      <a href="/tags/%E5%88%9B%E4%B8%9A/">创业</a>
+
+      <a href="/tags/OPC-Challenge/">OPC-Challenge</a>
+
+      <a href="/tags/Agentic-Workflows/">Agentic-Workflows</a>
+
+      <a href="/tags/Side-Hustle/">Side-Hustle</a>
+
+      <a href="/tags/AI-Monetization/">AI-Monetization</a>
+
+      <a href="/tags/Business-Innovation/">Business-Innovation</a>
+
+      <a href="/tags/Indie-Maker/">Indie-Maker</a>
+
+      <a href="/tags/Startup-Trends-2026/">Startup-Trends-2026</a>
+
+      <a href="/tags/OPC-Community/">OPC-Community</a>
+
+      <a href="/tags/Coze/">Coze</a>
+
+      <a href="/tags/Solo-CEO/">Solo-CEO</a>
+
+      <a href="/tags/Vertical-AI/">Vertical-AI</a>
+
+      <a href="/tags/HACR/">HACR</a>
+
+      <a href="/tags/AI-Employees/">AI-Employees</a>
+
+      <a href="/tags/AI-Policy/">AI-Policy</a>
+
+      <a href="/tags/OPC-Standard/">OPC-Standard</a>
+
+      <a href="/tags/China-AI/">China-AI</a>
+
+      <a href="/tags/Human-AI-Cost-Ratio/">Human-AI-Cost-Ratio</a>
+
+      <a href="/tags/Accio-Work/">Accio-Work</a>
+
+      <a href="/tags/n8n/">n8n</a>
+
+      <a href="/tags/AI-SaaS/">AI-SaaS</a>
+
+      <a href="/tags/Automation-Tools/">Automation-Tools</a>
+
+      <a href="/tags/MCP-Protocol/">MCP-Protocol</a>
+
+      <a href="/tags/AI-Employee/">AI-Employee</a>
+
+      <a href="/tags/AI-CEO/">AI-CEO</a>
+
+      <a href="/tags/Tycoon/">Tycoon</a>
+
+      <a href="/tags/Bika-ai/">Bika.ai</a>
+
+      <a href="/tags/%E6%9D%AD%E5%B7%9E/">杭州</a>
+
+      <a href="/tags/Hangzhou/">Hangzhou</a>
+
+      <a href="/tags/%E6%95%B0%E5%AD%97%E5%91%98%E5%B7%A5/">数字员工</a>
+
+      <a href="/tags/OPC-Hub-Hong-Kong/">OPC-Hub-Hong-Kong</a>
+
+      <a href="/tags/AI-Automation/">AI-Automation</a>
+
+      <a href="/tags/WorkBuddy/">WorkBuddy</a>
+
+      <a href="/tags/Hong-Kong/">Hong-Kong</a>
+
+      <a href="/tags/World-AI-Conference/">World-AI-Conference</a>
+
+      <a href="/tags/ZHC/">ZHC</a>
+
+      <a href="/tags/Claude-For-Small-Business/">Claude-For-Small-Business</a>
+
+      <a href="/tags/AI-Unicorn/">AI-Unicorn</a>
+
+      <a href="/tags/Venture-Capital/">Venture-Capital</a>
+
+      <a href="/tags/Guangdong-AI-Policy/">Guangdong-AI-Policy</a>
+
+      <a href="/tags/Y-Combinator/">Y-Combinator</a>
+
+      <a href="/tags/China-Policy/">China-Policy</a>
+
+      <a href="/tags/Yunnan/">Yunnan</a>
+
+      <a href="/tags/China/">China</a>
+
+      <a href="/tags/Agent-Infrastructure/">Agent-Infrastructure</a>
+
+      <a href="/tags/Context-Engineering/">Context-Engineering</a>
+
+      <a href="/tags/Agentic-Commerce/">Agentic-Commerce</a>
+
+      <a href="/tags/YC/">YC</a>
+
+      <a href="/tags/Stripe/">Stripe</a>
+
+      <a href="/tags/Agentic-Coding/">Agentic-Coding</a>
+
+      <a href="/tags/Developer-Tools/">Developer-Tools</a>
+
+      <a href="/tags/Voice-Agents/">Voice-Agents</a>
+
+      <a href="/tags/Gemini-CLI/">Gemini-CLI</a>
+
+      <a href="/tags/Open-Weights/">Open-Weights</a>
+
+      <a href="/tags/GLM-5/">GLM-5</a>
+
+      <a href="/tags/Elevenlabs/">Elevenlabs</a>
+
+      <a href="/tags/Cost-Control/">Cost-Control</a>
+
+      <a href="/tags/Agent-Payments/">Agent-Payments</a>
+
+      <a href="/tags/Codex-CLI/">Codex-CLI</a>
+
+      <a href="/tags/Open-Source-Models/">Open-Source-Models</a>
+
+      <a href="/tags/Coding-Agents/">Coding-Agents</a>
+
+      <a href="/tags/Agent-Orchestration/">Agent-Orchestration</a>
+
+      <a href="/tags/AI-Coding-Agent/">AI-Coding-Agent</a>
+
+      <a href="/tags/Open-Source/">Open-Source</a>
+
+      <a href="/tags/Openai-Codex/">Openai-Codex</a>
+
+      <a href="/tags/AI-Stack/">AI-Stack</a>
+
+      <a href="/tags/AI-Inference/">AI-Inference</a>
+
+      <a href="/tags/Token-Billing/">Token-Billing</a>
+
+      <a href="/tags/Agent-Observability/">Agent-Observability</a>
+
+      <a href="/tags/Startup-Economics/">Startup-Economics</a>
+
+      <a href="/tags/Local-LLM/">Local-LLM</a>
+
+      <a href="/tags/Unbundling/">Unbundling</a>
+
+      <a href="/tags/Kimi-CLI/">Kimi-CLI</a>
+
+      <a href="/tags/Local-Inference/">Local-Inference</a>
+
+      <a href="/tags/Multi-Agent/">Multi-Agent</a>
+
+      <a href="/tags/Agent-Evaluation/">Agent-Evaluation</a>
+
+      <a href="/tags/Vapi/">Vapi</a>
+
+      <a href="/tags/Kilo-Code/">Kilo-Code</a>
+
+      <a href="/tags/Claude-Fable-5/">Claude-Fable-5</a>
+
+      <a href="/tags/Legacy-Migration/">Legacy-Migration</a>
+
+      <a href="/tags/Moats/">Moats</a>
+
+      <a href="/tags/Indie-Hackers/">Indie-Hackers</a>
+
+      <a href="/tags/Inference-Pricing/">Inference-Pricing</a>
+
+      <a href="/tags/Open-Weight-Models/">Open-Weight-Models</a>
+
+      <a href="/tags/Virtual-Company/">Virtual-Company</a>
+
+      <a href="/tags/Agent-Skills/">Agent-Skills</a>
+
+      <a href="/tags/Claude-md/">Claude.md</a>
+
+      <a href="/tags/Code-Knowledge-Graph/">Code-Knowledge-Graph</a>
+
+      <a href="/tags/Harness-Engineering/">Harness-Engineering</a>
+
+      <a href="/tags/Agent-Harness/">Agent-Harness</a>
+
+      <a href="/tags/Agent-Infra/">Agent-Infra</a>
+
+      <a href="/tags/Open-Source-Agents/">Open-Source-Agents</a>
+
+      <a href="/tags/AI-Privacy/">AI-Privacy</a>
+
+      <a href="/tags/Codex/">Codex</a>
+
+      <a href="/tags/Lead-Generation/">Lead-Generation</a>
+
+      <a href="/tags/Voice-Agent/">Voice-Agent</a>
+
+      <a href="/tags/Voice-AI/">Voice-AI</a>
+
+      <a href="/tags/Inference-Cost/">Inference-Cost</a>
+
+      <a href="/tags/Model-Routing/">Model-Routing</a>
+
+      <a href="/tags/Agentic-Payments/">Agentic-Payments</a>
+
+      <a href="/tags/Agent-Security/">Agent-Security</a>
+
+      <a href="/tags/Copyright-Compliance/">Copyright-Compliance</a>
+
+      <a href="/tags/Litellm/">Litellm</a>
+
+      <a href="/tags/AI-Support/">AI-Support</a>
+
+      <a href="/tags/Agent-Safety/">Agent-Safety</a>
+
+      <a href="/tags/YC-S26/">YC-S26</a>
+
+      <a href="/tags/Implementation-Economy/">Implementation-Economy</a>
+
+      <a href="/tags/Agent-Tooling/">Agent-Tooling</a>
+
+      <a href="/tags/Token-Economics/">Token-Economics</a>
+
+      <a href="/tags/Gemini/">Gemini</a>
+
+      <a href="/tags/Agent-Runtime/">Agent-Runtime</a>
+
+      <a href="/tags/Open-Models/">Open-Models</a>
+
+      <a href="/tags/Local-First/">Local-First</a>
+
+      <a href="/tags/Browser-Agent/">Browser-Agent</a>
+
+      <a href="/tags/Cost-Discipline/">Cost-Discipline</a>
+
+      <a href="/tags/AI-Voice-Agents/">AI-Voice-Agents</a>
+
+      <a href="/tags/Openai-Realtime/">Openai-Realtime</a>
+
+      <a href="/tags/Livekit/">Livekit</a>
+
+      <a href="/tags/Speech-To-Speech/">Speech-To-Speech</a>
+
+      <a href="/tags/Agent-Interface/">Agent-Interface</a>
+
+      <a href="/tags/Coding-Agent/">Coding-Agent</a>
+
+      <a href="/tags/Hacker-News/">Hacker-News</a>
+
+      <a href="/tags/Show-HN/">Show-HN</a>
+
+      <a href="/tags/Browser-Automation/">Browser-Automation</a>
+
+      <a href="/tags/LLM-Pricing/">LLM-Pricing</a>
+
+      <a href="/tags/Agent-Native-IDE/">Agent-Native-IDE</a>
+
+      <a href="/tags/Verified-Revenue/">Verified-Revenue</a>
+
+      <a href="/tags/Local-AI/">Local-AI</a>
+
+      <a href="/tags/Agent-Swarm/">Agent-Swarm</a>
+
+      <a href="/tags/Cost-Optimization/">Cost-Optimization</a>
+
+      <a href="/tags/Goose/">Goose</a>
+
+      <a href="/tags/Agent-Native/">Agent-Native</a>
+
+      <a href="/tags/One-Person-Business/">One-Person-Business</a>
+
+      <a href="/tags/Cheap-Inference/">Cheap-Inference</a>
+
+      <a href="/tags/Gemini-Flash/">Gemini-Flash</a>
+
+      <a href="/tags/Solo-Founder-Accelerator/">Solo-Founder-Accelerator</a>
+
+      <a href="/tags/Model-Context-Protocol/">Model-Context-Protocol</a>
+
+      <a href="/tags/Agent-Connectors/">Agent-Connectors</a>
+
+      <a href="/tags/Fastmcp/">Fastmcp</a>
+
+      <a href="/tags/Cloudflare-Workers/">Cloudflare-Workers</a>
+
+      <a href="/tags/AI-Infrastructure/">AI-Infrastructure</a>
+
+      <a href="/tags/AI-Coding-Tools/">AI-Coding-Tools</a>
+
+      <a href="/tags/AI-Coding-Agents/">AI-Coding-Agents</a>
+
+      <a href="/tags/On-Device-AI/">On-Device-AI</a>
+
+      <a href="/tags/Vibecoding/">Vibecoding</a>
+
+      <a href="/tags/Unit-Economics/">Unit-Economics</a>
+
+      <a href="/tags/AI-Security/">AI-Security</a>
+
+      <a href="/tags/Indie-Hacking/">Indie-Hacking</a>
+
+      <a href="/tags/Kimi-K3/">Kimi-K3</a>
+
+      <a href="/tags/Flux-3/">Flux-3</a>
+
+      <a href="/tags/Agent-Memory/">Agent-Memory</a>
+
+      <a href="/tags/Anti-Slop/">Anti-Slop</a>
+
+      <a href="/tags/Content-Detection/">Content-Detection</a>
+
+      <a href="/tags/AI-Code-Security/">AI-Code-Security</a>
+
+      <a href="/tags/Data-Compliance/">Data-Compliance</a>
+
+      <a href="/tags/Agents/">Agents</a>
+
+      <a href="/tags/Distribution/">Distribution</a>
+
+      <a href="/tags/Orchestration/">Orchestration</a>
+
+      <a href="/tags/Openrouter/">Openrouter</a>
+
+      <a href="/tags/Multimodal/">Multimodal</a>
+
+      <a href="/tags/Verification/">Verification</a>
+
+      <a href="/tags/Claude-Opus-5/">Claude-Opus-5</a>
+
+      <a href="/tags/Agent-Verification/">Agent-Verification</a>
+
+      <a href="/tags/No-Code-AI/">No-Code-AI</a>
+
+      <a href="/tags/Startup-Exit/">Startup-Exit</a>
+
+      <a href="/tags/Dev-Tools/">Dev-Tools</a>
+
+      <a href="/tags/Inference-Costs/">Inference-Costs</a>
+
+      <a href="/tags/Etched/">Etched</a>
+
+      <a href="/tags/Token-Costs/">Token-Costs</a>
+
+      <a href="/tags/Autonomous-Coding/">Autonomous-Coding</a>
+
+      <a href="/tags/Build-In-Public/">Build-In-Public</a>
+
+      <a href="/tags/Model-Pricing/">Model-Pricing</a>
+
+      <a href="/tags/AEO/">AEO</a>
+
+      <a href="/tags/AI-Search/">AI-Search</a>
+
+      <a href="/tags/Generative-Engine-Optimization/">Generative-Engine-Optimization</a>
+
+      <a href="/tags/AI-Distribution/">AI-Distribution</a>
+
+      <a href="/tags/Trust-Layer/">Trust-Layer</a>
+
+      <a href="/tags/Vibe-Coding-Security/">Vibe-Coding-Security</a>
+
+      <a href="/tags/X402/">X402</a>
+
+      <a href="/tags/SEO/">SEO</a>
+
+      <a href="/tags/AI-Models/">AI-Models</a>
+
+      <a href="/tags/Pricing/">Pricing</a>
+
+      <a href="/tags/Fine-Tuning/">Fine-Tuning</a>
+
+      <a href="/tags/Agent-Cost/">Agent-Cost</a>
+
+      <a href="/tags/AI-Support-Agents/">AI-Support-Agents</a>
+
+      <a href="/tags/Long-Context/">Long-Context</a>
+
+      <a href="/tags/Multi-Model/">Multi-Model</a>
+
+      <a href="/tags/Local-Llms/">Local-Llms</a>
+
+      <a href="/tags/Claude-Skills/">Claude-Skills</a>
+
+      <a href="/tags/Open-Source-LLM/">Open-Source-LLM</a>
+
+      <a href="/tags/AI-Compliance/">AI-Compliance</a>
+
+      <a href="/tags/Security/">Security</a>
+
+      <a href="/tags/Compliance/">Compliance</a>
+
+      <a href="/tags/Regulation/">Regulation</a>
+
+      <a href="/tags/Small-Models/">Small-Models</a>
+
+      <a href="/tags/Gemini-Spark/">Gemini-Spark</a>
+
+      <a href="/tags/Outcome-Pricing/">Outcome-Pricing</a>
+
+      <a href="/tags/Service-As-Software/">Service-As-Software</a>
+
+      <a href="/tags/Inference/">Inference</a>
+
+      <a href="/tags/Validation-Engineering/">Validation-Engineering</a>
+
+      <a href="/tags/AI-Detection/">AI-Detection</a>
+
+      <a href="/tags/Tooling/">Tooling</a>
+
+      <a href="/tags/Vertical-Agents/">Vertical-Agents</a>
+
+      <a href="/tags/AI-Trust-Layer/">AI-Trust-Layer</a>
+
+      <a href="/tags/Reliability/">Reliability</a>
+
+      <a href="/tags/Openai/">Openai</a>
+
+      <a href="/tags/Copilot/">Copilot</a>
+
+      <a href="/tags/Build-Directions/">Build-Directions</a>
+
+      <a href="/tags/Prompt-Injection/">Prompt-Injection</a>
+
+      <a href="/tags/Evals/">Evals</a>
+
+      <a href="/tags/Sandboxing/">Sandboxing</a>
+
+      <a href="/tags/Vendor-Lock-In/">Vendor-Lock-In</a>
+
+      <a href="/tags/Developer-Productivity/">Developer-Productivity</a>
+
+      <a href="/tags/Computer-Use/">Computer-Use</a>
+
+      <a href="/tags/Agent-Governance/">Agent-Governance</a>
+
+      <a href="/tags/Open-Source-Policy/">Open-Source-Policy</a>
+
+      <a href="/tags/Code-Provenance/">Code-Provenance</a>
+
+      <a href="/tags/Agentic-Engineering/">Agentic-Engineering</a>
+
+      <a href="/tags/Peer-Review/">Peer-Review</a>
+
+      <a href="/tags/Verification-Infrastructure/">Verification-Infrastructure</a>
+
+      <a href="/tags/Cost-Routing/">Cost-Routing</a>
+
+      <a href="/tags/Sandbox-Security/">Sandbox-Security</a>
+
+      <a href="/tags/LLM-Costs/">LLM-Costs</a>
+
+      <a href="/tags/Personal-Software/">Personal-Software</a>
+
+      <a href="/tags/Security-Automation/">Security-Automation</a>
+
+      <a href="/tags/Model-Selection/">Model-Selection</a>
+
+      <a href="/tags/AI-Pricing/">AI-Pricing</a>
+
+      <a href="/tags/Session-Portability/">Session-Portability</a>
+
+      <a href="/tags/Provenance/">Provenance</a>
+
+      <a href="/tags/Distillation/">Distillation</a>
+
+      <a href="/tags/AI-Costs/">AI-Costs</a>
+
+      <a href="/tags/Critic-Agents/">Critic-Agents</a>
+
+      <a href="/tags/Prompt-Caching/">Prompt-Caching</a>
+
+      <a href="/tags/Machine-Identity/">Machine-Identity</a>
+
+      <a href="/tags/Workload-Identity/">Workload-Identity</a>
+
+      <a href="/tags/Credential-Management/">Credential-Management</a>
+
+      <a href="/tags/EU-AI-Act/">EU-AI-Act</a>
+
+      <a href="/tags/Content-Provenance/">Content-Provenance</a>
+
+      <a href="/tags/Chrome/">Chrome</a>
+
+      <a href="/tags/Verification-Layer/">Verification-Layer</a>
+
+      <a href="/tags/Agent-Sandboxing/">Agent-Sandboxing</a>
+
+      <a href="/tags/LLM-Router/">LLM-Router</a>
+
+      <a href="/tags/Cost-Engineering/">Cost-Engineering</a>
+
+      <a href="/tags/SWE-Rebench/">SWE-Rebench</a>
+
+      <a href="/tags/Agent-Swarms/">Agent-Swarms</a>
+
+      <a href="/tags/Planner-Worker/">Planner-Worker</a>
+
+      <a href="/tags/DeepSeek-V4/">DeepSeek-V4</a>
+
+      <a href="/tags/Design-Systems/">Design-Systems</a>
+
+      <a href="/tags/Article-50/">Article-50</a>
+
+      <a href="/tags/Production-Readiness/">Production-Readiness</a>
+
+      <a href="/tags/Answer-Engine-Optimization/">Answer-Engine-Optimization</a>
+
+      <a href="/tags/Delivery-Pipeline/">Delivery-Pipeline</a>
+
+      <a href="/tags/Workflow-Automation/">Workflow-Automation</a>
+
+      <a href="/tags/Code-Auditing/">Code-Auditing</a>
+
+      <a href="/tags/Owned-Audience/">Owned-Audience</a>
+
+      <a href="/tags/Community/">Community</a>
+
+      <a href="/tags/AI-Content/">AI-Content</a>
+
+      <a href="/tags/Identity/">Identity</a>
+
+      <a href="/tags/Self-Hosting/">Self-Hosting</a>
+
+      <a href="/tags/AI-Bubble/">AI-Bubble</a>
+
+      <a href="/tags/GPU-Pricing/">GPU-Pricing</a>
+
+      <a href="/tags/App-Monetization/">App-Monetization</a>
+
+      <a href="/tags/Token-Efficiency/">Token-Efficiency</a>
+
+      <a href="/tags/Cost-Observability/">Cost-Observability</a>
+
+      <a href="/tags/Omniroute/">Omniroute</a>
+
+      <a href="/tags/LLM-Gateway/">LLM-Gateway</a>
+
+      <a href="/tags/Content-Strategy/">Content-Strategy</a>
+
+      <a href="/tags/Perplexity/">Perplexity</a>
+
+      <a href="/tags/Supply-Chain/">Supply-Chain</a>
+
+      <a href="/tags/Market-Dilution/">Market-Dilution</a>
+
+      <a href="/tags/Agent-Compliance/">Agent-Compliance</a>
+
+      <a href="/tags/Inference-Economics/">Inference-Economics</a>
+
+      <a href="/tags/AI-Inference-Costs/">AI-Inference-Costs</a>
+
+      <a href="/tags/Capital-Markets/">Capital-Markets</a>
+
+      <a href="/tags/Zero-Click-Search/">Zero-Click-Search</a>
+
+      <a href="/tags/AI-Video/">AI-Video</a>
+
+      <a href="/tags/Developer-Documentation/">Developer-Documentation</a>
+
+      <a href="/tags/Long-Horizon-Agents/">Long-Horizon-Agents</a>
+
+      <a href="/tags/Attestation/">Attestation</a>
+
+      <a href="/tags/Documentation/">Documentation</a>
+
+      <a href="/tags/Policy-Enforcement/">Policy-Enforcement</a>
+
+      <a href="/tags/COBOL/">COBOL</a>
+
+      <a href="/tags/Code-Review/">Code-Review</a>
+
+      <a href="/tags/Agent-Reliability/">Agent-Reliability</a>
+
+      <a href="/tags/LLM-Cost/">LLM-Cost</a>
+
+      <a href="/tags/AI-Visibility/">AI-Visibility</a>
+
+      <a href="/tags/AI-Tooling/">AI-Tooling</a>
+
+      <a href="/tags/BYOK/">BYOK</a>
+
+      <a href="/tags/AI-Slop/">AI-Slop</a>
+
+      <a href="/tags/Trust-Infrastructure/">Trust-Infrastructure</a>
+
+      <a href="/tags/AI-Engineering/">AI-Engineering</a>
+
+      <a href="/tags/Guardrails/">Guardrails</a>
+
+      <a href="/tags/Synthetic-Content/">Synthetic-Content</a>
+
+      <a href="/tags/Governance/">Governance</a>
+
+      <a href="/tags/Enterprise-AI/">Enterprise-AI</a>
+
+      <a href="/tags/Open-Source-Metrics/">Open-Source-Metrics</a>
+
+      <a href="/tags/Deployment/">Deployment</a>
+
+      <a href="/tags/Supply-Chain-Security/">Supply-Chain-Security</a>
+
+      <a href="/tags/Legacy-Systems/">Legacy-Systems</a>
+
+      <a href="/tags/Long-Horizon-Coding/">Long-Horizon-Coding</a>
+
+      <a href="/tags/Mirrorcode/">Mirrorcode</a>
+
+      <a href="/tags/Qwen/">Qwen</a>
+
+      <a href="/tags/AI-Verification/">AI-Verification</a>
+
+      <a href="/tags/LLM-Slop/">LLM-Slop</a>
+
+      <a href="/tags/Domain-Expertise/">Domain-Expertise</a>
+
+      <a href="/tags/MCP-Analytics/">MCP-Analytics</a>
+
+      <a href="/tags/Cognitive-Debt/">Cognitive-Debt</a>
+
+      <a href="/tags/Expertise-Premium/">Expertise-Premium</a>
+
+      <a href="/tags/AI-Debt/">AI-Debt</a>
+
+      <a href="/tags/Acquisitions/">Acquisitions</a>
+
+      <a href="/tags/Positioning/">Positioning</a>
+
+      <a href="/tags/AI-Startups/">AI-Startups</a>
+
+      <a href="/tags/SaaS-Valuation/">SaaS-Valuation</a>
+
+      <a href="/tags/Self-Hosted-Inference/">Self-Hosted-Inference</a>
+
+      <a href="/tags/Personalized-Software/">Personalized-Software</a>
+
+      <a href="/tags/Cloud-Agents/">Cloud-Agents</a>
+
+      <a href="/tags/Fork-Maintenance/">Fork-Maintenance</a>
+
+      <a href="/tags/Micropayments/">Micropayments</a>
+
+      <a href="/tags/Agent-Economics/">Agent-Economics</a>
+
+      <a href="/tags/Stateless-MCP/">Stateless-MCP</a>
+
+      <a href="/tags/Edge-AI/">Edge-AI</a>
+
+      <a href="/tags/Privacy/">Privacy</a>
+
+      <a href="/tags/Post-Training/">Post-Training</a>
+
+      <a href="/tags/Gross-Margin/">Gross-Margin</a>
+
+      <a href="/tags/Harness-Economics/">Harness-Economics</a>
+
+      <a href="/tags/Context-Discipline/">Context-Discipline</a>
+
+      <a href="/tags/Flowise/">Flowise</a>
+
+      <a href="/tags/Verification-Economy/">Verification-Economy</a>
+
+      <a href="/tags/CI-CD/">CI/CD</a>
+
+      <a href="/tags/Bot-Traffic/">Bot-Traffic</a>
+
+      <a href="/tags/Analytics/">Analytics</a>
+
+      <a href="/tags/Infrastructure-Risk/">Infrastructure-Risk</a>
+
+      <a href="/tags/Agent-Traffic/">Agent-Traffic</a>
+
+      <a href="/tags/Cloudflare-OS/">Cloudflare-OS</a>
+
+      <a href="/tags/On-Device-Inference/">On-Device-Inference</a>
+
+      <a href="/tags/Llms-txt/">Llms.txt</a>
+
+      <a href="/tags/Webmcp/">Webmcp</a>
+
+      <a href="/tags/Inference-Providers/">Inference-Providers</a>
+
+      <a href="/tags/LLM-Inference/">LLM-Inference</a>
+
+      <a href="/tags/Autonomous-Business/">Autonomous-Business</a>
+
+      <a href="/tags/Machine-Readable-Web/">Machine-Readable-Web</a>
+
+      <a href="/tags/AI-Coding-Costs/">AI-Coding-Costs</a>
+
+      <a href="/tags/Efficiency-Frontier/">Efficiency-Frontier</a>
+
+      <a href="/tags/Meta-Harness/">Meta-Harness</a>
+
+      <a href="/tags/Capability-Sandboxing/">Capability-Sandboxing</a>
+
+      <a href="/tags/Chat-Native-Agents/">Chat-Native-Agents</a>
+
+      <a href="/tags/Model-Evaluation/">Model-Evaluation</a>
+
+      <a href="/tags/Open-Source-Governance/">Open-Source-Governance</a>
+
+      <a href="/tags/Openjdk/">Openjdk</a>
+
+      <a href="/tags/Model-Licensing/">Model-Licensing</a>
+
+      <a href="/tags/Hardware-Supply/">Hardware-Supply</a>
+
+      <a href="/tags/Human-In-The-Loop/">Human-In-The-Loop</a>
+
+      <a href="/tags/DeepSeek-V4-Flash/">DeepSeek-V4-Flash</a>
+
+      <a href="/tags/Cloudflare-Kitesurf/">Cloudflare-Kitesurf</a>
+
+      <a href="/tags/Reasoning-Effort/">Reasoning-Effort</a>
+
+      <a href="/tags/Skill-Packs/">Skill-Packs</a>
+
+      <a href="/tags/Procedure-Capture/">Procedure-Capture</a>
+
+      <a href="/tags/On-Prem-AI/">On-Prem-AI</a>
+
+      <a href="/tags/Open-Source-Supply-Chain/">Open-Source-Supply-Chain</a>
+
+      <a href="/tags/Model-Costs/">Model-Costs</a>
+
+      <a href="/tags/Agent-Commerce/">Agent-Commerce</a>
+
+      <a href="/tags/Programmable-Wallets/">Programmable-Wallets</a>
+
+      <a href="/tags/Cloudflare/">Cloudflare</a>
+
+      <a href="/tags/API-Monetization/">API-Monetization</a>
+
+      <a href="/tags/Autonomous-Agents/">Autonomous-Agents</a>
+
+      <a href="/tags/Auto-Mode/">Auto-Mode</a>
+
+      <a href="/tags/Context-Handoff/">Context-Handoff</a>
+
+      <a href="/tags/GLM/">GLM</a>
+
+      <a href="/tags/AI-Gateway/">AI-Gateway</a>
+
+      <a href="/tags/AI-Cost-Control/">AI-Cost-Control</a>
+
+      <a href="/tags/Token-Overhead/">Token-Overhead</a>
+
+      <a href="/tags/Skill-Distribution/">Skill-Distribution</a>
+
+      <a href="/tags/Open-Core/">Open-Core</a>
+
+      <a href="/tags/Data-Residency/">Data-Residency</a>
+
+      <a href="/tags/Agent-Coordination/">Agent-Coordination</a>
+
+      <a href="/tags/Multi-Agent-Systems/">Multi-Agent-Systems</a>
+
+      <a href="/tags/Incident-Response/">Incident-Response</a>
+
+      <a href="/tags/Autonomous-Companies/">Autonomous-Companies</a>
+
+      <a href="/tags/Run-Cost-Optimization/">Run-Cost-Optimization</a>
+
+      <a href="/tags/Faceless-Content/">Faceless-Content</a>
+
+      <a href="/tags/Agentic-Agencies/">Agentic-Agencies</a>
+
+      <a href="/tags/Token-Governance/">Token-Governance</a>
+
+      <a href="/tags/Agent-Evidence/">Agent-Evidence</a>
+
+      <a href="/tags/Agent-Browsers/">Agent-Browsers</a>
+
+      <a href="/tags/Context-Cost/">Context-Cost</a>
+
+      <a href="/tags/Delivery-Gap/">Delivery-Gap</a>
+
+      <a href="/tags/Last-Mile/">Last-Mile</a>
+
+      <a href="/tags/Plugin-Ecosystem/">Plugin-Ecosystem</a>
+
+      <a href="/tags/Model-Cost-Routing/">Model-Cost-Routing</a>
+
+      <a href="/tags/Agent-Accountability/">Agent-Accountability</a>
+
+      <a href="/tags/Review-Bottleneck/">Review-Bottleneck</a>
+
+      <a href="/tags/Platform-Risk/">Platform-Risk</a>
+
+      <a href="/tags/Self-Hosted-Harness/">Self-Hosted-Harness</a>
+
+      <a href="/tags/Agent-Autonomy/">Agent-Autonomy</a>
+
+      <a href="/tags/Containment/">Containment</a>
+
+      <a href="/tags/Cost-Governance/">Cost-Governance</a>
+
+      <a href="/tags/Review-Compression/">Review-Compression</a>
+
+      <a href="/tags/Developer-Tooling/">Developer-Tooling</a>
+
+      <a href="/tags/Open-Harness/">Open-Harness</a>
+
+      <a href="/tags/Agent-Liability/">Agent-Liability</a>
+
+      <a href="/tags/Commoditization/">Commoditization</a>
+
+      <a href="/tags/Deterministic-Orchestration/">Deterministic-Orchestration</a>
+
+      <a href="/tags/Flat-Pricing/">Flat-Pricing</a>
+
+      <a href="/tags/Agent-Gateway/">Agent-Gateway</a>
+
+      <a href="/tags/Product-Positioning/">Product-Positioning</a>
+
+      <a href="/tags/Agent-Receipts/">Agent-Receipts</a>
+
+      <a href="/tags/Originality-Risk/">Originality-Risk</a>
+
+      <a href="/tags/Run-Cost/">Run-Cost</a>
+
+      <a href="/tags/Local-Models/">Local-Models</a>
+
+      <a href="/tags/Agent-Stack/">Agent-Stack</a>
+
+      <a href="/tags/Agent-Plugins/">Agent-Plugins</a>
+
+      <a href="/tags/AI-Provenance/">AI-Provenance</a>
+
+      <a href="/tags/Creator-Economy/">Creator-Economy</a>
+
+      <a href="/tags/Marketplaces/">Marketplaces</a>
+
+      <a href="/tags/Metered-Pricing/">Metered-Pricing</a>
+
+      <a href="/tags/Eval-Sets/">Eval-Sets</a>
+
+      <a href="/tags/Agent-Sandboxes/">Agent-Sandboxes</a>
+
+      <a href="/tags/Autonomous-Execution/">Autonomous-Execution</a>
+
+      <a href="/tags/Tenant-Isolation/">Tenant-Isolation</a>
+
+      <a href="/tags/Edge-Agents/">Edge-Agents</a>
+
+      <a href="/tags/Edge-Inference/">Edge-Inference</a>
+
+      <a href="/tags/Context-Layer/">Context-Layer</a>
+
+      <a href="/tags/Solopreneur-Tools/">Solopreneur-Tools</a>
+
+      <a href="/tags/Agent-Isolation/">Agent-Isolation</a>
+
+      <a href="/tags/Embedded-AI/">Embedded-AI</a>
+
+      <a href="/tags/On-Device-LLM/">On-Device-LLM</a>
+
+      <a href="/tags/Compliance-Tech/">Compliance-Tech</a>
+
+      <a href="/tags/Multi-Tenancy/">Multi-Tenancy</a>
+
+      <a href="/tags/AI-Safety/">AI-Safety</a>
+
+      <a href="/tags/Patents/">Patents</a>
+
+      <a href="/tags/A2A/">A2A</a>
+
+      <a href="/tags/Local-Agents/">Local-Agents</a>
+
+      <a href="/tags/Muse-Glimmer/">Muse-Glimmer</a>
+
+      <a href="/tags/Model-Portability/">Model-Portability</a>
+
+      <a href="/tags/Agentic-Development/">Agentic-Development</a>
+
+      <a href="/tags/Opencode/">Opencode</a>
+
+      <a href="/tags/Docker-Sandboxes/">Docker-Sandboxes</a>
+
+      <a href="/tags/Agent-Ops/">Agent-Ops</a>
+
+      <a href="/tags/Observability/">Observability</a>
+
+      <a href="/tags/Product-Strategy/">Product-Strategy</a>
+
+      <a href="/tags/Nemotron/">Nemotron</a>
+
+      <a href="/tags/Reasoning-Extraction/">Reasoning-Extraction</a>
+
+      <a href="/tags/Suzanne/">Suzanne</a>
+
+      <a href="/tags/Token-Cost/">Token-Cost</a>
+
+      <a href="/tags/Web-Scraping/">Web-Scraping</a>
+
+      <a href="/tags/Agent-OS/">Agent-OS</a>
+
+      <a href="/tags/Agent-Identity/">Agent-Identity</a>
+
+      <a href="/tags/Reasoning-Leakage/">Reasoning-Leakage</a>
+
+      <a href="/tags/Personal-Agents/">Personal-Agents</a>
+
+      <a href="/tags/Llama-cpp/">Llama.cpp</a>
+
+      <a href="/tags/Unsloth/">Unsloth</a>
+
+      <a href="/tags/NVIDIA-Nemotron/">NVIDIA-Nemotron</a>
+
+      <a href="/tags/BYO-Model/">BYO-Model</a>
+
+      <a href="/tags/Agentops/">Agentops</a>
+
+      <a href="/tags/DeepSeek-Harness/">DeepSeek-Harness</a>
+
+      <a href="/tags/Eval-Driven-Development/">Eval-Driven-Development</a>
+
+      <a href="/tags/Cactus-Needle/">Cactus-Needle</a>
+
+      <a href="/tags/Confidence-Routing/">Confidence-Routing</a>
+
+      <a href="/tags/Escalation-Ladder/">Escalation-Ladder</a>
+
+      <a href="/tags/Agent-Sprawl/">Agent-Sprawl</a>
+
+      <a href="/tags/GLM-5-3/">GLM-5.3</a>
+
+      <a href="/tags/Agent-Guardrails/">Agent-Guardrails</a>
+
+      <a href="/tags/Dify/">Dify</a>
+
+      <a href="/tags/Gemini-3-7-Flash/">Gemini-3.7-Flash</a>
+
+      <a href="/tags/AI-Cost/">AI-Cost</a>
+
+      <a href="/tags/Agent-Architecture/">Agent-Architecture</a>
+
+      <a href="/tags/Finops/">Finops</a>
+
+      <a href="/tags/MCP-Server/">MCP-Server</a>
+
+      <a href="/tags/AI-QA/">AI-QA</a>
+
+      <a href="/tags/Blacksmith/">Blacksmith</a>
+
+      <a href="/tags/Agent-UI/">Agent-UI</a>
+
+      <a href="/tags/Indie-Dev/">Indie-Dev</a>
+
+      <a href="/tags/Agent-QA/">Agent-QA</a>
+
+      <a href="/tags/Cognition/">Cognition</a>
+
+      <a href="/tags/Openai-Ultrafast/">Openai-Ultrafast</a>
+
+      <a href="/tags/Anthropic-Watermark/">Anthropic-Watermark</a>
+
+      <a href="/tags/AI-Finops/">AI-Finops</a>
+
+      <a href="/tags/Agent-To-Agent/">Agent-To-Agent</a>
+
+      <a href="/tags/Xai-Voice-Agent-Builder/">Xai-Voice-Agent-Builder</a>
+
+      <a href="/tags/Telnyx/">Telnyx</a>
+
+      <a href="/tags/Local-Fine-Tuning/">Local-Fine-Tuning</a>
+
+      <a href="/tags/Solo-SaaS/">Solo-SaaS</a>
+
+      <a href="/tags/Qwen3-8-27B/">Qwen3.8-27B</a>
+
+      <a href="/tags/Machine-Legibility/">Machine-Legibility</a>
+
+      <a href="/tags/Agent-First/">Agent-First</a>
+
+      <a href="/tags/Open-Weight/">Open-Weight</a>
+
+      <a href="/tags/Glm/">Glm</a>
+
+      <a href="/tags/Usage-Based-Pricing/">Usage-Based-Pricing</a>
+
+      <a href="/tags/On-Device-Agents/">On-Device-Agents</a>
+
+      <a href="/tags/Browser-Agents/">Browser-Agents</a>
+
+      <a href="/tags/Stagehand/">Stagehand</a>
+
+      <a href="/tags/Claude-Code-Sub-Agents/">Claude-Code-Sub-Agents</a>
+
+      <a href="/tags/Bolt-new/">Bolt.new</a>
+
+      <a href="/tags/LLM-Infrastructure/">LLM-Infrastructure</a>
+
+      <a href="/tags/Devtools/">Devtools</a>
+
+      <a href="/tags/Spec-Driven-Development/">Spec-Driven-Development</a>
+
+      <a href="/tags/Agent-Review/">Agent-Review</a>
+
+      <a href="/tags/Local-First-AI/">Local-First-AI</a>
+
+      <a href="/tags/YC-Startups/">YC-Startups</a>
+
+      <a href="/tags/LLM/">LLM</a>
+
+      <a href="/tags/Agent-Economy/">Agent-Economy</a>
+
+      <a href="/tags/Infrastructure/">Infrastructure</a>
+
+      <a href="/tags/Cursor-Origin/">Cursor-Origin</a>
+
+      <a href="/tags/Cloudflare-Wallets/">Cloudflare-Wallets</a>
+
+      <a href="/tags/Machine0/">Machine0</a>
+
+      <a href="/tags/Sapiom/">Sapiom</a>
+
+      <a href="/tags/Self-Hosted-AI/">Self-Hosted-AI</a>
+
+      <a href="/tags/PR-Review/">PR-Review</a>
+
+      <a href="/tags/GitHub-Alternatives/">GitHub-Alternatives</a>
+
+      <a href="/tags/Faceless-Video/">Faceless-Video</a>
+
+      <a href="/tags/One-Person-Company/">One Person Company</a>
+
+      <a href="/tags/AI-Agent/">AI Agent</a>
+
+      <a href="/tags/AI-Coding/">AI Coding</a>
+
+      <a href="/tags/Agent-Orchestration/">Agent Orchestration</a>
+
+      <a href="/tags/Agent-Insurance/">Agent Insurance</a>
+
+      <a href="/tags/Y-Combinator/">Y Combinator</a>
+
+      <a href="/tags/AI-Agents/">AI Agents</a>
+
+      <a href="/tags/Solo-Founder/">Solo Founder</a>
+
+      <a href="/tags/Agentic-Coding/">Agentic Coding</a>
+
+      <a href="/tags/Agent-Observability/">Agent Observability</a>
+
+      <a href="/tags/Product-Hunt/">Product Hunt</a>
+
+      <a href="/tags/AI-coding-agents/">AI coding agents</a>
+
+      <a href="/tags/solopreneur/">solopreneur</a>
+
+      <a href="/tags/one-person-company/">one-person company</a>
+
+      <a href="/tags/Claude-Code/">Claude Code</a>
+
+      <a href="/tags/Muse-Code/">Muse Code</a>
+
+      <a href="/tags/agent-native/">agent-native</a>
+
+      <a href="/tags/AI-startup/">AI startup</a>
+
+      <a href="/tags/AI-Coding-Agent/">AI Coding Agent</a>
+
+      <a href="/tags/Vertical-SaaS/">Vertical SaaS</a>
+
+      <a href="/tags/Bootstrapped-Startup/">Bootstrapped Startup</a>
+
+      <a href="/tags/AI-Startup/">AI Startup</a>
+
+      <a href="/tags/Independent-Developer/">Independent Developer</a>
+
+      <a href="/tags/AI-Pricing/">AI Pricing</a>
+
+      <a href="/tags/Model-Routing/">Model Routing</a>
+
+      <a href="/tags/Generative-Engine-Optimization/">Generative Engine Optimization</a>
+
+      <a href="/tags/Persistent-Agents/">Persistent Agents</a>
+
+      <a href="/tags/AI-agents/">AI agents</a>
+
+      <a href="/tags/solo-founder/">solo founder</a>
+
+      <a href="/tags/coding-agents/">coding agents</a>
+
+      <a href="/tags/voice-agents/">voice agents</a>
+
+      <a href="/tags/micro-SaaS/">micro-SaaS</a>
+
+      <a href="/tags/Agent-Harness/">Agent Harness</a>
+
+      <a href="/tags/AI-Native-Services/">AI-Native Services</a>
+
+      <a href="/tags/ai-agents/">ai-agents</a>
+
+      <a href="/tags/claude-code/">claude-code</a>
+
+      <a href="/tags/context-engineering/">context-engineering</a>
+
+      <a href="/tags/yc/">yc</a>
+
+      <a href="/tags/product-hunt/">product-hunt</a>
+
+      <a href="/tags/one-person-company/">one-person-company</a>
+
+      <a href="/tags/agent-observability/">agent observability</a>
+
+      <a href="/tags/open-source-LLM/">open-source LLM</a>
+
+      <a href="/tags/agent-harness/">agent harness</a>
+
+      <a href="/tags/model-routing/">model routing</a>
+
+      <a href="/tags/agent-reliability/">agent reliability</a>
+
+      <a href="/tags/content-provenance/">content provenance</a>
+
+      <a href="/tags/indie-hackers/">indie hackers</a>
+
+      <a href="/tags/open-weights/">open weights</a>
+
+      <a href="/tags/agent-governance/">agent governance</a>
+
+      <a href="/tags/vertical-SaaS/">vertical SaaS</a>
+
+      <a href="/tags/Agent-Stack/">Agent Stack</a>
+
+      <a href="/tags/Token-Pricing/">Token Pricing</a>
+
+      <a href="/tags/Agent-OS/">Agent OS</a>
+
+      <a href="/tags/Bootstrapped-SaaS/">Bootstrapped SaaS</a>
+
+      <a href="/tags/Agentic-OS/">Agentic OS</a>
+
+      <a href="/tags/Company-OS/">Company OS</a>
+
+      <a href="/tags/Self-Hosted/">Self-Hosted</a>
+
+      <a href="/tags/Agent-Governance/">Agent Governance</a>
+
+      <a href="/tags/Agentic-Web/">Agentic Web</a>
+
+      <a href="/tags/Context-Engineering/">Context Engineering</a>
+
+      <a href="/tags/x402/">x402</a>
+
+      <a href="/tags/YC-W26/">YC W26</a>
+
+      <a href="/tags/Cloudflare-X402/">Cloudflare-X402</a>
+
+      <a href="/tags/agent-infrastructure/">agent infrastructure</a>
+
+      <a href="/tags/OpenAI/">OpenAI</a>
+
+      <a href="/tags/LLM-routing/">LLM routing</a>
+
+      <a href="/tags/local-first/">local-first</a>
+
+      <a href="/tags/Meta-Muse-Code/">Meta-Muse-Code</a>
+
+      <a href="/tags/Stripe-MPP/">Stripe-MPP</a>
+
+      <a href="/tags/Vibe-Coding/">Vibe Coding</a>
+
+      <a href="/tags/Agent-Infrastructure/">Agent Infrastructure</a>
+
+      <a href="/tags/Startup-Trends/">Startup Trends</a>
+
+      <a href="/tags/Agent-Verification/">Agent Verification</a>
+
+      <a href="/tags/Eval/">Eval</a>
+
+      <a href="/tags/AI-CEO/">AI CEO</a>
+
+      <a href="/tags/One-Person-Company/">One-Person Company</a>
+
+      <a href="/tags/Indie-Hacker/">Indie Hacker</a>
+
+      <a href="/tags/Voice-Agents/">Voice Agents</a>
+
+      <a href="/tags/AI-Employees/">AI Employees</a>
+
+      <a href="/tags/YC-S26/">YC S26</a>
+
+      <a href="/tags/OpenAI-Codex/">OpenAI Codex</a>
+
+      <a href="/tags/Agent-Experience/">Agent Experience</a>
+
+      <a href="/tags/Coding-Agents/">Coding Agents</a>
+
+      <a href="/tags/Token-Economics/">Token Economics</a>
+
+      <a href="/tags/FinOps/">FinOps</a>
+
+      <a href="/tags/Indie-Hackers/">Indie Hackers</a>
+
+      <a href="/tags/SoloFounder/">SoloFounder</a>
+
+      <a href="/tags/AIAgents/">AIAgents</a>
+
+      <a href="/tags/AgenticIDE/">AgenticIDE</a>
+
+      <a href="/tags/Micro-SaaS/">Micro SaaS</a>
+
+      <a href="/tags/AI-Retention/">AI Retention</a>
+
+      <a href="/tags/Agent-Skills/">Agent Skills</a>
+
+      <a href="/tags/LLM-Pricing/">LLM Pricing</a>
+
+      <a href="/tags/Code-Review/">Code Review</a>
+
+      <a href="/tags/Agentic-Commerce/">Agentic Commerce</a>
+
+      <a href="/tags/AI-Agent-Governance/">AI Agent Governance</a>
+
+      <a href="/tags/Startup-Opportunities/">Startup Opportunities</a>
+
+      <a href="/tags/vibe-coding/">vibe coding</a>
+
+      <a href="/tags/AI-employee/">AI employee</a>
+
+      <a href="/tags/Vertical-AI/">Vertical AI</a>
+
+      <a href="/tags/Cost-Control/">Cost Control</a>
+
+      <a href="/tags/AI-coding/">AI coding</a>
+
+      <a href="/tags/inference-cost/">inference cost</a>
+
+      <a href="/tags/voice-AI/">voice AI</a>
+
+      <a href="/tags/one-person-company/">one person company</a>
+
+      <a href="/tags/agent-orchestration/">agent orchestration</a>
+
+      <a href="/tags/startup-trends/">startup trends</a>
+
+      <a href="/tags/agentic-engineering/">agentic engineering</a>
+
+      <a href="/tags/Supabase/">Supabase</a>
+
+      <a href="/tags/Agent-Payments/">Agent Payments</a>
+
+      <a href="/tags/Stablecoin/">Stablecoin</a>
+
+      <a href="/tags/USDC/">USDC</a>
+
+      <a href="/tags/Open-Weights/">Open Weights</a>
+
+      <a href="/tags/YC-P26/">YC P26</a>
+
+      <a href="/tags/Outcome-Pricing/">Outcome Pricing</a>
+
+      <a href="/tags/Gemini-3-8-Flash/">Gemini 3.8 Flash</a>
+
+      <a href="/tags/Muse-Spark-1-3/">Muse Spark 1.3</a>
+
+      <a href="/tags/Claude-Agent-SDK/">Claude Agent SDK</a>
+
+      <a href="/tags/LLM-pricing/">LLM pricing</a>
+
+      <a href="/tags/AI-Cost/">AI Cost</a>
+
+      <a href="/tags/Prompt-Caching/">Prompt Caching</a>
+
+      <a href="/tags/Agent-Security/">Agent Security</a>
+
+      <a href="/tags/Local-Inference/">Local Inference</a>
+
+      <a href="/tags/API-pricing/">API pricing</a>
+
+      <a href="/tags/distribution/">distribution</a>
+
+      <a href="/tags/AI-pricing/">AI pricing</a>
+
+      <a href="/tags/cost-per-task/">cost per task</a>
+
+      <a href="/tags/agent-skills/">agent skills</a>
+
+      <a href="/tags/agent-security/">agent security</a>
+
+      <a href="/tags/agent-integration/">agent integration</a>
+
+      <a href="/tags/agent-memory/">agent memory</a>
+
+      <a href="/tags/human-in-the-loop/">human-in-the-loop</a>
+
+      <a href="/tags/Coding-Agent/">Coding Agent</a>
+
+      <a href="/tags/Model-Context-Protocol/">Model Context Protocol</a>
+
+      <a href="/tags/agent-native-startups/">agent-native startups</a>
+
+      <a href="/tags/YC-batch/">YC batch</a>
+
+      <a href="/tags/AI-liability-insurance/">AI liability insurance</a>
+
+      <a href="/tags/AI-agent/">AI-agent</a>
+
+      <a href="/tags/always-on/">always-on</a>
+
+      <a href="/tags/agent-infrastructure/">agent-infrastructure</a>
+
+      <a href="/tags/solo-founder/">solo-founder</a>
+
+      <a href="/tags/AI-coding/">AI-coding</a>
+
+      <a href="/tags/open-weight/">open-weight</a>
+
+      <a href="/tags/agent-ops/">agent-ops</a>
+
+    </div>
+
+    <button type="button" class="tagcloud-toggle" id="tagcloud-toggle-btn">
+      <span class="toggle-text">展开看全部 (798)</span>
+      <span class="toggle-icon">&#9662;</span>
+    </button>
+
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/09/">September 2026</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/08/">August 2026</a><span class="archive-list-count">238</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/07/">July 2026</a><span class="archive-list-count">419</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/06/">June 2026</a><span class="archive-list-count">52</span></li></ul>
+    </div>
+  </div>
+
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      <div class="visitor-card">
+        <span class="vc-item">
+          <span id="busuanzi_value_site_pv" class="vc-num">0</span>
+          <span class="vc-label">Total Views</span>
+        </span>
+        <span class="vc-item">
+          <span id="busuanzi_value_site_uv" class="vc-num">0</span>
+          <span class="vc-label">Visitors</span>
+        </span>
+        <span class="vc-item">
+          <span class="vc-num">737</span>
+          <span class="vc-label">Articles</span>
+        </span>
+      </div>
+
+      <div class="donate-section">
+        <h3 class="donate-title">Support OPC Report</h3>
+        <p class="donate-subtitle">If these insights help your solo-founder journey, consider buying us a coffee.</p>
+        <div class="donate-body">
+          <div class="donate-qr-wrap">
+            <img src="/images/donation-usdt.jpg" alt="USDT TRC20 Donation QR Code" class="donate-qr">
+          </div>
+          <div class="donate-info">
+            <p class="donate-info-label">USDT (TRC20) Address</p>
+            <p class="donate-info-value" id="donate-address">TSA1q55N3UZhztmFybchZXnNouqQSTcshp</p>
+            <button type="button" class="donate-copy-btn" id="donate-copy-btn" onclick="(function(btn){var addr=document.getElementById('donate-address').innerText;navigator.clipboard&&navigator.clipboard.writeText(addr).then(function(){btn.innerText='Copied!';btn.classList.add('copied');setTimeout(function(){btn.innerText='Copy Address';btn.classList.remove('copied')},2000)})})(this)"><span class="fa fa-clipboard"></span>Copy Address</button>
+            <p class="donate-warn">Scan the QR code or copy the address above. Only send USDT on the TRC20 (Tron) network. Sending other tokens or using other networks may result in permanent loss.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="footer-author">&copy; 2026 <a href="https://opcreport.github.io/">OPC Report</a> · AI-powered insights on One-Person Company entrepreneurship</p>
+      <p class="footer-author">Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> · <a href="/atom.xml">RSS Feed</a> · <a href="/sitemap.xml">Sitemap</a> · <a href="https://github.com/OpcReport/OpcReport.github.io" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Busuanzi fallback: if script fails to load, show N/A instead of 0
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    var uv = document.getElementById('busuanzi_value_site_uv');
+    var pv = document.getElementById('busuanzi_value_site_pv');
+    if (uv && (uv.innerText === '0' || uv.innerText === '')) {
+      uv.innerText = '—';
+      pv.innerText = '—';
+    }
+  }, 5000);
+});
+</script>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/dates/" class="mobile-nav-link">Browse</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about/" class="mobile-nav-link">About</a>
+  
+    <a href="/privacy/" class="mobile-nav-link">Privacy</a>
+  
+    <a href="/contact/" class="mobile-nav-link">Contact</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+
+
+<script>
+(function(){
+  var btn = document.getElementById('tagcloud-toggle-btn');
+  var cloud = document.getElementById('sidebar-tagcloud');
+  if (!btn || !cloud) return;
+  var textSpan = btn.querySelector('.toggle-text');
+  var totalLabel = textSpan ? textSpan.textContent.match(/\d+/) : null;
+  var total = totalLabel ? totalLabel[0] : '';
+  btn.addEventListener('click', function(){
+    var expanded = cloud.classList.toggle('tagcloud-expanded');
+    var collapsed = cloud.classList.toggle('tagcloud-collapsed');
+    btn.classList.toggle('is-expanded', expanded);
+    if (textSpan) {
+      textSpan.textContent = expanded ? '收起' : '展开看全部 (' + total + ')';
+    }
+  });
+})();
+</script>
+  </div>
+</body>
+</html>
