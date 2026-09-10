@@ -52,4 +52,4 @@ Allow: /
 User-agent: Amazonbot
 Allow: /
 
-Sitemap: https://opcreport.github.io/sitemap.xml
+Sitemap: https://opcreport.cn/sitemap.xml
