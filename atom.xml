@@ -11,14 +11,35 @@
   <rights>All rights reserved 2026, OPC Observer</rights>
   <subtitle>Daily Intelligence on AI Solopreneurship and the One-Person Company Economy</subtitle>
   <title>OPC Report</title>
-  <updated>2026-09-10T11:08:11.161Z</updated>
+  <updated>2026-09-10T13:03:58.949Z</updated>
   <entry>
     <author>
       <name>OPC Observer</name>
     </author>
     <category term="OPC AI Trend Report" scheme="https://opcreport.cn/categories/OPC-AI-Trend-Report/"/>
-    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="MCP" scheme="https://opcreport.cn/tags/MCP/"/>
+    <category term="Browser-Agent" scheme="https://opcreport.cn/tags/Browser-Agent/"/>
+    <category term="Model-Pricing" scheme="https://opcreport.cn/tags/Model-Pricing/"/>
+    <id>https://opcreport.cn/2026/09/10/opc-report-2026-09-10-2003/</id>
+    <link href="https://opcreport.cn/2026/09/10/opc-report-2026-09-10-2003/"/>
+    <published>2026-09-10T12:03:00.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="Below-1-Tokens-and-Mainstream-Browser-Agents-A-New-Cost-Playbook-for-Solo-Builders"><a]]>
+    </summary>
+    <title>Below-$1 Tokens and Mainstream Browser Agents: A New Cost Playbook for Solo Builders</title>
+    <updated>2026-09-10T13:03:58.949Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OPC Observer</name>
+    </author>
+    <category term="OPC AI Trend Report" scheme="https://opcreport.cn/categories/OPC-AI-Trend-Report/"/>
+    <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
     <category term="Claude-Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
     <category term="Voice-Agent" scheme="https://opcreport.cn/tags/Voice-Agent/"/>
     <category term="Codex" scheme="https://opcreport.cn/tags/Codex/"/>
@@ -40,7 +61,6 @@
     <category term="Solo Founder" scheme="https://opcreport.cn/categories/AI-Industry/Startup-Trends/Solo-Founder/"/>
     <category term="Developer Tools" scheme="https://opcreport.cn/categories/AI-Industry/Startup-Trends/Solo-Founder/Developer-Tools/"/>
     <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
-    <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
     <category term="Cursor" scheme="https://opcreport.cn/tags/Cursor/"/>
     <category term="AI-Startup" scheme="https://opcreport.cn/tags/AI-Startup/"/>
     <category term="AI-Agents" scheme="https://opcreport.cn/tags/AI-Agents/"/>
@@ -84,9 +104,10 @@
     <category term="OPC Report" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/Solopreneur/"/>
     <category term="Agent Economy" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/Solopreneur/Agent-Economy/"/>
-    <category term="Indie-Hacker" scheme="https://opcreport.cn/tags/Indie-Hacker/"/>
-    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="Indie-Hacker" scheme="https://opcreport.cn/tags/Indie-Hacker/"/>
     <category term="Agent-Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
     <category term="YC-S26" scheme="https://opcreport.cn/tags/YC-S26/"/>
     <category term="Local-First" scheme="https://opcreport.cn/tags/Local-First/"/>
@@ -106,11 +127,10 @@
     <category term="Solo Founder" scheme="https://opcreport.cn/categories/AI-Entrepreneurship/Solo-Founder/"/>
     <category term="Startup Trends" scheme="https://opcreport.cn/categories/AI-Entrepreneurship/Solo-Founder/Startup-Trends/"/>
     <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
-    <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
     <category term="Micro-SaaS" scheme="https://opcreport.cn/tags/Micro-SaaS/"/>
     <category term="AI-Agents" scheme="https://opcreport.cn/tags/AI-Agents/"/>
-    <category term="Agent-Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
     <category term="Context-Engineering" scheme="https://opcreport.cn/tags/Context-Engineering/"/>
+    <category term="Agent-Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
     <category term="Agent-Orchestration" scheme="https://opcreport.cn/tags/Agent-Orchestration/"/>
     <id>https://opcreport.cn/2026/09/10/opc-report-2026-09-10-1803/</id>
     <link href="https://opcreport.cn/2026/09/10/opc-report-2026-09-10-1803/"/>
@@ -129,7 +149,6 @@
     <category term="Solo Founder" scheme="https://opcreport.cn/categories/AI-Entrepreneurship/Solo-Founder/"/>
     <category term="Startup Trends" scheme="https://opcreport.cn/categories/AI-Entrepreneurship/Solo-Founder/Startup-Trends/"/>
     <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
-    <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
     <category term="Micro-SaaS" scheme="https://opcreport.cn/tags/Micro-SaaS/"/>
     <category term="AI-Agents" scheme="https://opcreport.cn/tags/AI-Agents/"/>
     <category term="Agent-Orchestration" scheme="https://opcreport.cn/tags/Agent-Orchestration/"/>
@@ -152,6 +171,7 @@
     <category term="Startup Ecosystem" scheme="https://opcreport.cn/categories/AI-Trends/Solopreneur/Startup-Ecosystem/"/>
     <category term="AI Entrepreneurship" scheme="https://opcreport.cn/categories/AI-Trends/Solopreneur/Startup-Ecosystem/AI-Entrepreneurship/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
     <category term="Cursor" scheme="https://opcreport.cn/tags/Cursor/"/>
     <category term="AI-Agents" scheme="https://opcreport.cn/tags/AI-Agents/"/>
     <category term="Claude-Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
@@ -173,8 +193,9 @@
     </author>
     <category term="OPC Trend Report" scheme="https://opcreport.cn/categories/OPC-Trend-Report/"/>
     <category term="OPC" scheme="https://opcreport.cn/tags/OPC/"/>
-    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
     <category term="Independent-Developer" scheme="https://opcreport.cn/tags/Independent-Developer/"/>
     <category term="Coding-Agent" scheme="https://opcreport.cn/tags/Coding-Agent/"/>
     <id>https://opcreport.cn/2026/09/09/opc-report-2026-09-09-1007/</id>
@@ -216,8 +237,9 @@
     <category term="OPC Report" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/"/>
     <category term="Startup Ecosystem" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/Startup-Ecosystem/"/>
     <category term="AI Entrepreneurship" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/Startup-Ecosystem/AI-Entrepreneurship/"/>
-    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
     <category term="Micro-SaaS" scheme="https://opcreport.cn/tags/Micro-SaaS/"/>
     <category term="Claude-Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
     <category term="Agent-Security" scheme="https://opcreport.cn/tags/Agent-Security/"/>
@@ -238,8 +260,9 @@
     <category term="OPC Report" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/"/>
     <category term="Startup Ecosystem" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/Startup-Ecosystem/"/>
     <category term="AI Entrepreneurship" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/Startup-Ecosystem/AI-Entrepreneurship/"/>
-    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
     <category term="AI-Startup" scheme="https://opcreport.cn/tags/AI-Startup/"/>
     <category term="Claude-Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
     <category term="Agent-Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
@@ -259,7 +282,6 @@
     <category term="AI创业趋势" scheme="https://opcreport.cn/categories/AI%E5%88%9B%E4%B8%9A%E8%B6%8B%E5%8A%BF/"/>
     <category term="Solo Founder" scheme="https://opcreport.cn/categories/AI%E5%88%9B%E4%B8%9A%E8%B6%8B%E5%8A%BF/Solo-Founder/"/>
     <category term="Agent Infrastructure" scheme="https://opcreport.cn/categories/AI%E5%88%9B%E4%B8%9A%E8%B6%8B%E5%8A%BF/Solo-Founder/Agent-Infrastructure/"/>
-    <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
     <category term="AI-Agents" scheme="https://opcreport.cn/tags/AI-Agents/"/>
     <category term="Product-Hunt" scheme="https://opcreport.cn/tags/Product-Hunt/"/>
     <category term="Agent-Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
@@ -283,8 +305,8 @@
     <category term="Agent Stack" scheme="https://opcreport.cn/categories/AI-Startup/Solopreneur/Agent-Stack/"/>
     <category term="Entrepreneurship" scheme="https://opcreport.cn/categories/AI-Startup/Solopreneur/Agent-Stack/Entrepreneurship/"/>
     <category term="OPC" scheme="https://opcreport.cn/tags/OPC/"/>
-    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
     <category term="Cursor" scheme="https://opcreport.cn/tags/Cursor/"/>
     <category term="Micro-SaaS" scheme="https://opcreport.cn/tags/Micro-SaaS/"/>
     <category term="Solo-Founder" scheme="https://opcreport.cn/tags/Solo-Founder/"/>
@@ -307,8 +329,8 @@
       <name>OPC Observer</name>
     </author>
     <category term="AI Startup Monitor" scheme="https://opcreport.cn/categories/AI-Startup-Monitor/"/>
-    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
     <category term="Startup-Trends" scheme="https://opcreport.cn/tags/Startup-Trends/"/>
     <category term="AI-Agents" scheme="https://opcreport.cn/tags/AI-Agents/"/>
     <category term="AI-Coding" scheme="https://opcreport.cn/tags/AI-Coding/"/>
@@ -327,8 +349,9 @@
       <name>OPC Observer</name>
     </author>
     <category term="AI Startup Trends" scheme="https://opcreport.cn/categories/AI-Startup-Trends/"/>
-    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
     <category term="Agent-Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
     <category term="Coding-Agents" scheme="https://opcreport.cn/tags/Coding-Agents/"/>
     <category term="Open-Weights" scheme="https://opcreport.cn/tags/Open-Weights/"/>
@@ -350,6 +373,7 @@
     <category term="Solo Founder" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/Solo-Founder/"/>
     <category term="Agent Economy" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/Solo-Founder/Agent-Economy/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
     <category term="Claude-Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
     <category term="Agent-Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
     <category term="Model-Routing" scheme="https://opcreport.cn/tags/Model-Routing/"/>
@@ -368,7 +392,6 @@
     </author>
     <category term="AI Startup Trends" scheme="https://opcreport.cn/categories/AI-Startup-Trends/"/>
     <category term="Solo Founder" scheme="https://opcreport.cn/categories/AI-Startup-Trends/Solo-Founder/"/>
-    <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
     <category term="Cursor" scheme="https://opcreport.cn/tags/Cursor/"/>
     <category term="AI-Coding" scheme="https://opcreport.cn/tags/AI-Coding/"/>
     <category term="Claude-Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
@@ -392,6 +415,7 @@
     <category term="Agent Stack" scheme="https://opcreport.cn/categories/AI-Trends/Solo-Founder/Agent-Stack/"/>
     <category term="OPC Report" scheme="https://opcreport.cn/categories/AI-Trends/Solo-Founder/Agent-Stack/OPC-Report/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
     <category term="AI-Startup" scheme="https://opcreport.cn/tags/AI-Startup/"/>
     <category term="AI-Agents" scheme="https://opcreport.cn/tags/AI-Agents/"/>
     <category term="Product-Hunt" scheme="https://opcreport.cn/tags/Product-Hunt/"/>
@@ -417,6 +441,7 @@
     <category term="AI Agents" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/Solopreneur/AI-Agents/"/>
     <category term="OPC" scheme="https://opcreport.cn/tags/OPC/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
     <category term="AI-Agents" scheme="https://opcreport.cn/tags/AI-Agents/"/>
     <category term="Anthropic" scheme="https://opcreport.cn/tags/Anthropic/"/>
     <category term="AI-Coding" scheme="https://opcreport.cn/tags/AI-Coding/"/>
@@ -429,22 +454,5 @@
     <summary>September 6, 2026 OPC trend monitor: Nvidia's $12.9B Hugging Face acquisition and Anthropic's record IPO window signal the agent stack is now infrastructure. Where solo builders should point, and which tools to use.</summary>
     <title>Nvidia's $12.9B Hugging Face Buy and Anthropic's $2T IPO Reshape the Solo Builder Stack</title>
     <updated>2026-09-10T08:53:21.755Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>OPC Observer</name>
-    </author>
-    <category term="OPC Trend Report" scheme="https://opcreport.cn/categories/OPC-Trend-Report/"/>
-    <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
-    <category term="AI-Agents" scheme="https://opcreport.cn/tags/AI-Agents/"/>
-    <category term="Y-Combinator" scheme="https://opcreport.cn/tags/Y-Combinator/"/>
-    <category term="Developer-Tools" scheme="https://opcreport.cn/tags/Developer-Tools/"/>
-    <category term="Open-Source" scheme="https://opcreport.cn/tags/Open-Source/"/>
-    <id>https://opcreport.cn/2026/09/06/opc-report-2026-09-06-2003/</id>
-    <link href="https://opcreport.cn/2026/09/06/opc-report-2026-09-06-2003/"/>
-    <published>2026-09-06T12:03:00.000Z</published>
-    <summary>Weekly OPC intelligence for solo founders: Nvidia's $12.9B Hugging Face acquisition, the shift from model capability to agent reliability, YC's agent-infrastructure batch, and concrete build directions with tool stacks and costs.</summary>
-    <title>Nvidia's $12.9B Hugging Face Deal and the Agent Reliability Gap: Where Solo Founders Should Actually Build</title>
-    <updated>2026-09-10T08:53:21.750Z</updated>
   </entry>
 </feed>

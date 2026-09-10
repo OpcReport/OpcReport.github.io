@@ -66,6 +66,7 @@
             '<a href="https://mastodon.social/share?text=' + encodeURIComponent(title) + '&url=' + encodedUrl + '" class="article-share-box-link article-share-mastodon" target="_blank" title="Share on Mastodon"><span class="fa fa-mastodon"></span></a>',
             '<a href="mailto:?subject=' + encodeURIComponent(title) + '&body=' + encodedUrl + '" class="article-share-box-link article-share-email" target="_blank" title="Share via Email"><span class="fa fa-envelope"></span></a>',
             '<a href="javascript:void(0)" class="article-share-box-link article-share-copy" onclick="navigator.clipboard.writeText(\'' + url + '\');this.innerText=\'Copied!\';setTimeout(function(){location.reload()},1000)" title="Copy Link"><span class="fa fa-link"></span></a>',
+            '<a href="javascript:void(0)" class="article-share-wechat-btn" data-url="' + url + '" data-title="' + encodeURIComponent(title) + '" title="Share to WeChat / WeChat Moments"><span class="fa fa-wechat"></span></a>',
           '</div>',
         '</div>'
       ].join('');
