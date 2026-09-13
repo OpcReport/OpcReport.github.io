@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>OPC Observer</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <icon>https://opcreport.cn/icon.png</icon>
+  <id>https://opcreport.cn/</id>
+  <link href="https://opcreport.cn/" rel="alternate"/>
+  <link href="https://opcreport.cn/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, OPC Observer</rights>
+  <subtitle>Daily Intelligence on AI Solopreneurship and the One-Person Company Economy</subtitle>
+  <title>OPC Report</title>
+  <updated>2026-09-13T01:19:09.185Z</updated>
+  <entry>
+    <author>
+      <name>OPC Observer</name>
+    </author>
+    <category term="AI Trends" scheme="https://opcreport.cn/categories/AI-Trends/"/>
+    <category term="Solopreneur" scheme="https://opcreport.cn/categories/AI-Trends/Solopreneur/"/>
+    <category term="Agent Infrastructure" scheme="https://opcreport.cn/categories/AI-Trends/Solopreneur/Agent-Infrastructure/"/>
+    <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="Cursor" scheme="https://opcreport.cn/tags/Cursor/"/>
+    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="AI Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="Claude Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
+    <category term="Y Combinator" scheme="https://opcreport.cn/tags/Y-Combinator/"/>
+    <category term="Agent Observability" scheme="https://opcreport.cn/tags/Agent-Observability/"/>
+    <category term="Agent Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
+    <id>https://opcreport.cn/2026/09/13/opc-report-2026-09-13-0914/</id>
+    <link href="https://opcreport.cn/2026/09/13/opc-report-2026-09-13-0914/"/>
+    <published>2026-09-12T17:14:00.000Z</published>
+    <summary>Hourly monitor for solo AI founders — Sept 13, 2026. The agent-native one-person company is now a repeatable pattern; the fundable opening is the control layer that keeps agents safe and cheap in production.</summary>
+    <title>Solo Founders Are Hitting $1M ARR on a $60/mo Stack — the Agent Control Layer Is the Gap</title>
+    <updated>2026-09-13T01:19:09.185Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OPC Observer</name>
+    </author>
+    <category term="OPC Weekly Report" scheme="https://opcreport.cn/categories/OPC-Weekly-Report/"/>
+    <category term="AI Trends" scheme="https://opcreport.cn/categories/OPC-Weekly-Report/AI-Trends/"/>
+    <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="MCP" scheme="https://opcreport.cn/tags/MCP/"/>
+    <category term="Agent Orchestration" scheme="https://opcreport.cn/tags/Agent-Orchestration/"/>
+    <category term="Indie Hacker" scheme="https://opcreport.cn/tags/Indie-Hacker/"/>
+    <category term="One-Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="AI Coding Agents" scheme="https://opcreport.cn/tags/AI-Coding-Agents/"/>
+    <category term="Local AI" scheme="https://opcreport.cn/tags/Local-AI/"/>
+    <id>https://opcreport.cn/2026/09/13/opc-report-2026-09-13-0003/</id>
+    <link href="https://opcreport.cn/2026/09/13/opc-report-2026-09-13-0003/"/>
+    <published>2026-09-12T16:03:00.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="Coding-Agents-Go-Production-Grade-Where-Solo-Founders-Should-Point-Them-Next"><a]]>
+    </summary>
+    <title>Coding Agents Go Production-Grade: Where Solo Founders Should Point Them Next</title>
+    <updated>2026-09-12T16:06:13.813Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OPC Observer</name>
+    </author>
+    <category term="OPC Trend Report" scheme="https://opcreport.cn/categories/OPC-Trend-Report/"/>
+    <category term="OPC" scheme="https://opcreport.cn/tags/OPC/"/>
+    <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="AI Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="Independent Developer" scheme="https://opcreport.cn/tags/Independent-Developer/"/>
+    <category term="Y Combinator" scheme="https://opcreport.cn/tags/Y-Combinator/"/>
+    <id>https://opcreport.cn/2026/09/12/opc-report-2026-09-12-2303/</id>
+    <link href="https://opcreport.cn/2026/09/12/opc-report-2026-09-12-2303/"/>
+    <published>2026-09-12T15:03:00.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="Solo-Founders-Hit-19-of-YC’s-New-Batch-as-Agent-Infrastructure-Becomes-the-New-Battleground"><a]]>
+    </summary>
+    <title>Solo Founders Hit 19% of YC's New Batch as Agent Infrastructure Becomes the New Battleground</title>
+    <updated>2026-09-12T15:06:55.360Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OPC Observer</name>
+    </author>
+    <category term="OPC Trend Report" scheme="https://opcreport.cn/categories/OPC-Trend-Report/"/>
+    <category term="OPC" scheme="https://opcreport.cn/tags/OPC/"/>
+    <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="AI Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="Claude Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
+    <category term="Managed Agents" scheme="https://opcreport.cn/tags/Managed-Agents/"/>
+    <category term="OpenAI Agents API" scheme="https://opcreport.cn/tags/OpenAI-Agents-API/"/>
+    <id>https://opcreport.cn/2026/09/12/opc-report-2026-09-12-2103/</id>
+    <link href="https://opcreport.cn/2026/09/12/opc-report-2026-09-12-2103/"/>
+    <published>2026-09-12T13:03:00.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="Agents-Become-a-Managed-Service-The-Engineering-Debt-of-One-Person-Companies-Finally-Pays-Down"><a]]>
+    </summary>
+    <title>Agents Become a Managed Service: The Engineering Debt of One-Person Companies Finally Pays Down</title>
+    <updated>2026-09-12T14:03:03.571Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OPC Observer</name>
+    </author>
+    <category term="OPC Trend Report" scheme="https://opcreport.cn/categories/OPC-Trend-Report/"/>
+    <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="No-Code" scheme="https://opcreport.cn/tags/No-Code/"/>
+    <category term="GEO" scheme="https://opcreport.cn/tags/GEO/"/>
+    <category term="AI Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="Indie Hacker" scheme="https://opcreport.cn/tags/Indie-Hacker/"/>
+    <category term="Agent Stack" scheme="https://opcreport.cn/tags/Agent-Stack/"/>
+    <id>https://opcreport.cn/2026/09/12/opc-report-2026-09-12-0103/</id>
+    <link href="https://opcreport.cn/2026/09/12/opc-report-2026-09-12-0103/"/>
+    <published>2026-09-11T17:03:00.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="The-Shelf-Stable-Agent-Stack-How-Solo-Builders-Are-Snapping-Together-Revenue-Businesses-From-Pre-Built-Blocks"><a]]>
+    </summary>
+    <title>The Shelf-Stable Agent Stack: How Solo Builders Are Snapping Together Revenue Businesses From Pre-Built Blocks</title>
+    <updated>2026-09-12T13:07:04.383Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OPC Observer</name>
+    </author>
+    <category term="OPC Trend Report" scheme="https://opcreport.cn/categories/OPC-Trend-Report/"/>
+    <category term="OPC" scheme="https://opcreport.cn/tags/OPC/"/>
+    <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="AI Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="Claude Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
+    <category term="Indie Hacker" scheme="https://opcreport.cn/tags/Indie-Hacker/"/>
+    <id>https://opcreport.cn/2026/09/12/opc-report-2026-09-12-0051/</id>
+    <link href="https://opcreport.cn/2026/09/12/opc-report-2026-09-12-0051/"/>
+    <published>2026-09-11T16:51:00.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="From-AI-Assisted-Coding-to-Agent-Run-Companies-Three-Inflection-Points-Solo-Founders-Must-Watch-This-September"><a]]>
+    </summary>
+    <title>From AI-Assisted Coding to Agent-Run Companies: Three Inflection Points Solo Founders Must Watch This September</title>
+    <updated>2026-09-12T13:07:03.963Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OPC Observer</name>
+    </author>
+    <category term="AI Entrepreneurship" scheme="https://opcreport.cn/categories/AI-Entrepreneurship/"/>
+    <category term="Solopreneur" scheme="https://opcreport.cn/categories/AI-Entrepreneurship/Solopreneur/"/>
+    <category term="solo-founder" scheme="https://opcreport.cn/tags/solo-founder/"/>
+    <category term="ai-agents" scheme="https://opcreport.cn/tags/ai-agents/"/>
+    <category term="agent-security" scheme="https://opcreport.cn/tags/agent-security/"/>
+    <category term="no-code" scheme="https://opcreport.cn/tags/no-code/"/>
+    <category term="bootstrapping" scheme="https://opcreport.cn/tags/bootstrapping/"/>
+    <category term="indie-hackers" scheme="https://opcreport.cn/tags/indie-hackers/"/>
+    <id>https://opcreport.cn/2026/09/12/opc-report-2026-09-12-2007/</id>
+    <link href="https://opcreport.cn/2026/09/12/opc-report-2026-09-12-2007/"/>
+    <published>2026-09-11T16:00:00.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="Solo-founders-are-hitting-1M-ARR-with-AI-agents-while-the-real-money-moves-to-agent-guardrails"><a]]>
+    </summary>
+    <title>Solo founders are hitting $1M ARR with AI agents while the real money moves to agent guardrails</title>
+    <updated>2026-09-12T14:00:41.042Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OPC Observer</name>
+    </author>
+    <category term="AI趋势" scheme="https://opcreport.cn/categories/AI%E8%B6%8B%E5%8A%BF/"/>
+    <category term="agent-economy" scheme="https://opcreport.cn/categories/AI%E8%B6%8B%E5%8A%BF/agent-economy/"/>
+    <category term="solo-founder" scheme="https://opcreport.cn/categories/AI%E8%B6%8B%E5%8A%BF/agent-economy/solo-founder/"/>
+    <category term="AI coding" scheme="https://opcreport.cn/tags/AI-coding/"/>
+    <category term="solopreneur" scheme="https://opcreport.cn/tags/solopreneur/"/>
+    <category term="agent infrastructure" scheme="https://opcreport.cn/tags/agent-infrastructure/"/>
+    <category term="local-first" scheme="https://opcreport.cn/tags/local-first/"/>
+    <category term="YC S26" scheme="https://opcreport.cn/tags/YC-S26/"/>
+    <category term="agent orchestration" scheme="https://opcreport.cn/tags/agent-orchestration/"/>
+    <id>https://opcreport.cn/2026/09/12/opc-report-2026-09-12-2203/</id>
+    <link href="https://opcreport.cn/2026/09/12/opc-report-2026-09-12-2203/"/>
+    <published>2026-09-11T16:00:00.000Z</published>
+    <summary>
+      <![CDATA[<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><p>The center of gravity in AI]]>
+    </summary>
+    <title>From Writing Code to Delegating Tasks: The Agent Stack Is Stratifying—Where Solo Builders Should Cut In</title>
+    <updated>2026-09-12T15:03:02.072Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OPC Observer</name>
+    </author>
+    <category term="OPC Trend Report" scheme="https://opcreport.cn/categories/OPC-Trend-Report/"/>
+    <category term="OPC" scheme="https://opcreport.cn/tags/OPC/"/>
+    <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="AI Coding" scheme="https://opcreport.cn/tags/AI-Coding/"/>
+    <category term="Agent Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
+    <category term="YC S26" scheme="https://opcreport.cn/tags/YC-S26/"/>
+    <category term="Agent-Led Growth" scheme="https://opcreport.cn/tags/Agent-Led-Growth/"/>
+    <id>https://opcreport.cn/2026/09/11/opc-report-2026-09-11-1804/</id>
+    <link href="https://opcreport.cn/2026/09/11/opc-report-2026-09-11-1804/"/>
+    <published>2026-09-11T10:04:00.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="Your-Next-Customer-Is-an-Agent-Agent-Led-Growth-Emerges-as-a-Discipline-as-AI-Coding-Arms-Race-Hits-48B"><a]]>
+    </summary>
+    <title>Your Next Customer Is an Agent: Agent-Led Growth Emerges as a Discipline as AI Coding Arms Race Hits $48B</title>
+    <updated>2026-09-11T10:09:22.100Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OPC Observer</name>
+    </author>
+    <category term="AI Trends" scheme="https://opcreport.cn/categories/AI-Trends/"/>
+    <category term="OPC Report" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/"/>
+    <category term="Agent Economy" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/Agent-Economy/"/>
+    <category term="Solopreneur" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/Agent-Economy/Solopreneur/"/>
+    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="AI Startup" scheme="https://opcreport.cn/tags/AI-Startup/"/>
+    <category term="AI Coding" scheme="https://opcreport.cn/tags/AI-Coding/"/>
+    <category term="Agent-First" scheme="https://opcreport.cn/tags/Agent-First/"/>
+    <category term="Solo Founder" scheme="https://opcreport.cn/tags/Solo-Founder/"/>
+    <category term="Product Hunt" scheme="https://opcreport.cn/tags/Product-Hunt/"/>
+    <category term="Agent Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
+    <category term="YC S26" scheme="https://opcreport.cn/tags/YC-S26/"/>
+    <id>https://opcreport.cn/2026/09/11/opc-report-2026-09-11-1904/</id>
+    <link href="https://opcreport.cn/2026/09/11/opc-report-2026-09-11-1904/"/>
+    <published>2026-09-11T03:04:00.000Z</published>
+    <summary>Hourly OPC trend report — Sep 11, 2026. Agent-first design, the self-writing-code shift, and the splitting agent orchestration stack (observability, guardrails, memory) point solo founders toward execution environments, guardrails, and memory layers rather than another chatbot.</summary>
+    <title>Agent-First Design Is Rewriting the Product Stack—Where Solo Founders Should Build and With Which Tools</title>
+    <updated>2026-09-11T11:07:15.259Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OPC Observer</name>
+    </author>
+    <category term="OPC Trend Report" scheme="https://opcreport.cn/categories/OPC-Trend-Report/"/>
+    <category term="OPC" scheme="https://opcreport.cn/tags/OPC/"/>
+    <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="MCP" scheme="https://opcreport.cn/tags/MCP/"/>
+    <category term="Local-First" scheme="https://opcreport.cn/tags/Local-First/"/>
+    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="AI Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="YC S26" scheme="https://opcreport.cn/tags/YC-S26/"/>
+    <id>https://opcreport.cn/2026/09/10/opc-report-2026-09-10-2203/</id>
+    <link href="https://opcreport.cn/2026/09/10/opc-report-2026-09-10-2203/"/>
+    <published>2026-09-10T14:03:00.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="Agents-Hit-Production-Grade-as-Local-First-Matures-Three-Real-Bets-for-the-One-Person-Company"><a]]>
+    </summary>
+    <title>Agents Hit Production Grade as Local-First Matures: Three Real Bets for the One-Person Company</title>
+    <updated>2026-09-10T15:02:57.904Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OPC Observer</name>
+    </author>
+    <category term="OPC Trend Report" scheme="https://opcreport.cn/categories/OPC-Trend-Report/"/>
+    <category term="OPC" scheme="https://opcreport.cn/tags/OPC/"/>
+    <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="GEO" scheme="https://opcreport.cn/tags/GEO/"/>
+    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="AI Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="AI Coding" scheme="https://opcreport.cn/tags/AI-Coding/"/>
+    <id>https://opcreport.cn/2026/09/10/opc-report-2026-09-10-2103/</id>
+    <link href="https://opcreport.cn/2026/09/10/opc-report-2026-09-10-2103/"/>
+    <published>2026-09-10T13:03:00.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="AI-Coding-Enters-the-Self-Writing-Phase-as-Solo-Founders-Take-19-of-YC’s-Batch-—-Five-Build-Directions-for-September"><a]]>
+    </summary>
+    <title>AI Coding Enters the Self-Writing Phase as Solo Founders Take 19% of YC's Batch — Five Build Directions for September</title>
+    <updated>2026-09-10T14:05:11.122Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OPC Observer</name>
+    </author>
+    <category term="OPC AI Trend Report" scheme="https://opcreport.cn/categories/OPC-AI-Trend-Report/"/>
+    <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="MCP" scheme="https://opcreport.cn/tags/MCP/"/>
+    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="AI Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="Model Pricing" scheme="https://opcreport.cn/tags/Model-Pricing/"/>
+    <category term="Browser Agent" scheme="https://opcreport.cn/tags/Browser-Agent/"/>
+    <id>https://opcreport.cn/2026/09/10/opc-report-2026-09-10-2003/</id>
+    <link href="https://opcreport.cn/2026/09/10/opc-report-2026-09-10-2003/"/>
+    <published>2026-09-10T12:03:00.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="Below-1-Tokens-and-Mainstream-Browser-Agents-A-New-Cost-Playbook-for-Solo-Builders"><a]]>
+    </summary>
+    <title>Below-$1 Tokens and Mainstream Browser Agents: A New Cost Playbook for Solo Builders</title>
+    <updated>2026-09-10T13:03:58.949Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OPC Observer</name>
+    </author>
+    <category term="OPC AI Trend Report" scheme="https://opcreport.cn/categories/OPC-AI-Trend-Report/"/>
+    <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="Codex" scheme="https://opcreport.cn/tags/Codex/"/>
+    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="AI Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="Claude Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
+    <category term="Voice Agent" scheme="https://opcreport.cn/tags/Voice-Agent/"/>
+    <id>https://opcreport.cn/2026/09/10/opc-report-2026-09-10-1904/</id>
+    <link href="https://opcreport.cn/2026/09/10/opc-report-2026-09-10-1904/"/>
+    <published>2026-09-10T11:04:00.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="Agents-Now-Write-and-Ship-Their-Own-Code-—-The-Solo-Founder-Leverage-Window-Is-Open"><a]]>
+    </summary>
+    <title>Agents Now Write and Ship Their Own Code — The Solo Founder Leverage Window Is Open</title>
+    <updated>2026-09-10T11:08:11.161Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OPC Observer</name>
+    </author>
+    <category term="AI Industry" scheme="https://opcreport.cn/categories/AI-Industry/"/>
+    <category term="Startup Trends" scheme="https://opcreport.cn/categories/AI-Industry/Startup-Trends/"/>
+    <category term="Solo Founder" scheme="https://opcreport.cn/categories/AI-Industry/Startup-Trends/Solo-Founder/"/>
+    <category term="Developer Tools" scheme="https://opcreport.cn/categories/AI-Industry/Startup-Trends/Solo-Founder/Developer-Tools/"/>
+    <category term="Cursor" scheme="https://opcreport.cn/tags/Cursor/"/>
+    <category term="Claude Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
+    <category term="solopreneur" scheme="https://opcreport.cn/tags/solopreneur/"/>
+    <category term="AI agents" scheme="https://opcreport.cn/tags/AI-agents/"/>
+    <category term="Y Combinator" scheme="https://opcreport.cn/tags/Y-Combinator/"/>
+    <category term="one-person company" scheme="https://opcreport.cn/tags/one-person-company/"/>
+    <category term="AI startup" scheme="https://opcreport.cn/tags/AI-startup/"/>
+    <category term="agent orchestration" scheme="https://opcreport.cn/tags/agent-orchestration/"/>
+    <id>https://opcreport.cn/2026/09/10/opc-report-2026-09-10-1603/</id>
+    <link href="https://opcreport.cn/2026/09/10/opc-report-2026-09-10-1603/"/>
+    <published>2026-09-10T08:03:00.000Z</published>
+    <summary>Where solo AI founders should point their effort this month: agent orchestration is becoming the new bottleneck, vertical agents are replacing systems-of-record, and a lean $200/month stack now ships real products. Build directions and the exact tool stacks behind them.</summary>
+    <title>Agent Fleets and the $200/Month Company: Solo Builders Win in 2026</title>
+    <updated>2026-09-10T08:53:21.790Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OPC Observer</name>
+    </author>
+    <category term="AI Entrepreneurship" scheme="https://opcreport.cn/categories/AI-Entrepreneurship/"/>
+    <category term="solopreneur" scheme="https://opcreport.cn/categories/AI-Entrepreneurship/solopreneur/"/>
+    <category term="agent-infrastructure" scheme="https://opcreport.cn/categories/AI-Entrepreneurship/solopreneur/agent-infrastructure/"/>
+    <category term="MCP" scheme="https://opcreport.cn/tags/MCP/"/>
+    <category term="AI coding" scheme="https://opcreport.cn/tags/AI-coding/"/>
+    <category term="solo founder" scheme="https://opcreport.cn/tags/solo-founder/"/>
+    <category term="voice agents" scheme="https://opcreport.cn/tags/voice-agents/"/>
+    <category term="agent orchestration" scheme="https://opcreport.cn/tags/agent-orchestration/"/>
+    <category term="micro-saas" scheme="https://opcreport.cn/tags/micro-saas/"/>
+    <id>https://opcreport.cn/2026/09/10/opc-report-2026-09-10-1507/</id>
+    <link href="https://opcreport.cn/2026/09/10/opc-report-2026-09-10-1507/"/>
+    <published>2026-09-10T07:07:00.000Z</published>
+    <summary>
+      <![CDATA[<p>The infrastructure question behind “can one person run a real company” got a lot more answerable in the last month. Three things moved]]>
+    </summary>
+    <title>The Solo-Agent Stack Just Got Real: Voice Agents Under 2¢/Min, MCP as the USB-C, and YC's Solo-Founder Share Doubling</title>
+    <updated>2026-09-12T14:00:41.532Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OPC Observer</name>
+    </author>
+    <category term="AI Trends" scheme="https://opcreport.cn/categories/AI-Trends/"/>
+    <category term="OPC Report" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/"/>
+    <category term="Startup Ecosystem" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/Startup-Ecosystem/"/>
+    <category term="AI Entrepreneurship" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/Startup-Ecosystem/AI-Entrepreneurship/"/>
+    <category term="OPC" scheme="https://opcreport.cn/tags/OPC/"/>
+    <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="Bootstrap" scheme="https://opcreport.cn/tags/Bootstrap/"/>
+    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="Claude Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
+    <category term="AI Startup" scheme="https://opcreport.cn/tags/AI-Startup/"/>
+    <category term="AI Agents" scheme="https://opcreport.cn/tags/AI-Agents/"/>
+    <category term="Y Combinator" scheme="https://opcreport.cn/tags/Y-Combinator/"/>
+    <category term="Agent Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
+    <id>https://opcreport.cn/2026/09/10/opc-report-2026-09-10-2303/</id>
+    <link href="https://opcreport.cn/2026/09/10/opc-report-2026-09-10-2303/"/>
+    <published>2026-09-10T07:03:00.000Z</published>
+    <summary>Daily OPC AI one-person company startup trend monitoring report — September 10, 2026. YC S26 Demo Day is today with a record 235 companies; the agent economy is shifting from building agents to building the plumbing they run on. Where a solo founder should point, and which AI tool stack to use.</summary>
+    <title>YC's Biggest Batch Ever Signals a Shift: Agent Infrastructure Is Now Its Own Category</title>
+    <updated>2026-09-10T16:04:16.619Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OPC Observer</name>
+    </author>
+    <category term="AI Trends" scheme="https://opcreport.cn/categories/AI-Trends/"/>
+    <category term="OPC Report" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/"/>
+    <category term="Solopreneur" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/Solopreneur/"/>
+    <category term="Agent Economy" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/Solopreneur/Agent-Economy/"/>
+    <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="Local-First" scheme="https://opcreport.cn/tags/Local-First/"/>
+    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="AI Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="Indie Hacker" scheme="https://opcreport.cn/tags/Indie-Hacker/"/>
+    <category term="Coding Agent" scheme="https://opcreport.cn/tags/Coding-Agent/"/>
+    <category term="Agent Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
+    <category term="YC S26" scheme="https://opcreport.cn/tags/YC-S26/"/>
+    <id>https://opcreport.cn/2026/09/10/opc-report-2026-09-10-1442/</id>
+    <link href="https://opcreport.cn/2026/09/10/opc-report-2026-09-10-1442/"/>
+    <published>2026-09-10T06:42:00.000Z</published>
+    <summary>September 10, 2026 hourly briefing for solo founders: YC S26 Demo Day and the local-first agent wave on Product Hunt point to the same opening — the picks-and-shovels layer for agents is now a category, and it is buildable by one person.</summary>
+    <title>YC Demo Day and Local-First Agents Land Same Day: The Plumbing Layer for Solo Builders Opens</title>
+    <updated>2026-09-10T08:53:21.787Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OPC Observer</name>
+    </author>
+    <category term="AI Entrepreneurship" scheme="https://opcreport.cn/categories/AI-Entrepreneurship/"/>
+    <category term="Solo Founder" scheme="https://opcreport.cn/categories/AI-Entrepreneurship/Solo-Founder/"/>
+    <category term="Startup Trends" scheme="https://opcreport.cn/categories/AI-Entrepreneurship/Solo-Founder/Startup-Trends/"/>
+    <category term="solopreneur" scheme="https://opcreport.cn/tags/solopreneur/"/>
+    <category term="AI agents" scheme="https://opcreport.cn/tags/AI-agents/"/>
+    <category term="one-person company" scheme="https://opcreport.cn/tags/one-person-company/"/>
+    <category term="micro-SaaS" scheme="https://opcreport.cn/tags/micro-SaaS/"/>
+    <category term="agent infrastructure" scheme="https://opcreport.cn/tags/agent-infrastructure/"/>
+    <category term="agent orchestration" scheme="https://opcreport.cn/tags/agent-orchestration/"/>
+    <category term="context engineering" scheme="https://opcreport.cn/tags/context-engineering/"/>
+    <id>https://opcreport.cn/2026/09/10/opc-report-2026-09-10-1803/</id>
+    <link href="https://opcreport.cn/2026/09/10/opc-report-2026-09-10-1803/"/>
+    <published>2026-09-10T02:03:00.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="Agent-Backbone-and-Context-Engineering-Where-Solo-Builders-Should-Aim-in-2026"><a]]>
+    </summary>
+    <title>Agent Backbone and Context Engineering: Where Solo Builders Should Aim in 2026</title>
+    <updated>2026-09-10T11:04:49.963Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OPC Observer</name>
+    </author>
+    <category term="AI Entrepreneurship" scheme="https://opcreport.cn/categories/AI-Entrepreneurship/"/>
+    <category term="Solo Founder" scheme="https://opcreport.cn/categories/AI-Entrepreneurship/Solo-Founder/"/>
+    <category term="Startup Trends" scheme="https://opcreport.cn/categories/AI-Entrepreneurship/Solo-Founder/Startup-Trends/"/>
+    <category term="solopreneur" scheme="https://opcreport.cn/tags/solopreneur/"/>
+    <category term="AI agents" scheme="https://opcreport.cn/tags/AI-agents/"/>
+    <category term="one-person company" scheme="https://opcreport.cn/tags/one-person-company/"/>
+    <category term="micro-SaaS" scheme="https://opcreport.cn/tags/micro-SaaS/"/>
+    <category term="voice AI" scheme="https://opcreport.cn/tags/voice-AI/"/>
+    <category term="agent orchestration" scheme="https://opcreport.cn/tags/agent-orchestration/"/>
+    <id>https://opcreport.cn/2026/09/10/opc-report-2026-09-10-1703/</id>
+    <link href="https://opcreport.cn/2026/09/10/opc-report-2026-09-10-1703/"/>
+    <published>2026-09-10T01:03:00.000Z</published>
+    <summary>
+      <![CDATA[<h1 id="Voice-Agents-and-the-Solo-Unicorn-Wave-What-AI-Builders-Should-Ship-in-2026"><a href="#Voice-Agents-and-the-Solo-Unicorn-Wave-What-AI-Builders-Should-Ship-in-2026" class="headerlink" title="Voice Agents and the Solo-Unicorn Wave: What AI Builders Should Ship in 2026"></a>Voice Agents and the Solo-Unicorn Wave: What AI Builders Should Ship in 2026</h1><p><strong>Generated: September 10, 2026 — 17:03 (Asia&#x2F;Shanghai)</strong></p>]]>
+    </summary>
+    <title>Voice Agents and the Solo-Unicorn Wave: What AI Builders Should Ship in 2026</title>
+    <updated>2026-09-10T09:10:09.386Z</updated>
+  </entry>
+</feed>
