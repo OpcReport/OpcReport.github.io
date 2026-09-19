@@ -1,0 +1,124 @@
+/* ============================================================
+   Header layout fix — nav items no longer overlap the OPC logo
+   Targets landscape theme default conflicts that were NOT
+   overridden in /custom/style.css.
+   ============================================================ */
+
+/* 1) Bring #header-title (logo + subtitle) BACK into the flex flow.
+      Landscape default had it position:absolute which pulled it out
+      of the #header-outer flex layout, causing overlap with the nav. */
+#header-title {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  margin-top: 0 !important;
+  height: auto !important;
+  text-align: left !important;
+  flex: 0 0 auto;        /* logo side does NOT shrink */
+  min-width: 0;
+  max-width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* 2) Make #header-inner a flex row so main-nav and sub-nav sit
+      side-by-side on the right, not stacked vertically. */
+#header-inner {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  overflow: visible !important;   /* was hidden — clobbered search popup */
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+  gap: 4px;
+}
+
+/* 3) Nav links: prevent wrapping that pushed links onto a second row
+      that collided with the logo area. */
+#main-nav {
+  flex: 0 1 auto;
+  flex-wrap: nowrap;
+  min-width: 0;
+  overflow: visible;
+}
+
+#main-nav .main-nav-link {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* 4) Sub-nav icons stay aligned. */
+#sub-nav {
+  flex: 0 0 auto;
+  margin-left: 0 !important;  /* override custom/style.css margin when on same flex line */
+}
+
+/* ============================================================
+   Responsive tuning — switch to hamburger earlier now that
+   we have 7 menu links (Home, Browse, Archives, Tags,
+   About, Privacy, Contact).
+   ============================================================ */
+
+/* 993–1100px: tighten link padding to squeeze all 7 on one row */
+@media screen and (min-width: 993px) and (max-width: 1100px) {
+  #header-outer {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    gap: 14px !important;
+  }
+  #main-nav .main-nav-link {
+    padding-left: 9px !important;
+    padding-right: 9px !important;
+    font-size: 0.86rem !important;
+  }
+  #subtitle-wrap { display: none; }
+  #logo { font-size: 1.2rem; }
+  #logo .logo-img { height: 30px !important; }
+}
+
+/* ≤992px: flip to mobile-nav (hamburger) instead of wrapping */
+@media screen and (max-width: 992px) {
+  #main-nav-toggle {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    color: var(--text, #e4e6eb);
+    padding: 8px;
+    border-radius: 9px;
+    cursor: pointer;
+  }
+  #main-nav-toggle:hover {
+    background: var(--primary-soft, rgba(59,130,246,.12));
+    color: var(--primary-hover, #60a5fa);
+  }
+  #main-nav .main-nav-link { display: none; }
+
+  .mobile-nav-on #mobile-nav {
+    display: block;
+    position: fixed;
+    top: 0; right: 0;
+    width: 240px;
+    height: 100vh;
+    background: var(--bg-card, #151823);
+    border-left: 1px solid var(--border, #232838);
+    box-shadow: var(--shadow-lg, 0 16px 40px rgba(0,0,0,.55));
+    padding: 80px 20px 20px;
+    z-index: 999;
+  }
+  .mobile-nav-on #mobile-nav .mobile-nav-link {
+    display: block;
+    padding: 12px 16px;
+    color: var(--text, #e4e6eb);
+    font-weight: 500;
+    border-radius: 9px;
+    margin-bottom: 4px;
+  }
+  .mobile-nav-on #mobile-nav .mobile-nav-link:hover {
+    background: var(--primary-soft, rgba(59,130,246,.12));
+    color: var(--primary-hover, #60a5fa);
+  }
+  .mobile-nav-on #wrap { transform: translateX(-240px); }
+}
+
