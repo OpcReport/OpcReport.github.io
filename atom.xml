@@ -21,13 +21,13 @@
     <category term="Startup Ecosystem" scheme="https://opcreport.cn/categories/AI-Trends/Solopreneur/Startup-Ecosystem/"/>
     <category term="Agent Infrastructure" scheme="https://opcreport.cn/categories/AI-Trends/Solopreneur/Startup-Ecosystem/Agent-Infrastructure/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
-    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
-    <category term="AI Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
-    <category term="AI Startup" scheme="https://opcreport.cn/tags/AI-Startup/"/>
-    <category term="Coding Agent" scheme="https://opcreport.cn/tags/Coding-Agent/"/>
-    <category term="YC S26" scheme="https://opcreport.cn/tags/YC-S26/"/>
-    <category term="Agent Security" scheme="https://opcreport.cn/tags/Agent-Security/"/>
-    <category term="Open Source" scheme="https://opcreport.cn/tags/Open-Source/"/>
+    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="AI-Startup" scheme="https://opcreport.cn/tags/AI-Startup/"/>
+    <category term="Open-Source" scheme="https://opcreport.cn/tags/Open-Source/"/>
+    <category term="Agent-Security" scheme="https://opcreport.cn/tags/Agent-Security/"/>
+    <category term="YC-S26" scheme="https://opcreport.cn/tags/YC-S26/"/>
+    <category term="Coding-Agent" scheme="https://opcreport.cn/tags/Coding-Agent/"/>
     <id>https://opcreport.cn/2026/09/19/opc-report-2026-09-19-0921/</id>
     <link href="https://opcreport.cn/2026/09/19/opc-report-2026-09-19-0921/"/>
     <published>2026-09-18T17:21:00.000Z</published>
@@ -43,15 +43,13 @@
     <category term="Solopreneur" scheme="https://opcreport.cn/categories/AI-Trends/Solopreneur/"/>
     <category term="Startup Ecosystem" scheme="https://opcreport.cn/categories/AI-Trends/Solopreneur/Startup-Ecosystem/"/>
     <category term="Agentic AI" scheme="https://opcreport.cn/categories/AI-Trends/Solopreneur/Startup-Ecosystem/Agentic-AI/"/>
+    <category term="Startup-Trends" scheme="https://opcreport.cn/tags/Startup-Trends/"/>
+    <category term="Solo-Founder" scheme="https://opcreport.cn/tags/Solo-Founder/"/>
+    <category term="AI-Agents" scheme="https://opcreport.cn/tags/AI-Agents/"/>
+    <category term="AI-Coding" scheme="https://opcreport.cn/tags/AI-Coding/"/>
     <category term="YC" scheme="https://opcreport.cn/tags/YC/"/>
-    <category term="AI coding" scheme="https://opcreport.cn/tags/AI-coding/"/>
-    <category term="solopreneur" scheme="https://opcreport.cn/tags/solopreneur/"/>
-    <category term="AI agents" scheme="https://opcreport.cn/tags/AI-agents/"/>
-    <category term="solo founder" scheme="https://opcreport.cn/tags/solo-founder/"/>
-    <category term="startup trends" scheme="https://opcreport.cn/tags/startup-trends/"/>
     <category term="Devin" scheme="https://opcreport.cn/tags/Devin/"/>
     <category term="Factory" scheme="https://opcreport.cn/tags/Factory/"/>
-    <category term="agentic infrastructure" scheme="https://opcreport.cn/tags/agentic-infrastructure/"/>
     <id>https://opcreport.cn/2026/09/18/opc-report-2026-09-18-1209/</id>
     <link href="https://opcreport.cn/2026/09/18/opc-report-2026-09-18-1209/"/>
     <published>2026-09-17T20:09:00.000Z</published>
@@ -65,11 +63,11 @@
     </author>
     <category term="AI Startup Trend Monitor" scheme="https://opcreport.cn/categories/AI-Startup-Trend-Monitor/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
-    <category term="AI Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
-    <category term="Coding Agent" scheme="https://opcreport.cn/tags/Coding-Agent/"/>
-    <category term="Independent Developer" scheme="https://opcreport.cn/tags/Independent-Developer/"/>
-    <category term="Agent Ops" scheme="https://opcreport.cn/tags/Agent-Ops/"/>
-    <category term="LLM Tooling" scheme="https://opcreport.cn/tags/LLM-Tooling/"/>
+    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="Independent-Developer" scheme="https://opcreport.cn/tags/Independent-Developer/"/>
+    <category term="Coding-Agent" scheme="https://opcreport.cn/tags/Coding-Agent/"/>
+    <category term="Agent-Ops" scheme="https://opcreport.cn/tags/Agent-Ops/"/>
+    <category term="LLM-Tooling" scheme="https://opcreport.cn/tags/LLM-Tooling/"/>
     <id>https://opcreport.cn/2026/09/17/opc-report-2026-09-17-0931/</id>
     <link href="https://opcreport.cn/2026/09/17/opc-report-2026-09-17-0931/"/>
     <published>2026-09-17T01:31:00.000Z</published>
@@ -86,10 +84,10 @@
     <category term="OPC Weekly Report" scheme="https://opcreport.cn/categories/OPC-Weekly-Report/"/>
     <category term="OPC" scheme="https://opcreport.cn/tags/OPC/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
     <category term="GEO" scheme="https://opcreport.cn/tags/GEO/"/>
-    <category term="AI Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
-    <category term="Coding Agent" scheme="https://opcreport.cn/tags/Coding-Agent/"/>
-    <category term="Indie Hackers" scheme="https://opcreport.cn/tags/Indie-Hackers/"/>
+    <category term="Indie-Hackers" scheme="https://opcreport.cn/tags/Indie-Hackers/"/>
+    <category term="Coding-Agent" scheme="https://opcreport.cn/tags/Coding-Agent/"/>
     <id>https://opcreport.cn/2026/09/16/opc-report-2026-09-16-1603/</id>
     <link href="https://opcreport.cn/2026/09/16/opc-report-2026-09-16-1603/"/>
     <published>2026-09-16T08:03:00.000Z</published>
@@ -106,14 +104,13 @@
     <category term="AI Entrepreneurship" scheme="https://opcreport.cn/categories/AI-Entrepreneurship/"/>
     <category term="Solo Founder Trends" scheme="https://opcreport.cn/categories/AI-Entrepreneurship/Solo-Founder-Trends/"/>
     <category term="Agent Stack" scheme="https://opcreport.cn/categories/AI-Entrepreneurship/Solo-Founder-Trends/Agent-Stack/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="Micro-SaaS" scheme="https://opcreport.cn/tags/Micro-SaaS/"/>
+    <category term="AI-Agents" scheme="https://opcreport.cn/tags/AI-Agents/"/>
     <category term="LangGraph" scheme="https://opcreport.cn/tags/LangGraph/"/>
-    <category term="Claude Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
-    <category term="vibe coding" scheme="https://opcreport.cn/tags/vibe-coding/"/>
-    <category term="solopreneur" scheme="https://opcreport.cn/tags/solopreneur/"/>
-    <category term="AI agents" scheme="https://opcreport.cn/tags/AI-agents/"/>
-    <category term="one-person company" scheme="https://opcreport.cn/tags/one-person-company/"/>
-    <category term="micro-SaaS" scheme="https://opcreport.cn/tags/micro-SaaS/"/>
-    <category term="agent orchestration" scheme="https://opcreport.cn/tags/agent-orchestration/"/>
+    <category term="Vibe-Coding" scheme="https://opcreport.cn/tags/Vibe-Coding/"/>
+    <category term="Claude-Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
+    <category term="Agent-Orchestration" scheme="https://opcreport.cn/tags/Agent-Orchestration/"/>
     <id>https://opcreport.cn/2026/09/16/opc-report-2026-09-16-1700/</id>
     <link href="https://opcreport.cn/2026/09/16/opc-report-2026-09-16-1700/"/>
     <published>2026-09-16T01:00:00.000Z</published>
@@ -131,13 +128,12 @@
     <category term="Startup Trends" scheme="https://opcreport.cn/categories/AI-Industry/Startup-Trends/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/categories/AI-Industry/Startup-Trends/Solopreneur/"/>
     <category term="Developer Tools" scheme="https://opcreport.cn/categories/AI-Industry/Startup-Trends/Solopreneur/Developer-Tools/"/>
+    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
     <category term="Cursor" scheme="https://opcreport.cn/tags/Cursor/"/>
+    <category term="Claude-Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
     <category term="YC" scheme="https://opcreport.cn/tags/YC/"/>
-    <category term="Claude Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
-    <category term="solopreneur" scheme="https://opcreport.cn/tags/solopreneur/"/>
-    <category term="one-person company" scheme="https://opcreport.cn/tags/one-person-company/"/>
-    <category term="agent orchestration" scheme="https://opcreport.cn/tags/agent-orchestration/"/>
-    <category term="AI agent" scheme="https://opcreport.cn/tags/AI-agent/"/>
+    <category term="Agent-Orchestration" scheme="https://opcreport.cn/tags/Agent-Orchestration/"/>
     <id>https://opcreport.cn/2026/09/16/opc-report-2026-09-16-1503/</id>
     <link href="https://opcreport.cn/2026/09/16/opc-report-2026-09-16-1503/"/>
     <published>2026-09-15T23:03:00.000Z</published>
@@ -154,13 +150,13 @@
     <category term="Startup Ecosystem" scheme="https://opcreport.cn/categories/AI-Trends/Solo-Founder/Startup-Ecosystem/"/>
     <category term="Agent Economy" scheme="https://opcreport.cn/categories/AI-Trends/Solo-Founder/Startup-Ecosystem/Agent-Economy/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
     <category term="Micro-SaaS" scheme="https://opcreport.cn/tags/Micro-SaaS/"/>
-    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
-    <category term="AI Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
-    <category term="Voice Agent" scheme="https://opcreport.cn/tags/Voice-Agent/"/>
-    <category term="AI Coding" scheme="https://opcreport.cn/tags/AI-Coding/"/>
-    <category term="Agent Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
-    <category term="YC 2026" scheme="https://opcreport.cn/tags/YC-2026/"/>
+    <category term="AI-Coding" scheme="https://opcreport.cn/tags/AI-Coding/"/>
+    <category term="Agent-Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
+    <category term="Voice-Agent" scheme="https://opcreport.cn/tags/Voice-Agent/"/>
+    <category term="YC-2026" scheme="https://opcreport.cn/tags/YC-2026/"/>
     <id>https://opcreport.cn/2026/09/16/opc-report-2026-09-16-1417/</id>
     <link href="https://opcreport.cn/2026/09/16/opc-report-2026-09-16-1417/"/>
     <published>2026-09-15T22:17:00.000Z</published>
@@ -174,12 +170,12 @@
     </author>
     <category term="AI Startup Trends" scheme="https://opcreport.cn/categories/AI-Startup-Trends/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/categories/AI-Startup-Trends/Solopreneur/"/>
+    <category term="Solo-Founder" scheme="https://opcreport.cn/tags/Solo-Founder/"/>
+    <category term="AI-Agents" scheme="https://opcreport.cn/tags/AI-Agents/"/>
     <category term="MCP" scheme="https://opcreport.cn/tags/MCP/"/>
-    <category term="AI Agents" scheme="https://opcreport.cn/tags/AI-Agents/"/>
-    <category term="Solo Founder" scheme="https://opcreport.cn/tags/Solo-Founder/"/>
-    <category term="YC S26" scheme="https://opcreport.cn/tags/YC-S26/"/>
-    <category term="Coding Agents" scheme="https://opcreport.cn/tags/Coding-Agents/"/>
-    <category term="Agent Reliability" scheme="https://opcreport.cn/tags/Agent-Reliability/"/>
+    <category term="Coding-Agents" scheme="https://opcreport.cn/tags/Coding-Agents/"/>
+    <category term="YC-S26" scheme="https://opcreport.cn/tags/YC-S26/"/>
+    <category term="Agent-Reliability" scheme="https://opcreport.cn/tags/Agent-Reliability/"/>
     <id>https://opcreport.cn/2026/09/16/opc-report-2026-09-16-0630/</id>
     <link href="https://opcreport.cn/2026/09/16/opc-report-2026-09-16-0630/"/>
     <published>2026-09-15T16:00:00.000Z</published>
@@ -198,14 +194,14 @@
     <category term="Startup Ecosystem" scheme="https://opcreport.cn/categories/AI-Trends/Solopreneur-Report/Startup-Ecosystem/"/>
     <category term="AI Entrepreneurship" scheme="https://opcreport.cn/categories/AI-Trends/Solopreneur-Report/Startup-Ecosystem/AI-Entrepreneurship/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
     <category term="Cursor" scheme="https://opcreport.cn/tags/Cursor/"/>
-    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
-    <category term="Claude Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
-    <category term="Startup Trends" scheme="https://opcreport.cn/tags/Startup-Trends/"/>
-    <category term="AI Agents" scheme="https://opcreport.cn/tags/AI-Agents/"/>
-    <category term="AI Coding" scheme="https://opcreport.cn/tags/AI-Coding/"/>
-    <category term="Agent Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
-    <category term="YC S26" scheme="https://opcreport.cn/tags/YC-S26/"/>
+    <category term="Startup-Trends" scheme="https://opcreport.cn/tags/Startup-Trends/"/>
+    <category term="AI-Agents" scheme="https://opcreport.cn/tags/AI-Agents/"/>
+    <category term="AI-Coding" scheme="https://opcreport.cn/tags/AI-Coding/"/>
+    <category term="Claude-Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
+    <category term="Agent-Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
+    <category term="YC-S26" scheme="https://opcreport.cn/tags/YC-S26/"/>
     <id>https://opcreport.cn/2026/09/15/opc-report-2026-09-16-0703/</id>
     <link href="https://opcreport.cn/2026/09/15/opc-report-2026-09-16-0703/"/>
     <published>2026-09-15T15:03:00.000Z</published>
@@ -219,15 +215,15 @@
     </author>
     <category term="OPC Trend Report" scheme="https://opcreport.cn/categories/OPC-Trend-Report/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="AI-Coding" scheme="https://opcreport.cn/tags/AI-Coding/"/>
+    <category term="Claude-Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
+    <category term="Openai-Codex" scheme="https://opcreport.cn/tags/Openai-Codex/"/>
+    <category term="Agent-Runtime" scheme="https://opcreport.cn/tags/Agent-Runtime/"/>
     <category term="Local-First" scheme="https://opcreport.cn/tags/Local-First/"/>
-    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
-    <category term="AI Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
-    <category term="Claude Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
-    <category term="OpenAI Codex" scheme="https://opcreport.cn/tags/OpenAI-Codex/"/>
-    <category term="AI Coding" scheme="https://opcreport.cn/tags/AI-Coding/"/>
-    <category term="Personal AGI" scheme="https://opcreport.cn/tags/Personal-AGI/"/>
+    <category term="Personal-AGI" scheme="https://opcreport.cn/tags/Personal-AGI/"/>
     <category term="Herdr" scheme="https://opcreport.cn/tags/Herdr/"/>
-    <category term="Agent Runtime" scheme="https://opcreport.cn/tags/Agent-Runtime/"/>
     <id>https://opcreport.cn/2026/09/14/opc-report-2026-09-14-1238/</id>
     <link href="https://opcreport.cn/2026/09/14/opc-report-2026-09-14-1238/"/>
     <published>2026-09-14T04:38:00.000Z</published>
@@ -243,13 +239,13 @@
     </author>
     <category term="OPC Trend Report" scheme="https://opcreport.cn/categories/OPC-Trend-Report/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
-    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
-    <category term="AI Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
-    <category term="Claude Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
-    <category term="AI-Native Services" scheme="https://opcreport.cn/tags/AI-Native-Services/"/>
-    <category term="Agent Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
-    <category term="Micro SaaS" scheme="https://opcreport.cn/tags/Micro-SaaS/"/>
-    <category term="YC 2026" scheme="https://opcreport.cn/tags/YC-2026/"/>
+    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="Micro-SaaS" scheme="https://opcreport.cn/tags/Micro-SaaS/"/>
+    <category term="Claude-Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
+    <category term="Agent-Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
+    <category term="AI-Native-Services" scheme="https://opcreport.cn/tags/AI-Native-Services/"/>
+    <category term="YC-2026" scheme="https://opcreport.cn/tags/YC-2026/"/>
     <id>https://opcreport.cn/2026/09/14/opc-report-2026-09-14-1153/</id>
     <link href="https://opcreport.cn/2026/09/14/opc-report-2026-09-14-1153/"/>
     <published>2026-09-14T03:53:00.000Z</published>
@@ -268,13 +264,13 @@
     <category term="Startup Ecosystem" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/Startup-Ecosystem/"/>
     <category term="AI Entrepreneurship" scheme="https://opcreport.cn/categories/AI-Trends/OPC-Report/Startup-Ecosystem/AI-Entrepreneurship/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
     <category term="Cursor" scheme="https://opcreport.cn/tags/Cursor/"/>
-    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
-    <category term="Agent Orchestration" scheme="https://opcreport.cn/tags/Agent-Orchestration/"/>
-    <category term="Claude Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
-    <category term="Y Combinator" scheme="https://opcreport.cn/tags/Y-Combinator/"/>
-    <category term="Solo Founder" scheme="https://opcreport.cn/tags/Solo-Founder/"/>
-    <category term="AI Coding Agent" scheme="https://opcreport.cn/tags/AI-Coding-Agent/"/>
+    <category term="Solo-Founder" scheme="https://opcreport.cn/tags/Solo-Founder/"/>
+    <category term="Claude-Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
+    <category term="Y-Combinator" scheme="https://opcreport.cn/tags/Y-Combinator/"/>
+    <category term="Agent-Orchestration" scheme="https://opcreport.cn/tags/Agent-Orchestration/"/>
+    <category term="AI-Coding-Agent" scheme="https://opcreport.cn/tags/AI-Coding-Agent/"/>
     <id>https://opcreport.cn/2026/09/13/opc-report-2026-09-13-2204/</id>
     <link href="https://opcreport.cn/2026/09/13/opc-report-2026-09-13-2204/"/>
     <published>2026-09-13T06:04:00.000Z</published>
@@ -290,14 +286,13 @@
     <category term="Solopreneur" scheme="https://opcreport.cn/categories/AI-Trends/Solopreneur/"/>
     <category term="Dev Tools" scheme="https://opcreport.cn/categories/AI-Trends/Solopreneur/Dev-Tools/"/>
     <category term="Agent Economy" scheme="https://opcreport.cn/categories/AI-Trends/Solopreneur/Dev-Tools/Agent-Economy/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="Claude-Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
     <category term="YC" scheme="https://opcreport.cn/tags/YC/"/>
-    <category term="Claude Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
-    <category term="solopreneur" scheme="https://opcreport.cn/tags/solopreneur/"/>
-    <category term="one person company" scheme="https://opcreport.cn/tags/one-person-company/"/>
-    <category term="agent orchestration" scheme="https://opcreport.cn/tags/agent-orchestration/"/>
+    <category term="Agent-Orchestration" scheme="https://opcreport.cn/tags/Agent-Orchestration/"/>
+    <category term="AI-Coding-Agent" scheme="https://opcreport.cn/tags/AI-Coding-Agent/"/>
     <category term="Supabase" scheme="https://opcreport.cn/tags/Supabase/"/>
-    <category term="AI coding agent" scheme="https://opcreport.cn/tags/AI-coding-agent/"/>
-    <category term="AI GTM" scheme="https://opcreport.cn/tags/AI-GTM/"/>
+    <category term="AI-GTM" scheme="https://opcreport.cn/tags/AI-GTM/"/>
     <id>https://opcreport.cn/2026/09/13/opc-report-2026-09-13-2100/</id>
     <link href="https://opcreport.cn/2026/09/13/opc-report-2026-09-13-2100/"/>
     <published>2026-09-13T05:00:00.000Z</published>
@@ -313,13 +308,13 @@
     <category term="Solopreneur" scheme="https://opcreport.cn/categories/AI-Trends/Solopreneur/"/>
     <category term="Agent Infrastructure" scheme="https://opcreport.cn/categories/AI-Trends/Solopreneur/Agent-Infrastructure/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
     <category term="Cursor" scheme="https://opcreport.cn/tags/Cursor/"/>
-    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
-    <category term="AI Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
-    <category term="Claude Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
-    <category term="Y Combinator" scheme="https://opcreport.cn/tags/Y-Combinator/"/>
-    <category term="Agent Observability" scheme="https://opcreport.cn/tags/Agent-Observability/"/>
-    <category term="Agent Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
+    <category term="Claude-Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
+    <category term="Y-Combinator" scheme="https://opcreport.cn/tags/Y-Combinator/"/>
+    <category term="Agent-Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
+    <category term="Agent-Observability" scheme="https://opcreport.cn/tags/Agent-Observability/"/>
     <id>https://opcreport.cn/2026/09/13/opc-report-2026-09-13-0914/</id>
     <link href="https://opcreport.cn/2026/09/13/opc-report-2026-09-13-0914/"/>
     <published>2026-09-12T17:14:00.000Z</published>
@@ -334,12 +329,12 @@
     <category term="OPC Weekly Report" scheme="https://opcreport.cn/categories/OPC-Weekly-Report/"/>
     <category term="AI Trends" scheme="https://opcreport.cn/categories/OPC-Weekly-Report/AI-Trends/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="Indie-Hacker" scheme="https://opcreport.cn/tags/Indie-Hacker/"/>
     <category term="MCP" scheme="https://opcreport.cn/tags/MCP/"/>
-    <category term="Agent Orchestration" scheme="https://opcreport.cn/tags/Agent-Orchestration/"/>
-    <category term="Indie Hacker" scheme="https://opcreport.cn/tags/Indie-Hacker/"/>
-    <category term="One-Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
-    <category term="AI Coding Agents" scheme="https://opcreport.cn/tags/AI-Coding-Agents/"/>
-    <category term="Local AI" scheme="https://opcreport.cn/tags/Local-AI/"/>
+    <category term="Agent-Orchestration" scheme="https://opcreport.cn/tags/Agent-Orchestration/"/>
+    <category term="Local-AI" scheme="https://opcreport.cn/tags/Local-AI/"/>
+    <category term="AI-Coding-Agents" scheme="https://opcreport.cn/tags/AI-Coding-Agents/"/>
     <id>https://opcreport.cn/2026/09/13/opc-report-2026-09-13-0003/</id>
     <link href="https://opcreport.cn/2026/09/13/opc-report-2026-09-13-0003/"/>
     <published>2026-09-12T16:03:00.000Z</published>
@@ -356,10 +351,10 @@
     <category term="OPC Trend Report" scheme="https://opcreport.cn/categories/OPC-Trend-Report/"/>
     <category term="OPC" scheme="https://opcreport.cn/tags/OPC/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
-    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
-    <category term="AI Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
-    <category term="Independent Developer" scheme="https://opcreport.cn/tags/Independent-Developer/"/>
-    <category term="Y Combinator" scheme="https://opcreport.cn/tags/Y-Combinator/"/>
+    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="Independent-Developer" scheme="https://opcreport.cn/tags/Independent-Developer/"/>
+    <category term="Y-Combinator" scheme="https://opcreport.cn/tags/Y-Combinator/"/>
     <id>https://opcreport.cn/2026/09/12/opc-report-2026-09-12-2303/</id>
     <link href="https://opcreport.cn/2026/09/12/opc-report-2026-09-12-2303/"/>
     <published>2026-09-12T15:03:00.000Z</published>
@@ -376,11 +371,11 @@
     <category term="OPC Trend Report" scheme="https://opcreport.cn/categories/OPC-Trend-Report/"/>
     <category term="OPC" scheme="https://opcreport.cn/tags/OPC/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
-    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
-    <category term="AI Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
-    <category term="Claude Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
-    <category term="Managed Agents" scheme="https://opcreport.cn/tags/Managed-Agents/"/>
-    <category term="OpenAI Agents API" scheme="https://opcreport.cn/tags/OpenAI-Agents-API/"/>
+    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="Claude-Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
+    <category term="Managed-Agents" scheme="https://opcreport.cn/tags/Managed-Agents/"/>
+    <category term="Openai-Agents-API" scheme="https://opcreport.cn/tags/Openai-Agents-API/"/>
     <id>https://opcreport.cn/2026/09/12/opc-report-2026-09-12-2103/</id>
     <link href="https://opcreport.cn/2026/09/12/opc-report-2026-09-12-2103/"/>
     <published>2026-09-12T13:03:00.000Z</published>
@@ -396,11 +391,11 @@
     </author>
     <category term="OPC Trend Report" scheme="https://opcreport.cn/categories/OPC-Trend-Report/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
+    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="Indie-Hacker" scheme="https://opcreport.cn/tags/Indie-Hacker/"/>
     <category term="No-Code" scheme="https://opcreport.cn/tags/No-Code/"/>
     <category term="GEO" scheme="https://opcreport.cn/tags/GEO/"/>
-    <category term="AI Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
-    <category term="Indie Hacker" scheme="https://opcreport.cn/tags/Indie-Hacker/"/>
-    <category term="Agent Stack" scheme="https://opcreport.cn/tags/Agent-Stack/"/>
+    <category term="Agent-Stack" scheme="https://opcreport.cn/tags/Agent-Stack/"/>
     <id>https://opcreport.cn/2026/09/12/opc-report-2026-09-12-0103/</id>
     <link href="https://opcreport.cn/2026/09/12/opc-report-2026-09-12-0103/"/>
     <published>2026-09-11T17:03:00.000Z</published>
@@ -417,10 +412,10 @@
     <category term="OPC Trend Report" scheme="https://opcreport.cn/categories/OPC-Trend-Report/"/>
     <category term="OPC" scheme="https://opcreport.cn/tags/OPC/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
-    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
-    <category term="AI Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
-    <category term="Claude Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
-    <category term="Indie Hacker" scheme="https://opcreport.cn/tags/Indie-Hacker/"/>
+    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="Indie-Hacker" scheme="https://opcreport.cn/tags/Indie-Hacker/"/>
+    <category term="Claude-Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
     <id>https://opcreport.cn/2026/09/12/opc-report-2026-09-12-0051/</id>
     <link href="https://opcreport.cn/2026/09/12/opc-report-2026-09-12-0051/"/>
     <published>2026-09-11T16:51:00.000Z</published>
@@ -436,12 +431,12 @@
     </author>
     <category term="AI Entrepreneurship" scheme="https://opcreport.cn/categories/AI-Entrepreneurship/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/categories/AI-Entrepreneurship/Solopreneur/"/>
-    <category term="solo-founder" scheme="https://opcreport.cn/tags/solo-founder/"/>
-    <category term="ai-agents" scheme="https://opcreport.cn/tags/ai-agents/"/>
-    <category term="agent-security" scheme="https://opcreport.cn/tags/agent-security/"/>
-    <category term="no-code" scheme="https://opcreport.cn/tags/no-code/"/>
-    <category term="bootstrapping" scheme="https://opcreport.cn/tags/bootstrapping/"/>
-    <category term="indie-hackers" scheme="https://opcreport.cn/tags/indie-hackers/"/>
+    <category term="Solo-Founder" scheme="https://opcreport.cn/tags/Solo-Founder/"/>
+    <category term="AI-Agents" scheme="https://opcreport.cn/tags/AI-Agents/"/>
+    <category term="Bootstrapping" scheme="https://opcreport.cn/tags/Bootstrapping/"/>
+    <category term="No-Code" scheme="https://opcreport.cn/tags/No-Code/"/>
+    <category term="Indie-Hackers" scheme="https://opcreport.cn/tags/Indie-Hackers/"/>
+    <category term="Agent-Security" scheme="https://opcreport.cn/tags/Agent-Security/"/>
     <id>https://opcreport.cn/2026/09/12/opc-report-2026-09-12-2007/</id>
     <link href="https://opcreport.cn/2026/09/12/opc-report-2026-09-12-2007/"/>
     <published>2026-09-11T16:00:00.000Z</published>
