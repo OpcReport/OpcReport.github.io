@@ -6,11 +6,11 @@
   <title>Category: 一人公司 | OPC Report</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="OPC Report is a daily English-language intelligence publication tracking the one-person company economy, AI solopreneurship, indie AI startups, and the tools building the solo-founder economy. Each report synthesizes same-day developments into actionable analysis with named sources and specific numbers for independent developers and solopreneurs. 460+ reports archived since June 2026.">
-  <link rel="canonical" href="https://opcreport.cn/categories/ai-entrepreneurship/opc/one-person-company/">
+  <link rel="canonical" href="https://opcreport.cn/categories/ai-entrepreneurship/OPC/one-person-company/">
   <meta name="description" content="OPC Report is a daily English-language intelligence publication tracking the one-person company economy, AI solopreneurship, indie AI startups, and the tools building the solo-founder economy. Each re">
 <meta property="og:type" content="website">
 <meta property="og:title" content="OPC Report">
-<meta property="og:url" content="https://opcreport.cn/categories/ai-entrepreneurship/opc/one-person-company/">
+<meta property="og:url" content="https://opcreport.cn/categories/ai-entrepreneurship/OPC/one-person-company/">
 <meta property="og:site_name" content="OPC Report">
 <meta property="og:description" content="OPC Report is a daily English-language intelligence publication tracking the one-person company economy, AI solopreneurship, indie AI startups, and the tools building the solo-founder economy. Each re">
 <meta property="og:locale" content="en_US">
@@ -1757,6 +1757,64 @@ window.BSZ_BASE = { pv: 5737, uv: 5271 };
     <a href="/dates/" class="mobile-nav-link">Browse</a>
   
     <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about/" class="mobile-nav-link">About</a>
+  
+    <a href="/privacy/" class="mobile-nav-link">Privacy</a>
+  
+    <a href="/contact/" class="mobile-nav-link">Contact</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+<script src="/js/qrcode.min.js"></script>
+
+
+<script src="/js/share-wechat.js"></script>
+
+
+
+
+
+
+
+<script>
+(function(){
+  var btn = document.getElementById('tagcloud-toggle-btn');
+  var cloud = document.getElementById('sidebar-tagcloud');
+  if (!btn || !cloud) return;
+  var textSpan = btn.querySelector('.toggle-text');
+  var totalLabel = textSpan ? textSpan.textContent.match(/\d+/) : null;
+  var total = totalLabel ? totalLabel[0] : '';
+  btn.addEventListener('click', function(){
+    var expanded = cloud.classList.toggle('tagcloud-expanded');
+    var collapsed = cloud.classList.toggle('tagcloud-collapsed');
+    btn.classList.toggle('is-expanded', expanded);
+    if (textSpan) {
+      textSpan.textContent = expanded ? '收起' : '展开看全部 (' + total + ')';
+    }
+  });
+})();
+</script>
+  </div>
+</body>
+</html>s="mobile-nav-link">Archives</a>
   
     <a href="/tags" class="mobile-nav-link">Tags</a>
   
