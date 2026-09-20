@@ -153,11 +153,11 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> GEO </tag>
+            
             <tag> Indie-Hackers </tag>
             
             <tag> Coding-Agent </tag>
-            
-            <tag> Geo </tag>
             
         </tags>
       
@@ -190,17 +190,17 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> Micro-SaaS </tag>
+            
             <tag> AI-Agents </tag>
+            
+            <tag> LangGraph </tag>
             
             <tag> Vibe-Coding </tag>
             
             <tag> Claude-Code </tag>
             
             <tag> Agent-Orchestration </tag>
-            
-            <tag> Micro-Saas </tag>
-            
-            <tag> Langgraph </tag>
             
         </tags>
       
@@ -280,6 +280,8 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> Micro-SaaS </tag>
+            
             <tag> AI-Coding </tag>
             
             <tag> Agent-Infrastructure </tag>
@@ -287,8 +289,6 @@
             <tag> Voice-Agent </tag>
             
             <tag> YC-2026 </tag>
-            
-            <tag> Micro-Saas </tag>
             
         </tags>
       
@@ -319,13 +319,13 @@
             
             <tag> Solo-Founder </tag>
             
+            <tag> MCP </tag>
+            
             <tag> Coding-Agents </tag>
             
             <tag> YC-S26 </tag>
             
             <tag> Agent-Reliability </tag>
-            
-            <tag> Mcp </tag>
             
         </tags>
       
@@ -413,9 +413,9 @@
             
             <tag> Local-First </tag>
             
-            <tag> Herdr </tag>
+            <tag> Personal-AGI </tag>
             
-            <tag> Personal-Agi </tag>
+            <tag> Herdr </tag>
             
         </tags>
       
@@ -446,6 +446,8 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> Micro-SaaS </tag>
+            
             <tag> Claude-Code </tag>
             
             <tag> Agent-Infrastructure </tag>
@@ -453,8 +455,6 @@
             <tag> AI-Native-Services </tag>
             
             <tag> YC-2026 </tag>
-            
-            <tag> Micro-Saas </tag>
             
         </tags>
       
@@ -620,13 +620,13 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> MCP </tag>
+            
             <tag> Agent-Orchestration </tag>
             
             <tag> Local-AI </tag>
             
             <tag> AI-Coding-Agents </tag>
-            
-            <tag> Mcp </tag>
             
         </tags>
       
@@ -688,17 +688,15 @@
             
             <tag> OPC </tag>
             
+            <tag> AI-Agent </tag>
+            
             <tag> Solopreneur </tag>
             
-            <tag> AI Agent </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> One Person Company </tag>
+            <tag> Managed-Agents </tag>
             
-            <tag> Managed Agents </tag>
-            
-            <tag> Claude Code </tag>
-            
-            <tag> OpenAI Agents API </tag>
+            <tag> Openai-Agents-API </tag>
             
         </tags>
       
@@ -723,17 +721,17 @@
       
         <tags>
             
+            <tag> Indie-Hacker </tag>
+            
+            <tag> AI-Agent </tag>
+            
             <tag> Solopreneur </tag>
             
             <tag> No-Code </tag>
             
             <tag> GEO </tag>
             
-            <tag> AI Agent </tag>
-            
-            <tag> Indie Hacker </tag>
-            
-            <tag> Agent Stack </tag>
+            <tag> Agent-Stack </tag>
             
         </tags>
       
@@ -793,17 +791,17 @@
       
         <tags>
             
-            <tag> solo-founder </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> ai-agents </tag>
+            <tag> Solo-Founder </tag>
             
-            <tag> agent-security </tag>
+            <tag> Bootstrapping </tag>
             
-            <tag> no-code </tag>
+            <tag> No-Code </tag>
             
-            <tag> bootstrapping </tag>
+            <tag> Indie-Hackers </tag>
             
-            <tag> indie-hackers </tag>
+            <tag> Agent-Security </tag>
             
         </tags>
       
