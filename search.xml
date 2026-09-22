@@ -4,6 +4,223 @@
   
     
     <entry>
+      <title>From Code-Writing Agents to Trust-Layer Agents: Where Solo Founders Should Point Their Stack Next</title>
+      <link href="/2026/09/22/opc-report-2026-09-22-1024/"/>
+      <url>/2026/09/22/opc-report-2026-09-22-1024/</url>
+      
+        <content type="html"><![CDATA[<h1 id="From-Code-Writing-Agents-to-Trust-Layer-Agents-Where-Solo-Founders-Should-Point-Their-Stack-Next"><a href="#From-Code-Writing-Agents-to-Trust-Layer-Agents-Where-Solo-Founders-Should-Point-Their-Stack-Next" class="headerlink" title="From Code-Writing Agents to Trust-Layer Agents: Where Solo Founders Should Point Their Stack Next"></a>From Code-Writing Agents to Trust-Layer Agents: Where Solo Founders Should Point Their Stack Next</h1><blockquote><p>Hourly intelligence briefing on the global <strong>One-Person Company (OPC)</strong> and AI super-individual movement. This edition: September 22, 2026 (Asia&#x2F;Shanghai).</p></blockquote><h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><p>The center of gravity in AI tooling just moved. For the last year the headline was “better agents that write code.” In the last 90 days the money, the products, and the hiring have shifted to a quieter, higher-leverage question: <strong>how do you run an agent inside a real business without it blowing up?</strong></p><p>Three deals tell the story. AIUC (the “Artificial Intelligence Underwriting Company”) closed a $40M Series A to certify agents against 5,000 attack&#x2F;risk combinations, re-audited every quarter. AIR raised $50M in seed to scan the <em>software supply chain</em> your agent loads — every skill, plugin, and MCP server. Temporal pulled a $550M Series E at a $12.55B valuation on $250M+ ARR, betting that “workflow reliability” is now its own category. Capital is leaving the model layer and parking in the <strong>guardrail layer</strong>.</p><p>For a solo founder this means two things, and they point in opposite directions:</p><ol><li>The bar to <em>use</em> an agent keeps falling — but the bar a <em>customer</em> sets before trusting your agent keeps rising.</li><li>Helping small teams “run agents safely and auditably” is itself the cleanest new wedge, not another chatbot wrapper.</li></ol><p><strong>The two questions this report answers:</strong> Where should you build? → Into vertical agent-reliability and “sell-to-agent” plumbing. Which tools? → A Claude Code + Supabase + n8n core, wrapped with an audit&#x2F;logging layer from day one.</p><h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><h3 id="1-Agent-reliability-is-now-a-standalone-investment-category"><a href="#1-Agent-reliability-is-now-a-standalone-investment-category" class="headerlink" title="1. Agent reliability is now a standalone investment category"></a>1. Agent reliability is now a standalone investment category</h3><p>September was, almost literally, “fund the thing that says no.” AIUC raised $40M (Ribbit + First Harmonic; $55M total) for AIUC-1 — a certification standard that stress-tests agents on jailbreaks, hallucinations, and data leaks with 5,000 risk&#x2F;attack combos and re-certifies quarterly. Cursor, Lovable, Harvey, ElevenLabs, UiPath, and Fin already certify against it. AIR came out of stealth with $50M (Sequoia + Greenoaks) as a “firewall for agents,” continuously vetting every skill, plugin, and MCP server an agent touches; it claims to have found 17,800+ public add-ons across ~6.7M installs relying on untrusted external instructions. HiddenLayer followed a day later with $100M to guard agents at runtime. Raindrop’s $50M A round replays production traffic and simulates proposed agent changes before deploy.</p><p>The takeaway: as models get cheaper, <strong>“who can prove the agent won’t wreck things” is the new scarce resource.</strong></p><h3 id="2-“Sell-to-agents”-infrastructure-is-forming-—-your-next-customer-is-a-machine"><a href="#2-“Sell-to-agents”-infrastructure-is-forming-—-your-next-customer-is-a-machine" class="headerlink" title="2. “Sell to agents” infrastructure is forming — your next customer is a machine"></a>2. “Sell to agents” infrastructure is forming — your next customer is a machine</h3><p>ZeroClick (Product Hunt, Sept 16, #9 of the day) literally pitches “sell your product to AI agents” — turn your API into an agent-discoverable storefront with pricing, identity, payments, and analytics, charging a low revenue share and no fixed fee. Kopai (Sept 8) is “the cloud for AI agents,” one-command-publishing any agent as an API and listing it in a marketplace, separating “cost to run” from “what it earns.” Keenable raised $26M seed to build an agent-native search index (100B+ docs, p95 latency &lt;250ms, as low as $1 per 1,000 requests). ZeroClick claims <strong>57% of web traffic is already agentic</strong>. The entry point is shifting from “humans search” to “machines search” — and solo builders need to start optimizing for machine readers.</p><h3 id="3-The-“one-person-ops-stack”-is-erupting-on-Product-Hunt"><a href="#3-The-“one-person-ops-stack”-is-erupting-on-Product-Hunt" class="headerlink" title="3. The “one-person ops stack” is erupting on Product Hunt"></a>3. The “one-person ops stack” is erupting on Product Hunt</h3><p>September’s PH slate is dense with agent-first tooling for teams of one. Stacks ships four agents — setup, content, messenger, marketing — that run a whole e-commerce stack live in minutes. Makersclaw 2.0 positions itself as “the OS for a company run by agents.” Toone lets non-technical users compose reliable agent workflows (129 upvotes day one). Text Agent Store became a “contact-book of agents you can text” (Sept 17, #3, 308 upvotes). The pattern confirms OPC is moving from a thesis to a <em>purchasable</em> toolchain.</p><h2 id="Build-Directions-practical"><a href="#Build-Directions-practical" class="headerlink" title="Build Directions (practical)"></a>Build Directions (practical)</h2><h3 id="1-“Agent-pre-flight-review”-service-for-small-teams"><a href="#1-“Agent-pre-flight-review”-service-for-small-teams" class="headerlink" title="1. “Agent pre-flight review” service for small teams"></a>1. “Agent pre-flight review” service for small teams</h3><p><strong>What:</strong> A launch-readiness package for 5–30-person teams shipping agentic code with Cursor&#x2F;Claude Code — review PRs, harden tests around money&#x2F;permissions&#x2F;customer data&#x2F;destructive actions, ship a deploy checklist, write a founder-readable risk memo, and track AI tool spend per project.<br><strong>Stack:</strong> Claude Code (repo reads + test generation) + Cursor (fixes) + GitHub Actions (automated review) + a custom MCP connector to the client’s systems.<br><strong>Cost&#x2F;cycle:</strong> Solo-operable. Price $1,500–$3,000&#x2F;mo for weekly coverage; $4,000–$8,000&#x2F;mo for near-daily review. First template in 1–2 weeks.</p><h3 id="2-Vertical-“agent-compliance-audit”-SaaS"><a href="#2-Vertical-“agent-compliance-audit”-SaaS" class="headerlink" title="2. Vertical “agent compliance&#x2F;audit” SaaS"></a>2. Vertical “agent compliance&#x2F;audit” SaaS</h3><p><strong>What:</strong> Pick one regulated vertical (lending, medical billing, cross-border e-commerce) and sell “agent action logging + quarterly re-cert + one-click audit export” as a subscription.<br><strong>Stack:</strong> Supabase (Postgres + audit log) + n8n (orchestration&#x2F;alerts) + Claude&#x2F;OpenAI (audit summaries) + Cloudflare (edge, generous free tier).<br><strong>Cost&#x2F;cycle:</strong> MVP in 2–4 weeks, &lt;$100&#x2F;mo to start. Position as the “light” version of AIUC for SMBs the giants won’t touch.</p><h3 id="3-“Sell-to-agent”接入-layer-white-label-ZeroClick"><a href="#3-“Sell-to-agent”接入-layer-white-label-ZeroClick" class="headerlink" title="3. “Sell-to-agent”接入 layer (white-label ZeroClick)"></a>3. “Sell-to-agent”接入 layer (white-label ZeroClick)</h3><p><strong>What:</strong> Help indie devs &#x2F; small SaaS wrap their API into an agent-discoverable, orderable storefront with identity and billing.<br><strong>Stack:</strong> Vercel (deploy) + Stripe (billing&#x2F;revenue share) + Kopai or a self-built API gateway + LLMOps for observability.<br><strong>Cost&#x2F;cycle:</strong> One person, 3–6 weeks to MVP. Zero fixed fee, monetize on the new machine-customer channel.</p><h3 id="4-“Agent-ops-OS”-templates-plugins-for-solo-founders"><a href="#4-“Agent-ops-OS”-templates-plugins-for-solo-founders" class="headerlink" title="4. “Agent ops OS” templates&#x2F;plugins for solo founders"></a>4. “Agent ops OS” templates&#x2F;plugins for solo founders</h3><p><strong>What:</strong> A replicable “four-agent kit” — content + support + marketing + setup — sold to Shopify&#x2F;indie-store owners, à la Stacks&#x2F;Makersclaw but packaged as a template.<br><strong>Stack:</strong> n8n (orchestration) + Make (visual) + Lindy&#x2F;Gumloop (agent layer) + Zapier (8,000+ integrations).<br><strong>Cost&#x2F;cycle:</strong> $40–$200&#x2F;mo in tool fees; template built in 1–2 weeks. Sell on the ROI of “hire fewer people.”</p><h3 id="5-“Machine-search”-content-GEO-optimization-service"><a href="#5-“Machine-search”-content-GEO-optimization-service" class="headerlink" title="5. “Machine-search” content &#x2F; GEO optimization service"></a>5. “Machine-search” content &#x2F; GEO optimization service</h3><p><strong>What:</strong> Help SMB sites become readable and citable by agents and AI search (lightweight LLMagnet &#x2F; Profound — Profound is already a $1.8B unicorn).<br><strong>Stack:</strong> LLMagnet (WP adaptation) + Keenable&#x2F;Exa-style retrieval for baselining + a self-built structured-data script.<br><strong>Cost&#x2F;cycle:</strong> Solo service, $500–$2,000&#x2F;site&#x2F;mo; diagnostic report in 1 week.</p><h3 id="Tooling-cost-snapshot-verified-Sept-2026"><a href="#Tooling-cost-snapshot-verified-Sept-2026" class="headerlink" title="Tooling cost snapshot (verified Sept 2026)"></a>Tooling cost snapshot (verified Sept 2026)</h3><table><thead><tr><th>Tool</th><th>Role</th><th>Entry price</th></tr></thead><tbody><tr><td>Claude Code</td><td>Terminal agent, multi-file refactors</td><td>$20&#x2F;mo (Pro)</td></tr><tr><td>Cursor</td><td>In-editor agent, fast iteration</td><td>Free Hobby &#x2F; $20&#x2F;mo Pro</td></tr><tr><td>GitHub Copilot</td><td>Broad IDE coverage, budget</td><td>$10&#x2F;mo Pro</td></tr><tr><td>Supabase</td><td>Postgres + auth + storage</td><td>Free tier (2 projects)</td></tr><tr><td>n8n</td><td>Self-hostable orchestration</td><td>Free (OSS) &#x2F; paid tiers</td></tr><tr><td>Cloudflare</td><td>Edge, CDN, R2, AI inference</td><td>Generous free tier</td></tr><tr><td>Kopai</td><td>Publish agent as API + marketplace</td><td>Usage-based</td></tr></tbody></table><p>A complete solo agent-ops stack typically runs <strong>$40–$500&#x2F;month</strong> in tool subscriptions — not headcount.</p><h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><ul><li><strong>Commoditization:</strong> “Agent orchestration &#x2F; ops OS” templates are trivially copied. The moat has to come from vertical data and audit evidence, not a generic workflow.</li><li><strong>Deployment friction:</strong> Buyers want “auditable and trustworthy,” not another chatbot. Without logging and re-cert, you won’t clear regulated industries.</li><li><strong>Compliance exposure:</strong> Agents that auto-call payments or customer data trigger regulation (lending, health, cross-border). Design permission boundaries and human-approval gates before launch.</li><li><strong>Compute&#x2F;API cost:</strong> Parallel agents + simulation + quarterly re-audit inflate API bills. Use Cloudflare &#x2F; local Ollama to compress cost; meter per project instead of blindly stacking models.</li></ul><h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><p><strong>For founders at 0→1:</strong></p><ul><li>✅ Pick one painful vertical (lending &#x2F; health &#x2F; cross-border compliance &#x2F; indie-store ops). Don’t build a broad “agent platform.”</li><li>✅ Ship an MVP in 2–4 weeks with Claude Code + Supabase + n8n; land 1–2 paying pilots before scaling.</li><li>✅ Log every agent action and ship a human-approval switch from day one — that <em>is</em> your pitch.</li></ul><p><strong>For teams with an existing product:</strong></p><ul><li>✅ Package “reliability &#x2F; audit” as a standalone selling point; align with an AIUC-style cert to win enterprise trust.</li><li>✅ Evaluate the “sell-to-agent” channel: expose your core API as a machine-callable storefront to capture ZeroClick&#x2F;Keenable traffic.</li><li>✅ Use Kopai&#x2F;Temporal-class infra to orchestrate and observe internal multi-agent workflows, cutting ops cost.</li></ul><h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><ul><li><strong>57%</strong> — share of web traffic ZeroClick claims is already agentic.</li><li><strong>5,000</strong> — attack&#x2F;risk combinations AIUC runs per agent, re-audited quarterly.</li><li><strong>17,800+</strong> — public agent add-ons AIR found relying on untrusted external instructions (~6.7M installs).</li><li><strong>$12.55B</strong> — Temporal’s Series E valuation; $250M+ ARR, +200% YoY — the reliability ceiling.</li><li><strong>$1 &#x2F; 1,000 req</strong> — Keenable’s agent-native retrieval price at scale, &lt;250ms latency.</li><li><strong>$40–$500&#x2F;mo</strong> — typical monthly cost of a solo agent-ops stack (tooling, not people).</li></ul><h2 id="What-it-means"><a href="#What-it-means" class="headerlink" title="What it means"></a>What it means</h2><p>The agent economy is being funded top-to-bottom, and the layer getting funded hardest right now is the layer that says <em>no</em>. For solo founders that’s not bad news — it lowers the cost of building while opening a very specific gap: most small teams can now <em>run</em> agents but almost none can <em>prove</em> them. The winning move this quarter isn’t to ship yet another agent. It’s to sell the trust, the audit trail, and the machine-readable storefront that lets everyone else’s agents run safely. Build the guardrail, not the firehose.</p><p><em>This report is auto-generated hourly by the OPC One-Person Company AI Startup Trend Monitor. For trend reference only — not investment advice.</em></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> OPC Trend Report </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Solopreneur </tag>
+            
+            <tag> One Person Company </tag>
+            
+            <tag> AI Agent </tag>
+            
+            <tag> Agent Infrastructure </tag>
+            
+            <tag> AI Startup </tag>
+            
+            <tag> Independent Developer </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Capital Is Leaving Generic AI and Paying for Agent Trust, Voice, and Vertical Execution</title>
+      <link href="/2026/09/22/opc-report-2026-09-22-1203/"/>
+      <url>/2026/09/22/opc-report-2026-09-22-1203/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Capital-Is-Leaving-Generic-AI-and-Paying-for-Agent-Trust-Voice-and-Vertical-Execution"><a href="#Capital-Is-Leaving-Generic-AI-and-Paying-for-Agent-Trust-Voice-and-Vertical-Execution" class="headerlink" title="Capital Is Leaving Generic AI and Paying for Agent Trust, Voice, and Vertical Execution"></a>Capital Is Leaving Generic AI and Paying for Agent Trust, Voice, and Vertical Execution</h1><h2 id="September-22-2026-Hourly-Monitoring"><a href="#September-22-2026-Hourly-Monitoring" class="headerlink" title="September 22, 2026 | Hourly Monitoring"></a>September 22, 2026 | Hourly Monitoring</h2><blockquote><p><strong>TL;DR:</strong> This month’s funding tells one story: money is walking away from generic models and chatbots and paying for the <em>trust layer</em> around agents — security, guardrails, observability, compliance, even insurance — plus <em>real-time voice execution</em> and <em>vertical agent operations</em>. AIR Security took a $50M seed, AIUC turned agent risk into an insurable asset, Clay hit a $7.1B valuation, and Owner closed a $240M round on $100M+ ARR by running restaurants with agents. For one-person teams the lane is clear: the enterprise trust layer is being crowded by capital, but the <em>solo-friendly</em> lightweight version, vertical voice agents for real small businesses, and single-niche execution agents are still open.</p></blockquote><hr><h2 id="🔑-Key-Insights"><a href="#🔑-Key-Insights" class="headerlink" title="🔑 Key Insights"></a>🔑 Key Insights</h2><p>The most important signal this cycle is where the checks went. In a single September week, funding clustered around the <strong>trust and execution layer</strong> for agents rather than another chatbot:</p><ul><li><strong>AIR Security</strong> — $50M seed (Sept 1; Sequoia led the first $10M tranche, Greenoaks the $40M follow). It builds an inline firewall for live AI agents, has already flagged <strong>17,800 untrusted plugins</strong> tied to ~<strong>6.7M installs</strong>, filters roughly <strong>27%</strong> of discovered add-ons, and counts 20+ customers in finance and pharma. One of the largest seed rounds in cybersecurity history.</li><li><strong>AIUC</strong> — $40M Series A (cumulative $55M) using a SOC 2–style certification to turn <em>agent risk</em> into an insurable, auditable asset.</li><li><strong>Empirik</strong> — $21M seed, spun out of Sequoia, observability that flags the most dangerous infrastructure changes for human review.</li><li><strong>HelmGuard</strong> — $7.3M seed (Sept 10, UK) for an AI-agent GRC platform.</li></ul><p>At the same time, <em>execution</em> agents drew premium prices: <strong>Clay</strong> raised $115M at a <strong>$7.1B</strong> valuation (2× in a year; its agents don’t just recommend, they act on sales data), and <strong>Owner</strong> closed a <strong>$240M Series D</strong> at a <strong>$2.3B</strong> valuation on <strong>$100M+ ARR</strong> — its agent-run restaurant websites convert <strong>146% more</strong> visitors and grow traffic ~40% in 30 days.</p><p><strong>The takeaway for solo builders:</strong> “yet another chatbot” is now worth zero. An agent that <em>runs a real business workflow and does it safely</em> is what capital and customers will pay for. The enterprise trust layer will consolidate fast — your opening is the <strong>solo &#x2F; SMB-friendly lightweight version</strong>, vertical voice agents, and single-niche execution agents.</p><table><thead><tr><th>Decision-relevant number</th><th>Value</th></tr></thead><tbody><tr><td>AIR Security seed (agent firewall signal)</td><td>$50M</td></tr><tr><td>Untrusted AI plugins flagged by AIR</td><td>17,800 (≈6.7M installs)</td></tr><tr><td>Owner visitor→customer lift (agent-run sites)</td><td>146%</td></tr><tr><td>Claude Code concurrent-agent ceiling (v2.1.269)</td><td>256</td></tr><tr><td>MCP central registry verified integrations</td><td>10,000+</td></tr><tr><td>Plivo voice-agent one-hop latency</td><td>&lt;500ms</td></tr></tbody></table><hr><h2 id="📈-Market-Trends"><a href="#📈-Market-Trends" class="headerlink" title="📈 Market Trends"></a>📈 Market Trends</h2><h3 id="1-The-Agent-Trust-Layer-Broke-Out-as-Its-Own-Category"><a href="#1-The-Agent-Trust-Layer-Broke-Out-as-Its-Own-Category" class="headerlink" title="1. The Agent Trust Layer Broke Out as Its Own Category"></a>1. The Agent Trust Layer Broke Out as Its Own Category</h3><p>This is the headline. Security, guardrails, audit, and insurance for agents all raised in the same month:</p><ul><li><strong>AIR Security</strong> ($50M, Sequoia + Greenoaks) — real-time firewall for agents that browse, execute code, and move money. Its 17,800-flagged-plugin dataset is proof the trust gap is real, not hypothetical.</li><li><strong>Empirik</strong> ($21M, Sequoia spinout) — watches system changes and infers ripple effects, acting as an autonomous traffic cop for dangerous updates.</li><li><strong>HelmGuard</strong> ($7.3M, UK) — continuous third-party and internal agent-risk assessment for regulated industries.</li><li><strong>AIUC</strong> ($40M A) — the most telling thesis: if agent behavior can be <em>audited</em> (SOC 2–style cert), it can be <em>insured</em>. Trust becomes a sellable commodity.</li></ul><p>Why it pays: when an agent can book flights, mutate a database, and spend money, one mistake is a failed transaction or a compliance incident. Enterprises will pay for “controllable.” The macro backdrop reinforces it — OECD data shows AI infrastructure&#x2F;hosting absorbed <strong>$109.3B</strong> of VC in 2025 (up from $47.4B), <strong>42%+</strong> of all AI venture funding; a16z alone raised an $8.5B growth fund. Capital is piling into <em>layers</em>, not apps.</p><p><strong>What it means for solopreneurs:</strong> the enterprise trust layer will consolidate and become a sales-cycle arms race you can’t win. The white space is the <strong>lightweight, solo-friendly version</strong> — log every tool call, halt an agent before it overspends or touches something dangerous, and make “what the agent did” reconstructable. Bigcos do Enterprise; you do Solo.</p><h3 id="2-Voice-Agents-Moved-From-Demo-to-Deployable-Execution-Layer"><a href="#2-Voice-Agents-Moved-From-Demo-to-Deployable-Execution-Layer" class="headerlink" title="2. Voice Agents Moved From Demo to Deployable Execution Layer"></a>2. Voice Agents Moved From Demo to Deployable Execution Layer</h3><p>Latency and cost have crossed the deployable line:</p><ul><li><strong>Plivo</strong> ships voice agents at <strong>&lt;500ms</strong> one-hop latency, 50+ languages, 190+ countries, with turn detection and self-improvement loops.</li><li><strong>Babelbeez</strong> drops voice agents onto small-business websites — it crawls the site to build a knowledge base, connects <strong>Calendly via MCP</strong> to book live, and prices from <strong>$4.99&#x2F;mo</strong> with a premium GPT-realtime-2 tier for longer sessions.</li><li><strong>Kipps.AI</strong> pushes “the agent executes, not converses” — 100+ concurrent calls, auto CRM sync.</li></ul><p>The real-business signal: these tools target clinics, trades, HVAC, home services — owners who don’t code and only have a static site. Voice turns that site into a 24&#x2F;7 sales + support front line. This is the <em>voice-shaped extension</em> of the exact thesis Owner validated at $100M+ ARR: agents operating real local businesses. The keyword shifted from “natural conversation” to “did it actually get the booking.”</p><h3 id="3-Coding-Tools-Made-a-“Control-Turn”-—-Smarter-Gave-Way-to-Manageable"><a href="#3-Coding-Tools-Made-a-“Control-Turn”-—-Smarter-Gave-Way-to-Manageable" class="headerlink" title="3. Coding Tools Made a “Control Turn” — Smarter Gave Way to Manageable"></a>3. Coding Tools Made a “Control Turn” — Smarter Gave Way to Manageable</h3><p>The same week, the coding stack stopped bragging about intelligence and started shipping governance:</p><ul><li><strong>Claude Code v2.1.269</strong> (Sept 11) raised the per-workflow concurrent-agent ceiling to <strong>256</strong> (<code>CLAUDE_CODE_WORKFLOW_MAX_CONCURRENT_AGENTS</code>). Anthropic has disclosed ~<strong>30,000 agents</strong> running internally at any moment, with 26% of its AI R&amp;D at AL4. <strong>Cursor Projects</strong> shipped a coordinator-agent model directing fleets of subagents across cloud and local machines.</li><li><strong>GitHub Copilot</strong> shipped enterprise-managed permissions with <strong>un-overrideable</strong> deny&#x2F;ask&#x2F;allow rules for shell, filesystem, and network.</li><li><strong>Claude Code</strong> added <code>claude plugin eval</code> (reproducible scored plugin tests), reads <code>AGENTS.md</code> as project instructions, and capped tool results at 1GB. The <strong>MCP central registry passed 10,000 verified integrations</strong> (SAP, Bloomberg, FHIR medical).</li></ul><p>One sentence: coding keeps getting free and engineered, but the differentiator is now whether you can <em>control, test, and audit</em> the agent — the same story as Trend 1, from the dev-tool side.</p><hr><h2 id="💡-Build-Directions-Practical"><a href="#💡-Build-Directions-Practical" class="headerlink" title="💡 Build Directions (Practical)"></a>💡 Build Directions (Practical)</h2><p><strong>First, the two questions this report must answer:</strong></p><p><strong>Which direction should you build in?</strong> → Build the <em>trust &#x2F; execution layer for agents</em>: either a solo-friendly lightweight guardrail (bigcos do Enterprise, you do Solo), or a vertical voice agent that runs the front desk for a real small business (booking &#x2F; lead capture &#x2F; support), or a single-niche execution agent (finance, compliance, ops). <strong>Do not build the Nth generic chatbot.</strong></p><p><strong>Which AI tools should you build with?</strong> → Dev base is still <strong>Claude Code + Cursor ($40&#x2F;mo “coding duo”)</strong>; voice via <strong>Plivo &#x2F; Babelbeez &#x2F; Retell</strong>; orchestration via <strong>n8n &#x2F; Gumloop</strong>; the connector economy runs on <strong>MCP (now 10K+ integrations)</strong>; payments via <strong>Stripe &#x2F; Polar</strong>; guardrails and audits via your own agent-log layer plus <code>claude plugin eval</code>-style testing.</p><h3 id="Direction-1-—-Lightweight-agent-firewall-guardrails-for-solo-builders"><a href="#Direction-1-—-Lightweight-agent-firewall-guardrails-for-solo-builders" class="headerlink" title="Direction 1 — Lightweight agent firewall &#x2F; guardrails for solo builders"></a>Direction 1 — Lightweight agent firewall &#x2F; guardrails for solo builders</h3><ul><li><strong>What:</strong> AIR and Empirik are enterprise-only. Build the solo-friendly version: log every tool call, halt an agent before it overspends or touches something dangerous, and make “what the agent did” reconstructable. Pitch: “one person can trust their own agents.”</li><li><strong>Stack:</strong> Claude Code to build + a logging layer inside your agent loop + n8n webhook alerts + a light Supabase dashboard. Borrow the <code>claude plugin eval</code> idea to test your own skills.</li><li><strong>Cost &#x2F; timeline:</strong> ~$20–50&#x2F;mo, 1–2 weeks to MVP.</li></ul><h3 id="Direction-2-—-Vertical-voice-agent-that-runs-the-front-desk-for-local-businesses"><a href="#Direction-2-—-Vertical-voice-agent-that-runs-the-front-desk-for-local-businesses" class="headerlink" title="Direction 2 — Vertical voice agent that runs the front desk for local businesses"></a>Direction 2 — Vertical voice agent that runs the front desk for local businesses</h3><ul><li><strong>What:</strong> Pick one service vertical you know (clinic, home services, repair, fitness studio). A voice agent answers calls, handles FAQs, books appointments, captures leads — 24&#x2F;7, no missed inquiries. Owner proved this model scales to $100M+ ARR; you win by going narrow, not broad.</li><li><strong>Stack:</strong> Babelbeez &#x2F; Plivo &#x2F; Retell for voice + Calendly (MCP) for booking + Stripe for payments + n8n to trigger workflows. Two tiers (basic &#x2F; GPT-realtime-2 premium) from $4.99.</li><li><strong>Cost &#x2F; timeline:</strong> ~$30–80&#x2F;mo (incl. per-minute inference) — <strong>watch per-minute cost; long calls eat margin.</strong> 2–4 weeks.</li></ul><h3 id="Direction-3-—-Agent-audit-compliance-wrapper-SOC-2–style-for-SMBs"><a href="#Direction-3-—-Agent-audit-compliance-wrapper-SOC-2–style-for-SMBs" class="headerlink" title="Direction 3 — Agent audit &#x2F; compliance wrapper (SOC 2–style, for SMBs)"></a>Direction 3 — Agent audit &#x2F; compliance wrapper (SOC 2–style, for SMBs)</h3><ul><li><strong>What:</strong> AIUC turned “agent risk is insurable” into a business. Build the lightweight version: produce an auditable trail proving every agent action is sourced, replayable, and explainable — sell to compliance teams and bid situations.</li><li><strong>Stack:</strong> Claude Code + an eval harness (plugin-eval pattern) + Supabase for trails + Beehiiv newsletter for trust-led distribution.</li><li><strong>Cost &#x2F; timeline:</strong> ~$50–200&#x2F;mo, 4–8 weeks.</li></ul><h3 id="Direction-4-—-Vertical-execution-agent-Outline-style-one-niche-only"><a href="#Direction-4-—-Vertical-execution-agent-Outline-style-one-niche-only" class="headerlink" title="Direction 4 — Vertical execution agent (Outline-style, one niche only)"></a>Direction 4 — Vertical execution agent (Outline-style, one niche only)</h3><ul><li><strong>What:</strong> Outline (Paris, 3-person team, $3M seed, 10 paying customers within 3 months) uses agents for budgeting&#x2F;forecasting&#x2F;modeling — serving mid-size companies too big for spreadsheets, too small for enterprise finance software. Clone the pattern into another function (recruiting, legal contracts, ops scheduling).</li><li><strong>Stack:</strong> Claude Code + n8n orchestration + Supabase + your domain data source + Stripe.</li><li><strong>Cost &#x2F; timeline:</strong> ~$40–100&#x2F;mo, 3–6 weeks.</li></ul><h3 id="Direction-5-—-MCP-skill-“pre-install-health-check”-—-trust-as-a-service"><a href="#Direction-5-—-MCP-skill-“pre-install-health-check”-—-trust-as-a-service" class="headerlink" title="Direction 5 — MCP &#x2F; skill “pre-install health check” — trust as a service"></a>Direction 5 — MCP &#x2F; skill “pre-install health check” — trust as a service</h3><ul><li><strong>What:</strong> AIR filtering 27% of agent plugins proves the trust gap is huge. Build a scanner: before installing an MCP&#x2F;skill, tell the user what permissions it wants, what data it touches, and a risk rating. Sell to indie devs and small teams; compound with a community &#x2F; newsletter.</li><li><strong>Stack:</strong> Claude Code to build + a permission&#x2F;dependency scanner + Beehiiv + Indie Hackers &#x2F; HN community.</li><li><strong>Cost &#x2F; timeline:</strong> near-zero marginal cost, 1–2 weeks to v1, content-compounded.</li></ul><hr><h2 id="⚠️-Risk-Factors"><a href="#⚠️-Risk-Factors" class="headerlink" title="⚠️ Risk Factors"></a>⚠️ Risk Factors</h2><ul><li><strong>The trust layer will crowd fast:</strong> AIR, Empirik, HelmGuard, and AIUC all raised the same month. Enterprise security&#x2F;compliance will consolidate — a solo builder must occupy the <em>lightweight SMB</em> position, not fight the enterprise sales cycle.</li><li><strong>Voice-agent inference economics:</strong> per-minute pricing punishes long sessions, and Character.AI already offers free multi-character voice. Differentiation is perishable; model margin and pricing before launch, not after.</li><li><strong>Agent runaway &amp; cost blowups:</strong> autonomous agents spend money, hit APIs, and mutate databases. Without a budget cap and reconstructable logs, one mistake is a failed transaction or a compliance incident.</li><li><strong>Single-vendor dependency:</strong> voice leans on OpenAI&#x2F;Google realtime, coding on Claude Code&#x2F;Cursor. An outage halts you — keep a local fallback (Ollama &#x2F; local-weight coding loops already work).</li></ul><hr><h2 id="🚀-Action-Recommendations"><a href="#🚀-Action-Recommendations" class="headerlink" title="🚀 Action Recommendations"></a>🚀 Action Recommendations</h2><p><strong>For starters (0 → 1):</strong></p><ul><li>✅ <strong>Enter from trust&#x2F;execution, not chat</strong> — pick the direction above you can ship an MVP for in 2 weeks, and charge from day one to validate.</li><li>✅ Use the <strong>$40 coding duo</strong> to compress dev to weeks; voice and MCP connectors are off-the-shelf APIs — don’t reinvent them.</li><li>✅ Building a vertical voice agent? <strong>Price the per-minute cost first</strong>; use basic&#x2F;premium tiers to protect margin.</li><li>✅ Use Product Hunt &#x2F; Indie Hackers as a public test — chase conversion, not upvotes.</li></ul><p><strong>For established solo teams (1 → N):</strong></p><ul><li>✅ Before the <strong>50-customer mark</strong>, make guardrails &#x2F; audit &#x2F; observability a product default — that’s your moat against enterprise players.</li><li>✅ Treat distribution as the only real moat (content &#x2F; SEO &#x2F; community); trust-layer products live on reputation.</li><li>✅ Run a portfolio of micro-SaaS to spread risk, and <strong>watch NRR, not just MRR</strong> — AI-native NRR is only 48%; price above $250&#x2F;mo to hold retention.</li><li>✅ Keep a local &#x2F; multi-cloud fallback on critical paths so no single model vendor can choke you.</li></ul><hr><h2 id="📊-Quick-Data-Reference"><a href="#📊-Quick-Data-Reference" class="headerlink" title="📊 Quick Data Reference"></a>📊 Quick Data Reference</h2><table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr><td>AIR Security seed (agent firewall signal)</td><td>$50M</td></tr><tr><td>Untrusted AI plugins flagged by AIR</td><td>17,800 (≈6.7M installs)</td></tr><tr><td>Owner visitor→customer lift (agent-run sites)</td><td>146%</td></tr><tr><td>Claude Code concurrent-agent ceiling</td><td>256 (v2.1.269)</td></tr><tr><td>MCP registry verified integrations</td><td>10,000+</td></tr><tr><td>Plivo voice-agent one-hop latency</td><td>&lt;500ms</td></tr></tbody></table><hr><h2 id="What-it-means"><a href="#What-it-means" class="headerlink" title="What it means"></a>What it means</h2><p>The window for one-person software has narrowed from “anything AI” to “agent trust and execution.” Capital is explicitly pricing the layer that makes agents <em>safe and useful</em> — security, guardrails, voice that actually books the call, and vertical ops that hit $100M ARR. Generic chatbots are finished; the solo builder’s edge is the lightweight, solo-scale version of exactly what the $50M seeds are buying at the enterprise end. Build the rails and the front desk, not another talking head.</p><hr><p><em>Report generated automatically by the OPC solopreneur trend monitor. Hourly updates.</em></p><p><em>⚠️ This report is for informational purposes only and does not constitute investment advice. Build responsibly.</em></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> AI Trends </category>
+          
+          <category> Solopreneur Report </category>
+          
+          <category> Agent Infrastructure </category>
+          
+          <category> Startup Ecosystem </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Cursor </tag>
+            
+            <tag> Claude Code </tag>
+            
+            <tag> Product Hunt </tag>
+            
+            <tag> AI agents </tag>
+            
+            <tag> voice agents </tag>
+            
+            <tag> solopreneur </tag>
+            
+            <tag> micro-SaaS </tag>
+            
+            <tag> one-person company </tag>
+            
+            <tag> agent security </tag>
+            
+            <tag> agent governance </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>YC&#39;s Fall List Drops Team SaaS Again — the Person-Scale Software Window Is Open</title>
+      <link href="/2026/09/22/opc-report-2026-09-22-1103/"/>
+      <url>/2026/09/22/opc-report-2026-09-22-1103/</url>
+      
+        <content type="html"><![CDATA[<h1 id="YC’s-Fall-List-Drops-Team-SaaS-Again-—-the-Person-Scale-Software-Window-Is-Open"><a href="#YC’s-Fall-List-Drops-Team-SaaS-Again-—-the-Person-Scale-Software-Window-Is-Open" class="headerlink" title="YC’s Fall List Drops Team SaaS Again — the Person-Scale Software Window Is Open"></a>YC’s Fall List Drops Team SaaS Again — the Person-Scale Software Window Is Open</h1><h2 id="September-22-2026-Hourly-Monitoring"><a href="#September-22-2026-Hourly-Monitoring" class="headerlink" title="September 22, 2026 | Hourly Monitoring"></a>September 22, 2026 | Hourly Monitoring</h2><blockquote><p><strong>TL;DR:</strong> Y Combinator’s Fall 2026 Requests for Startups dropped horizontal, per-seat team SaaS for the second straight cycle — that undefended middle is now AI-cloneable in a weekend. Meanwhile YC has quietly funded <strong>106</strong> AI-observability companies, and agent-hosting is breaking out as its own category on Product Hunt. For one-person teams the playbook is clear: build software that knows <em>one</em> user deeply, or build the plumbing that makes agents reliable, cheap, and hostable.</p></blockquote><hr><h2 id="🔑-Key-Insights"><a href="#🔑-Key-Insights" class="headerlink" title="🔑 Key Insights"></a>🔑 Key Insights</h2><p>The single most important signal this cycle is structural, not product-level. YC’s Fall 2026 RFS lists 13 ideas and, for the second consecutive list, does <strong>not</strong> ask for a single horizontal team-collaboration SaaS company. The “undefended middle” — generic per-seat software — is exactly where AI can clone you in a weekend, and YC knows it.</p><p>At the same time, TechCrunch reported (Sept 17) that YC has funded <strong>106 companies</strong> tied to AI observability. Watching autonomous agents is becoming a distinct market: when an agent can book flights, move money, and execute code, the cost of a mistake is no longer a bad answer — it’s a failed transaction or a compliance incident.</p><p><strong>The takeaway for solo builders:</strong> either build for <em>person-scale</em> (software that deeply serves one user and their fleet of agents), or build the <em>infrastructure</em> that makes agents trustworthy and affordable to run. The generic middle is for incumbents and open source.</p><table><thead><tr><th>Decision-relevant number</th><th>Value</th></tr></thead><tbody><tr><td>Share of new startups founded solo (2026)</td><td>36.3% (was 23.7% in 2019)</td></tr><tr><td>YC AI-observability investments</td><td>106 companies</td></tr><tr><td>Cost to build &amp; ship an app with AI in 2026</td><td>~$1,000 all-in</td></tr><tr><td>“Coding duo” price (Claude Code + Cursor)</td><td>$40&#x2F;month</td></tr></tbody></table><hr><h2 id="📈-Market-Trends"><a href="#📈-Market-Trends" class="headerlink" title="📈 Market Trends"></a>📈 Market Trends</h2><h3 id="1-AI-Coding-Enters-the-“Self-Writing-Code”-Phase-—-the-Stack-Has-Stratified"><a href="#1-AI-Coding-Enters-the-“Self-Writing-Code”-Phase-—-the-Stack-Has-Stratified" class="headerlink" title="1. AI Coding Enters the “Self-Writing Code” Phase — the Stack Has Stratified"></a>1. AI Coding Enters the “Self-Writing Code” Phase — the Stack Has Stratified</h3><p>Six months ago these were autocomplete engines. Today the stack has split into three deliberate layers:</p><ul><li><strong>Orchestration layer</strong> — Cursor 3’s Agents Window runs multiple agents in parallel across local repos, worktrees, and cloud sandboxes.</li><li><strong>Execution layer</strong> — Claude Code (terminal-native, 1M-token context, Agent Teams running independent coordinated sessions) handles the deep, long-horizon work.</li><li><strong>Review layer</strong> — OpenAI’s official Codex plugin for Claude Code does cross-provider adversarial review, catching what a single model reviewing itself misses.</li></ul><p>These are complementary, not competing. Cursor’s own engineering blog notes <strong>30% of its PRs are now agent-made</strong> (3× after the 3.0 release). SemiAnalysis estimates Claude Code accounts for ~4% of public GitHub commits as of March 2026, projecting to <strong>20% by year-end</strong>.</p><p><strong>What it means for solopreneurs:</strong> coding is no longer the bottleneck. The real differentiator is writing good <code>CLAUDE.md</code> &#x2F; <code>.cursor/rules</code>, keeping the codebase tidy, and treating the agent like a junior engineer who types fast. A clean repo plus good context &#x3D; superpowers; a messy one plus an agent &#x3D; an amplifier of chaos. The $40&#x2F;month “coding duo” replaces a two-person engineering team.</p><h3 id="2-The-Solo-Founder-Accelerator-Logic-—-YC-Is-Betting-on-Person-Scale"><a href="#2-The-Solo-Founder-Accelerator-Logic-—-YC-Is-Betting-on-Person-Scale" class="headerlink" title="2. The Solo-Founder Accelerator Logic — YC Is Betting on Person-Scale"></a>2. The Solo-Founder Accelerator Logic — YC Is Betting on Person-Scale</h3><p>The Fall 2026 RFS keeps returning to software built for <em>one</em> user:</p><ul><li><strong>A Cloud for Small Software</strong> — one-click home for agent-built tools, with auth and backups, shareable like a Google Doc ($10–20&#x2F;mo).</li><li><strong>Multiplayer AI</strong> — Figma-style presence so teams watch, steer, and hand off the same live agent session.</li><li><strong>AI for the Aging Population</strong> — voice-first daily check-ins with a family dashboard.</li><li><strong>AI-Native Compliance</strong> — own one regulatory regime (EU AI Act, HIPAA); agent watches the feed, drafts the artifacts ($500–2K&#x2F;mo).</li><li><strong>Self-Maintaining APIs</strong> — a GitHub App that diffs every changelog and opens migration PRs.</li></ul><p>Horizontal team SaaS is absent for the second straight list. The thesis: don’t pitch your product as team SaaS — either it knows one user deeply, or it touches the physical or regulated world.</p><p>Validation already exists: Stripe data shows <strong>44% of profitable SaaS are run by a single founder</strong>. Documented solo numbers — Zigpoll ~$125K MRR, Postiz ~$113–150K MRR, Photo AI $105K&#x2F;mo, Shift $50K+ MRR — are no longer outliers.</p><h3 id="3-Agent-Orchestration-Hosting-Splits-Off-—-From-“Writing-Agents”-to-“Running-Agents”"><a href="#3-Agent-Orchestration-Hosting-Splits-Off-—-From-“Writing-Agents”-to-“Running-Agents”" class="headerlink" title="3. Agent Orchestration &amp; Hosting Splits Off — From “Writing Agents” to “Running Agents”"></a>3. Agent Orchestration &amp; Hosting Splits Off — From “Writing Agents” to “Running Agents”</h3><p>YC’s 2026 batches show a concentration of hosting-layer startups:</p><ul><li><strong>Maritime</strong> — $1 per agent per month; gives every customer an isolated, persistent computer that sleeps and wakes automatically.</li><li><strong>Boat</strong> — permissive Ubuntu VMs in the cloud for long-running agent knowledge work.</li><li><strong>Kopai</strong> — “the cloud for AI agents”: 900+ connectors, eval system, HITL, marketplace, and per-agent cost&#x2F;earnings analytics.</li></ul><p>On Product Hunt this month the signal is loud: <strong>Makersclaw 2.0</strong> (“operating system for a company run by agents”), <strong>Kopai</strong>, <strong>Text Agent Store</strong> (agents you text from your contacts — 308 upvotes on Sept 17), and <strong>Aside</strong> (an AI browser that logs into your accounts and actually finishes work — hunted by Garry Tan). The assumption underneath all of them: agents are a <em>default layer</em>, not a feature.</p><hr><h2 id="💡-Build-Directions-Practical"><a href="#💡-Build-Directions-Practical" class="headerlink" title="💡 Build Directions (Practical)"></a>💡 Build Directions (Practical)</h2><p><strong>First, the two questions this report must answer:</strong></p><p><strong>Which direction should you build in?</strong> → Build person-scale software (serving one user and their agent fleet) or agent-reliability infrastructure (making agents cheap, observable, and hostable). The five directions below are where the white space sits.</p><p><strong>Which AI tools should you build with?</strong> → A cross-cutting stack: <strong>Claude Code + Cursor ($40&#x2F;mo “coding duo”)</strong> for development, <strong>n8n &#x2F; Lindy &#x2F; Gumloop</strong> for orchestration, <strong>Maritime &#x2F; Kopai</strong> for agent hosting, <strong>Perplexity &#x2F; Claude</strong> for research, <strong>Stripe &#x2F; Polar</strong> for payments, <strong>Beehiiv</strong> for newsletters.</p><h3 id="Direction-1-—-“A-Cloud-for-Small-Software”-one-click-hosting-for-agent-built-tools"><a href="#Direction-1-—-“A-Cloud-for-Small-Software”-one-click-hosting-for-agent-built-tools" class="headerlink" title="Direction 1 — “A Cloud for Small Software”: one-click hosting for agent-built tools"></a>Direction 1 — “A Cloud for Small Software”: one-click hosting for agent-built tools</h3><ul><li><strong>What:</strong> YC-named direction. Give the tools your AI writes a home with auth, backups, and doc-like sharing — paste the code, get a running, shareable app.</li><li><strong>Stack:</strong> Claude Code &#x2F; Cursor to build + Supabase &#x2F; Neon + <strong>Maritime ($1&#x2F;agent&#x2F;mo)</strong> or Kopai to host + Vercel to deploy.</li><li><strong>Cost &#x2F; timeline:</strong> ~$40–100&#x2F;mo, 2–4 weeks to MVP.</li></ul><h3 id="Direction-2-—-Lightweight-guardrails-for-solo-builders-cost-observability"><a href="#Direction-2-—-Lightweight-guardrails-for-solo-builders-cost-observability" class="headerlink" title="Direction 2 — Lightweight guardrails for solo builders (cost &amp; observability)"></a>Direction 2 — Lightweight guardrails for solo builders (cost &amp; observability)</h3><ul><li><strong>What:</strong> 106 YC observability companies target enterprises; a solo-friendly lightweight version is still empty. Log every tool call, halt an agent before it overspends, and make “what the agent did” reconstructable.</li><li><strong>Stack:</strong> Claude Code + a logging layer inside your agent loop + n8n webhook alerts + a simple dashboard.</li><li><strong>Cost &#x2F; timeline:</strong> ~$20–50&#x2F;mo, 1–2 weeks.</li></ul><h3 id="Direction-3-—-Vertical-micro-SaaS-with-an-AI-native-compliance-wrapper"><a href="#Direction-3-—-Vertical-micro-SaaS-with-an-AI-native-compliance-wrapper" class="headerlink" title="Direction 3 — Vertical micro-SaaS with an AI-native compliance wrapper"></a>Direction 3 — Vertical micro-SaaS with an AI-native compliance wrapper</h3><ul><li><strong>What:</strong> YC’s “AI-Native Compliance” — own one regulatory regime, let an agent monitor rules, diff your policies, and draft audit trails ($500–2K&#x2F;mo to compliance teams).</li><li><strong>Stack:</strong> Claude Code + regulatory feed + n8n monitoring + Supabase.</li><li><strong>Cost &#x2F; timeline:</strong> ~$50–200&#x2F;mo, 4–8 weeks.</li></ul><h3 id="Direction-4-—-Local-first-privacy-preserving-AI-utilities"><a href="#Direction-4-—-Local-first-privacy-preserving-AI-utilities" class="headerlink" title="Direction 4 — Local-first, privacy-preserving AI utilities"></a>Direction 4 — Local-first, privacy-preserving AI utilities</h3><ul><li><strong>What:</strong> September PH signal — Dictantor (on-device transcription), Ollie (local teammate), WhaleRead (local translation) all sell privacy + latency + cost control. Build a single-purpose tool that runs on-device, dodging cloud-API privacy and billing anxiety.</li><li><strong>Stack:</strong> SwiftUI&#x2F;Swift + Apple on-device models, or Ollama local inference + Claude Code for dev.</li><li><strong>Cost &#x2F; timeline:</strong> ~$20&#x2F;mo + $99&#x2F;yr Apple dev fee, 3–6 weeks.</li></ul><h3 id="Direction-5-—-Vertical-“text-it-to-use”-agent-as-a-service"><a href="#Direction-5-—-Vertical-“text-it-to-use”-agent-as-a-service" class="headerlink" title="Direction 5 — Vertical “text-it-to-use” agent-as-a-service"></a>Direction 5 — Vertical “text-it-to-use” agent-as-a-service</h3><ul><li><strong>What:</strong> Text Agent Store (PH Sept 17, 308 upvotes) validated “drop an agent into your contacts, text it, no download, no signup.” Pick one vertical (local business support, booking, personal assistant) and ship agent-as-a-service.</li><li><strong>Stack:</strong> Claude Code + Twilio &#x2F; phone ingress + Stripe + Kopai hosting.</li><li><strong>Cost &#x2F; timeline:</strong> ~$50–150&#x2F;mo, 2–4 weeks.</li></ul><hr><h2 id="⚠️-Risk-Factors"><a href="#⚠️-Risk-Factors" class="headerlink" title="⚠️ Risk Factors"></a>⚠️ Risk Factors</h2><ul><li><strong>The retention trap:</strong> AI apps earn 41% more year-one revenue per payer ($30.16 vs $21.37) but retain worse — AI-native net revenue retention is just <strong>48%</strong> vs <strong>82%</strong> for traditional B2B SaaS. Only AI products priced above <strong>$250&#x2F;mo</strong> approach 85% NRR. Don’t ship a cheap experiment; price up a tier to survive.</li><li><strong>Homogenization:</strong> if another solo dev can rebuild your product in a weekend, you don’t have a business. The moat is distribution and proprietary domain data, not feature count.</li><li><strong>Agent runaway &amp; cost blowups:</strong> autonomous agents spend money, hit APIs, and mutate databases — you need guardrails and observability, or one mistake becomes a failed transaction or a compliance incident.</li><li><strong>Single-vendor dependency:</strong> a Claude Code &#x2F; Cursor &#x2F; OpenAI outage can halt you (the April 30, 2026 API outage took the platform down for hours). Build redundancy on critical paths and keep a local fallback.</li></ul><hr><h2 id="🚀-Action-Recommendations"><a href="#🚀-Action-Recommendations" class="headerlink" title="🚀 Action Recommendations"></a>🚀 Action Recommendations</h2><p><strong>For starters (0 → 1):</strong></p><ul><li>✅ <strong>Charge from day one</strong> and let revenue validate the idea — if money doesn’t come in 7 days, kill it. Don’t fall in love with a half-built product.</li><li>✅ Use the <strong>$40 coding duo</strong> and ship an MVP in weeks, not months.</li><li>✅ Treat Product Hunt as a public test — chase conversion rate, not upvotes.</li><li>✅ Build only the complete workflow one person + agents can cover; don’t overreach.</li></ul><p><strong>For established solo teams (1 → N):</strong></p><ul><li>✅ <strong>Automate support and marketing before you hit ~50 customers</strong> — don’t wait until you’re drowning.</li><li>✅ Treat distribution as the only real moat; keep producing content &#x2F; SEO &#x2F; community.</li><li>✅ Run a portfolio of micro-SaaS to spread risk, and <strong>watch NRR, not just MRR</strong>.</li><li>✅ Price above the $250&#x2F;mo tier where retention actually holds.</li></ul><hr><h2 id="📊-Quick-Data-Reference"><a href="#📊-Quick-Data-Reference" class="headerlink" title="📊 Quick Data Reference"></a>📊 Quick Data Reference</h2><table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr><td>New startups founded solo (2026)</td><td>36.3% (23.7% in 2019)</td></tr><tr><td>YC AI-observability investments</td><td>106 companies</td></tr><tr><td>All-in cost to ship an AI-built app</td><td>~$1,000</td></tr><tr><td>“Coding duo” (Claude Code + Cursor)</td><td>$40&#x2F;month</td></tr><tr><td>AI-native vs traditional B2B SaaS NRR</td><td>48% vs 82%</td></tr><tr><td>Agent hosting entry price</td><td>$1&#x2F;agent&#x2F;month (Maritime)</td></tr></tbody></table><hr><h2 id="What-it-means"><a href="#What-it-means" class="headerlink" title="What it means"></a>What it means</h2><p>The window for one-person software has moved from “possible” to “structurally favored.” YC is explicitly steering talent away from the cloneable middle and toward person-scale products and agent infrastructure — exactly the two lanes a solo founder can win without a team. The constraint is no longer engineering capacity; it’s distribution, pricing discipline, and keeping your autonomous agents from running off the rails. Build for one user, or build the rails. Everything between is a race you’ll lose to a weekend.</p><hr><p><em>Report generated automatically by the OPC solopreneur trend monitor. Hourly updates.</em></p><p><em>⚠️ This report is for informational purposes only and does not constitute investment advice. Build responsibly.</em></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> AI Trends </category>
+          
+          <category> Solopreneur Report </category>
+          
+          <category> Agent Infrastructure </category>
+          
+          <category> Startup Ecosystem </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Cursor </tag>
+            
+            <tag> Claude Code </tag>
+            
+            <tag> Product Hunt </tag>
+            
+            <tag> AI agents </tag>
+            
+            <tag> solopreneur </tag>
+            
+            <tag> Y Combinator </tag>
+            
+            <tag> micro-SaaS </tag>
+            
+            <tag> agent infrastructure </tag>
+            
+            <tag> one-person company </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>The Agent-Native Solo Founder Is Now Repeatable: $1M ARR on Sub-5 Teams</title>
+      <link href="/2026/09/22/opc-report-2026-09-22-0942/"/>
+      <url>/2026/09/22/opc-report-2026-09-22-0942/</url>
+      
+        <content type="html"><![CDATA[<h1 id="The-Agent-Native-Solo-Founder-Is-Now-Repeatable-1M-ARR-on-Sub-5-Teams"><a href="#The-Agent-Native-Solo-Founder-Is-Now-Repeatable-1M-ARR-on-Sub-5-Teams" class="headerlink" title="The Agent-Native Solo Founder Is Now Repeatable: $1M ARR on Sub-5 Teams"></a>The Agent-Native Solo Founder Is Now Repeatable: $1M ARR on Sub-5 Teams</h1><h2 id="September-22-2026-Daily-Monitoring-—-Issue-—"><a href="#September-22-2026-Daily-Monitoring-—-Issue-—" class="headerlink" title="September 22, 2026 | Daily Monitoring — Issue #—"></a>September 22, 2026 | Daily Monitoring — Issue #—</h2><blockquote><p><strong>TL;DR:</strong> YC’s September snapshot shows nearly 1 in 5 of its companies are now solo-founded, and the Winter batch already put 14 startups over $1M ARR with sub-5 headcount. The “one person + agents” company is no longer a lucky outlier — it’s a pattern. The open question for builders is no longer <em>can I ship alone?</em> but <em>which vertical, and which layer of the stack do I own?</em></p></blockquote><hr><h2 id="🔑-Key-Insights"><a href="#🔑-Key-Insights" class="headerlink" title="🔑 Key Insights"></a>🔑 Key Insights</h2><p>The solo-founder surge has crossed from anecdote into structural trend. Two signals landed this month that matter more than any funding headline:</p><p><strong>First, the team-size floor keeps dropping.</strong> Y Combinator’s September 17 post put the solo-founder share of its portfolio at ~19% — up from 8.5% a decade ago — with a median core team of just three and 60%+ of companies mentioning AI or agents. In the Winter 2026 batch, 14 of 199 companies crossed $1M in annualized revenue <em>before</em> Demo Day, most running engineering teams of one to four. That is three times the count from the prior batch and the highest in YC history.</p><p><strong>Second, the leverage is real, not cosmetic.</strong> Top-decile AI-native startups average <strong>$3.48M revenue per employee</strong> — 5.7× the best SaaS performers. The economics of “one person, one agent fleet” are no longer theoretical.</p><blockquote><p><strong>What this means for you:</strong> The defensible move in late 2026 is <em>not</em> to build another generic “AI assistant.” It is to pick one broken workflow you understand from the inside, ship an agent that owns it end-to-end, and price on outcomes rather than seats. The tooling to do that solo now exists and is cheap.</p></blockquote><hr><h2 id="📈-Market-Trends"><a href="#📈-Market-Trends" class="headerlink" title="📈 Market Trends"></a>📈 Market Trends</h2><h3 id="1-The-coding-agent-stack-has-become-a-commodity-—-and-that’s-the-point"><a href="#1-The-coding-agent-stack-has-become-a-commodity-—-and-that’s-the-point" class="headerlink" title="1. The coding-agent stack has become a commodity — and that’s the point"></a>1. The coding-agent stack has become a commodity — and that’s the point</h3><p>The baseline solo build stack is now stable and affordable. Cursor sits at ~$2B ARR with a $20&#x2F;month Pro plan; Claude Code’s run-rate revenue has passed $2.5B and Anthropic reports ~90% of its own production code is now written by or with Claude Code. GitHub Copilot starts at $10&#x2F;month and operates as an autonomous coding agent, not just autocomplete.</p><p><strong>Why it matters:</strong> Entry pricing has converged at $20&#x2F;month across Claude Pro, Cursor Pro, and ChatGPT Plus, with free tiers (Copilot Free, Cursor Hobby, Codex on Free) letting you validate before spending a cent. A realistic solo daily-driver is <strong>$20–$100&#x2F;month</strong> (Cursor Pro for in-editor work, Claude Code Max 5x at $100 for heavy autonomous refactors). That is the entire engineering payroll for a one-person company.</p><p><strong>The signal underneath:</strong> When the model is a commodity, the <em>harness</em> — context selection, permissions, memory, environments, verification — becomes the product. That is where solo builders should look for edge, not by re-litigating model choice.</p><h3 id="2-Product-Hunt-is-flooding-with-“agent-native”-glue-—-and-the-categories-are-clarifying"><a href="#2-Product-Hunt-is-flooding-with-“agent-native”-glue-—-and-the-categories-are-clarifying" class="headerlink" title="2. Product Hunt is flooding with “agent-native” glue — and the categories are clarifying"></a>2. Product Hunt is flooding with “agent-native” glue — and the categories are clarifying</h3><p>September launches show the stack splitting into clear layers:</p><ul><li><strong>Self-healing automation</strong> — Airtop’s <em>Agent Builder</em> (Sept 3, #2 Product of the Day) compiles plain-English workflows into coded automations that investigate, rebuild, and verify their own failures, claiming up to 100× efficiency over LLM-per-step agents.</li><li><strong>Agent deployment</strong> — <em>Switch</em> drops any agent into Slack&#x2F;Teams&#x2F;Discord with one integration; <em>Kopai</em> is “the cloud for AI agents” (build, host, monetize, eval).</li><li><strong>Agent reliability</strong> — <em>Harden</em> wraps coding agents with guardrails against unsafe actions and leaked secrets; <em>Mastra Factory</em> automates issue-to-production via coordinated agents.</li><li><strong>Agent identity</strong> — <em>AgentPhone</em> gives every agent its own phone number; <em>Makersclaw 2.0</em> positions itself as “the OS for a company run by agents.”</li></ul><p>This is the early shape of a full agent-operating-system market — and most of it is being built by teams of two to five.</p><h3 id="3-YC’s-“bits-to-atoms”-pivot-opens-physical-world-verticals-to-solo-builders"><a href="#3-YC’s-“bits-to-atoms”-pivot-opens-physical-world-verticals-to-solo-builders" class="headerlink" title="3. YC’s “bits to atoms” pivot opens physical-world verticals to solo builders"></a>3. YC’s “bits to atoms” pivot opens physical-world verticals to solo builders</h3><p>YC’s Fall 2026 Requests for Startups explicitly pushes AI into healthcare, defense, infrastructure, finance, and “work” — physical-world systems. Combined with the solo-founder trend, this means a single founder can now launch an AI-software layer <em>around</em> a hardtech or industrial problem without staffing a conventional team. The software around a robot, a lab instrument, or a factory line can be built and iterated alone; the physical bottleneck stays the hard part.</p><h3 id="4-The-agent-reliability-layer-is-the-uncrowded-B2B-opportunity"><a href="#4-The-agent-reliability-layer-is-the-uncrowded-B2B-opportunity" class="headerlink" title="4. The agent-reliability layer is the uncrowded B2B opportunity"></a>4. The agent-reliability layer is the uncrowded B2B opportunity</h3><p>The uncomfortable number: <strong>88% of agent projects never reach production</strong>, and of those that do, 40% fail within six months. A recent arXiv study (2609.05587) found agents adopt corrupted tool outputs more than a third of the time on average — 68% for web search — even after internally recovering the correct answer.</p><p>The response layer is forming fast: Langfuse (now ClickHouse-backed, open source), Braintrust ($800M valuation, eval-as-CI-gate), Honeycomb’s agent-native observability, plus YC-backed <em>Mirrors</em> (regression testing that replays real sessions) and <em>Papaya</em> (agent optimization pushed as PRs). Yet most are enterprise-priced. That gap — affordable reliability for small teams — is wide open.</p><hr><h2 id="🛠️-Build-Directions-where-to-point-your-effort-the-stack"><a href="#🛠️-Build-Directions-where-to-point-your-effort-the-stack" class="headerlink" title="🛠️ Build Directions (where to point your effort + the stack)"></a>🛠️ Build Directions (where to point your effort + the stack)</h2><p><strong>Direction 1 — Vertical workflow agents, priced on outcomes.</strong><br>Pick one workflow you have lived inside (construction procurement, workers’-comp coordination, insurance onboarding, lease abstractions). Charge per <em>completed workflow &#x2F; resolved ticket &#x2F; filed policy</em>, never per seat.</p><ul><li><strong>Stack:</strong> Claude Code + Cursor (build) · LangGraph or CrewAI (orchestration) · MCP for tool connectivity · a vector store (e.g. Pinecone&#x2F;Weaviate) for domain RAG.</li><li><strong>Cost&#x2F;cycle:</strong> $20–$100&#x2F;mo tooling; 2 weeks to validate with 5 paying users before writing production code.</li></ul><p><strong>Direction 2 — The agent-reliability layer for small teams.</strong><br>Most eval&#x2F;observability tools are built for enterprise. A solo-friendly, usage-priced reliability wrapper (tracing + trajectory-level eval + a verification gate before irreversible actions) is a defensible B2B play.</p><ul><li><strong>Stack:</strong> Langfuse (OSS, self-host) or Helicone (drop-in proxy) as the base · add a lightweight pre-action verifier (pattern from <em>Harden</em> &#x2F; Apollo’s <em>Watcher</em>) · ship as a CLI&#x2F;SDK.</li><li><strong>Cost&#x2F;cycle:</strong> Near-zero infra cost to start; monetize per-trace or per-agent.</li></ul><p><strong>Direction 3 — Voice agents for local service businesses.</strong><br>The ROI is concrete and sells itself: a dental&#x2F;medical&#x2F;home-services practice misses ~35% of peak-hour calls; an AI receptionist at <strong>$99–$249&#x2F;month</strong> books directly into the calendar and never sleeps. Human receptionist equivalent: $3,200–$4,800&#x2F;month.</p><ul><li><strong>Stack:</strong> Retell AI ($0.07–$0.31&#x2F;min, all-in ~$0.13–$0.22; $10 free credits, no contract) or Bland.ai; integrate with Cal.com &#x2F; GoHighLevel; add a knowledge base per client.</li><li><strong>Cost&#x2F;cycle:</strong> Land one local client at $150&#x2F;mo, deliver in a weekend, scale to 20 clients &#x3D; $3K&#x2F;mo recurring on a few hours&#x2F;week.</li></ul><p><strong>Direction 4 — Agent-native connective tissue.</strong><br>The “phone numbers &#x2F; identity &#x2F; human-escalation” layer for agents is nascent and YC-backed (AgentPhone, RentAHuman, Humwork). A solo builder can ship a narrow connective product — e.g. “let any agent securely escalate to a verified human expert in &lt;30s” (Humwork’s thesis) — without competing with the model providers.</p><ul><li><strong>Stack:</strong> Twilio ConversationRelay ($0.07&#x2F;min + telephony) or a BYO-carrier setup · an LLM router (OpenRouter&#x2F;Monid) · Stripe for pay-per-use.</li></ul><p><strong>Direction 5 — Your own “personal AGI” Chief of Staff.</strong><br>Garry Tan’s framing: deploy agents on infra <em>you</em> own, build a reusable “skill file” library for your weekly drudgery, and schedule tasks to run while you sleep. This is the lowest-cost wedge and doubles as your best demo.</p><ul><li><strong>Stack:</strong> Claude Code &#x2F; OpenCode (free, MIT) on your machine · a notes&#x2F;context store you control · scheduled cron agents for recurring ops.</li></ul><hr><h2 id="⚠️-Risk-Factors"><a href="#⚠️-Risk-Factors" class="headerlink" title="⚠️ Risk Factors"></a>⚠️ Risk Factors</h2><ul><li><strong>The 88% graveyard.</strong> Most agents die before production because of ambiguous instructions, contradicting sub-agents, and no verification of task completion. Build the eval gate <em>first</em>, not last.</li><li><strong>Tool-trust failure.</strong> Agents inherit the failures of their tools silently (68% web-search corruption adoption). If you ship an agent that takes irreversible actions (refunds, emails, record updates), you need a verification layer — full stop.</li><li><strong>Commoditization from above.</strong> Generic “AI assistant” products are being eaten by foundation-model providers adding native capabilities. Your moat is vertical depth and proprietary data, not a thin wrapper.</li><li><strong>Liability gap.</strong> Berkshire, Chubb, and Travelers are winning state approval to <em>exclude</em> AI liability from standard commercial policies. Klaimee and Mount are early insurers, but unproven. If your agent touches money or regulated decisions, assume you are currently uninsured.</li><li><strong>Voice cost creep.</strong> Headline “$0.05&#x2F;min” rates exclude LLM, TTS, and telephony; real all-in runs $0.13–$0.45&#x2F;min, with concurrency overages and per-call minimums on unanswered dials. Model the <em>connected-minute</em> cost, not the sticker.</li></ul><hr><h2 id="✅-Action-Recommendations"><a href="#✅-Action-Recommendations" class="headerlink" title="✅ Action Recommendations"></a>✅ Action Recommendations</h2><p><strong>If you’re starting cold:</strong></p><ul><li>Spend this week confirming one workflow where five people would pay to fix a problem you’ve lived through. Do not write code until you have those five.</li><li>Stand up the cheapest viable stack: Cursor Hobby or Claude Pro ($20) + one orchestration framework + one deployment target (Vercel&#x2F;Netlify&#x2F;Supabase). Total monthly cost under $50.</li><li>Ship a thin agent that completes the <em>full</em> workflow, not a demo. Price on the first outcome.</li></ul><p><strong>If you already run a product:</strong></p><ul><li>Add a trajectory-level eval (Langfuse or Braintrust free tier) before your next prompt&#x2F;model change — you are likely shipping failures your output-only tests miss.</li><li>Move at least one pricing line from seats to outcomes; it widens margin as your agent’s completion rate improves.</li><li>If agents take irreversible actions, gate them behind a verifier this quarter; the insurance market won’t cover you yet.</li></ul><hr><h2 id="📊-Quick-Data-Reference"><a href="#📊-Quick-Data-Reference" class="headerlink" title="📊 Quick Data Reference"></a>📊 Quick Data Reference</h2><table><thead><tr><th>Signal</th><th>Value</th><th>Why it moves you</th></tr></thead><tbody><tr><td>Solo-founded share of YC portfolio</td><td>~19% (was 8.5% in 2016)</td><td>Solo founding is now mainstream, not brave</td></tr><tr><td>YC W26 companies at $1M+ ARR pre-Demo Day</td><td>14 (3× prior batch)</td><td>Sub-5 teams can hit scale</td></tr><tr><td>Revenue per employee, top AI-native startups</td><td>$3.48M (5.7× SaaS)</td><td>One person can out-earn a department</td></tr><tr><td>Agent projects that never reach production</td><td>88%</td><td>Reliability is the differentiator, not features</td></tr><tr><td>Solo coding-agent stack, monthly</td><td>$20–$100</td><td>Full engineering payroll fits in one subscription</td></tr><tr><td>AI voice receptionist vs human</td><td>$99–$249&#x2F;mo vs $3,200–$4,800&#x2F;mo</td><td>Clean, sellable ROI for local biz</td></tr></tbody></table><hr><p><em>What it means:</em> The solo AI company is no longer a bet — it’s the default mode YC is now funding. The winners in the next 12 months will be the builders who pick a narrow workflow, own the reliability layer around it, and price on outcomes. The tooling is cheap and the team-size advantage is real; the only scarce resource is domain depth and the discipline to ship something that actually completes a job.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> AI Trends </category>
+          
+          <category> OPC Report </category>
+          
+          <category> Startup Ecosystem </category>
+          
+          <category> AI Entrepreneurship </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Cursor </tag>
+            
+            <tag> Claude Code </tag>
+            
+            <tag> solo founder </tag>
+            
+            <tag> AI agents </tag>
+            
+            <tag> one person company </tag>
+            
+            <tag> YC batch </tag>
+            
+            <tag> agent observability </tag>
+            
+            <tag> voice agents </tag>
+            
+            <tag> solopreneur </tag>
+            
+            <tag> AI startup </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Agents Become the Product: Claude Code Tops Solo Developers as AI-Search Visibility Opens a Solo Gold Rush</title>
+      <link href="/2026/09/20/opc-report-2026-09-20-1035/"/>
+      <url>/2026/09/20/opc-report-2026-09-20-1035/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Agents-Become-the-Product-Claude-Code-Tops-Solo-Developers-as-AI-Search-Visibility-Opens-a-Solo-Gold-Rush"><a href="#Agents-Become-the-Product-Claude-Code-Tops-Solo-Developers-as-AI-Search-Visibility-Opens-a-Solo-Gold-Rush" class="headerlink" title="Agents Become the Product: Claude Code Tops Solo Developers as AI-Search Visibility Opens a Solo Gold Rush"></a>Agents Become the Product: Claude Code Tops Solo Developers as AI-Search Visibility Opens a Solo Gold Rush</h1><blockquote><p>Hourly intelligence briefing for solo founders and independent builders. This edition tracks the week of September 20, 2026 — what shipped on Product Hunt, how the AI coding stack actually splits, and where a one-person company can still plant a flag.</p></blockquote><h2 id="TL-DR"><a href="#TL-DR" class="headerlink" title="TL;DR"></a>TL;DR</h2><p>Two things moved this week. First, the AI coding market finished its realignment: among individual developers and early-stage startups, <strong>Claude Code is now the default primary tool</strong>, while Copilot keeps bleeding share and “use two tools” became the norm. Second, the Product Hunt feed stopped treating agents as a feature and started treating them as the product — “an OS for a company run by agents,” agent-first CRMs, and AI-search-visibility trackers all shipped. The practical takeaway for a solo founder: <strong>stop debating which single tool wins, pair Cursor + Claude Code, and build either a vertical agent for a painful workflow or a GEO&#x2F;AI-search-visibility product</strong> — that’s where the window is.</p><h2 id="The-two-questions-answered-up-front"><a href="#The-two-questions-answered-up-front" class="headerlink" title="The two questions, answered up front"></a>The two questions, answered up front</h2><p><strong>Where should you build?</strong> Two directions have real, uncommoditized demand right now:</p><ol><li>A <strong>vertical AI agent</strong> for one painful operational workflow (support, sales triage, recruiting screens) — not a generic chatbot.</li><li>A <strong>GEO &#x2F; AI-search-visibility</strong> product or service — because nearly half of Google searches now end without a click, and most businesses have no idea whether AI answers cite them.</li></ol><p><strong>What tools should you use?</strong> The 2026 solo stack is stable: <strong>Cursor</strong> (daily in-editor flow) + <strong>Claude Code</strong> (complex, autonomous multi-file work), <strong>Supabase</strong> or <strong>Neon</strong> for the database you own, <strong>Vercel</strong> or <strong>Cloudflare Pages</strong> for hosting, <strong>Stripe</strong> for billing, <strong>Clerk</strong> or <strong>Auth.js</strong> for auth, and <strong>n8n</strong> &#x2F; <strong>Make</strong> for the one workflow worth automating. Validate with <strong>Lovable</strong> or <strong>v0</strong> in days, then export to code you control.</p><h2 id="Key-Signals-at-a-Glance"><a href="#Key-Signals-at-a-Glance" class="headerlink" title="Key Signals at a Glance"></a>Key Signals at a Glance</h2><table><thead><tr><th>Signal</th><th>Value</th><th>Why it changes your decision</th></tr></thead><tbody><tr><td>Claude Code among individual developers</td><td><strong>51%</strong> primary tool (Apr 2026, 42k-dev survey)</td><td>The agentic CLI, not the IDE autocomplete, is now the solo default</td></tr><tr><td>Developers running 2+ AI coding tools</td><td><strong>53%</strong></td><td>No single tool wins; tool <em>pairing</em> is the skill</td></tr><tr><td>Copilot two-year share slide</td><td><strong>47% → 24%</strong></td><td>Enterprise lock-in still props it up; individuals are leaving</td></tr><tr><td>Google searches ending with no click</td><td><strong>~49%</strong></td><td>Traditional SEO no longer delivers the visitor — GEO does</td></tr><tr><td>AI-referred conversion vs organic</td><td><strong>2–4× higher</strong></td><td>AI-search visibility is a revenue channel, not a vanity metric</td></tr><tr><td>Functional solo stack</td><td><strong>$75–200&#x2F;mo</strong></td><td>The “40-tool AI OS” threads are fiction; buy at the bottleneck</td></tr></tbody></table><h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><h3 id="1-The-coding-stack-settled-into-a-“pair-don’t-pick”-reality"><a href="#1-The-coding-stack-settled-into-a-“pair-don’t-pick”-reality" class="headerlink" title="1. The coding stack settled into a “pair, don’t pick” reality"></a>1. The coding stack settled into a “pair, don’t pick” reality</h3><p>The 2026 AI coding market stopped being a beauty contest and became a workflow split. Cursor still leads on headline usage share (≈31% in a 400-developer February survey, ≈18% in a June industry estimate — methodologies differ), but its growth has stalled and it’s now the <em>daily-driver editor</em>, not the only tool. Claude Code surged from 12% to 22% in under a year and, in the large Stack Overflow + JetBrains April survey, leads individual developers at 51% and startups (1–200 employees) at 44%. Copilot is in a two-year decline (47% → 28% → 24%) and survives mainly on GitHub Enterprise procurement.</p><p>The number that matters more than any rank: <strong>53% of developers now use two or more AI coding tools</strong>, and 34% of Claude Code users also keep Cursor open. The pattern is consistent — Cursor for fast in-editor edits and refactoring, Claude Code for autonomous multi-file changes, test runs, and debugging. Pricing read live on September 6, 2026: Cursor free &#x2F; $20 individual &#x2F; $40 teams; Claude Pro $20 (includes Claude Code); Replit Core $20 &#x2F; Pro $100. The catch every solo founder learns the hard way: <strong>the subscription is the floor, not the price.</strong> Heavy agentic sessions bill on top, and Cursor’s own docs note daily agent users typically land at $60–100&#x2F;mo, not $20.</p><h3 id="2-Product-Hunt-shipped-the-“agent-as-the-product”-wave"><a href="#2-Product-Hunt-shipped-the-“agent-as-the-product”-wave" class="headerlink" title="2. Product Hunt shipped the “agent as the product” wave"></a>2. Product Hunt shipped the “agent as the product” wave</h3><p>This month’s launches stopped bolting AI onto existing workflows and started <em>architecting around agents as the primary user</em>. The September 19 slate alone: <strong>Makersclaw 2.0</strong> (“operating system for a company run by agents”), <strong>Toone</strong> (reliable agent workflows, 129 votes day one), <strong>ProductBridge</strong> (an AI-native support + feedback agent for product teams), <strong>Ami AI</strong> (“Lovable for getting customers” — AI-assisted sales&#x2F;outreach), and <strong>AINA</strong> (an AI career coach that hit 450 votes as the day’s top launch). A day earlier, <strong>ApplySeed</strong> helped founders raise seed rounds from accelerators (134 votes).</p><p>Two weeks prior, the infrastructure layer showed the same logic: <strong>Switch</strong> (510 votes Sep 8) drops any AI agent into Slack, Teams, Discord, or Telegram as a named participant; <strong>OpenMarket</strong> is a multi-agent marketplace where proof-of-performance decides who wins a task; <strong>Catenary</strong> is a spatial canvas IDE built <em>for</em> coding agents; and <strong>Relaticle</strong> is an open-source CRM with approval-gated AI writes (every AI-proposed record change waits for a human). The GPT-6 Astra Challenge (OpenAI, launched Sep 18) is explicitly built for “complex, multi-step work” — software engineering, research, judgment-heavy workflows.</p><h3 id="3-GEO-turned-from-a-buzzword-into-a-payable-category"><a href="#3-GEO-turned-from-a-buzzword-into-a-payable-category" class="headerlink" title="3. GEO turned from a buzzword into a payable category"></a>3. GEO turned from a buzzword into a payable category</h3><p>As AI answers swallow top-of-funnel traffic, a new discipline — <strong>Generative Engine Optimization</strong> (getting cited inside ChatGPT, Perplexity, Gemini, and Google AI Overviews) — became something businesses will pay for. BrightEdge&#x2F;industry data cited across 2026 puts Google searches ending without a click at roughly <strong>49%</strong>, AI Overviews in 25%+ of results, and AI-referred visitors converting at <strong>2–4× organic</strong>. On Product Hunt, <strong>Visiby</strong> (Sep 14) tracks a brand’s visibility across AI search channels, and <strong>LLMagnet</strong> optimizes WordPress so models surface its content.</p><p>The agency market is already real and priced: retainers run from <strong>$1,500&#x2F;mo</strong> for an audit-style engagement to <strong>$25,000&#x2F;mo</strong> for enterprise governance. The warning baked into every credible write-up: most “GEO experts” are rebranded SEO shops. Real GEO needs LLM-native measurement (Profound, Otterly, Scrunch, Peec) and per-prompt citation tracking — not a recycled Ahrefs dashboard. That gap is itself the solo opportunity.</p><h2 id="Build-Directions-the-actionable-part"><a href="#Build-Directions-the-actionable-part" class="headerlink" title="Build Directions (the actionable part)"></a>Build Directions (the actionable part)</h2><h3 id="Direction-1-—-Vertical-AI-agent-for-one-painful-workflow"><a href="#Direction-1-—-Vertical-AI-agent-for-one-painful-workflow" class="headerlink" title="Direction 1 — Vertical AI agent for one painful workflow"></a>Direction 1 — Vertical AI agent for one painful workflow</h3><p><strong>What:</strong> Pick a single, repetitive, high-volume operational job and ship an agent that does most of it with a human approval gate. Support triage, sales-lead qualification, recruiting screeners, and invoice matching are all proven. ProductBridge’s model (draft, you approve for the first month) is the right safety pattern.<br><strong>Stack:</strong> Cursor + Claude Code for build · Supabase (Postgres + auth + edge functions) · n8n or Make for the trigger&#x2F;glue · Stripe for billing if SaaS · deploy on Vercel.<br><strong>Cost &#x2F; cycle:</strong> ~$150–400&#x2F;mo once you have paying users; MVP in 3–7 days. The moat is the workflow’s approval logic and the data you accumulate, not the model.</p><h3 id="Direction-2-—-GEO-AI-search-visibility-SaaS-or-consultancy"><a href="#Direction-2-—-GEO-AI-search-visibility-SaaS-or-consultancy" class="headerlink" title="Direction 2 — GEO &#x2F; AI-search-visibility SaaS or consultancy"></a>Direction 2 — GEO &#x2F; AI-search-visibility SaaS or consultancy</h3><p><strong>What:</strong> A tool or service that tells a business “are AI answers citing you, and for which prompts?” Start as a done-with-you audit, then productize into a monitoring SaaS (run target prompts across ChatGPT&#x2F;Perplexity&#x2F;Gemini on a schedule, show citation share vs competitors). Visiby proved demand; the field is wide open below enterprise pricing.<br><strong>Stack:</strong> Next.js + Supabase · call model APIs (or the LLM tracking APIs) to run prompts · Resend for reports · Stripe · deploy on Vercel&#x2F;Cloudflare.<br><strong>Cost &#x2F; cycle:</strong> ~$50–200&#x2F;mo in API + infra; first audit product in 1–2 weeks. Biggest risk is measurement credibility — use a real LLM-tracking source, not vibes.</p><h3 id="Direction-3-—-“Bring-the-agent-to-where-work-happens”-connector"><a href="#Direction-3-—-“Bring-the-agent-to-where-work-happens”-connector" class="headerlink" title="Direction 3 — “Bring the agent to where work happens” connector"></a>Direction 3 — “Bring the agent to where work happens” connector</h3><p><strong>What:</strong> The agent-deployment layer is fragmented. Switch showed the appetite: a single integration that puts any agent into Slack&#x2F;Teams&#x2F;Discord with shared context. A solo builder can ship a narrower version — e.g., an MCP connector that links a specific SaaS (your CRM, your inbox) to any coding or ops agent. Catenary and OpenMarket suggest the same hunger for agent-composable plumbing.<br><strong>Stack:</strong> TypeScript + a lightweight framework · MCP SDK · host on Cloudflare Workers or Render · auth via Clerk.<br><strong>Cost &#x2F; cycle:</strong> near-zero infra to start (Cloudflare free tier); 1–2 weeks to a usable connector. Distribution is the hard part — launch on Product Hunt and the relevant agent communities, not SEO.</p><h3 id="Direction-4-—-AI-native-micro-SaaS-for-one-niche-profession"><a href="#Direction-4-—-AI-native-micro-SaaS-for-one-niche-profession" class="headerlink" title="Direction 4 — AI-native micro-SaaS for one niche profession"></a>Direction 4 — AI-native micro-SaaS for one niche profession</h3><p><strong>What:</strong> Verticalize the “Lovable for X” pattern: a working, database-backed app for a specific profession (real-estate copy, dental scheduling, immigration paperwork). Validation speed is the entire value — go from sentence to shareable link in an afternoon, then export to Cursor to finish the 20% the builder stalls on.<br><strong>Stack:</strong> Lovable or v0 for the first 70–80% · export to Cursor + Supabase · Stripe one-click · deploy on Vercel.<br><strong>Cost &#x2F; cycle:</strong> Lovable Pro ~$25&#x2F;mo to validate; watch the runtime cliff (see risks). Realistic launched cost $150–400&#x2F;mo.</p><h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><ul><li><strong>The hidden runtime-cost cliff.</strong> Credit-based builders (Lovable, Base44) understate total cost of ownership; for a live product, real spend is often <strong>2–3× the headline subscription</strong> once runtime and AI calls bill on top. Prototype on them; don’t mistake the prototype for production economics.</li><li><strong>Agents write auth, validation, and billing confidently and wrongly.</strong> Unattended agents with Stripe or CRM credentials, or AI-generated authorization&#x2F;secret-handling code, fail <em>silently</em>. Keep a human approval gate and logging until the workflow earns trust.</li><li><strong>Context-window pain is the real bottleneck.</strong> ~62% of developers cite context (not model accuracy) as their top frustration — agents forget across files and overwrite their own changes. Don’t bet a product on an agent that can’t hold a project in its head.</li><li><strong>AI-search cannibalization hits your own distribution.</strong> If your growth plan is “rank on Google,” AI Overviews now intercept nearly half of searches before the click. Build GEO into every content page from day one, or you’ll be invisible to the buyers who already asked an AI.</li></ul><h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><p><strong>If you’re validating (pre-revenue):</strong></p><ul><li>✅ Use Lovable&#x2F;v0 to get a clickable prototype in days; don’t pay for a backend you don’t need yet.</li><li>✅ Pair Cursor (daily edits) with Claude Code (one hard refactor) — ~$40&#x2F;mo combined covers most solo work.</li><li>✅ Pick the direction by <em>pain</em>, not by tool: a vertical agent or a GEO product, not “another chatbot.”</li><li>✅ Ship the boring version. Feature creep is the new default failure mode when building is nearly free.</li></ul><p><strong>If you have paying users:</strong></p><ul><li>✅ Move core data to Postgres you own (Supabase&#x2F;Neon); export customer, content, and workflow definitions so no vendor can hold them hostage.</li><li>✅ Automate the one workflow that actually hurts — support triage first (70–80% of tickets are repeats), then onboarding, then churn detection.</li><li>✅ Add a human approval gate before any agent touches billing or customer data; add logging from day one.</li><li>✅ Treat GEO as a launch channel: publish answer-first, schema-marked pages and track citations, not just rankings.</li></ul><h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><ul><li><strong>51%</strong> — Claude Code share among individual developers (Apr 2026, 42k-dev survey)</li><li><strong>53%</strong> — developers using 2+ AI coding tools; multi-tool is the norm</li><li><strong>~49%</strong> — Google searches ending without a click; GEO is now a distribution requirement</li><li><strong>2–4×</strong> — AI-referred conversion vs organic search</li><li><strong>$75–200&#x2F;mo</strong> — realistic functional solo stack; buy at the bottleneck, not the category</li><li><strong>$1,500–25,000&#x2F;mo</strong> — GEO agency pricing band; the solo SaaS wedge sits at the low end</li></ul><h2 id="What-it-means"><a href="#What-it-means" class="headerlink" title="What it means"></a>What it means</h2><p>The solo founder’s constraint is no longer “can I build it” — it’s “which unbundled slice of the agent economy is still unclaimed.” The coding tools have matured into a predictable pair, the Product Hunt feed has declared agents the product layer, and the traffic that used to arrive via Google now arrives via an AI’s citation. Build a vertical agent or a GEO product, own your data and your billing, and let the agent layer absorb the operational 80% while you keep the decisions that actually decide whether the business works.</p><p><em>This report is auto-generated hourly by the OPC One-Person Company AI Startup Trend Monitor. For trend reference only — not investment advice.</em></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> AI Startup Trends </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Solopreneur </tag>
+            
+            <tag> Micro-SaaS </tag>
+            
+            <tag> GEO </tag>
+            
+            <tag> AI coding </tag>
+            
+            <tag> Claude Code </tag>
+            
+            <tag> AI Agents </tag>
+            
+            <tag> Product Hunt </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Agent Security and the &#39;Tools-as-Supply-Chain&#39; Shift Open a Low-Cost Lane for Solo Builders</title>
       <link href="/2026/09/19/opc-report-2026-09-19-0921/"/>
       <url>/2026/09/19/opc-report-2026-09-19-0921/</url>
@@ -153,11 +370,11 @@
             
             <tag> AI-Agent </tag>
             
+            <tag> GEO </tag>
+            
             <tag> Indie-Hackers </tag>
             
             <tag> Coding-Agent </tag>
-            
-            <tag> Geo </tag>
             
         </tags>
       
@@ -190,17 +407,17 @@
             
             <tag> One-Person-Company </tag>
             
+            <tag> Micro-SaaS </tag>
+            
             <tag> AI-Agents </tag>
+            
+            <tag> LangGraph </tag>
             
             <tag> Vibe-Coding </tag>
             
             <tag> Claude-Code </tag>
             
             <tag> Agent-Orchestration </tag>
-            
-            <tag> Micro-Saas </tag>
-            
-            <tag> Langgraph </tag>
             
         </tags>
       
@@ -280,6 +497,8 @@
             
             <tag> One-Person-Company </tag>
             
+            <tag> Micro-SaaS </tag>
+            
             <tag> AI-Coding </tag>
             
             <tag> Agent-Infrastructure </tag>
@@ -287,8 +506,6 @@
             <tag> Voice-Agent </tag>
             
             <tag> YC-2026 </tag>
-            
-            <tag> Micro-Saas </tag>
             
         </tags>
       
@@ -319,13 +536,13 @@
             
             <tag> Solo-Founder </tag>
             
+            <tag> MCP </tag>
+            
             <tag> Coding-Agents </tag>
             
             <tag> YC-S26 </tag>
             
             <tag> Agent-Reliability </tag>
-            
-            <tag> Mcp </tag>
             
         </tags>
       
@@ -413,7 +630,7 @@
             
             <tag> Local-First </tag>
             
-            <tag> Personal-Agi </tag>
+            <tag> Personal-AGI </tag>
             
             <tag> Herdr </tag>
             
@@ -446,6 +663,8 @@
             
             <tag> One-Person-Company </tag>
             
+            <tag> Micro-SaaS </tag>
+            
             <tag> Claude-Code </tag>
             
             <tag> Agent-Infrastructure </tag>
@@ -453,8 +672,6 @@
             <tag> AI-Native-Services </tag>
             
             <tag> YC-2026 </tag>
-            
-            <tag> Micro-Saas </tag>
             
         </tags>
       
@@ -620,13 +837,13 @@
             
             <tag> Indie-Hacker </tag>
             
+            <tag> MCP </tag>
+            
             <tag> Agent-Orchestration </tag>
             
             <tag> Local-AI </tag>
             
             <tag> AI-Coding-Agents </tag>
-            
-            <tag> Mcp </tag>
             
         </tags>
       
@@ -690,15 +907,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> AI-Agent </tag>
             
-            <tag> AI Agent </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> Claude Code </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> Managed Agents </tag>
+            <tag> Managed-Agents </tag>
             
-            <tag> OpenAI Agents API </tag>
+            <tag> Openai-Agents-API </tag>
             
         </tags>
       
@@ -725,15 +942,15 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Agent </tag>
+            
+            <tag> Indie-Hacker </tag>
+            
             <tag> No-Code </tag>
             
             <tag> GEO </tag>
             
-            <tag> AI Agent </tag>
-            
-            <tag> Indie Hacker </tag>
-            
-            <tag> Agent Stack </tag>
+            <tag> Agent-Stack </tag>
             
         </tags>
       
@@ -762,13 +979,13 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> AI-Agent </tag>
             
-            <tag> AI Agent </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> Claude Code </tag>
+            <tag> Indie-Hacker </tag>
             
-            <tag> Indie Hacker </tag>
+            <tag> Claude-Code </tag>
             
         </tags>
       
@@ -795,17 +1012,17 @@
       
         <tags>
             
-            <tag> solo-founder </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> ai-agents </tag>
+            <tag> Solo-Founder </tag>
             
-            <tag> agent-security </tag>
+            <tag> Bootstrapping </tag>
             
-            <tag> no-code </tag>
+            <tag> No-Code </tag>
             
-            <tag> bootstrapping </tag>
+            <tag> Indie-Hackers </tag>
             
-            <tag> indie-hackers </tag>
+            <tag> Agent-Security </tag>
             
         </tags>
       
@@ -873,15 +1090,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> AI Coding </tag>
+            <tag> AI-Coding </tag>
             
-            <tag> Agent Infrastructure </tag>
+            <tag> Agent-Infrastructure </tag>
             
-            <tag> YC S26 </tag>
+            <tag> YC-S26 </tag>
             
-            <tag> Agent-Led Growth </tag>
+            <tag> Agent-Led-Growth </tag>
             
         </tags>
       
@@ -912,21 +1129,21 @@
       
         <tags>
             
-            <tag> One Person Company </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> AI Startup </tag>
+            <tag> AI-Startup </tag>
             
-            <tag> AI Coding </tag>
+            <tag> Solo-Founder </tag>
+            
+            <tag> Product-Hunt </tag>
+            
+            <tag> AI-Coding </tag>
+            
+            <tag> Agent-Infrastructure </tag>
+            
+            <tag> YC-S26 </tag>
             
             <tag> Agent-First </tag>
-            
-            <tag> Solo Founder </tag>
-            
-            <tag> Product Hunt </tag>
-            
-            <tag> Agent Infrastructure </tag>
-            
-            <tag> YC S26 </tag>
             
         </tags>
       
@@ -955,15 +1172,15 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Agent </tag>
+            
+            <tag> One-Person-Company </tag>
+            
             <tag> MCP </tag>
             
+            <tag> YC-S26 </tag>
+            
             <tag> Local-First </tag>
-            
-            <tag> One Person Company </tag>
-            
-            <tag> AI Agent </tag>
-            
-            <tag> YC S26 </tag>
             
         </tags>
       
@@ -992,13 +1209,13 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Agent </tag>
+            
+            <tag> One-Person-Company </tag>
+            
+            <tag> AI-Coding </tag>
+            
             <tag> GEO </tag>
-            
-            <tag> One Person Company </tag>
-            
-            <tag> AI Agent </tag>
-            
-            <tag> AI Coding </tag>
             
         </tags>
       
@@ -1025,15 +1242,15 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Agent </tag>
+            
+            <tag> One-Person-Company </tag>
+            
             <tag> MCP </tag>
             
-            <tag> One Person Company </tag>
+            <tag> Browser-Agent </tag>
             
-            <tag> AI Agent </tag>
-            
-            <tag> Model Pricing </tag>
-            
-            <tag> Browser Agent </tag>
+            <tag> Model-Pricing </tag>
             
         </tags>
       
@@ -1060,15 +1277,15 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Agent </tag>
+            
+            <tag> One-Person-Company </tag>
+            
+            <tag> Claude-Code </tag>
+            
+            <tag> Voice-Agent </tag>
+            
             <tag> Codex </tag>
-            
-            <tag> One Person Company </tag>
-            
-            <tag> AI Agent </tag>
-            
-            <tag> Claude Code </tag>
-            
-            <tag> Voice Agent </tag>
             
         </tags>
       
@@ -1099,21 +1316,19 @@
       
         <tags>
             
+            <tag> One-Person-Company </tag>
+            
             <tag> Cursor </tag>
             
-            <tag> Claude Code </tag>
+            <tag> AI-Startup </tag>
             
-            <tag> solopreneur </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> AI agents </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> Y Combinator </tag>
+            <tag> Y-Combinator </tag>
             
-            <tag> one-person company </tag>
-            
-            <tag> AI startup </tag>
-            
-            <tag> agent orchestration </tag>
+            <tag> Agent-Orchestration </tag>
             
         </tags>
       
@@ -1142,17 +1357,17 @@
       
         <tags>
             
+            <tag> Micro-SaaS </tag>
+            
+            <tag> Solo-Founder </tag>
+            
+            <tag> AI-Coding </tag>
+            
             <tag> MCP </tag>
             
-            <tag> AI coding </tag>
+            <tag> Agent-Orchestration </tag>
             
-            <tag> solo founder </tag>
-            
-            <tag> voice agents </tag>
-            
-            <tag> agent orchestration </tag>
-            
-            <tag> micro-saas </tag>
+            <tag> Voice-Agents </tag>
             
         </tags>
       
@@ -1187,19 +1402,19 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> One-Person-Company </tag>
+            
+            <tag> AI-Startup </tag>
+            
+            <tag> AI-Agents </tag>
+            
             <tag> Bootstrap </tag>
             
-            <tag> One Person Company </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> Claude Code </tag>
+            <tag> Y-Combinator </tag>
             
-            <tag> AI Agents </tag>
-            
-            <tag> AI Startup </tag>
-            
-            <tag> Y Combinator </tag>
-            
-            <tag> Agent Infrastructure </tag>
+            <tag> Agent-Infrastructure </tag>
             
         </tags>
       
@@ -1232,19 +1447,19 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Agent </tag>
+            
+            <tag> One-Person-Company </tag>
+            
+            <tag> Indie-Hacker </tag>
+            
+            <tag> Agent-Infrastructure </tag>
+            
+            <tag> YC-S26 </tag>
+            
             <tag> Local-First </tag>
             
-            <tag> One Person Company </tag>
-            
-            <tag> AI Agent </tag>
-            
-            <tag> Indie Hacker </tag>
-            
-            <tag> Coding Agent </tag>
-            
-            <tag> Agent Infrastructure </tag>
-            
-            <tag> YC S26 </tag>
+            <tag> Coding-Agent </tag>
             
         </tags>
       
@@ -1273,19 +1488,17 @@
       
         <tags>
             
-            <tag> solopreneur </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> AI agents </tag>
+            <tag> Micro-SaaS </tag>
             
-            <tag> one-person company </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> micro-SaaS </tag>
+            <tag> Agent-Infrastructure </tag>
             
-            <tag> agent infrastructure </tag>
+            <tag> Context-Engineering </tag>
             
-            <tag> agent orchestration </tag>
-            
-            <tag> context engineering </tag>
+            <tag> Agent-Orchestration </tag>
             
         </tags>
       
@@ -1314,17 +1527,15 @@
       
         <tags>
             
-            <tag> solopreneur </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> AI agents </tag>
+            <tag> Micro-SaaS </tag>
             
-            <tag> one-person company </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> micro-SaaS </tag>
+            <tag> Agent-Orchestration </tag>
             
-            <tag> voice AI </tag>
-            
-            <tag> agent orchestration </tag>
+            <tag> Voice-AI </tag>
             
         </tags>
       
@@ -1357,23 +1568,23 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> One-Person-Company </tag>
+            
             <tag> Cursor </tag>
             
-            <tag> One Person Company </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> Claude Code </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> AI Agents </tag>
+            <tag> Agentic-Workflows </tag>
             
-            <tag> Y Combinator </tag>
+            <tag> Y-Combinator </tag>
             
-            <tag> Indie Hackers </tag>
+            <tag> Indie-Hackers </tag>
             
             <tag> Supabase </tag>
             
-            <tag> AGENTS.md </tag>
-            
-            <tag> Agentic Workflows </tag>
+            <tag> Agents.md </tag>
             
         </tags>
       
@@ -1402,13 +1613,13 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> AI-Agent </tag>
             
-            <tag> AI Agent </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> Coding Agent </tag>
+            <tag> Independent-Developer </tag>
             
-            <tag> Independent Developer </tag>
+            <tag> Coding-Agent </tag>
             
         </tags>
       
@@ -1437,17 +1648,17 @@
       
         <tags>
             
+            <tag> AI-Agent </tag>
+            
+            <tag> Solo-Founder </tag>
+            
             <tag> MCP </tag>
             
-            <tag> AI Agent </tag>
+            <tag> Autonomous-Coding </tag>
             
-            <tag> Solo Founder </tag>
+            <tag> Multi-Model-Orchestration </tag>
             
-            <tag> Multi-Model Orchestration </tag>
-            
-            <tag> Autonomous Coding </tag>
-            
-            <tag> Agentic Infrastructure </tag>
+            <tag> Agentic-Infrastructure </tag>
             
         </tags>
       
@@ -1480,19 +1691,19 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Agent </tag>
+            
+            <tag> One-Person-Company </tag>
+            
             <tag> Micro-SaaS </tag>
             
-            <tag> One Person Company </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> AI Agent </tag>
+            <tag> Agent-Security </tag>
             
-            <tag> Claude Code </tag>
+            <tag> Build-Vs-Buy </tag>
             
-            <tag> Agent Security </tag>
-            
-            <tag> Build vs Buy </tag>
-            
-            <tag> Workflow Redesign </tag>
+            <tag> Workflow-Redesign </tag>
             
         </tags>
       
@@ -1525,19 +1736,19 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> AI-Agent </tag>
             
-            <tag> AI Agent </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> Claude Code </tag>
+            <tag> AI-Startup </tag>
             
-            <tag> AI Startup </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> Coding Agent </tag>
+            <tag> Agent-Infrastructure </tag>
             
-            <tag> Agent Infrastructure </tag>
+            <tag> Coding-Agent </tag>
             
-            <tag> YC 2026 </tag>
+            <tag> YC-2026 </tag>
             
         </tags>
       
@@ -1566,17 +1777,15 @@
       
         <tags>
             
-            <tag> solopreneur </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> AI agents </tag>
+            <tag> Product-Hunt </tag>
             
-            <tag> Product Hunt </tag>
+            <tag> Agent-Infrastructure </tag>
             
-            <tag> agent infrastructure </tag>
+            <tag> EU-AI-Act </tag>
             
-            <tag> YC P26 </tag>
-            
-            <tag> EU AI Act </tag>
+            <tag> YC-P26 </tag>
             
         </tags>
       
@@ -1611,21 +1820,21 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Agent </tag>
+            
             <tag> Cursor </tag>
             
             <tag> Micro-SaaS </tag>
             
-            <tag> AI Agent </tag>
+            <tag> Solo-Founder </tag>
             
-            <tag> Claude Code </tag>
+            <tag> AI-Coding </tag>
             
-            <tag> AI Coding </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> Solo Founder </tag>
+            <tag> Agent-Stack </tag>
             
-            <tag> Agent Stack </tag>
-            
-            <tag> Embedded Agents </tag>
+            <tag> Embedded-Agents </tag>
             
         </tags>
       
@@ -1654,13 +1863,13 @@
             
             <tag> One-Person-Company </tag>
             
-            <tag> Startup Trends </tag>
+            <tag> Startup-Trends </tag>
             
-            <tag> AI Agents </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> AI Coding </tag>
+            <tag> AI-Coding </tag>
             
-            <tag> Y Combinator </tag>
+            <tag> Y-Combinator </tag>
             
         </tags>
       
@@ -1687,15 +1896,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> AI-Agent </tag>
             
-            <tag> AI Agent </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> Open Weights </tag>
+            <tag> Agent-Infrastructure </tag>
             
-            <tag> Agent Infrastructure </tag>
+            <tag> Coding-Agents </tag>
             
-            <tag> Coding Agents </tag>
+            <tag> Open-Weights </tag>
             
         </tags>
       
@@ -1728,19 +1937,17 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> Claude Code </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> Model Routing </tag>
+            <tag> Agent-Infrastructure </tag>
             
-            <tag> YC W26 </tag>
+            <tag> Model-Routing </tag>
             
-            <tag> Agent Infrastructure </tag>
+            <tag> Agent-Security </tag>
             
-            <tag> Startup Opportunities </tag>
-            
-            <tag> Agent Security </tag>
+            <tag> Startup-Opportunities </tag>
             
         </tags>
       
@@ -1767,19 +1974,15 @@
       
         <tags>
             
-            <tag> solopreneur </tag>
+            <tag> Cursor </tag>
             
-            <tag> claude-code </tag>
+            <tag> AI-Coding </tag>
             
-            <tag> ai-coding </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> agentic-engineering </tag>
+            <tag> Agents </tag>
             
-            <tag> cursor </tag>
-            
-            <tag> yc-w26 </tag>
-            
-            <tag> agents </tag>
+            <tag> Agentic-Engineering </tag>
             
         </tags>
       
@@ -1812,23 +2015,23 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> One-Person-Company </tag>
+            
+            <tag> AI-Startup </tag>
+            
+            <tag> AI-Agents </tag>
+            
+            <tag> Product-Hunt </tag>
+            
             <tag> GEO </tag>
             
-            <tag> One Person Company </tag>
+            <tag> Y-Combinator </tag>
             
-            <tag> Voice AI </tag>
+            <tag> Indie-Hackers </tag>
             
-            <tag> AI Agents </tag>
+            <tag> Voice-AI </tag>
             
-            <tag> AI Startup </tag>
-            
-            <tag> Product Hunt </tag>
-            
-            <tag> Y Combinator </tag>
-            
-            <tag> Generative Engine Optimization </tag>
-            
-            <tag> Indie Hackers </tag>
+            <tag> Generative-Engine-Optimization </tag>
             
         </tags>
       
@@ -1863,19 +2066,19 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> One-Person-Company </tag>
+            
+            <tag> AI-Agents </tag>
+            
             <tag> Anthropic </tag>
             
-            <tag> One Person Company </tag>
+            <tag> AI-Coding </tag>
             
-            <tag> Claude Code </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> AI Agents </tag>
+            <tag> Indie-Hackers </tag>
             
-            <tag> AI Coding </tag>
-            
-            <tag> Indie Hackers </tag>
-            
-            <tag> Hugging Face </tag>
+            <tag> Hugging-Face </tag>
             
         </tags>
       
@@ -1902,15 +2105,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> AI Agents </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> Y Combinator </tag>
+            <tag> Y-Combinator </tag>
             
-            <tag> Open Source </tag>
+            <tag> Developer-Tools </tag>
             
-            <tag> Developer Tools </tag>
+            <tag> Open-Source </tag>
             
         </tags>
       
@@ -1939,15 +2142,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> AI-Agent </tag>
             
-            <tag> AI Agent </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> Vibe Coding </tag>
+            <tag> Vibe-Coding </tag>
             
-            <tag> Y Combinator </tag>
+            <tag> Y-Combinator </tag>
             
-            <tag> Agent Infrastructure </tag>
+            <tag> Agent-Infrastructure </tag>
             
         </tags>
       
@@ -1974,17 +2177,15 @@
       
         <tags>
             
-            <tag> solopreneur </tag>
+            <tag> AI-Coding-Agents </tag>
             
-            <tag> AI coding agents </tag>
+            <tag> Model-Context-Protocol </tag>
             
-            <tag> Model Context Protocol </tag>
+            <tag> Agent-Native-Startups </tag>
             
-            <tag> agent-native startups </tag>
+            <tag> YC-Batch </tag>
             
-            <tag> YC batch </tag>
-            
-            <tag> AI liability insurance </tag>
+            <tag> AI-Liability-Insurance </tag>
             
         </tags>
       
@@ -2011,17 +2212,15 @@
       
         <tags>
             
+            <tag> AI-Agent </tag>
+            
+            <tag> One-Person-Company </tag>
+            
+            <tag> Agent-Infrastructure </tag>
+            
             <tag> YC </tag>
             
-            <tag> solopreneur </tag>
-            
-            <tag> one-person-company </tag>
-            
-            <tag> AI-agent </tag>
-            
-            <tag> always-on </tag>
-            
-            <tag> agent-infrastructure </tag>
+            <tag> Always-On </tag>
             
         </tags>
       
@@ -2048,15 +2247,15 @@
       
         <tags>
             
-            <tag> open-weight </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> solo-founder </tag>
+            <tag> Solo-Founder </tag>
             
-            <tag> one-person-company </tag>
+            <tag> AI-Coding </tag>
             
-            <tag> AI-coding </tag>
+            <tag> Agent-Ops </tag>
             
-            <tag> agent-ops </tag>
+            <tag> Open-Weight </tag>
             
         </tags>
       
@@ -2085,17 +2284,15 @@
       
         <tags>
             
-            <tag> solopreneur </tag>
+            <tag> Coding-Agents </tag>
             
-            <tag> coding agents </tag>
+            <tag> Agent-Skills </tag>
             
-            <tag> AI pricing </tag>
+            <tag> Agent-Security </tag>
             
-            <tag> cost per task </tag>
+            <tag> AI-Pricing </tag>
             
-            <tag> agent skills </tag>
-            
-            <tag> agent security </tag>
+            <tag> Cost-Per-Task </tag>
             
         </tags>
       
@@ -2126,15 +2323,13 @@
             
             <tag> OPC </tag>
             
-            <tag> Claude Code </tag>
+            <tag> AI-Coding </tag>
             
-            <tag> AI coding </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> solopreneur </tag>
+            <tag> Agent-Infrastructure </tag>
             
-            <tag> voice agents </tag>
-            
-            <tag> agent infrastructure </tag>
+            <tag> Voice-Agents </tag>
             
         </tags>
       
@@ -2163,23 +2358,21 @@
       
         <tags>
             
+            <tag> One-Person-Company </tag>
+            
+            <tag> AI-Startup </tag>
+            
+            <tag> AI-Agents </tag>
+            
+            <tag> Product-Hunt </tag>
+            
             <tag> MCP </tag>
             
-            <tag> solopreneur </tag>
+            <tag> Agent-Memory </tag>
             
-            <tag> AI agents </tag>
+            <tag> Human-In-The-Loop </tag>
             
-            <tag> one person company </tag>
-            
-            <tag> Product Hunt </tag>
-            
-            <tag> AI startup </tag>
-            
-            <tag> agent integration </tag>
-            
-            <tag> agent memory </tag>
-            
-            <tag> human-in-the-loop </tag>
+            <tag> Agent-Integration </tag>
             
         </tags>
       
@@ -2208,21 +2401,19 @@
       
         <tags>
             
+            <tag> One-Person-Company </tag>
+            
+            <tag> AI-Startup </tag>
+            
+            <tag> AI-Agents </tag>
+            
+            <tag> Product-Hunt </tag>
+            
+            <tag> Claude-Code </tag>
+            
             <tag> YC </tag>
             
-            <tag> Claude Code </tag>
-            
-            <tag> solopreneur </tag>
-            
-            <tag> AI agents </tag>
-            
-            <tag> one person company </tag>
-            
-            <tag> Product Hunt </tag>
-            
-            <tag> AI startup </tag>
-            
-            <tag> API pricing </tag>
+            <tag> API-Pricing </tag>
             
         </tags>
       
@@ -2253,21 +2444,17 @@
       
         <tags>
             
-            <tag> Claude Code </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> vibe coding </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> solopreneur </tag>
+            <tag> Solo-Founder </tag>
             
-            <tag> AI agents </tag>
+            <tag> Vibe-Coding </tag>
             
-            <tag> one-person company </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> solo founder </tag>
-            
-            <tag> YC W26 </tag>
-            
-            <tag> agent orchestration </tag>
+            <tag> Agent-Orchestration </tag>
             
         </tags>
       
@@ -2298,23 +2485,21 @@
       
         <tags>
             
+            <tag> One-Person-Company </tag>
+            
+            <tag> AI-Agents </tag>
+            
+            <tag> AI-Coding </tag>
+            
             <tag> MCP </tag>
             
-            <tag> AI coding </tag>
+            <tag> LLM-Pricing </tag>
             
-            <tag> solopreneur </tag>
+            <tag> Gemini-3.8-Flash </tag>
             
-            <tag> AI agents </tag>
+            <tag> Muse-Spark-1.3 </tag>
             
-            <tag> one-person company </tag>
-            
-            <tag> Gemini 3.8 Flash </tag>
-            
-            <tag> Muse Spark 1.3 </tag>
-            
-            <tag> Claude Agent SDK </tag>
-            
-            <tag> LLM pricing </tag>
+            <tag> Claude-Agent-SDK </tag>
             
         </tags>
       
@@ -2339,15 +2524,15 @@
       
         <tags>
             
+            <tag> AI-Agents </tag>
+            
+            <tag> Solo-Founder </tag>
+            
             <tag> MCP </tag>
             
-            <tag> AI agents </tag>
+            <tag> Voice-AI </tag>
             
-            <tag> solo founder </tag>
-            
-            <tag> voice AI </tag>
-            
-            <tag> distribution </tag>
+            <tag> Distribution </tag>
             
         </tags>
       
@@ -2380,23 +2565,23 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> One-Person-Company </tag>
+            
+            <tag> Claude-Code </tag>
+            
+            <tag> Coding-Agents </tag>
+            
+            <tag> Voice-Agents </tag>
+            
+            <tag> Local-Inference </tag>
+            
+            <tag> Agent-Security </tag>
+            
             <tag> Pricing </tag>
             
-            <tag> One Person Company </tag>
+            <tag> Prompt-Caching </tag>
             
-            <tag> Claude Code </tag>
-            
-            <tag> AI Cost </tag>
-            
-            <tag> Voice Agents </tag>
-            
-            <tag> Coding Agents </tag>
-            
-            <tag> Prompt Caching </tag>
-            
-            <tag> Agent Security </tag>
-            
-            <tag> Local Inference </tag>
+            <tag> AI-Cost </tag>
             
         </tags>
       
@@ -2429,19 +2614,19 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Agent </tag>
+            
+            <tag> One-Person-Company </tag>
+            
+            <tag> Claude-Code </tag>
+            
             <tag> YC </tag>
             
+            <tag> Agent-Payments </tag>
+            
+            <tag> Open-Weights </tag>
+            
             <tag> Self-Hosting </tag>
-            
-            <tag> One Person Company </tag>
-            
-            <tag> AI Agent </tag>
-            
-            <tag> Open Weights </tag>
-            
-            <tag> Claude Code </tag>
-            
-            <tag> Agent Payments </tag>
             
             <tag> Stablecoin </tag>
             
@@ -2474,21 +2659,19 @@
       
         <tags>
             
+            <tag> One-Person-Company </tag>
+            
+            <tag> AI-Agents </tag>
+            
+            <tag> Product-Hunt </tag>
+            
+            <tag> Vibe-Coding </tag>
+            
+            <tag> Claude-Code </tag>
+            
             <tag> YC </tag>
             
-            <tag> Claude Code </tag>
-            
-            <tag> vibe coding </tag>
-            
-            <tag> solopreneur </tag>
-            
-            <tag> AI agents </tag>
-            
-            <tag> Product Hunt </tag>
-            
-            <tag> one-person company </tag>
-            
-            <tag> agentic engineering </tag>
+            <tag> Agentic-Engineering </tag>
             
             <tag> Supabase </tag>
             
@@ -2517,15 +2700,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI Agents </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> AI Coding </tag>
+            <tag> Vertical-SaaS </tag>
             
-            <tag> Vertical SaaS </tag>
+            <tag> AI-Coding </tag>
             
-            <tag> Indie Hackers </tag>
+            <tag> Indie-Hackers </tag>
             
-            <tag> Outcome Pricing </tag>
+            <tag> Outcome-Pricing </tag>
             
         </tags>
       
@@ -2556,21 +2739,21 @@
       
         <tags>
             
+            <tag> One-Person-Company </tag>
+            
+            <tag> AI-Agents </tag>
+            
+            <tag> Solo-Founder </tag>
+            
+            <tag> Y-Combinator </tag>
+            
+            <tag> Agent-Infrastructure </tag>
+            
+            <tag> Indie-Hackers </tag>
+            
+            <tag> Model-Routing </tag>
+            
             <tag> Computer-Use </tag>
-            
-            <tag> Model Routing </tag>
-            
-            <tag> AI Agents </tag>
-            
-            <tag> Solo Founder </tag>
-            
-            <tag> Y Combinator </tag>
-            
-            <tag> Agent Infrastructure </tag>
-            
-            <tag> One-Person Company </tag>
-            
-            <tag> Indie Hackers </tag>
             
         </tags>
       
@@ -2599,13 +2782,13 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> AI-Agent </tag>
             
-            <tag> AI Agent </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> Vibe Coding </tag>
+            <tag> Vibe-Coding </tag>
             
-            <tag> Agent Infrastructure </tag>
+            <tag> Agent-Infrastructure </tag>
             
         </tags>
       
@@ -2638,19 +2821,19 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Agents </tag>
+            
+            <tag> Solo-Founder </tag>
+            
             <tag> Bootstrapping </tag>
             
-            <tag> AI Agents </tag>
+            <tag> AI-Coding </tag>
             
-            <tag> AI Coding </tag>
+            <tag> Vertical-AI </tag>
             
-            <tag> Solo Founder </tag>
+            <tag> Agent-Infrastructure </tag>
             
-            <tag> Agent Infrastructure </tag>
-            
-            <tag> Indie Hackers </tag>
-            
-            <tag> Vertical AI </tag>
+            <tag> Indie-Hackers </tag>
             
         </tags>
       
@@ -2677,15 +2860,15 @@
       
         <tags>
             
-            <tag> vibe coding </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> AI agents </tag>
+            <tag> Solo-Founder </tag>
             
-            <tag> solo founder </tag>
+            <tag> Vibe-Coding </tag>
             
-            <tag> agent reliability </tag>
+            <tag> AI-Employee </tag>
             
-            <tag> AI employee </tag>
+            <tag> Agent-Reliability </tag>
             
         </tags>
       
@@ -2716,21 +2899,19 @@
       
         <tags>
             
-            <tag> AI coding </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> solopreneur </tag>
+            <tag> Startup-Trends </tag>
             
-            <tag> AI agents </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> one person company </tag>
+            <tag> AI-Coding </tag>
             
-            <tag> inference cost </tag>
+            <tag> Agent-Orchestration </tag>
             
-            <tag> voice AI </tag>
+            <tag> Inference-Cost </tag>
             
-            <tag> agent orchestration </tag>
-            
-            <tag> startup trends </tag>
+            <tag> Voice-AI </tag>
             
         </tags>
       
@@ -2763,19 +2944,19 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Agent </tag>
+            
+            <tag> One-Person-Company </tag>
+            
+            <tag> Startup-Trends </tag>
+            
+            <tag> AI-Coding </tag>
+            
+            <tag> Agent-Infrastructure </tag>
+            
+            <tag> Cost-Control </tag>
+            
             <tag> Orchestration </tag>
-            
-            <tag> One Person Company </tag>
-            
-            <tag> AI Agent </tag>
-            
-            <tag> Startup Trends </tag>
-            
-            <tag> AI Coding </tag>
-            
-            <tag> Agent Infrastructure </tag>
-            
-            <tag> Cost Control </tag>
             
         </tags>
       
@@ -2804,13 +2985,13 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> AI Startup </tag>
+            <tag> Independent-Developer </tag>
             
-            <tag> Independent Developer </tag>
+            <tag> AI-Startup </tag>
             
-            <tag> AI Coding Agent </tag>
+            <tag> AI-Coding-Agent </tag>
             
         </tags>
       
@@ -2841,21 +3022,21 @@
       
         <tags>
             
-            <tag> Claude Code </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> AI Agents </tag>
+            <tag> Micro-SaaS </tag>
             
-            <tag> Solo Founder </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> Y Combinator </tag>
+            <tag> Solo-Founder </tag>
             
-            <tag> Agent Infrastructure </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> Micro SaaS </tag>
+            <tag> Y-Combinator </tag>
             
-            <tag> One-Person Company </tag>
+            <tag> Agent-Infrastructure </tag>
             
-            <tag> LLM Pricing </tag>
+            <tag> LLM-Pricing </tag>
             
         </tags>
       
@@ -2888,19 +3069,19 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> One-Person-Company </tag>
+            
+            <tag> Vibe-Coding </tag>
+            
+            <tag> Claude-Code </tag>
+            
+            <tag> Agent-Observability </tag>
+            
             <tag> Multi-Agent </tag>
             
-            <tag> One Person Company </tag>
+            <tag> AI-Agent-Governance </tag>
             
-            <tag> Claude Code </tag>
-            
-            <tag> Vibe Coding </tag>
-            
-            <tag> Agent Observability </tag>
-            
-            <tag> AI Agent Governance </tag>
-            
-            <tag> Startup Opportunities </tag>
+            <tag> Startup-Opportunities </tag>
             
         </tags>
       
@@ -2933,23 +3114,23 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> Claude Code </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> Voice Agents </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> AI Agents </tag>
+            <tag> AI-Employees </tag>
             
-            <tag> OpenAI Codex </tag>
+            <tag> Coding-Agents </tag>
             
-            <tag> AI Employees </tag>
+            <tag> Voice-Agents </tag>
             
-            <tag> YC S26 </tag>
+            <tag> Openai-Codex </tag>
             
-            <tag> Agent Experience </tag>
+            <tag> YC-S26 </tag>
             
-            <tag> Coding Agents </tag>
+            <tag> Agent-Experience </tag>
             
         </tags>
       
@@ -2982,19 +3163,19 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> One-Person-Company </tag>
+            
+            <tag> Startup-Trends </tag>
+            
             <tag> Micro-SaaS </tag>
             
-            <tag> One Person Company </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> Agent Orchestration </tag>
+            <tag> AI-Coding </tag>
             
-            <tag> Startup Trends </tag>
+            <tag> Y-Combinator </tag>
             
-            <tag> AI Agents </tag>
-            
-            <tag> AI Coding </tag>
-            
-            <tag> Y Combinator </tag>
+            <tag> Agent-Orchestration </tag>
             
         </tags>
       
@@ -3021,19 +3202,19 @@
       
         <tags>
             
+            <tag> AI-Agents </tag>
+            
+            <tag> Solo-Founder </tag>
+            
+            <tag> AI-Coding </tag>
+            
             <tag> GEO </tag>
             
-            <tag> AI coding </tag>
+            <tag> Open-Weights </tag>
             
-            <tag> AI agents </tag>
+            <tag> Voice-AI </tag>
             
-            <tag> solo founder </tag>
-            
-            <tag> open weights </tag>
-            
-            <tag> voice AI </tag>
-            
-            <tag> YC P26 </tag>
+            <tag> YC-P26 </tag>
             
         </tags>
       
@@ -3066,23 +3247,23 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Agents </tag>
+            
+            <tag> Claude-Code </tag>
+            
+            <tag> Agent-Infrastructure </tag>
+            
+            <tag> Indie-Hackers </tag>
+            
+            <tag> Model-Routing </tag>
+            
+            <tag> Token-Economics </tag>
+            
             <tag> Distribution </tag>
             
             <tag> AEO </tag>
             
-            <tag> Token Economics </tag>
-            
-            <tag> Claude Code </tag>
-            
-            <tag> Model Routing </tag>
-            
-            <tag> FinOps </tag>
-            
-            <tag> AI Agents </tag>
-            
-            <tag> Agent Infrastructure </tag>
-            
-            <tag> Indie Hackers </tag>
+            <tag> Finops </tag>
             
         </tags>
       
@@ -3117,21 +3298,19 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Agent </tag>
+            
+            <tag> One-Person-Company </tag>
+            
             <tag> Cursor </tag>
             
-            <tag> AI Agent </tag>
+            <tag> Indie-Hacker </tag>
             
-            <tag> Claude Code </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> Indie Hacker </tag>
+            <tag> AI-CEO </tag>
             
-            <tag> Agent OS </tag>
-            
-            <tag> YC W26 </tag>
-            
-            <tag> AI CEO </tag>
-            
-            <tag> One-Person Company </tag>
+            <tag> Agent-OS </tag>
             
         </tags>
       
@@ -3164,21 +3343,21 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> One-Person-Company </tag>
+            
+            <tag> AI-Agents </tag>
+            
             <tag> OpenClaw </tag>
             
             <tag> Startup </tag>
             
+            <tag> AI-Coding </tag>
+            
+            <tag> Claude-Code </tag>
+            
+            <tag> Agent-Verification </tag>
+            
             <tag> Observability </tag>
-            
-            <tag> One Person Company </tag>
-            
-            <tag> Claude Code </tag>
-            
-            <tag> AI Agents </tag>
-            
-            <tag> AI Coding </tag>
-            
-            <tag> Agent Verification </tag>
             
             <tag> Eval </tag>
             
@@ -3213,19 +3392,19 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> Micro-SaaS </tag>
+            
+            <tag> Agent-Skills </tag>
+            
+            <tag> Agent-Harness </tag>
+            
             <tag> Pricing </tag>
+            
+            <tag> Generative-Engine-Optimization </tag>
             
             <tag> BYOK </tag>
             
-            <tag> Agent Harness </tag>
-            
-            <tag> Generative Engine Optimization </tag>
-            
-            <tag> Micro SaaS </tag>
-            
-            <tag> AI Retention </tag>
-            
-            <tag> Agent Skills </tag>
+            <tag> AI-Retention </tag>
             
         </tags>
       
@@ -3258,19 +3437,19 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> Claude Code </tag>
+            <tag> Startup-Trends </tag>
             
-            <tag> Startup Trends </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> AI Agents </tag>
+            <tag> Vibe-Coding </tag>
             
-            <tag> Vibe Coding </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> Y Combinator </tag>
+            <tag> Y-Combinator </tag>
             
-            <tag> Agent Infrastructure </tag>
+            <tag> Agent-Infrastructure </tag>
             
         </tags>
       
@@ -3299,25 +3478,23 @@
       
         <tags>
             
+            <tag> AI-Agents </tag>
+            
+            <tag> Y-Combinator </tag>
+            
+            <tag> Agent-Infrastructure </tag>
+            
             <tag> Stripe </tag>
             
-            <tag> solopreneur </tag>
+            <tag> Coding-Agents </tag>
             
-            <tag> AI agents </tag>
+            <tag> Indie-Hackers </tag>
             
-            <tag> Y Combinator </tag>
+            <tag> Local-First </tag>
             
-            <tag> coding agents </tag>
+            <tag> Openai </tag>
             
-            <tag> indie hackers </tag>
-            
-            <tag> agent infrastructure </tag>
-            
-            <tag> OpenAI </tag>
-            
-            <tag> LLM routing </tag>
-            
-            <tag> local-first </tag>
+            <tag> LLM-Routing </tag>
             
         </tags>
       
@@ -3348,19 +3525,17 @@
       
         <tags>
             
-            <tag> solopreneur </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> AI agents </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> one-person company </tag>
+            <tag> AI-Stack </tag>
             
-            <tag> outcome pricing </tag>
+            <tag> Outcome-Pricing </tag>
             
-            <tag> AI stack </tag>
+            <tag> Personal-Agents </tag>
             
-            <tag> growth agents </tag>
-            
-            <tag> personal agents </tag>
+            <tag> Growth-Agents </tag>
             
         </tags>
       
@@ -3387,15 +3562,15 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Agents </tag>
+            
             <tag> GEO </tag>
             
-            <tag> Model Routing </tag>
+            <tag> Agentic-Commerce </tag>
             
-            <tag> AI Agents </tag>
+            <tag> Model-Routing </tag>
             
-            <tag> Code Review </tag>
-            
-            <tag> Agentic Commerce </tag>
+            <tag> Code-Review </tag>
             
         </tags>
       
@@ -3670,21 +3845,21 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Agent </tag>
+            
+            <tag> One-Person-Company </tag>
+            
+            <tag> AI-Startup </tag>
+            
+            <tag> Solo-Founder </tag>
+            
             <tag> Local-First </tag>
             
-            <tag> One Person Company </tag>
+            <tag> Agent-Governance </tag>
             
-            <tag> AI Agent </tag>
-            
-            <tag> AI Startup </tag>
-            
-            <tag> Solo Founder </tag>
-            
-            <tag> Company OS </tag>
+            <tag> Company-OS </tag>
             
             <tag> Self-Hosted </tag>
-            
-            <tag> Agent Governance </tag>
             
         </tags>
       
@@ -3719,21 +3894,21 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Agent </tag>
+            
+            <tag> One-Person-Company </tag>
+            
             <tag> Cursor </tag>
             
-            <tag> One Person Company </tag>
+            <tag> AI-Startup </tag>
             
-            <tag> AI Agent </tag>
+            <tag> Solo-Founder </tag>
             
-            <tag> Claude Code </tag>
+            <tag> AI-Coding </tag>
             
-            <tag> AI Startup </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> AI Coding </tag>
-            
-            <tag> Solo Founder </tag>
-            
-            <tag> Agentic OS </tag>
+            <tag> Agentic-OS </tag>
             
         </tags>
       
@@ -3766,23 +3941,21 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> One-Person-Company </tag>
+            
             <tag> Cursor </tag>
+            
+            <tag> AI-Agents </tag>
+            
+            <tag> Claude-Code </tag>
+            
+            <tag> Context-Engineering </tag>
+            
+            <tag> X402 </tag>
             
             <tag> Cloudflare </tag>
             
-            <tag> One Person Company </tag>
-            
-            <tag> Claude Code </tag>
-            
-            <tag> AI Agents </tag>
-            
-            <tag> Context Engineering </tag>
-            
-            <tag> Agentic Web </tag>
-            
-            <tag> x402 </tag>
-            
-            <tag> YC W26 </tag>
+            <tag> Agentic-Web </tag>
             
         </tags>
       
@@ -3809,17 +3982,17 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Agent </tag>
+            
+            <tag> One-Person-Company </tag>
+            
+            <tag> Independent-Developer </tag>
+            
             <tag> MCP </tag>
             
-            <tag> One Person Company </tag>
+            <tag> Bootstrapped-SaaS </tag>
             
-            <tag> AI Agent </tag>
-            
-            <tag> Independent Developer </tag>
-            
-            <tag> Agent OS </tag>
-            
-            <tag> Bootstrapped SaaS </tag>
+            <tag> Agent-OS </tag>
             
         </tags>
       
@@ -3848,15 +4021,15 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Agent </tag>
+            
+            <tag> One-Person-Company </tag>
+            
+            <tag> Independent-Developer </tag>
+            
+            <tag> Agentic-Coding </tag>
+            
             <tag> Multi-Agent </tag>
-            
-            <tag> One Person Company </tag>
-            
-            <tag> AI Agent </tag>
-            
-            <tag> Agentic Coding </tag>
-            
-            <tag> Independent Developer </tag>
             
         </tags>
       
@@ -3881,19 +4054,17 @@
       
         <tags>
             
-            <tag> solopreneur </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> AI agents </tag>
+            <tag> Vertical-SaaS </tag>
             
-            <tag> coding agents </tag>
+            <tag> Coding-Agents </tag>
             
-            <tag> indie hackers </tag>
+            <tag> Open-Weights </tag>
             
-            <tag> open weights </tag>
+            <tag> Indie-Hackers </tag>
             
-            <tag> agent governance </tag>
-            
-            <tag> vertical SaaS </tag>
+            <tag> Agent-Governance </tag>
             
         </tags>
       
@@ -3918,19 +4089,17 @@
       
         <tags>
             
+            <tag> AI-Agents </tag>
+            
+            <tag> Claude-Code </tag>
+            
             <tag> YC </tag>
             
-            <tag> Claude Code </tag>
+            <tag> Coding-Agents </tag>
             
-            <tag> solopreneur </tag>
+            <tag> Agent-Observability </tag>
             
-            <tag> AI agents </tag>
-            
-            <tag> coding agents </tag>
-            
-            <tag> agent observability </tag>
-            
-            <tag> open-source LLM </tag>
+            <tag> Open-Source-LLM </tag>
             
         </tags>
       
@@ -3959,15 +4128,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> AI-Agent </tag>
             
-            <tag> AI Agent </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> Claude Code </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> Agent Stack </tag>
+            <tag> Agent-Stack </tag>
             
-            <tag> Token Pricing </tag>
+            <tag> Token-Pricing </tag>
             
         </tags>
       
@@ -3996,15 +4165,13 @@
             
             <tag> MCP </tag>
             
-            <tag> solopreneur </tag>
+            <tag> Agent-Harness </tag>
             
-            <tag> agent harness </tag>
+            <tag> Model-Routing </tag>
             
-            <tag> model routing </tag>
+            <tag> Content-Provenance </tag>
             
-            <tag> agent reliability </tag>
-            
-            <tag> content provenance </tag>
+            <tag> Agent-Reliability </tag>
             
         </tags>
       
@@ -4031,17 +4198,17 @@
       
         <tags>
             
+            <tag> Micro-SaaS </tag>
+            
+            <tag> AI-Agents </tag>
+            
+            <tag> Solo-Founder </tag>
+            
             <tag> GEO </tag>
             
-            <tag> AI agents </tag>
+            <tag> Coding-Agents </tag>
             
-            <tag> solo founder </tag>
-            
-            <tag> coding agents </tag>
-            
-            <tag> voice agents </tag>
-            
-            <tag> micro-SaaS </tag>
+            <tag> Voice-Agents </tag>
             
         </tags>
       
@@ -4070,19 +4237,17 @@
       
         <tags>
             
-            <tag> solopreneur </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> ai-agents </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> claude-code </tag>
+            <tag> Product-Hunt </tag>
             
-            <tag> context-engineering </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> yc </tag>
+            <tag> Context-Engineering </tag>
             
-            <tag> product-hunt </tag>
-            
-            <tag> one-person-company </tag>
+            <tag> YC </tag>
             
         </tags>
       
@@ -4117,17 +4282,17 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Agent </tag>
+            
+            <tag> One-Person-Company </tag>
+            
+            <tag> AI-Coding </tag>
+            
+            <tag> Agent-Harness </tag>
+            
             <tag> Local-First </tag>
             
-            <tag> One Person Company </tag>
-            
-            <tag> AI Agent </tag>
-            
-            <tag> Agent Harness </tag>
-            
-            <tag> AI Coding </tag>
-            
-            <tag> AI-Native Services </tag>
+            <tag> AI-Native-Services </tag>
             
         </tags>
       
@@ -4156,13 +4321,13 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> AI-Agent </tag>
             
-            <tag> AI Agent </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> AI Startup </tag>
+            <tag> AI-Startup </tag>
             
-            <tag> Coding Agent </tag>
+            <tag> Coding-Agent </tag>
             
         </tags>
       
@@ -4193,21 +4358,19 @@
       
         <tags>
             
+            <tag> One-Person-Company </tag>
+            
+            <tag> AI-Startup </tag>
+            
+            <tag> Claude-Code </tag>
+            
             <tag> YC </tag>
             
-            <tag> Claude Code </tag>
+            <tag> AI-Coding-Agents </tag>
             
-            <tag> solopreneur </tag>
+            <tag> Agent-Native </tag>
             
-            <tag> AI coding agents </tag>
-            
-            <tag> one-person company </tag>
-            
-            <tag> Muse Code </tag>
-            
-            <tag> agent-native </tag>
-            
-            <tag> AI startup </tag>
+            <tag> Muse-Code </tag>
             
         </tags>
       
@@ -4242,17 +4405,17 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> Agent Orchestration </tag>
+            <tag> Bootstrapped-Startup </tag>
             
-            <tag> Vertical SaaS </tag>
+            <tag> Vertical-SaaS </tag>
             
-            <tag> AI Coding Agent </tag>
+            <tag> Agent-Orchestration </tag>
             
-            <tag> Muse Code </tag>
+            <tag> AI-Coding-Agent </tag>
             
-            <tag> Bootstrapped Startup </tag>
+            <tag> Muse-Code </tag>
             
         </tags>
       
@@ -4279,15 +4442,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> Agent Orchestration </tag>
+            <tag> Independent-Developer </tag>
             
-            <tag> AI Startup </tag>
+            <tag> AI-Startup </tag>
             
-            <tag> Independent Developer </tag>
+            <tag> Agent-Orchestration </tag>
             
-            <tag> AI Coding Agent </tag>
+            <tag> AI-Coding-Agent </tag>
             
         </tags>
       
@@ -4322,11 +4485,11 @@
             
             <tag> Observability </tag>
             
-            <tag> SoloFounder </tag>
+            <tag> Solofounder </tag>
             
-            <tag> AIAgents </tag>
+            <tag> Aiagents </tag>
             
-            <tag> AgenticIDE </tag>
+            <tag> Agenticide </tag>
             
         </tags>
       
@@ -4353,17 +4516,17 @@
       
         <tags>
             
+            <tag> Solo-Founder </tag>
+            
             <tag> MCP </tag>
             
-            <tag> Model Routing </tag>
+            <tag> Model-Routing </tag>
             
-            <tag> Solo Founder </tag>
+            <tag> Generative-Engine-Optimization </tag>
             
-            <tag> AI Pricing </tag>
+            <tag> AI-Pricing </tag>
             
-            <tag> Generative Engine Optimization </tag>
-            
-            <tag> Persistent Agents </tag>
+            <tag> Persistent-Agents </tag>
             
         </tags>
       
@@ -4388,17 +4551,17 @@
       
         <tags>
             
-            <tag> Agentic Coding </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> AI Agents </tag>
+            <tag> Solo-Founder </tag>
             
-            <tag> Solo Founder </tag>
+            <tag> Product-Hunt </tag>
             
-            <tag> Agent Observability </tag>
+            <tag> Y-Combinator </tag>
             
-            <tag> Product Hunt </tag>
+            <tag> Agentic-Coding </tag>
             
-            <tag> Y Combinator </tag>
+            <tag> Agent-Observability </tag>
             
         </tags>
       
@@ -4425,17 +4588,17 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> AI-Agent </tag>
             
-            <tag> AI Agent </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> Agent Orchestration </tag>
+            <tag> AI-Coding </tag>
             
-            <tag> AI Coding </tag>
+            <tag> Y-Combinator </tag>
             
-            <tag> Y Combinator </tag>
+            <tag> Agent-Orchestration </tag>
             
-            <tag> Agent Insurance </tag>
+            <tag> Agent-Insurance </tag>
             
         </tags>
       
@@ -6002,13 +6165,13 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Coding </tag>
+            
             <tag> GEO </tag>
             
-            <tag> Agent Orchestration </tag>
+            <tag> Vibe-Coding </tag>
             
-            <tag> Vibe Coding </tag>
-            
-            <tag> AI Coding </tag>
+            <tag> Agent-Orchestration </tag>
             
         </tags>
       
@@ -6035,17 +6198,17 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Agent </tag>
+            
+            <tag> One-Person-Company </tag>
+            
+            <tag> Independent-Developer </tag>
+            
+            <tag> AI-Coding </tag>
+            
+            <tag> Claude-Code </tag>
+            
             <tag> MCP </tag>
-            
-            <tag> One Person Company </tag>
-            
-            <tag> AI Agent </tag>
-            
-            <tag> Claude Code </tag>
-            
-            <tag> AI Coding </tag>
-            
-            <tag> Independent Developer </tag>
             
         </tags>
       
@@ -6076,21 +6239,19 @@
       
         <tags>
             
+            <tag> One-Person-Company </tag>
+            
+            <tag> AI-Agents </tag>
+            
+            <tag> AI-Coding </tag>
+            
+            <tag> Claude-Code </tag>
+            
             <tag> MCP </tag>
             
-            <tag> Claude Code </tag>
+            <tag> Developer-Tools </tag>
             
-            <tag> AI coding </tag>
-            
-            <tag> solopreneur </tag>
-            
-            <tag> AI agents </tag>
-            
-            <tag> one person company </tag>
-            
-            <tag> solo SaaS </tag>
-            
-            <tag> developer tools </tag>
+            <tag> Solo-SaaS </tag>
             
         </tags>
       
@@ -6121,21 +6282,21 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> One-Person-Company </tag>
+            
             <tag> Cursor </tag>
             
-            <tag> One Person Company </tag>
+            <tag> Indie-Hacker </tag>
             
-            <tag> Agent Orchestration </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> Claude Code </tag>
+            <tag> Vertical-SaaS </tag>
             
-            <tag> Indie Hacker </tag>
+            <tag> AI-Coding </tag>
             
-            <tag> AI Agents </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> AI Coding </tag>
-            
-            <tag> Vertical SaaS </tag>
+            <tag> Agent-Orchestration </tag>
             
         </tags>
       
@@ -6166,19 +6327,19 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> One-Person-Company </tag>
+            
             <tag> MCP </tag>
             
-            <tag> One Person Company </tag>
+            <tag> Context-Engineering </tag>
             
-            <tag> Computer Use </tag>
-            
-            <tag> Context Engineering </tag>
-            
-            <tag> Browser Agents </tag>
+            <tag> Computer-Use </tag>
             
             <tag> Stagehand </tag>
             
-            <tag> Claude Code Sub-Agents </tag>
+            <tag> Claude-Code-Sub-Agents </tag>
+            
+            <tag> Browser-Agents </tag>
             
         </tags>
       
@@ -6209,7 +6370,11 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> One-Person-Company </tag>
+            
             <tag> n8n </tag>
+            
+            <tag> Agent-Memory </tag>
             
             <tag> Anti-Slop </tag>
             
@@ -6217,11 +6382,7 @@
             
             <tag> Unsloth </tag>
             
-            <tag> One Person Company </tag>
-            
-            <tag> Local Fine-Tuning </tag>
-            
-            <tag> Agent Memory </tag>
+            <tag> Local-Fine-Tuning </tag>
             
         </tags>
       
@@ -6252,19 +6413,19 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> One-Person-Company </tag>
+            
             <tag> Lovable </tag>
             
-            <tag> One Person Company </tag>
+            <tag> Vibe-Coding </tag>
             
             <tag> Cognition </tag>
             
-            <tag> vibe coding </tag>
+            <tag> Openai-Ultrafast </tag>
             
-            <tag> OpenAI Ultrafast </tag>
+            <tag> Anthropic-Watermark </tag>
             
-            <tag> Anthropic watermark </tag>
-            
-            <tag> AI FinOps </tag>
+            <tag> AI-Finops </tag>
             
         </tags>
       
@@ -6295,19 +6456,19 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> One-Person-Company </tag>
+            
             <tag> MCP </tag>
             
-            <tag> One Person Company </tag>
+            <tag> Voice-Agents </tag>
             
-            <tag> Voice Agents </tag>
+            <tag> Openai-Realtime </tag>
             
-            <tag> AI Verification </tag>
-            
-            <tag> OpenAI Realtime </tag>
+            <tag> AI-Verification </tag>
             
             <tag> Blacksmith </tag>
             
-            <tag> Agent UI </tag>
+            <tag> Agent-UI </tag>
             
         </tags>
       
@@ -6334,19 +6495,19 @@
       
         <tags>
             
+            <tag> Solo-Founder </tag>
+            
             <tag> GEO </tag>
             
-            <tag> open-weight </tag>
+            <tag> Inference-Cost </tag>
             
-            <tag> self-hosting </tag>
+            <tag> Self-Hosting </tag>
             
-            <tag> solo-founder </tag>
+            <tag> Qwen </tag>
             
-            <tag> qwen </tag>
+            <tag> GLM </tag>
             
-            <tag> glm </tag>
-            
-            <tag> inference-cost </tag>
+            <tag> Open-Weight </tag>
             
         </tags>
       
@@ -6373,15 +6534,15 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> Agent-Harness </tag>
+            
+            <tag> Token-Economics </tag>
+            
             <tag> Distribution </tag>
             
-            <tag> Token Economics </tag>
+            <tag> Indie-Dev </tag>
             
-            <tag> Indie Dev </tag>
-            
-            <tag> Agent Harness </tag>
-            
-            <tag> Agent QA </tag>
+            <tag> Agent-QA </tag>
             
         </tags>
       
@@ -6408,17 +6569,17 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Agent </tag>
+            
+            <tag> Vibe-Coding </tag>
+            
+            <tag> Claude-Code </tag>
+            
+            <tag> Agent-Orchestration </tag>
+            
             <tag> Codex </tag>
             
-            <tag> AI Agent </tag>
-            
-            <tag> Agent Orchestration </tag>
-            
-            <tag> Claude Code </tag>
-            
-            <tag> Vibe Coding </tag>
-            
-            <tag> Indie Dev </tag>
+            <tag> Indie-Dev </tag>
             
         </tags>
       
@@ -6447,15 +6608,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> AI-Agent </tag>
             
-            <tag> AI Agent </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> Indie Hacker </tag>
+            <tag> Indie-Hacker </tag>
             
-            <tag> AI Startup </tag>
+            <tag> AI-Startup </tag>
             
-            <tag> Coding Agent </tag>
+            <tag> Coding-Agent </tag>
             
         </tags>
       
@@ -6570,19 +6731,19 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> Agentic Coding </tag>
+            <tag> Indie-Hacker </tag>
             
-            <tag> Claude Code </tag>
+            <tag> AI-Startup </tag>
             
-            <tag> Indie Hacker </tag>
+            <tag> AI-Agents </tag>
             
-            <tag> AI Agents </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> OpenAI Codex </tag>
+            <tag> Agentic-Coding </tag>
             
-            <tag> AI Startup </tag>
+            <tag> Openai-Codex </tag>
             
         </tags>
       
@@ -6648,19 +6809,19 @@
             
             <tag> Solopreneur </tag>
             
+            <tag> AI-Agent </tag>
+            
+            <tag> Indie-Hacker </tag>
+            
             <tag> Lovable </tag>
             
-            <tag> AI Agent </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> Claude Code </tag>
+            <tag> Agent-Payments </tag>
             
-            <tag> Voice AI </tag>
-            
-            <tag> Agent Payments </tag>
+            <tag> Voice-AI </tag>
             
             <tag> Dify </tag>
-            
-            <tag> Indie Hacker </tag>
             
         </tags>
       
@@ -6728,19 +6889,19 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> Voice Agents </tag>
+            <tag> AI-Entrepreneurship </tag>
             
-            <tag> Agent-to-Agent </tag>
+            <tag> Voice-Agents </tag>
             
-            <tag> xAI Voice Agent Builder </tag>
+            <tag> Computer-Use </tag>
+            
+            <tag> Agent-To-Agent </tag>
+            
+            <tag> Xai-Voice-Agent-Builder </tag>
             
             <tag> Telnyx </tag>
-            
-            <tag> Computer Use </tag>
-            
-            <tag> AI Entrepreneurship </tag>
             
         </tags>
       
@@ -6773,19 +6934,19 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> Token Economics </tag>
+            <tag> Model-Routing </tag>
             
-            <tag> Model Routing </tag>
+            <tag> Token-Economics </tag>
             
-            <tag> Gemini 3.7 Flash </tag>
+            <tag> Gemini-3.7-Flash </tag>
             
-            <tag> AI Cost </tag>
+            <tag> AI-Cost </tag>
             
-            <tag> Agent Architecture </tag>
+            <tag> Agent-Architecture </tag>
             
-            <tag> FinOps </tag>
+            <tag> Finops </tag>
             
         </tags>
       
@@ -6818,21 +6979,21 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> AI-Agent </tag>
             
-            <tag> AI Agent </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> Agent Orchestration </tag>
+            <tag> Startup-Trends </tag>
             
-            <tag> Claude Code </tag>
+            <tag> Claude-Code </tag>
             
-            <tag> LiteLLM </tag>
+            <tag> Agent-Orchestration </tag>
             
-            <tag> Local LLM </tag>
+            <tag> Local-LLM </tag>
             
-            <tag> Voice Agent </tag>
+            <tag> Voice-Agent </tag>
             
-            <tag> Startup Trends </tag>
+            <tag> Litellm </tag>
             
         </tags>
       
@@ -6865,21 +7026,21 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One Person Company </tag>
+            <tag> AI-Agent </tag>
             
-            <tag> AI Agent </tag>
+            <tag> One-Person-Company </tag>
             
-            <tag> Token Economics </tag>
+            <tag> Agentic-Coding </tag>
             
-            <tag> Agentic Coding </tag>
+            <tag> Open-Weights </tag>
             
-            <tag> Open Weights </tag>
+            <tag> Token-Economics </tag>
+            
+            <tag> Muse-Glimmer </tag>
             
             <tag> GLM-5.3 </tag>
             
-            <tag> Muse Glimmer </tag>
-            
-            <tag> Agent Guardrails </tag>
+            <tag> Agent-Guardrails </tag>
             
         </tags>
       
