@@ -65,17 +65,15 @@
     </author>
     <category term="OPC Trend Report" scheme="https://opcreport.cn/categories/OPC-Trend-Report/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
-    <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
-    <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
-    <category term="Independent-Developer" scheme="https://opcreport.cn/tags/Independent-Developer/"/>
-    <category term="AI-Startup" scheme="https://opcreport.cn/tags/AI-Startup/"/>
-    <category term="Agent-Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
+    <category term="One Person Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
+    <category term="AI Startup" scheme="https://opcreport.cn/tags/AI-Startup/"/>
+    <category term="AI Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
+    <category term="Independent Developer" scheme="https://opcreport.cn/tags/Independent-Developer/"/>
+    <category term="Agent Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
     <id>https://opcreport.cn/opc-report-2026-09-22-1024/</id>
     <link href="https://opcreport.cn/opc-report-2026-09-22-1024/"/>
     <published>2026-09-22T02:24:00.000Z</published>
-    <summary>
-      <![CDATA[<h1 id="From-Code-Writing-Agents-to-Trust-Layer-Agents-Where-Solo-Founders-Should-Point-Their-Stack-Next"><a]]>
-    </summary>
+    <summary>The center of gravity in AI tooling just moved. For the last year the headline was &quot;better agents that write code.&quot; In the last 90 days the money, the products, and the hiring have shifted to a...</summary>
     <title>From Code-Writing Agents to Trust-Layer Agents: Where Solo Founders Should Point Their Stack Next</title>
     <updated>2026-09-22T02:24:00.000Z</updated>
   </entry>
@@ -110,17 +108,15 @@
     <category term="AI Startup Trends" scheme="https://opcreport.cn/categories/AI-Startup-Trends/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
     <category term="Micro-SaaS" scheme="https://opcreport.cn/tags/Micro-SaaS/"/>
-    <category term="AI-Agents" scheme="https://opcreport.cn/tags/AI-Agents/"/>
-    <category term="Product-Hunt" scheme="https://opcreport.cn/tags/Product-Hunt/"/>
-    <category term="AI-Coding" scheme="https://opcreport.cn/tags/AI-Coding/"/>
     <category term="GEO" scheme="https://opcreport.cn/tags/GEO/"/>
-    <category term="Claude-Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
+    <category term="Claude Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
+    <category term="AI Agents" scheme="https://opcreport.cn/tags/AI-Agents/"/>
+    <category term="Product Hunt" scheme="https://opcreport.cn/tags/Product-Hunt/"/>
+    <category term="AI coding" scheme="https://opcreport.cn/tags/AI-coding/"/>
     <id>https://opcreport.cn/opc-report-2026-09-20-1035/</id>
     <link href="https://opcreport.cn/opc-report-2026-09-20-1035/"/>
     <published>2026-09-20T02:35:00.000Z</published>
-    <summary>
-      <![CDATA[<h1 id="Agents-Become-the-Product-Claude-Code-Tops-Solo-Developers-as-AI-Search-Visibility-Opens-a-Solo-Gold-Rush"><a]]>
-    </summary>
+    <summary>Two things moved this week. First, the AI coding market finished its realignment: among individual developers and early-stage startups, Claude Code is now the default primary tool, while Copilot...</summary>
     <title>Agents Become the Product: Claude Code Tops Solo Developers as AI-Search Visibility Opens a Solo Gold Rush</title>
     <updated>2026-09-20T02:35:00.000Z</updated>
   </entry>
@@ -185,9 +181,7 @@
     <id>https://opcreport.cn/opc-report-2026-09-17-0931/</id>
     <link href="https://opcreport.cn/opc-report-2026-09-17-0931/"/>
     <published>2026-09-17T01:31:00.000Z</published>
-    <summary>
-      <![CDATA[<h1 id="Coding-Agents-Go-Self-Driving-as-Builders-Split-the-Stack-on-Cost-and-Safety"><a]]>
-    </summary>
+    <summary>Hourly intelligence briefing for solo developers and indie hackers. This edition: September 17, 2026.</summary>
     <title>Coding Agents Go Self-Driving as Builders Split the Stack on Cost and Safety</title>
     <updated>2026-09-17T01:31:00.000Z</updated>
   </entry>
@@ -200,18 +194,16 @@
     <category term="Agent-Stack" scheme="https://opcreport.cn/categories/AI-Entrepreneurship/Solo-Founder-Trends/Agent-Stack/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
     <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
-    <category term="Micro-SaaS" scheme="https://opcreport.cn/tags/Micro-SaaS/"/>
     <category term="AI-Agents" scheme="https://opcreport.cn/tags/AI-Agents/"/>
-    <category term="LangGraph" scheme="https://opcreport.cn/tags/LangGraph/"/>
     <category term="Vibe-Coding" scheme="https://opcreport.cn/tags/Vibe-Coding/"/>
     <category term="Claude-Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
     <category term="Agent-Orchestration" scheme="https://opcreport.cn/tags/Agent-Orchestration/"/>
+    <category term="Micro-Saas" scheme="https://opcreport.cn/tags/Micro-Saas/"/>
+    <category term="Langgraph" scheme="https://opcreport.cn/tags/Langgraph/"/>
     <id>https://opcreport.cn/opc-report-2026-09-16-1700/</id>
     <link href="https://opcreport.cn/opc-report-2026-09-16-1700/"/>
     <published>2026-09-16T09:00:00.000Z</published>
-    <summary>
-      <![CDATA[<h1 id="AI-Coding-Now-Writes-Its-Own-Code-How-Solo-Founders-Run-a-3K–-12K-Agent-Stack-Instead-of-a-100K-Monthly-Team"><a href="#AI-Coding-Now-Writes-Its-Own-Code-How-Solo-Founders-Run-a-3K–-12K-Agent-Stack-Instead-of-a-100K-Monthly-Team" class="headerlink" title="AI Coding Now Writes Its Own Code: How Solo Founders Run a $3K–$12K Agent Stack Instead of a $100K Monthly Team"></a>AI Coding Now Writes Its Own Code: How Solo Founders Run a $3K–$12K Agent Stack Instead of a $100K Monthly Team</h1><p><strong>Generated: September 16, 2026 — 17:00 (UTC+8)</strong></p>]]>
-    </summary>
+    <summary>The agent orchestration stack has finally settled. Through the second half of 2025 and into 2026, the framework churn — a new &quot;you must use this&quot; every month — ended.</summary>
     <title>AI Coding Now Writes Its Own Code: How Solo Founders Run a $3K–$12K Agent Stack Instead of a $100K Monthly Team</title>
     <updated>2026-09-16T09:00:00.000Z</updated>
   </entry>
@@ -223,15 +215,13 @@
     <category term="OPC" scheme="https://opcreport.cn/tags/OPC/"/>
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
     <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
-    <category term="GEO" scheme="https://opcreport.cn/tags/GEO/"/>
     <category term="Indie-Hackers" scheme="https://opcreport.cn/tags/Indie-Hackers/"/>
     <category term="Coding-Agent" scheme="https://opcreport.cn/tags/Coding-Agent/"/>
+    <category term="Geo" scheme="https://opcreport.cn/tags/Geo/"/>
     <id>https://opcreport.cn/opc-report-2026-09-16-1603/</id>
     <link href="https://opcreport.cn/opc-report-2026-09-16-1603/"/>
     <published>2026-09-16T08:03:00.000Z</published>
-    <summary>
-      <![CDATA[<h1 id="Coding-Agents-Now-Write-Their-Own-Code-and-GEO-Is-the-New-Landing-Page-Where-Solo-Founders-Should-Point-Their-Stack-This-Week"><a]]>
-    </summary>
+    <summary>The leverage for one-person companies is shifting from &quot;can you use AI to write code&quot; to &quot;can you let an AI agent run an entire workflow autonomously and can you get cited inside AI search.&quot; Two hard...</summary>
     <title>Coding Agents Now Write Their Own Code and GEO Is the New Landing Page: Where Solo Founders Should Point Their Stack This Week</title>
     <updated>2026-09-16T08:03:00.000Z</updated>
   </entry>
@@ -312,15 +302,15 @@
     <category term="Solopreneur" scheme="https://opcreport.cn/categories/AI-Startup-Trends/Solopreneur/"/>
     <category term="AI-Agents" scheme="https://opcreport.cn/tags/AI-Agents/"/>
     <category term="Solo-Founder" scheme="https://opcreport.cn/tags/Solo-Founder/"/>
-    <category term="MCP" scheme="https://opcreport.cn/tags/MCP/"/>
     <category term="Coding-Agents" scheme="https://opcreport.cn/tags/Coding-Agents/"/>
     <category term="YC-S26" scheme="https://opcreport.cn/tags/YC-S26/"/>
     <category term="Agent-Reliability" scheme="https://opcreport.cn/tags/Agent-Reliability/"/>
+    <category term="Mcp" scheme="https://opcreport.cn/tags/Mcp/"/>
     <id>https://opcreport.cn/opc-report-2026-09-16-0630/</id>
     <link href="https://opcreport.cn/opc-report-2026-09-16-0630/"/>
     <published>2026-09-15T22:30:00.000Z</published>
     <summary>
-      <![CDATA[<h1 id="The-Agent-Reliability-Layer-Is-the-New-Wedge—and-Solo-Builders-Are-Early"><a]]>
+      <![CDATA[OPC One-Person Company AI Trend Report · for indie hackers & solopreneurs Window scanned: 2026-09-02 → 09-15 · Generated 2026-09-16 06:30 (Asia/Shanghai)]]>
     </summary>
     <title>The Agent Reliability Layer Is the New Wedge—and Solo Builders Are Early</title>
     <updated>2026-09-15T22:30:00.000Z</updated>
@@ -338,14 +328,12 @@
     <category term="Openai-Codex" scheme="https://opcreport.cn/tags/Openai-Codex/"/>
     <category term="Agent-Runtime" scheme="https://opcreport.cn/tags/Agent-Runtime/"/>
     <category term="Local-First" scheme="https://opcreport.cn/tags/Local-First/"/>
-    <category term="Personal-AGI" scheme="https://opcreport.cn/tags/Personal-AGI/"/>
     <category term="Herdr" scheme="https://opcreport.cn/tags/Herdr/"/>
+    <category term="Personal-Agi" scheme="https://opcreport.cn/tags/Personal-Agi/"/>
     <id>https://opcreport.cn/opc-report-2026-09-14-1238/</id>
     <link href="https://opcreport.cn/opc-report-2026-09-14-1238/"/>
     <published>2026-09-14T04:38:00.000Z</published>
-    <summary>
-      <![CDATA[<h1 id="One-Person-AI-Stacks-Are-Converging-on-Owned-Memory-and-Agents-That-Don’t-Sleep"><a]]>
-    </summary>
+    <summary>The solo-founder stack is crystallizing around two owned assets: (1) a persistent agent runtime that keeps coding agents alive after you close the laptop or drop the SSH connection, and (2) a...</summary>
     <title>One-Person AI Stacks Are Converging on Owned Memory and Agents That Don't Sleep</title>
     <updated>2026-09-14T04:38:00.000Z</updated>
   </entry>
@@ -357,17 +345,15 @@
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
     <category term="AI-Agent" scheme="https://opcreport.cn/tags/AI-Agent/"/>
     <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
-    <category term="Micro-SaaS" scheme="https://opcreport.cn/tags/Micro-SaaS/"/>
     <category term="Claude-Code" scheme="https://opcreport.cn/tags/Claude-Code/"/>
     <category term="Agent-Infrastructure" scheme="https://opcreport.cn/tags/Agent-Infrastructure/"/>
     <category term="AI-Native-Services" scheme="https://opcreport.cn/tags/AI-Native-Services/"/>
     <category term="YC-2026" scheme="https://opcreport.cn/tags/YC-2026/"/>
+    <category term="Micro-Saas" scheme="https://opcreport.cn/tags/Micro-Saas/"/>
     <id>https://opcreport.cn/opc-report-2026-09-14-1153/</id>
     <link href="https://opcreport.cn/opc-report-2026-09-14-1153/"/>
     <published>2026-09-14T03:53:00.000Z</published>
-    <summary>
-      <![CDATA[<h1 id="AI-Native-Services-Are-Eating-SaaS-Solo-Founders-Hit-the-Agent-Infrastructure-Gold-Rush"><a]]>
-    </summary>
+    <summary>The dividend has clearly moved from &quot;ship another chatbot&quot; to two actionable layers: (1) sell outcomes, not seats — AI-native services that deliver the result instead of the software; and (2) the...</summary>
     <title>AI-Native Services Are Eating SaaS: Solo Founders Hit the Agent-Infrastructure Gold Rush</title>
     <updated>2026-09-14T03:53:00.000Z</updated>
   </entry>
@@ -448,16 +434,14 @@
     <category term="Solopreneur" scheme="https://opcreport.cn/tags/Solopreneur/"/>
     <category term="One-Person-Company" scheme="https://opcreport.cn/tags/One-Person-Company/"/>
     <category term="Indie-Hacker" scheme="https://opcreport.cn/tags/Indie-Hacker/"/>
-    <category term="MCP" scheme="https://opcreport.cn/tags/MCP/"/>
     <category term="Agent-Orchestration" scheme="https://opcreport.cn/tags/Agent-Orchestration/"/>
     <category term="Local-AI" scheme="https://opcreport.cn/tags/Local-AI/"/>
     <category term="AI-Coding-Agents" scheme="https://opcreport.cn/tags/AI-Coding-Agents/"/>
+    <category term="Mcp" scheme="https://opcreport.cn/tags/Mcp/"/>
     <id>https://opcreport.cn/opc-report-2026-09-13-0003/</id>
     <link href="https://opcreport.cn/opc-report-2026-09-13-0003/"/>
     <published>2026-09-12T16:03:00.000Z</published>
-    <summary>
-      <![CDATA[<h1 id="Coding-Agents-Go-Production-Grade-Where-Solo-Founders-Should-Point-Them-Next"><a]]>
-    </summary>
+    <summary>Publishing Time: September 13, 2026, 00:03 (Asia/Shanghai) Data Sources: Product Hunt, Hacker News, Y Combinator, TechCrunch, GitHub, Anthropic, OpenAI Keywords: AI coding agents, one-person company,...</summary>
     <title>Coding Agents Go Production-Grade: Where Solo Founders Should Point Them Next</title>
     <updated>2026-09-12T16:03:00.000Z</updated>
   </entry>

@@ -114,15 +114,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Agent </tag>
+            <tag> One Person Company </tag>
             
-            <tag> One-Person-Company </tag>
+            <tag> AI Startup </tag>
             
-            <tag> Independent-Developer </tag>
+            <tag> AI Agent </tag>
             
-            <tag> AI-Startup </tag>
+            <tag> Independent Developer </tag>
             
-            <tag> Agent-Infrastructure </tag>
+            <tag> Agent Infrastructure </tag>
             
         </tags>
       
@@ -198,15 +198,15 @@
             
             <tag> Micro-SaaS </tag>
             
-            <tag> AI-Agents </tag>
-            
-            <tag> Product-Hunt </tag>
-            
-            <tag> AI-Coding </tag>
-            
             <tag> GEO </tag>
             
-            <tag> Claude-Code </tag>
+            <tag> Claude Code </tag>
+            
+            <tag> AI Agents </tag>
+            
+            <tag> Product Hunt </tag>
+            
+            <tag> AI coding </tag>
             
         </tags>
       
@@ -366,17 +366,17 @@
             
             <tag> One-Person-Company </tag>
             
-            <tag> Micro-SaaS </tag>
-            
             <tag> AI-Agents </tag>
-            
-            <tag> LangGraph </tag>
             
             <tag> Vibe-Coding </tag>
             
             <tag> Claude-Code </tag>
             
             <tag> Agent-Orchestration </tag>
+            
+            <tag> Micro-Saas </tag>
+            
+            <tag> Langgraph </tag>
             
         </tags>
       
@@ -407,11 +407,11 @@
             
             <tag> AI-Agent </tag>
             
-            <tag> GEO </tag>
-            
             <tag> Indie-Hackers </tag>
             
             <tag> Coding-Agent </tag>
+            
+            <tag> Geo </tag>
             
         </tags>
       
@@ -577,13 +577,13 @@
             
             <tag> Solo-Founder </tag>
             
-            <tag> MCP </tag>
-            
             <tag> Coding-Agents </tag>
             
             <tag> YC-S26 </tag>
             
             <tag> Agent-Reliability </tag>
+            
+            <tag> Mcp </tag>
             
         </tags>
       
@@ -624,9 +624,9 @@
             
             <tag> Local-First </tag>
             
-            <tag> Personal-AGI </tag>
-            
             <tag> Herdr </tag>
+            
+            <tag> Personal-Agi </tag>
             
         </tags>
       
@@ -657,8 +657,6 @@
             
             <tag> One-Person-Company </tag>
             
-            <tag> Micro-SaaS </tag>
-            
             <tag> Claude-Code </tag>
             
             <tag> Agent-Infrastructure </tag>
@@ -666,6 +664,8 @@
             <tag> AI-Native-Services </tag>
             
             <tag> YC-2026 </tag>
+            
+            <tag> Micro-Saas </tag>
             
         </tags>
       
@@ -831,13 +831,13 @@
             
             <tag> Indie-Hacker </tag>
             
-            <tag> MCP </tag>
-            
             <tag> Agent-Orchestration </tag>
             
             <tag> Local-AI </tag>
             
             <tag> AI-Coding-Agents </tag>
+            
+            <tag> Mcp </tag>
             
         </tags>
       
@@ -940,15 +940,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Agent </tag>
+            <tag> One Person Company </tag>
             
-            <tag> One-Person-Company </tag>
+            <tag> AI Agent </tag>
             
-            <tag> Claude-Code </tag>
+            <tag> Claude Code </tag>
             
-            <tag> Managed-Agents </tag>
+            <tag> Managed Agents </tag>
             
-            <tag> Openai-Agents-API </tag>
+            <tag> OpenAI Agents API </tag>
             
         </tags>
       
@@ -975,17 +975,17 @@
       
         <tags>
             
-            <tag> AI-Agents </tag>
+            <tag> solo-founder </tag>
             
-            <tag> Solo-Founder </tag>
+            <tag> ai-agents </tag>
             
-            <tag> Bootstrapping </tag>
+            <tag> agent-security </tag>
             
-            <tag> No-Code </tag>
+            <tag> no-code </tag>
             
-            <tag> Indie-Hackers </tag>
+            <tag> bootstrapping </tag>
             
-            <tag> Agent-Security </tag>
+            <tag> indie-hackers </tag>
             
         </tags>
       
@@ -1012,15 +1012,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Agent </tag>
-            
-            <tag> Indie-Hacker </tag>
-            
             <tag> No-Code </tag>
             
             <tag> GEO </tag>
             
-            <tag> Agent-Stack </tag>
+            <tag> AI Agent </tag>
+            
+            <tag> Indie Hacker </tag>
+            
+            <tag> Agent Stack </tag>
             
         </tags>
       
@@ -1049,13 +1049,13 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Agent </tag>
+            <tag> One Person Company </tag>
             
-            <tag> One-Person-Company </tag>
+            <tag> AI Agent </tag>
             
-            <tag> Indie-Hacker </tag>
+            <tag> Indie Hacker </tag>
             
-            <tag> Claude-Code </tag>
+            <tag> Claude Code </tag>
             
         </tags>
       
@@ -1129,15 +1129,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One-Person-Company </tag>
+            <tag> One Person Company </tag>
             
-            <tag> AI-Coding </tag>
+            <tag> AI Coding </tag>
             
-            <tag> Agent-Infrastructure </tag>
+            <tag> Agent Infrastructure </tag>
             
-            <tag> YC-S26 </tag>
+            <tag> YC S26 </tag>
             
-            <tag> Agent-Led-Growth </tag>
+            <tag> Agent-Led Growth </tag>
             
         </tags>
       
@@ -1213,15 +1213,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Agent </tag>
-            
-            <tag> One-Person-Company </tag>
-            
             <tag> MCP </tag>
             
-            <tag> YC-S26 </tag>
-            
             <tag> Local-First </tag>
+            
+            <tag> One Person Company </tag>
+            
+            <tag> AI Agent </tag>
+            
+            <tag> YC S26 </tag>
             
         </tags>
       
@@ -1250,13 +1250,13 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Agent </tag>
-            
-            <tag> One-Person-Company </tag>
-            
-            <tag> AI-Coding </tag>
-            
             <tag> GEO </tag>
+            
+            <tag> One Person Company </tag>
+            
+            <tag> AI Agent </tag>
+            
+            <tag> AI Coding </tag>
             
         </tags>
       
@@ -1283,15 +1283,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Agent </tag>
-            
-            <tag> One-Person-Company </tag>
-            
             <tag> MCP </tag>
             
-            <tag> Browser-Agent </tag>
+            <tag> One Person Company </tag>
             
-            <tag> Model-Pricing </tag>
+            <tag> AI Agent </tag>
+            
+            <tag> Model Pricing </tag>
+            
+            <tag> Browser Agent </tag>
             
         </tags>
       
@@ -1318,15 +1318,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Agent </tag>
-            
-            <tag> One-Person-Company </tag>
-            
-            <tag> Claude-Code </tag>
-            
-            <tag> Voice-Agent </tag>
-            
             <tag> Codex </tag>
+            
+            <tag> One Person Company </tag>
+            
+            <tag> AI Agent </tag>
+            
+            <tag> Claude Code </tag>
+            
+            <tag> Voice Agent </tag>
             
         </tags>
       
@@ -1355,17 +1355,19 @@
       
         <tags>
             
-            <tag> One-Person-Company </tag>
+            <tag> solopreneur </tag>
             
-            <tag> Micro-SaaS </tag>
+            <tag> AI agents </tag>
             
-            <tag> AI-Agents </tag>
+            <tag> micro-SaaS </tag>
             
-            <tag> Agent-Infrastructure </tag>
+            <tag> one-person company </tag>
             
-            <tag> Context-Engineering </tag>
+            <tag> agent infrastructure </tag>
             
-            <tag> Agent-Orchestration </tag>
+            <tag> agent orchestration </tag>
+            
+            <tag> context engineering </tag>
             
         </tags>
       
@@ -1394,15 +1396,17 @@
       
         <tags>
             
-            <tag> One-Person-Company </tag>
+            <tag> solopreneur </tag>
             
-            <tag> Micro-SaaS </tag>
+            <tag> AI agents </tag>
             
-            <tag> AI-Agents </tag>
+            <tag> micro-SaaS </tag>
             
-            <tag> Agent-Orchestration </tag>
+            <tag> one-person company </tag>
             
-            <tag> Voice-AI </tag>
+            <tag> voice AI </tag>
+            
+            <tag> agent orchestration </tag>
             
         </tags>
       
@@ -1523,17 +1527,17 @@
       
         <tags>
             
-            <tag> Micro-SaaS </tag>
-            
-            <tag> Solo-Founder </tag>
-            
-            <tag> AI-Coding </tag>
-            
             <tag> MCP </tag>
             
-            <tag> Agent-Orchestration </tag>
+            <tag> solo founder </tag>
             
-            <tag> Voice-Agents </tag>
+            <tag> voice agents </tag>
+            
+            <tag> AI coding </tag>
+            
+            <tag> agent orchestration </tag>
+            
+            <tag> micro-saas </tag>
             
         </tags>
       
@@ -1607,13 +1611,13 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Agent </tag>
+            <tag> One Person Company </tag>
             
-            <tag> One-Person-Company </tag>
+            <tag> AI Agent </tag>
             
-            <tag> Independent-Developer </tag>
+            <tag> Coding Agent </tag>
             
-            <tag> Coding-Agent </tag>
+            <tag> Independent Developer </tag>
             
         </tags>
       
@@ -1642,17 +1646,17 @@
       
         <tags>
             
-            <tag> AI-Agent </tag>
-            
-            <tag> Solo-Founder </tag>
-            
             <tag> MCP </tag>
             
-            <tag> Autonomous-Coding </tag>
+            <tag> AI Agent </tag>
             
-            <tag> Multi-Model-Orchestration </tag>
+            <tag> Solo Founder </tag>
             
-            <tag> Agentic-Infrastructure </tag>
+            <tag> Multi-Model Orchestration </tag>
+            
+            <tag> Autonomous Coding </tag>
+            
+            <tag> Agentic Infrastructure </tag>
             
         </tags>
       
@@ -1771,15 +1775,17 @@
       
         <tags>
             
-            <tag> AI-Agents </tag>
+            <tag> Product Hunt </tag>
             
-            <tag> Product-Hunt </tag>
+            <tag> solopreneur </tag>
             
-            <tag> Agent-Infrastructure </tag>
+            <tag> AI agents </tag>
             
-            <tag> EU-AI-Act </tag>
+            <tag> YC P26 </tag>
             
-            <tag> YC-P26 </tag>
+            <tag> agent infrastructure </tag>
+            
+            <tag> EU AI Act </tag>
             
         </tags>
       
@@ -1814,21 +1820,21 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Agent </tag>
-            
             <tag> Cursor </tag>
             
             <tag> Micro-SaaS </tag>
             
-            <tag> Solo-Founder </tag>
+            <tag> AI Agent </tag>
             
-            <tag> AI-Coding </tag>
+            <tag> Claude Code </tag>
             
-            <tag> Claude-Code </tag>
+            <tag> AI Coding </tag>
             
-            <tag> Agent-Stack </tag>
+            <tag> Solo Founder </tag>
             
-            <tag> Embedded-Agents </tag>
+            <tag> Agent Stack </tag>
+            
+            <tag> Embedded Agents </tag>
             
         </tags>
       
@@ -1857,13 +1863,13 @@
             
             <tag> One-Person-Company </tag>
             
-            <tag> Startup-Trends </tag>
+            <tag> AI Coding </tag>
             
-            <tag> AI-Agents </tag>
+            <tag> AI Agents </tag>
             
-            <tag> AI-Coding </tag>
+            <tag> Y Combinator </tag>
             
-            <tag> Y-Combinator </tag>
+            <tag> Startup Trends </tag>
             
         </tags>
       
@@ -1890,15 +1896,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Agent </tag>
+            <tag> One Person Company </tag>
             
-            <tag> One-Person-Company </tag>
+            <tag> AI Agent </tag>
             
-            <tag> Agent-Infrastructure </tag>
+            <tag> Agent Infrastructure </tag>
             
-            <tag> Coding-Agents </tag>
+            <tag> Coding Agents </tag>
             
-            <tag> Open-Weights </tag>
+            <tag> Open Weights </tag>
             
         </tags>
       
@@ -1968,15 +1974,19 @@
       
         <tags>
             
-            <tag> Cursor </tag>
+            <tag> solopreneur </tag>
             
-            <tag> AI-Coding </tag>
+            <tag> claude-code </tag>
             
-            <tag> Claude-Code </tag>
+            <tag> ai-coding </tag>
             
-            <tag> Agents </tag>
+            <tag> agentic-engineering </tag>
             
-            <tag> Agentic-Engineering </tag>
+            <tag> cursor </tag>
+            
+            <tag> yc-w26 </tag>
+            
+            <tag> agents </tag>
             
         </tags>
       
@@ -2136,15 +2146,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Agent </tag>
+            <tag> One Person Company </tag>
             
-            <tag> One-Person-Company </tag>
+            <tag> AI Agent </tag>
             
-            <tag> Vibe-Coding </tag>
+            <tag> Vibe Coding </tag>
             
-            <tag> Y-Combinator </tag>
+            <tag> Y Combinator </tag>
             
-            <tag> Agent-Infrastructure </tag>
+            <tag> Agent Infrastructure </tag>
             
         </tags>
       
@@ -2171,15 +2181,17 @@
       
         <tags>
             
-            <tag> AI-Coding-Agents </tag>
+            <tag> solopreneur </tag>
             
-            <tag> Model-Context-Protocol </tag>
+            <tag> AI coding agents </tag>
             
-            <tag> Agent-Native-Startups </tag>
+            <tag> Model Context Protocol </tag>
             
-            <tag> YC-Batch </tag>
+            <tag> agent-native startups </tag>
             
-            <tag> AI-Liability-Insurance </tag>
+            <tag> YC batch </tag>
+            
+            <tag> AI liability insurance </tag>
             
         </tags>
       
@@ -2206,15 +2218,17 @@
       
         <tags>
             
-            <tag> AI-Agent </tag>
-            
-            <tag> One-Person-Company </tag>
-            
-            <tag> Agent-Infrastructure </tag>
-            
             <tag> YC </tag>
             
-            <tag> Always-On </tag>
+            <tag> solopreneur </tag>
+            
+            <tag> one-person-company </tag>
+            
+            <tag> AI-agent </tag>
+            
+            <tag> always-on </tag>
+            
+            <tag> agent-infrastructure </tag>
             
         </tags>
       
@@ -2241,15 +2255,15 @@
       
         <tags>
             
-            <tag> One-Person-Company </tag>
+            <tag> open-weight </tag>
             
-            <tag> Solo-Founder </tag>
+            <tag> solo-founder </tag>
             
-            <tag> AI-Coding </tag>
+            <tag> one-person-company </tag>
             
-            <tag> Agent-Ops </tag>
+            <tag> AI-coding </tag>
             
-            <tag> Open-Weight </tag>
+            <tag> agent-ops </tag>
             
         </tags>
       
@@ -2278,15 +2292,17 @@
       
         <tags>
             
-            <tag> Coding-Agents </tag>
+            <tag> solopreneur </tag>
             
-            <tag> Agent-Skills </tag>
+            <tag> coding agents </tag>
             
-            <tag> Agent-Security </tag>
+            <tag> AI pricing </tag>
             
-            <tag> AI-Pricing </tag>
+            <tag> cost per task </tag>
             
-            <tag> Cost-Per-Task </tag>
+            <tag> agent skills </tag>
+            
+            <tag> agent security </tag>
             
         </tags>
       
@@ -2317,13 +2333,15 @@
             
             <tag> OPC </tag>
             
-            <tag> AI-Coding </tag>
+            <tag> Claude Code </tag>
             
-            <tag> Claude-Code </tag>
+            <tag> solopreneur </tag>
             
-            <tag> Agent-Infrastructure </tag>
+            <tag> voice agents </tag>
             
-            <tag> Voice-Agents </tag>
+            <tag> AI coding </tag>
+            
+            <tag> agent infrastructure </tag>
             
         </tags>
       
@@ -2518,15 +2536,15 @@
       
         <tags>
             
-            <tag> AI-Agents </tag>
-            
-            <tag> Solo-Founder </tag>
-            
             <tag> MCP </tag>
             
-            <tag> Voice-AI </tag>
+            <tag> AI agents </tag>
             
-            <tag> Distribution </tag>
+            <tag> solo founder </tag>
+            
+            <tag> voice AI </tag>
+            
+            <tag> distribution </tag>
             
         </tags>
       
@@ -2653,21 +2671,23 @@
       
         <tags>
             
-            <tag> One-Person-Company </tag>
-            
-            <tag> AI-Agents </tag>
-            
-            <tag> Product-Hunt </tag>
-            
-            <tag> Vibe-Coding </tag>
-            
-            <tag> Claude-Code </tag>
-            
             <tag> YC </tag>
             
-            <tag> Agentic-Engineering </tag>
-            
             <tag> Supabase </tag>
+            
+            <tag> Claude Code </tag>
+            
+            <tag> Product Hunt </tag>
+            
+            <tag> solopreneur </tag>
+            
+            <tag> AI agents </tag>
+            
+            <tag> vibe coding </tag>
+            
+            <tag> one-person company </tag>
+            
+            <tag> agentic engineering </tag>
             
         </tags>
       
@@ -2694,19 +2714,19 @@
       
         <tags>
             
-            <tag> AI-Agents </tag>
-            
-            <tag> Solo-Founder </tag>
-            
-            <tag> AI-Coding </tag>
-            
             <tag> GEO </tag>
             
-            <tag> Open-Weights </tag>
+            <tag> AI agents </tag>
             
-            <tag> Voice-AI </tag>
+            <tag> solo founder </tag>
             
-            <tag> YC-P26 </tag>
+            <tag> open weights </tag>
+            
+            <tag> AI coding </tag>
+            
+            <tag> voice AI </tag>
+            
+            <tag> YC P26 </tag>
             
         </tags>
       
@@ -2815,13 +2835,13 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Agent </tag>
+            <tag> One Person Company </tag>
             
-            <tag> One-Person-Company </tag>
+            <tag> AI Agent </tag>
             
-            <tag> Vibe-Coding </tag>
+            <tag> Vibe Coding </tag>
             
-            <tag> Agent-Infrastructure </tag>
+            <tag> Agent Infrastructure </tag>
             
         </tags>
       
@@ -2893,15 +2913,15 @@
       
         <tags>
             
-            <tag> AI-Agents </tag>
+            <tag> AI agents </tag>
             
-            <tag> Solo-Founder </tag>
+            <tag> solo founder </tag>
             
-            <tag> Vibe-Coding </tag>
+            <tag> agent reliability </tag>
             
-            <tag> AI-Employee </tag>
+            <tag> vibe coding </tag>
             
-            <tag> Agent-Reliability </tag>
+            <tag> AI employee </tag>
             
         </tags>
       
@@ -3018,13 +3038,13 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One-Person-Company </tag>
+            <tag> One Person Company </tag>
             
-            <tag> Independent-Developer </tag>
+            <tag> AI Startup </tag>
             
-            <tag> AI-Startup </tag>
+            <tag> Independent Developer </tag>
             
-            <tag> AI-Coding-Agent </tag>
+            <tag> AI Coding Agent </tag>
             
         </tags>
       
@@ -3055,21 +3075,21 @@
       
         <tags>
             
-            <tag> One-Person-Company </tag>
+            <tag> Claude Code </tag>
             
-            <tag> Micro-SaaS </tag>
+            <tag> AI Agents </tag>
             
-            <tag> AI-Agents </tag>
+            <tag> Solo Founder </tag>
             
-            <tag> Solo-Founder </tag>
+            <tag> Y Combinator </tag>
             
-            <tag> Claude-Code </tag>
+            <tag> Agent Infrastructure </tag>
             
-            <tag> Y-Combinator </tag>
+            <tag> LLM Pricing </tag>
             
-            <tag> Agent-Infrastructure </tag>
+            <tag> Micro SaaS </tag>
             
-            <tag> LLM-Pricing </tag>
+            <tag> One-Person Company </tag>
             
         </tags>
       
@@ -3556,15 +3576,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Agents </tag>
-            
             <tag> GEO </tag>
             
-            <tag> Agentic-Commerce </tag>
+            <tag> AI Agents </tag>
             
-            <tag> Model-Routing </tag>
+            <tag> Code Review </tag>
             
-            <tag> Code-Review </tag>
+            <tag> Model Routing </tag>
+            
+            <tag> Agentic Commerce </tag>
             
         </tags>
       
@@ -3976,17 +3996,17 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Agent </tag>
-            
-            <tag> One-Person-Company </tag>
-            
-            <tag> Independent-Developer </tag>
-            
             <tag> MCP </tag>
             
-            <tag> Bootstrapped-SaaS </tag>
+            <tag> One Person Company </tag>
             
-            <tag> Agent-OS </tag>
+            <tag> AI Agent </tag>
+            
+            <tag> Independent Developer </tag>
+            
+            <tag> Agent OS </tag>
+            
+            <tag> Bootstrapped SaaS </tag>
             
         </tags>
       
@@ -4015,15 +4035,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Agent </tag>
-            
-            <tag> One-Person-Company </tag>
-            
-            <tag> Independent-Developer </tag>
-            
-            <tag> Agentic-Coding </tag>
-            
             <tag> Multi-Agent </tag>
+            
+            <tag> One Person Company </tag>
+            
+            <tag> AI Agent </tag>
+            
+            <tag> Independent Developer </tag>
+            
+            <tag> Agentic Coding </tag>
             
         </tags>
       
@@ -4083,17 +4103,19 @@
       
         <tags>
             
-            <tag> AI-Agents </tag>
-            
-            <tag> Claude-Code </tag>
-            
             <tag> YC </tag>
             
-            <tag> Coding-Agents </tag>
+            <tag> Claude Code </tag>
             
-            <tag> Agent-Observability </tag>
+            <tag> solopreneur </tag>
             
-            <tag> Open-Source-LLM </tag>
+            <tag> AI agents </tag>
+            
+            <tag> coding agents </tag>
+            
+            <tag> agent observability </tag>
+            
+            <tag> open-source LLM </tag>
             
         </tags>
       
@@ -4122,15 +4144,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Agent </tag>
+            <tag> One Person Company </tag>
             
-            <tag> One-Person-Company </tag>
+            <tag> AI Agent </tag>
             
-            <tag> Claude-Code </tag>
+            <tag> Claude Code </tag>
             
-            <tag> Agent-Stack </tag>
+            <tag> Agent Stack </tag>
             
-            <tag> Token-Pricing </tag>
+            <tag> Token Pricing </tag>
             
         </tags>
       
@@ -4159,13 +4181,15 @@
             
             <tag> MCP </tag>
             
-            <tag> Agent-Harness </tag>
+            <tag> solopreneur </tag>
             
-            <tag> Model-Routing </tag>
+            <tag> agent harness </tag>
             
-            <tag> Content-Provenance </tag>
+            <tag> model routing </tag>
             
-            <tag> Agent-Reliability </tag>
+            <tag> agent reliability </tag>
+            
+            <tag> content provenance </tag>
             
         </tags>
       
@@ -4192,17 +4216,17 @@
       
         <tags>
             
-            <tag> Micro-SaaS </tag>
-            
-            <tag> AI-Agents </tag>
-            
-            <tag> Solo-Founder </tag>
-            
             <tag> GEO </tag>
             
-            <tag> Coding-Agents </tag>
+            <tag> AI agents </tag>
             
-            <tag> Voice-Agents </tag>
+            <tag> solo founder </tag>
+            
+            <tag> coding agents </tag>
+            
+            <tag> voice agents </tag>
+            
+            <tag> micro-SaaS </tag>
             
         </tags>
       
@@ -4231,17 +4255,19 @@
       
         <tags>
             
-            <tag> One-Person-Company </tag>
+            <tag> solopreneur </tag>
             
-            <tag> AI-Agents </tag>
+            <tag> ai-agents </tag>
             
-            <tag> Product-Hunt </tag>
+            <tag> claude-code </tag>
             
-            <tag> Claude-Code </tag>
+            <tag> context-engineering </tag>
             
-            <tag> Context-Engineering </tag>
+            <tag> yc </tag>
             
-            <tag> YC </tag>
+            <tag> product-hunt </tag>
+            
+            <tag> one-person-company </tag>
             
         </tags>
       
@@ -4315,13 +4341,13 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Agent </tag>
+            <tag> One Person Company </tag>
             
-            <tag> One-Person-Company </tag>
+            <tag> AI Startup </tag>
             
-            <tag> AI-Startup </tag>
+            <tag> AI Agent </tag>
             
-            <tag> Coding-Agent </tag>
+            <tag> Coding Agent </tag>
             
         </tags>
       
@@ -4436,15 +4462,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> One-Person-Company </tag>
+            <tag> One Person Company </tag>
             
-            <tag> Independent-Developer </tag>
+            <tag> AI Startup </tag>
             
-            <tag> AI-Startup </tag>
+            <tag> Agent Orchestration </tag>
             
-            <tag> Agent-Orchestration </tag>
+            <tag> Independent Developer </tag>
             
-            <tag> AI-Coding-Agent </tag>
+            <tag> AI Coding Agent </tag>
             
         </tags>
       
@@ -4479,11 +4505,11 @@
             
             <tag> Observability </tag>
             
-            <tag> Solofounder </tag>
+            <tag> SoloFounder </tag>
             
-            <tag> Aiagents </tag>
+            <tag> AIAgents </tag>
             
-            <tag> Agenticide </tag>
+            <tag> AgenticIDE </tag>
             
         </tags>
       
@@ -4545,17 +4571,17 @@
       
         <tags>
             
-            <tag> AI-Agents </tag>
+            <tag> AI Agents </tag>
             
-            <tag> Solo-Founder </tag>
+            <tag> Solo Founder </tag>
             
-            <tag> Product-Hunt </tag>
+            <tag> Agentic Coding </tag>
             
-            <tag> Y-Combinator </tag>
+            <tag> Agent Observability </tag>
             
-            <tag> Agentic-Coding </tag>
+            <tag> Product Hunt </tag>
             
-            <tag> Agent-Observability </tag>
+            <tag> Y Combinator </tag>
             
         </tags>
       
@@ -4582,17 +4608,17 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Agent </tag>
+            <tag> One Person Company </tag>
             
-            <tag> One-Person-Company </tag>
+            <tag> AI Agent </tag>
             
-            <tag> AI-Coding </tag>
+            <tag> Agent Orchestration </tag>
             
-            <tag> Y-Combinator </tag>
+            <tag> AI Coding </tag>
             
-            <tag> Agent-Orchestration </tag>
+            <tag> Y Combinator </tag>
             
-            <tag> Agent-Insurance </tag>
+            <tag> Agent Insurance </tag>
             
         </tags>
       
@@ -6157,19 +6183,19 @@
       
         <tags>
             
-            <tag> Solo-Founder </tag>
-            
             <tag> GEO </tag>
             
-            <tag> Inference-Cost </tag>
+            <tag> open-weight </tag>
             
-            <tag> Self-Hosting </tag>
+            <tag> self-hosting </tag>
             
-            <tag> Qwen </tag>
+            <tag> solo-founder </tag>
             
-            <tag> GLM </tag>
+            <tag> qwen </tag>
             
-            <tag> Open-Weight </tag>
+            <tag> glm </tag>
+            
+            <tag> inference-cost </tag>
             
         </tags>
       
@@ -6458,13 +6484,13 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Coding </tag>
-            
             <tag> GEO </tag>
             
-            <tag> Vibe-Coding </tag>
+            <tag> Vibe Coding </tag>
             
-            <tag> Agent-Orchestration </tag>
+            <tag> Agent Orchestration </tag>
+            
+            <tag> AI Coding </tag>
             
         </tags>
       
@@ -6491,17 +6517,17 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Agent </tag>
-            
-            <tag> One-Person-Company </tag>
-            
-            <tag> Independent-Developer </tag>
-            
-            <tag> AI-Coding </tag>
-            
-            <tag> Claude-Code </tag>
-            
             <tag> MCP </tag>
+            
+            <tag> One Person Company </tag>
+            
+            <tag> AI Agent </tag>
+            
+            <tag> Claude Code </tag>
+            
+            <tag> AI Coding </tag>
+            
+            <tag> Independent Developer </tag>
             
         </tags>
       
@@ -6528,15 +6554,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> Agent-Harness </tag>
-            
-            <tag> Token-Economics </tag>
-            
             <tag> Distribution </tag>
             
-            <tag> Indie-Dev </tag>
+            <tag> Indie Dev </tag>
             
-            <tag> Agent-QA </tag>
+            <tag> Agent Harness </tag>
+            
+            <tag> Token Economics </tag>
+            
+            <tag> Agent QA </tag>
             
         </tags>
       
@@ -6563,17 +6589,17 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Agent </tag>
-            
-            <tag> Vibe-Coding </tag>
-            
-            <tag> Claude-Code </tag>
-            
-            <tag> Agent-Orchestration </tag>
-            
             <tag> Codex </tag>
             
-            <tag> Indie-Dev </tag>
+            <tag> AI Agent </tag>
+            
+            <tag> Vibe Coding </tag>
+            
+            <tag> Claude Code </tag>
+            
+            <tag> Indie Dev </tag>
+            
+            <tag> Agent Orchestration </tag>
             
         </tags>
       
@@ -6647,15 +6673,15 @@
             
             <tag> Solopreneur </tag>
             
-            <tag> AI-Agent </tag>
+            <tag> One Person Company </tag>
             
-            <tag> One-Person-Company </tag>
+            <tag> AI Startup </tag>
             
-            <tag> Indie-Hacker </tag>
+            <tag> AI Agent </tag>
             
-            <tag> AI-Startup </tag>
+            <tag> Indie Hacker </tag>
             
-            <tag> Coding-Agent </tag>
+            <tag> Coding Agent </tag>
             
         </tags>
       
