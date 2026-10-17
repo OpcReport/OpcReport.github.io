@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://opcreport.cn/opc-report-2026-10-17-2222/</loc>
+    
+    <lastmod>2026-10-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://opcreport.cn/opc-report-2026-10-17-1811/</loc>
     
     <lastmod>2026-10-17</lastmod>
@@ -12226,6 +12235,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://opcreport.cn/tags/AI-Economics/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -15639,6 +15655,13 @@
   
   <url>
     <loc>https://opcreport.cn/categories/AI-Startup/Agents/Policy/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://opcreport.cn/categories/AI-Startup/Agents/Business-of-AI/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
