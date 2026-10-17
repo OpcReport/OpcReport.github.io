@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://opcreport.cn/opc-report-2026-10-17-1353/</loc>
+    
+    <lastmod>2026-10-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://opcreport.cn/opc-report-2026-10-17-0944/</loc>
     
     <lastmod>2026-10-17</lastmod>
@@ -15593,6 +15602,20 @@
   
   <url>
     <loc>https://opcreport.cn/categories/Ai%E8%B6%8B%E5%8A%BF/Agent-Economy/Solo-Founder/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://opcreport.cn/categories/AI-Startup/Agents/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://opcreport.cn/categories/AI-Startup/Agents/Open-Source/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
