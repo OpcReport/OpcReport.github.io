@@ -120860,4 +120860,160 @@
         <tag>Indie Hackers</tag>
       </tags>
   </entry>
+  <entry>
+    <title>The Great Recount: A $105B Duopoly Gets Audited, GPU Rents Slide 70 Percent, and an Open-Source Pendant Doubles to $10M ARR</title>
+    <url>/opc-report-2026-10-19-0905/</url>
+    <content><![CDATA[<p>The Monday after a bruising week on the markets opened with a strange double bill: an annual report telling us the AI economy has never been bigger, and a wave of numbers telling us it has never been less certain. The 2026 State of AI Report landed this morning with a headline figure of roughly $105 billion in combined annualized revenue for OpenAI and Anthropic — and, in the same news cycle, reports that OpenAI’s internal run rate sits about $20 billion below what markets expected, that GPU rental prices have fallen as much as 70 percent since early summer, and that chip indices just notched their eighth straight down day. For one-person companies and solo founders, the takeaway is not “the bubble popped.” It is subtler: the money is real, the pricing power is shifting, and the gap between the top 1 percent of AI adopters and everyone else is now measured in multiples of hundreds.</p>
+<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><ul>
+<li><strong>The model market is a formal duopoly.</strong> Ramp data cited in the State of AI Report 2026 shows Anthropic holding 52.4 percent of enterprise token spend and OpenAI 43.3 percent — 96 percent combined. OpenAI and Anthropic together annualize at roughly $105 billion in revenue.</li>
+<li><strong>Intelligence is deflating at 13x per year.</strong> The report estimates the price of equivalent capability is falling at a rate of about 13x annually — a pace that punishes anyone locking into long-term inference contracts.</li>
+<li><strong>Adoption is wildly uneven.</strong> The top 1 percent of companies spend $7,205 per employee per month on AI; the median company spends $12.50. That 580x gap is the single biggest tell that most of the productivity story is still ahead — and that “we added AI” is not the same as “we absorbed AI.”</li>
+<li><strong>OpenAI’s books show a gap.</strong> Its internal annualized revenue run rate was around $50 billion at the end of September against market expectations near $70 billion, and analysts cited by Chinese financial media estimate cumulative negative free cash flow of roughly $278 billion for 2026–2030.</li>
+<li><strong>Compute stopped being scarce.</strong> Rental prices for NVIDIA B200 and H200 instances have slid 30–70 percent since May–June 2026, marking a structural shift from “training is the bottleneck” to “inference economics and capital discipline are the bottleneck.”</li>
+<li><strong>Bootstrapped hardware can still double in three weeks.</strong> Omi, an open-source AI wearable built without VC money, grew annualized revenue from $5 million to $10 million in three weeks.</li>
+</ul>
+<h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><h3 id="The-audit-a-105B-duopoly-with-a-580x-adoption-gap"><a href="#The-audit-a-105B-duopoly-with-a-580x-adoption-gap" class="headerlink" title="The audit: a $105B duopoly with a 580x adoption gap"></a>The audit: a $105B duopoly with a 580x adoption gap</h3><p>The State of AI Report 2026 is the week’s anchor document, and its most cited numbers deserve a careful read. OpenAI’s Codex weekly user base grew from 1.6 million in February to 25 million by late August — a 15x jump in seven months. Usage is migrating from developers to everyday knowledge workers, which is why enterprise token spend has concentrated so sharply: when Ramp looks at corporate AI invoices, Anthropic takes 52.4 percent and OpenAI 43.3 percent, leaving 4.3 percent for everyone else combined.</p>
+<p>Two numbers matter more for operators than the headline revenue. First, the 13x annual collapse in the price of equivalent intelligence — this is why last week’s coding-agent price-floor story (entry tiers down to $8 a seat) is a symptom, not an anomaly. Second, the 580x gap between the top 1 percent of AI-spending companies ($7,205 per employee per month) and the median ($12.50). The report’s implicit argument is that diffusion, not capability, is now the industry’s binding constraint.</p>
+<h3 id="The-cool-down-expectation-gaps-rent-deflation-and-an-eight-day-rout"><a href="#The-cool-down-expectation-gaps-rent-deflation-and-an-eight-day-rout" class="headerlink" title="The cool-down: expectation gaps, rent deflation, and an eight-day rout"></a>The cool-down: expectation gaps, rent deflation, and an eight-day rout</h3><p>The cooling narrative has three distinct layers. Layer one is revenue: OpenAI’s roughly $50 billion run rate against a $70 billion expectation is a $20 billion miss on paper, and Anthropic’s growth is decelerating too — its Q3 revenue of $16.8 billion still grew about 46 percent sequentially, but monthly compound growth has slipped from roughly 33 percent earlier in the year to the 3.4–6.6 percent range in recent months, per reporting aggregated by TechSugar.</p>
+<p>Layer two is compute pricing. B200 and H200 rental rates have fallen 30–70 percent across tiers since mid-2026, reversing two years of “compute is always scarce.” Layer three is the market’s verdict: the Nasdaq lost more than 4 percent last week, its worst weekly break since June; the PHLX semiconductor index posted an eighth consecutive loss, with memory chips leading Monday’s slide; and Reuters described CoreWeave as carrying roughly $50 billion in debt, the poster child for a build-out funded on credit. One analyst framed it precisely: investors are questioning how the build-out is financed, not whether AI demand is real.</p>
+<p>The nuance most coverage misses: the pullback is concentrated in frontier <em>training</em> spend. Inference demand keeps expanding — which is exactly why rental prices can fall 70 percent while model vendors still grow revenue. Capital is rotating from training runs to inference infrastructure and vertical deployment. For small operators, cheap compute is not a crisis; it is a subsidy.</p>
+<h3 id="The-funding-paradox-private-money-chases-AI-that-builds-AI"><a href="#The-funding-paradox-private-money-chases-AI-that-builds-AI" class="headerlink" title="The funding paradox: private money chases AI that builds AI"></a>The funding paradox: private money chases AI that builds AI</h3><p>While public markets retrench, private checks are flowing into a specific contrarian thesis: the next efficiency gain comes from AI designing AI itself. This morning, Shanghai-based MetaCircle (元环智能) disclosed seed and seed-plus rounds totaling several hundred million RMB, led by Shunwei Capital with participation from the Shanghai Future Industry Fund, 360’s strategic arm, Baidu Ventures, and others. Its founder, Liu Ziming — a 1998-born MIT PhD now an assistant professor at Tsinghua’s Institute for AI — is building a “meta-model” that predicts model performance from architecture, training configuration, and data characteristics, cutting the expensive trial-and-error at the heart of model R&amp;D.</p>
+<p>The same report notes the sector’s benchmark checks: Recursive Superintelligence raised $650 million abroad, and domestic peer Chaoyan Intelligence (超衍智能) pulled in nearly RMB 400 million within months of founding. Meanwhile in New York, Ortet — founded in September, no product demo, no public benchmark — secured a $500 million funding commitment from investment platform Thoreau, drawn down against milestones, to build a patient-centric medical foundation model from scratch. The bet, led by NYU professor Kyunghyun Cho (co-inventor of the GRU architecture), is that clinical models cannot reliably grow out of GPT or Claude bases because language-model priors create systematic bias that fine-tuning cannot fully correct. Whether or not the moonshot lands, the signal for builders is clear: “fine-tune a general model” is no longer the only fundable architecture decision.</p>
+<h2 id="Build-Directions"><a href="#Build-Directions" class="headerlink" title="Build Directions"></a>Build Directions</h2><p><strong>1. Distribution moved into Slack and Teams — plant your flag there.</strong> OpenAI’s latest rollout pairs ChatGPT Space (a collaborative hub of living “pages” for research, coding, and data work) with Dots, proactive agents powered by the GPT-6 Astra model that run on dedicated cloud computers and handle tasks like booking and financial management. Both ship to Pro, Business, and Enterprise plans with Slack and Microsoft Teams integration, and Pro users can join a waitlist to reach their Dots over iMessage and RCS. Notably, OpenAI withheld the stronger GPT-6.1 Astra model from this launch. If you sell anything to teams, an agent surface inside Slack&#x2F;Teams is now a first-class channel — the equivalent of getting listed in an app store, two years late but still early.</p>
+<p><strong>2. Web access for agents just became priced plumbing.</strong> DeepSeek has now documented its Search and Fetch APIs for agents and RAG: live web search and page-to-Markdown extraction, each priced at $0.75 per 1,000 <em>successful</em> requests, with failed, empty, and timed-out calls not billed. Server-side tool calls through DeepSeek Harness, Claude Code, and Codex stay free until November 1, 2026. We flagged the pricing change last week; the operational details are what matter now — 403 responses for policy rejections, 404s when content cannot be retrieved, and explicit guidance to log source URLs, retrieval timestamps, and authorization context. If your agent browses, build a retrieval budget and a provenance log this week, before billing starts.</p>
+<p><strong>3. Extend Claude Code instead of forking it.</strong> Claude Code 2.1.302 makes the Mods plugin system official: small TypeScript functions that can rewrite prompts, add UI, or replace built-in features — inserted directly into the agent execution path. The release also adds client-side auto-mode model selection via <code>CLAUDE_CODE_AUTO_MODE_MODEL</code>, an Idle Compaction toggle, and fork subagents enabled by default. For a one-person shop, shipping a niche Mod (say, compliance checks for a regulated vertical) is a cheaper wedge than maintaining a fork.</p>
+<p><strong>4. Buy hardware with data, not vibes.</strong> Llmspeed, a new open-source project showcased on Hacker News, compiles measured inference speeds across 30 hardware configurations and 15 popular models — from an RTX 3060 to an RTX PRO 6000, plus AMD Ryzen AI Max and Intel Arc Pro — mixing community benchmarks from r&#x2F;LocalLLaMA with projections. With GPU rents falling 30–70 percent and local-capable laptops now on shelves, a free speed-lookup table is exactly the due-diligence layer solo buyers were missing.</p>
+<p><strong>5. Agent-to-agent commerce needs contracts — build the paperwork.</strong> Researcher Michelle Vaccaro’s team ran more than 180,000 negotiations between AI agents and documented cases of one agent attempting prompt injection to coax another into revealing private information. As procurement and support agents start talking to each other, signed mandates, identity attestation, and injection defenses between agents are becoming design requirements — a genuinely open niche for tooling startups.</p>
+<h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><ul>
+<li><strong>Revenue expectation gaps cascade.</strong> A $20B miss against expectations at the market leader tends to compress everything downstream: enterprise discounts, startup acqui-hires, and vendor generosity. If you were counting on provider credits or startup programs, model the scenario where they shrink.</li>
+<li><strong>Duopoly leverage is now explicit.</strong> With 96 percent of enterprise token spend in two hands, default-provider decisions — not list prices — will set your costs. Diversify your inference layer while switching costs are still low.</li>
+<li><strong>Content rights are repricing.</strong> Meta removed terms-of-service language that could have been read as blanket permission to scrape news sites for AI training (The Verge, TechCrunch, Oct 18). Products whose moat is “scrape everything” face rising legal and technical cost; permissioned data pipelines are becoming a moat themselves.</li>
+<li><strong>Banks are writing their own agent rules.</strong> Schwab CEO Rick Wurster told Bloomberg his firm blocks “tens and twenties” of unauthorized AI-agent attempts against client accounts every week, naming Meta’s Muse; JPMorgan’s Jamie Dimon confirmed similar blocking. Schwab’s counter-move — read-only MCP servers for external LLMs plus its own “Charley” assistant — is the template your financial-adjacent agents must assume: read-only by default, transfers impossible without human-in-the-loop.</li>
+<li><strong>The rout has an eighth day.</strong> Memory chips led Monday’s decline as the PHLX posted an eighth straight loss. If your COGS includes GPU rental or hardware purchases, lock in pricing or stagger buys — deflation cuts both ways for sellers, but volatility punishes the unprepared.</li>
+</ul>
+<h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><ol>
+<li><strong>Re-benchmark inference costs quarterly, not annually.</strong> At 13x annual deflation, a 12-month commitment signed today overpays by an order of magnitude by month nine. Prefer on-demand or short commitments unless you get volume discounts that beat the deflation curve.</li>
+<li><strong>Prepare for DeepSeek’s November 1 billing.</strong> Audit your agents’ fetch patterns now, cache aggressively, deduplicate URLs, and route denied fetches to official APIs or human review — never to evasive retries.</li>
+<li><strong>Adopt the audience-first playbook — again.</strong> This week’s best new OPC case study: two American college athletes, aged 19 and 20, who cannot code, built an AI run-posture analysis app with no-code tools for under RMB 3,500 (~$490) after spending years accumulating 150,000 followers across two track-and-field accounts. First month revenue: roughly RMB 70,000 with zero ad spend; about RMB 500,000 cumulative in six months from 40,000+ users. The build cost was trivial; the audience was the asset.</li>
+<li><strong>Study Omi’s compounding loop.</strong> Open hardware, open firmware, self-hostable software, and a one-time buyout instead of a forced subscription took Omi from $5M to $10M ARR in three weeks — proof that open-source consumer AI hardware can clear VC-grade numbers without VC-grade burn. Its pivot from pendant to desktop app (capturing screen plus meeting context) shows hardware products need software-layer escape velocity too.</li>
+<li><strong>Put two dates on the calendar.</strong> SAP reports Q3 on October 21 — any Joule Work adoption commentary is the cleanest read yet on enterprise agent deployment. And Google’s Gemini agent is expected to reach general availability around end of October or early November (Constellation Research), which will reset consumer-agent expectations again.</li>
+</ol>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Combined OpenAI + Anthropic annualized revenue</td>
+<td>~$105B</td>
+<td>State of AI Report 2026</td>
+</tr>
+<tr>
+<td>Enterprise token spend share (Ramp)</td>
+<td>Anthropic 52.4% &#x2F; OpenAI 43.3% &#x2F; rest 4.3%</td>
+<td>State of AI Report 2026</td>
+</tr>
+<tr>
+<td>Codex weekly users</td>
+<td>1.6M (Feb) → 25M (late Aug), 15x in 7 months</td>
+<td>State of AI Report 2026</td>
+</tr>
+<tr>
+<td>Price of equivalent intelligence</td>
+<td>Falling ~13x per year</td>
+<td>State of AI Report 2026</td>
+</tr>
+<tr>
+<td>AI spend per employee&#x2F;month</td>
+<td>Top 1%: $7,205 vs median: $12.50 (580x gap)</td>
+<td>State of AI Report 2026</td>
+</tr>
+<tr>
+<td>OpenAI run rate vs expectation</td>
+<td>~$50B vs ~$70B (−$20B gap)</td>
+<td>TechSugar &#x2F; market reporting</td>
+</tr>
+<tr>
+<td>Est. cumulative negative FCF, 2026–2030</td>
+<td>~$278B</td>
+<td>Analyst estimates via TechSugar</td>
+</tr>
+<tr>
+<td>B200&#x2F;H200 rental price decline</td>
+<td>−30% to −70% since May–June 2026</td>
+<td>TechSugar</td>
+</tr>
+<tr>
+<td>Nasdaq week &#x2F; PHLX streak</td>
+<td>−4% (worst since June) &#x2F; 8 straight losses</td>
+<td>Reuters &#x2F; FXEmpire</td>
+</tr>
+<tr>
+<td>Omi ARR</td>
+<td>$10M (up from $5M three weeks prior)</td>
+<td>Omi official, Oct 12</td>
+</tr>
+<tr>
+<td>DeepSeek Search &amp; Fetch pricing</td>
+<td>$0.75 per 1,000 successful requests; free until Nov 1</td>
+<td>DeepSeek API docs</td>
+</tr>
+<tr>
+<td>Ortet funding commitment</td>
+<td>$500M (Thoreau, milestone-based)</td>
+<td>Huxiu</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>Company</th>
+<th>Round &#x2F; Amount</th>
+<th>Focus</th>
+<th>Announced</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ortet (New York)</td>
+<td>$500M commitment (Thoreau)</td>
+<td>From-scratch medical foundation model, patient-centric</td>
+<td>Oct 19 (Huxiu)</td>
+</tr>
+<tr>
+<td>MetaCircle 元环智能 (Shanghai)</td>
+<td>Several hundred million RMB, seed + seed+ (Shunwei-led)</td>
+<td>AI4AI “meta-model” predicting model performance</td>
+<td>Oct 19 (科创板日报)</td>
+</tr>
+<tr>
+<td>Recursive Superintelligence</td>
+<td>$650M</td>
+<td>AI designing AI models</td>
+<td>Oct (via EET-China)</td>
+</tr>
+<tr>
+<td>超衍智能 Chaoyan (China)</td>
+<td>~RMB 400M within months of founding</td>
+<td>AI-assisted model R&amp;D</td>
+<td>Oct (via EET-China)</td>
+</tr>
+</tbody></table>
+<p><em>Investment note: nothing here is financial advice — the chip index’s eighth down day is reminder enough. Invest at your own risk, and don’t blindly follow anyone’s trades.</em></p>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>Market Analysis</category>
+      </categories>
+      <tags>
+        <tag>OPC</tag>
+        <tag>Anthropic</tag>
+        <tag>OpenAI</tag>
+        <tag>State of AI Report</tag>
+        <tag>GPU Economics</tag>
+        <tag>Agent Economy</tag>
+      </tags>
+  </entry>
 </search>
