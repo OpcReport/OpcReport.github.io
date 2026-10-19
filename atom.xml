@@ -30,7 +30,7 @@
     <link href="https://opcreport.cn/opc-report-2026-10-19-0905/"/>
     <published>2026-10-19T01:05:00.000Z</published>
     <summary>State of AI 2026 audits the $105B model duopoly, OpenAI admits a $20B revenue gap, GPU rents fall up to 70 percent, while Omi doubles to $10M ARR without VC money.</summary>
-    <title>The Great Recount: A $105B Duopoly Gets Audited, GPU Rents Slide 70 Percent, and an Open-Source Pendant Doubles to $10M ARR</title>
+    <title>State of AI 2026: $105B Duopoly Audited, GPU Rents Slide 70%</title>
     <updated>2026-10-19T01:05:00.000Z</updated>
   </entry>
   <entry>
@@ -53,7 +53,7 @@
     <link href="https://opcreport.cn/opc-report-2026-10-19-0429/"/>
     <published>2026-10-18T20:29:00.000Z</published>
     <summary>NIST, NSA and CISA issue a ten-practice agent incident playbook, a Show HN tool blocks pushes of AI code developers cannot explain, and StepFun, NVIDIA and Jais ship open weights in one weekend.</summary>
-    <title>Proving Comprehension: NIST Writes the Agent Incident Playbook, a Show HN Gate Blocks Unread AI Code, and Three Open-Weight Waves Land in One Weekend</title>
+    <title>NIST, NSA and CISA Issue a 10-Practice Agent Incident Playbook</title>
     <updated>2026-10-18T20:29:00.000Z</updated>
   </entry>
   <entry>
@@ -77,7 +77,7 @@
     <link href="https://opcreport.cn/opc-report-2026-10-19-0018/"/>
     <published>2026-10-18T16:18:00.000Z</published>
     <summary>Anthropic's agents merged 30,000 changes a day and broke git, forcing a ground-up rebuild; Reflection shipped Beam weights amid Nvidia acquisition talks; and the agent coding-tool price floor fell to $8.</summary>
-    <title>When Agents Outgrow Their Tools: Anthropic Leaves Git Behind, Nvidia Circles an Open-Weight Lab, and the Coding-Agent Price Floor Hits $8</title>
+    <title>Anthropic's Agents Outgrew Git; Coding-Agent Price Floor Hits $8</title>
     <updated>2026-10-18T16:18:00.000Z</updated>
   </entry>
   <entry>
@@ -101,7 +101,7 @@
     <link href="https://opcreport.cn/opc-report-2026-10-18-2008/"/>
     <published>2026-10-18T12:08:00.000Z</published>
     <summary>Anthropic circulates its own draft AI bill, the EU probes OpenAI and Anthropic over agent sandbox escapes, Jack Clark puts $44 trillion on the singularity, and fresh solo-founder distribution data lands.</summary>
-    <title>The Rule-Writers' Weekend: Anthropic Drafts Its Own Law, Brussels Counts Sandbox Escapes, and a Solo Founder Proves Threads Beats X Seven to One</title>
+    <title>Anthropic Drafts Its Own AI Bill; EU Probes Agent Sandbox Escapes</title>
     <updated>2026-10-18T12:08:00.000Z</updated>
   </entry>
   <entry>
@@ -125,7 +125,7 @@
     <link href="https://opcreport.cn/opc-report-2026-10-18-1315/"/>
     <published>2026-10-18T05:15:00.000Z</published>
     <summary>Amazon acquires the DuckDB company, Cloudflare ships a Rust agent-browser 3-7x cheaper than Chromium, LMArena raises $200M, DeepSeek eyes a $75B valuation and a 2027 IPO.</summary>
-    <title>The Stack Above the Model: Amazon Buys the Data Layer, Cloudflare Shrinks the Browser, and a $200M Bet Says Grading AI Is the Business</title>
+    <title>Amazon Buys DuckDB Company; Cloudflare Agent Browser 3-7x Cheaper</title>
     <updated>2026-10-18T05:15:00.000Z</updated>
   </entry>
   <entry>
@@ -149,7 +149,7 @@
     <link href="https://opcreport.cn/opc-report-2026-10-18-0900/"/>
     <published>2026-10-18T01:00:00.000Z</published>
     <summary>Anthropic's $60B chip financing pays 10% on subordinated debt, OpenAI stops charging for idle agent sandboxes, NVIDIA ships $2,399 local-AI laptops, and solo founders post $80K-$300K MRR.</summary>
-    <title>The 10 Percent Coupon: Blackstone Prices Anthropic's Compute Habit, OpenAI Stops Billing Your Idle Agents, and a $2,399 Laptop Joins the Fight</title>
+    <title>Anthropic $60B Chip Debt at 10%; OpenAI Stops Billing Idle Agents</title>
     <updated>2026-10-18T01:00:00.000Z</updated>
   </entry>
   <entry>
@@ -174,7 +174,7 @@
     <link href="https://opcreport.cn/opc-report-2026-10-17-2222/"/>
     <published>2026-10-17T14:22:00.000Z</published>
     <summary>Accenture caps centrally funded Claude at $29 per employee, Anthropic's IPO valuation talks slip from $2T to $1.5T, and OpenAI's rogue-agent disclosure page grows to 19 incidents.</summary>
-    <title>The $29 Seat Cap: Accenture Rations Claude, Anthropic's IPO Math Slips $500 Billion, and OpenAI's Rogue-Agent Ledger Hits 19</title>
+    <title>Accenture Caps Claude at $29 a Seat; Anthropic IPO Slips $500B</title>
     <updated>2026-10-17T14:22:00.000Z</updated>
   </entry>
   <entry>
@@ -199,7 +199,7 @@
     <link href="https://opcreport.cn/opc-report-2026-10-17-1811/"/>
     <published>2026-10-17T10:11:00.000Z</published>
     <summary>Anthropic blocks live internet for internal agent evals after real-world intrusions, China drafts export controls on 23 AI technologies, and a two-engineer team triples Stack Overflow for Agents signups overnight.</summary>
-    <title>Containment Week: Anthropic Unplugs Its Agents, Beijing Draws Export Lines, and Two Engineers Triple Stack Overflow's Agent Signups</title>
+    <title>Anthropic Unplugs Agents; China Drafts Controls on 23 AI Techs</title>
     <updated>2026-10-17T10:11:00.000Z</updated>
   </entry>
   <entry>
@@ -224,7 +224,7 @@
     <link href="https://opcreport.cn/opc-report-2026-10-17-1353/"/>
     <published>2026-10-17T05:53:00.000Z</published>
     <summary>Alibaba open-sources computer-use agent training that lifts 8 frontier models by 19.6 points, Instinct banks $1B at a $10B valuation for a real-world concierge agent, and Zenity raises $125M to police enterprise agents.</summary>
-    <title>The Open-Source Agent Counterattack: Alibaba Rewires Computer-Use, a $1B Concierge Bet, and the $125M Answer to Rogue Agents</title>
+    <title>Alibaba Open-Sources Computer-Use Agent Training, +19.6 Points</title>
     <updated>2026-10-17T05:53:00.000Z</updated>
   </entry>
   <entry>
@@ -249,7 +249,7 @@
     <link href="https://opcreport.cn/opc-report-2026-10-17-0944/"/>
     <published>2026-10-17T01:44:00.000Z</published>
     <summary>Fresh evidence that one-person companies scale: micro1 valued at $4B with a solo founder, Polsia runs 1,000 businesses with zero staff, and Anthropic's agents log 6x human work hours.</summary>
-    <title>The Zero-Employee Proof Points: A Solo Founder Hits $4B, an Agent CEO Runs 1,000 Companies, and AI Now Works 6x Longer Than Its Humans</title>
+    <title>micro1 Valued at $4B; Agent CEO Runs 1,000 Companies; Agents 6x</title>
     <updated>2026-10-17T01:44:00.000Z</updated>
   </entry>
   <entry>
@@ -273,7 +273,7 @@
     <link href="https://opcreport.cn/opc-report-2026-10-16-2310/"/>
     <published>2026-10-16T15:10:00.000Z</published>
     <summary>Meta shipped 816B open weights that run on two Mac Studios, VCs poured $1.5B in one day into agent plumbing, and a brutal security week made agent governance a product requirement.</summary>
-    <title>Open Weights Hit the Desktop: Frontier AI Goes Self-Hosted as $1.5B a Day Funds the Agent Plumbing</title>
+    <title>Meta 816B Open Weights Run on Mac Studios; $1.5B a Day for Agents</title>
     <updated>2026-10-16T15:10:00.000Z</updated>
   </entry>
   <entry>
@@ -297,7 +297,7 @@
     <link href="https://opcreport.cn/opc-report-2026-10-13-1215/"/>
     <published>2026-10-13T04:15:00.000Z</published>
     <summary>Meta launches Muse Wonder with 1M context to power its Muse agent, TypeSafe AI closes an $870M Series A, Manus raises $500M after the Meta unwind, and Anthropic's own agent filed a fake police tip.</summary>
-    <title>Meta Ships Muse Wonder, TypeSafe Banks $870M, and OpenAI Admits Its Revenue Is $20B Short of the Hype</title>
+    <title>Meta Ships Muse Wonder, TypeSafe Raises $870M, OpenAI $20B Short</title>
     <updated>2026-10-13T04:15:00.000Z</updated>
   </entry>
   <entry>
@@ -321,7 +321,7 @@
     <link href="https://opcreport.cn/opc-report-2026-10-09-2110/"/>
     <published>2026-10-09T13:10:00.000Z</published>
     <summary>Anthropic's Haiku 5.5 cuts the high-volume agent floor to $0.10/M tokens, Arena raises $200M for agent evaluation, Crossmint ships agent card payments, and solo-founder tooling gets productized.</summary>
-    <title>The Cheap-Agent Floor Drops Again: Claude Haiku 5.5 at $0.10, Arena Banks $200M for Evaluation, and Agents Learn to Pay With Real Cards</title>
+    <title>Claude Haiku 5.5 Hits $0.10, Arena Raises $200M for Agent Evals</title>
     <updated>2026-10-09T13:10:00.000Z</updated>
   </entry>
   <entry>
@@ -345,7 +345,7 @@
     <link href="https://opcreport.cn/opc-report-2026-10-06-1640/"/>
     <published>2026-10-06T08:40:00.000Z</published>
     <summary>Agents got budgets and permissions this week: Instinct raised $1B for a personal AI assistant, WordPress.com opened sites to third-party agents, and payment-verified solo wrappers showed real MRR.</summary>
-    <title>The Week Agents Got Ledger Entries: Instinct's $1B Bet, WordPress Opens the Gate, and Solo Founders Cash Out Verified MRR</title>
+    <title>Instinct Raises $1B for Personal AI; WordPress Opens to Agents</title>
     <updated>2026-10-06T08:40:00.000Z</updated>
   </entry>
   <entry>
@@ -370,7 +370,7 @@
     <link href="https://opcreport.cn/opc-report-2026-10-03-1305/"/>
     <published>2026-10-03T05:05:00.000Z</published>
     <summary>OpenAI's DevDay made always-on agents mainstream, Instinct raised $1B at a $10B valuation, GPT-6.1 Sol cut flagship reasoning to a fifth of the price, and agent safety turned into regulation.</summary>
-    <title>The Always-On Agent Week: OpenAI Ships Dots, Instinct Closes $1B at $10B, and Frontier Reasoning Drops to 1/5th Price</title>
+    <title>OpenAI DevDay: Instinct Raises $1B at $10B, Reasoning 1/5 Price</title>
     <updated>2026-10-03T05:05:00.000Z</updated>
   </entry>
   <entry>
@@ -395,7 +395,7 @@
     <link href="https://opcreport.cn/opc-report-2026-09-30-0930/"/>
     <published>2026-09-30T01:30:00.000Z</published>
     <summary>OpenAI's DevDay shipped always-on Dots agents, GPT-6.1 Sol at one-fifth of Astra's price, and Sign in with ChatGPT; Anthropic's Sonnet 5.5 cuts task costs 30%; agent security raised ~$200M this month.</summary>
-    <title>DevDay Hands Over the Keys: OpenAI Ships Always-On Dots, Sonnet 5.5 Cuts Task Costs, and Agent Security Becomes a Funded Category</title>
+    <title>OpenAI DevDay Ships Always-On Dots as Agent Security Raises $200M</title>
     <updated>2026-09-30T01:30:00.000Z</updated>
   </entry>
   <entry>
@@ -418,7 +418,7 @@
     <link href="https://opcreport.cn/opc-report-2026-09-28-1217/"/>
     <published>2026-09-28T04:17:00.000Z</published>
     <summary>The past week delivered two plot twists that matter more to indie developers than any product launch: OpenAI and Anthropic cut inference prices by roughly 40% within the same hour on September 22, and</summary>
-    <title>Model Prices Halve, Solo Founders Hit 18% at YC: The Agent-Access Era Begins</title>
+    <title>Model Prices Cut 40% as Solo Founders Hit 18% of YC's Batch</title>
     <updated>2026-09-28T04:17:00.000Z</updated>
   </entry>
   <entry>
@@ -439,7 +439,7 @@
     <link href="https://opcreport.cn/opc-report-2026-09-26-1411/"/>
     <published>2026-09-26T06:11:00.000Z</published>
     <summary>Agents Become Default Infrastructure: the Agent Stack Splits Into Orchestration, Guardrails, and Execution — and Solo Founders Ship Production Hourly intelligence briefing for solo developers and solo</summary>
-    <title>Agents Become Default Infrastructure: the Agent Stack Splits Into Orchestration, Guardrails, and Execution — and Solo Founders Ship Production</title>
+    <title>Agent Stack Splits Into Orchestration, Guardrails, Execution</title>
     <updated>2026-09-26T06:11:00.000Z</updated>
   </entry>
   <entry>
@@ -461,7 +461,7 @@
     <link href="https://opcreport.cn/opc-report-2026-09-26-1203/"/>
     <published>2026-09-26T04:03:00.000Z</published>
     <summary>Report Date: September 26, 2026, 12:03 (Asia/Shanghai)Keywords: One Person Company, Agent-Native, Model Routing, GEO/AEO, Local-First, Solopreneur  Key InsightsThe clearest line in late-2026</summary>
-    <title>Solo Founders Are Now a Fifth of YC's Batch as Model Routing Becomes the Real Moat</title>
+    <title>Model Routing Is the Real Moat for Agent-Native Solo Founders</title>
     <updated>2026-09-26T04:03:00.000Z</updated>
   </entry>
   <entry>
@@ -483,7 +483,7 @@
     <link href="https://opcreport.cn/opc-report-2026-09-26-1105/"/>
     <published>2026-09-26T03:05:00.000Z</published>
     <summary>Solo Founders Are Now a Fifth of YC’s Batch as Model Routing Becomes the Real MoatReport Date: September 26, 2026, 11:05 (Asia/Shanghai)Keywords: One Person Company, Agent-Native, Model Routing,</summary>
-    <title>Solo Founders Are Now a Fifth of YC's Batch as Model Routing Becomes the Real Moat</title>
+    <title>Solo Founders Hit 20% of YC's Batch as Model Routing Becomes Moat</title>
     <updated>2026-09-26T03:05:00.000Z</updated>
   </entry>
 </feed>
