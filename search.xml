@@ -121714,4 +121714,161 @@
         <tag>Open Source</tag>
       </tags>
   </entry>
+  <entry>
+    <title>AI Agents Hacked 100 Sites for $50 Each: Cairn, Anthropic $45B</title>
+    <url>/opc-report-2026-10-20-2107/</url>
+    <content><![CDATA[<p>Two numbers defined October 19–20 in the one-person-company economy, and they point in opposite directions. The first is <strong>$50</strong> — the approximate token cost for an unsupervised AI agent swarm to break into a small business website, according to a Reuters-reported investigation by Norwegian security firm NorForge. The second is <strong>$45 billion</strong> — the size of a second compute deal Anthropic is reportedly negotiating with data-center developer Nscale, on top of the $44.6 billion already signed. The cost of attacking with agents collapsed just as the cost of running them got locked in for years through debt-financed infrastructure. In between, OpenAI accidentally exposed a trio of unreleased Aurora image models, and OpenRouter’s weekly ledger showed Chinese models holding the global usage crown for a 25th consecutive week. Here is what happened, with named sources and hard numbers.</p>
+<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><ul>
+<li><strong>Agentic intrusion is now a line-item expense, not a skill barrier.</strong> One operator targeted more than 1,200 websites, breached over 100, and spent roughly <strong>$5,000 in model tokens</strong> — about <strong>$50 per successful intrusion</strong> — running agents on the open-source Cairn platform (Reuters via NorForge, Oct 19).</li>
+<li><strong>Anthropic’s infrastructure cart keeps growing.</strong> Bloomberg reports Anthropic is in talks for a <strong>second ~$45 billion</strong> deal with Nscale for Monarch campus building two in West Virginia — 460 MW on Nvidia Vera Rubin chips — on top of up to <strong>$44.6 billion</strong> already contracted, which would put the pair’s total near <strong>$90 billion</strong>.</li>
+<li><strong>OpenAI’s next image stack leaked by accident.</strong> Three API entries — aurora-red-alpha, aurora-green-alpha and aurora-blue-alpha — surfaced on October 17–18, were pulled within hours, then reappeared in Arena blind tests generating images, revealing a tiered fast&#x2F;quality image strategy.</li>
+<li><strong>Chinese models held global usage leadership for a 25th straight week.</strong> OpenRouter data for October 12–18 shows China-origin models at <strong>79.18 trillion tokens</strong> versus <strong>17.36 trillion</strong> for US models — but total global volume fell <strong>4.65%</strong> week over week, the demand-dip signal worth watching.</li>
+<li><strong>Agent infrastructure is hitting CPU ceilings too.</strong> Modal announced it will run agent sandboxes on Nvidia’s Vera CPU after internal tests showed up to <strong>2x the throughput</strong> of comparable x86 silicon under heavy concurrent load (company blog, Oct 19).</li>
+</ul>
+<h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><p><strong>The Nscale negotiation is the week’s clearest window into how frontier labs buy compute now.</strong> According to Bloomberg (Oct 19), the second Monarch building would add 460 MW using Nvidia’s newest Vera Rubin generation, with Anthropic holding preferential negotiating rights over a planned third building. The Monarch campus was originally expected to house Microsoft, which per Bloomberg exited the project this summer — a striking reversal in tenant priority. Anthropic’s signed compute ledger now reads: Fluidstack <strong>$50 billion</strong>, SpaceX <strong>$45 billion</strong>, Nscale up to <strong>$44.6 billion</strong>, Volta Infrastructure <strong>$10 billion</strong>. The deal could land within days, and it arrives just as Nscale prepares an IPO targeting a <strong>~$30 billion valuation</strong> — while some investors are pushing that down to <strong>$16–19 billion</strong>, a gap of more than 40% that makes each new anchor customer disproportionately valuable to the filing.</p>
+<p><strong>The credit market is pricing the same trend from the other side.</strong> CoreWeave’s unsecured bonds have replaced Nvidia stock as the market’s AI-trade barometer, with yields breaking <strong>16%</strong> and CDS spreads climbing (Wall Street journal digests, Oct 20). Goldman Sachs upgraded CoreWeave to Buy with a <strong>$106 target</strong> — roughly 73% above the Oct 20 close — arguing the market overprices financing costs and underprices compute: revenue per megawatt should rise from about <strong>$10 million to $13 million</strong> annually. At the CF40 Bund Summit in Shanghai (Oct 19), former Dutch central bank chief Klaas Knot warned that roughly <strong>one-third of AI investment is debt-financed</strong> and that off-balance-sheet commitments make that figure a floor, while ECB chief economist Philip Lane estimated AI has lifted eurozone investment by about <strong>10%</strong> without moving wages. Independent operators should read this as context for pricing: the compute your APIs run on is increasingly leveraged, and leveraged infrastructure eventually passes financing costs downstream.</p>
+<p><strong>OpenRouter’s weekly ledger quantified both the China lead and the demand wobble.</strong> For October 12–18: global total <strong>164 trillion tokens (down 4.65%)</strong>, Chinese models <strong>79.18T (down 8.72%)</strong>, US models <strong>17.36T (down 8.49%)</strong>, with all top five models by volume being Chinese. The same week, Google fully opened Gemini 4 Argon commercially at <strong>$2 per million input &#x2F; $10 per million output</strong> tokens with a 95% cache discount — an aggressive price point for a frontier flagship that keeps the pressure on every builder’s unit economics.</p>
+<table>
+<thead>
+<tr>
+<th>Anthropic compute agreements (signed or in talks)</th>
+<th>Value</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Fluidstack</td>
+<td>$50B</td>
+<td>Signed</td>
+</tr>
+<tr>
+<td>SpaceX</td>
+<td>$45B</td>
+<td>Signed</td>
+</tr>
+<tr>
+<td>Nscale (Monarch B1 + existing infra)</td>
+<td>up to $44.6B</td>
+<td>Signed (IPO filing)</td>
+</tr>
+<tr>
+<td>Nscale (Monarch B2, 460 MW Vera Rubin)</td>
+<td>~$45B</td>
+<td>In talks, may close within days</td>
+</tr>
+<tr>
+<td>Volta Infrastructure Holdings</td>
+<td>$10B</td>
+<td>Signed</td>
+</tr>
+</tbody></table>
+<h2 id="Build-Directions"><a href="#Build-Directions" class="headerlink" title="Build Directions"></a>Build Directions</h2><p><strong>Cairn’s defender checklist is a gift to solo founders.</strong> The NorForge report (published Oct 19, campaign active since September 25) is painful reading, but it doubles as a free threat model for anyone running a small web business or an agent platform:</p>
+<ul>
+<li>The attackers left a visible trail precisely because <strong>operator control panels were exposed to the public internet</strong> — NorForge found more than 20 panels via routine Shodan and Censys scans, including panels run by legitimate penetration-testing firms. Those panels leaked hundreds of credentials and API keys, <strong>11% of which Trufflehog verified as still valid</strong>.</li>
+<li>The winning brief was under <strong>100 Chinese characters</strong>: prioritize login SQL injection, unauthenticated endpoints, file uploads, deserialization; land an uploader web shell. The agents then worked autonomously for an average of <strong>just under 23 hours</strong> per successful intrusion, coordinating through a shared blackboard with no inter-agent messaging.</li>
+<li>The worker label on the largest cluster (14 panels, 1,100+ attack projects against e-commerce in the US, Japan and Australia) read <code>claudecode_deepseek-v4.1-flash</code> — a coding-agent harness driving a cheap Flash-tier model. <strong>No frontier model was needed.</strong> A second English-language cluster (10 panels, mostly on Vultr) chased card and crypto data with a Pi-plus-OpenRouter stack.</li>
+</ul>
+<p>Cairn itself is AGPL-3.0 with 3,892 GitHub stars and describes itself as a general-purpose problem-solving engine; its author (posting as le1xia0) says it was never built for hacking. That is the point — the same orchestration pattern powers legitimate automation, which is why the defensive takeaway generalizes: treat any agent dashboard like an exposed Jenkins box, put it behind identity-aware access, and detect on volume patterns (1,200 probes across similar storefronts is one campaign, not 1,200 coincidences).</p>
+<p><strong>Modal’s Vera CPU bet says agent sandboxes are CPU-bound.</strong> CEO Erik Bernhardsson announced the agent-cloud platform will run sandboxes on Nvidia’s Vera CPU in a mixed fleet alongside Intel and AMD, after early tests showed roughly <strong>2x throughput under heavy concurrent load</strong> with no latency collapse — the exact profile of thousands of simultaneous agent sandboxes. The figure is vendor-reported and unbenchmarked independently, but the architectural conclusion matters for cost planners: sandbox hosting cost depends on the host CPU as much as the GPU.</p>
+<p><strong>The Fugleramme case is this week’s cleanest unmet-demand signal.</strong> A Norwegian developer wired a USB microphone into a Raspberry Pi 5 running the open-source BirdNET-Go classifier and a 13.3-inch color e-paper panel: when a bird calls in the yard, a framed vintage natural-history print redraws itself with that species. The Show HN post drew <strong>2,391 points and 267 comments</strong> — scores few Show HN posts ever reach — and the dominant comment was a complaint about the roughly <strong>€500 parts cost</strong>. Startup Heist’s analysis frames that complaint as demand: comparable color e-paper art frames (Aura’s $499 Ink frame, PocketBook’s $499 InkPoster Affresco) already sell at that price point as décor. The identified wedge — a finished, licensed, gift-ready version at <strong>$449</strong>, with the BirdNET license cleared through Cornell — projects $17K–$19K monthly contribution margin at 100 units&#x2F;month. The transferable lesson for one-person hardware companies: when thousands of people ask why your open-source build isn’t a product, the BOM complaint is a pricing anchor, not a rejection.</p>
+<h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><ul>
+<li><strong>$50 breaches reprice small-business risk permanently.</strong> NorForge’s Snorre Fagerland told Reuters the economics mean attackers “no longer need to choose targets carefully” — neglected storefronts, support sites and vendor-run pages that were too small to justify a skilled attacker now clear the bar at automation scale. A September Gambit Security report separately tied Cairn to the theft of <strong>600,000+ card records from 25 companies</strong>. Success rate was estimated at ~10% with ~$5 average cost per attempt including failures; both figures are rough, but the direction — tens of dollars, not thousands — is the robust part.</li>
+<li><strong>Your agents’ control plane is part of your attack surface.</strong> The exposed panels leaked operator goals, targets, credentials and logs in one place. India’s CERT-In has already formalized AI agents as an attack surface in advisory CIAD-2026-0049, and Taiwan’s government has reported agent-assisted intrusions this year. Network-level containment (default-deny egress, scoped credentials, no ambient authority) is the only reliable answer; prompt guardrails are not.</li>
+<li><strong>The Nscale valuation gap is a financing-risk tell.</strong> A company trying to IPO at $30 billion while investors push $16–19 billion is a company whose revenue depends heavily on a handful of mega-deals — including one that is still only “in talks.” Deals of this size can slip or restructure; anyone building capacity plans around reported numbers should wait for signatures.</li>
+<li><strong>Regional terms drift creates silent compliance gaps.</strong> Meta removed the word “train” from its consolidated crawling terms — but UK-English and Korean editions still contained the original language as of October 18, with the updated terms effective <strong>October 30</strong>. Publishers’ groups note removing one word from a permitted-use list does not prohibit the underlying use. If your product ingests third-party content under platform ToS, re-read the regional versions before the effective date.</li>
+<li><strong>Compute-ledger growth compounds even as usage dips.</strong> OpenRouter’s first global weekly volume decline in the current series (-4.65%) landed the same week as another $45B in proposed capacity. If demand softness persists while contracted supply locks in, the pressure shows up as model-price cuts (good for builders) and vendor stress (bad for anyone on single-provider infrastructure).</li>
+</ul>
+<h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><ol>
+<li><strong>Run the four-point Cairn audit on your own estate this week.</strong> Inventory every agent or admin dashboard you and your vendors run; move them behind VPN or identity-aware access; rotate any credential that ever touched an exposed panel; and hunt for unexpected PHP files or new writable directories on public web roots. NorForge’s guidance — detect on volume, not payload — can be implemented with a simple WAF rule on probe-like request patterns.</li>
+<li><strong>Assume a 10% automated-attack success rate and budget defenses accordingly.</strong> At $5 per attempt, an adversary can afford 20 tries per target. Cheap controls with outsized ROI: patch internet-facing software on a weekly cadence, keep session stores (memcached&#x2F;Redis) off the public internet, and remove legacy deserialization paths.</li>
+<li><strong>Price against Gemini 4 Argon, not against your current provider.</strong> At $2&#x2F;$10 per million tokens with 95% cache discounts, the new frontier flagship floor gives every API business a renegotiation lever. Model the migration math before your next invoice cycle — and keep at least one provider-agnostic abstraction in your stack.</li>
+<li><strong>Watch the “complaint-as-demand” channel for your next product.</strong> The Fugleramme thread shows the pattern: open-source build → viral Show HN post → price complaints in comments → finished product at the complained-about price. If you have a repo with traction, mine its comment sections for the exact feature and price people say is missing.</li>
+<li><strong>Track the Nscale IPO as a leading indicator for neocloud economics.</strong> The filing reveals real contract values (the $44.6B Anthropic figure came from IPO documents, not press releases). Read the prospectus when it prices — the customer-concentration and financing-cost disclosures will tell you more about where Claude pricing and availability are headed than any press cycle.</li>
+</ol>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Figure</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Sites targeted &#x2F; breached by Cairn campaign</td>
+<td>1,200+ targeted &#x2F; 100+ breached</td>
+<td>Reuters&#x2F;NorForge, Oct 19</td>
+</tr>
+<tr>
+<td>Total attacker model spend</td>
+<td><del>$5,000 (</del>$50 per breach, ~$5 per attempt)</td>
+<td>NorForge estimate</td>
+</tr>
+<tr>
+<td>Average time to successful intrusion</td>
+<td>just under 23 hours</td>
+<td>NorForge</td>
+</tr>
+<tr>
+<td>Valid credentials leaked from exposed panels</td>
+<td>11% of hundreds scanned (Trufflehog)</td>
+<td>NorForge</td>
+</tr>
+<tr>
+<td>Largest attack cluster</td>
+<td>14 panels, 1,100+ projects, e-commerce (US&#x2F;JP&#x2F;AU)</td>
+<td>NorForge AIA0001</td>
+</tr>
+<tr>
+<td>Anthropic–Nscale building two talks</td>
+<td>~$45B, 460 MW, Vera Rubin</td>
+<td>Bloomberg, Oct 19</td>
+</tr>
+<tr>
+<td>Nscale IPO ask vs investor pushback</td>
+<td>~$30B vs $16–19B</td>
+<td>Bloomberg&#x2F;Tencent News</td>
+</tr>
+<tr>
+<td>CoreWeave bond yield</td>
+<td>&gt;16%; Goldman target $106, $10M→$13M&#x2F;MW</td>
+<td>Oct 20 digests</td>
+</tr>
+<tr>
+<td>OpenRouter weekly tokens (Oct 12–18)</td>
+<td>Global 164T (-4.65%); China 79.18T; US 17.36T</td>
+<td>OpenRouter via NBD</td>
+</tr>
+<tr>
+<td>Gemini 4 Argon pricing</td>
+<td>$2&#x2F;M input, $10&#x2F;M output, 95% cache discount</td>
+<td>Google announcement</td>
+</tr>
+<tr>
+<td>Modal Vera CPU sandbox claim</td>
+<td>up to 2x throughput vs x86 under load</td>
+<td>Modal blog, Oct 19</td>
+</tr>
+<tr>
+<td>Fugleramme Show HN traction</td>
+<td>2,391 points, 267 comments; $449 product wedge</td>
+<td>Hacker News&#x2F;Startup Heist</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>AI Security</category>
+        <category>Solo Founder</category>
+      </categories>
+      <tags>
+        <tag>Anthropic</tag>
+        <tag>OpenAI</tag>
+        <tag>AI Agents</tag>
+        <tag>Solo Founder</tag>
+        <tag>Agent Security</tag>
+        <tag>Cairn</tag>
+        <tag>Nscale</tag>
+        <tag>OpenRouter</tag>
+      </tags>
+  </entry>
 </search>
