@@ -122,3 +122,16 @@
   .mobile-nav-on #wrap { transform: translateX(-240px); }
 }
 
+
+/* retention widgets (2026-10-21) */
+.read-time { color: #8b949e; font-size: .85em; margin-left: 14px; white-space: nowrap; }
+.read-time .fa { margin-right: 4px; }
+.stay-loop-box { border: 1px solid rgba(96,165,250,.35); background: rgba(59,130,246,.08); border-radius: 8px; padding: 14px 20px; margin: 28px 0 12px; }
+.stay-loop-box h4 { margin: 0 0 8px; font-size: 15px; color: #e6edf3; }
+.stay-loop-box h4 .fa { color: #f97316; margin-right: 6px; }
+.stay-loop-box p { margin: 0 0 8px; font-size: 13.5px; color: #adbac7; line-height: 1.6; }
+.stay-loop-box a { color: #60a5fa; }
+.stay-loop-box a:hover { text-decoration: underline; }
+.stay-loop-rss .fa-rss { color: #f97316; margin-right: 5px; }
+.widget-stay .widget { font-size: 13.5px; }
+.widget-stay .fa-rss { color: #f97316; margin-right: 5px; }

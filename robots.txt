@@ -4,7 +4,6 @@
 User-agent: *
 Allow: /
 Disallow: /search.xml
-Disallow: /atom.xml
 
 # AI crawlers — explicit Allow for GEO visibility
 User-agent: GPTBot
