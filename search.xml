@@ -122993,4 +122993,162 @@
         <tag>Vercel</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Google Agent Compute Engine: Every Agent Gets Its Own Computer</title>
+    <url>/opc-report-2026-10-23-0804/</url>
+    <content><![CDATA[<p>On October 22, at the AGNTCon + MCPCon North America conference in San Jose, the agent industry quietly stopped arguing about prompts and started building the operating system layer underneath them. Google Cloud unveiled Agent Compute Engine, a compute service purpose-built for AI agents that already runs the company’s own Gemini agent sessions and hands every agent its own hardware-isolated microVM. On the same stage and the same day, the Agentic AI Foundation announced it would host four new projects — Agent Skills from Anthropic, Open Responses from OpenAI, OpenEnv from Hugging Face and OpenSandbox from Alibaba — doubling its portfolio from three projects to ten in its first year. Hours earlier, OpenAI made its Decisions API generally available: a $0.10-per-million-token primitive that answers bounded questions in 100 to 180 milliseconds. Three announcements, one message: the scarce resource in 2026 is no longer a model, but a safe, cheap, portable place to run one — and that place just got built in the open.</p>
+<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><ul>
+<li><p><strong>Google gave every agent its own computer, and it is already in production.</strong> Announced October 22 in a Google Cloud blog post, Agent Compute Engine runs each agent inside a hardware-isolated microVM with a dedicated guest kernel, root access, a hardware-isolated hypervisor boundary, and Google’s Titanium offload chip underneath for defense in depth. Each microVM runs with short-lived credentials and a cryptographically verified identity, and its workspace persists on its own Hyperdisk across sessions. The service is tuned for agent-shaped churn: when an agent enters its thinking phase the microVM signals idleness and the host pauses it with a fast checkpoint, restoring from a snapshot instead of burning an idle machine, while agents launched from the same template share memory copy-on-write. Google says the service already powers its own Gemini agents; enterprise customers get a preview “in the coming months,” with no firm public date. It ships as part of the Gemini Enterprise Agent Platform.</p>
+</li>
+<li><p><strong>The same design is now open source for Kubernetes.</strong> Alongside the managed service, Google open-sourced Agent Substrate, a runtime that brings the microVM model to Kubernetes. Google reports up to 10x density over traditional compute, and in a benchmark of 200,000 agents it sustained 500 activations per second with suspend and resume latency under 500 milliseconds, working alongside frameworks such as Claude Code, OpenClaw and Hermes. The architecture notes describe gVisor-hardened isolation, an actor identity that survives migration between physical nodes, identity-aware routing that validates every request against a registered actor, snapshots persisted to Google Cloud Storage with configurable capture scope (full process memory versus durable data only), and standard Kubernetes NetworkPolicy for connectivity. The two artifacts together — a managed service and its open twin — are a bid to define what “running an agent” means the way containers redefined running a server.</p>
+</li>
+<li><p><strong>Four companies donated four layers of the agent stack to a neutral foundation.</strong> The Agentic AI Foundation (AAIF) announced Agent Skills (contributed by Anthropic), Open Responses (OpenAI), OpenEnv (Hugging Face) and OpenSandbox (Alibaba) at AGNTCon + MCPCon on October 22, taking its hosted portfolio from three launch projects in December 2025 to ten. The four new projects cover the layers a working agent needs: skills (a reusable package of instructions, scripts and resources that agents load on demand), interfaces (Open Responses defines a shared schema and consistent streaming events based on the OpenAI Responses API so developers can describe a request once and run it across providers), training environments (OpenEnv, a containerized framework for reinforcement-learning environments speaking both MCP and the Gym protocol), and secure execution (OpenSandbox, Alibaba’s general-purpose sandbox with multi-language SDKs, unified APIs and Docker and Kubernetes runtimes for coding agents, GUI agents, evaluation and code execution). They join the A2A protocol, Agent Router, agentgateway, AGENTS.md, goose and MCP under AAIF governance. “Four different companies chose to contribute them to neutral governance,” said Manik Surtani, AAIF’s CTO and co-founder. Anthropic’s David Soria Parra, co-creator of MCP, framed Agent Skills as the second Anthropic standard handed to the foundation after MCP.</p>
+</li>
+<li><p><strong>OpenAI priced the decision primitive at a tenth of a cent per thousand tokens.</strong> The Decisions API reached general availability on October 22, built on gpt-6-luna — not a new model, but ChatGPT Luna reconfigured for speed and cost, according to TechCrunch. It answers bounded questions with structured results instead of generated text: a predicate returns a probability, a choice returns one of your supplied values with confidence, a score returns a probability-weighted rating. Input costs $0.10 per million tokens and output tokens are not charged. OpenAI claims up to 10x faster responses than the same model through the Responses API, with API product lead Nikunj Handa citing a drop from one to three seconds down to 100, 120 or 180 milliseconds. Named use cases include Datadog scoring the risk of agent-generated shell commands before execution and Sierra running “under 280 ms p95” for choosing next actions in live customer conversations; early testers include Box, Datadog, Ramp and Speak, whose CTO Andrew Hsu reported the time between actions falling from 1.4 seconds to 0.13 seconds. Candor note from the same coverage: on public decision-model leaderboards OpenAI’s entry ranks eighth on the AIM System One Index and fourteenth on the Artificial Analysis Decision Index, behind TypeSafe’s Jev and others — TypeSafe’s own CEO advises trialing models on your own data rather than trusting a leaderboard.</p>
+</li>
+<li><p><strong>The background-agent tier got a public price list, with a Europe-shaped hole.</strong> Google expanded Gemini Spark, its Gemini 3.5-based background agent that monitors calendar, documents, notes and inbox and produces daily briefings. In the US it comes with a $20-per-month Google AI Pro subscription; outside the US it requires Google AI Ultra starting around $100 per month. The European Economic Area, the UK, Switzerland and Nigeria are excluded for now, with Google saying access will expand “in the coming weeks.” The comparison is unavoidable: OpenAI’s ChatGPT Work and Anthropic’s Claude Cowork are also paid-only at roughly $20 per month, but both work in Europe. For a solo operator, the takeaway is that the always-on agent layer is becoming a subscription line item with regional availability as a real variable.</p>
+</li>
+<li><p><strong>Capital kept repricing the model layer underneath.</strong> Bloomberg reported on October 22 that DeepSeek has raised roughly 100 billion yuan (about $15 billion) in its latest round — one of the largest financings in Chinese history — at a pre-money valuation near 500 billion yuan, with the target raised from an initial 50 billion to 80 billion and finally about 100 billion. Named investors include Shixi Capital, SMIC Capital affiliates, CPE Yuanfeng, Junlian Capital and Geely, with existing shareholders CATL, Tencent, IDG Capital and others following on; cumulative fundraising across two rounds in about half a year reaches roughly 150 billion yuan, and DeepSeek has not responded to confirmation requests. Reported revenue implies an annualized run rate near $1 billion, with growth partly from price increases. The round’s context is the October 17 release of V4.1-Flash-1017, aimed at end-to-end project construction, following September’s V4.1-Flash architecture (552 billion total parameters, 8 billion and 16 billion activated, with KV-cache high-bandwidth memory and SSD requirements cut to a quarter and an eighth of the prior generation). For agents that read context and call tools all day, that efficiency curve is the cost story.</p>
+</li>
+</ul>
+<h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><p><strong>The runtime is becoming the product.</strong> Google’s pitch is explicit: chatbots answer and stop; agents browse, write code, execute it, check the result and try again — which creates two problems a cloud provider must solve at once, churn and containment. Agent Compute Engine’s answer is fast pause-and-resume for the churn and hardware isolation plus the Titanium chip for the containment. When the largest clouds start selling “a computer per agent” rather than “a container per app,” the unit of cloud economics shifts from the machine to the agent lifecycle — and pricing, benchmarking and procurement all follow.</p>
+<p><strong>Portability is being standardized before the lock-in sets.</strong> AAIF’s four donations read like a checklist of everything that could have become proprietary: the skill format, the provider-agnostic interface schema, the RL environment protocol, the sandbox runtime. If Open Responses and OpenSandbox gain third-party implementations the way MCP did, switching a model or a runtime stops being a rewrite. The open question the foundation itself poses is whether these grow real ecosystems or stay announcement pages — but the direction of the donation is a hedge every buyer should take.</p>
+<p><strong>Decision models are becoming utility infrastructure.</strong> A primitive that returns “yes&#x2F;no with probability” in 150 milliseconds for $0.10 per million input tokens turns a whole class of LLM calls into plumbing: routing, classification, risk gating, next-step selection. OpenAI’s leaderboard candor — eighth and fourteenth on two public indices — matters less than the structural point: when the frontier lab prices the primitive this low, every agent framework’s internal control loop gets cheaper, and the “decision model” category TypeSafe opened becomes table stakes.</p>
+<p><strong>Agent-native teams are now an investment thesis.</strong> Hashed launched Nitro Cohort 2 in Seoul on October 22, switching from batch admissions to rolling review and stating it will back early teams whose core operations run on AI agents rather than tools. CEO Kim Seojoon described organizations where employees and agents work as one team. Cohort 1 produced a main-fund investment (GGUI) and an exit within months (Elyn). At the same event, OpenAI’s Asia-Pacific ecosystem lead Anna Mutoh announced a startup support program offering API credits, technical advice, global expansion and promotion, with a live Codex build demo. The accelerator layer is now explicitly filtering for teams that operate like one-person companies with rented fleets.</p>
+<h2 id="Build-Directions"><a href="#Build-Directions" class="headerlink" title="Build Directions"></a>Build Directions</h2><ul>
+<li><strong>Rent isolated agent compute before you build it.</strong> If your agents run untrusted code — generated scripts, browser automation, package installs — the pattern Google just shipped (hardware-isolated microVM, short-lived credentials, checkpoint on idle) is the reference architecture. Self-hosters can start with the open-sourced Agent Substrate on Kubernetes; managed-service users should watch the preview for pricing on paused versus active agent-hours, which is where the cost curve will actually be decided.</li>
+<li><strong>Adopt the donated standards as defaults, not options.</strong> Writing skills in the AAIF Agent Skills format, describing requests against the Open Responses schema and sandboxing execution with OpenSandbox-compatible runtimes costs little today and buys portability if the foundation’s projects gain the third-party momentum MCP had.</li>
+<li><strong>Move your agent’s control loop to a decision primitive.</strong> Every place an agent currently burns a full generation to pick a branch — retry or ask, continue or stop, risky or safe — is a candidate for a 150-millisecond structured call at a tenth of a cent per thousand tokens. Datadog’s pattern of scoring shell commands before execution is directly copyable.</li>
+<li><strong>Budget the background-agent tier as a subscription line.</strong> With Gemini Spark at $20 (US, Pro) or roughly $100 (Ultra, outside the US) and ChatGPT Work and Claude Cowork near $20, the always-on personal agent is now a recurring cost with regional availability gaps. Price it into your product’s unit economics the way you would price a database.</li>
+<li><strong>Treat the Chinese open-weight efficiency curve as a cost benchmark, not a controversy.</strong> V4.1-Flash’s claimed quartering of KV-cache memory and eighthing of SSD requirements, at a company whose ARR reportedly approaches $1 billion, is a data point for anyone sizing agent fleets: the cost floor keeps moving because the architecture keeps moving.</li>
+</ul>
+<h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><ul>
+<li><strong>Self-reported benchmarks everywhere.</strong> Google’s 10x density, 500 activations per second and sub-500-millisecond resume figures come from Google; the Decisions API’s speed claims come with named customer quotes, not independent benchmarks. Both vendors say to measure on your own workloads — take that literally.</li>
+<li><strong>Preview timing is not a product.</strong> Agent Compute Engine has no firm public date for enterprise preview; a service that already runs Google’s own agents may still be months away from your invoice. Plan capacity without it.</li>
+<li><strong>Standards can stall at the announcement page.</strong> AAIF grew from three projects to ten in a year, but the four new projects’ real test is third-party implementations. Building a product whose portability story depends on an unproven standard is a bet, not a plan.</li>
+<li><strong>Regional exclusion is a feature of the market, not a bug.</strong> Gemini Spark’s absence from the EEA, UK, Switzerland and Nigeria while competitors ship there shows that agent availability is being negotiated region by region. A global product needs a fallback for the markets where the background tier does not exist yet.</li>
+<li><strong>Unconfirmed capital figures.</strong> The DeepSeek round is a Bloomberg report the company has not confirmed, with investor names and valuations moving between reports; treat the 100-billion-yuan figure as directional. The prior report of the same round sized it near $14.9 billion — the new report lands near $15 billion, which is consistency, not confirmation.</li>
+</ul>
+<h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><ol>
+<li>Inventory every agent in your stack that executes generated code, and check whether it runs with hardware isolation or a shared kernel; the microVM-per-agent pattern is now the reference bar.</li>
+<li>Pilot a decision primitive on your highest-volume branching logic and compare cost and accuracy against your current full-generation approach on your own traffic.</li>
+<li>Write one small skill in the AAIF Agent Skills format this month; it is the cheapest way to learn whether the standard fits your product before the ecosystem decides for you.</li>
+<li>Add paused-agent-hours to your cost model alongside active ones, and re-run the numbers when the Agent Compute Engine preview publishes pricing.</li>
+<li>Keep a region matrix for every background-agent tier you depend on, with a named fallback for excluded markets.</li>
+</ol>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>The agent runtime layer, Oct 22 2026</th>
+<th>Detail</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Google Agent Compute Engine</td>
+<td>Hardware-isolated microVM per agent; guest kernel, root access, Titanium offload chip; Hyperdisk workspace persistence</td>
+<td>Google Cloud blog (Oct 22)</td>
+</tr>
+<tr>
+<td>Agent Substrate</td>
+<td>Open-source K8s runtime; 10x density claim; 200,000-agent benchmark, 500 activations&#x2F;sec, &lt;500ms suspend&#x2F;resume</td>
+<td>Google (Oct 22)</td>
+</tr>
+<tr>
+<td>AAIF new projects</td>
+<td>Agent Skills (Anthropic), Open Responses (OpenAI), OpenEnv (Hugging Face), OpenSandbox (Alibaba); portfolio now 10</td>
+<td>PR Newswire (Oct 22)</td>
+</tr>
+<tr>
+<td>OpenAI Decisions API</td>
+<td>GA Oct 22; gpt-6-luna based; $0.10&#x2F;M input tokens, no output charge; 100-180ms</td>
+<td>OpenAI &#x2F; TechCrunch</td>
+</tr>
+<tr>
+<td>Decisions benchmarks</td>
+<td>8th on AIM System One Index, 14th on Artificial Analysis Decision Index</td>
+<td>TechCrunch (Oct 22)</td>
+</tr>
+<tr>
+<td>Gemini Spark expansion</td>
+<td>$20&#x2F;mo Google AI Pro (US); Ultra ~$100&#x2F;mo outside US; EEA&#x2F;UK&#x2F;CH&#x2F;Nigeria excluded</td>
+<td>Google help docs</td>
+</tr>
+<tr>
+<td>Hashed Nitro Cohort 2</td>
+<td>Rolling admissions for agent-native startups; Seoul, Oct 22</td>
+<td>Gate.com (Oct 22)</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>The supporting ledger</th>
+<th>Event</th>
+<th>Detail</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DeepSeek round</td>
+<td><del>¥100B (</del>$15B)</td>
+<td>Pre-money ~¥500B; target raised ¥50B→¥80B→¥100B; unconfirmed</td>
+<td>Bloomberg (Oct 22)</td>
+</tr>
+<tr>
+<td>DeepSeek investors</td>
+<td>Named syndicate</td>
+<td>Shixi, SMIC affiliates, CPE Yuanfeng, Junlian, Geely; CATL&#x2F;Tencent&#x2F;IDG following</td>
+<td>Bloomberg (Oct 22)</td>
+</tr>
+<tr>
+<td>DeepSeek ARR</td>
+<td>~$1B annualized</td>
+<td>Growth partly from price increases; not full-year revenue</td>
+<td>Bloomberg (Oct 22)</td>
+</tr>
+<tr>
+<td>V4.1-Flash-1017</td>
+<td>Released Oct 17</td>
+<td>End-to-end project construction with self-feedback RL</td>
+<td>DeepSeek</td>
+</tr>
+<tr>
+<td>Hefei OPC community</td>
+<td>Opened Oct 21</td>
+<td>Training-certification-orders-employment loop; compute subsidies, startup loans</td>
+<td>Anhui Business Daily (Oct 22)</td>
+</tr>
+<tr>
+<td>iFlytek Spark X2.6</td>
+<td>1024 Developer Festival</td>
+<td>Code and agent capabilities on domestic compute; 256K-1M context</td>
+<td>iFlytek</td>
+</tr>
+<tr>
+<td>Tech Mahindra x SpaceXSI</td>
+<td>Partnership Oct 22</td>
+<td>Grok Build into enterprise engineering; first Indian IT major deal</td>
+<td>Reuters (Oct 22)</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>AI Agents</category>
+        <category>Cloud Computing</category>
+      </categories>
+      <tags>
+        <tag>OPC</tag>
+        <tag>Solopreneur</tag>
+        <tag>DeepSeek</tag>
+        <tag>Google</tag>
+        <tag>Agent Compute Engine</tag>
+        <tag>Agent Substrate</tag>
+        <tag>Agentic AI Foundation</tag>
+        <tag>OpenAI Decisions API</tag>
+        <tag>Gemini Spark</tag>
+        <tag>Hashed</tag>
+      </tags>
+  </entry>
 </search>
