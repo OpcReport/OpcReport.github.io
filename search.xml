@@ -123789,4 +123789,153 @@
         <tag>Yadaphone</tag>
       </tags>
   </entry>
+  <entry>
+    <title>GPT-6.1 Terra Halves Computer-Use Costs, Nvidia Puts $3B in Meta</title>
+    <url>/opc-report-2026-10-28-1316/</url>
+    <content><![CDATA[<p>The cheapest way to make an agent operate a computer just got cut in half — and the industry responded by rewiring everything around it. On October 26-27, OpenAI shipped GPT-6.1 Terra, a mid-tier model built for screen-reading, form-filling, video-editing computer work, at $1 per million input tokens and $5 per million output — half the price of its predecessor and GPT-6.1 Sol, and one-tenth of frontier GPT-6 Astra per token, while running more than three times faster. The same 48 hours produced the response layer: Nvidia confirmed a $3 billion stake in Meta’s enlarged $95 billion equity plan, with agent-security architectures (OpenShell, Sentry) attached to the deal; Hex raised $100 million at a $1.2 billion valuation after throwing out its own product and rebuilding it agent-native with agents writing the code; and two young inference clouds — General Compute and Hyperbolic — raised against the GPU-only orthodoxy. For the one-person operator, the headline is unit economics: the task that cost $4.82 on the old stack now costs $0.29.</p>
+<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><ul>
+<li><p><strong>GPT-6.1 Terra is a price story with frontier-shaped benchmarks.</strong> On Agents’ Last Exam, the professional computer-task benchmark, Terra scores 15 percentage points above GPT-5.6 Terra at medium reasoning effort while matching GPT-6 Astra at one-tenth of the per-token cost — and OpenAI’s own numbers put single-task cost at $0.29 versus $4.82 previously. On Terminal-Bench 4.0 it solves 50.3% of tasks at maximum effort, more than double the predecessor’s 21.5%. On OpenAI’s error-induced evaluation, the low-effort error rate fell from 53.6% to 16.7%, and to 4.3% at maximum effort. Artificial Analysis, testing independently, corroborates the shape: six Intelligence Index points above GPT-5.6 Terra at less than a third of the cost per task ($0.40 vs $1.40), with the model’s “guess when it doesn’t know” rate collapsing from 88% to 38%. Availability is already broad: Plus, Pro, Enterprise and Edu tiers in ChatGPT Work and Codex, and via API as gpt-6.1-terra, with a 1.05M-token context window. The Register’s verdict — “not a bombshell, but it rivals pricier models on some tasks at a tenth of Astra’s API price” — is exactly right, and for solo operators it is the difference between a demo and a workflow.</p>
+</li>
+<li><p><strong>The Critical cyber rating trickled down to the $1 model — and that cuts both ways.</strong> Terra meets the Critical threshold under OpenAI’s Preparedness Framework, inheriting Astra’s protections. That threshold matters because Astra was the first model OpenAI shipped past its own declared red line, in September. Frontier-class cyber capability is now the default inside a commodity-priced mid-tier model. The upside: defenders and solo builders get serious capability at cents per task. The downside: the same cost collapse makes broad agentic deployment affordable for organizations with no security team — a point sharpened by the CPU-cache covert-channel attack demonstrated against AI agents nine days ago, which showed the agent layer itself still carries unpatched attack surfaces. Security is moving from a differentiator to an entry ticket, and the pricing says everyone will be expected to have it.</p>
+</li>
+<li><p><strong>Capital rewired the silicon layer in the same window.</strong> Meta’s plan combines $35 billion of concurrent underwritten public offerings with a future $60 billion at-the-market equity program slated for Q1 2027, against full-year capex guidance of $135-145 billion; Nvidia is investing $3 billion (roughly 4.8 million Class A shares at $625) with AMD and Broadcom indicating non-binding interest in up to $5 billion each, and the partnership extends to agent security — Nvidia’s OpenShell reference architecture and Sentry behavior monitoring across structured, unstructured and graph data. Meanwhile two raises bet explicitly against GPU-only inference: General Compute announced a $100 million Series A co-led by Blackbird and Abstract (on top of a $400 million Upper90 debt facility) to finance, deploy and operate Cerebras, SambaNova and Positron chips as one heterogeneous inference cloud — 50 MW in the pipeline, first major deployments Q1 2027 — and Hyperbolic raised a $30 million Series A1 from Walden Catalyst, the fund led by Intel CEO Lip-Bu Tan, to pool capacity across hundreds of neoclouds. Add SpaceX’s disclosed ~$40 billion binding financing commitment for AI chips and data-center equipment, and Elon Musk’s warning that debt markets have largely closed to companies without major non-AI revenue — trouble, he says, for 200-plus neoclouds — and the layer solo builders rent is being repriced in public.</p>
+</li>
+<li><p><strong>Hex proved even incumbents were not agent-native — and that agents can rebuild them.</strong> Hex, founded 2019 with 2,500-plus customers, raised $100 million at a $1.2 billion post-money valuation led by Peak XV and 137 Ventures, with a16z, Sequoia, Redpoint, Amplify, Avra and Zero Prime participating — and shipped Hex 4.0, a from-scratch rewrite whose core assumption is that “everything is code.” CEO Barry McCardel is unusually candid: the old architecture was “bloated with hundreds of tools,” external agents reached it “through a keyhole via MCP,” and the company was “far from agent native, no matter how much we liked saying it.” The rewrite was, in his account, greatly accelerated by using agents to write all of the code. His summary — “the old paradigm is over, and no amount of bolting a chatbot sidebar onto the legacy platforms is going to change that” — is the week’s most useful sentence for anyone selling to teams whose data work has already moved into Cursor, Codex, Cognition and Claude.</p>
+</li>
+<li><p><strong>Agents kept crossing into regulated and physical domains, where the money is boring.</strong> CopperPilot, a year-old US-India startup, raised a $390,000 pre-seed led by Neon Fund and released Epsilon, a design agent that bolts into the EDA tools hardware engineers already use (KiCad, Altium, LTspice) via Ctrl+K; Iceberg Engineering used it to produce a first-pass schematic and layout for an nRF54L15 board within hours, and the agent’s design review caught a real error — a charge-status pin that would have fed 5V into the MCU’s 2.8V I&#x2F;O — though footprints and pins still required manual cross-checking against datasheets. Avante raised a $30 million Series A led by Frist Cressey Ventures (total funding $40 million) to build opinionated agents for corporate benefits teams, citing 70-plus customers including Samsung Semiconductor, Zscaler and News Corp, reach across 385,000 employees and family members, and bookings up nearly fivefold year over year. Guidewire agreed to acquire agentic-underwriting company Hyperexponential for $1.7 billion in cash (~$2 billion with earnouts), Nevis raised a $70 million Series B (EQT Ventures led; strategic money from Charles Schwab and QuantumLight) for adviser-admin automation, and Simplismart raised a $14 million Series B led by Dallas Venture Capital with Nvidia participating at roughly a $100 million valuation. The pattern: vertical software vendors are buying agent capability rather than building it.</p>
+</li>
+</ul>
+<h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><p><strong>The four-rung ladder refreshed its middle rung, and per-task pricing is the new scoreboard.</strong> OpenAI’s lineup — Luna, Terra, Sol, Astra — now has a mid-tier that beats the old mid-tier by 15 points on professional computer tasks at a third of the cost, sits six points above GPT-5.6 Terra on Artificial Analysis’s index at under a third of the cost per task, and still loses to GPT-6.1 Sol by four points at maximum effort. That is a deliberate product shape, not a benchmark fluke: the hardest coding still routes to Sol or Astra, while the volume work — invoice entry, form filling, reading technical drawings, cutdown video edits — moves down a tier. For buyers outside the US, and especially for one-person companies paying full USD, the mid-tier is the model that matters most; the collapse of per-task cost to cents is what finally makes “AI does the paperwork” clear the margin bar for operators who never had one.</p>
+<p><strong>Agent security became an acquisition market, and MCP became the default addressable surface.</strong> Within a week: Cisco is moving to acquire Astrix for about $400 million, Cyera agreed to buy Oasis Security for about $1 billion, Keyfactor raised more than $1 billion in growth investment for machine identity, and 1Password — past $500 million ARR — launched a credential broker for agents; Infisical’s $40 million Series B (October 27, covered earlier this week) now reads as an early tick in a consolidating category rather than a standalone event. On the protocol side, Apple is adding an intelligent assistant plus MCP support to Keynote, Pages and Numbers in November (Creator Studio subscribers, US English only, $12.99&#x2F;month or $129&#x2F;year, macOS 27 or later), and ServiceNow is connecting its Action Fabric to Gemini Enterprise over MCP servers and Agent2Agent connectivity, with retail, telecommunications sales and IT operations first and connectors shipping to the Google Cloud Marketplace. Document-generating and workflow agents just gained two large, standard surfaces — build to the protocol, not the app.</p>
+<p><strong>Capability claims are migrating from evals to theorems — unverified ones.</strong> OpenAI said its models refuted the Exponential Time Hypothesis, the roughly 30-year-old belief that some logic problems scale overwhelmingly in difficulty; hours later Anthropic released its own research refuting it, and OpenAI asked outside computer scientists to organize an open review. MIT’s Ryan Williams, one of three independent algorithm experts involved, has not certified the results and noted that if true they “should make every computer scientist put at least a little more weight on the possibility of P &#x3D; NP”; Gary Marcus called it “a big deal if correct”; John D. Cook countered that “the status of P &#x3D; NP is still unknown,” since 3-SAT still takes more than polynomial time as far as anyone knows; Fields medalist Timothy Gowers found it “very surprising and consequential.” Separate reporting notes OpenAI also claims proofs of local smoothing and Yang-Mills existence with no independent verification yet. Treat all of it as signal, not substrate — but note the direction: labs are now advertising theorem-grade output, and the review infrastructure is being built in public.</p>
+<h2 id="Build-Directions"><a href="#Build-Directions" class="headerlink" title="Build Directions"></a>Build Directions</h2><ul>
+<li><strong>Re-price your computer-use backlog this month.</strong> At $0.29 per task, the workflows that died at $4.82 — invoice entry, form filling, cross-app data entry, screenshot-to-CRM — clear the bar. Rebuild one real workflow on gpt-6.1-terra, measure cost and reliability against your current model, and use Terminal-Bench 4.0’s 50.3% (vs 21.5% for the predecessor) as the bar to beat.</li>
+<li><strong>Adopt the routing doctrine explicitly.</strong> Polsia, the zero-employee company, runs Claude Opus 4.6 as the primary reasoning model for its CEO agent despite the cost — expensive where judgment compounds, cheap or self-hosted everywhere else. Terra is now the default middle rung; reserve frontier tokens for decisions that cascade.</li>
+<li><strong>Build for MCP surfaces shipping in November.</strong> Apple’s Keynote&#x2F;Pages&#x2F;Numbers support and ServiceNow’s Gemini Enterprise connectors are early, cheap integration points for document and workflow agents; the protocol is consolidating the addressable surface faster than any single app ecosystem.</li>
+<li><strong>Treat credential separation as architecture, not a feature.</strong> The pattern is converging from both directions: Infisical’s forward proxy holds the real credential outside the agent’s environment, and Ant Group’s Lingguang 2.0 holds authorization keys separately from agents with user-revocable grants. For a solo operator, scoped short-lived tokens plus a proxy on a separate host is a weekend of work.</li>
+<li><strong>Look for physical-constraint wedges.</strong> CopperPilot’s bet is that “manufacturable” — not “looks like a schematic” — is the moat, and its review step already catches real electrical errors. The same shape applies to domains with hard formats and real penalties: compliance filings, medical coding, contracts, accessibility audits.</li>
+</ul>
+<h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><ul>
+<li><strong>Commodity-priced frontier cyber capability plus unpatched agent surfaces is the week’s sharpest risk.</strong> A model meeting the Critical threshold at $1 per million tokens, deployable by teams with no security staff, on an agent layer that just demonstrated a CPU-cache covert channel — the attack surface is scaling faster than the defenses.</li>
+<li><strong>Vendor speed and revenue claims do not reconcile.</strong> General Compute’s own materials promise “up to 40x faster than GPUs” in the release subheadline and “up to 20x faster results” in the feature list, with no published benchmark, named workload or model; its first major deployments are not live until Q1 2027. Hyperbolic’s $150 million ARR target, break-even and $200 million compute figures are company statements to Business Insider, and its Global Compute Grid and spot pricing are plans, not shipped products.</li>
+<li><strong>The theorem claims are unreplicated.</strong> Outside reviewers explicitly disavow endorsement; the P &#x3D; NP question remains open by Cook’s reading; the Yang-Mills and local-smoothing claims have no independent verification. Do not put them in roadmap math.</li>
+<li><strong>A gateway block is not a dead agent.</strong> VentureBeat flags that blocking an agent’s access through a gateway does not necessarily terminate every process running on the external platform hosting it — following Salesforce’s metering and registration work for external agents. Governance is moving from policy documents to runtime enforcement; assume processes survive revocation.</li>
+<li><strong>The compute layer you rent is debt-financed and consolidating.</strong> Meta’s $95 billion equity plan, SpaceX’s ~$40 billion commitment, Musk’s closed-debt warning for 200-plus neoclouds, and Cloudflare’s GLM-5.3 cross-tenant leak (155 responses exposed between August 27 and September 9, only on prompts exceeding 681,280 tokens, traced to a SGLang inference-engine bug plus a configuration error, model offline within 40 minutes) all point the same way: isolation and availability at the infrastructure layer are works in progress. Even support quality is a caution — 404 Media reports ChatGPT has been advising locked-out users to contact its reporters, including an Instagram user in Russia who lost 13 years of photos.</li>
+</ul>
+<h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><ol>
+<li>Rebuild one computer-use workflow on GPT-6.1 Terra this week and log cost per task, error rate and edge cases; the $4.82-to-$0.29 shift is the largest unit-economics change of the quarter for paperwork-shaped work.</li>
+<li>Audit whether any deployment assumes “gateway block equals agent stopped”; add runtime enforcement and behavior telemetry, and treat the ServiceNow registration pattern as the emerging baseline.</li>
+<li>Stress-test your GPU or inference vendor against the consolidation scenario — non-AI revenue, diversified financing, published SLAs — before the next quarter’s commitments.</li>
+<li>Ship one integration against a November MCP surface (Apple Keynote&#x2F;Pages&#x2F;Numbers or ServiceNow’s Gemini Enterprise connectors); early protocol integrations are cheap and compound.</li>
+<li>Keep unverified frontier claims — the ETH refutation, 40x speed figures — out of planning documents until third-party replication; Artificial Analysis’s independent cost-per-task numbers are the standard to wait for.</li>
+</ol>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>The computer-use repricing, Oct 26-28 2026</th>
+<th>Detail</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GPT-6.1 Terra</td>
+<td>API $1&#x2F;M input, $5&#x2F;M output, $0.05&#x2F;M cached; half of GPT-5.6 Terra and GPT-6.1 Sol, one-tenth of Astra per token; 3x+ faster than Astra&#x2F;Sol; 1.05M context; Agents’ Last Exam +15pp over GPT-5.6 Terra at medium effort, matches Astra; task cost $4.82 to $0.29; Terminal-Bench 4.0 50.3% at max effort vs 21.5%; error-induced eval 53.6% to 16.7% (low effort), 4.3% (max); meets Critical cyber threshold, inherits Astra protections; Plus&#x2F;Pro&#x2F;Enterprise&#x2F;Edu in ChatGPT Work and Codex, API id gpt-6.1-terra</td>
+<td>OpenAI launch &#x2F; Quartz &#x2F; The Register &#x2F; Tencent Research (Oct 27)</td>
+</tr>
+<tr>
+<td>Independent checks</td>
+<td>Artificial Analysis: +6 Intelligence Index points over GPT-5.6 Terra at under 1&#x2F;3 cost per task ($0.40 vs $1.40); low&#x2F;medium effort on the cost-efficiency frontier, max effort behind it; 4 points below GPT-6.1 Sol; guess-when-unknown rate 38% vs 88%</td>
+<td>Artificial Analysis (Oct 27)</td>
+</tr>
+<tr>
+<td>Model ladder</td>
+<td>Four tiers Luna &#x2F; Terra &#x2F; Sol &#x2F; Astra; hardest coding still routes to Sol or Astra; Terra sits mid-range above Luna</td>
+<td>OpenAI &#x2F; Singularity.Kiwi (Oct 27)</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>Capital, security and protocol, Oct 27-28 2026</th>
+<th>Detail</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Meta equity plan</td>
+<td>$35B concurrent underwritten offerings + $60B ATM program in Q1 2027; Nvidia investing $3B (~4.8M Class A shares at $625); AMD and Broadcom non-binding interest up to $5B each; 2026 capex $135-145B; Muse topped US App Store within 10 days of Sept 8 launch, ~5M downloads; OpenShell agent-security reference architecture and Sentry behavior monitoring attached to partnership; Vera Rubin, Vera CPU, Spectrum-X, BlueField-4</td>
+<td>Rainvent GenAI Daily &#x2F; Leiphone &#x2F; tmtpost (Oct 27-28)</td>
+</tr>
+<tr>
+<td>Hex</td>
+<td>$100M at $1.2B post-money; Peak XV and 137 Ventures lead; a16z, Sequoia, Redpoint, Amplify, Avra, Zero Prime; founded 2019, 2,500+ customers; Hex 4.0 from-scratch rewrite, “everything is code,” agents wrote all the code; “old paradigm is over, no chatbot sidebar bolting”</td>
+<td>Hex blog &#x2F; FinSMEs &#x2F; TechNewsReel (Oct 27)</td>
+</tr>
+<tr>
+<td>General Compute</td>
+<td>$100M Series A co-led by Blackbird and Abstract; $400M Upper90 debt facility; heterogeneous inference cloud (Cerebras, SambaNova, Positron); 50MW pipeline; first major deployments Q1 2027; bare metal or guaranteed tokens-per-second SLA; speed claims inconsistent (40x vs 20x)</td>
+<td>Business Insider context &#x2F; company release &#x2F; Writeble (Oct 27)</td>
+</tr>
+<tr>
+<td>Hyperbolic</td>
+<td>$30M Series A1 from Walden Catalyst (Intel CEO Lip-Bu Tan); $49M raised to date; pools GPU capacity across hundreds of neoclouds; $150M ARR target and break-even are company statements; Global Compute Grid and spot pricing are plans</td>
+<td>Hyperbolic &#x2F; Business Insider (Oct 27)</td>
+</tr>
+<tr>
+<td>CopperPilot</td>
+<td>$390K pre-seed led by Neon Fund; Epsilon design agent for hardware engineers; bolts into KiCad, Altium, LTspice via Ctrl+K; Iceberg Engineering case: first-pass nRF54L15 schematic and layout in hours; review caught 5V into 2.8V I&#x2F;O error; footprints still need manual cross-check</td>
+<td>Company announcement &#x2F; RecodeX (Oct 27)</td>
+</tr>
+<tr>
+<td>Avante</td>
+<td>$30M Series A led by Frist Cressey Ventures (total $40M); benefits-domain agents; 70+ customers incl. Samsung Semiconductor, Zscaler, News Corp; 385,000 employees and family members reached; bookings ~5x YoY; 40% hallucination figure is one broker’s anecdote</td>
+<td>GeekWire &#x2F; company post (Oct 27)</td>
+</tr>
+<tr>
+<td>Agent-security M&amp;A</td>
+<td>Cisco moving to acquire Astrix ~$400M; Cyera agreed to buy Oasis Security ~$1B; Keyfactor &gt;$1B growth round; 1Password past $500M ARR with agent credential broker; Infisical $40M Series B at $600M (Oct 27); NewCore $66M and Oak $60M seeds</td>
+<td>WOWTALE &#x2F; DevCuration (Oct 27-28)</td>
+</tr>
+<tr>
+<td>Protocol surfaces</td>
+<td>Apple: intelligent assistant + MCP in Keynote&#x2F;Pages&#x2F;Numbers, November, Creator Studio $12.99&#x2F;mo or $129&#x2F;yr, macOS 27+; ServiceNow Action Fabric to Gemini Enterprise over MCP + Agent2Agent (retail, telecom sales, IT ops; connectors to Google Cloud Marketplace)</td>
+<td>Apple Newsroom &#x2F; Google Cloud Press Corner (Oct 27-28)</td>
+</tr>
+<tr>
+<td>Compute financing strain</td>
+<td>SpaceX disclosed ~$40B binding commitment for AI chips and data-center equipment; Musk: debt markets largely closed without major non-AI revenue, 200+ neoclouds at risk</td>
+<td>CNBC &#x2F; TechCrunch via Rainvent (Oct 28)</td>
+</tr>
+<tr>
+<td>ETH claim</td>
+<td>OpenAI claims models refuted Exponential Time Hypothesis; Anthropic released own refutation hours later; outside review organized; Ryan Williams (MIT) not certified; Marcus “big deal if correct”; Cook “P &#x3D; NP still unknown”; Gowers “very surprising and consequential”; separate Yang-Mills and local-smoothing claims unverified</td>
+<td>AOL &#x2F; Business Insider &#x2F; Times of AI (Oct 27)</td>
+</tr>
+<tr>
+<td>Hosted-inference isolation</td>
+<td>Cloudflare GLM-5.3 on Workers AI: tenant-isolation bug exposed customer data across 155 responses (Aug 27-Sep 9), only on prompts &gt;681,280 tokens; SGLang bug plus configuration error; reported by Knostic’s Gadi Evron; offline in 40 minutes, patched same day, no malicious exploitation found</td>
+<td>Cloudflare disclosure via AI Breaking Wire (Oct 28)</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>AI Agents</category>
+        <category>Solo Founder</category>
+      </categories>
+      <tags>
+        <tag>OPC</tag>
+        <tag>Solopreneur</tag>
+        <tag>OpenAI</tag>
+        <tag>Meta</tag>
+        <tag>Nvidia</tag>
+        <tag>Agent Security</tag>
+        <tag>GPT-6.1 Terra</tag>
+        <tag>Hex</tag>
+        <tag>Computer Use Agents</tag>
+        <tag>Hyperbolic</tag>
+        <tag>General Compute</tag>
+        <tag>CopperPilot</tag>
+      </tags>
+  </entry>
 </search>
