@@ -123938,4 +123938,124 @@
         <tag>CopperPilot</tag>
       </tags>
   </entry>
+  <entry>
+    <title>NanoCo $12M, Hone $60M, ManyAgents $49: Who Watches the Agents</title>
+    <url>/opc-report-2026-10-28-1723/</url>
+    <content><![CDATA[<p>Agents got enterprise jobs at scale this week — Uber is rolling ChatGPT Work out from a 1,000-employee pilot to a workforce of roughly 30,000, and Oracle reports 130,000 active ChatGPT users and 95,000-plus active Codex users inside its own organization. The industry’s answer to the obvious follow-up question — who watches the agents? — arrived in the same window at three very different price points: a $12 million seed for an open-source governance stack you can audit in an afternoon (NanoCo), a $60 million seed at a reported $285 million for agents that own business outcomes (Hone), and a $49 one-time Mac app that runs a team of coding agents in one window (ManyAgents). The model layer is commoditizing; the layer that supervises it is just now being priced.</p>
+<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><ul>
+<li><p><strong>NanoCo sells auditability, not capability.</strong> The Israeli startup, founded by brothers Lazar and Gavriel Cohen, shipped NanoClaw — an open-source agent platform whose entire pitch is that you can read it. “OpenClaw had half a million lines of code, which is impossible to audit compared to NanoCo’s 4,000 lines of code,” Lazar Cohen told The Jerusalem Post (Oct 28). The architecture pairs sandboxed agents — isolated so they cannot reach unauthorized data or systems — with a gateway that sits outside the agent environment, where a human operator approves or denies each request before it leaves. The open-source release has passed 30,000 GitHub stars with what the company describes as hundreds of thousands of users, drew endorsements from Andrej Karpathy and Singapore’s Foreign Minister Vivian Balakrishnan, and powered a $12 million seed led by Valley Capital Partners with Docker, Vercel and monday.com participating. The commercial product deploys directly into a customer’s cloud — because, as Cohen puts it, many companies do not want to manage complex AI infrastructure themselves. Glilot Capital’s Daniel Ziv describes the payoff from the investor side: scheduling, notes, CRM updates and diligence chasing are “meta-work rather than judgment,” and his “back-office job has shifted from doing the tasks to writing the workflows.”</p>
+</li>
+<li><p><strong>Hone priced the outcome layer at $285 million — on a thesis benchmarks have not verified.</strong> The five-month-old San Francisco startup, staffed by alumni of OpenAI, Cognition, Ramp and Mercor, raised $60 million led by Benchmark and Index Ventures at a valuation Bloomberg reported at $285 million (announced Oct 8, back in the news Oct 27). Its product, “Engines,” are persistent agents assigned outcomes — improve customer retention, cut procurement cost, build qualified pipeline — that onboard themselves by learning a company’s systems, people and history, then work for weeks or months, checking in with humans as needed. The controls are the product: versioned routines, simulation against historical cases, fine-grained permissions, action logs and human approval for sensitive decisions, with customer data excluded from training and deployments available inside a customer-controlled environment. Benchmark’s Peter Fenton, joining the board, frames persistent agents as needing “appropriate immune systems.” Index’s Shardul Shah makes the louder claim — “What Cognition is to software development, Hone can be to every other function.” But the premise underneath — that agents recursively build and manage other agents — is exactly what public testing has not confirmed: on AgentSWE-style evaluations, agents score around 90 on problems they know and 9.9 on problems they do not, and building a new AI agent from scratch is rated “almost zero.” No customer outcome metrics have been disclosed. The valuation is the thesis.</p>
+</li>
+<li><p><strong>ManyAgents put orchestration on a consumer price tag — and exposed the category’s billing blind spot.</strong> The Mac app from AILOGY LLC (maker Stu Green; 101 votes, #13 on Product Hunt’s Oct 26 slate) gives each project an orchestrator that splits requests into tasks; workers build in separate git worktrees so agents never trip over each other; thinkers take hard design calls; and read-only reviewers check finished work before it reaches you — running on a different provider when Codex is configured, so the work is not only checked by the model that wrote it. A built-in browser lets agents open your app, click through flows and verify results themselves, with an iOS Simulator panel beside the chat, and a “Needs You” queue collects every agent question with its recommendation. Pricing: 14 days free with no account or card, then $49 once, riding the Claude Code and Codex plans you already pay for. Chinese coverage of the launch (Oct 28) nails the gap: it solves coordination, but it cannot solve the bill — parallel agents multiply token consumption, and the launch page says nothing about money. The fix, per reviewers in the Product Hunt comments, is the cross-provider reviewer: same-model self-review systematically passes its own bugs.</p>
+</li>
+<li><p><strong>A whole “agent workplace” cluster shipped in the same 48 hours.</strong> WhoIsCooking ($5 one-time, 111 votes) shows chip temperature, identifies whether Claude Code, Codex or Cursor is driving the load, and shifts busy work to efficiency cores. AI Bridge (85 votes) runs Claude Code, Codex, Grok and OpenCode side by side in real terminals, organizing agents alongside Kubernetes and database chats with Slack replies sent only when approved. VibeiDE (85 votes) queues agent tasks across projects for parallel execution and review, aimed explicitly at “developers and solo founders managing multiple tasks.” omerta (91 votes) is a pre-commit hook that catches .env secrets leaking into git using real values rather than patterns. Kiwi (110 votes) is a proactive assistant that texts you before you ask, across iMessage and WhatsApp, acting only after approval. The Oct 28 slate pushed the same signal further: NINX and Off Grid AI lead with private on-device AI, Paddock sells “computers and sandboxes for your agents,” and TheySaid 4.0 took the day’s top votes. The digest’s read is the week’s thesis in one line — the ecosystem is shifting from asking what AI can generate to asking where it can run safely and who gets to supervise it.</p>
+</li>
+<li><p><strong>The buyers are not who the pitches target.</strong> Uber’s rollout detail matters more than the headline: VP of Engineering Sumanth Sukumar says about 80 percent of the pilot’s early users were non-engineers, using the tool to analyze operational data, localize training materials and build dashboards — work that previously meant filing a request and waiting. Oracle’s Oct 27 expansion of its OpenAI partnership attaches the same software to existing procurement: US customers can buy the OpenAI API, Codex and ChatGPT Work through Oracle Marketplace with eligible Universal Credits, alongside an AI SMB Bundle, an App Composer for building on approved Oracle data, and an AI Security Mesh that manages testing infrastructure for OpenAI cyber models. Oracle’s own recruiting team cut market-research preparation from two to four days down to 15-20 minutes.</p>
+</li>
+</ul>
+<h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><p><strong>The supervision layer is being priced three ways at once — and the primitives are converging.</strong> NanoCo monetizes open source plus enterprise deployment; Hone prices outcomes; ManyAgents charges a one-time $49 license. Underneath, all three ship the same handful of parts: process isolation (sandboxes or git worktrees), an approval gate outside the agent’s reach (human operator, “Needs You” queue), action logging, and review by something other than the author. When a category’s products converge on primitives, differentiation moves up a layer — from “can it coordinate agents” to “can you audit what they did.” For a one-person operator, that shift is the buying signal: the question to ask any agent tool is no longer what model it wraps, but whether you can reconstruct why it acted.</p>
+<p><strong>Enterprise distribution is riding existing procurement channels, and the first mass use case is operational, not coding.</strong> Oracle’s Marketplace route and SMB bundle mean AI arrives through contracts companies already know how to sign; Uber’s non-engineer majority says the first workflows that clear the bar are dashboards, localization and analysis — not software engineering. The India enterprise-agent wave runs the same play from the supply side: QwikBuild raised a $2.3 million pre-seed (Globalway, Blume Ventures, Marsshot, DeVC, plus Groww founder Lalit Keshre and Cure.fit founder Ankit Nagori) and signed a joint venture with listed Japanese company Globalway to sell bespoke software-plus-agents into Japan, citing an electronics exporter running shipment and supply-chain software on SAP and a 3,000-employee healthtech that replaced its applicant-tracking and HR systems outright. Cognizant is reportedly in talks to invest in Sarvam AI at a $3.5-4 billion valuation. The supervision layer’s early market is not only Silicon Valley platform teams — it is every operator with more agents than hours.</p>
+<p><strong>Supervision anxiety is pushing work back on-device.</strong> The Oct 28 Product Hunt slate made privacy a headline category rather than a footnote — NINX, Off Grid AI, Llama Windows all sell local, OpenAI-compatible inference as the product — and Latent Space’s profile of a Thomson Reuters principal engineer running a coding agent entirely offline from a Himalayan laptop shows the extreme case. The pattern connects to NanoCo’s pitch from the other direction: if you cannot audit a 500,000-line agent platform, you either shrink the code or move the data. Solo builders should read both moves as demand for local-first and self-hosted supervision tooling, not as nostalgia.</p>
+<h2 id="Build-Directions"><a href="#Build-Directions" class="headerlink" title="Build Directions"></a>Build Directions</h2><ul>
+<li><strong>Ship the approval gateway, not another dashboard.</strong> NanoCo’s shape — small auditable core, sandboxed execution, human approve&#x2F;deny on outbound actions — is replicable by a solo developer in a weekend, and it converges with patterns already covered this month: Infisical’s forward proxy holding credentials outside the agent environment, and Lingguang 2.0’s user-revocable authorization keys held separately from agents.</li>
+<li><strong>Price orchestration honestly by showing the compute bill.</strong> ManyAgents’ launch page is silent on money because the category is: an orchestrator that displays per-agent token spend and per-task cost next to the diff answers the first question every parallel user asks, and no incumbent has claimed it yet.</li>
+<li><strong>Make cross-provider review the default.</strong> A read-only reviewer on a different provider catches what self-review systematically misses — the single most-praised detail in the ManyAgents comments, and a cheap differentiator for any review tool.</li>
+<li><strong>Treat auditability as a sales asset.</strong> “4,000 lines you can read” beat “500,000 lines with more features” in this week’s funding news. Publish your agent platform’s line count, threat model and sandbox boundary the way security vendors publish audit reports.</li>
+<li><strong>Build for the non-engineer majority.</strong> With 80 percent of Uber’s pilot users outside engineering, the widest early market is approval flows a non-technical user can actually audit — the wedge between a demo and a deployment.</li>
+</ul>
+<h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><ul>
+<li><strong>The recursive-agent premise is unverified, and $285 million is priced against it.</strong> AgentSWE-style results — roughly 90 on known problems, 9.9 on novel ones, “almost zero” at building agents from scratch — sit directly under Hone’s thesis, and no customer outcome metrics have been disclosed. Treat “agents that build agents” roadmaps as signal, not substrate.</li>
+<li><strong>Orchestration without cost telemetry is a bill-shock machine.</strong> Parallel agents multiply consumption on subscriptions users already have; the category’s launch pages systematically omit the compute economics, and users discover the bill after the trial.</li>
+<li><strong>Approval queues can train rubber-stamping.</strong> A “Needs You” panel is only governance if the human reads; the failure mode is a queue users learn to clear without scrutiny — the checkbox version of the gateway-block fallacy flagged earlier this week, where blocking access does not necessarily stop every running process.</li>
+<li><strong>Consumer-facing agent harm is now litigation.</strong> Parents sued OpenAI alleging GPT-4o coached their daughter off seizure medication (TechCrunch, Oct 28), and Bank of America is reduced to kindly asking customers not to share banking passwords with AI assistants — credential-sharing has become a consumer-education problem, which is how regulators first notice a behavior.</li>
+<li><strong>Adoption numbers are company-reported.</strong> NanoCo’s “hundreds of thousands of users,” 30,000 stars and Karpathy’s endorsement are marketing inputs, not security audits; Hone’s $285 million is a Bloomberg-reported figure the company has not filed.</li>
+</ul>
+<h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><ol>
+<li>If you run two or more agents in parallel, add a cost view this week — per-agent token spend and per-task cost beside the diff; the orchestration category’s biggest unanswered question is the bill.</li>
+<li>Separate credentials from agents with an approval gateway you control; BofA’s consumer advice is the retail-level version of the same architecture, and it costs a weekend to build.</li>
+<li>Before buying any “agents that build agents” pitch, demand novel-task benchmark numbers; 9.9 on unfamiliar problems is the bar the claim has to clear.</li>
+<li>Select agent platforms on auditability — line count, sandbox boundary, human approval on outbound actions — the way you would vet a payroll vendor.</li>
+<li>If your product serves Uber’s non-engineer 80 percent, design approval flows a non-technical user can audit in under a minute; that is the difference between a pilot and a deployment.</li>
+</ol>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>The supervision layer price list, Oct 26-28 2026</th>
+<th>Detail</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>NanoCo &#x2F; NanoClaw</td>
+<td>$12M seed led by Valley Capital Partners, with Docker, Vercel, monday.com participating; open-source agent platform, 4,000 lines vs OpenClaw’s ~500,000; sandboxed agents + external gateway with human approve&#x2F;deny; 30,000+ GitHub stars; “hundreds of thousands of users” (company claim); endorsed by Karpathy and Singapore FM Vivian Balakrishnan; enterprise version deploys in customer cloud; founded by brothers Lazar (commercial) and Gavriel (CEO, product) Cohen; grew out of Quibit pre-seed and a native AI PR agency</td>
+<td>The Jerusalem Post (Oct 28)</td>
+</tr>
+<tr>
+<td>Hone</td>
+<td>$60M seed at reported $285M valuation; Benchmark and Index Ventures lead (Elad Gil, Lux, SV Angel, others); five-month-old, ex-OpenAI&#x2F;Cognition&#x2F;Ramp&#x2F;Mercor team; CEO Moritz Stephan, ex-Cognition chief of staff; “Engines” own outcomes over weeks-months; controls: versioned routines, historical simulation, fine-grained permissions, action logs, human approval; early customers Cognition and Modal (Scott Wu personal investor); Fenton: “appropriate immune systems”; AgentSWE context: ~90 known vs 9.9 novel problems, “almost zero” building agents from scratch; no outcome metrics disclosed</td>
+<td>Bloomberg &#x2F; Dealroom &#x2F; Index Ventures (Oct 8, re-covered Oct 27-28)</td>
+</tr>
+<tr>
+<td>ManyAgents</td>
+<td>Mac app by AILOGY LLC (Stu Green); orchestrator splits tasks; workers in separate git worktrees; read-only reviewers on a different provider when Codex configured; built-in browser + iOS Simulator panel; “Needs You” queue; 14-day trial, $49 one-time license; rides existing Claude Code&#x2F;Codex plans; macOS 14+; 101 votes, #13 on Oct 26 Product Hunt slate; critique: solves coordination, not the compute bill</td>
+<td>Product Hunt &#x2F; company page &#x2F; NetEase (Oct 26-28)</td>
+</tr>
+<tr>
+<td>Agent-workplace cluster</td>
+<td>WhoIsCooking $5 one-time, 111 votes (chip temp, efficiency cores); AI Bridge 85 votes (Claude Code&#x2F;Codex&#x2F;Grok&#x2F;OpenCode in real terminals, K8s chats, Slack approval); VibeiDE 85 votes (parallel task queue for solo founders); omerta 91 votes (.env leak pre-commit hook, real values); Kiwi 110 votes (proactive iMessage&#x2F;WhatsApp assistant); Oct 28 slate: NINX, Off Grid AI, Paddock, PulseDev, Revix AI, TheySaid 4.0 (top votes)</td>
+<td>Product Hunt digests (Oct 26-28)</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>Enterprise rollout and risk echo, Oct 27-28 2026</th>
+<th>Detail</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Uber x ChatGPT Work</td>
+<td>From 1,000-employee pilot to ~30,000 employees; ~80% of early pilot users non-engineers; uses: operational data analysis, training-material localization, dashboards; cost not disclosed; usage and outcomes to be tracked</td>
+<td>TechCrunch &#x2F; Bruno Digital (Oct 28)</td>
+</tr>
+<tr>
+<td>Oracle x OpenAI</td>
+<td>Oracle AI Workspace (finance&#x2F;procurement&#x2F;planning apps in ChatGPT); AI Security Mesh (OpenAI cyber models, Oracle-managed testing); AI SMB Bundle (ChatGPT Business + Codex + OCI credits); App Composer; US purchase via Oracle Marketplace with Universal Credits; Oracle reports 130,000 active ChatGPT users, 95,000+ active Codex users; recruiting research 2-4 days to 15-20 min</td>
+<td>Turing Wire &#x2F; iFeeling Daily (Oct 27)</td>
+</tr>
+<tr>
+<td>India enterprise agents</td>
+<td>QwikBuild $2.3M pre-seed (Globalway, Blume, Marsshot, DeVC; angels Lalit Keshre, Ankit Nagori) + Japan JV with listed Globalway; clients incl. Asia’s largest electronics component exporter on SAP and a 3,000-employee healthtech (replaced ATS&#x2F;HR); Cognizant reportedly in talks to invest in Sarvam AI at $3.5-4B</td>
+<td>Hello Entrepreneurs (Oct 28)</td>
+</tr>
+<tr>
+<td>Risk echo</td>
+<td>Parents sue OpenAI alleging GPT-4o coached their daughter off seizure medication; Bank of America asks customers not to share banking passwords with AI assistants; Warhound raises $200M (war dogs with Anduril gear); Disruptive raises $10B fund for at least 10 big bets; Re:Build (ex-Slate Auto) raises $2.1B</td>
+<td>TechCrunch (Oct 28)</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>AI Agents</category>
+        <category>Solo Founder</category>
+      </categories>
+      <tags>
+        <tag>OPC</tag>
+        <tag>Solopreneur</tag>
+        <tag>OpenAI</tag>
+        <tag>NanoCo</tag>
+        <tag>NanoClaw</tag>
+        <tag>Hone</tag>
+        <tag>Benchmark</tag>
+        <tag>Index Ventures</tag>
+        <tag>ManyAgents</tag>
+        <tag>Agent Orchestration</tag>
+        <tag>Agent Governance</tag>
+        <tag>Uber</tag>
+        <tag>Oracle</tag>
+      </tags>
+  </entry>
 </search>
