@@ -124496,4 +124496,154 @@
         <tag>Hunan</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Entire $60M, Plato $16M: The Open Agent Tooling Wave</title>
+    <url>/opc-report-2026-10-31-1326/</url>
+    <content><![CDATA[<p>The agent boom produced a paradox: models now write more code, place more orders and run more tasks than ever, but the scaffolding to review, train and own that output is still closed or missing. This week a cluster of funding rounds and open-source launches attacked exactly that gap — and almost all of it is built to run on your own hardware. For one-person companies, which generate the most agent output per head and have the least review capacity, that shift is the story.</p>
+<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><ul>
+<li><p><strong>GitHub’s former CEO just raised the largest seed in dev-tools history to make agent code reviewable.</strong> Thomas Dohmke, who ran GitHub for four years and left in August 2025 after watching Copilot scale, founded Entire and closed a $60 million seed at a $300 million valuation led by Felicis, with Madrona, M12, Basis Set, Harry Stebbings, Jerry Yang and Datadog CEO Olivier Pomel among the backers (GlobeNewswire, Oct 6; coverage Oct 2026). Entire ships an open-source tool to manage code written by AI agents, built on three parts: a Git-compatible database that unifies agent-generated code, a “universal semantic reasoning layer” for coordinating multiple agents, and an AI-native user interface for human-agent collaboration. Its first product, Checkpoints, automatically pairs every agent commit with the context that produced it — the prompts and conversation logs — so a human can review, retrieve and even learn from the model’s reasoning. Dohmke’s thesis: “we are in an era of agent explosion; code generation has outpaced human comprehension,” and our human-built software pipeline “was fundamentally never designed for the AI age.” The pain is acute for solo founders who ship agent-written code they cannot fully audit.</p>
+</li>
+<li><p><strong>Plato raised $16 million to give agents a safe place to practice before they touch live systems.</strong> The San Francisco startup’s Series A was led by Nava Ventures with Gradient Ventures, Transpose Platform and Microsoft AI CEO Mustafa Suleyman participating, bringing total funding to $19 million after a Gradient-led seed (Unite.AI, Oct 28). Founded in 2025, Plato builds simulated workplaces where agents rehearse tasks in customer support, finance, healthcare administration and people operations. Its Computer Work Val v1.0 report, dated October 27, describes a validation set of 300 tasks across 10 domains and 36 roles running on 210 simulated applications, all expert-checked and resettable. CEO Robert Farlow argues “mastering real complex work comes from experience doing those tasks,” and the point is operational: training an agent inside a real system can spend money or mutate an actual customer record. Plato’s environments let developers run reinforcement learning and evaluation without those consequences — a cheap rehearsal layer a one-person company can stand up instead of burning live accounts.</p>
+</li>
+<li><p><strong>Photon put a $4.5 million seed behind the claim that agents belong inside messaging threads, not apps.</strong> The round was co-led by Gradient and A*, with Vercel, HongShan, Z Fellows, Llama Ventures and Karman participating (TechCrunch, Oct 1). Photon’s Spectrum SDK gives developers one API for agents that live in iMessage, WhatsApp, Telegram, SMS&#x2F;RCS, email and voice, plus a CLI and observability suite. The open-source edition accounts for 98 percent of usage; a hosted tier adds a 99.95 percent uptime commitment with SOC 2 Type II and HIPAA compliance that healthcare customers require. Photon reports more than 40,000 developer sign-ups, 10x revenue growth over four months, under 3 percent churn and fivefold messaging-volume growth in the past month. Co-founder and CEO Daniel Tian traces the idea to a friend who “could not tell their agent from a person in his own iMessage thread — and that told us where agents actually belong,” and the company marked the raise with a tongue-in-cheek funeral for mobile apps. The moat cuts both ways: iMessage has no public send API, so the integration work is the defensible layer, but it is also a layer a platform owner can remove with one policy change.</p>
+</li>
+<li><p><strong>A self-hosted plumbing wave shipped in the last two weeks, and none of it wants to replace your agent.</strong> Omnara (Apache-2.0, daemon and cluster v0.2.9 on Oct 21) is an open managed-agent platform that runs agents defined in YAML on any model and any machine, with tools, MCP, skills, secrets, approvals and event streaming, deployable by a single Docker Compose command. Union.ai’s hlock (Apache-2.0) applies the package-manager lockfile model to agent setups, pinning the harness, models, MCP servers, skills and config into a hashed harness.lock and rehydrating it on another machine or in Docker, with an audit command for integrity and hidden-character checks. Twine (MIT) wraps existing agent CLIs — Codex, Claude Code, Pi, OMP, Antigravity and OpenCode v2 — in a native macOS app that runs them as workflows, from a single agent to an adversarial implementer-and-reviewer pair. Argus (MIT, Show HN on Oct 24) is a self-hosted security operations platform where seven read-only agents investigate detections and a policy broker executes only approved actions, with autonomous response off by default. And Agent37, a YC Fall 2026 startup, launched persistent agent sandboxes at an average $0.37 per customer per month — about 95 percent cheaper than competitors — with one customer, Boon, cutting agent cost from $85 to $4.94 a month in three days. The shared design language: wrap the agent you already use, keep it on your hardware, and make cost and behavior legible.</p>
+</li>
+<li><p><strong>The attention land grab is measurable, and it is overwhelmingly open.</strong> AI Agent Radar’s November 1 weekly ranking of trending open agent repositories, refreshed every six hours, puts langchain at 148,609 stars, browser-use at 119,352, TradingAgents at 117,624, gemini-cli at 108,591, crawl4ai at 86,440, ruflo at 79,873, hindsight at 54,574, nanobot at 49,546, pentagi at 32,621 and QuantDinger at 13,222. These are not model repos; they are orchestration, memory, browser-control and self-hosted frameworks — the exact layers the funding rounds above are commercializing. The star counts are a cheaper trend signal than press releases for what solo developers actually adopt.</p>
+</li>
+<li><p><strong>For one-person companies, owning the stack is becoming a balance-sheet asset.</strong> Closed agent infrastructure means your prompts, code and data leave your machine and your bill is opaque — both a sovereignty and a cash-flow risk for a solo founder. The open wave hands solo builders the same supervision, training and deployment layers enterprises buy, at self-host cost. Paired with China’s OPC financing programs that treat token consumption and compute orders as credit-underwriting data, the ability to show a clean, self-hosted agent ledger turns infrastructure from a vendor dependency into a financed asset.</p>
+</li>
+</ul>
+<h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><p><strong>Funding is moving above the model, to the layer that makes agents trustworthy and ownable.</strong> Entire (review), Plato (train), Photon and Argus (deploy and secure) all sit on top of the model rather than competing with it. Investors are pricing the gap Dohmke named — comprehension has fallen behind generation — and the round sizes reflect it: a $60 million seed is a bet that agent-code audit is a category, not a feature.</p>
+<p><strong>Self-hosting is the default posture for new agent tooling, not a niche.</strong> Ninety-eight percent of Photon’s usage is open-source; Omnara, Argus, hlock and Twine are all self-hosted by design. The message to builders is consistent: bring your own keys, keep your data, and treat the cloud tier as a compliance upgrade rather than a prerequisite.</p>
+<p><strong>The OPC audience is the natural customer.</strong> Solo builders generate the most agent output per head and have the least review capacity — which is precisely the pain Entire, Plato and the self-hosted cluster solve. The market is quietly reorganizing around them.</p>
+<h2 id="Build-Directions"><a href="#Build-Directions" class="headerlink" title="Build Directions"></a>Build Directions</h2><ul>
+<li><strong>Adopt an agent-code audit habit modeled on Entire’s Checkpoints.</strong> Pair every generated commit with its prompt context and store it; treat that context as mandatory for anything you ship, not a nice-to-have.</li>
+<li><strong>Stand up a resettable sim before pointing an agent at a live account.</strong> Replicate Plato’s pattern cheaply: a throwaway environment with expert-checked tasks you can reset, so agents rehearse spending and record changes without consequences.</li>
+<li><strong>Move agent plumbing to self-hosted where you can.</strong> Omnara, hlock and Twine keep prompts, secrets and session logs on your hardware; reserve a managed, compliant tier (SOC 2, HIPAA) only when a customer contract forces it.</li>
+<li><strong>Put agents where users already are.</strong> Photon’s messaging thesis — agents belong in the thread, not a new app — is worth testing before you build another standalone interface.</li>
+</ul>
+<h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><ul>
+<li><strong>The open tooling is early-stage.</strong> Entire is seed-stage and Checkpoints is its first product; Omnara is at v0.2.9, hlock calls itself early development, and Argus has no independent audit or named customers. Do not bet production on unproven releases.</li>
+<li><strong>Platform risk in messaging is real.</strong> Photon’s iMessage integration is a moat only until Apple changes policy; single-channel dependence is fragile, and the same is true for any agent that lives inside a platform you do not control.</li>
+<li><strong>Context is not correctness.</strong> Checkpoints shows you the prompt but does not verify the code is right; pairing generation context with a human or sub-agent reviewer remains required, or the audit becomes theater.</li>
+<li><strong>The audit layer could shrink.</strong> Entire’s $60 million is a bet on a problem — agent-code comprehension — that is new; if models get good enough at self-explanation, the layer’s surface area contracts.</li>
+<li><strong>Self-hosted means you operate it.</strong> Security patching, model API keys and uptime are now your responsibility, which is a real cost for a one-person company.</li>
+</ul>
+<h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><ol>
+<li>This week, install an open code-review or context tool for your agent workflow; if you generate code with Claude Code or Codex, log the prompt context alongside every commit.</li>
+<li>Build a resettable test environment for any agent that touches money or customer data, using a throwaway account — the Plato sim pattern, done cheaply.</li>
+<li>Audit your agent tooling for data egress and move at least one component — memory, secrets or session logs — to self-hosted.</li>
+<li>Re-check your messaging-agent plan against Photon’s 40,000-developer, 10x-growth signal, but keep a second channel ready in case a platform changes its terms.</li>
+<li>Track the open-agent star leaderboard monthly; it is a cheaper, earlier trend signal than funding news for what solo developers actually adopt.</li>
+</ol>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Company</th>
+<th>Amount</th>
+<th>Round</th>
+<th>Lead investor(s)</th>
+<th>Date</th>
+<th>Focus</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Entire</td>
+<td>$60M ($300M val.)</td>
+<td>Seed</td>
+<td>Felicis</td>
+<td>Oct 2026</td>
+<td>Agent-code review &amp; management (GitHub ex-CEO Dohmke)</td>
+</tr>
+<tr>
+<td>Plato</td>
+<td>$16M (total $19M)</td>
+<td>Series A</td>
+<td>Nava Ventures (+Suleyman)</td>
+<td>Oct 28 2026</td>
+<td>Simulated workplaces to train&#x2F;eval agents</td>
+</tr>
+<tr>
+<td>Melius</td>
+<td>$25M ($5M + $20M)</td>
+<td>Seed + Series A</td>
+<td>General Catalyst &#x2F; CRV</td>
+<td>Oct 2026</td>
+<td>Creative-agent operating system</td>
+</tr>
+<tr>
+<td>Photon</td>
+<td>$4.5M</td>
+<td>Seed</td>
+<td>Gradient + A*</td>
+<td>Oct 1 2026</td>
+<td>Messaging-channel agents (open-source 98%)</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>Project</th>
+<th>License</th>
+<th>What it does</th>
+<th>Signal</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Omnara</td>
+<td>Apache-2.0</td>
+<td>Managed agents on any model&#x2F;machine, MCP&#x2F;skills&#x2F;secrets</td>
+<td>v0.2.9, Oct 21</td>
+</tr>
+<tr>
+<td>hlock (Union.ai)</td>
+<td>Apache-2.0</td>
+<td>Lockfile for agent harness&#x2F;models&#x2F;MCP&#x2F;skills</td>
+<td>v0.5.0, Oct 21</td>
+</tr>
+<tr>
+<td>Twine</td>
+<td>MIT</td>
+<td>macOS multi-agent workflows over existing CLIs</td>
+<td>Needs macOS 26, Apple Silicon</td>
+</tr>
+<tr>
+<td>Argus</td>
+<td>MIT</td>
+<td>7 read-only security agents + policy broker</td>
+<td>Show HN, Oct 24</td>
+</tr>
+<tr>
+<td>Agent37 (YC F26)</td>
+<td>Proprietary</td>
+<td>Persistent sandbox at $0.37&#x2F;mo per customer</td>
+<td>Launch HN, Oct 13-14</td>
+</tr>
+<tr>
+<td>Open-agent stars</td>
+<td>—</td>
+<td>langchain 148.6K, browser-use 119.4K, gemini-cli 108.6K</td>
+<td>AI Agent Radar, Nov 1</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>Developer Tools</category>
+        <category>One-Person Company</category>
+      </categories>
+      <tags>
+        <tag>Self-Hosted</tag>
+        <tag>Solo Founder</tag>
+        <tag>Open Source</tag>
+        <tag>Entire</tag>
+        <tag>Thomas Dohmke</tag>
+        <tag>Plato</tag>
+        <tag>AI Agent</tag>
+        <tag>Code Review</tag>
+        <tag>Agent Training</tag>
+        <tag>Photon</tag>
+      </tags>
+  </entry>
 </search>
