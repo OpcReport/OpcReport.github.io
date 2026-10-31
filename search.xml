@@ -124352,4 +124352,148 @@
         <tag>AI Finance Agents</tag>
       </tags>
   </entry>
+  <entry>
+    <title>ACP Lands in Android Studio: 40+ Agents, DoorDash Counts Hundreds</title>
+    <url>/opc-report-2026-10-31-0911/</url>
+    <content><![CDATA[<p>The agent stack spent this week acquiring what every mature technology eventually gets: protocols. At its Android Dev Summit in Mountain View — the platform’s first dedicated developer conference since 2022 — Google made Bring Your Own Agent (BYOA) stable in Android Studio Rabbit 2, letting developers install any of more than 40 coding agents that speak the open Agent Client Protocol (ACP), side by side, inside the same IDE. A day later, The Verge reported that OpenAI, Google, Microsoft and Anthropic will honor a shared “policy token” in robots.txt so publishers can opt out of AI scraping once instead of negotiating with every lab. And on the demand side, two numbers landed like cold water: DoorDash’s CEO told analysts that third-party AI agents have placed “maybe several hundred orders in total” on a platform that delivers roughly 3 million orders a day, and Stack Overflow’s monthly new-question count fell below 1,000 for the first time on record. Infrastructure is standardizing faster than adoption — and for one-person companies, that gap is the strategy.</p>
+<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><ul>
+<li><p><strong>Android Studio is now a multi-agent workbench, and ACP is the reason.</strong> With BYOA stable in Rabbit 2, developers install agents through a registry at Settings &gt; Tools &gt; AI &gt; Agents, bring their own subscription or API key, and run several at once — Anthropic’s Claude Agent, OpenAI’s Codex and Google’s Antigravity are confirmed at launch — switching between them per task instead of living inside one vendor’s tool. The foundation is ACP, an open, JSON-RPC 2.0-based wire protocol published by Zed Industries in August 2025 and now governed by a consortium of Zed, JetBrains, GitHub, Google and Cognition. The IDE launches each agent as a subprocess and exchanges protocol messages bidirectionally, passing the full project graph, build setup and platform details; an agent implements the protocol once and runs in any compliant editor. Adarsh Fernando, Google’s group product manager for Android developer tools, framed the change as a response to developer demand for choosing agents and models per task. The analogy that explains the stakes is the Language Server Protocol: Microsoft’s 2016 standard ended per-editor language integrations, and ACP is doing the same for coding agents. Note the division of labor — ACP connects editors to agents, while MCP connects agents to external tools (Tech Times, Oct 30; clawcaff brief, Oct 30).</p>
+</li>
+<li><p><strong>Google shipped the performance proof points that solo developers actually feel.</strong> Official Android CLI plugins for Claude Code and Codex (<code>codex plugin marketplace add android/android-cli-plugin</code>) give agents first-class access to the Android toolchain. The new <code>android preview</code> command renders Compose <code>@Preview</code> to PNG in the terminal and exports a component tree as JSON — no emulator boot, no IDE — and Google’s internal tests show agents completing UI tasks 77 percent faster while using as little as one-third of the tokens, though the company has not published how it measured that. LeakCanary is now integrated into the CLI and Android Studio Profiler, with heap dumps analyzed on the development machine; in an A&#x2F;B test using Claude Opus 5.5, the CLI path found and fixed memory leaks nearly twice as fast while cutting token usage by about 25 percent. <code>android device remote</code> even lets an agent reserve a physical device from Google’s lab (Tech Times, Oct 30; guibai.dev, Oct 30).</p>
+</li>
+<li><p><strong>The same summit published the honesty benchmark.</strong> Android Bench 2.0 scores agents on functionality, time and cost across multi-day tasks, and the October 29 leaderboard shows Claude Sonnet 5.5 (max) paired with Claude Code passing only 40 percent of 30 tasks. Google is clearly building for that gap: Change Review audits pending agent changes and Git diffs, groups scattered edits into walkthroughs and can be invoked with a slash command; more than 30 official Android Skills (agp-9-upgrade, android-profiler, r8-analyzer, camerax) patch the models’ ignorance of new APIs, performance and security rules; a Canary migration assistant translates XML layouts to Compose step by step across sessions; and Lightbuild, a declarative YAML build system, is being tested precisely so both humans and agents can read and edit build definitions. From 2027 the Play Store will formally evaluate foldable-app quality and award boosted visibility to apps that meet the bar — soft guidelines become distribution mechanics (guibai.dev, Oct 30; Tech Times, Oct 30).</p>
+</li>
+<li><p><strong>DoorDash put a number on agentic commerce, and the number is small.</strong> On the Q3 2026 earnings call, CEO Tony Xu said DoorDash is seeing “maybe several hundred orders in total” from third-party AI agents — TechCrunch names Muse, Instinct and Fo among them — against roughly 3 million deliveries a day in the company’s 2025 reporting. Xu’s framing was the most quotable line of the week: you “never want to fight gravity,” but you also should not be “delusional.” Most users still order through the app; DoorDash wants relationships with agent makers and sees a future in advertising inside agents. Its own surfaces shipped all year — prompt-and-image ordering in June, the dd-cli command-line agent in July (covered here on Aug 10), text ordering in September and an MCP connector for external chatbots. The pipes work. The demand does not — yet (TechCrunch, Oct 30; Konsulteer, Oct 30).</p>
+</li>
+<li><p><strong>Publishers got a unified opt-out switch.</strong> The shared policy token, proposed by Kevin Kelley, Anthropic’s technical lead for standards, under the IETF, lives inside a site’s existing robots.txt and expresses AI-training preferences across every participating crawler at once. Anthropic has already adopted the signal; Google and Microsoft plan support next year; OpenAI says implementation is coming in the “coming months”; Meta has expressed support for a common signal without committing to honor it. Microsoft will offer the most granular controls, letting publishers separate AI training from AI grounding — while noting sites still appear in Bing regardless. The backdrop matters: Really Simple Licensing (RSL) lets publishers charge crawlers, and Cloudflare now blocks AI crawlers by default. The token is an exit switch, not a license — refusal becomes machine-readable, but pricing still requires a transaction (The Verge, Oct 30).</p>
+</li>
+<li><p><strong>Stack Overflow’s question feed dropped below 1,000 a month.</strong> Developer frank chu verified via the Stack Exchange API that September 2026 saw just 969 new questions — August was 1,019 and October had already reached 977 by the 29th — down 81.6 percent from October 2025’s 5,263, down 95.8 percent from October 2024’s 23,162 and down 99.3 percent from October 2020’s 141,749, against a March 2014 peak of 207,169. Answers followed the same cliff: 306,000 in January 2014 to 2,391 last month. The 2026 Developer Survey (30,903 respondents) explains the mechanism: 70 percent ask an AI agent first when stuck, 64 percent visit less for simple questions, 29 percent ask fewer questions and 26 percent contribute less. The archive — 24 million questions, 36 million answers — is alive and licensed to model providers; the conversation is over, and the company’s own pivot, Stack Overflow for Agents, now serves machine users (IT Home, Oct 30; Developer Survey 2026).</p>
+</li>
+<li><p><strong>China’s OPC policy wave went provincial — and specific.</strong> Hunan’s guidance for OPC innovation, reported October 30, targets 10 “token factories,” 12,000P of smart compute, 200-plus OPC communities, 20,000 one-person companies and 30,000 founders by 2030 — and, notably, pilots using token consumption, compute orders and settlement flows as credit-underwriting data, plus “use-first, pay-later” and “pay-per-effect” procurement. Lianyungang’s 12 measures publish scenario-opportunity and capability lists across government, tourism, transport, medical and public-safety demand; encourage state agencies and SOEs to trial OPC products; hand model vouchers to community operators after acceptance; and stack token, corpus and innovation vouchers on top of five loan channels including talent loans. Securities Daily’s same-day commentary is the necessary counterweight: OPCs are asset-light and compute-cost heavy, AI-generated content ownership and personal-versus-company property separation remain legally unsettled, and traditional finance still lacks fitting credit products — with Zhejiang’s ten measures and programs in Guangdong, Anhui and Jiangsu completing the map (Hunan Daily, Oct 30; Lianyungang government; Securities Daily, Oct 31).</p>
+</li>
+</ul>
+<h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><p><strong>Protocols, not models, are where the agent layer is being decided this month.</strong> ACP for editor-to-agent plumbing, MCP for agent-to-tool plumbing, and an IETF token for crawler-to-publisher plumbing all landed within a week — the same standardization pattern that produced LSP, HTTP and robots.txt. For a one-person company, portability is leverage: implement once, run in any compliant IDE, switch vendors per task, keep your own subscription. The competitive question shifts from “which model is best” to “which agent delivers this task at what token cost with what review burden.” Google’s own numbers — 77 percent faster UI tasks, one-third the tokens — are the marketing version; the Android Bench 2.0 result (40 percent pass for the best agent) is the planning version.</p>
+<p><strong>Plumbing is ahead of demand, and both numbers prove it.</strong> DoorDash’s several hundred agent orders against 3 million a day say consumer agentic commerce is a 2027 story, not a 2026 channel. Stack Overflow’s sub-1,000-question month says the human knowledge feed that trained this generation of models is drying up — the archive survives as licensed data, the conversation does not. Two consequences for solo builders: original, proprietary knowledge becomes scarcer and more valuable (the real OPC moat), and machine-readable licensing — the policy token plus RSL — finally gives individual creators a working switch between “block” and “charge.”</p>
+<p><strong>The capital backdrop just became less forgiving.</strong> Friday, October 30: the Nasdaq fell more than 3 percent (down over 800 points at midday), the S&amp;P 500 dropped 1.9 percent and the Dow 0.9 percent. Intel plunged nearly 30 percent — flirting with its worst day since 1974 despite a better-than-expected profit, on a weak fourth-quarter guide; Alphabet had already slid more than 12 percent on Thursday, its worst day since listing in 2004, erasing roughly $500 billion; Amazon fell as much as 4.4 percent; Reddit and Roblox dropped 30 and 20 percent. The Nasdaq is down 5.8 percent in October with about $2 trillion erased from the Nasdaq 100 this month, and UBS’s CIO is advising clients to “diversify beyond AI.” Even crypto caught the bid — bitcoin slid toward $77,000 from above $86,000 earlier in the month after the $6 billion-plus Binance hack attributed to North Korea-linked actors. On October 31, a Blackstone outlook reported that Anthropic may not earn an investment-grade credit rating even after its IPO. For one-person companies the read-through is simple: assume the agent-infra funding window stays tight through 2027, and treat every quota doubling — like OpenAI’s October 30 reversal, which raised Pro and Business Premium limits after user pushback — as a gift that pricing can reverse (CBS, Oct 30; The Guardian, Oct 30; Xinhua, Oct 30; GeekNews, Oct 31).</p>
+<h2 id="Build-Directions"><a href="#Build-Directions" class="headerlink" title="Build Directions"></a>Build Directions</h2><ul>
+<li><strong>Build agent-portable from day one.</strong> Implement ACP once and your agent runs in every compliant editor; keep your own subscription or API key so no vendor owns your context. Then measure your own 77 percent: run one real task in two different agents, log tokens, wall-clock time and review fixes, and pick per task — not per loyalty.</li>
+<li><strong>Be deliberate about the machine-readable web.</strong> Decide your robots.txt posture this month — training opt-out or in, grounding yes or no — and consider whether RSL licensing terms attach to your content. If you sell to agents, ship structured endpoints the way DoorDash’s MCP connector does; if your content is the product, the policy token plus licensing is now a real revenue rail, not a hope.</li>
+<li><strong>Plan for the 40 percent world.</strong> The best agent on Google’s own multi-day benchmark fails six of ten tasks. Budget review time as a first-class cost, adopt Change Review-style audit tooling, and remember the 30-plus Android Skills exist because models do not know your platform’s newest rules — your domain skills are the moat, not the model.</li>
+<li><strong>Map to China’s financed OPC categories.</strong> Hunan and Lianyungang are explicit: token, corpus, model and innovation vouchers; scenario and capability lists; government and SOE trials; pay-per-effect pilots; talent loans. Metered token consumption is becoming credit data — log it monthly, because in China it is turning into your financial reputation.</li>
+<li><strong>Own a knowledge asset.</strong> As public Q&amp;A dries up, original benchmarks, notes and datasets become licensable goods. The protocol week’s quiet lesson: the creators who can say both “no” (policy token) and “here is my price” (RSL) will out-earn those who can only be scraped.</li>
+</ul>
+<h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><ul>
+<li><strong>Agentic-commerce volumes are a rounding error.</strong> Several hundred orders against 3 million a day is not a channel; do not underwrite 2027 GMV on 2026 demos, and treat any vendor pitch citing “agent orders” without a base rate as vaporware.</li>
+<li><strong>Protocol politics are unresolved.</strong> ACP’s governors — Zed, JetBrains, GitHub, Google and Cognition — do not include the labs whose agents run on it (Anthropic, OpenAI) or Microsoft; forks and divergence are possible, and ACP versus MCP versus vendor SDKs is still a three-way argument. Bet on portability, not on any single standard’s survival.</li>
+<li><strong>Vendor benchmarks lack methodology.</strong> The 77 percent and 3x figures are Google internal tests with no published measurement detail; the 40 percent Android Bench pass rate is the sanity check. Verify on your own tasks before re-planning around either.</li>
+<li><strong>The market reset reaches your vendors and your customers.</strong> A 5.8 percent Nasdaq October, Intel’s 30 percent slide and Blackstone’s Anthropic credit note all point the same way: agent-infra funding tightens, enterprise budgets get scrutinized, and quota generosity can reverse — OpenAI’s September cut plan was withdrawn only after user pushback.</li>
+<li><strong>China’s OPC support is uneven and young.</strong> Province-specific programs, asset-light credit risk, unclear AI-content ownership and single-founder concentration are all flagged by Securities Daily and by analysts like Zeng Gang last week; unit economics that assume a specific subsidy regime are bets, not plans.</li>
+<li><strong>The data flywheel is starving.</strong> Models trained on shrinking public corpora face a choice between paywalled licensing, synthetic data and agent-generated questions — Stack Overflow’s own pivot to agent users is the template. Quality effects are unknown, and open-weight models may feel the squeeze first.</li>
+</ul>
+<h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><ol>
+<li>This week, install a second ACP-compliant agent in Android Studio (or your IDE) through BYOA and run one real task in both. Log tokens, time and review fixes for each — your own numbers beat any vendor’s 77 percent.</li>
+<li>Make a deliberate robots.txt decision: training opt-out or in, grounding yes or no, and whether RSL licensing terms attach. Write down the reasoning; the policy token era rewards a stated position.</li>
+<li>If your product targets consumer agent channels, size the market off DoorDash’s several hundred orders, not the keynotes — and prioritize B2B and developer-tool workflows where adoption is already real.</li>
+<li>Start a monthly token-and-compute ledger. In China it is becoming credit-underwriting data; everywhere it is your true cost line, and it is the number your pricing should be re-checked against quarterly.</li>
+<li>Re-run your runway against the sell-off: assume tight agent-infra funding through 2027, favor revenue over raise, and keep fixed costs agent-priced and cancellable.</li>
+</ol>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>The protocol layer, Android Dev Summit week (Oct 29-30, 2026)</th>
+<th>Detail</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Android Studio BYOA</td>
+<td>Stable in Rabbit 2; 40-plus ACP-compliant agents installable side by side via the Settings &gt; Tools &gt; AI &gt; Agents registry; bring your own subscription or API key; Claude Agent, Codex and Antigravity confirmed at launch; Adarsh Fernando (Google group PM, Android developer tools)</td>
+<td>Tech Times (Oct 30); clawcaff brief</td>
+</tr>
+<tr>
+<td>Agent Client Protocol</td>
+<td>Open JSON-RPC 2.0 wire protocol; published by Zed Industries (Aug 2025); governed by consortium of Zed, JetBrains, GitHub, Google, Cognition; IDE launches agent as subprocess with bidirectional messages and full project graph; implement once, run in any compliant editor; ACP &#x3D; editor-to-agent, MCP &#x3D; agent-to-tools</td>
+<td>Tech Times (Oct 30); guibai.dev</td>
+</tr>
+<tr>
+<td>Android CLI</td>
+<td>Official agent plugins for Claude Code and Codex (<code>codex plugin marketplace add android/android-cli-plugin</code>); <code>android preview</code> renders @Preview to PNG and exports component-tree JSON without an emulator; <code>android device remote</code> reserves physical devices from Google labs; LeakCanary heap dumps analyzed on the dev machine</td>
+<td>guibai.dev (Oct 30); Tech Times</td>
+</tr>
+<tr>
+<td>Google’s internal numbers</td>
+<td>UI tasks 77% faster and token use as low as one-third with <code>android preview</code> (methodology unpublished); Claude Opus 5.5 A&#x2F;B test: memory leaks found and fixed nearly 2x faster with ~25% fewer tokens</td>
+<td>clawcaff; aiincontext</td>
+</tr>
+<tr>
+<td>Android Bench 2.0</td>
+<td>Functionality, time and cost across multi-day tasks; Oct 29 leaderboard: Claude Sonnet 5.5 (max) + Claude Code passed 40% of 30 tasks</td>
+<td>guibai.dev (Oct 30)</td>
+</tr>
+<tr>
+<td>Summit extras</td>
+<td>Change Review (diff audits, walkthroughs, slash command); 30+ Android Skills (agp-9-upgrade, android-profiler, r8-analyzer, camerax); XML-to-Compose Migration Assistant (Canary); Lightbuild YAML build system (testing); Gemini Nano 4 Agentic API (alpha, ML Kit); MCP + AppFunctions API (beta); Agent-to-UI for Compose (alpha); Connected Apps Platform preview (50+ partners); XREAL AURA glasses $1,099, under 95g, five virtual windows, ship mid-November</td>
+<td>guibai.dev; aiincontext; Tech Times</td>
+</tr>
+<tr>
+<td>Play Store policy</td>
+<td>Foldable-app quality formally evaluated from 2027; boosted visibility and placement for compliant apps; specific requirements to be announced later this year</td>
+<td>Tech Times (Oct 30); AndroidGuys</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>The reality check, Oct 29-31 2026</th>
+<th>Detail</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DoorDash agent orders</td>
+<td>Q3 2026 call: “maybe several hundred orders in total” from third-party agents (Muse, Instinct, Fo named) vs ~3M deliveries&#x2F;day (2025 report); Tony Xu: “never want to fight gravity,” do not be “delusional”; most users still order in-app; future ads inside agents; own surfaces: prompt+image ordering (June), dd-cli (July), text ordering (Sept), MCP connector</td>
+<td>TechCrunch (Oct 30); Konsulteer</td>
+</tr>
+<tr>
+<td>Stack Overflow decline</td>
+<td>Sept 2026: 969 new questions (Stack Exchange API count by frank chu); Aug: 1,019; Oct: 977 through Oct 29; -81.6% YoY (Oct 2025: 5,263); -95.8% vs Oct 2024 (23,162); -99.3% vs Oct 2020 (141,749); peak Mar 2014: 207,169; answers 306K (Jan 2014) to 2,391 (Sept 2026); survey: 70% ask an AI agent first, 64% visit less, 29% ask fewer, 26% contribute less; archive: 24M questions, 36M answers</td>
+<td>IT Home (Oct 30); Developer Survey 2026</td>
+</tr>
+<tr>
+<td>Policy token</td>
+<td>IETF proposal by Kevin Kelley (Anthropic technical lead for standards) inside robots.txt; one signal covers all participating crawlers; Anthropic adopted; Google and Microsoft in 2027; OpenAI “coming months”; Meta supportive but uncommitted; Microsoft separates training vs grounding opt-out (Bing listing unaffected); context: RSL licensing charges crawlers, Cloudflare blocks AI crawlers by default</td>
+<td>The Verge (Oct 30)</td>
+</tr>
+<tr>
+<td>China OPC build-out</td>
+<td>Hunan (Oct 30): by 2030 — 10 token factories, 12,000P compute, 200+ OPC communities, 20,000 OPCs, 30,000 talents; credit pilots on token consumption, compute orders, settlement flows; use-first-pay-later and pay-per-effect procurement. Lianyungang: 12 measures, 7 sections — scenario and capability lists, SOE&#x2F;government trials, model vouchers after acceptance, token&#x2F;corpus&#x2F;innovation vouchers, five loan channels incl. talent loans, half-minute financing mini-program. Securities Daily (Oct 31): asset-light and compute-heavy, unclear AI-content ownership, weak credit accumulation; Zhejiang ten measures; Guangdong, Anhui, Jiangsu programs</td>
+<td>Hunan Daily (Oct 30); Lianyungang government; Securities Daily (Oct 31)</td>
+</tr>
+<tr>
+<td>Market sell-off</td>
+<td>Oct 30: Nasdaq -3%+ (-830 pts at midday), S&amp;P 500 -1.9%, Dow -0.9%; Intel ~-30% (worst day since 1974 flirtation; weak Q4 guide despite better profit); Alphabet -12%+ on Oct 29 (worst since 2004 listing; ~$500B erased); Amazon -4.4% intraday; Reddit -30%, Roblox -20%; Nvidia -3.1%; Nasdaq -5.8% in October, ~$2T off Nasdaq 100 this month; UBS CIO: “diversify beyond AI”; bitcoin toward $77,000 after $6B+ Binance hack; Blackstone (Oct 31): Anthropic may not reach investment grade even post-IPO</td>
+<td>CBS (Oct 30); The Guardian (Oct 30); Xinhua (Oct 30); GeekNews (Oct 31)</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>Developer Tools</category>
+        <category>One-Person Company</category>
+      </categories>
+      <tags>
+        <tag>OPC</tag>
+        <tag>Solo Founder</tag>
+        <tag>Agentic Commerce</tag>
+        <tag>Agent Client Protocol</tag>
+        <tag>ACP</tag>
+        <tag>Android Studio</tag>
+        <tag>BYOA</tag>
+        <tag>DoorDash</tag>
+        <tag>IETF</tag>
+        <tag>robots.txt</tag>
+        <tag>Stack Overflow</tag>
+        <tag>Hunan</tag>
+      </tags>
+  </entry>
 </search>
