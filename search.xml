@@ -124846,4 +124846,96 @@
         <tag>AI Funding</tag>
       </tags>
   </entry>
+  <entry>
+    <title>TokenEconomizer Cuts Coding Agent Costs 31%, Baseten Eyes $30B</title>
+    <url>/opc-report-2026-11-01-1247/</url>
+    <content><![CDATA[<p>The loudest AI news this week came from the capital markets, but the most useful news for a one-person company came from two quiet engineering releases. Microsoft Research and UC Berkeley open-sourced a plugin that makes coding agents measurably cheaper. Factory shipped Droid 1.0, which attacks the same bill from a different layer. And while those tools pushed costs down, the inference layer that serves the models pushed valuations up — Baseten is lining up $2 billion at up to $30 billion, barely four months after being worth $13 billion. For the solo builder, the week’s lesson is that agent unit economics have become a product category of their own.</p>
+<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><ul>
+<li><strong>Agent cost control is now an installable product, not a research paper.</strong> TokenEconomizer, released by Microsoft Research and UC Berkeley under Apache 2.0, cut mean cost per task by 18.4% to 30.9% across 277 SWE-Bench tasks — and it was cheaper in all 30 repository-by-agent test cells. It plugs into Claude Code, Codex, GitHub Copilot CLI and Pi without touching model weights or agent code.</li>
+<li><strong>The harness, not the model, is the new battleground.</strong> Factory’s Droid 1.0 makes programmatic tool calling the default: the model writes a JavaScript program that batches hundreds of tool calls in one request, shrinking the base prompt 37% and beating Claude Code’s own harness on Factory’s Terminal-Bench 4 runs.</li>
+<li><strong>The inference layer is repricing faster than almost anything in private markets.</strong> Baseten is seeking roughly $2 billion at a valuation of up to $30 billion, per Bloomberg — about 2.3x its June mark — while rivals Modal ($15.75B) and Fireworks AI ($17.5B, reportedly negotiating $30-40B) climb in lockstep.</li>
+<li><strong>New indie data confirms: audience beats product.</strong> A fresh dataset of 85 AI-built apps with public revenue claims shows founders with a large pre-launch audience have a median of $40,000 per month, while small-audience founders median $2,000 — a 20x gap. The median verifiable number is just $2,280.</li>
+</ul>
+<h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><p><strong>Baseten’s five-month sprint from $13B to $30B.</strong> Bloomberg reported on Oct 31 that the AI inference platform has launched a new round of about $2 billion, with existing investor Sands Capital expected to lead. The round is structured in two tranches — $26 billion, then up to $30 billion — mirroring the two-tier structure of its June raise, when it took $1.5 billion at $13 billion with a record bet from Blackbird. Axios had reported talks at $26 billion in September; the final number reportedly cleared that mark. NVIDIA invested $150 million in the company in January. The revenue logic behind the step-up: training happens once, but inference happens forever, and every agent action burns compute. The competitive set is moving in formation — Modal raised $750 million at a $15.75 billion valuation, and Fireworks AI took $1.5 billion at $17.5 billion in July, with press reports of negotiations at $30-40 billion since. When the plumbing itself commands model-lab valuations, the cost curves that TokenEconomizer and Droid 1.0 attack become the demand curve for the entire layer.</p>
+<p><strong>The efficiency gap the tools are attacking.</strong> The TokenEconomizer team profiled 60 SWE-Bench tasks across six repositories running Claude Code with Opus 4.8 and found three recurring waste sources: after five preceding tasks, 30% of tool calls repeated earlier actions; a typical turn loaded 23 tool schemas of which 16 were never called (three tools covered 98% of all calls); and failed runs were 17% of tasks but 32% of total spend. Every agent turn re-bills the system prompt, every loaded tool definition and the full history — which is why “waste” compounds fastest for developers who live in the same repository all day, exactly the profile of a solo operator.</p>
+<p><strong>A reality check on indie revenue claims.</strong> An Indie Hackers contributor using the handle Kingringo spent months collecting 85 AI-built apps — products made with Claude Code, Cursor, Codex and Lovable — that had publicly reported revenue, and published the analysis on Oct 27. The headline finding: the nine founders with a large existing audience had a median of $40,000 per month; the nineteen with a small audience had a median of $2,000. But the more sobering cut is by verification source. Only 26 of the 85 had revenue readable from a payment provider (via public ledgers like TrustMRR), and their median was $2,280 — while founder-claimed numbers median $16,000 and screenshot-backed numbers $33,000. Eleven of the 18 verifiable apps earned under $10,000 per month. Only 10 of the 82 cases that explained their acquisition attributed results to a single channel.</p>
+<p><strong>Enterprise AI keeps buying boring efficiency.</strong> Ottawa-based Solink raised a growth round of more than $100 million led by Vertu Capital — no disclosed valuation — for AI that extracts theft, service and safety insights from security cameras retailers and restaurants already own. About 500,000 cameras at more than 35,000 customer locations in 65 countries feed the platform; customers include Jack in the Box and PGA TOUR Superstore. It is a reminder that some of the largest checks still go to software that monetizes hardware a business bought years ago.</p>
+<h2 id="Build-Directions"><a href="#Build-Directions" class="headerlink" title="Build Directions"></a>Build Directions</h2><p><strong>TokenEconomizer: the cheapest cost cut is a plugin.</strong> The tool is a standard-library Python package (3.10+) with agent plugins and three switchable mechanisms. Micro-skills distill facts from past traces — like the working test command — into one-line rules injected after three confirmations, with wrong facts retired fast (one contradiction counts as five). Tool pruning masks unused tool definitions; on Django with Claude Code, the first request of task 2 fell from 43,351 to 16,295 prompt tokens. A failure-loop guard learns a turn budget (1.25x the 90th percentile of successful runs), has an LLM judge flag stuck agents at 0.7+ confidence, allows one redirect, then stops. Learned state stays local in <code>~/.tokeneconomizer</code>. Savings split roughly: tool pruning 13.2-17.7%, micro-skills 11.8-14.3%, loop guard 5.4-7.1%. The repo drew roughly 1,600 stars within two weeks of the paper (arXiv 2610.22732).</p>
+<p><strong>Droid 1.0: programmatic tool calling as the default.</strong> Factory’s harness now lets the model write a sandboxed JavaScript “Script” tool instead of emitting JSON tool calls one at a time — the sandbox has no file, network or system access of its own, raw outputs stay in the program, and only printed results return to the model. Base prompt fell from 20,887 to 13,055 tokens (-37%) and shipped tool definitions from 11 to 2. In Factory’s own three-trial Terminal-Bench 4 runs (Oct 23-28), Droid with Claude Opus 5.5 scored 65.2% versus 62.1% for Cursor and OpenCode, 59.6% for Devin and 57.6% for Claude Code, at up to 24% lower cost and $4.73 per passed task; with GPT-6.1 Sol it scored 57.6% at $0.79 per passed task versus Codex’s 54.0%. Worked examples: a 151-issue Linear cleanup in 312 tool calls took 2 requests and ~61,000 tokens (versus a modeled 36 requests and ~3.1M tokens), and a 5,384-job CI sweep ran in 2 requests. It ships as a macOS&#x2F;Windows desktop app, terminal UI and Node SDK, works with any of ten supported models, and Script mode cut Droid’s own cost about 15% versus direct calling on Opus 5.5.</p>
+<p><strong>For the solo builder, the stack is now: cheap agent + cheap harness + real audience.</strong> The two releases are complementary, not competing — TokenEconomizer works beside whichever harness you run (including experimental opencode support), while Droid rearchitects the harness itself. Both are free. The scarce input they cannot supply is distribution, which is precisely what the 85-app dataset says matters most.</p>
+<h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><ul>
+<li><strong>Vendor-scored benchmarks.</strong> Every Droid 1.0 number is Factory’s own, from its own three-trial runs, with no independent reproduction yet. The methodology notes Devin cannot disable its ask-the-user tool and some tasks were scored on Codex’s passes — careful bookkeeping, but the ruler is still the seller’s.</li>
+<li><strong>Savings are not free everywhere.</strong> TokenEconomizer’s worst case was 6.4-9.3% on ReposVul security audits, and Pass@1 fell 1.0 point on Claude Code with Opus 4.8. Fixed strategies like RTK, Serena and Aider’s RepoMap helped Django but raised costs on SymPy — repository-adaptive control is the bet, not a guarantee.</li>
+<li><strong>Inference-layer froth.</strong> Baseten’s implied 2.3x in four months prices in sustained inference demand growth in a market where cloud giants bundle the same capability and margins are contested. A valuation set before any revenue disclosure is a bet, not a fact.</li>
+<li><strong>The verification gap is itself a market risk.</strong> When screenshot-backed medians ($33K) run 14x above payment-provider-verified medians ($2,280), anyone buying indie products, ad placements or “proven” MRR businesses off the back of a post is pricing on unverified data.</li>
+</ul>
+<h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><ol>
+<li><strong>Install a cost controller this week.</strong> If you run Claude Code, Codex or Copilot CLI in a repository you return to daily, TokenEconomizer is a one-command install with savings measurable by your own bills — start with tool pruning and the loop guard (both on by default), enable micro-skills second.</li>
+<li><strong>Trial script-mode tool calling on your longest-running tasks.</strong> Droid 1.0’s gains concentrate in the long tail of many-tool-call work; run your own two-hour task through it and compare tokens and wall time before switching harnesses.</li>
+<li><strong>Audit your token waste the way the paper did.</strong> Even without the plugin, check your last five sessions: how many tool calls repeated earlier actions, how many loaded tools never fired, how many failed loops burned budget. The three waste sources it found are generic.</li>
+<li><strong>Treat distribution as the product’s co-founder.</strong> The 85-app dataset is the clearest quantitative argument yet that building an audience before building the app is worth roughly 20x at the median — and that self-reported numbers deserve a haircut until verified.</li>
+<li><strong>Watch the inference layer for your own cost curve.</strong> If Baseten, Modal and Fireworks keep raising at these multiples, expect competitive pressure to push serving prices down over 2027 — favorable for anyone whose gross margin is mostly model calls.</li>
+</ol>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What Happened</th>
+<th>Key Numbers</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TokenEconomizer</td>
+<td>Microsoft Research + UC Berkeley open-source agent cost controller</td>
+<td>18.4-30.9% mean cost cut, 277 SWE-Bench tasks, Apache 2.0, ~1,600 stars in 2 weeks</td>
+</tr>
+<tr>
+<td>Factory Droid 1.0</td>
+<td>Harness update, programmatic tool calling default</td>
+<td>Base prompt -37% (20,887→13,055), 65.2% Terminal-Bench 4 w&#x2F; Opus 5.5, $4.73 per passed task</td>
+</tr>
+<tr>
+<td>Baseten</td>
+<td>New round reported by Bloomberg (Oct 31)</td>
+<td>~$2B raise, up to $30B valuation, from $13B in June; Sands Capital to lead</td>
+</tr>
+<tr>
+<td>Fireworks AI</td>
+<td>July raise; reported follow-on talks</td>
+<td>$1.5B at $17.5B; talks at $30-40B reportedly</td>
+</tr>
+<tr>
+<td>Modal</td>
+<td>Earlier 2026 raise, comparison point</td>
+<td>$750M at $15.75B</td>
+</tr>
+<tr>
+<td>Kingringo dataset</td>
+<td>85 AI-built apps with public revenue, published Oct 27</td>
+<td>With-audience median $40K&#x2F;mo vs $2K; verified median $2,280; 26&#x2F;85 verifiable</td>
+</tr>
+<tr>
+<td>Solink</td>
+<td>Growth round &gt;$100M, Vertu Capital</td>
+<td>500K cameras, 35K+ locations, 65 countries</td>
+</tr>
+</tbody></table>
+<p><em>Sources: Bloomberg (Oct 31) via BlockBeats&#x2F;TechFlow; AITopic, Nvdium, Tooliax and ExplainX coverage of the TokenEconomizer paper (arXiv 2610.22732); We Are the Frontier, Krypto News and IA en un Minuto on Droid 1.0; Indie Hackers (Kingringo, Oct 27) via Hubwiz; SiliconANGLE via rAInvent on Solink; InforCapital on Prismus.</em></p>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>One-Person Company</category>
+        <category>Agent Infrastructure</category>
+        <category>AI Coding</category>
+      </categories>
+      <tags>
+        <tag>OPC</tag>
+        <tag>AI Agents</tag>
+        <tag>Indie Hackers</tag>
+        <tag>TokenEconomizer</tag>
+        <tag>Baseten</tag>
+        <tag>Factory Droid</tag>
+        <tag>Claude Code</tag>
+      </tags>
+  </entry>
 </search>
