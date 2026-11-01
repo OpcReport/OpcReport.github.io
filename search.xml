@@ -124938,4 +124938,167 @@
         <tag>Claude Code</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Karpathy Ships HackerTube in 2 Hours, Claude Pens Root Exploit</title>
+    <url>/opc-report-2026-11-01-1653/</url>
+    <content><![CDATA[<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><p>The weekend of October 31 to November 1 delivered the cleanest proof yet that the one-person company is no longer a theory — it is a shipping schedule. Andrej Karpathy, tired of what he called an “enshittified wall of slop” on YouTube, asked Claude Opus 5.5 for a YouTube clone built from videos recommended on Hacker News. By Saturday afternoon, hackertube.org was live: 6,454 videos across 150 topics, a hardened VPS deployment, no accounts, and a downloadable dataset. Total build time: about two hours. Total model bill per Karpathy: 504 million input tokens (90% cached) and roughly 1 million Opus tokens for the application itself.</p>
+<p>At the same time, the harness layer — the software shell that wraps a coding model — visibly commoditized. Show HN alone added Imza, agent-hop, Archwhere, Octomind and Smelt on October 31; Product Hunt’s November 1 slate put a voice-first harness (SKI) at #1 and an agent-run observability platform (telemetry.dev) at #3. When a category spawns a dozen alternatives in 48 hours, the wedge is no longer the wrapper; it is the workflow.</p>
+<p>And in security, a line was crossed that one-person operators cannot ignore: Anthropic disclosed that its Claude model wrote a working remote root exploit for CVE-2026-98432, a CVSS 9.8 use-after-free in the Linux IPv4 TCP handshake — while Ubuntu and RHEL, the two most deployed distributions, still had no patch as of October 31.</p>
+<h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><p><strong>The seed-to-Series A squeeze is now quantified.</strong> Crunchbase News data published October 31 show US Series A rounds fell to 272 in Q3 2026, down 28% from 377 a year earlier. Seed rounds fell only 7%, to 984 from 1,059 — meaning the funnel is clogging in the middle. Of companies that raised a $1 million-plus seed in 2024, only 16% have moved past seed; for the 2023 cohort it is 24%; for cohorts through 2020 it was 55% or higher. The median US seed round is now about $3 million, roughly triple its 2018 level, and Uncork Capital puts the Series A bar at $2–3 million ARR, sometimes $4 million.</p>
+<p><strong>The money did not leave — it went up the stack.</strong> At least 114 US Series A rounds of $100 million or more closed in 2026 so far, over 70% of them to AI companies. Crunchbase counts about $48 billion of US Series B funding this year, the highest in years, while round counts track a multiyear low. Rounds under $30 million were less than a third of Series B deals in 2026, against about half from 2021 to 2025. It is a barbell: Prometheus reportedly raised $12 billion, while a seed class waits longer for its second cheque.</p>
+<p><strong>Atomic shows what still clears the bar.</strong> The Boston supply-chain planning company announced a $12.5 million Series A on September 29, led by Klass Capital and Madrona, just 17 months after a $3 million seed — fast by today’s standard. TechCrunch reports its ARR has quintupled since the start of 2026, and board member Jon McNeill (former Tesla president, DVx Ventures) says DoorDash runs about 90% of its purchasing across hundreds of sites on Atomic’s software, with HelloFresh as a named customer. Total funding: just over $15 million.</p>
+<p><strong>Arca inverts the agent workflow for regulated money.</strong> The fintech raised $48.5 million from General Catalyst and Index Ventures and built its wealth-management agent system around a rule lead AI engineer Aman Singh states plainly: “agents prompt people more than people prompt agents.” Agents handle analysis across multi-day client processes — some stretch ten days — then surface decisions to human advisors. Trading and money movement stay human. A custom harness auto-selects between Anthropic and OpenAI models on internal benchmarks, so providers can be swapped without rebuilding the product.</p>
+<p><strong>Weekend capital flow, named:</strong> Salesforce agreed to acquire Rune for $375 million; FuriosaAI raised a $620 million Series D for inference silicon; Serval raised $150 million for enterprise IT agent automation; Dulo raised a $130 million seed for hardware design foundation models; &amp;Truth raised a $70 million seed for software verification.</p>
+<table>
+<thead>
+<tr>
+<th>Funding Round</th>
+<th>Amount</th>
+<th>Backers &#x2F; Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Atomic (Series A)</td>
+<td>$12.5M</td>
+<td>Klass Capital + Madrona; ARR 5x since Jan 2026</td>
+</tr>
+<tr>
+<td>Arca</td>
+<td>$48.5M</td>
+<td>General Catalyst + Index Ventures</td>
+</tr>
+<tr>
+<td>Salesforce acquires Rune</td>
+<td>$375M</td>
+<td>M&amp;A</td>
+</tr>
+<tr>
+<td>FuriosaAI (Series D)</td>
+<td>$620M</td>
+<td>Inference chip designer</td>
+</tr>
+<tr>
+<td>Serval</td>
+<td>$150M</td>
+<td>Enterprise IT agent automation</td>
+</tr>
+<tr>
+<td>Dulo (seed)</td>
+<td>$130M</td>
+<td>Hardware&#x2F;silicon design foundation models</td>
+</tr>
+</tbody></table>
+<h2 id="Build-Directions"><a href="#Build-Directions" class="headerlink" title="Build Directions"></a>Build Directions</h2><p><strong>HackerTube is a playbook, not a novelty.</strong> The pipeline matters more than the site. Karpathy’s stack: pull the open-index&#x2F;hacker-news archive from Hugging Face (already ODC-By licensed), scan every comment from 2007 to 2026 for YouTube links, then run teams of Sonnet 5.5 agents to label 39,834 comments for stance and strip spam. The curation filter is the product: a video makes the cut only if at least three different people linked it with real commentary in at least three different months. That bar cut well over 100,000 distinct videos to about 7,000, then to 6,454 across 150 topics, with 15,041 distinct recommenders behind them. Thumbnails are pulled from the 50% frame of each video instead of the uploader’s clickbait image; the For You feed needs no account and keeps state in the browser; and the entire dataset ships as a 17.8 MB zip with a DATA.md written for your agent to read. “This takes 2 hours now. I can breathe again,” Karpathy wrote. The fork cost of his product is, deliberately, near zero — which is itself a growth loop.</p>
+<p><strong>The harness glut arrived on schedule.</strong> One weekend of Show HN: Imza, a C++ coding agent that gives the model a single Lua tool, splits work into plan&#x2F;build&#x2F;review modes, supports 50+ providers including local models, and runs in 8–11 MB of RAM. agent-hop, a Rust runtime that runs Claude Code, Codex, Pi and Grok in one terminal with real-time “hopping” between live sessions and a searchable index of every past conversation. Archwhere, an architecture map you edit alongside the agents. Octomind, which recalls archived messages after context compaction. Smelt, an open-source agent built to stay light. Palomino, a GPU-rendered “Agent Development Environment” in Rust&#x2F;GPUI that runs Claude Code, Codex and Pi side-by-side in one window — free, macOS today, Windows waitlisted.</p>
+<p><strong>Product Hunt’s November 1 slate confirms the same layer.</strong> SKI (#1, 198 points) is a voice-first harness for coding agents people already run. telemetry.dev (#3, 163 points) builds observability around agent runs instead of HTTP requests — its unit of work is the whole execution. Specsight (#2, 183 points) adds product observability for teams whose output outruns their documentation. Backenly (#6) is a backend that expects a machine, not a person, to configure it. GitHub Copilot Fusion (#8) targets the model-routing decision itself. And Publishub, a solo-founder-built AI editing copilot for short-form video ($12&#x2F;month Creator, $24&#x2F;month Pro, launched on Show HN October 31), shows the same pattern in a non-coding vertical: sit on top of an existing workflow, add judgment, charge monthly.</p>
+<table>
+<thead>
+<tr>
+<th>Launch</th>
+<th>What It Is</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>HackerTube (Karpathy)</td>
+<td>YouTube replacement from HN recommendations</td>
+<td>2 hours, 504M input tokens, 6,454 videos</td>
+</tr>
+<tr>
+<td>Imza</td>
+<td>C++ coding agent, single Lua tool</td>
+<td>50+ providers, 8–11 MB RAM</td>
+</tr>
+<tr>
+<td>agent-hop</td>
+<td>Rust multi-harness terminal runtime</td>
+<td>Hop between live Claude Code&#x2F;Codex&#x2F;Pi&#x2F;Grok sessions</td>
+</tr>
+<tr>
+<td>Palomino</td>
+<td>GPU-rendered Agent Development Environment</td>
+<td>Rust&#x2F;GPUI, free, macOS</td>
+</tr>
+<tr>
+<td>SKI (PH #1)</td>
+<td>Voice-first harness for existing agents</td>
+<td>198 points</td>
+</tr>
+<tr>
+<td>telemetry.dev (PH #3)</td>
+<td>Agent-run observability</td>
+<td>Whole execution as unit of work</td>
+</tr>
+</tbody></table>
+<h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><p><strong>Claude wrote the exploit; Ubuntu and RHEL are still exposed.</strong> CVE-2026-98432 is a use-after-free in the IPv4 TCP handshake, reachable by any unauthenticated remote peer, scored CVSS 9.8 by the kernel’s own CNA. The bug goes back to Linux 4.4. Upstream fixed it on October 11 and 15 (versions 7.2.10, 6.18.56, then 6.12.113, 6.6.159, 6.1.190, 5.15.223, 5.10.272, and 7.3 on October 18) with a change by Eric Dumazet that swaps two kfree calls for kfree_rcu. But as of October 31, Ubuntu’s tracker still read “Vulnerable” on every release and Red Hat listed RHEL 8, 9 and 10 as affected with no fix — 17 days after stable backports shipped. Anthropic researcher Xinyang Ge reported it; Anthropic says Claude wrote a working proof-of-concept that achieves remote root on servers with a multipath TCP listener, uncredited and unpublished. The reachability twist: Go’s security team disclosed on October 29 that Go 1.24 programs enable MPTCP by default for listen sockets on Linux — meaning ordinary Go services open the attack surface without anyone deciding to. Vendor scoring diverged wildly on the same two-statement fix: kernel CNA 9.8, Red Hat 9.8 (raised from 8.1 on October 30), Oracle and Amazon 8.1, SUSE Important, Ubuntu High. Containers inherit the host kernel, so rebuilding images fixes nothing; only patching the host does.</p>
+<p><strong>Malware now ranks its victims with an LLM.</strong> Researchers described VOLTA-AUTODOXER, a Windows infostealer that steals credentials, sessions and crypto wallets, then feeds a structured dossier to a model via OpenRouter and asks it to rank victims by how much they are worth. The monetization of attention has reached the malware tier: attackers triage humans the way growth teams triage leads.</p>
+<p><strong>Capital discipline cuts both ways.</strong> The 16% survival rate for the 2024 seed cohort is not just a macro stat — it is a warning to solo founders planning to raise. The barbell means the middle of the market is where companies die quietly, while headline rounds go to those already showing real revenue multiples.</p>
+<h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><ol>
+<li><strong>Steal the HackerTube filter, not the site.</strong> The “three people, three different months” curation rule is a reusable pattern: let sustained community signal, not one viral spike, define your catalog. It converts two decades of public discussion data into a defensible product in an afternoon.</li>
+<li><strong>Ship the dataset.</strong> Karpathy’s 17.8 MB ODC-By export with an agent-readable DATA.md turns every user into a potential fork — and every fork into distribution. If your product is data-shaped, ask what a 17.8 MB version of it looks like.</li>
+<li><strong>Assume harness fragmentation and build for interop.</strong> With 50+ providers the default, the winning tools this weekend were the ones that ran other people’s agents (agent-hop, Palomino, SKI) rather than replacing them. Pick interop over lock-in.</li>
+<li><strong>Patch the kernel this week — by distro tracker, not upstream version.</strong> Check <code>uname -r</code> against your distribution’s advisory (Ubuntu USN, Red Hat RHSA), reboot rather than live-patch networking code, disable MPTCP if unused (<code>GODEBUG=multipathtcp=0</code> or <code>go.mod</code> godebug line), and remember containers report the host kernel.</li>
+<li><strong>Design the human handoff before compliance designs it for you.</strong> Arca’s “agents prompt people” architecture — agents do the reading, tracking and flagging; humans keep trading and money movement — is the reference design for anyone building agents into regulated workflows.</li>
+<li><strong>If you are raising, read the 16%.</strong> The 2024 seed cohort’s survival rate means a seed is now a longer, lonelier runway. Aim for the Atomic profile: vertical depth, a repeat lead, and revenue growth an investor can verify before the A-round conversation starts.</li>
+</ol>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>US Series A rounds, Q3 2026</td>
+<td>272 (-28% YoY from 377)</td>
+</tr>
+<tr>
+<td>US seed rounds, Q3 2026</td>
+<td>984 (-7% YoY)</td>
+</tr>
+<tr>
+<td>2024 $1M+ seed cohort past seed</td>
+<td>16% (2023: 24%; ≤2020: 55%+)</td>
+</tr>
+<tr>
+<td>US Series A ≥$100M in 2026</td>
+<td>114 rounds, &gt;70% AI</td>
+</tr>
+<tr>
+<td>US Series B total, 2026</td>
+<td>~$48B, round counts at multiyear low</td>
+</tr>
+<tr>
+<td>HackerTube build time &#x2F; tokens</td>
+<td>~2 hours; 504M input tokens (90% cached)</td>
+</tr>
+<tr>
+<td>HackerTube catalog</td>
+<td>6,454 videos, 150 topics, 39,834 comments, 15,041 recommenders</td>
+</tr>
+<tr>
+<td>CVE-2026-98432</td>
+<td>CVSS 9.8, Linux 4.4+ affected; Ubuntu&#x2F;RHEL unpatched as of Oct 31</td>
+</tr>
+<tr>
+<td>Shodan-reachable old SSH endpoints</td>
+<td>~14M running kernels older than 6.6.74</td>
+</tr>
+</tbody></table>
+<p><em>Sources: karpathy.bearblog.dev (Oct 31); AI Bacon build-cost analysis; Hacker News front page (Oct 31); ProductList Daily (Nov 1); Zeli HN digest (Oct 31); vibehacker.com Show HN coverage; TechNewsReel (Palomino); Crunchbase News analysis by Marc Schröder, MGV (Oct 31); TechCrunch (Atomic); AI Builders Digest (Nov 1, Arca); Fudge Factor WTF-031 (Nov 1); PAN &#x2F; SoloSoft &#x2F; StartupHub.ai CVE-2026-98432 trackers (Oct 31–Nov 1); Go Security Team notice (Oct 29).</em></p>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>AI Tools</category>
+      </categories>
+      <tags>
+        <tag>Claude</tag>
+        <tag>Security</tag>
+        <tag>Show HN</tag>
+        <tag>Coding Agents</tag>
+        <tag>Karpathy</tag>
+        <tag>HackerTube</tag>
+        <tag>Venture Capital</tag>
+      </tags>
+  </entry>
 </search>
