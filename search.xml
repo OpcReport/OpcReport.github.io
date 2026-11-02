@@ -125101,4 +125101,100 @@
         <tag>Venture Capital</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Backdoored Claude Code Hit 5,000 Users, Kling Closes $2.9B</title>
+    <url>/opc-report-2026-11-02-0809/</url>
+    <content><![CDATA[<p>For a one-person company, the toolchain is the company. When your CI, your IDE, your agent harness and your billing all live inside software you did not write, a single compromised extension is not an IT incident — it is a breach of the entire business. This weekend made that concrete in three separate ways: a tampered Claude Code extension reached as many as 5,000 developers through Cursor’s marketplace, Anthropic’s own safety classifiers started refusing legitimate solo-founder work, and American Express proposed an intent-verification framework for agentic commerce. Meanwhile, capital kept flowing to the unglamorous middle of the economy — factories, home services, video generation — with Lumaril raising $66 million and Kling AI closing roughly $2.9 billion.</p>
+<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><ul>
+<li><strong>The first verified marketplace-level compromise of an official AI coding extension is now on record.</strong> Cursor confirmed that versions 2.1.312 and 2.1.313 of the Claude Code extension distributed through its own marketplace on October 29 were tampered with, live for roughly 11 hours, and installed or auto-updated by up to 5,000 users (Cursor security notice; The Hacker News; BleepingComputer; The Register).</li>
+<li><strong>Publisher IDs are not trust.</strong> The attacker did not spoof a lookalike name — they published under the genuine <code>anthropic.claude-code</code> identifier. Anthropic staff confirmed the build never shipped through official channels; the next legitimate release was numbered 2.1.314 specifically to break version-number collision (Anthropic’s Felix Rieseberg on Hacker News).</li>
+<li><strong>Refusal risk is becoming a procurement criterion.</strong> A 42-comment Hacker News discussion on Anthropic’s new reverse-engineering restrictions converged on one operating conclusion for solo founders: build provider-agnostic workflows now, because a tool that randomly refuses 5% of legitimate work is worse than one that consistently does 85%.</li>
+<li><strong>Capital keeps validating “integration-first” automation.</strong> Lumaril’s $66 million Series A at a $400 million valuation (The Wall Street Journal) went to software that layers on top of control systems factories already run — the same non-disruptive wedge independent AI integrators are selling to mid-market manufacturers.</li>
+<li><strong>Video generation became the largest single private round in China this year.</strong> Kling AI confirmed ¥19.802 billion (~$2.9 billion) actually arrived on October 30, with Kingdee and GPU-maker MetaX stepping in to absorb shares from two investors who failed to pay (Securities Times, November 1).</li>
+</ul>
+<h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><p><strong>Lumaril prices industrial AI at $400 million before scale.</strong> The Wall Street Journal reported that Lumaril raised a $66 million Series A at a $400 million valuation — a rich price for the stage — for AI that optimizes production by connecting to the control systems manufacturers already operate rather than demanding a rip-and-replace upgrade. The strategic logic mirrors what automation startups have told buyers for a year: industrial operators will not touch anything that threatens live production lines, so the sellable product is intelligence layered on top of existing controls. Note the contrast with Neuron, the industrial-controller startup that raised $10 million in October to replace PLCs outright. The market is currently paying ten times more for the company that does not ask you to replace anything.</p>
+<p><strong>Kling’s ¥19.8 billion closing shows both the depth and the fragility of AI video capital.</strong> Kuaishou’s November 1 filing (via Securities Times) confirmed the round closed about ¥645 million below its ¥20.447 billion ceiling because two original investors — Dakolan V and BFI MIDCO — failed to pay on time and terminated their commitments. Hong Kong-listed Kingdee Software (¥300 million) and MetaX, the STAR-board GPU maker (¥55 million plus ¥45 million), took over the vacated allocations; CPE Spruce transferred rights worth about ¥436 million to Tianjin Yuanfeng. Post-closing, Kuaishou’s Lucky Labs holds 66.68% of Beijing Kling and 52.45% of voting power, with Alibaba at 1.38%, Tencent’s vehicle at 0.56% and Baidu at 0.28%. Kuaishou separately disclosed Kling Q2 revenue above ¥850 million, up more than 200% year over year. Two readings matter for builders: the category can absorb nine-figure dollar rounds, and even at that scale investors can and do walk — subscription businesses should not model fundraising as a given.</p>
+<p><strong>Mistral Large 4 went fully open and cut its price in half.</strong> The 1-trillion-parameter model’s full weights are out, and Mistral dropped API pricing roughly 50% to $0.70 per million input tokens and $2.10 per million output (Web Pulse, November 1). The HN verdict: genuinely competitive where the preview was not, though licensing fine print still restricts reselling model-as-a-service, and self-hosters report four H200s are needed to run it even at 3–4 bit quantization. For solo founders building on frontier APIs, the practical effect is another data point in the relentless price deflation of mid-tier frontier capability.</p>
+<p><strong>Anthropic restructured its consumer plans.</strong> Max 5x became Max at $100 per month and Max 20x became Ultra at $200 per month, with the 5-hour rolling usage cap removed for Ultra subscribers (QbitAI, November 1). For solo operators running agents daily, the removal of the time-based cap matters more than the renaming: batch overnight agent runs no longer collide with a clock.</p>
+<h2 id="Build-Directions"><a href="#Build-Directions" class="headerlink" title="Build Directions"></a>Build Directions</h2><p><strong>Multi-harness desktops keep shipping, and Coincide is the newest open-source entry.</strong> Apoorv Darshan released Coincide (MIT license), a native Mac app that runs Claude Code, Codex, Cursor, Grok Build, OpenCode and Antigravity side by side in one window, launching on Product Hunt November 2 (dev.to, November 1). It supports mid-thread handoff — the next agent receives a recap of what it missed and continues in the same folder — background agent hosts that keep working after the app quits, per-turn git checkpoints, worktrees, inline approvals and a built-in terminal and browser. Everything runs through each agent’s own CLI and your existing sign-in or key; nothing transits a Coincide server. Install via <code>brew install --cask apoorvdarshan/tap/coincide</code>. It joins Palomino, agent-hop, Imza and Orkas in a category that barely existed two months ago: the market has concluded that no single harness deserves exclusive custody of a solo builder’s work.</p>
+<p><strong>Trust plumbing is now a product surface.</strong> American Express introduced a framework to verify customer intent in agentic commerce (Automation Today, November 1) — an explicit answer to the question every agent-checkout builder will face from payment partners in 2027: how do you prove the human actually wanted this purchase? Separately, GitHub trend data for the week ending November 1 shows <code>impeccable</code>, an AI output slop-filtering repo, jumping 124% to 1,338 stars, and pingdotgg’s <code>t3code</code> (T3-stack-native AI coding) up 147% (DailyDawn). Slop filtering and stack-specific agents are both responses to the same shift: as generation gets free, filtering and fit become the paid layer.</p>
+<p><strong>Portfolio economics got their clearest public dataset yet.</strong> Marc Lou published his October income breakdown on X across 16 products — TrustMRR, DataFast, SuperX and more — showing a five-figure monthly total assembled from no single winner. Fellow builder @robj3d3 added the margin detail that matters: SuperX runs at roughly 35% gross margin while his other products sit near 95%, and @ErnestoSOFTWARE reported a single-month profit of $170,000 after years of wage jobs. The structural lesson for one-person companies: resilience comes from a portfolio of high-margin small products, not one moonshot — and a 35%-margin product inside a portfolio is a liability to be noticed, not celebrated.</p>
+<h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><p><strong>Anatomy of the Cursor marketplace incident — what actually happened.</strong> Between 2:27 a.m. and 1:35 p.m. Pacific on October 29, Cursor’s marketplace — which proxies the open-source Open VSX registry with its own automated malware scanning — served a tampered build of <code>anthropic.claude-code</code> versions 2.1.312 and 2.1.313 for Windows and macOS. Analysis by OpenSourceMalware (Jenn Gile) found a roughly 66-line malicious loader spliced ahead of the legitimate extension code in <code>extension.js</code>, executing on activation with no user interaction. It planted an SSH key labeled <code>svc-telemetry</code> in <code>authorized_keys</code>, registered a LaunchAgent on macOS or a scheduled task on Windows, exfiltrated hostname, username, OS, configured Git email, public IP and the names of secret-looking environment variables, and attempted a reverse SSH tunnel. That tunnel mostly failed because it needed administrator rights most machines did not grant — a coding bug in the malware, not a defense. Cursor pulled the package, took the attacker’s server offline, audited the marketplace, rotated keys and published cleanup scripts. Rescana rates the severity High; no CVE has been assigned. Important nuance: 2.1.312 was a genuine Anthropic release on GitHub the day before — the compromise was specific to the Cursor marketplace distribution, and Microsoft’s marketplace, Open VSX proper and npm were unaffected. This was the third abuse of the Claude name in a week, after fake claude.ai download pages and fake signed installer bundles.</p>
+<p><strong>Anthropic’s classifiers are generating their own churn risk.</strong> Mashable reported Anthropic moved to block Claude from reverse-engineering “specific existing games,” following viral incidents including an AI-assisted PS5 jailbreak and browser ports of Vice City. HN’s reaction was unsparing — one top comment asked why Anthropic objects to using other people’s ideas without permission given what its models were trained on — and technically the block appears to be a system-prompt injection strippable with a proxy, suggesting optics over enforcement. Separately, a researcher reported being flagged for “training a competitor” while merely automating job submissions, likely triggered by VPN access from Hong Kong. For solo founders shipping 30 PRs a week with agents, the takeaway from the 42-comment thread is blunt: document what each provider refuses, keep a local open-weight fallback for refused tasks, and never build a critical workflow around one vendor’s policy mood.</p>
+<p><strong>AI agents are crossing into physical action — and models are refusing mid-operation.</strong> Wired reported that Exin Therapeutics had Claude Sonnet autonomously select a treatment from 19 options, identify injection coordinates, and operate a robotic injector on a live mouse; Claude Opus refused to continue mid-experiment, citing ethics. Whatever one’s view of the experiment, two operational facts stand out for agent builders: autonomous action on physical systems is now a demonstrated capability, and model-level ethical refusals can interrupt a live run — another argument for checkpointed, resumable orchestration.</p>
+<h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><ol>
+<li><strong>Audit your machines now.</strong> Search <code>~/.ssh/authorized_keys</code> (macOS&#x2F;Windows equivalent, plus <code>C:\ProgramData\ssh\administrators_authorized_keys</code>) for <code>svc-telemetry</code>; run Cursor’s cleanup scripts if found, rotate every credential reachable from the machine, and treat updating to 2.1.314 as insufficient on its own — persistence hooks survive updates.</li>
+<li><strong>Pin extension hashes.</strong> Publisher IDs and version numbers are both now proven unreliable trust signals on proxy marketplaces. Pin exact hashes for anything that touches your shell, SSH config or environment variables.</li>
+<li><strong>Scope agent filesystem access.</strong> The single most-cited gap in the 547-comment HN thread: no mainstream tool offers granular path scoping for coding agents. A ten-line wrapper blocking access outside the active workspace is a weekend build with a real market.</li>
+<li><strong>Build provider-agnostic by default.</strong> Route refused tasks to an open-weight local model; keep per-provider refusal logs as operating data, not anecdotes.</li>
+<li><strong>Price your margin honestly.</strong> If a product in your portfolio runs at 35% when comparable products run at 95%, decide deliberately whether it is a funnel or a tax.</li>
+<li><strong>For industrial-facing builds, sell integration, not replacement.</strong> Lumaril’s $400 million Series A valuation is the market pricing the non-disruptive wedge.</li>
+</ol>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Detail</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Cursor marketplace compromise</td>
+<td>Tampered Claude Code 2.1.312&#x2F;2.1.313, ~11 hours on Oct 29, up to 5,000 users, <code>svc-telemetry</code> SSH key, 66-line loader</td>
+<td>Cursor security notice; The Hacker News; OpenSourceMalware (Oct 30–31)</td>
+</tr>
+<tr>
+<td>Anthropic plan restructure</td>
+<td>Max 5x → Max $100&#x2F;mo; Max 20x → Ultra $200&#x2F;mo; 5-hour cap removed for Ultra</td>
+<td>QbitAI (Nov 1)</td>
+</tr>
+<tr>
+<td>Lumaril</td>
+<td>$66M Series A at $400M valuation; AI layer on existing factory control systems</td>
+<td>The Wall Street Journal (Nov 1)</td>
+</tr>
+<tr>
+<td>Kling AI round close</td>
+<td>¥19.802B (~$2.9B) arrived Oct 30, ¥645M below ceiling; Kingdee ¥300M, MetaX ¥55M+¥45M in; Kuaishou holds 66.68%&#x2F;52.45% voting; Q2 revenue &gt;¥850M, +200% YoY</td>
+<td>Securities Times via Kuaishou filing (Nov 1)</td>
+</tr>
+<tr>
+<td>Mistral Large 4</td>
+<td>Full 1T weights open; API cut ~50% to $0.70&#x2F;$2.10 per M tokens</td>
+<td>Web Pulse; HN thread (Oct 31–Nov 1)</td>
+</tr>
+<tr>
+<td>Coincide</td>
+<td>MIT Mac app: 6 agents side by side, mid-thread handoff, background hosts; PH launch Nov 2</td>
+<td>dev.to (Nov 1)</td>
+</tr>
+<tr>
+<td>Solo portfolio economics</td>
+<td>Marc Lou: 16 products, five-figure October; SuperX ~35% margin vs ~95% peers; @ErnestoSOFTWARE $170K single-month profit</td>
+<td>X threads (Oct 31–Nov 1)</td>
+</tr>
+<tr>
+<td>GitHub weekly risers</td>
+<td>impeccable (slop filter) 1,338 stars +124%; t3code +147%; claude-mem 1,723 stars</td>
+<td>DailyDawn (Nov 1)</td>
+</tr>
+</tbody></table>
+<p>Investment involves risk. This report is information, not advice.</p>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>AI Security</category>
+        <category>Solo Founder</category>
+      </categories>
+      <tags>
+        <tag>Cursor</tag>
+        <tag>Anthropic</tag>
+        <tag>Solo Founder</tag>
+        <tag>Claude Code</tag>
+        <tag>Supply Chain Security</tag>
+        <tag>Kling AI</tag>
+        <tag>Lumaril</tag>
+        <tag>Mistral</tag>
+      </tags>
+  </entry>
 </search>
