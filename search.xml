@@ -125287,4 +125287,117 @@
         <tag>TrustMRR</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Particle-1 Cuts Tokens 45%, LFM3 Puts Voice Agents On-Device</title>
+    <url>/opc-report-2026-11-02-1628/</url>
+    <content><![CDATA[<p>The most useful week for one-person companies was not the week of another $2 billion round. It was the week the small-model product layer got real: a startup that fine-tuned DeepSeek’s open weights to spend 45% fewer output tokens, a family of six 2B-parameter open-weight models that puts vision, audio and spoken tool calling on a laptop or a phone, and a 2-bit quantization that squeezes a 428B-parameter agent model onto a 150GB machine. Underneath it sits an unresolved fight over where those capabilities came from — a Reuters-carried report that China’s top open-weight labs trained on outputs from OpenAI’s GPT-6 Astra. Here is what a solo builder can actually use from all of it.</p>
+<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><ul>
+<li><strong>Particle-1 (launched October 28) is the first serious product built on the newly released DeepSeek V4.1 Flash weights</strong>: a rank-64 LoRA on the experts in every layer — about 1.25% of the model’s parameters — trained with GSPO policy updates and Cascade RL stages on coding, then data-engineering tasks. It completes the same agent coding tasks using 28.4–52.2% fewer output tokens, with pass rates inside the base model’s confidence interval. The lesson is not the model; it is that token-efficiency is now a product category you can ship on top of someone else’s open weights in weeks.</li>
+<li><strong>The pricing math behind the launch chart is a case study in reading AI marketing.</strong> Particle’s headline “34.4–51.6% cheaper per task” was computed at DeepSeek’s own peak rates ($0.30&#x2F;$0.006&#x2F;$1.20 per million tokens, 95% cache hit). But Particle actually charges $0.25&#x2F;$0.03&#x2F;$1.00 — and its cached-input rate is 5x DeepSeek’s. Agent sessions are mostly cache hits, so on the longest benchmark the advertised 34.4% saving becomes a 5.7% premium over calling DeepSeek direct during the US working day. Run overnight, Particle-1 wins. Third-party analysis (tokencost.app, ToolMintX) reconciled this from Particle’s published formula — the transparency is to its credit, the gap is the lesson.</li>
+<li><strong>Liquid AI shipped LFM3 (October 24–27): six open-weight models around 2B parameters on a shared 1.7B non-transformer backbone</strong> — an agentic text model, vision-language, audio, omni, and two decision models. LFM3 Audio 2B covers 18 speech languages, scores 73.1 on VoiceBench (vs 66.4 for Qwen2.5 Omni 3B and 55.2 for Liquid’s previous generation), and converts speech tokens at roughly 87x real time on a single CPU thread of an Apple M4 Max. Its encoder is fully causal, so prefill starts while the user is still talking. For a solo founder, this is a complete on-device voice-agent stack with no per-minute API bill.</li>
+<li><strong>The distillation fight went mainstream.</strong> The Information reported October 28, carried by Reuters, that DeepSeek and Moonshot AI “relied heavily on outputs” from OpenAI’s GPT-6 Astra to train V4.1-Flash-1017 and Kimi K3.1 Pro — unnamed sources, all three companies declining or not responding. OpenAI’s only on-record basis remains its September 30 account of a July campaign: 16,000 requests from more than 4,000 users, with “a core cluster” attributed to individuals associated with Moonshot. Anthropic’s September threat report alleged nearly 300,000 customer requests relayed to Claude in ten days via 5,380 fraudulent accounts, and more than 23 million distillation exchanges attributed to Moonshot between May and July. None of this has been confirmed by any court or regulator — treat it as an unresolved ledger, not a verdict.</li>
+<li><strong>The incentive is arithmetic.</strong> Per API list rates as of October 29, GPT-6 Astra’s output tokens cost roughly 50x what Kimi charges and 42x what DeepSeek charges. Kimi K3.1 Pro then beat Astra on Terminal-Bench 4.0 (65.7% vs 58.2%, vendor-reported). When a student outscores the alleged teacher at 1&#x2F;50th the price, the economics of distillation are not going away — they are the open-weight business model.</li>
+</ul>
+<h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><p><strong>The open-weight supply chain has layers now.</strong> In one week: Liquid AI released six multimodal edge models (LFM3-1.7B text, LFM3-VL-2B, LFM3-Audio-2B, LFM3-Omni-2B, plus two decision models, with GGUF builds landing October 19–27); KRAFTON — the PUBG company — previewed Raon-1 mini, a 28.8B sparse MoE trained from scratch under Apache 2.0, leading Korean chat and instruction-following in its own tests while trailing on knowledge and terminal tasks; Unsloth published Dynamic GGUF quantizations of MiniMax M3.1 Flash down to 2 bits, fitting the 428B&#x2F;23B-active agent model on a 150GB-RAM machine (with independent tests disagreeing with MiniMax’s own scores in places); and Particle built a commercial fine-tune on DeepSeek’s weights and sold it the same day on OpenRouter and Vercel AI Gateway. DeepSeek V4.1 Flash itself was trending at ~21,000 downloads and 510 likes since mid-October. This is a supply chain: base weights, quantizers, fine-tuners, distribution — and one-person companies occupy every layer of it.</p>
+<p><strong>The distillation question is now a market-structure story, not just a legal one.</strong> Artificial Analysis personality-similarity charts, relayed by Wccftech, show Kimi K3.1 Pro resembling GPT-6 Astra and GLM-5.3 resembling the Claude 5 series — circumstantial evidence, since the open web in late 2026 is already soaked in machine-written text. The China Cyberspace Administration was reported (Gizmodo, citing The Information, September 22) to be investigating DeepSeek and Moonshot over routing claims. And OpenAI’s commercial response is visible in pricing: GPT-6.1 Terra at $1&#x2F;$5 per million tokens is the same lab fighting the price war from below while alleging theft from above. Watch one thing: whether any government instrument — designation, indictment, register notice — ever replaces anonymous sourcing. Until then, “claimed vs verified” is the honest frame.</p>
+<p><strong>Agent infrastructure keeps commoditizing the operator’s job.</strong> GitHub made Copilot Fusion generally available at Universe on October 28: instead of picking a model, users pick an effort level (Standard, High, Max) and Fusion routes across models — Fusion Max scored 60 on the Artificial Analysis Coding Agent Index, within two points of Claude Code with Opus 5.5 Max, at about half the API cost (its own numbers, with a temporary 30% discount on paid plans). Cursor made its Agent SDK generally available — the framework behind its own Bugbot and Security Reviewer agents: prompts as Markdown, tools as TypeScript functions, one deploy command gives each agent a URL, or self-host as a single Node process reacting to pull-request events. Vercel launched Vercel CI in beta: it reads turbo.json, runs only the affected Turborepo tasks on scale-to-zero compute, and reports 2–6x faster push-to-green — aimed squarely at the flood of agent-generated pull requests. Every one of these removes a reason to hire before you have revenue.</p>
+<h2 id="Build-Directions"><a href="#Build-Directions" class="headerlink" title="Build Directions"></a>Build Directions</h2><ul>
+<li><strong>On-device voice agents are now a weekend build.</strong> LFM3 Audio 2B runs locally with a 32K context, 16 kHz input and 24 kHz output, streams decoded speech before generation completes, and does spoken tool calling — Liquid reports 58.5 on its internal spoken tool-calling eval vs 44.3 for Qwen2.5 Omni 3B. English TTS word error rate is 1.4 (vs 1.9 for the previous generation). All vendor-reported, so test on your own accent and noise profile — but the footprint (~2B parameters, GGUF on Hugging Face) means a kiosk, in-car assistant or warehouse tool with zero per-minute voice API cost is a realistic solo project. Privacy is the wedge: audio never leaves the device.</li>
+<li><strong>Token-efficiency fine-tunes are a repeatable playbook.</strong> Particle-1 used a rank-64 LoRA (about 1.25% of parameters) plus RL on a narrow objective — finish the task in fewer tokens. Reasoning verbosity accounted for roughly 90% of the savings on three of four benchmarks. The same recipe applies to any expensive agent loop you operate: harvest traces, train a small adapter to cut reasoning rounds and repair loops, keep general capability intact (Particle’s GPQA Diamond moved 90.40% vs base 90.91%). If you cannot fine-tune, Microsoft Research’s TokenEconomizer (covered last week) buys 18–31% cost cuts as a plugin.</li>
+<li><strong>Build the boring glue that agents broke.</strong> Vercel CI exists because coding agents generate PR floods that break conventional CI. Cursor’s Agent SDK exists because companies want agents-as-code with evals and event replay. Deskcord, launched November 2, routes website visitor chat into Discord threads so a solo founder answers support from the app they already live in — no dashboard, setup via one script tag. The pattern is consistent: ship the missing piece of the agent workflow, price it low, stay in your own tooling.</li>
+<li><strong>Data and provocation, both cheap now.</strong> Hugging Face’s Project ProtoStar (October 29) is publishing publicly funded datasets, models and code in AI-ready formats with five universities, the Astera Institute and the ORCA community — its first open challenge, hosted by Carnegie Mellon, forecasts urban climate indicators for 210 US cities. Free, licensed, model-ready inputs. On the provocation side, Drew Breunig’s Nesformer compiled an NES 6502 CPU, work RAM and game ROMs into Qwen3.5 model weights, executing games one CPU operation per token with Gated DeltaNet layers as memory — a reminder that “model” is becoming a compression format for any deterministic system.</li>
+</ul>
+<h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><ul>
+<li><strong>Every distillation claim is unverified.</strong> The October 28 report rests on unnamed sources; OpenAI, DeepSeek and Moonshot all declined or did not respond; Artificial Analysis similarity charts prove resemblance, not mechanism; and the only on-record counts come from the companies alleging the attacks. Do not build procurement or compliance decisions on this story in either direction. Its significance for a one-person company is directional: Chinese open-weight labs’ benchmark gains may partially reflect frontier-lab outputs, and the legal status of that practice is unsettled.</li>
+<li><strong>Fine-tune pricing can silently invert the savings.</strong> Particle-1’s cached-input rate is 5x DeepSeek’s, and cached input dominates agent workloads. The marketing chart assumed the buyer’s price, not the seller’s. Before switching any workload: price your actual trace — input, cached input, output — on both cards, at your hours of operation. (Particle’s US-day peak is the opposite of DeepSeek’s evening peak; time-of-day alone flips the winner.)</li>
+<li><strong>Vendor benchmarks, vendor variance.</strong> Liquid’s LFM3 numbers, KRAFTON’s Korean-benchmark leads and MiniMax’s agent scores are all self-reported; tokencost.app and others found a listing mismatch on Particle-1 itself (OpenRouter showed $0.05&#x2F;$0.50 — a fifth of Particle’s documented input price — with no explanation of whether it is a promotion or an error). Independent tests already disagree with MiniMax’s own numbers on the 2-bit build. Adopt anything edge-deployed only after your own eval on your own data.</li>
+<li><strong>License fine print.</strong> LFM3 ships under the LFM Open License v1.0, KRAFTON under Apache 2.0, Particle-1 is proprietary hosted-only. Open weights are not open licenses; read the commercial terms before an edge model becomes your product’s dependency.</li>
+</ul>
+<h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><ol>
+<li><strong>Price one real agent trace on Particle-1 vs DeepSeek direct today</strong>, using both cards’ peak&#x2F;off-peak windows against your actual run hours. If your workload is overnight-batch-shaped, Particle-1’s 45% output-token cut is real money; if it runs during the US day, DeepSeek direct likely wins.</li>
+<li><strong>Prototype one on-device voice flow with LFM3 Audio 2B</strong> — GGUF, WebGPU demo in the browser, 18 languages. If your product has any voice surface, the zero-API-bill baseline it sets will reset your cost math within a quarter.</li>
+<li><strong>Adopt effort-based routing where available</strong> (Copilot Fusion in your IDE, or the equivalent effort tiers in your agent harness) before hand-picking models per task — the routing layer is now within a couple of points of the best single setup at roughly half the cost, per GitHub’s own numbers.</li>
+<li><strong>Rewrite your agent prompts for token brevity and harvest your traces now.</strong> The Particle recipe shows the fine-tuning payoff accrues to whoever owns the traces; a month of logged sessions is the training set nobody can sell you.</li>
+<li><strong>Pull ProtoStar’s CMU climate challenge or equivalent public datasets</strong> into your next side project — publicly funded, AI-ready data is the cheapest differentiated input a solo builder will get this quarter.</li>
+</ol>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Numbers</th>
+<th>Source (date)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Particle-1 (SF startup, launched Oct 28)</td>
+<td>DeepSeek V4.1 Flash + rank-64 LoRA (~1.25% params), GSPO + Cascade RL; 28.4–52.2% fewer output tokens; pass rates within base CI; GPQA 90.40 vs 90.91</td>
+<td>Particle launch post; ToolMintX &#x2F; tokencost.app (Oct 28–Nov 2)</td>
+</tr>
+<tr>
+<td>Particle-1 pricing reality</td>
+<td>Charged $0.25&#x2F;$0.03&#x2F;$1.00 (cached &#x3D; 5x DeepSeek); launch chart assumed $0.30&#x2F;$0.006&#x2F;$1.20 @95% cache; mean task $0.142 actual vs $0.095 charted; OpenRouter listing $0.05&#x2F;$0.50 unexplained</td>
+<td>tokencost.app, ToolMintX (Nov 1–2)</td>
+</tr>
+<tr>
+<td>Liquid AI LFM3 (Oct 24–27)</td>
+<td>Six ~2B models on 1.7B tri-hybrid non-transformer backbone; 256K context, 16–17 languages, ~1GB at 4-bit; vendor avg 49.37 vs Qwen3.5-9B 47.24 (GPQA 63.37 vs 80.40)</td>
+<td>Liquid AI; explainX; aiholics (Oct 27–Nov 1)</td>
+</tr>
+<tr>
+<td>LFM3 Audio 2B</td>
+<td>VoiceBench 73.1 (vs Qwen2.5 Omni 3B 66.4, LFM2.5 Audio 55.2); spoken tool calling 58.5 vs 44.3; TTS WER 1.4; ~87x real-time decode on one M4 Max CPU thread; 18 speech languages</td>
+<td>Liquid AI via AI Adoption Agency (Oct 27+)</td>
+</tr>
+<tr>
+<td>Astra distillation report</td>
+<td>DeepSeek V4.1-Flash-1017 + Kimi K3.1 Pro allegedly “relied heavily on” GPT-6 Astra outputs; unnamed sources; all three companies no comment; Astra output price ≈50x Kimi &#x2F; 42x DeepSeek; OpenAI Sept 30: July campaign, 16,000 requests from 4,000+ users</td>
+<td>The Information via Reuters (Oct 28); FourWeekMBA summary</td>
+</tr>
+<tr>
+<td>Anthropic distillation ledger</td>
+<td>~300,000 customer requests relayed to Claude in 10 days via 5,380 fraudulent accounts; &gt;23M exchanges attributed to Moonshot, May–July; defenses cut harvesting 90–99% (company claim)</td>
+<td>Anthropic threat report via SCMP&#x2F;aiwiki (Sept 10)</td>
+</tr>
+<tr>
+<td>Unsloth MiniMax M3.1 Flash 2-bit</td>
+<td>428B&#x2F;23B-active open-weight agent model in Dynamic GGUF; runs on 150GB RAM; independent tests diverge from vendor scores</td>
+<td>Unsloth; explainX (Oct 29)</td>
+</tr>
+<tr>
+<td>KRAFTON Raon-1 mini</td>
+<td>28.8B sparse MoE, Apache 2.0 preview; leads Korean chat&#x2F;search&#x2F;instruction in own tests; trails knowledge&#x2F;terminal</td>
+<td>KRAFTON; explainX (Oct 27)</td>
+</tr>
+<tr>
+<td>GitHub Copilot Fusion GA</td>
+<td>Effort-based routing (Standard&#x2F;High&#x2F;Max); Fusion Max 60 on AA Coding Agent Index vs Claude Code+Opus 5.5 Max ~62; ~half API cost; 30% temporary discount</td>
+<td>GitHub Universe (Oct 28)</td>
+</tr>
+<tr>
+<td>Vercel CI beta &#x2F; Cursor Agent SDK GA</td>
+<td>Affected-task-only CI, scale-to-zero, 2–6x faster push-to-green; agents-as-code with URL deploys or single-process self-host, PR event triggers, 132 HN comments</td>
+<td>Vercel, Cursor via console.dev (Oct 28)</td>
+</tr>
+<tr>
+<td>DeepSeek super-agent repo</td>
+<td>dsh-superagent-prototype: ~1,095 stars (Nov 1) → 6,930 stars &#x2F; 693 forks (Nov 2 morning); README credits coding agents as primary engineers</td>
+<td>GitHub via singularity.kiwi (Nov 2)</td>
+</tr>
+</tbody></table>
+<p>The pattern this week rewards a specific posture: own your traces, quantize your own stack, read the pricing footnote before the headline, and build one layer of the supply chain nobody has staffed yet. The frontier fight over who copied whose outputs will be settled by lawyers and governments eventually. Your cost curve gets settled by the checklist above — this week, and on your own machine.</p>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>Open Source</category>
+        <category>AI Agents</category>
+      </categories>
+      <tags>
+        <tag>Distillation</tag>
+        <tag>Open Weights</tag>
+        <tag>Voice Agents</tag>
+        <tag>Token Economics</tag>
+        <tag>Coding Agents</tag>
+        <tag>Edge AI</tag>
+      </tags>
+  </entry>
 </search>
