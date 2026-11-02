@@ -125197,4 +125197,94 @@
         <tag>Mistral</tag>
       </tags>
   </entry>
+  <entry>
+    <title>nunu.ai $6M for Game-Testing Agents, ChatGPT P1 Bounty $5,000</title>
+    <url>/opc-report-2026-11-02-1219/</url>
+    <content><![CDATA[<p>Every layer of the one-person economy is converging on the same problem: proof. Prove the game works without humans clicking through it, prove the security report was worth more than $5,000, prove the revenue number is real, prove the hiring pipeline is not quietly run by machines on both ends. This weekend’s news flow put a price tag on each of those proofs — and the gaps between the price tags are where builders will make money this quarter.</p>
+<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><ul>
+<li><strong>Game QA became the newest vertical for autonomous agents, with institutional money behind it.</strong> nunu.ai, a Swiss startup, raised a $6 million seed co-led by TIRTA Ventures and a16z speedrun with Y Combinator participating, bringing total capital to $8 million (N24, November 2).</li>
+<li><strong>The security market mispriced a serious ChatGPT account-takeover.</strong> OpenAI paid a $5,000 bounty for a P1 flaw that let a shared link run attacker JavaScript inside a signed-in session — a figure Simon Willison called “a bit cheap for a vulnerability this serious,” against comparables of $130,000 at Meta and $100,000 at Microsoft for similar classes (Parameter disclosure; Simon Willison’s Weblog).</li>
+<li><strong>Hiring is now an AI-versus-AI trust breakdown.</strong> A Greenhouse survey of 1,100 UK and Irish job seekers found 81% had been rejected without ever speaking to a human and 42% had sat an AI-run interview — while candidates respond by rewriting CVs by hand to avoid “sounding like AI” (TechRadar, November 1).</li>
+<li><strong>Verified solo revenue keeps beating claimed revenue.</strong> EmailEngine, a self-hosted email API run by one person in Estonia, shows $19,583 in Stripe-verified MRR on TrustMRR with $617,926 all-time — while distribution-first indie products like Lancer hit $10,000 MRR in three months with zero ad spend by selling through existing coaches.</li>
+<li><strong>Verification is the paid layer.</strong> From game QA agents to bug bounties to Stripe-key-verified revenue pages, every fast-growing niche this week monetizes checking work, not generating it.</li>
+</ul>
+<h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><p><strong>Agents move into QA — the verification vertical institutionalizes.</strong> nunu.ai (officially Generai AG, based in Vorderthal, Switzerland) builds what it calls “Unembodied Minds”: autonomous agents that operate inside virtual environments to test games. Founders Jan Schnyder, Kyrill Hux and Nicolas Muntwyler met at ETH Zurich in 2017; their demo reel includes an agent completing the tutorial of Hogwarts Legacy from natural-language instructions alone. The economics are straightforward: studios typically allocate roughly 10% of budget to QA, and blockbusters have pushed total development budgets past $2 billion (GTA 6) and $700 million (Call of Duty: Black Ops Cold War). Traditional script-based automation breaks every time a game updates; language-driven agents adapt. Several studios, from indie teams to larger players, already run hundreds of nunu.ai automated tests per month continuously. The company’s stated ambition — “the pathway to embodied AI goes through gaming,” backed by a quadruped robot that retrieved a bottle from a table in an early test — matters less than the funding signal: TIRTA Ventures is led by Ben Feder, former CEO of Take-Two Interactive, meaning a games-industry insider, not a generalist AI fund, is pricing agent-driven QA. For one-person studios, this is the same pattern that produced the code-review-agent wave: the first commercial agents in a vertical target the most repetitive, most scriptable verification work.</p>
+<p><strong>Bug bounty economics are drifting out of line with real-world impact.</strong> The Parameter Labs disclosure (published October 28, fixed October 26) is worth studying in full because every individual piece looked reasonable. ChatGPT’s HTML Preview renders generated code in a sandboxed frame on a separate origin — and the sandbox held. An interactive graph in the same conversation loaded the MathLive math library into the main page, and MathLive installed a postMessage listener that accepted messages from any origin. Keyboard-layout data could carry raw HTML, assigned via innerHTML; a helper function looked like a sanitizer but passed strings through unchanged; the injected iframe was created without a sandbox attribute and inherited the chatgpt.com origin; and the site’s Content Security Policy, which blocked inline scripts but allowed YouTube, was routed through a YouTube oEmbed endpoint that reflected a callback parameter as JavaScript. Final delivery: the whole chain preserved inside a public &#x2F;share link, so opening it — in the refined variant, the victim’s only action — enumerated recent conversations, read a private one, and exfiltrated it via an image request, with the ability to call any authenticated ChatGPT API. OpenAI classified it P1, reproduced it, and shipped fixes across two frontend versions within eight days of the October 18 report. The $5,000 payout is the story: a chain requiring weeks of senior researcher time, on the world’s highest-profile AI product, paid at roughly 1&#x2F;26th of Meta’s top rate for a comparable zero-click account takeover. Researchers vote with their feet; expect the gray market to keep setting the real price.</p>
+<p><strong>The hiring market is running the same trust breakdown in reverse.</strong> Greenhouse, the applicant-tracking vendor, surveyed 1,100 UK and Irish job seekers: 81% reported being rejected without ever speaking to a human, 42% had completed an AI-run interview, and younger candidates now rewrite their CVs manually to avoid tripping AI-detection heuristics — because everyone uses the same generation tools at both ends of the table (TechRadar, November 1). For solo founders who hire or contract, this is a two-sided warning: automated screening silently discards the candidates you most want (the ones who look “AI-written” because they write cleanly), and your own outbound materials are being filtered by machines tuned against exactly your toolset. The vendors building honest, auditable screening bypasses — human-first review tiers, verifiable human signals — are attacking a problem both sides will pay to solve.</p>
+<h2 id="Build-Directions"><a href="#Build-Directions" class="headerlink" title="Build Directions"></a>Build Directions</h2><p><strong>Sell verification inside a vertical you know.</strong> nunu.ai’s seed round is the template: pick an industry where checking work is the dominant cost (games QA, compliance review, admissions screening), build agents that do the checking in natural language, and price against the human budget line — 10% of production cost, in games. The pitch that won a former Take-Two CEO’s fund was not “AI writes games” but “AI plays them so humans don’t have to.”</p>
+<p><strong>Distribution through existing trust networks beats ads.</strong> Ivan Nedelkovski, a Macedonian builder who ran a seven-figure software agency with nearly 20 employees, built Lancer — an AI agent that finds Upwork jobs, qualifies them, and writes personalized proposals — as a weekend internal tool, then launched it publicly and reached $10,000 MRR in about three months with $0 on ads (Starter Story via Profitable Founder). The mechanism: instead of hunting end customers, he recruited “connectors” — Upwork coaches who each onboard 5–20 paying clients a month at $600–$1,000 per client, every one of whom is a perfect Lancer customer. Two affiliates drove almost all growth; he famously paid one coach $1,000 just to take a demo call. Pricing is deliberately premium: $79 for 30 proposals, $300 for 250, or $500 a month unlimited. With roughly 200,000 jobs posted on Upwork monthly and a 10-minute human qualification cost per application, the agent-outperforms-human-by-10x framing sold itself to the coaches who then sold it downstream.</p>
+<p><strong>Boring infrastructure, verified revenue, one person.</strong> EmailEngine (Andris Reinman, Estonia, founded May 2020, bootstrapped, team size 1) turns IMAP&#x2F;SMTP, Gmail API and Microsoft Graph into one REST API with webhooks — the unglamorous plumbing every SaaS needs to sync and send user email. Its TrustMRR page, verified against a Stripe API key, shows $19,583 MRR, 238 active subscriptions, $617,926 all-time revenue and $33,107 in the last 30 days, at $1,450 per year for unlimited instances (SpringForAll, November 1). No audience play, no launch spike — just a self-hosted license with a 14-day trial that compounds. The pattern echoes across this week’s verified-revenue crop: solo infrastructure products grow slowly but survive the verification test that, per the Kingringo dataset covered October 31, only 26 of 85 AI-built indie apps could pass.</p>
+<h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><p><strong>Compounding small flaws beat big ones.</strong> The ChatGPT chain had no zero-day in the classic sense: a sandboxed preview, a legitimate math library, a permissive-but-standard CSP, and a sharing feature — each defensible alone, catastrophic together. If you render AI-generated HTML anywhere near a signed-in session (artifacts, previews, email templates), audit every postMessage listener on your main page including those from chart and math widgets, verify both origin and target window, never pass raw HTML across frames, and test the shared or exported view separately — that is the version an attacker sends.</p>
+<p><strong>Bounty underpricing pushes talent elsewhere.</strong> When a P1 on a flagship AI product pays $5,000 while equivalent chains fetch six figures at Meta or Microsoft, the marginal researcher rationally shifts to gray markets or other vendors. If your product accepts shared content or runs agent-generated code, assume the best researchers are not reporting to you — invest in internal red-teaming rather than waiting for a $5,000-quality report.</p>
+<p><strong>Automated filtering has a false-negative cost nobody is measuring.</strong> Greenhouse’s 81% figure implies most applications die machine-to-machine. For founders, both hiring and being hired through fully automated funnels now carries silent, unquantified rejection risk. Budget human review for the candidates you actually want.</p>
+<h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><ol>
+<li><strong>Audit your AI app’s postMessage surface.</strong> List every listener on your primary origin — first-party and third-party — and confirm each validates sender origin and window. This is a weekend audit that prevents the next Parameter-style chain.</li>
+<li><strong>Never pass raw HTML through cross-frame messaging.</strong> If a widget needs layout data, send structured types, not markup, and sandbox every iframe created from content an untrusted frame can influence.</li>
+<li><strong>Test the share path, not just the product.</strong> The ChatGPT bug was fully preserved in a public share link. Export and share views are separate attack surfaces; fuzz them separately.</li>
+<li><strong>Price against the budget line you replace.</strong> nunu.ai prices against QA’s ~10% of production budget; Lancer prices against 10 minutes per proposal. Know the human cost your agent deletes and quote against it.</li>
+<li><strong>Recruit connectors, not customers.</strong> If your buyer already pays a coach, consultant or agency for advice, one warm deal with that intermediary outperforms hundreds of cold calls — and costs less than $1,000.</li>
+<li><strong>Get your revenue Stripe-verified.</strong> A public, API-verified revenue page (TrustMRR or equivalent) converts skeptical buyers at rates founder-claimed screenshots cannot, per the verification-gap data in the Kingringo study.</li>
+</ol>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Detail</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>nunu.ai seed</td>
+<td>$6M co-led by TIRTA Ventures + a16z speedrun, YC participating; $8M total; game-QA agents; Hogwarts Legacy tutorial demo; hundreds of automated tests&#x2F;month in production</td>
+<td>N24 (Nov 2)</td>
+</tr>
+<tr>
+<td>ChatGPT P1 share-link chain</td>
+<td>MathLive any-origin postMessage → HTML via innerHTML → unsandboxed iframe at chatgpt.com origin → YouTube oEmbed CSP bypass; report Oct 18, fixed Oct 26, disclosed Oct 28</td>
+<td>Parameter Labs; Simon Willison</td>
+</tr>
+<tr>
+<td>Bounty comparables</td>
+<td>OpenAI $5,000 vs Meta $130,000 and Microsoft Identity $100,000 for zero-click-class ATO</td>
+<td>Program pages; jacksunwei digest (Oct 31)</td>
+</tr>
+<tr>
+<td>Greenhouse hiring survey</td>
+<td>1,100 UK&#x2F;Irish job seekers: 81% rejected with no human contact; 42% took an AI interview; candidates hand-rewrite CVs</td>
+<td>TechRadar (Nov 1)</td>
+</tr>
+<tr>
+<td>EmailEngine</td>
+<td>Solo, Estonia, bootstrapped, founded May 2020; $19,583 verified MRR, 238 subscriptions, $617,926 all-time, $33,107 last 30 days; $1,450&#x2F;yr license</td>
+<td>TrustMRR via SpringForAll (Nov 1)</td>
+</tr>
+<tr>
+<td>Lancer</td>
+<td>Upwork proposal agent; $10K MRR in ~3 months, $0 ads; $79&#x2F;30 proposals to $500&#x2F;mo; two Upwork-coach affiliates drove growth; 200K jobs&#x2F;month platform-wide</td>
+<td>Starter Story via Profitable Founder</td>
+</tr>
+<tr>
+<td>Game QA cost base</td>
+<td>Studios allocate ~10% of budget to QA; GTA 6 &gt;$2B, CoD Black Ops Cold War ~$700M</td>
+<td>N24 (Nov 2)</td>
+</tr>
+</tbody></table>
+<p>Investment involves risk. This report is information, not advice.</p>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>AI Security</category>
+        <category>Solo Founder</category>
+      </categories>
+      <tags>
+        <tag>ChatGPT</tag>
+        <tag>Solo Founder</tag>
+        <tag>nunu.ai</tag>
+        <tag>Game QA</tag>
+        <tag>Bug Bounty</tag>
+        <tag>Greenhouse</tag>
+        <tag>EmailEngine</tag>
+        <tag>TrustMRR</tag>
+      </tags>
+  </entry>
 </search>
