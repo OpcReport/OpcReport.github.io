@@ -125400,4 +125400,116 @@
         <tag>Edge AI</tag>
       </tags>
   </entry>
+  <entry>
+    <title>T3Code Hits 10K Stars in 48h, Chainalysis Breached by Agent</title>
+    <url>/opc-report-2026-11-03-2128/</url>
+    <content><![CDATA[<p>The week’s clearest signal for one-person companies is not another model release. It is that running many agents has itself become a product category: a control panel that manages every major coding agent just pulled 10,000 GitHub stars in 48 hours, DeepSeek turned its harness into a platform users can extend with a sentence, and the first confirmed breach attributed to offensive agentic techniques hit a company whose own business is catching crypto criminals. Around that, capital moved into two businesses only one-person teams used to dismiss as too weird — predicting human behavior for brokers, and selling hours of human motion data to robot labs. Here is what a solo builder can use from all of it.</p>
+<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><ul>
+<li><strong>T3Code’s 0.16 release hit 10,000 stars in under 48 hours (36Kr, November 3), and the arc matters more than the number.</strong> The repository was created February 8, 2026, crossed 20,000 stars on August 27 as a promising but incomplete experiment, cooled off, and then came back when the 0.16 release made it genuinely usable. T3Code is a control panel for other people’s agents: it launches and manages Claude Code, Codex, Cursor, Grok Build, OpenCode and Google’s Antigravity from one page, translates their incompatible event streams into a unified format, and runs on desktop or remotely from a phone. A developer who used to alt-tab between four terminals now approves everything from one queue. The product lesson: the tooling layer above the harnesses is where the attention went this week — not another harness.</li>
+<li><strong>What T3Code actually solved is the permission and state problem.</strong> Each task is a thread that records which agent, which model, which directory, what was said and which permissions were approved. Threads get their own git worktree, so several agents can modify the same repository without colliding. The panel checkpoints before and after each conversational turn, lets you inspect what a single turn changed, roll back to any message, and run diff, commit and pull requests without leaving the tool. Every approval request from every agent lands in one place. This is boring plumbing — and plumbing that removes an alt-tab per approval is exactly the kind of product a solo developer can ship.</li>
+<li><strong>DeepSeek’s Harness team shipped Creator Mode on November 2: describe a tool in natural language, get an installable plugin</strong> that extends the harness’s tools, skills and interface — the tagline is Your Harness, You Define It. The seven published demos sketch the ambition: a 3D landmark showroom, an interactive 3D Transformer visualization for teaching, a pixel-art UI theme switcher, a poster design workbench with custom shader backgrounds, a dark-mode video editing workbench with timeline and export driven by plain-language commands, a paper reader that preserves original typography with highlights and margin notes, and a session statistics panel showing token spend, cost budget and CPU utilization. This is the same team whose Super-agent prototype (October 31, MIT-licensed, ~6,930 stars by November 2) went open source; the direction is consistent — the harness stops being a fixed frame and becomes a user-extensible platform.</li>
+<li><strong>Chainalysis disclosed (October 30–31, BleepingComputer) that an intruder used what it calls offensive agentic techniques</strong> to reach internal systems and customer records: user IDs, full names, email addresses and organization role labels. The company says there is no evidence case files, investigation graphs, notes, transaction results, cleartext passwords, MFA secrets or session tokens were accessed, and that the incident is unrelated to the $6.3 billion Binance theft attributed by the FBI on October 31 to North Korea-linked TraderTraitor. The irony is structural: Chainalysis sells blockchain surveillance to more than 1,500 customers including 50-plus regulators and nine of the ten largest crypto exchanges — and it got breached by the same class of tooling it investigates. Exposed role labels create a targeted-phishing map of who at each customer investigates financial crime.</li>
+<li><strong>42AI came out of stealth with $62.5 million in seed funding (IT Times, November 3)</strong> — Israeli, three years of work, funded by the founders and Infinity Group, the investment firm founded by CEO Amit Gal-Or’s father, who chairs the company. Its behavioral world model claims to predict a person’s action tendencies in novel situations, not extrapolate from history: it reads reactions across KYC, onboarding, support calls and transfers — tone, voice features, call frequency — converts them into mathematical trait vectors, and feeds a Transformer-based world model that outputs decision probabilities per context. Ten large brokerages already use it for liquidity, margin and hedging; revenue has passed seven figures; one client reportedly added about $30 million of value through dynamic hedging. Note the honest footnote: the claimed 98% accuracy means trades landed inside the predicted interval, not per-trade prediction — direction-and-volume F1 is 0.8–0.85.</li>
+</ul>
+<h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><p><strong>The control-plane wave has arrived on schedule.</strong> Two weeks of coverage showed the same pattern repeating: monitoring layers, memory layers, approval queues, worktree isolation — each launched as a separate tool. T3Code’s revival shows the market consolidating around one panel that does all of it across vendors. The economics are obvious when you count the alt-tabs: a solo operator running three agents concurrently loses more time switching windows and approving requests than writing prompts. The panel category is young, cross-vendor by necessity, and has no incumbent — a rare combination.</p>
+<p><strong>Harnesses are becoming platforms, and two Chinese labs set the pace this week.</strong> DeepSeek’s Creator Mode makes the harness itself user-extensible; Kimi’s game development solution (November 2, Phoenix Tech) went further downstream: Kimi K3.1 Pro plus Kimi Code and Kimi Work, with plugins that operate real Unity, Unreal Engine and Blender projects — reading design docs, screenshots, code and 3D assets, then delivering editable files and operation logs a human team can review. Kimi cites Unity’s 2026 Game Development Report — 52% of developers now prefer smaller projects and 67% keep prototyping under three months — and positions the stack around cheap playable prototypes before commitment. Its demo claim: one continuous 20-hour autonomous run produced a natively continuable project. Vendor-reported, but the scope (prototyping, asset passes, localization with back-translation, UGC screening) maps directly onto what a small studio or solo game developer actually does.</p>
+<p><strong>Capital kept flowing into inputs rather than models.</strong> GenRobot (简智机器人) closed a $100 million A+ round (announced November 2, per Shangdao VC and Inveh): SAIC, Baidu, GALBOT (Galaxy General), Shoucheng Holdings and Malaysia’s Eastworlds on the industrial side, with CITIC Securities’ PE arm, CCB International, Huatai and others on the financial side — the company’s seventh round in roughly 18 months, over $200 million cumulative, for a firm founded May 2025 that builds no robots at all. It sells human skill data: first-person headsets, dexterous gloves and grippers recording multi-channel signals from real tasks. The unit economics explain the investor list — embodied and world-model training data reportedly trades at ¥500–1,000 per hour against a collection cost near ¥30, a spread Scale AI once enjoyed in text. Its 13,000-hour open dataset draws over a million downloads a month, reportedly the largest in the category, and quarterly delivery has jumped from 100,000 hours to about a million, targeting ten million by 2027. Legal-agent economics also re-priced upward: Legora’s revenue reportedly grew more than 6x year over year with 2,600+ customers (its $550 million raise at $8.8 billion was covered here in October), Crosby’s legal agent now serves 95% of its clients, and Clio shipped a Claude connector over more than a billion legal documents and court records.</p>
+<p><strong>Supply and policy footnotes.</strong> Reports (Linma daily, November 2) say NVIDIA trimmed Rubin shipping specs — memory bandwidth 22 to 19.2 TB&#x2F;s, NVLink 3.6 to 3.0 TB&#x2F;s, compute unchanged — the kind of quiet derating that lands in someone’s Q1 inference budget. xAI announced Grok API text will carry invisible watermarks from November 7 to comply with the EU AI Act. And MIT CSAIL’s Sparks of Weight-Space Programming paper argues large models can natively read and write other networks’ weights without gradients or retraining — editing 0.016% of parameters lifted a small model’s math performance about sixfold. One to watch, not to build on yet.</p>
+<h2 id="Build-Directions"><a href="#Build-Directions" class="headerlink" title="Build Directions"></a>Build Directions</h2><ul>
+<li><strong>Ship or adopt a control plane before you scale past two agents.</strong> If you run three or more coding agents, T3Code’s feature list is your requirements doc: unified event stream, per-thread worktrees, per-turn checkpoints, one approval queue, mobile view. If you would rather build than adopt, the underserved slices are obvious — approval queues for non-coding agents (browser, finance, ops), checkpointing for long-running tasks, and audit trails that satisfy a client’s compliance question. This category had zero incumbents three weeks ago.</li>
+<li><strong>Build for the plugin layer, not just the API.</strong> Creator Mode’s seven demos are a market signal: harness UIs are becoming an extension surface with distribution. Skills, plugins and themes for the harnesses people already run — especially vertical ones (a poster workbench for marketers, a paper reader for researchers) — ride someone else’s daily-active users. The 7-prompt demo format is itself a template for a launch post.</li>
+<li><strong>The embodied data spread is an open invoice.</strong> ¥30 collection cost against ¥500–1,000 market price is the widest arbitrage in the AI supply chain right now, and GenRobot’s investor list shows model labs and OEMs will prepay to lock supply. A one-person operation cannot collect a million hours, but niche collection and evaluation — a specific device, a specific task family, a specific language of instruction — is tractable, and the buyers are already identified in GenRobot’s own customer list.</li>
+<li><strong>Cheap entity monitoring changes what you can sell.</strong> Exa’s Monitors V2 (reported November 3) does entity recognition across 130+ billion pages, 211 million companies, 1.3 billion products and a billion people at $2 per 1,000 runs — roughly 7x cheaper than re-running search, per the company. Monitoring competitors, regulators, job posts or supply-chain moves was previously a scraping project; it is now a priced primitive. Wrap it in a vertical alert product and you have a subscription.</li>
+<li><strong>Legal-vertical distribution is compounding.</strong> Crosby serving 95% of clients through an agent with DM-based sensitive-request handling, Clio’s billion-document connector, Legora’s 6x revenue growth — the pattern for solo builders is to attach to these rails (connectors, templates, evaluation sets) rather than compete with the platforms.</li>
+</ul>
+<h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><ul>
+<li><strong>Agentic attribution is a phrase, not a finding.</strong> Chainalysis has not named a tool, model, exploit or vulnerability, and says its fields list is introduced by such as — the full scope is unknown, as are entry point, dwell time and whether data was viewed or exfiltrated. Treat both the threat model and the reassurance as interim. The safe posture: assume the phrase describes real capability, without assuming autonomy.</li>
+<li><strong>Role labels plus names are a phishing kit.</strong> The immediate risk is targeted social engineering against investigators, compliance staff and admins — credible context, urgency around password resets. Chainalysis itself warns customers to expect impersonation, including fake fund-recovery and recruiting contacts. Any team with agent-integrated SaaS should inventory provisioned users — including departed staff — and brief help desks on out-of-band verification this week.</li>
+<li><strong>Vendor-claimed metrics need unpacking.</strong> 42AI’s 98% is interval coverage, not per-trade accuracy; Kimi’s 20-hour run is self-reported; T3Code’s star velocity measures attention, not revenue — this same repo went from 20,000 stars in August to a lull. And 42AI’s round is family-funded (Infinity Group, chaired by the CEO’s father), which says nothing improper but does mean the price signal is not an arms-length market clearing.</li>
+<li><strong>Single-source hardware reports.</strong> The Rubin spec trim rests on one Chinese-language daily’s aggregation; NVIDIA has not confirmed the final SKUs. Do not re-plan Q1 inference budgets on it — but do note the direction of travel, because quiet derating before mass shipment is a pattern, not an accident.</li>
+<li><strong>Prediction-on-people is a regulatory surface.</strong> A model that scores trait probabilities from support-call tone and biobank-derived data — even without PII, per the company — sits in the zone where GDPR, biometric rules and financial-conduct rules intersect. If you build adjacent products, the compliance design is part of the product.</li>
+</ul>
+<h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><ol>
+<li><strong>Centralize agent approvals today.</strong> Install T3Code (or the equivalent you already trust) if you run multiple agents; measure the alt-tabs you delete in a week. If you build tooling, the non-coding-agent approval queue is still unclaimed.</li>
+<li><strong>Run the Chainalysis checklist on your own stack.</strong> Inventory every provisioned user on every SaaS with agent integrations, remove departed accounts, brief help desks on verification for reset requests, and enable phishing-resistant MFA where offered.</li>
+<li><strong>Ship one plugin for the harness you already use.</strong> Creator Mode’s seven demos took a lab a week; a solo founder with a vertical workflow (invoice triage, posture checks, test-data builders) can ship a focused one faster — and the harness’s user base is your distribution.</li>
+<li><strong>Prototype an alert product on Monitors V2.</strong> Pick one entity class you understand (seed rounds in your niche, regulator actions, job posts for your stack), price it at a few dollars per month, and validate demand before building ingestion yourself.</li>
+<li><strong>Audit your xAI dependencies before November 7.</strong> If your product pipes Grok outputs into user-facing surfaces for EU users, verify the invisible watermark does not break your own downstream processing or disclosure obligations.</li>
+</ol>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Numbers</th>
+<th>Source (date)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>T3Code 0.16</td>
+<td>10,000 stars in &lt;48h after release; repo created Feb 8, 2026; 20,000 stars Aug 27 then cooled; manages Claude Code, Codex, Cursor, Grok Build, OpenCode, Antigravity; per-thread git worktrees, per-turn checkpoints, unified approval queue, mobile</td>
+<td>36Kr &#x2F; 字母AI (Nov 3); GitHub trend via DailyDawn (Nov 1)</td>
+</tr>
+<tr>
+<td>DeepSeek Creator Mode</td>
+<td>Nov 2; natural language → installable Harness plugins (tools, skills, UI); 7 demos incl. 3D showroom, Transformer visualization, video editor, paper reader, session cost panel; follows Super-agent prototype ~6,930 stars (Nov 2)</td>
+<td>DeepSeek Harness team via Wallstreetcn (Nov 2)</td>
+</tr>
+<tr>
+<td>Chainalysis breach</td>
+<td>Disclosed Oct 30–31; offensive agentic techniques; user IDs, names, emails, org roles exposed; no evidence of case files, passwords, MFA or session token access; 1,500+ customers, 50+ regulators, 9&#x2F;10 largest exchanges; unrelated to Binance $6.3B TraderTraitor theft (FBI attribution Oct 31)</td>
+<td>BleepingComputer; Chainalysis notices; Gate&#x2F;techscurrent summaries (Oct 30–Nov 3)</td>
+</tr>
+<tr>
+<td>42AI seed</td>
+<td>$62.5M from founders + Infinity Group; 3 years R&D; 10 large brokers on liquidity&#x2F;margin&#x2F;hedging; 7-digit revenue; ~$30M hedging value at one client; claimed 98% &#x3D; interval coverage; F1 0.8–0.85; dataset ~30M people, no PII; next: gaming, anti-fraud, cybersecurity</td>
+<td>IT Times via NetEase (Nov 3)</td>
+</tr>
+<tr>
+<td>GenRobot (简智机器人) A+</td>
+<td>$100M; 7th round in ~18 months, &gt;$200M cumulative; founded May 2025; no-robot human skill data; data ¥500–1,000&#x2F;hr vs ~¥30 collection cost; 13K-hour open dataset, 1M+ downloads&#x2F;month; 100K→1M hrs&#x2F;quarter, 10M target 2027; SAIC, Baidu, GALBOT, Shoucheng, Eastworlds</td>
+<td>Shangdao VC, Inveh via NetEase (Nov 2–3)</td>
+</tr>
+<tr>
+<td>Kimi game dev solution</td>
+<td>Nov 2; K3.1 Pro + Kimi Code&#x2F;Work + Unity&#x2F;Unreal&#x2F;Blender plugins; Unity 2026 report: 52% favor small projects, 67% prototype &lt;3 months; claimed 20h autonomous run delivered continuable project</td>
+<td>Kimi via Phoenix Tech (Nov 2)</td>
+</tr>
+<tr>
+<td>Exa Monitors V2</td>
+<td>Entity recognition over 130B+ pages, 211M companies, 1.3B products, 1B people; $2 per 1,000 runs, ~7x cheaper than search re-runs (company claim)</td>
+<td>AGI Hunt daily (Nov 3)</td>
+</tr>
+<tr>
+<td>Legal agent rails</td>
+<td>Legora revenue +6x YoY, 2,600+ customers ($550M raise at $8.8B covered Oct 22); Crosby agent serves 95% of clients; Clio Claude connector over 1B+ legal docs</td>
+<td>AGI Hunt daily (Nov 3)</td>
+</tr>
+<tr>
+<td>NVIDIA Rubin spec reports</td>
+<td>Memory bandwidth 22→19.2 TB&#x2F;s; NVLink 3.6→3.0 TB&#x2F;s; compute unchanged; single-source, unconfirmed</td>
+<td>Linma daily (Nov 2)</td>
+</tr>
+<tr>
+<td>MIT CSAIL weight-space programming</td>
+<td>Models read&#x2F;write other networks’ weights without gradients; 0.016% of params edited → ~6x small-model math gain; SemiAnalysis GDPx best 12%</td>
+<td>AGI Hunt daily (Nov 3)</td>
+</tr>
+</tbody></table>
+<p>The thread through all of it: the leverage moved one layer up. Models are commodities racing to the bottom on price; harnesses are platforms; the money this week went to the panel above the harnesses, the plugins inside them, and the priced inputs beneath them. A one-person company cannot out-train a frontier lab. It can out-position one — pick a layer nobody has staffed, ship the boring version first, and let the labs’ own velocity deliver your distribution.</p>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>AI Agents</category>
+        <category>Open Source</category>
+      </categories>
+      <tags>
+        <tag>DeepSeek</tag>
+        <tag>Agent Orchestration</tag>
+        <tag>T3Code</tag>
+        <tag>Chainalysis</tag>
+        <tag>AI Security</tag>
+        <tag>Data Infrastructure</tag>
+        <tag>Indie Hacking</tag>
+      </tags>
+  </entry>
 </search>
