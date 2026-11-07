@@ -125921,4 +125921,186 @@
         <tag>METR</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Ramp Data Shows AI Spending Stall, Garry Tan Ships gstack</title>
+    <url>/opc-report-2026-11-07-1615/</url>
+    <content><![CDATA[<p>This morning’s report covered the capital side of Friday’s repricing: OpenAI banking $11 billion at a haircut valuation, METR marking Anthropic’s research throughput up 1.9x. But the most decision-relevant dataset of the week landed quietly on November 6 and has barely been discussed: spending-management platform Ramp published data showing that growth in corporate AI token spending collapsed from 42% month-over-month in July to just 1.5% across August and September. Usage keeps rising — what is falling is the price per unit, as OpenAI and Anthropic slash API prices to defend volume. Meanwhile, on the supply side of the agent economy, E2B disclosed $120 million in annualized revenue, Garry Tan’s personal Claude Code configuration blew past 139,000 GitHub stars, and legal-AI unicorn Harvey entered early IPO talks at a $15.5 billion valuation. The bill for intelligence is deflating even as the market for agent labor is being built. For one-person companies, that combination is not a contradiction — it is the entire opportunity.</p>
+<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><ul>
+<li><strong>Corporate AI spending growth fell off a cliff: 42% month-over-month in July to 1.5% across August and September.</strong> Ramp, which sits on the corporate card and spend-management data of a large slice of venture-backed startups, published the figures on November 6. Lead economist Ara Kharazian’s diagnosis is subtle: usage keeps rising, so this is not demand destruction — it is price deflation. OpenAI halved the API prices of GPT-6 Sol and GPT-6 Luna in September, and Anthropic cut prices sharply on Fable 5.1 and Opus 5.5; per company filings cited in the coverage, those cuts reduced Anthropic’s revenue growth by roughly $600 million. Kharazian calls it a “buyer’s market” and warns that almost all AI spending comes from the top 1% of venture-backed, high-growth tech companies — if that cohort slows, model revenue growth slows with it.</li>
+<li><strong>Buyers are engineering costs down with configuration, not willpower.</strong> The Ramp analysis describes the tactics now standard at cost-conscious firms: defaults that block long runs of expensive models, per-employee budgets, and routers that send work to lighter models automatically. This is the quiet operational story of the quarter — the expensive-model default is dying, and the router is eating the stack.</li>
+<li><strong>E2B crossed $120 million in annualized revenue, with about $150 million in net new revenue projected this year.</strong> The open-source sandboxing company, which provisions isolated environments where agents execute code, disclosed the October figures on November 6. While token prices deflate, the infrastructure that makes agents <em>safe to run</em> is monetizing at a pace few consumer AI products match. The value is migrating from tokens to the execution layer.</li>
+<li><strong>Garry Tan published his personal Claude Code setup, gstack, and it hit 139,927 GitHub stars within days.</strong> The Y Combinator president’s repository contains 23 “opinionated tools” mapped to organizational roles — CEO, Designer, Engineering Manager, Release Manager, Documentation Engineer, QA — each a discrete Claude Code subagent with specific decision criteria and output formats. The deliberate thesis: the bottleneck in AI-assisted development is not code generation but process discipline. When the CEO of the world’s most famous accelerator ships his workflow as a product, “workflow-as-product” stops being a theory.</li>
+<li><strong>Harvey is in early IPO talks.</strong> The legal-AI startup, at a $15.5 billion valuation and $400 million ARR, has begun discussions with Latham &amp; Watkins, according to reporting aggregated November 6. Coming the same week OpenAI’s president Greg Brockman told TechCrunch the company could be ready to go public in 2027 — with enterprise revenue crossing 50% of the mix and a new JPMorganChase partnership — the exit window is visibly being tested from multiple directions.</li>
+</ul>
+<h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><p><strong>The IPO pipeline is crowding even as marks compress.</strong> Harvey’s talks follow the Anthropic valuation slide documented this morning (buyers now discussing $1.1–1.3 trillion, down from roughly $2 trillion in October). Sentiment skeptics got louder: Jim Cramer, backed by Gary Marcus, argued publicly that Anthropic will not achieve a $2 trillion — or even $1.5 trillion — valuation and will have to take a discount. Yet the deal calendar keeps filling: Bloomberg reported Alphabet’s Isomorphic Labs, spun out of Google DeepMind, is in talks to raise roughly $5 billion at about a $50 billion valuation — still with no drug tested in humans, a pure bet on the AlphaFold 3 design engine.</p>
+<p><strong>Vertical AI with physical-world revenue is the market’s favorite story.</strong> YC W21 company Tractian, which builds “physical AI” for factory floors, was reported at $100 million ARR with a $130 million round at a $1.4 billion valuation. Firecrawl raised a $75 million Series B and simultaneously launched Alexandria, a free index of 41 million-plus life-science papers exposed directly to agents like ChatGPT, Claude, and Grok — data access as customer acquisition. Chinese video-model startup Sand.ai raised a $200 million Series A+ co-led by Shiji Capital and Wangsu Science &amp; Technology, taking its 2026 fundraising to $300 million in ten months, and is preparing the full release of its 114-billion-parameter MAGI-2 video model.</p>
+<p><strong>YC’s own batch is a live funding dashboard.</strong> Y Combinator reposted a list of 15 portfolio companies announcing rounds in two weeks, including Blacksmith at a $66 million Series C, Broccoli at $52 million across Series A and B, Greptile at a $50 million Series B, and Infisical at a $40 million Series B. And Paul Graham returned to X on November 6 with a distribution lesson from office hours: he advised a startup to focus on selling to its batchmates — “both a real test of whether the product is good and the best influence on the product’s evolution.” After acting on the advice, more than 10% of the batch companies (roughly 21 of the fall 2026 batch’s ~214 companies) were using the product.</p>
+<table>
+<thead>
+<tr>
+<th>Story</th>
+<th>Key Number</th>
+<th>Source, Date</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ramp AI token spend growth</td>
+<td>42% (July) → 1.5% (Aug–Sep)</td>
+<td>Ramp&#x2F;SiliconANGLE, Nov 6</td>
+</tr>
+<tr>
+<td>Anthropic revenue cost of price cuts</td>
+<td>~$600M</td>
+<td>Company filings via The Decoder, Nov 6</td>
+</tr>
+<tr>
+<td>E2B annualized revenue</td>
+<td>$120M (Oct); ~$150M net new this year</td>
+<td>E2B, Nov 6</td>
+</tr>
+<tr>
+<td>Garry Tan’s gstack</td>
+<td>139,927 GitHub stars; 23 role tools</td>
+<td>GitHub Trending, Nov 6</td>
+</tr>
+<tr>
+<td>Harvey IPO track</td>
+<td>$15.5B valuation; $400M ARR</td>
+<td>Aggregated report, Nov 6</td>
+</tr>
+<tr>
+<td>Isomorphic Labs raise talks</td>
+<td>~$5B at ~$50B valuation</td>
+<td>Bloomberg, Nov 6</td>
+</tr>
+<tr>
+<td>Tractian</td>
+<td>$100M ARR; $130M round at $1.4B</td>
+<td>AGI Hunt digest, Nov 6</td>
+</tr>
+<tr>
+<td>Firecrawl</td>
+<td>$75M Series B; Alexandria 41M+ papers</td>
+<td>AGI Hunt digest, Nov 6</td>
+</tr>
+<tr>
+<td>YC batch rounds (2 weeks)</td>
+<td>Blacksmith $66M; Greptile $50M; Infisical $40M</td>
+<td>YC repost, Nov 6</td>
+</tr>
+</tbody></table>
+<h2 id="Build-Directions"><a href="#Build-Directions" class="headerlink" title="Build Directions"></a>Build Directions</h2><p><strong>Ship your workflow as a product.</strong> Gstack’s 139,927 stars are a measure of reach, not fitness — do not cargo-cult a 23-role org chart into a solo business. Extract the pattern instead: narrow scope, explicit output format, defined decision criteria for each agent you run. Then package <em>your</em> version. The parallel indie proof is AI Designer, a solo-built UI design tool Stripe-verified at $8,338 MRR from 283 subscriptions as of November 2. Its inflection point, per founder Wiz’s public ledger, was shipping an MCP server that lets Claude Code and other coding agents call the tool directly — combined with a daily SEO pipeline he runs inside Claude Code. Your configuration, your prompts, your pipeline: the agentic era’s distribution assets are the things you already use.</p>
+<p><strong>Sell in the buyer’s market, buy in it too.</strong> Ramp’s data cuts two ways for a one-person company. As a buyer, you now have leverage the 2024–2025 market never offered: price-cut headlines (GPT-6 Sol and Luna halved, Opus 5.5 discounted) are real, and the router-plus-defaults pattern Ramp describes is a weekend of configuration that can halve your inference bill. As a seller, avoid business models that merely re-sell tokens — margin on a deflating commodity goes to zero. Sell judgment, verification, and workflow instead; those prices are not deflating.</p>
+<p><strong>Treat data access as a moat, not plumbing.</strong> Scrapling, a Python scraping framework with adaptive element tracking — selectors that relocate targets when a site’s DOM changes instead of failing — was trending at 97,937 GitHub stars on November 6, alongside Firecrawl’s $75 million Series B. Two independent signals, same conclusion: in agentic pipelines, the binding constraint is not model intelligence but reliable, fresh data acquisition from a hostile, anti-bot web. Tools that survive DOM churn, rotate fingerprints, and render JavaScript are the unglamorous layer every agent product quietly depends on.</p>
+<p><strong>Copy the batchmate distribution loop.</strong> Paul Graham’s advice generalizes beyond YC: find the densest community of peers who will actually <em>use</em> your product rather than admire a demo — a batch, a Discord, a niche forum — and sell there first. Indie case Vasco’s YouTube-native AI app, documented by Starter Story on November 3, reached $70,000 per month over two years on one video a day, with most users arriving from the channel itself. Dense, specific channels beat broadcast every time; his only growth stack was consistency in one place.</p>
+<h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><ul>
+<li><strong>Deflation is a revenue tax on thin wrappers.</strong> If your product’s gross margin depends on passing through model costs, Anthropic’s ~$600 million growth hit from its own price cuts is your future. Re-price your offer on value delivered, not tokens consumed, before your category gets commoditized from above.</li>
+<li><strong>Persona agents create false confidence.</strong> The sharpest critique of gstack applies everywhere: an agent told it is a “Release Manager” has no release-management accountability. Role-labeled agents can make a solo operator <em>feel</em> governed while nobody is. Keep a human (you) as the named owner of every consequential decision path.</li>
+<li><strong>The retail tranche is new territory.</strong> OpenAI is reportedly working with investment banks to raise from high-net-worth individuals and retail investors — a sign of institutional demand softening at the margin. If you hold AI-sector exposure, note that the marginal buyer is changing, not just the price.</li>
+<li><strong>Agentic scraping walks a legal line.</strong> Browser-fingerprint impersonation and anti-bot evasion are core features of tools like Scrapling. If your product depends on them, price legal exposure into the model — the same week Firecrawl raised $75 million, at least 10 local governments moved to drop Flock’s surveillance cameras, a reminder that public tolerance for automated data collection is political and shifting.</li>
+</ul>
+<h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><ol>
+<li><strong>Run the Ramp playbook on your own stack this week.</strong> Block long runs of expensive models by default, set per-seat budgets, and route to lighter models first. With prices halving quarterly, a stack tuned in September is overpaying today.</li>
+<li><strong>Package one piece of your workflow and ship it.</strong> A prompt set, a subagent config, an MCP server — follow the gstack and AI Designer pattern. Verification of demand costs one repository and one post.</li>
+<li><strong>Audit your margin for token passthrough.</strong> Any line item where you bill customers more because inference costs more is vulnerable. Convert at least one such feature to flat pricing or value pricing before the next round of provider price cuts.</li>
+<li><strong>Pick one dense channel and commit to a cadence.</strong> One video a day, one subreddit thread a week, one batch of peers — the Vasco and Paul Graham evidence both point the same direction. Depth beats breadth at zero budget.</li>
+<li><strong>Harden your data layer against DOM churn.</strong> If agents read the web for you, adopt adaptive-selector tooling and monitor breakage rates. A scraping pipeline that dies silently is a product outage your users will blame on you, not the website.</li>
+</ol>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ramp: AI token spend growth</td>
+<td>42% → 1.5%</td>
+<td>July vs Aug–Sep, month-over-month</td>
+</tr>
+<tr>
+<td>Ramp: top-1% dependency</td>
+<td>Nearly all AI spend</td>
+<td>Venture-backed, high-growth tech cohort</td>
+</tr>
+<tr>
+<td>Anthropic price-cut revenue cost</td>
+<td>~$600M</td>
+<td>Per company filings</td>
+</tr>
+<tr>
+<td>GPT-6 Sol &#x2F; Luna API prices</td>
+<td>Halved</td>
+<td>September 2026</td>
+</tr>
+<tr>
+<td>E2B</td>
+<td>$120M annualized (Oct)</td>
+<td>~$150M net new projected this year</td>
+</tr>
+<tr>
+<td>gstack</td>
+<td>139,927 stars; 23 tools</td>
+<td>Garry Tan’s Claude Code setup</td>
+</tr>
+<tr>
+<td>Harvey</td>
+<td>$400M ARR; $15.5B valuation</td>
+<td>Early IPO talks, Latham &amp; Watkins</td>
+</tr>
+<tr>
+<td>Greg Brockman on IPO</td>
+<td>Possibly 2027</td>
+<td>Enterprise revenue &gt;50%; JPMorganChase deal</td>
+</tr>
+<tr>
+<td>Isomorphic Labs</td>
+<td>~$5B raise at ~$50B</td>
+<td>No drug tested in humans yet</td>
+</tr>
+<tr>
+<td>Tractian</td>
+<td>$100M ARR; $1.4B valuation</td>
+<td>Factory-floor physical AI, YC W21</td>
+</tr>
+<tr>
+<td>Firecrawl Alexandria</td>
+<td>41M+ papers, free</td>
+<td>For ChatGPT&#x2F;Claude&#x2F;Grok agents</td>
+</tr>
+<tr>
+<td>Scrapling</td>
+<td>97,937 GitHub stars</td>
+<td>Adaptive web scraping for agents</td>
+</tr>
+<tr>
+<td>AI Designer (solo)</td>
+<td>$8,338 MRR, 283 subs</td>
+<td>Stripe-verified, Nov 2; MCP + SEO growth</td>
+</tr>
+<tr>
+<td>Vasco (solo)</td>
+<td>$70K&#x2F;month in 2 years</td>
+<td>One YouTube video per day</td>
+</tr>
+</tbody></table>
+<p>The one-line takeaway: Ramp’s 1.5% is the floor of a price war, not the ceiling of a demand ceiling — usage is compounding while unit prices deflate, and every layer that adds judgment, safety, or distribution on top of cheap tokens (E2B’s sandboxes, gstack’s process discipline, AI Designer’s MCP) is where the margin is moving. Solo builders should be buying tokens at 2026 prices and selling outcomes at 2025 attitudes.</p>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>AI Agents</category>
+        <category>AI Infrastructure</category>
+      </categories>
+      <tags>
+        <tag>Indie Hackers</tag>
+        <tag>Ramp</tag>
+        <tag>Garry Tan</tag>
+        <tag>gstack</tag>
+        <tag>E2B</tag>
+        <tag>Harvey</tag>
+        <tag>Scrapling</tag>
+        <tag>GitHub Trending</tag>
+      </tags>
+  </entry>
 </search>
