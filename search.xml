@@ -126103,4 +126103,175 @@
         <tag>GitHub Trending</tag>
       </tags>
   </entry>
+  <entry>
+    <title>1,122 Repos Leak Secrets via Claude Code, AI Super PACs Lose $79M</title>
+    <url>/opc-report-2026-11-09-0929/</url>
+    <content><![CDATA[<p>The weekend delivered a story that every one-person company running coding agents should read twice, and it is not the IPO headline. Security firm Apiiro scanned 104,185 public <code>.claude/settings.local.json</code> files — the “don’t ask again” approval records Claude Code writes to disk — and found 1,379 live secrets sitting in 1,122 public GitHub repositories, including 379 database passwords and 23 AWS keys, many of them committed by Claude itself in the course of doing its job. That landed the same week the AI industry’s record $79 million midterm spending spree failed in almost every race it touched, Beijing left 600,000 Nvidia H200 chips stranded in Hong Kong, and OpenAI quietly rewrote its Model Spec in ways a close reader calls substantive rather than cosmetic. Meanwhile Meta bought its way into multi-agent orchestration by acquiring Conductor, Anthropic opened a UK retail channel for its IPO, and Anthropic’s internal research models are now reported to cut experiment time by 80%. Security debt, political reset, and consolidation — three separate signals, one conclusion for solo operators: the operational layer you skipped is where your risk now lives.</p>
+<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><ul>
+<li><strong>1,379 live secrets are sitting in 1,122 public GitHub repos, leaked through Claude Code’s saved approval file.</strong> Apiiro’s scan of 104,185 public <code>.claude/settings.local.json</code> files, reported by The Hacker News on November 8, found the “don’t ask again” mechanism is a quiet exfiltration channel: when a developer approves a command once, the full command — often including embedded database passwords, API keys, and cloud credentials — gets persisted and then committed. The scan catalogued 379 database passwords and 23 AWS keys. Worst of all, Apiiro filed four bug reports on the behavior starting in 2025 and all were auto-closed as “not planned”; Anthropic has not responded publicly. The default convenience setting of the most popular coding agent on the market has been leaking production credentials for a year.</li>
+<li><strong>The AI industry’s $79 million midterm bet failed almost everywhere.</strong> AI-aligned super PACs spent roughly $79 million across 68 races in the November 3 midterms — Anthropic-backed Public First on one side, Andreessen, Horowitz and Greg Brockman’s Leading the Future on the other — and most of their general-election picks lost regardless of which side funded them. Democrats won control of both the House and Senate. As TheNextWeb’s November 8 postmortem notes, this strips the federal bill preempting state AI laws of its likeliest legislative path, and the companies now face committee oversight from chairs they spent money against.</li>
+<li><strong>600,000 Nvidia H200 chips are stranded in Hong Kong.</strong> Reuters reporting aggregated November 8 by DataCenterDynamics says Beijing has approved only small allotments — about 10,000 chips each — to major mainland firms while withholding bulk import approval, even though Washington already licensed the sales. The New York Times adds that some Commerce-approved mainland buyers operate out of empty offices and have links to already-blacklisted entities; Nvidia says its own diligence found no illegal diversion. The geopolitics of compute is now a supply-chain bottleneck, not a press release.</li>
+<li><strong>OpenAI rewrote its Model Spec, and the deletions matter.</strong> Zvi Mowshowitz’s line-by-line review found “love humanity” and “be curious” demoted from dedicated sections, side-effect control moved off the root level, and the risk taxonomy restructured around third-party manipulation. OpenAI called it a style edit; Mowshowitz rejects that framing — these were substantive commitments — while praising the new corrigibility section. When the governing document of a frontier lab changes quietly, the behavioral contract you build products on changes with it.</li>
+<li><strong>Meta bought Conductor, its first big move into multi-agent orchestration.</strong> Per the November 8 digest reporting, Meta acquired the AI coding startup whose product lets engineers manage multiple agents simultaneously; its cloud version goes read-only November 13, shuts down November 20, and the local build is maintained only into early 2027. A product with paying users is being absorbed into a platform giant inside seven days of announcement — a consolidation timeline that should recalibrate anyone building a thin wrapper on someone else’s agent runtime.</li>
+</ul>
+<h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><p><strong>Anthropic is widening its IPO funnel to retail, and it is not hiding the urgency.</strong> The Financial Times reported November 7–8 that fintech platform RetailBook has been appointed to coordinate an expected UK retail offer for Anthropic’s listing, with Hargreaves Lansdown, AJ Bell, eToro, Interactive Investor and Revolut all prepared to take customer orders. Leveraged Shares plans a 3x long Anthropic exchange-traded product on the London Stock Exchange that will hold cash until the listing. The company still targets a pre-Thanksgiving debut, raising $80–100 billion at a $1.25–1.75 trillion valuation — above its current ~$965 billion private mark but well below the $2 trillion investors hoped for a month ago. After Thursday’s selloff vaporized $3.2 trillion in market value and Nasdaq 100 fell 6.4%, Polymarket odds of a pre-December IPO slid from about 80% to near 50%. Selling IPO access to retail is what companies do when institutional demand needs supplementing.</p>
+<p><strong>Internal research acceleration is becoming a disclosed metric.</strong> Chinese-language reporting on November 8 cited three internal Anthropic models that reportedly lead Opus 5.5 by about three months and cut recursive self-improvement experiment cycles by 80% — a claim consistent in direction with METR’s finding, covered in Friday’s report, that AI assistance roughly doubled Anthropic’s well-specified research task throughput. Separately, Simon Willison ran the weight-space interpretation technique from the Sparks of Weight-Space Programming paper on a quantized Qwen3.8-27B on his own laptop, correctly identifying what a network was trained to do from raw weights alone — slow, up to an hour per guess, but no longer frontier-exclusive. Interpretation tooling is moving from lab to laptop.</p>
+<p><strong>Vertical AI with unglamorous workflows keeps raising.</strong> Archiboost AI, a San Francisco construction-tech startup founded by a licensed architect (SOM, WRNS Studio) and a Meta&#x2F;Vanta AI engineer, closed a $6.2 million seed led by Marathon Venture Capital with participation from 8VC and a16z. The platform has processed more than 550,000 drawing sheets for projects valued above $3.5 billion, flagged upwards of 120,000 potential issues, and per client reports finds up to six times more coordination problems than manual review, cutting construction-phase coordination challenges by up to 70%. No foundation model, no consumer hype — just document verification in a trillion-dollar industry.</p>
+<table>
+<thead>
+<tr>
+<th>Story</th>
+<th>Key Number</th>
+<th>Source, Date</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Apiiro Claude Code secrets scan</td>
+<td>1,379 secrets in 1,122 of 104,185 repos</td>
+<td>Apiiro&#x2F;The Hacker News, Nov 8</td>
+</tr>
+<tr>
+<td>AI super PAC midterm spending</td>
+<td>~$79M across 68 races, mostly lost</td>
+<td>TheNextWeb, Nov 8</td>
+</tr>
+<tr>
+<td>H200 chips stranded in Hong Kong</td>
+<td>600,000; ~10,000 per approved allotment</td>
+<td>Reuters via DCD, Nov 8</td>
+</tr>
+<tr>
+<td>Anthropic UK retail IPO</td>
+<td>$80–100B raise at $1.25–1.75T</td>
+<td>Financial Times, Nov 7–8</td>
+</tr>
+<tr>
+<td>Polymarket pre-Dec IPO odds</td>
+<td>~80% → ~50%</td>
+<td>Polymarket via Yahoo, Nov 8</td>
+</tr>
+<tr>
+<td>Meta–Conductor acquisition</td>
+<td>Cloud read-only Nov 13, shut Nov 20</td>
+<td>Digest report, Nov 8</td>
+</tr>
+<tr>
+<td>Archiboost AI seed</td>
+<td>$6.2M; 550K sheets, $3.5B projects</td>
+<td>InforCapital, Nov 8</td>
+</tr>
+<tr>
+<td>Anthropic internal models</td>
+<td>80% shorter experiment cycles</td>
+<td>量子位, Nov 8</td>
+</tr>
+<tr>
+<td>Vercel agent-desktop</td>
+<td>19,000 stars, +14K in 7 days</td>
+<td>GitHub Trending, Nov 8</td>
+</tr>
+</tbody></table>
+<h2 id="Build-Directions"><a href="#Build-Directions" class="headerlink" title="Build Directions"></a>Build Directions</h2><p><strong>Audit every machine where you clicked “don’t ask again.”</strong> This is the week’s one mandatory action item. Search your repositories — public ones especially — for committed <code>.claude/settings.local.json</code> files, and while you are at it, <code>.env</code>, <code>.claude/</code> directories of any shape, and shell history files agents may have touched. Rotate anything found. Then change your defaults: put approval files in <code>.gitignore</code> at the template level, run <code>gitleaks</code> or <code>trufflehog</code> as a pre-commit hook (both run fine on a laptop, take minutes to install), and prefer per-project allowlists over blanket “don’t ask again.” The 1,122 people whose keys are now public did not make an exotic mistake; they accepted a dialog box.</p>
+<p><strong>Do not build the panel Meta just bought into.</strong> Conductor’s seven-day absorption — read-only in six days, shutdown in eleven — is the clearest possible demonstration of platform risk for orchestration wrappers. If you need multi-agent coordination, use patterns that survive vendor churn: git worktrees, plain shell scripts, open protocols like MCP and ACP. The open-source layer is absorbing the same demand — Vercel’s agent-desktop, a Rust CLI that drives desktop applications through the OS accessibility tree instead of fragile pixel matching, added 14,000 stars in seven days to reach 19,000, and storytold&#x2F;craft-anything, which reverse-engineers how any software works so you can rebuild it, jumped from near zero to 20,512 stars in a week. Both are vendor-neutral and yours to fork.</p>
+<p><strong>Price your product against the consolidation clock.</strong> When a platform giant buys the category leader and decommissions the cloud product within a week, its orphaned users go shopping. Conductor’s customers need a home by November 20. If you run any adjacent tooling — agent dashboards, review queues, worktree managers — this fortnight is a rare, time-boxed acquisition window for a very specific cohort of exactly the users you want. One well-targeted migration page beats a month of content marketing.</p>
+<p><strong>Sell verification, not generation, in regulated verticals.</strong> Archiboost’s seed round is the recurring pattern of the quarter, now visible from insurance (Kalepa) to legal (Harvey) to construction: the money goes to teams that check documents against reality, not teams that draft more of them. For a one-person company, the entry point is narrower than ever — pick one document class you can read expertly (permits, leases, compliance filings, shop drawings), ship a checker with source-linked citations, and charge per document. Six times more findings than manual review is a sales conversation, not a demo.</p>
+<p><strong>Treat the boilerplate-plus-template business as validated, if small.</strong> Supastack, a one-person Turborepo starter by Noah Zixin Zhang launched in September 2026, unifies Next.js 15, Expo and Tauri with shared auth, Stripe and RevenueCat billing, and MCP agent endpoints, selling at $349–599 one-time with roughly 65 users and $254 in Stripe-verified revenue as of November 8. It is early and modest, but the structure — one codebase, three platforms, agent-ready endpoints — is the 2026 update of the boilerplate playbook, and the $100-off launch mechanic shows the demand curve directly. One-time pricing keeps support load survivable for a solo founder.</p>
+<h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><p><strong>Your agent’s convenience features are your attack surface.</strong> The Apiiro finding generalizes beyond Claude Code: any agent that persists approvals, logs, or transcripts into a project directory can leak into version control. Cursor rules files, Codex session logs, MCP server configs with embedded tokens — audit all of them. The four auto-closed bug reports are the second lesson: the vendor closed the tickets, so waiting for a platform fix is not a plan.</p>
+<p><strong>The regulatory floor just moved.</strong> With Democrats controlling both chambers, the federal preemption bill that would have overridden state AI laws loses its likeliest path. State-level rules — of the kind already live in California and Colorado — will proliferate unevenly. If your product touches hiring, housing, credit, or content disclosure, your compliance surface is about to become 50-state, and no super PAC can fix that for you.</p>
+<p><strong>Compute supply is a political variable again.</strong> The H200 stranding shows that licensed does not mean delivered. If your roadmap assumes cheap Chinese-market inference capacity or specific hardware price curves, hold scenario margin: Beijing’s self-reliance push and Washington’s licensing regime can both reprice your inputs without notice.</p>
+<p><strong>Model behavior contracts can change under you.</strong> The Model Spec rewrite is a reminder that the alignment and refusal behavior your product depends on is a versioned, editable document. Pin model versions for production workloads, keep regression prompts in your test suite, and read the spec diffs of the labs you depend on — the behavioral delta between releases is now product-relevant, not philosophical.</p>
+<h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><ol>
+<li><strong>Today:</strong> run a secrets audit across all your repos and machines (search <code>settings.local.json</code>, <code>.env</code>, MCP configs); rotate every credential found; add the files to <code>.gitignore</code> templates.</li>
+<li><strong>This week:</strong> install a pre-commit secret scanner (<code>gitleaks</code>) on every active project — ten minutes of setup against a year-long leak class.</li>
+<li><strong>Before November 20:</strong> if you serve any agent-orchestration adjacent need, publish a migration landing page aimed at Conductor’s orphaned users; the window is measured in days, not quarters.</li>
+<li><strong>This quarter:</strong> pick one verification-first niche in a document-heavy vertical and ship a checker with citations — the capital is flowing to exactly this shape of company.</li>
+<li><strong>Ongoing:</strong> track state AI legislation in the states where your customers are, not just federal headlines; the preemption shield did not survive the midterms.</li>
+<li><strong>Watch:</strong> Anthropic’s UK retail track (RetailBook, the LSE 3x ETP) as a real-time demand gauge for the IPO; Polymarket’s pre-December odds at ~50% are the cleanest sentiment series available.</li>
+</ol>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Leaked secrets (public GitHub)</td>
+<td>1,379 in 1,122 repos</td>
+<td>From 104,185 scanned settings files</td>
+</tr>
+<tr>
+<td>Database passwords leaked</td>
+<td>379</td>
+<td>Plus 23 AWS keys</td>
+</tr>
+<tr>
+<td>AI super PAC midterm spend</td>
+<td>~$79M &#x2F; 68 races</td>
+<td>Most bets lost; both chambers flipped</td>
+</tr>
+<tr>
+<td>H200 chips held in Hong Kong</td>
+<td>600,000</td>
+<td>~10,000 cleared per mainland firm</td>
+</tr>
+<tr>
+<td>Anthropic IPO target</td>
+<td>$80–100B raise, $1.25–1.75T</td>
+<td>RetailBook UK channel; pre-Thanksgiving</td>
+</tr>
+<tr>
+<td>Nasdaq 100, Nov 5 selloff</td>
+<td>-6.4%</td>
+<td>$3.2T market value erased in a day</td>
+</tr>
+<tr>
+<td>Meta–Conductor shutdown</td>
+<td>Nov 13 read-only, Nov 20 off</td>
+<td>Local builds into early 2027</td>
+</tr>
+<tr>
+<td>Vercel agent-desktop</td>
+<td>19,000 stars (+14K&#x2F;7d)</td>
+<td>Accessibility-tree desktop control</td>
+</tr>
+<tr>
+<td>craft-anything</td>
+<td>20,512 stars (+20,388&#x2F;7d)</td>
+<td>Reverse-engineer any software</td>
+</tr>
+<tr>
+<td>Archiboost AI</td>
+<td>$6.2M seed</td>
+<td>550K sheets, 120K issues, $3.5B projects</td>
+</tr>
+<tr>
+<td>Anthropic internal RSI claim</td>
+<td>80% shorter experiments</td>
+<td>~3 months ahead of Opus 5.5</td>
+</tr>
+<tr>
+<td>Supastack (solo, verified)</td>
+<td>$254 revenue, ~65 users</td>
+<td>$349–599 one-time boilerplate</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>AI Agents</category>
+        <category>AI Policy</category>
+      </categories>
+      <tags>
+        <tag>Anthropic</tag>
+        <tag>OpenAI</tag>
+        <tag>Meta</tag>
+        <tag>Nvidia</tag>
+        <tag>Indie Hackers</tag>
+        <tag>Claude Code</tag>
+        <tag>Apiiro</tag>
+        <tag>Conductor</tag>
+      </tags>
+  </entry>
 </search>
