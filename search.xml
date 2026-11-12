@@ -126986,4 +126986,143 @@
         <tag>Adobe</tag>
       </tags>
   </entry>
+  <entry>
+    <title>OpenAI Business Agents, Bilt 2M Agent Tasks, Zigpoll $125K MRR</title>
+    <url>/opc-report-2026-11-12-1420/</url>
+    <content><![CDATA[<p>November 11 and 12 answered the question this column has been tracking for months: where do agents actually make money? OpenAI opened Businesses in ChatGPT, giving verified brands their own agents talking directly to users on a 1.2-billion-weekly-user surface. Bilt disclosed its agents executed more than 2 million real business operations across 29,000 companies in 30 days, 91% without human intervention. Rain shipped Agent Vaults so developers can pre-fund an agent’s spending with hard per-transaction limits. Anthropic turned Claude into an office suite hours before its IPO roadshow, Nebuly raised $21 million to measure what AI is actually worth to an enterprise, and two Chinese embodied-chip startups pulled in over $100 million combined in a single morning. Underneath it all, TrustMRR-verified solo founders kept printing revenue in niches no venture capitalist would look at — one of them at $125,000 a month, alone. The transaction layer of the agent economy is no longer a slide. It is a ledger.</p>
+<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><ul>
+<li><p><strong>OpenAI just opened the storefront channel it shut in March.</strong> Dev.to’s November 11 digest and AI&#x2F;TLDR report OpenAI launched Businesses in ChatGPT in beta. A verified business claims its profile in Business Hub, uploads self-service product feeds with pricing and availability, and sees aggregated insights — mentions, website clicks, discovery topics — drawn from conversations where its site was cited. The agentic piece is Business Agents: an agent representing the verified brand that users can open in a clearly labeled conversation to compare products or ask follow-ups. First rollout covers eligible US ecommerce and online-services businesses; Shopify merchants can connect their store directly from Business Hub or the Shopify admin, and a business can sponsor its Business Agent as the destination for ChatGPT Ads — labeled, and kept separate from ChatGPT’s independent answers. Context matters: OpenAI tried direct commerce with carts and commission splits last year, killed it in March after growth fell short, and is now building search-and-discovery economics on top of ChatGPT instead of a storefront inside it. VP Benji Shomair said verification methods vary by market and will not be published — an omission worth watching, because the whole product rests on users trusting that an agent really represents the brand it claims.</p>
+</li>
+<li><p><strong>Bilt put a number on agents doing real work in the physical economy.</strong> The Agentic Commerce daily (November 11) reports Bilt announced Neighborhood OS and its Membership Platform on November 10, connecting bookings, payments, CRM and membership systems so AI agents can coordinate merchant operations. The partner ecosystem includes OpenTable, Adyen, Verifone and Fiserv’s Clover, with capabilities phasing in from 2027. The disclosure that matters: over the past 30 days, Bilt says its agents executed more than 2 million real business operations across more than 29,000 enterprises, with 91% requiring no human intervention — the company is explicit that this counts task executions, not purchase orders or payments. Whether those connections drive sustained usage, and how new revenue splits between platform, software vendor and merchant, is the open question. But 2 million operations is the largest concrete execution number anyone has published for agents touching live merchant systems.</p>
+</li>
+<li><p><strong>Rain’s Agent Vaults turns an agent’s budget into infrastructure.</strong> Same-day announcement (November 10): Rain now lets developers embed prefunded balances and agent payment capability inside their own products. Users fund vaults via bank transfer, card or stablecoin; when the agent makes a card payment, each authorization is constrained by amount, merchant and validity period, using single-use card credentials — and the agent cannot raise its own spending limit. Rain is taking enterprise and developer inquiries; there is no self-serve production adoption number yet. The design principle is the transferable part: a budget expressed as a technical constraint per action, not a monthly invoice reviewed afterward. If agents are going to transact — and Bilt’s 2 million operations say they already do — prefunded, per-authorization-limited rails are what their operators will demand.</p>
+</li>
+<li><p><strong>Anthropic shipped an office suite the same day its IPO roadshow began.</strong> Bloomberg-sourced reporting in the November 11 digests details Claude Sheets (beta, paid plans): describe what you need and Claude generates a working multi-tab workbook with formulas, formatting and dropdowns, then keeps editing cells alongside the team while annotating each change. Claude Whiteboards (beta) turns a brainstorm into a board with owners and deadlines, exportable to a doc or deck. Claude Meetings (beta, Team and Enterprise, starting with Google Meet) joins a video call as a visible participant, drafts the plan being discussed, answers in meeting chat from connected work apps — and leaves automatically if an external guest joins unless an admin allows it. Claude Data went generally available, connecting Snowflake, Salesforce, Amazon Redshift, Google BigQuery and ClickHouse with certified metric definitions; interactive connectors run Adobe, Atlassian, Box and Notion apps inside the Claude window, and the marketplace lists more than 9,000 connectors and plugins built on MCP. On enterprise plans each cloud session runs in its own isolated VM with connector credentials kept outside it, and a Compliance API works with over 100 security tools including Splunk and CrowdStrike. Advantage Solutions says Claude cut per-cycle financial presentation work from about 10 hours to under 30 minutes. Microsoft shares slid more than 3% intraday on the news. Product lead Nicholas Lin was candid that Sheets is still basic and not built for complex financial modeling — a rare honest competitive position against Excel.</p>
+</li>
+<li><p><strong>Nebuly raised $21 million to answer the only question that kills AI budgets: what is it worth?</strong> Skim.plus and the Financial Times report (November 12) the Turin-based company closed a $21 million Series A led by Planven, with Exor Ventures, Tenacity Capital, TGVG Capital, Fastweb+Vodafone and CDP Venture Capital’s AI and Digital Transition funds participating. Nebuly’s platform links AI activity to business results, connecting to custom agents built on Claude, ChatGPT and Microsoft Copilot, and can run on the customer’s own infrastructure or private cloud. Customers include Oura, Iveco Group, Fastweb+Vodafone, CNH and Zeiss, with contracts worth multiple six figures. The market logic per the FT: enterprise AI bills have tripled even as per-token costs collapsed. Yesterday’s report (this series, November 12 morning edition) priced the verification layer at $20 billion with Mercor; Nebuly is the measurement layer of the same trade — the ROI audit is becoming a product category of its own.</p>
+</li>
+<li><p><strong>China funded two chip companies before lunch.</strong> Jiemian News reported November 12 that Tongxin Intelligence (通芯智能) closed a seed-plus-angel round of several hundred million yuan to design an inference chip supporting AGI algorithms for large models, world models and general agents. The company was founded in April 2026 by AI scientist Zhu Songchun — director of the Beijing Institute for General Artificial Intelligence and chair professor at Peking and Tsinghua — with investors including the Tsinghua alumni seed fund, BIGAI, Songlin Technology, Pingzhi Information, DarkMatter AI and Yuzi Zhangquan; FPGA prototype validation is planned for early December. The same morning, Yicai and East Money reported Xixuan Chuangzhi (曦选创智), founded May 2026 by robot maker UBTech and GPU firm MetaX (沐曦), closed a 500-million-yuan angel round at a 4-billion-yuan post-money valuation, co-led by GGV Capital and Matrix Partners China with eight other funds participating. Its first chip is a “big-brain and cerebellum combined” robot SoC explicitly benchmarked against NVIDIA Thor, with a developer validation platform due 2027 and first silicon in 2028. CEO Yang Xianbo came from H3C, where he was senior VP of the industry business group. Yesterday’s edition covered Alibaba’s confidential T-Head filing; today’s rounds show the embodied-compute land grab is widening, not consolidating.</p>
+</li>
+</ul>
+<h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><p><strong>Agents moved from answering to transacting, and the rails are being built in public.</strong> Bilt’s 2 million operations, OpenAI’s Business Agents, and Rain’s constrained-payment vaults arrived within 48 hours of each other. Together they sketch the full commercial loop: discover (ChatGPT profiles), negotiate (brand agents), pay (vaulted card credentials with per-authorization limits), execute (merchant-system operations). Solo builders should notice which layer is uncrowded: the constraint layer. Every one of these systems needs the same primitive — verifiable limits on what an agent may spend and do — and none of the big players ships it as a standalone product.</p>
+<p><strong>The audit layer is getting its own funding line.</strong> Mercor’s $750M priced human expert evaluation; Nebuly’s $21M priced business-outcome measurement; DeepMind’s Lean proofs (covered November 12 morning) priced formal verification. Three different audits — training data quality, business ROI, code correctness — are all becoming purchasable products in the same quarter. When a capability becomes a line item, it becomes a market a one-person company can serve with tooling and templates.</p>
+<p><strong>Europe chose sandboxes over slowdowns.</strong> Implementing Regulation (EU) 2026&#x2F;2487 was published in the Official Journal on November 11 and enters force December 1, establishing common rules for AI regulatory sandboxes: every member state must operate at least one by August 2, 2027, SMEs and startups get priority access and regulatory guidance free of charge (except exceptional costs), authorities must decide on applications within three months, and sandbox exit reports — issued within 45 working days — must be recognized by market-surveillance authorities and notified bodies across the EU. The same day, lead MEPs presented the draft report for the Cloud and AI Development Act, part of the Tech Sovereignty Package alongside Chips Act 2.0. For a solo founder selling into the EU, a sandbox exit report is now a portable compliance credential that costs nothing but time.</p>
+<p><strong>Distribution is consolidating onto surfaces you do not own.</strong> OpenAI’s 1.2 billion weekly users, Claude’s 9,000-connector marketplace, Bilt’s embedded position in merchant software — the places customers meet agents are being claimed by platforms. The counterweight is what the verified-solo cohort below shows: TrustMRR-audited, Stripe-verifiable revenue built on search, directories and word of mouth, requiring no platform’s permission.</p>
+<h2 id="Build-Directions"><a href="#Build-Directions" class="headerlink" title="Build Directions"></a>Build Directions</h2><ul>
+<li><strong>Sell the spending constraint, not the spending.</strong> Rain’s design — prefunded balance, per-authorization cap on amount&#x2F;merchant&#x2F;validity, single-use credentials, no self-service limit increases — is a pattern, not a patent. A solo developer can implement equivalent budget-envelope middleware for the API-driven agents small businesses actually run, where the payment rail is a Stripe account and the constraint layer does not exist yet.</li>
+<li><strong>Productize ROI evidence for AI deployments.</strong> Nebuly connects agent activity to business outcomes and charges six figures for it. A one-person shop cannot serve Zeiss, but every mid-market firm adopting agents will be asked by its own CFO what they returned. Dashboards, attribution templates and before&#x2F;after measurement kits are a legitimate solo product — especially combined with the EU sandbox exit-report format as a documentation standard.</li>
+<li><strong>Claim your Business Hub before someone impersonates you.</strong> OpenAI’s verification methods are unpublished, which makes early claiming and consistent cross-platform identity the cheapest defense a small brand has. If you sell anything online, the US ecommerce rollout is live now.</li>
+<li><strong>Run the numbers on open-weight inference on a desktop.</strong> llama-modchip 2.4 (November 9, AI&#x2F;TLDR) runs the 284-billion-parameter DeepSeek-V4-Flash MoE on a 64 GB desktop CPU with no GPU and a 256K context window. For products where data cannot leave the building — EU clients especially, post-sandbox regulation — a no-GPU local deployment is now a sellable architecture, not a hobby.</li>
+<li><strong>Teach agents modern web patterns and charge for the audit.</strong> Chrome shipped Modern Web Guidance 1.0 (November 11), a skill pack that steers coding agents toward current web features instead of 2019-era defaults. The gap it exposes — agent-generated code that works but ages badly — is a code-review niche a solo senior developer can own.</li>
+<li><strong>Copy the boring-niche ledger, not the AI wrapper.</strong> The freshest TrustMRR-verified examples all sell unglamorous utility: a self-hosted email API, an ecommerce feedback poll, voice typing. The pattern that repeats is narrow scope, flat pricing, and revenue a third party can verify with a Stripe key.</li>
+</ul>
+<h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><ul>
+<li><strong>The headline execution number is self-reported and carefully scoped.</strong> Bilt itself notes its 2 million operations counts task executions, not orders or payments, and the metric has no independent audit. Treat it as a ceiling-of-ambition datapoint, not a benchmark.</li>
+<li><strong>Verification opacity is a trust liability, not just a feature gap.</strong> OpenAI declining to publish how it verifies businesses means the first publicized impersonation through Business Agents will be a reputation event for the whole channel. If your product depends on that channel, keep your own customer relationships and contact list — do not let the agent own the last mile.</li>
+<li><strong>The Microsoft stock reaction cuts both ways.</strong> A 3% intraday drop on Claude’s office launch shows how violently incumbents and markets now reprice on AI product news. If your SaaS sits adjacent to spreadsheets, meetings or BI, your incumbent competitors will ship AI features faster than you expect — and their distribution beats your product.</li>
+<li><strong>EU deadlines are real even when the rules are friendly.</strong> The sandbox regulation is generous to SMEs, but member-state sandboxes only become operational by August 2, 2027, and exit reports take 45 working days after participation ends. If a 2027 EU launch is in your plan, the application clock starts earlier than it feels.</li>
+<li><strong>Solo revenue figures carry survivorship bias.</strong> Zigpoll’s $125K MRR took two years and a prior exit (its founder’s earlier Shopify app, Metafields Manager, was acquired); EmailEngine’s founder built a known open-source project for years before monetizing. The verified numbers are real; the base rate for replicating them is not published anywhere.</li>
+</ul>
+<h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><ol>
+<li><strong>Claim your business profile in ChatGPT this week</strong> if you sell online in the US, and connect Shopify if you use it. Early verified profiles will shape how the category gets indexed before sponsored placements fill the space.</li>
+<li><strong>Add a budget envelope to any agent that spends money</strong>: hard cap per action, allowed-merchant list, single-use credentials where possible. Write the policy file even if enforcement is manual — it is the artifact enterprise buyers ask for.</li>
+<li><strong>Build one ROI dashboard for your own AI usage now</strong>, using the metrics you would accept from a vendor: hours saved, outcome deltas, cost per completed task. It doubles as the sales asset for your own product.</li>
+<li><strong>Check your national AI sandbox status.</strong> If you are in the EU, the application window to your member-state sandbox is the cheapest compliance runway available; applications get a three-month decision clock once rules apply from December 1.</li>
+<li><strong>Stress-test one open-weight model on consumer hardware</strong> this month — the 64 GB CPU &#x2F; 256K context demonstrations put privacy-first deployments within reach of a laptop budget.</li>
+<li><strong>Price flat, not metered.</strong> Every verified solo winner in this edition charges a subscription for an outcome (Voicy: faster writing everywhere, 1,495 paying users, $17.7K in 30 days), not per-token access to intelligence. Follow the ledger, not the lab.</li>
+</ol>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Figure</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Businesses in ChatGPT</td>
+<td>Beta; 1.2B weekly users; US ecommerce first; Shopify + ChatGPT Ads sponsorship</td>
+<td>OpenAI via dev.to, Nov 11, 2026</td>
+</tr>
+<tr>
+<td>Bilt agent operations</td>
+<td>2M+ real operations, 29,000+ businesses, 30 days, 91% no human intervention</td>
+<td>Agentic Commerce daily, Nov 11, 2026</td>
+</tr>
+<tr>
+<td>Rain Agent Vaults</td>
+<td>Prefunded vaults; per-auth amount&#x2F;merchant&#x2F;validity caps; single-use card credentials</td>
+<td>Rain, Nov 10, 2026</td>
+</tr>
+<tr>
+<td>Claude office suite</td>
+<td>Sheets&#x2F;Whiteboards&#x2F;Meetings beta; Claude Data GA; 9,000+ MCP connectors; MSFT -3% intraday</td>
+<td>Anthropic via Bloomberg, Nov 11, 2026</td>
+</tr>
+<tr>
+<td>Nebuly Series A</td>
+<td>$21M led by Planven; customers Oura, Zeiss, CNH, Iveco; six-figure contracts; FT: enterprise AI bills tripled</td>
+<td>FT&#x2F;Skim.plus, Nov 12, 2026</td>
+</tr>
+<tr>
+<td>Tongxin Intelligence</td>
+<td>Several hundred million RMB seed+angel; AGI inference chip; FPGA validation Dec 2026</td>
+<td>Jiemian News, Nov 12, 2026</td>
+</tr>
+<tr>
+<td>Xixuan Chuangzhi</td>
+<td>¥500M angel at ¥4B post-money; GGV + Matrix co-led; NVIDIA Thor benchmark; SoC 2028</td>
+<td>Yicai&#x2F;East Money, Nov 12, 2026</td>
+</tr>
+<tr>
+<td>EU AI sandbox regulation</td>
+<td>(EU) 2026&#x2F;2487, in force Dec 1, 2026; one sandbox per state by Aug 2, 2027; free for SMEs</td>
+<td>Official Journal, Nov 11, 2026</td>
+</tr>
+<tr>
+<td>Zigpoll (solo)</td>
+<td>$125K MRR; ~$1.5M ARR; 2 years; agency segment focus; AOV +24%; AI search 14% of traffic</td>
+<td>Solodig interview, Nov 2026</td>
+</tr>
+<tr>
+<td>EmailEngine (solo)</td>
+<td>$19,583 MRR; 238 subscriptions; $617,926 all-time; $33,107 last 30 days; TrustMRR Stripe-verified</td>
+<td>TrustMRR, verified Oct 30, 2026</td>
+</tr>
+<tr>
+<td>traxy.ai</td>
+<td>~$53K MRR; 249 paid subs; founded Jan 2026; team 2-5; no funding; LinkedIn intent-lead lists</td>
+<td>TrustMRR, Nov 3, 2026</td>
+</tr>
+<tr>
+<td>Voicy (solo, side project)</td>
+<td>$12K MRR; $17.7K last 30 days; 1,495 paying users; $190K cumulative; 50+ languages</td>
+<td>TrustMRR listing, 2026 H2</td>
+</tr>
+<tr>
+<td>llama-modchip 2.4</td>
+<td>284B DeepSeek-V4-Flash on 64 GB CPU, no GPU, 256K context</td>
+<td>AI&#x2F;TLDR, Nov 9, 2026</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>Agent Infrastructure</category>
+        <category>One-Person Company</category>
+      </categories>
+      <tags>
+        <tag>OpenAI</tag>
+        <tag>Indie Hackers</tag>
+        <tag>EmailEngine</tag>
+        <tag>Business Agents</tag>
+        <tag>Bilt</tag>
+        <tag>Rain</tag>
+        <tag>Claude Sheets</tag>
+        <tag>Nebuly</tag>
+        <tag>Tongxin Intelligence</tag>
+        <tag>EU AI Act</tag>
+        <tag>Zigpoll</tag>
+      </tags>
+  </entry>
 </search>
