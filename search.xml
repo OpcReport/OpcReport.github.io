@@ -127477,4 +127477,161 @@
         <tag>Corey Chiu</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Mirendil Raises $1B as One Researcher and Agents Build a Model</title>
+    <url>/opc-report-2026-11-15-1435/</url>
+    <content><![CDATA[<p>The defining claim of the one-person company movement got its most expensive validation yet this week. Mirendil, a nine-month-old startup founded by two ex-Anthropic researchers, raised a $1 billion Series A on the strength of a single demo: one human researcher, working with a fleet of AI agents, pretrained a competitive coding model from scratch in three and a half months for under $10 million — with the agents writing more than 99% of the code. In the same seven-day window, Val Town, a beloved four-year-old platform for small serverless scripts, announced it is shutting down because it could not compete in cloud computing, and a fresh batch of payment-verified solo revenue data showed that the median AI one-person business earns $22,000 a month while only 6 of 69 tracked businesses cross $100,000. For solo founders, the week captured the whole arc of this economy at once: agents can now do lab-grade work, the platforms you build on can still die, and the money is real but concentrated in fewer hands than the hype suggests.</p>
+<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><ul>
+<li><p><strong>Mirendil closed a $1 billion Series A five months after its seed — one of the largest Series A rounds ever recorded.</strong> Per the company’s November 12 announcement and aggregated coverage from ARR Club, Silicon Report and ChipDispatch, the round was co-led by Kleiner Perkins and Clearlake Capital, with Battery Ventures, Doerr Capital, Gil &amp; Co, Google, M13, Pear VC and S32 participating. No valuation was disclosed, though September reporting had the company seeking up to $1 billion at a $5 billion valuation with Kleiner Perkins leading. The seed — $200 million at a $1 billion valuation in June, co-led by Andreessen Horowitz and Kleiner Perkins with Nvidia joining afterward — brings total capital raised to roughly $1.2 billion in under five months, before any generally available product has shipped. Founders Behnam Neyshabur (five-plus years at Alphabet co-leading Gemini reasoning research, then Anthropic) and Harsh Mehta (who built the first version of Anthropic’s internal AI-research platform) left Anthropic together in December 2025 and assembled a founding team of about 20 researchers and engineers from Anthropic, xAI, Google DeepMind and OpenAI.</p>
+</li>
+<li><p><strong>The demo behind the round is the sharpest datapoint yet that agent labor can substitute for research headcount.</strong> Per ChipDispatch and InstaDataNews summaries of Mirendil’s October 21 technical post, a single researcher working with agents pretrained the Mirendil-Base coding model from scratch in 3.5 months using less than $10 million of all-in compute — a figure the company says includes the agents’ token spend, data processing and every small-scale experiment. Agents wrote more than 99% of the code, ran experiments and diagnosed failures; the human decided what to try and what to trust. The company says it used only publicly available data, with no distillation and no licensed datasets. The base model was then post-trained into Fern, which holds up to 10 million tokens of context — enough, per Mirendil, for days of an agent’s accumulated work product at once. The commercial product is Lor, a cloud system in private beta that runs hundreds of agents writing code and running experiments for days at a time, provisioning their own GPUs and splitting work across dozens of sub-agents; in one cited example, 102 agents built training environments from 100 PyTorch pull requests at an average of eight minutes each. Mirendil says it runs its own daily engineering on Lor, which interoperates with Claude Opus, Claude Fable, OpenAI’s GPT-6 Sol and Astra, and open models from Kimi, DeepSeek and GLM.</p>
+</li>
+<li><p><strong>Val Town’s shutdown is the week’s sobering counterweight: convenience platforms are being squeezed out of existence from both directions.</strong> Founder Steve Krouse announced the wind-down on November 10, writing that the company “couldn’t compete in the cloud computing space.” The timeline is staged: signups and upgrades stopped November 10, billing paused with annual prepayments getting partial refunds, the platform goes read-only December 10 (SQLite and blob storage excepted), all services end January 10, 2027, and the code is open-sourced February 1, 2027. The company raised $7 million across a $1.5 million pre-seed (2022) and a $5.5 million Accel-led seed (2024), kept a team of about eight in Brooklyn, and topped out at roughly $10-a-month pricing — structurally impossible economics for a business that runs other people’s code and stores their data around the clock. The announcement drew 339 points on Hacker News, and the company’s own migration guides to Cloudflare, Vercel, Netlify and Render come with Krouse’s observation that “today’s LLMs are great at these types of migrations” — the same technology that made hosted convenience redundant also makes leaving it painless.</p>
+</li>
+<li><p><strong>Week 46 funding data shows AI absorbing 83 cents of every venture dollar while the overall market contracts.</strong> Per FundraiseBase’s weekly edition (November 9–15, week still running), 68 rounds raised $6.2 billion — down 66% from the prior week and against a four-week average of $11.9 billion, itself down 48%. AI took $5.1 billion (83% of capital, up from 73% the week before), robotics took 7%, and the 11 rounds of $100 million or more captured 79% of everything raised. The median round jumped 138% week-over-week to $24.5 million, driven by Series A (the most common stage at 16 rounds, median $25 million). Y Combinator leads all investors with 24 rounds joined over the last eight weeks, ahead of General Catalyst (19) and a16z (17); General Catalyst joined 6 rounds this week alone, the most of any firm. On the broader Startup Reader tally, which counts 105 rounds and about $8.46 billion for the same week, the largest deal was Mirendil’s $1 billion. London raised $1.4 billion — more than all of South America ($48 million) combined.</p>
+</li>
+<li><p><strong>Trajectory’s $45 million Series A shows model customization becoming self-serve infrastructure for non-engineers.</strong> Per TechCrunch-derived coverage, the continual-learning platform raised $45 million at a $300 million valuation led by Sequoia Capital, with Nvidia, Bessemer Venture Partners and Bain Capital Ventures participating — a near-triple from its $115 million post-money seed just six months earlier ($15 million led by Conviction, with angels including Jeff Dean and Fei-Fei Li). The product lets legal, finance or domain teams take an open-source model and specialize it on proprietary data without an ML engineer, and its customer list already includes Harvey, Rogo, Decagon, Mercor and Nvidia itself — with Nvidia as both investor and customer. For solo consultants and boutique firms, post-training is following the same path inference did: from a specialized service into a product you can buy by the seat.</p>
+</li>
+<li><p><strong>Payment-verified solo revenue data (November 14) puts hard numbers on the one-person economy’s shape.</strong> Per The AI Receipts leaderboard snapshot built on TrustMRR payment data: 69 ranked AI businesses with a median of $22,000 monthly revenue — not $100,000; only 6 of 69 pass $100K; 59 of 69 sell software rather than courses. The pricing split is the most actionable finding: 19 businesses charging $100+ per customer show a median of $30,000 from roughly 98 subscribers each, while 18 businesses charging under $25 show a median of just $13,000 spread across roughly 1,700 subscribers. Fresh verified cases: Stencil AI at $48.8K MRR — an app that turns client reference photos into print-ready tattoo stencils, sold to tattoo artists at about $28 per subscriber; Heyron at $17.2K MRR — a hosted $49-a-month AI agent that runs a one-person company, bundled with a launch community (with a documented six-month decline warning that hype-driven launches need retention engines); and CreativeClaw at $14.6K MRR — a one-MCP-connection creative studio reselling top image, video, audio and 3D models inside Claude and ChatGPT on a credit system.</p>
+</li>
+</ul>
+<h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><ul>
+<li><p><strong>The non-employer economy is measurably inflating in AI-exposed industries.</strong> Research from George Mason University’s Mercatus Center, cited in Gate News coverage of solopreneur case studies, found that business applications without early hiring indicators rose 26.8% in AI-exposed industries from Q1 2024 to Q1 2026 — from roughly 222,000 to 281,000 per quarter — while applications with stronger indicators of becoming employer businesses fell 6.4% over the same period. The comparison group tells the story: non-employer-type applications in construction and wholesale trade declined 0.4%. Economist Liya Palagashvili cautions the findings are preliminary and descriptive rather than causal, but the individual cases are concrete: Alex Willen operates 12 e-commerce brands expected to generate $2.5–3 million this year with zero employees, using Claude for bookkeeping, customer service, advertising and inventory, and OpenAI image tools for photography work that previously cost $2,000–5,000 per shoot; after AI-rebuilding the Shopify site of an acquired brand, Shopify’s revenue share jumped from about 1% to roughly 30% in 30 days. Kristin Ginn, a former Microsoft employee, logged roughly $250,000 in received or contracted revenue within seven months of launching her AI-adoption consultancy — no employees, no regular contractors.</p>
+</li>
+<li><p><strong>The consolidation of solo-builder infrastructure has started with ClickHouse acquiring Xata.</strong> Solo Operator Stack reported (November 11) that ClickHouse is acquiring Xata and making managed Postgres generally available on AWS — but without branching or scale-to-zero at launch, and with no date, price or free-tier commitment for feature parity. The advisory framing is worth copying: spend 30 minutes on a database dump and set a tripwire before someone else’s M&amp;A becomes your migration project. Xata customers are told nothing changes in the short term, which in platform-history terms has never once meant never.</p>
+</li>
+<li><p><strong>Platform giants are quietly building the rails for agent-run businesses.</strong> OpenAI opened Verified Business Profiles in ChatGPT on November 10, with business agents US-only for now — the beginning of an authenticated commercial identity layer for agents (Solo Operator Stack, November 11). Automattic launched Spacefast, a host that lets Claude, Cursor or a plain CLI publish a site and get a live link with versioned deploys and rollback — free tier gets 20 spaces, with a lock-in catch: leaving requires code changes if you use its runtimes, and launch coverage and the official pricing page already disagree. Microsoft open-sourced an Agent Package Manager (APM) that treats skills, prompts and MCP servers as versioned dependencies in a single apm.yml with a lockfile — still a working draft, but the direction is unmistakable: agent configuration is becoming a dependency-management problem, exactly like package pinning. And Apple began selling prepaid AI credits at $49.99 (November 10), explicitly flagging that developer limits arrive in 2027.</p>
+</li>
+</ul>
+<h2 id="Build-Directions"><a href="#Build-Directions" class="headerlink" title="Build Directions"></a>Build Directions</h2><ul>
+<li><p><strong>Treat platform risk as a scheduled maintenance task, not a black swan.</strong> The Val Town playbook generalizes: maintain an export path for anything hosted on a platform with single-digit millions in funding, inventory which components store state (Val Town’s SQLite and blob storage die with the platform), and rehearse the migration before you need it. Val Town’s own docs ship an AI-agent migration prompt — install the MCP server, rank your vals by importance, pick a target from the Cloudflare&#x2F;Vercel&#x2F;Netlify&#x2F;Render guides, and have the agent propose a migration plan with a live HTML tracker. Krouse’s parting gift is the reframe: because plenty of hosts remain and LLMs handle mechanical porting well, exit costs are now an afternoon, not a rewrite.</p>
+</li>
+<li><p><strong>The Mirendil round maps a new service category: research-agent operations.</strong> Lor’s model — fleets of agents writing code, running experiments, provisioning compute, running for days with humans choosing what to trust — is exactly the workflow a technical solo operator can productize for a vertical: hyperparameter sweeps for a niche ML market, automated benchmark maintenance, or experiment-pipeline management for mid-size companies that cannot hire a research team. The catch Mirendil’s own materials expose: agent selection quality is the bottleneck (the AgentSSL paper last week showed up to 47% performance drops when agents pick programs by their own feedback metric), so the sellable skill is judgment and verification, not agent deployment.</p>
+</li>
+<li><p><strong>Follow the verified pricing ladder: fewer expensive customers beat cheap subscriptions.</strong> The November 14 receipts data is unambiguous — businesses at $100+ per customer clear $30K median from under 100 subscribers, while sub-$25 products need 1,700 subscribers to reach less than half that. Stencil AI’s design is the template: one trade (tattoo artists), one slow repetitive step (tracing reference photos into stencils), one image model wrapped in a work tool, priced like equipment ($28 per subscriber, several times typical consumer AI apps). The hard part is craft credibility — artists judge line quality instantly — which is precisely the moat a generic wrapper lacks.</p>
+</li>
+<li><p><strong>Pin your agent configuration like you pin dependencies.</strong> With Microsoft’s APM shipping lockfiles for skills and MCP servers, and Val Town demonstrating what happens when a runtime ecosystem (Deno, winding down as a Cloudflare property beyond October 2027) loses support, the emerging hygiene standard is: version your agent config, record it, and make any single-vendor runtime replaceable in an afternoon.</p>
+</li>
+</ul>
+<h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><ul>
+<li><p><strong>Mirendil’s headline numbers are self-reported and unreplicated.</strong> No independent benchmark or full methodology accompanies the 3.5-month, sub-$10M pretraining claim; the company disclosed no revenue, customers or pricing; its Series A valuation was not officially disclosed (the ~$5B figure comes from a secondary newsletter report); and it corrected two figures in its Fern post on October 27 “to more accurately reflect” training results. Lor remains in private beta, untested at scale outside the company. Anthropic has itself described recursive self-improvement as a potential danger — the founders call it a supervisable risk — and regulators will eventually have views on a $1.2B bet on agents doing AI research.</p>
+</li>
+<li><p><strong>Venture concentration cuts both ways.</strong> With 11 rounds capturing 79–80% of the week’s capital and the four-week funding average down 48%, the tailwind for large raises coincides with a thinning market for everyone else. A solo founder reading Mirendil’s round as sector-wide exuberance should read the other FundraiseBase chart instead: Web3 took $50 million, cybersecurity $27 million, enterprise software $4 million.</p>
+</li>
+<li><p><strong>Platform decay is now measured in days, not years.</strong> Meta bought Conductor and its cloud went read-only November 13 after a nine-day warning; Val Town gave a 90-day runway (generous by industry standards, and still a forced migration); Xata’s buyers have published no parity date. The pattern holds across the year — Chroma Cloud and Google’s Jules preceded Val Town — and the lesson compounds: keep an export path warm for anything you host on a small platform.</p>
+</li>
+<li><p><strong>Agent cost accounting remains the silent killer.</strong> Autonomous multi-step loops can burn up to 50 times more tokens than standard prompts (MIT Technology Review, via isystem.ai’s November 2 brief). With frontier-tier output pricing still climbing across the industry, budget by completed deliverable with hard iteration caps — not by token watch — before pointing an agent fleet at billable client work.</p>
+</li>
+</ul>
+<h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><ol>
+<li><strong>If you run anything on a sub-scale hosted platform, run the Val Town drill this week</strong>: inventory your dependencies, export all state (especially databases and blobs), and have a coding agent produce a migration plan to Cloudflare Workers, Vercel, Netlify or Render — before the next acquisition announcement makes the decision for you.</li>
+<li><strong>Reprice upward or reposition B2B.</strong> The verified data says $100+ customers on ~98 accounts out-earn $25 customers on 1,700 accounts. If your product serves a profession with budget (trades, law, healthcare ops), a work-tool price with craft-level quality beats a consumer subscription race to the bottom.</li>
+<li><strong>Prototype one research-agent workflow you can sell.</strong> Pick a niche where “run many experiments and verify results” has clear dollar value — benchmark upkeep, model evaluation, content-variant testing — and build the verification layer, since selection quality is where agent systems demonstrably fail.</li>
+<li><strong>Pin and export your agent stack</strong>: adopt a lockfile discipline for skills, prompts and MCP servers (Microsoft’s APM draft is a good starting shape), and keep an off-platform copy of anything your revenue depends on.</li>
+<li><strong>Watch the Verified Business Profiles layer.</strong> As authenticated agent identity and machine-readable service catalogs roll out (US-first), early solopreneurs who make their offerings agent-legible — clear pricing parameters, bookable services, verifiable identity — will capture the first wave of agent-mediated procurement.</li>
+</ol>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Figure</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mirendil Series A</td>
+<td>$1B (Nov 12), total ~$1.2B in 5 months</td>
+<td>Mirendil &#x2F; ARR Club &#x2F; ChipDispatch</td>
+</tr>
+<tr>
+<td>Mirendil seed (June 2026)</td>
+<td>$200M at $1B valuation (a16z + Kleiner Perkins)</td>
+<td>Tech Arcade</td>
+</tr>
+<tr>
+<td>Mirendil-Base pretraining</td>
+<td>1 researcher + agents, 3.5 months, &lt;$10M compute, &gt;99% agent-written code</td>
+<td>Mirendil (self-reported, Oct 21)</td>
+</tr>
+<tr>
+<td>Fern context window</td>
+<td>Up to 10M tokens (~500K lines of code)</td>
+<td>Mirendil</td>
+</tr>
+<tr>
+<td>Lor demo</td>
+<td>102 agents, 100 PyTorch PRs, ~8 min each</td>
+<td>Mirendil</td>
+</tr>
+<tr>
+<td>Week 46 venture funding</td>
+<td>68 rounds, $6.2B; AI $5.1B (83%); median $24.5M (+138%)</td>
+<td>FundraiseBase</td>
+</tr>
+<tr>
+<td>Rounds ≥$100M share</td>
+<td>11 rounds &#x3D; 79% of weekly capital</td>
+<td>FundraiseBase</td>
+</tr>
+<tr>
+<td>Four-week funding average</td>
+<td>$11.9B, down 48%</td>
+<td>FundraiseBase</td>
+</tr>
+<tr>
+<td>Top investor, 8 weeks</td>
+<td>Y Combinator, 24 rounds (General Catalyst 19, a16z 17)</td>
+<td>FundraiseBase</td>
+</tr>
+<tr>
+<td>Trajectory Series A</td>
+<td>$45M at $300M (Sequoia; Nvidia, Bessemer, BCV)</td>
+<td>TechCrunch &#x2F; Wortins</td>
+</tr>
+<tr>
+<td>Val Town timeline</td>
+<td>Read-only Dec 10; services end Jan 10, 2027; open-sourced Feb 1, 2027</td>
+<td>Val Town docs</td>
+</tr>
+<tr>
+<td>Non-employer applications, AI-exposed industries</td>
+<td>+26.8% Q1 2024→Q1 2026 (222K→281K&#x2F;quarter)</td>
+<td>Mercatus Center</td>
+</tr>
+<tr>
+<td>Median solo AI business revenue</td>
+<td>$22K&#x2F;month; only 6 of 69 above $100K</td>
+<td>The AI Receipts (Nov 14)</td>
+</tr>
+<tr>
+<td>$100+ pricing vs sub-$25</td>
+<td>Median $30K from ~98 subs vs $13K from ~1,700 subs</td>
+<td>The AI Receipts (Nov 14)</td>
+</tr>
+<tr>
+<td>Stencil AI &#x2F; Heyron &#x2F; CreativeClaw MRR</td>
+<td>$48.8K &#x2F; $17.2K &#x2F; $14.6K (TrustMRR-verified, Nov 14)</td>
+<td>The AI Receipts</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>Agent Infrastructure</category>
+        <category>One-Person Company</category>
+      </categories>
+      <tags>
+        <tag>Anthropic</tag>
+        <tag>Funding</tag>
+        <tag>Solo Founder</tag>
+        <tag>TrustMRR</tag>
+        <tag>Trajectory</tag>
+        <tag>Mirendil</tag>
+        <tag>Kleiner Perkins</tag>
+        <tag>Val Town</tag>
+        <tag>ClickHouse</tag>
+        <tag>Xata</tag>
+        <tag>Stencil AI</tag>
+      </tags>
+  </entry>
 </search>
