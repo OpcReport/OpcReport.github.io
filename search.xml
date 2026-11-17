@@ -127802,4 +127802,187 @@
         <tag>Codeg</tag>
       </tags>
   </entry>
+  <entry>
+    <title>xAI Grok Build Ships 8 Parallel Agents; Corma Raises $125M</title>
+    <url>/opc-report-2026-11-17-1000/</url>
+    <content><![CDATA[<p>The past forty-eight hours delivered three product launches that sketch the next architecture of the coding-agent market — xAI’s Grok Build running up to eight parallel subagents on developer machines, UiPath turning its enterprise automation platform into a host for Claude Code, Codex, Cursor and Google Antigravity, and Google quietly making AlphaEvolve, an agent that optimizes algorithms rather than writing features, generally available. Around them, capital concentrated in two places: defensive security AI (Corma’s $125 million Series A at a $1 billion valuation, barely three months after emergence from stealth) and the enforcement layer of brand protection (Marq Vision’s $48 million Series B, raised precisely as Samsung moved fake detection onto phones for free). And the solo economy kept producing verifiable benchmarks: MausBot, a one-founder open-source answer to the Big Tech persistent agents, crossed $15.5K in Stripe-verified monthly recurring revenue.</p>
+<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><ul>
+<li><p><strong>xAI’s Grok Build makes multi-agent parallelism the headline architecture, with a local-first twist.</strong> Per coverage by The Agent Times citing Bloomberg, TipRanks and xAI, the CLI-based coding agent launched in early beta for SuperGrok Heavy subscribers with up to 8 parallel subagents, broader rollout continuing through May 2026. It runs on grok-code-fast-1, which xAI reports scoring 70.8% on SWE-Bench Verified with a 256K-token context. The differentiator is execution location: local-first, so source code never leaves developer machines — a direct answer to the enterprise security hesitation that has slowed cloud-dependent coding agents. An Arena Mode adds a business model wrinkle: every developer selection generates implicit preference data to improve grok-code-fast-1. Note this is a distinct product from the Grok Bot persistent-agent team whose Lightcone playbook these reports covered on November 16; Grok Build is the developer CLI, and its swarm-of-agents design poses the category’s strategic question — whether agent swarms displace the single-agent-with-deep-reasoning model.</p>
+</li>
+<li><p><strong>UiPath’s official coding agent launch turns enterprise automation into a multi-vendor agent host.</strong> Announced November 16 (covered by ZDNet Korea and myappsplus), the Coding Agent first unveiled in May is now generally available: it generates automation programs from natural-language requests and integrates external developer tools — Anthropic’s Claude Code, OpenAI’s Codex, Cursor, and Google Antigravity — via Model Context Protocol support, letting those tools read task histories, execution records and connection information registered on the platform. Governance is the pitch: a Runtime Checker validates security rules in real time, a Model Hub sets per-model access controls, and Data Fabric lets agents use SAP and Salesforce data without copying it. A “Delegate” agent handles repetitive cross-system work while humans retain final approval, and the full platform now runs on-premises in Linux environments — explicitly aimed at financial institutions and public-sector customers barred from external clouds. UiPath’s CPTO Raghu Malpani framed it as “a map” for agentic transformation “within the boundaries set by the business.”</p>
+</li>
+<li><p><strong>Google made AlphaEvolve generally available — the first commercial agent that optimizes algorithms, not just code.</strong> Per InfoQ reporting carried by The Agent Times, the Gemini-powered evolutionary code-optimization system is now a managed API on Google Cloud for Gemini Enterprise customers: submit a seed program and a scoring function, receive iteratively mutated and selected candidate programs, deploy what survives. Google’s self-reported results are substantial — AlphaEvolve recovered 0.7% of global compute capacity across Google’s own infrastructure and accelerated a critical Gemini training kernel by 23%, with deployments spanning data-center scheduling, chip design and warehouse routing. For solo builders the relevance is indirect but concrete: algorithm-level optimization is now a purchasable service, and the “expensive model where judgment compounds” routing pattern gains a new tier — buy optimization compute for your hot paths rather than hiring for them.</p>
+</li>
+<li><p><strong>Corma’s $125 million Series A at $1 billion prices defensive AI three months out of stealth.</strong> Announced November 16 (Unite.AI), the round was led by NEA with continued participation from Sequoia, Khosla Ventures and Coatue, bringing total funding to $185 million after an August 10 emergence with a $60 million seed. The product thesis is architectural: coding-focused models map to offensive security, while defense requires continuous analysis of logs, events, configurations and network flows — hence domain-specific foundation models deployed through the Corma Workforce, which operates inside customers’ existing security stacks. Claimed results: 99% of security tasks completed autonomously, 100x faster end-to-end completion, 95% lower cost per completed task, with live deployments across healthcare, finance, energy and critical infrastructure. The stated scaling constraint is not model quality but compute capacity.</p>
+</li>
+<li><p><strong>Marq Vision’s $48 million Series B marks the split of detection and enforcement.</strong> The November 16 round, led by Peak XV with HongShan, Salesforce Ventures and Y Combinator participating (The Inference, citing MiraiTalk&#x2F;Forbes), brings the counterfeit-enforcement company’s total to $90 million, tripling its late-2024 extension. The timing logic is the lesson: detection is being absorbed by platforms — Samsung and Reality Defender signed a memorandum in October to run deepfake detection on Galaxy S26 phones for Singapore enterprises at no published price — so the funded layer is what a phone cannot do: takedowns, legal escalation through partner law firms in China and the US, and trademark services for roughly 350 brand customers including Lush and F&amp;F.</p>
+</li>
+<li><p><strong>MausBot puts a Stripe-verified number on the open-source counter-wave to Big Tech persistent agents.</strong> Profitable.app’s November 16 update shows the solo-founder company (Omkar Satpute, bootstrapped) at $15,506 MRR and $186,072 ARR, verified via Stripe integration — positioning itself explicitly as the open-source alternative to Grok Bot, Meta’s Muse, Manus’s Cue and OpenAI’s Dots. Bots open browsers, fill forms, run scheduled routines, hand tasks to each other and ask before anything risky, with takeover from a phone. The pricing ladder is instructive: Free, Personal $15&#x2F;mo, Pro $49&#x2F;mo, Max $89&#x2F;mo at launch prices, with teams starting at $169&#x2F;mo. A one-person company hitting $186K ARR by cloning the category architecture of four well-funded incumbents — and open-sourcing it — is the clearest bootstrapped wedge this leaderboard has shown in weeks.</p>
+</li>
+</ul>
+<h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><ul>
+<li><p><strong>The coding-agent category is fracturing into three distinct products, and funding follows the split.</strong> Grok Build (parallel swarm, local-first, consumer-priced via a subscription tier), UiPath Coding Agent (governed enterprise orchestration hosting third-party tools) and AlphaEvolve (algorithm optimization as an API) barely overlap. Weeks ago these reports framed the market as single-agent assistants versus persistent teammates; the November 16 launches suggest the durable segmentation is by locus of control — who owns the execution environment, who sets permissions, who sees the code.</p>
+</li>
+<li><p><strong>Defensive and enforcement AI absorbed the week’s largest checks.</strong> Corma’s $125 million Series A at $1 billion, Marq Vision’s $48 million Series B, and Numa’s $45 million Series C (Blue Cloud Ventures led; total funding $96 million; PR Newswire, November 16) all fund AI that acts inside regulated, high-liability workflows rather than drafting content. Numa — an AI operating system for car dealerships that has handled more than 1 billion calls, texts and chats, booked over 4 million appointments and now runs at more than 1,500 dealerships across the US and Canada — tripled ARR in a year and became the system GM, FordDirect, BMW and Stellantis put in front of their dealers. Founder Tasso Roumeliotis’s framing: “In two years, every general manager will have an AI COO.”</p>
+</li>
+<li><p><strong>Seed capital flowed to the layers beneath AI applications.</strong> November 16’s digest (Startup Corners) recorded Daisytuner raising €6 million in seed (co-led by Elaia and LEA Ventures, with Amadeus APEX and Seedcamp) for AI model performance engineering across any chip, launching its Daisyflow inference engine; Bharat Semi raising $24 million (Info Edge, South Park Commons, IndusBridge) for programmable smart sensors for physical AI; and Italian robotics-data startup Mosaico raising €7.5 million (Sifted). The same digest noted India’s weekly venture funding fell to $26 million across 11 deals — the lowest week of 2026, down from $263 million the prior week — a festive-period dip the digest reads as seasonal rather than structural.</p>
+</li>
+<li><p><strong>Agent-as-a-Service economics now have published benchmarks.</strong> Agentincome.io data carried by The Agent Times documents a solo developer wrapping the Claude API into a GitHub Action for PR descriptions reaching $8,000 MRR within 90 days at 97% gross margins — a $9&#x2F;month product with API expenses under $200&#x2F;month. The structural numbers behind it: 36% of 2025 startups were solo-led, up from 31% in 2024, and AI-native companies generate $4–5 million in revenue per employee against $200,000–$500,000 for traditional businesses. The extreme case remains two-person Medvi, reportedly at $401 million in 2025 sales using agent fleets for code, copy and customer communications.</p>
+</li>
+</ul>
+<h2 id="Build-Directions"><a href="#Build-Directions" class="headerlink" title="Build Directions"></a>Build Directions</h2><ul>
+<li><p><strong>Copy the parallel-swarm pattern on your own stack.</strong> Grok Build’s core idea is task decomposition into up to 8 concurrently running subagents with local execution. You do not need xAI’s CLI to apply it: split your agent workflows into research, drafting, verification and execution subagents that run concurrently against local data, and reserve the expensive reasoning model for the merge-and-judge step.</p>
+</li>
+<li><p><strong>Build for enforcement, not detection.</strong> Marq Vision’s round is a sector-level map of where platform absorption eats a capability. Whatever your niche, ask which half of your product Samsung-or-equivalent will give away for free in eighteen months, and weight your roadmap toward the actions platforms cannot take — takedowns, filings, legal escalation, money movement, compliance attestations.</p>
+</li>
+<li><p><strong>Sell to the AI-COO layer of one vertical.</strong> Numa’s trajectory — from answering dealership calls to running the whole store, with an Operator routing system exceeding 95% correct-call routing and LiveCSI analyzing 50 million interactions in 90 days — shows the compounding sequence: conversation layer, then action layer, then horizontal expansion across the vertical’s workflows. Solo founders can run the same sequence inside a single niche at one-hundredth the scale.</p>
+</li>
+<li><p><strong>Use the open-source-alternative wedge against incumbent agent platforms.</strong> MausBot’s $186K ARR demonstrates that the persistent-agent category is broad enough that an open, self-hosted clone with a transparent pricing ladder ($15&#x2F;$49&#x2F;$89) can take real revenue from users who want the architecture without the vendor. The wedge is trust and control — the same two words UiPath is selling to enterprises.</p>
+</li>
+<li><p><strong>Benchmark your per-employee revenue against the AI-native curve.</strong> With the published gap at $4–5 million versus $200,000–$500,000, any solo or two-person operation has room to be aggressive on automation coverage. The Agent-as-a-Service playbook ($9 subscription, sub-$200 API cost, 97% margin, 90-day ramp) is now documented end to end; the realistic curve its publishers cite is 5–10 beta users in month one, $3K–$8K MRR by months four through six.</p>
+</li>
+</ul>
+<h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><ul>
+<li><p><strong>Self-reported benchmarks dominate the week’s launches.</strong> AlphaEvolve’s 0.7% compute recovery and 23% kernel speedup are Google’s own figures, uncorroborated per InfoQ; grok-code-fast-1’s 70.8% SWE-Bench Verified score is xAI-reported; Corma’s 99%&#x2F;100x&#x2F;95% claims come from its own materials, and The Inference explicitly notes Marq Vision has not disclosed which revenue line carries margin or its valuation. Treat every number here as vendor marketing until independent evaluation lands.</p>
+</li>
+<li><p><strong>Local-first and governance are on a collision course.</strong> Grok Build’s selling point is that source never leaves the machine; UiPath’s launch message is that enterprises demand Runtime Checkers, Model Hubs and audit trails when agents touch internal systems. Solo founders selling to mid-market clients should expect to be asked for UiPath-grade controls on Grok Build-grade autonomy — and to build the logging layer themselves.</p>
+</li>
+<li><p><strong>Compute is the binding constraint even at $1 billion valuations.</strong> Corma names securing enough compute for demand and its waitlist as a central scaling challenge; the data-center ballot-measure restrictions covered on November 16 (40 of 41 measures) pressure the supply side. Bootstrappers depending on discounted inference capacity should expect regional price dispersion rather than continued uniform declines.</p>
+</li>
+<li><p><strong>Platform absorption is an existential clock for wrapper businesses.</strong> The Samsung–Reality Defender memorandum shows device makers distributing fraud detection as a free phone feature. Any solo product whose core value is “call a model on an input and show the result” is one platform feature away from zero — the $8K-MRR GitHub Action wrapper earns its margin only until GitHub ships the same PR-description feature natively.</p>
+</li>
+<li><p><strong>Open-source clones inherit upstream dependency risk.</strong> MausBot’s positioning against Grok Bot, Muse, Cue and Dots means its feature surface tracks four vendors’ roadmaps; API changes, terms-of-service shifts or pricing moves at any of them force reactive rework on a one-person engineering team. The same risk applies at a smaller scale to every solo builder wrapping one frontier API.</p>
+</li>
+</ul>
+<h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><ol>
+<li><strong>Trial a two-subagent split this week</strong>: take one recurring workflow, split research from execution into two concurrent agent runs, and measure wall-clock time and token cost against your current single-threaded loop before considering a paid swarm tool.</li>
+<li><strong>Make your tooling MCP-compatible now</strong> — UiPath’s official embrace of Claude Code, Codex, Cursor and Antigravity confirms MCP as the enterprise integration surface; agents that cannot expose or consume MCP tools will be excluded from governed environments.</li>
+<li><strong>Audit your product for the detection-versus-enforcement split</strong>: list every capability a platform could bundle free within 18 months, and move roadmap weight to the enforcement actions that survive absorption.</li>
+<li><strong>Re-price your stack per the Agent-as-a-Service ledger</strong>: if your gross margin is below 90%, route non-judgment steps to cheaper or local models and cap iteration counts — the published benchmark is a $9 product carrying 97% margins on under-$200 API spend.</li>
+<li><strong>Track seed-stage infrastructure rounds as a cost-curve signal</strong>: Daisytuner’s chip-agnostic inference engineering and its Daisyflow engine are early markers of where inference pricing goes next; a functional performance market lowers the floor under every bootstrapped AI product.</li>
+</ol>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Figure</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Grok Build subagents</td>
+<td>Up to 8 parallel; local-first, code never leaves machine</td>
+<td>The Agent Times &#x2F; Bloomberg &#x2F; TipRanks &#x2F; xAI (Nov 2026)</td>
+</tr>
+<tr>
+<td>grok-code-fast-1 benchmark</td>
+<td>70.8% SWE-Bench Verified (self-reported); 256K-token context</td>
+<td>xAI via The Agent Times</td>
+</tr>
+<tr>
+<td>Grok Build availability</td>
+<td>Early beta for SuperGrok Heavy; rollout through May 2026</td>
+<td>xAI</td>
+</tr>
+<tr>
+<td>UiPath Coding Agent</td>
+<td>Officially launched Nov 16; hosts Claude Code, Codex, Cursor, Antigravity via MCP</td>
+<td>ZDNet Korea &#x2F; myappsplus</td>
+</tr>
+<tr>
+<td>AlphaEvolve GA</td>
+<td>Managed API for Gemini Enterprise customers</td>
+<td>InfoQ via The Agent Times</td>
+</tr>
+<tr>
+<td>AlphaEvolve self-reported results</td>
+<td>0.7% of global compute recovered; +23% on Gemini training kernel</td>
+<td>Google (self-reported, via InfoQ)</td>
+</tr>
+<tr>
+<td>Corma Series A</td>
+<td>$125M at $1B valuation; NEA led; total $185M</td>
+<td>Unite.AI (Nov 16, 2026)</td>
+</tr>
+<tr>
+<td>Corma claimed performance</td>
+<td>99% tasks autonomous; 100x faster; 95% lower cost per task</td>
+<td>Corma (self-reported)</td>
+</tr>
+<tr>
+<td>Marq Vision Series B</td>
+<td>$48M; Peak XV led; total $90M; ~350 brand customers</td>
+<td>The Inference &#x2F; MiraiTalk &#x2F; Forbes (Nov 16)</td>
+</tr>
+<tr>
+<td>Numa Series C</td>
+<td>$45M; Blue Cloud Ventures led; total $96M</td>
+<td>PR Newswire (Nov 16, 2026)</td>
+</tr>
+<tr>
+<td>Numa scale</td>
+<td>1,500+ dealerships; 1B+ calls&#x2F;texts&#x2F;chats; 4M+ appointments; ARR tripled</td>
+<td>PR Newswire</td>
+</tr>
+<tr>
+<td>MausBot revenue</td>
+<td>$15,506 MRR; $186,072 ARR; solo founder, bootstrapped, Stripe-verified</td>
+<td>Profitable.app (Nov 16, 2026)</td>
+</tr>
+<tr>
+<td>MausBot pricing</td>
+<td>Free &#x2F; $15 &#x2F; $49 &#x2F; $89 per month; teams from $169&#x2F;mo</td>
+<td>Profitable.app</td>
+</tr>
+<tr>
+<td>Daisytuner seed</td>
+<td>€6M; Elaia + LEA Ventures co-led; Daisyflow launched</td>
+<td>Startup Corners (Nov 16)</td>
+</tr>
+<tr>
+<td>Bharat Semi seed</td>
+<td>$24M; Info Edge, South Park Commons, IndusBridge led</td>
+<td>Startup Corners (Nov 16)</td>
+</tr>
+<tr>
+<td>India weekly VC funding</td>
+<td>$26M across 11 deals — lowest week of 2026 (prior week $263M)</td>
+<td>YourStory via Startup Corners</td>
+</tr>
+<tr>
+<td>Agent-as-a-Service case</td>
+<td>$8K MRR in 90 days; 97% gross margin; $9&#x2F;mo pricing; &lt;$200&#x2F;mo API cost</td>
+<td>agentincome.io via The Agent Times</td>
+</tr>
+<tr>
+<td>Solo-startup share</td>
+<td>36% of 2025 startups solo-led (vs 31% in 2024)</td>
+<td>agentmarketcap.ai via The Agent Times</td>
+</tr>
+<tr>
+<td>AI-native revenue per employee</td>
+<td>$4–5M vs $200K–$500K traditional</td>
+<td>agentmarketcap.ai</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>Agent Infrastructure</category>
+        <category>One-Person Company</category>
+      </categories>
+      <tags>
+        <tag>Indie Hackers</tag>
+        <tag>Grok Build</tag>
+        <tag>xAI</tag>
+        <tag>UiPath</tag>
+        <tag>AlphaEvolve</tag>
+        <tag>Corma</tag>
+        <tag>Marq Vision</tag>
+        <tag>Numa</tag>
+        <tag>MausBot</tag>
+        <tag>Daisytuner</tag>
+        <tag>Agent-as-a-Service</tag>
+      </tags>
+  </entry>
 </search>
