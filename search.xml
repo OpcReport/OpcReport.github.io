@@ -129030,4 +129030,152 @@
         <tag>GAO</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Linq Lands $90M From a16z; Ex-DeepSeek Founder Ships Linger</title>
+    <url>/opc-report-2026-11-20-1330/</url>
+    <content><![CDATA[<p>The agent economy is now building its own plumbing. On November 19 and 20, the funding and shipping announcements that mattered were not another frontier-model benchmark chase but the layer underneath: a messaging platform for customer-facing agents backed by a16z, an open-source personal agent that lives entirely on a solo owner’s PC, an IPO debut that turned a research lab into a $2 trillion public company in a morning, and an AI lab publishing how it uses its own coding agents to keep its flagship product fast. For one-person companies, each of these is either a channel to sell through, a piece of infrastructure to own outright, or a baseline cost curve to track.</p>
+<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><p><strong>Linq raised $90 million in Series B funding led by Andreessen Horowitz to become the messaging layer for AI agents</strong> (WOWTALE, November 20). The company connects a business’s AI agents to the text threads people actually open: iMessage, RCS, plain SMS, WhatsApp and voice calls, all callable from code. Linq says it has processed more than 1 billion messages, that DoorDash, Town and Tomo are among hundreds of customers, and that it is an official Apple Messaging Service Provider — meaning enterprises can run customer-facing agents inside Apple Messages for Business. A customer texts DoorDash what they feel like eating; the agent finds options, builds a cart and checks out in the same thread. Existing investors TQ Ventures, Mucker Capital and Abstract returned, with Anthos and Left Lane Capital joining, and Ben Horowitz taking a board seat. The three co-founders — CEO Elliott Potter, CTO Patrick Sullivan and president Jared Mattsson — all came from grocery-delivery service Shipt, started the company in 2019 in Birmingham, Alabama with a digital business card product, and pivoted twice before landing on agent communications infrastructure. The round follows a $20 million Series A in February. Linq is also widening the product beyond text: computer-use infrastructure so agents can operate apps and websites like a person, plus HD Calling for Agents. CEO Potter framed the destination plainly: clicking through five screens to pay rent becomes two words to an agent — “pay rent.”</p>
+<p><strong>Simplex AI, founded by former DeepSeek-VL project lead Tony Zhang, open-sourced Linger, a personal agent that lives on your PC</strong> (Pedaily&#x2F;投资界, November 20). The positioning is deliberately contrarian: while competitors build apps and cloud subscriptions, Linger runs locally, operates the web pages, mailboxes and calendars already on your machine — no new login credentials to hand over — and lets the owner take over manually whenever the agent gets stuck. The core system is called Another Me: every night it reads your inbox, calendar, chats and meetings, and compiles them into a local personal wiki that all agents can query. On LoCoMo, a long-conversation memory benchmark, Linger claims 95% accuracy, ahead of Mem0, MemOS and other memory-augmented systems. It is proactive and self-correcting: a client quote-request email received Monday is surfaced Wednesday morning rather than interrupting immediately, and feedback like “I already got that invoice last week” becomes training signal the system calls implicit reinforcement. The local model story is the technical headline: with a 12 GB RTX 3060, Linger reportedly runs a 125B-parameter Qwen3.8-Flash-Next at 45.5 tokens per second. Zhang’s stated philosophy borrows from PC history — computing was centralized until the PC handed power to individuals, and today AI is trained in datacenters then rented back as tokens. His answer: your context, your data and the intelligence driving it should be owned by you. The entire system is open source.</p>
+<p><strong>Anthropic opened on Nasdaq at $2 trillion, one of the largest tech debuts in history</strong> (TechCrunch, What Is The Latest, November 19-20). The IPO priced at $83 per share and the stock opened at $111, 33% above the offer price. TechCrunch reported the listing could ultimately deliver roughly $156 billion to charity under Anthropic’s long-term benefit structure. In a separate regulatory filing first reported November 19, Anthropic sold about $1.1 billion of stock to retail investors in the UK and continental Europe — more than 3.6 million shares to UK investors and nearly 9.7 million shares to investors in the EU, Norway and Switzerland. Two human details rounded out the day: protesters appeared at the bell ceremony, and SoftBank founder Masayoshi Son publicly admitted passing on Anthropic was his own mistake. Recall that as recently as November 10, analysts flagged the debut could come in at $1–1.5 trillion, down from the $2 trillion floated earlier — the market decided otherwise in ten days.</p>
+<p><strong>OpenAI published how its Performance Factory keeps ChatGPT fast</strong> (OpenAI blog, November 19). Rather than relying only on manual engineering reviews, OpenAI runs automated Codex-powered workflows that continuously hunt for performance regressions in ChatGPT and deploy fixes. The same week OpenAI also shipped a Codex Security Plugin and “Daybreak Red” and “Daybreak Blue” design releases. The pattern is the notable part: frontier labs are now productizing the use of their own agents to maintain their own infrastructure — the recursive self-improvement loop, starting with the unglamorous chore of performance upkeep.</p>
+<h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><p><strong>Google officially launched Gemini 4 Neon as the mid-tier Gemini family model</strong> (blog.google, Jiemian, November 19). The model handles spreadsheets, PDFs, charts and audio&#x2F;video inside a single 1 million token context window and turns heterogeneous inputs into structured deliverables. Pricing is $3 per million input tokens and $15 per million output tokens, with cached input at $0.15 per million — roughly a 95% cache discount. Latent Space reported a 61 score on the Intelligence Index, and Google positions Neon between Carbon and Hydrogen in the family, replacing Argon in the Gemini app while Gemini 3.1 Pro was delisted. The reminder stays live: Carbon and Argon API prices double on December 1 — nine days out at publication.</p>
+<p><strong>Medical AI startup Boltz raised $110 million to accelerate small-molecule research</strong> (SiliconANGLE, November 19), continuing the week’s pattern of large, domain-specific rounds.</p>
+<p><strong>OpenAI is entering the phone market through the supply chain.</strong> Per People’s Finance and Jiemian (November 19), Foxconn subsidiary Fushikang (02038.HK) has won the assembly order for OpenAI’s phone project. If the device ships, OpenAI would compete on AI interaction with incumbent handset makers — while also being, like Apple, a Foxconn customer. Order size and mass-production schedule remain undisclosed.</p>
+<p><strong>Samsung pushed back on neocloud panic</strong> (Jiemian, November 18, Morgan Stanley conference in Singapore): highly leveraged cloud providers are only about 8% of the overall market, AI capex is demand-driven rather than speculative, and the current chip shortage should persist for the foreseeable future. A calm counterweight to a week of debt-driven datacenter headlines.</p>
+<p><strong>AI is restructuring skilled work into low-paid gig labor before it eliminates it.</strong> A widely shared Rest of World report argues the near-term labor effect is wage and job-quality erosion for partially automated roles rather than mass redundancy — the piece drew significant traction on Hacker News. For solo operators, the same dynamic cuts the other way: tasks that once required a team are becoming purchasable increments.</p>
+<p><strong>Meta’s new Muse Charm wearable may cost around $300</strong> (TechCrunch, November 19) — another data point in the agent-native hardware cycle that now includes OpenAI’s phone.</p>
+<h2 id="Build-Directions"><a href="#Build-Directions" class="headerlink" title="Build Directions"></a>Build Directions</h2><p><strong>Hugging Face showed a 180B-parameter MoE model running in 32 GB of RAM</strong> (HF blog, November 19). Using expert-streaming techniques in the Transformers library, only the active experts need to be resident — meaning very large models now run on consumer hardware without multi-GPU clusters. Combined with Linger’s claim that a $200 used GPU runs a 125B agent model at 45 tokens per second, the local-agent stack is becoming realistic for non-institutional builders this quarter, not next year.</p>
+<p><strong>A Japanese astrologer turned a Claude Code practice tool into a product</strong> (Super User Daily, November 20). The developer built a cat-themed horoscope web app, migrated astrology sessions entirely into the app to escape a Windows-only desktop dependency, upgraded to Claude Code Max, and is launching November 26 as a one-time purchase at 4,980 yen. Domain expertise plus an agent toolchain equals a shippable niche product — the classic OPC pattern, arriving in more verticals weekly.</p>
+<p><strong>A solo developer shipped Quickscope FPS, a free multiplayer iPhone sniper game built entirely with Claude Code</strong> (Super User Daily, November 20). The feature list — trickshots, killcams, ranks, skins, cross-play party codes — is what used to need a small studio. One person, a nostalgic niche, and a live multiplayer product on the App Store.</p>
+<p><strong>The Dor Brothers, a viral AI video studio, say one of their videos was 85% automated with Claude Code</strong> (Super User Daily, November 20): no manual image or video generation, no post-processing on existing clips — humans only semi-edited and directed. The agent runs the production pipeline; people keep taste and direction.</p>
+<p><strong>A Chinese-Japanese developer documented the reference-image discipline needed for AI 3D asset pipelines</strong> (Super User Daily, November 20): using Claude Code and Tripo Studio to generate aligned front, side and back references before Tripo Multiview generation, then compressing a 50,000-face model to 2,500 faces in Blender, 11 animations remade, per-monster cost of 52 Tripo credits — with the entire workflow captured as a SKILL.md so the next monster reuses it. Encoding your pipeline as a reusable skill file is emerging as the solo builder’s compounding asset.</p>
+<h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><p><strong>The IPO repricing happened in ten days.</strong> On November 10, credible reporting had Anthropic’s debut expected at $1–1.5 trillion, below the $2 trillion floated earlier in the fall. It opened at $2 trillion. When the market’s floor moves that fast, downstream startup valuations, employee equity and any revenue-multiple reasoning tied to public comparables inherit the volatility. Solo founders negotiating payments or acquisitions against public-company benchmarks should re-verify numbers the week they use them.</p>
+<p><strong>Anthropic’s $156 billion charity figure is a headline number with an unverified mechanism</strong> (TechCrunch). The long-term benefit company structure makes the pledge credible in intent but the timing, vehicles and recipients remain opaque. Treat coverage that treats it as cash committed today as imprecise.</p>
+<p><strong>OpenAI’s phone ambitions rest on a single unconfirmed supply-chain report</strong> (People’s Finance). Fushikang assembly orders have appeared, been resized and vanished before; nothing about product, volume or launch date is official.</p>
+<p><strong>Agent messaging is already a crowded market.</strong> Linq’s own funding coverage lists Sendbird (4,000+ brands, 7 billion conversations monthly, plus its Delight.ai agent platform), Twilio, and iMessage specialists Sendblue and Blooio. Apple-approval status is an edge, not a moat; channel APIs can be commoditized by the platform owners themselves.</p>
+<p><strong>Local-agent claims deserve the same skepticism as cloud ones.</strong> Linger’s 95% LoCoMo accuracy and RTX 3060 throughput figures are company-published, as are Slotbound-style revenue claims covered earlier this week. Benchmarks chosen by vendors select their own winning axis.</p>
+<h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><ol>
+<li><strong>Evaluate customer-facing agent channels before building your own.</strong> If your product could text customers — booking confirmations, reorder nudges, support triage — the Linq round signals this is now infrastructure, not a differentiator. Compare Linq, Sendbird and Twilio on iMessage&#x2F;RCS coverage and pricing; the channel decision is reversible, the integration work is not.</li>
+<li><strong>Self-host a personal agent while the tooling is young.</strong> Linger is open source, runs on modest hardware, and keeps your context local. Even if you do not adopt it, cloning the repo and reading the nightly wiki-building loop is a free education in where personal agents are converging — and pairs naturally with the Hugging Face expert-streaming recipe for running large models locally.</li>
+<li><strong>Model your inference costs around December 1.</strong> Gemini 4 Carbon and Argon prices double that day; Gemini 4 Neon’s $3&#x2F;$15 with 95%-discounted cache input is the obvious migration target for mid-tier workloads. An afternoon of moving cached-heavy pipelines to Neon pricing can be a permanent cost win.</li>
+<li><strong>Encode your build pipelines as skill files.</strong> The Tripo multiview SKILL.md pattern — aligned references, budgeted credits, documented compression steps — turns a one-off workflow into a reusable asset that survives tool churn. Whatever your stack, write the skill file once and let the next project inherit it.</li>
+<li><strong>Watch agent-native hardware announcements without pre-ordering.</strong> Muse Charm at ~$300 and an OpenAI phone in the supply chain both point to distribution channels agents will need. The build-safe move is making sure your product works well when reached by an agent over text — hardware distribution arrives through that door first.</li>
+</ol>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Figure</th>
+<th>Source</th>
+<th>Why It Matters</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Linq Series B</td>
+<td>$90M, a16z led; Ben Horowitz joins board</td>
+<td>WOWTALE, Nov 20</td>
+<td>Messaging infra for agents hits scale capital</td>
+</tr>
+<tr>
+<td>Linq traction</td>
+<td>1B+ messages processed; DoorDash, Town, Tomo as customers</td>
+<td>WOWTALE</td>
+<td>Customer-facing agents have a live channel</td>
+</tr>
+<tr>
+<td>Linq prior round</td>
+<td>$20M Series A, TQ Ventures, February 2026</td>
+<td>WOWTALE</td>
+<td>Fast round-to-round spacing</td>
+</tr>
+<tr>
+<td>Anthropic debut</td>
+<td>Priced $83, opened $111 (+33%), $2T market cap</td>
+<td>TechCrunch, Nov 19-20</td>
+<td>Largest-tier tech IPO repriced upward in 10 days</td>
+</tr>
+<tr>
+<td>Anthropic charity</td>
+<td>~$156B projected via long-term benefit structure</td>
+<td>TechCrunch</td>
+<td>Structure exists; mechanism unverified</td>
+</tr>
+<tr>
+<td>Anthropic retail sale</td>
+<td>~$1.1B to UK&#x2F;EU investors (3.6M + 9.7M shares)</td>
+<td>Jiemian, Nov 19</td>
+<td>Retail participation in AI IPOs is expanding</td>
+</tr>
+<tr>
+<td>Gemini 4 Neon</td>
+<td>$3&#x2F;$15 per M tokens; cached input $0.15; 1M context</td>
+<td>blog.google, Jiemian</td>
+<td>Mid-tier price anchor for 2027 budgeting</td>
+</tr>
+<tr>
+<td>Gemini family deadline</td>
+<td>Carbon&#x2F;Argon prices double December 1</td>
+<td>Jiemian</td>
+<td>Nine days out at publication</td>
+</tr>
+<tr>
+<td>Linger (Simplex AI)</td>
+<td>Open-source PC agent; LoCoMo 95%; 45.5 tok&#x2F;s on RTX 3060</td>
+<td>Pedaily, Nov 20</td>
+<td>Local personal agents become practical</td>
+</tr>
+<tr>
+<td>Linger local model</td>
+<td>125B Qwen3.8-Flash-Next on 12 GB GPU</td>
+<td>Pedaily</td>
+<td>Consumer hardware runs agent-class models</td>
+</tr>
+<tr>
+<td>HF expert streaming</td>
+<td>180B MoE in 32 GB RAM</td>
+<td>HF blog, Nov 19</td>
+<td>Local inference ceiling moved again</td>
+</tr>
+<tr>
+<td>Boltz</td>
+<td>$110M raise, small-molecule AI</td>
+<td>SiliconANGLE, Nov 19</td>
+<td>Domain rounds keep pricing up</td>
+</tr>
+<tr>
+<td>OpenAI phone</td>
+<td>Fushikang (02038.HK) assembly order</td>
+<td>People’s Finance, Nov 19</td>
+<td>Single-source; volume undisclosed</td>
+</tr>
+<tr>
+<td>Meta Muse Charm</td>
+<td>~$300 expected</td>
+<td>TechCrunch, Nov 19</td>
+<td>Agent-native hardware price point</td>
+</tr>
+<tr>
+<td>Dor Brothers automation</td>
+<td>85% of a video automated via Claude Code</td>
+<td>Super User Daily</td>
+<td>Practitioner-sourced agent production share</td>
+</tr>
+</tbody></table>
+<p>The theme running through this report is ownership of the layer between intelligence and its user. Linq owns the channel, Linger wants you to own the context, Anthropic’s public markets now own a $2 trillion claim on the models, and OpenAI’s Performance Factory shows the labs owning their own maintenance loops. A one-person company cannot own a frontier model — but it can own its channel, its context and its pipeline files, and this week showed all three getting cheaper to hold.</p>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>AI Agent</category>
+        <category>Funding</category>
+      </categories>
+      <tags>
+        <tag>Anthropic</tag>
+        <tag>DeepSeek</tag>
+        <tag>OpenAI</tag>
+        <tag>Personal AI Agent</tag>
+        <tag>Linq</tag>
+        <tag>a16z</tag>
+        <tag>Simplex AI</tag>
+      </tags>
+  </entry>
 </search>
