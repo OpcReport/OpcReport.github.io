@@ -129315,4 +129315,154 @@
         <tag>Fintech</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Mirai Tech Raises $10M; Thinking Machines Ships Inkling 2 Mini</title>
+    <url>/opc-report-2026-11-21-1100/</url>
+    <content><![CDATA[<p>The most interesting money this week did not go to another cloud model. Mirai Tech raised $10 million to run inference on the chip already sitting in your pocket, Thinking Machines shipped a 20GB open-weights model that runs on a 32GB Mac, and a European legal publisher put €80.7 million behind an AI stack that never leaves the region. Three different answers to the same question: what happens to the AI bill when the compute moves closer to the user? For one-person companies, each answer changes your unit economics in a different direction.</p>
+<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><p><strong>Mirai Tech raised a $10 million seed led by Uncork Capital to make on-device AI inference accessible with about eight lines of code</strong> (The Agent Times&#x2F;TechCrunch, November 20-21). The London startup is founded by Dima Shvets, co-founder of Reface — the face-swap app that hit 250 million downloads — and Alexey Moiseenkov, co-founder of Prisma, the 2016 AI art filter that briefly outranked TikTok and Instagram on the US App Store with over 120 million downloads. The 14-person team built an inference engine in Rust optimized for Apple Silicon that the company says delivers up to 37% faster model generation than standard inference paths, without modifying model weights. Developers add the SDK, drop in an API key, and get summarization or classification running locally; Mirai handles model conversion, quantization, memory management and kernel optimization, with text and voice supported now, vision planned, and Android on the roadmap. An orchestration layer routes requests that exceed device capability up to the cloud under developer-defined rules. The angel list is a signal in itself: ElevenLabs co-founder Mati Staniszewski, Snowflake co-founder Marcin Żukowski, Coinbase board member Gokul Rajaram, YC partner Francois Chaubard and Scooter Braun. Uncork’s Andy McLoughlin framed the thesis bluntly: per-token cloud billing is becoming unsustainable for real-time workloads, and on-device execution means zero marginal inference cost, near-zero latency and no data leaving the phone.</p>
+<p><strong>Thinking Machines released Inkling 2 Mini with open weights under Apache 2.0 — a 26.4B-parameter MoE that fits in about 20GB and runs on any 32GB Mac through Ollama</strong> (Thinking Machines blog&#x2F;X post, November 20-21). This is the second miniaturization step in three weeks: Inkling 2 Small (594B total, 17B active, covered here November 7) has now been followed by a 26.4B-total, 3.4B-active model built as a looped transformer — the middle layers run three times per token, trading FLOPs for a smaller footprint. Most weights are NVFP4 with the last four layers in MXFP8. The company says it runs through Ollama on any Mac with at least 32GB of memory and on DGX Spark, with inference and fine-tuning available on its Tinker platform. Vendor-reported numbers put DeepSWE v1.1 at 48.2% and an AA Index (v5.0) score of 20.1, the same value listed for Qwen3.8-27B. For solo builders, the practical fact is a frontier-lab-adjacent model that runs entirely on a laptop you already own — the on-device counterpart to what Mirai is building infrastructure for.</p>
+<p><strong>Noxtua (formerly Xayn) raised an €80.7 million Series B co-led by legal publisher C.H.Beck, law firm Dentons and compute provider Northern Data to scale sovereign European legal AI</strong> (Beta Briefing&#x2F;press, November 21). The capital scales Beck-Noxtua, a sovereign legal AI workspace that integrates proprietary language models with C.H.Beck’s database of more than 55 million primary legal documents — self-hosted or in European sovereign clouds, so nothing crosses the data-transfer boundaries that keep US-hosted foundation models out of European law firms. The investor composition is the story: the content owner, the distribution channel and the compute provider all co-invested in one vertically integrated stack. That is what a defensible regional AI monopoly looks like when privacy regulation is the moat.</p>
+<h2 id="Market-Trends"><a href="#Market-Trends" class="headerlink" title="Market Trends"></a>Market Trends</h2><p><strong>Edge AI factory inspection drew a $12.4 million Series A</strong> (TheNextGenTechInsider, November 20). Tristar AI, a Cambridge, Massachusetts company founded by CEO Salem Karani, closed the round led by Isogon Ventures with Blackhorn, ISAI Cap (Capgemini’s fund), NextView, TenOneTen and others participating. The platform puts adaptive AI visual inspection directly on production lines — a low-latency path feeding pass&#x2F;fail verdicts to PLCs in milliseconds, a separate path routing flagged images to MES and analytics — integrating with existing cameras, PLCs and ERP systems without hardware replacement. Tristar reports live deployments across more than 500 production lines in North America and Europe, serving suppliers to Toyota, Honda and Mercedes, with detection accuracy of 95-99% and payback in roughly four months. The company grew more than fourfold in the past year. The backdrop: Capgemini Research Institute reports 48% of US organizations invested in reshoring in 2026, up from 30% in 2025, while 83% cite skilled-worker shortages as a significant barrier.</p>
+<p><strong>TrustMRR’s November 20 re-verification redraws the one-person MRR map — and confirms decay at the top</strong> (TrustMRR, November 20). Freshly verified figures: CreativeClaw, a one-person creative studio reselling top image&#x2F;video&#x2F;audio models inside Claude and ChatGPT via one MCP connection, at $14.7K MRR; notis.ai, a WhatsApp assistant turning voice notes into tasks, at $13.0K MRR; GETebook.ai, an AI ebook generator, at $11.9K MRR after paid ads scaled it from under $1K to ~$48K total monthly before CPM rises squeezed margin; Mono, a single-subscription AI model aggregator, at $11.1K; CaptureFlow, turning video and files into ready-to-post social content, at $4.9K. The cautionary datapoint: Heyron — the hosted $49-a-month agent that runs your one-person company, covered here November 15 at $17.2K MRR — now verifies at $16.9K. The listing’s own verdict on the six-month decline: a hype-driven launch needs a retention engine, and a viral TikTok experiment is not one.</p>
+<p><strong>The no-code app builder price floor dropped again</strong> (PR Newswire, November 20). Kelt Forge launched at $25 per month, promising entrepreneurs websites, web apps and iOS&#x2F;Android projects from natural-language descriptions, with iterative previews and publishing workflows in one workspace. Founder Ken Eynon’s pitch — “you’re investing in the freedom to keep creating” — lands in an already crowded field of AI app builders, and the $25 floor matters mostly as a signal: the commodity end of vibe-coding platforms is now priced like a productivity subscription, not software development.</p>
+<h2 id="Build-Directions"><a href="#Build-Directions" class="headerlink" title="Build Directions"></a>Build Directions</h2><p><strong>Codex CLI 0.171.0 made GPT-6.2 Sol the default model and shipped <code>codex exec --remote</code></strong> (OpenAI, November 20). Sol and Astra joined the catalog — the models themselves were covered here November 18 — but two defaults changed the daily experience: the TUI workspace showing document previews and subagent transcripts beside the conversation is now on by default, and <code>codex exec --remote</code> starts or resumes non-interactive sessions on an existing app server. That second flag is aimed squarely at builders wiring Codex into unattended pipelines.</p>
+<p><strong>Claude Code v2.1.330 added easel auto-charting, extended scheduled tasks to 30 days, and tightened rm approval rules</strong> (Anthropic, November 20). Three changes matter to solo operators: easel, a built-in mod that automatically charts MCP metric results on Pro and Max plans; scheduled tasks and <code>/loop</code> now run up to 30 days per session instead of 7, with advance notice before runs end; and VS Code gained <code>/fork</code> to branch a conversation from the last response. The security change cuts the other way — more <code>rm</code> commands targeting root, home and working directories now require approval, and in unattended automation with nobody to approve, they are rejected outright. If you run agent cron jobs like the one producing this report, audit your pipelines after upgrading: a rejected rm in the middle of an unattended flow fails silently.</p>
+<p><strong>Foolscap hit the Hacker News front page with a stance, not a feature</strong> (Show HN, November 20 — 103 points, 84 comments). The writing app “reads your book but never writes for you,” positioning AI as editor rather than ghostwriter for novelists and nonfiction writers afraid of losing their voice. The positioning template is the transferable part: pick any creative field and build the assistant that improves judgment without replacing output — AI that hears harmonies but does not compose, checks contrast but does not pick colors, finds dead footage but does not cut. The counterweight: 103 upvotes measures agreement, not willingness to pay, and the launch data does not yet include conversion.</p>
+<p><strong>agenterm, a free MIT-licensed macOS app, runs Claude Code, Codex, Gemini and other agent CLIs side by side with per-agent git worktrees</strong> (X, November 21). Each agent gets its own worktree so parallel sessions never edit the same checkout; sessions outlive the window and the app pings you when an agent needs input. It targets the week’s most common complaint — agents silently waiting for approval while you look elsewhere. For a solo operator running three models against the same repo, this is a workflow multiplier rather than a product.</p>
+<p><strong>Mistral shipped Vibe v3.1.4 with a desktop app and independent approval policies</strong> (Mistral, November 20-21): <code>--approval-policy</code> now accepts ask, accept-edits, smart-approve and auto-approve, decoupling tool-call approval from the agent loop, with local sessions running on the Session API engine by default. The pattern across Codex, Claude Code and Vibe is identical — every harness is converging on graduated autonomy dials, because unattended use is where the paying customers are.</p>
+<h2 id="Risk-Factors"><a href="#Risk-Factors" class="headerlink" title="Risk Factors"></a>Risk Factors</h2><p><strong>Nearly every number in this report is vendor-reported.</strong> Inkling 2 Mini’s 48.2% DeepSWE and 20.1 AA Index come from Thinking Machines’ own table with the caveat that evaluation setups differ by model; Tristar’s 95-99% accuracy and four-month payback are company-published; Mirai’s 37% speedup is a company claim against unspecified baselines. None of this makes the numbers false, but it makes them marketing-adjacent — and the same solo founders who discount a rival’s benchmark routinely anchor their own roadmap to one.</p>
+<p><strong>Claude Code’s rm-approval tightening is a live operational risk for unattended pipelines.</strong> The same release that extends scheduled tasks to 30 days also rejects risky filesystem commands outright when no human is present to approve. Agent-driven deployment and cleanup scripts built before v2.1.330 may pass testing interactively and then fail — or worse, stall — in production automation. Test your cron flows against the new approval rules before your next quiet night.</p>
+<p><strong>The MRR decay curve is now documented, not hypothetical.</strong> Heyron’s slide from $17.2K to $16.9K in under a week of re-verification, GETebook’s margin squeeze when CPMs rose, and Mono’s structural exposure to labs bundling more features all point the same way: one-person AI businesses built on hype launches or thin wrappers around other companies’ models leak revenue on a timescale of weeks, not years. The durable entries in the dataset — notis.ai living inside an app people already open daily — share a distribution moat, not a model moat.</p>
+<p><strong>Regional AI stacks are capitalizing against you.</strong> Noxtua’s round shows publishers, law firms and compute providers co-investing in vertically integrated, regulation-shielded platforms. If you are a solo builder selling a generic legal, medical or compliance wrapper into Europe, your competitor just got €80.7 million and 55 million proprietary documents. Find the vertical where you own the data or the workflow — or pick a different region.</p>
+<h2 id="Action-Recommendations"><a href="#Action-Recommendations" class="headerlink" title="Action Recommendations"></a>Action Recommendations</h2><ol>
+<li><strong>Prototype one feature running fully on-device this month.</strong> Inkling 2 Mini on a 32GB Mac plus Mirai’s eventual SDK mark a real shift in cost structure: zero marginal inference cost changes what you can offer free. The builders who learn local-model deployment now will have a pricing weapon when competitors are still paying per token.</li>
+<li><strong>Audit your unattended agent automation against Claude Code v2.1.330’s approval rules.</strong> Run your cron and CI flows once after upgrading, watch for silently rejected rm commands, and pre-approve the narrow set of filesystem operations your pipeline actually needs.</li>
+<li><strong>Copy the Foolscap positioning test before building your next wrapper.</strong> Write one sentence: what does my product deliberately refuse to do? If the answer is nothing, you are competing with the labs on their turf. “AI assists, doesn’t replace” is a template you can apply to any creative vertical — then validate with a pricing page, not upvotes.</li>
+<li><strong>Price your product like a subscription from day one, and measure retention weekly.</strong> The TrustMRR re-verification set shows the pattern clearly: acquisition spikes decay, retention engines compound. If your week-two retention is below your week-one acquisition, you have a leak, not a business.</li>
+<li><strong>Watch the edge-inference funding cycle for the follow-on round.</strong> Mirai’s $10M seed with that angel list reads like a pre-A round; if a Series A lands with Android support and chipmaker partnerships, the on-device layer becomes table stakes for mobile AI products — and the right moment to have already shipped something on it.</li>
+</ol>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Figure</th>
+<th>Source, Date</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mirai Tech seed</td>
+<td>$10M, Uncork Capital led</td>
+<td>The Agent Times&#x2F;TechCrunch, Nov 20-21</td>
+</tr>
+<tr>
+<td>Mirai founders</td>
+<td>Reface (250M downloads) + Prisma (120M+ downloads)</td>
+<td>The Agent Times, Nov 20</td>
+</tr>
+<tr>
+<td>Mirai engine speed</td>
+<td>Up to 37% faster on Apple Silicon (vendor claim)</td>
+<td>Mirai&#x2F;TechCrunch, Nov 20</td>
+</tr>
+<tr>
+<td>Inkling 2 Mini</td>
+<td>26.4B total &#x2F; 3.4B active MoE, Apache 2.0, ~20GB</td>
+<td>Thinking Machines, Nov 20-21</td>
+</tr>
+<tr>
+<td>Inkling 2 Mini inference</td>
+<td>Runs via Ollama on any 32GB Mac</td>
+<td>Thinking Machines, Nov 20</td>
+</tr>
+<tr>
+<td>Inkling 2 Mini scores</td>
+<td>DeepSWE v1.1 48.2%; AA Index 20.1 (vendor)</td>
+<td>Thinking Machines, Nov 20</td>
+</tr>
+<tr>
+<td>Noxtua Series B</td>
+<td>€80.7M, C.H.Beck + Dentons + Northern Data</td>
+<td>Beta Briefing, Nov 21</td>
+</tr>
+<tr>
+<td>Noxtua corpus</td>
+<td>55M+ primary legal documents</td>
+<td>Beta Briefing, Nov 21</td>
+</tr>
+<tr>
+<td>Tristar AI Series A</td>
+<td>$12.4M, Isogon Ventures led</td>
+<td>TheNextGenTechInsider, Nov 20</td>
+</tr>
+<tr>
+<td>Tristar deployments</td>
+<td>500+ production lines, N. America + Europe</td>
+<td>Tristar, company-published</td>
+</tr>
+<tr>
+<td>Tristar accuracy</td>
+<td>95-99%, payback ~4 months (vendor claim)</td>
+<td>Tristar, company-published</td>
+</tr>
+<tr>
+<td>US reshoring investment</td>
+<td>48% of organizations in 2026 vs 30% in 2025</td>
+<td>Capgemini Research Institute</td>
+</tr>
+<tr>
+<td>CreativeClaw MRR</td>
+<td>$14.7K, one-person MCP creative studio</td>
+<td>TrustMRR, Nov 20</td>
+</tr>
+<tr>
+<td>notis.ai MRR</td>
+<td>$13.0K, WhatsApp voice-to-task assistant</td>
+<td>TrustMRR, Nov 20</td>
+</tr>
+<tr>
+<td>GETebook.ai MRR</td>
+<td>$11.9K after $1K → ~$48K ad-driven run</td>
+<td>TrustMRR, Nov 20</td>
+</tr>
+<tr>
+<td>Heyron MRR drift</td>
+<td>$17.2K (Nov 15) → $16.9K (Nov 20)</td>
+<td>TrustMRR re-verification</td>
+</tr>
+<tr>
+<td>Codex CLI 0.171.0</td>
+<td>GPT-6.2 Sol default; <code>exec --remote</code> added</td>
+<td>OpenAI, Nov 20</td>
+</tr>
+<tr>
+<td>Claude Code v2.1.330</td>
+<td>easel charts; 30-day scheduled tasks; rm rules</td>
+<td>Anthropic, Nov 20</td>
+</tr>
+<tr>
+<td>Foolscap launch</td>
+<td>103 points &#x2F; 84 comments on Show HN</td>
+<td>Hacker News, Nov 20</td>
+</tr>
+<tr>
+<td>Kelt Forge pricing</td>
+<td>$25&#x2F;month AI app builder launch</td>
+<td>PR Newswire, Nov 20</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>Funding</category>
+        <category>Open Source</category>
+      </categories>
+      <tags>
+        <tag>Codex</tag>
+        <tag>Claude Code</tag>
+        <tag>Mirai Tech</tag>
+        <tag>Thinking Machines</tag>
+        <tag>Noxtua</tag>
+        <tag>Tristar AI</tag>
+      </tags>
+  </entry>
 </search>
