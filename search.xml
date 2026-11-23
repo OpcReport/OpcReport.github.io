@@ -129754,4 +129754,183 @@
         <tag>Agent Commerce</tag>
       </tags>
   </entry>
+  <entry>
+    <title>From $40 to $10K MRR: The One-Person MCP Playbook</title>
+    <url>/opc-report-2026-11-23-1035/</url>
+    <content><![CDATA[<p>Three payment-verified numbers surfaced this month, and together they are the cheapest business school you will find. A French solo founder spent about $40 to start a tool that just crossed $10,000 a month in recurring revenue — three and a half months after writing the first line of code. A small Hong Kong team built a screenwriting application entirely with Claude Code and grew it from $595 a month in April to $46,865 MRR in the fall, mostly on search traffic from people who had never heard of them. And a Canadian solo founder’s cross-posting utility doubled to roughly $48,500 MRR after his product got listed in the directories where ChatGPT and Claude go looking for tools. None of them raised money. Two of them pay essentially nothing for AI. Here is the playbook, piece by piece.</p>
+<h2 id="This-Week’s-Blueprint"><a href="#This-Week’s-Blueprint" class="headerlink" title="This Week’s Blueprint"></a>This Week’s Blueprint</h2><p><strong>PlugKit — Antoine Blanco, one person, about $40 invested, $10,046 verified MRR in month four</strong> (TrustMRR, revenue verified via Whop API, November 20; Agent Money List, November 9; profitable.app). PlugKit connects Instagram, TikTok, YouTube, Facebook, X and LinkedIn through each platform’s official authorization flow, then exposes the whole stack as an MCP server. The customer opens their own ChatGPT or Claude and tells it to edit a reel, schedule posts, reply to comments and DMs, or fire keyword-triggered DMs — the ManyChat trick — through PlugKit’s API. The design decision that makes the economics work: the AI runs on the customer’s existing subscription, so Blanco pays zero model costs. Timeline: founded August 2026, first revenue September 2026, $6,297 MRR by November 9, $10,046 MRR with 198 active subscriptions by November 20. Pricing is a 7-day trial, Creator at $49 a month for five accounts, Pro at $97 for thirty. Total startup cost, per Agent Money List’s estimate: a $10 domain, free hosting tiers, about $30 of API testing buffer — roughly $40, against a monthly run rate of $20 to $50. Acquisition is the honest weak spot: he has posted that Meta ads run about €269 per customer (X, November 20), supplemented by Google search, paid UGC creators and his own posts to an X audience of about 5,300. Even at that ad cost, a $49-to-$97 subscription pays back inside two months.</p>
+<p><strong>Laper — founder Zhao Chunxiang, a two-to-five-person Hong Kong team, $46,865 MRR, built “100% by Claude Code”</strong> (TrustMRR, Stripe-verified, November 3 sync; founder’s open letter on laper.ai; Haowenji revenue-dataset analysis, November 2026). Laper is a screenwriting workspace for people who need Hollywood-format scripts: it handles the formatting machinery — scene headings, action lines, transitions — and generates scene lists, character cards, locations and storyboards directly from the text, while a “script doctor” diagnoses structure problems and offers options. What it refuses to do is write the story. One user line on the site captures the positioning: “Other AI rushes to write for me; this one leaves the pen in my own hands.” The revenue curve is the most instructive part: $595 in April 2026, $5,136 in May, $27,108 in July, $46,079 in September, with 1,444 active subscriptions and $183,932 all-time by November. Roughly 40% of traffic is organic search, dominated by non-brand keywords like “ai screen writing” and “ai script writer” — no viral launch, just pages that match what desperate beginners type into Google. The site footer states plainly that the entire product was built with Claude Code. The team is now listed for sale on TrustMRR at around $1.47 million to $2 million — a reminder that build-then-sell is a live exit path at this size.</p>
+<p><strong>Post Bridge — Jack Friks, one person, $48,500 MRR and the connector-directory distribution unlock</strong> (TrustMRR, Stripe-verified, mid-November 2026; IndieFounder interview; Friks’ cost breakdowns on X). Friks launched Post Bridge in October 2024 — write once, publish everywhere — built in about a month, with a hard paywall and no free tier. It ground along at $6-7K MRR, plateaued for eight months, and turned when he stopped treating it as a dashboard and started treating it as an agent tool: a REST API, an npm CLI and an MCP server, listed in the Claude connector directory and as a ChatGPT plugin. When the ChatGPT listing went live in early September 2026, he logged consecutive record signup days against a prior average of about 50 per day. TrustMRR now reads about $48,500 MRR, roughly 1,600 active subscriptions and $582K all-time. His infrastructure — Supabase, Vercel, Trigger.dev, Unkey, the X API — costs under $2,000 a month, implying gross margins above 90%.</p>
+<h2 id="The-Tool-Stack"><a href="#The-Tool-Stack" class="headerlink" title="The Tool Stack"></a>The Tool Stack</h2><p>The three cases use almost the same stack, at near-zero cost until revenue shows up.</p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Tool</th>
+<th>Why this one</th>
+<th>Free tier &#x2F; actual cost</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Build</td>
+<td>Claude Code (Anthropic)</td>
+<td>Laper’s footer credits it for the entire product; one subscription replaces a dev team at MVP scale</td>
+<td>Pro from $20&#x2F;mo; Laper’s actual cost was one subscription</td>
+</tr>
+<tr>
+<td>Build</td>
+<td>Supabase + Vercel</td>
+<td>Post Bridge runs its whole backend on them; free tiers cover MVP traffic</td>
+<td>Free to start; part of Friks’ &lt;$2,000&#x2F;mo total infra</td>
+</tr>
+<tr>
+<td>Build</td>
+<td>Official platform APIs</td>
+<td>PlugKit uses Meta&#x2F;TikTok&#x2F;YouTube&#x2F;X&#x2F;LinkedIn’s authorized APIs — the only legal path for agent social tools</td>
+<td>Developer accounts free; access approval takes days</td>
+</tr>
+<tr>
+<td>Distribution</td>
+<td>AI connector directories</td>
+<td>Claude connector directory and ChatGPT plugin listings put your tool where agents search — Friks’ signup records came from this</td>
+<td>Free listing; an MCP server is a weekend of work</td>
+</tr>
+<tr>
+<td>Distribution</td>
+<td>Long-tail SEO pages</td>
+<td>40% of Laper’s traffic is non-brand search; competitors’ comparison pages convert best</td>
+<td>~$10&#x2F;yr domain + your time</td>
+</tr>
+<tr>
+<td>Marketing</td>
+<td>Build in public on X</td>
+<td>Blanco (5.3K followers) and Friks both credit their own posts; costs nothing but consistency</td>
+<td>$0</td>
+</tr>
+<tr>
+<td>Payments</td>
+<td>Whop</td>
+<td>PlugKit’s verification runs through Whop’s API; handles delivery and subscriptions for digital products</td>
+<td>Percentage of revenue, no upfront cost</td>
+</tr>
+<tr>
+<td>Payments</td>
+<td>Stripe</td>
+<td>The verification standard for Laper and Post Bridge; TrustMRR reads it directly</td>
+<td>2.9% + 30¢ per transaction</td>
+</tr>
+</tbody></table>
+<p>Note what is absent: no model bill. PlugKit borrows the customer’s ChatGPT subscription; Laper’s AI features are thin, diagnostic layers over its own product. If your cost structure includes heavy per-user inference, you have built a worse business than these examples.</p>
+<h2 id="0-to-1-Steps"><a href="#0-to-1-Steps" class="headerlink" title="0 to 1 Steps"></a>0 to 1 Steps</h2><p>Start with the five-question self-diagnosis — if you cannot answer all five, you do not have a product yet:</p>
+<ol>
+<li>What am I genuinely good at? (Friks: short-form video workflows; Zhao: screenwriting formats; Blanco: gluing APIs.)</li>
+<li>Which niche group has a painful, repeated task? (Agents posting to six platforms; screenwriters fighting format rules; creators drowning in comments.)</li>
+<li>Can AI make the work 10x cheaper or faster? (PlugKit: the customer’s own AI does the labor at $0 model cost to the founder.)</li>
+<li>What is broken about the existing solution? (Schedulers are bloated and expensive; ChatGPT&#x2F;Claude cannot legally touch social accounts without an authorized wrapper.)</li>
+<li>Can I ship an MVP in three months? (All three cases shipped in one to four weeks.)</li>
+</ol>
+<p>Then the 30-day sprint, with real numbers from the cases:</p>
+<ul>
+<li><strong>Week 1 — interviews and teardown.</strong> Talk to at least 10 people in your niche; read the official API docs of the platform you want to wrap (Blanco spent roughly a week here; developer approval is the bottleneck, so apply early). Cost: $0.</li>
+<li><strong>Week 2 — build the MVP with AI.</strong> One Claude Code or Cursor subscription ($20), Supabase and Vercel free tiers, one platform integrated end-to-end — not six. PlugKit started narrow; breadth came after revenue. Cost: ~$20.</li>
+<li><strong>Week 3 — seed users.</strong> Post the build publicly on X, submit to Product Hunt or a launch directory, and list the MCP server in the Claude connector directory and ChatGPT plugin store the moment it exists. Friks’ record signup days came from a listing, not a viral post. Cost: $0.</li>
+<li><strong>Week 4 — charge from day one.</strong> All three cases had a paywall early; Post Bridge never had a free tier. Target one paying customer, even at $29. Watch your real cost per acquisition — if you run ads and it exceeds one month of subscription revenue (PlugKit’s €269 is the warning), switch to content and directories. Cost: ad budget optional; skip it at first.</li>
+</ul>
+<p><strong>Your first step this week:</strong> pick one platform you already use daily, read its developer API documentation for one hour, and write down three tasks an AI agent could do through it that the native app cannot. That list is your product spec — it costs nothing and it kills bad ideas before they cost you anything.</p>
+<h2 id="Micro-Opportunities"><a href="#Micro-Opportunities" class="headerlink" title="Micro-Opportunities"></a>Micro-Opportunities</h2><ol>
+<li><strong>An MCP wrapper for one vertical platform’s official API.</strong> Target: professionals wasting hours on scheduling, CRM updates or inbox triage. Entry: wrap a single platform’s authorized API behind MCP so the customer’s own ChatGPT&#x2F;Claude does the work. Starting cost: ~$40, following PlugKit’s recipe exactly.</li>
+<li><strong>Non-brand SEO tool pages for a craft you know.</strong> Target: screenwriters, podcasters, newsletter writers searching “ai script writer”-style phrases. Entry: a format-fixing tool with free tier and $20&#x2F;mo paid plan, in the Laper shape — assist, never replace. Starting cost: ~$100 and eight weeks of patience.</li>
+<li><strong>Connector-directory distribution for a product you already have.</strong> Target: your own existing SaaS. Entry: add a REST endpoint and MCP server, submit to the Claude connector directory and ChatGPT plugin store. Starting cost: $0 and a weekend — Friks’ doubling is the size of the prize.</li>
+<li><strong>Per-credit video generation without a subscription.</strong> Target: short-form creators who want one Veo or Sora clip, not a monthly plan. Entry: credit packs over a model API (comparable operators sell a Veo 3.1 clip from $0.55); model launches create recurring demand spikes. Starting cost: ~$100 plus API spend.</li>
+<li><strong>Failure-keyword commerce.</strong> Target: people with a broken thing — the eSIM operator ranked for “esim can no longer be added” and pulled 50%+ of traffic from search. Entry: find the error message your niche types in desperation, sell the fix. Starting cost: ~$50.</li>
+</ol>
+<h2 id="Signals-Worth-Knowing"><a href="#Signals-Worth-Knowing" class="headerlink" title="Signals Worth Knowing"></a>Signals Worth Knowing</h2><p><strong>The Gemini API added Tool Retrieval in preview (Google, November 19):</strong> agents now load tool schemas on demand instead of carrying every tool’s full definition in each prompt, cutting input tokens and latency as tool libraries grow. <strong>What it means for you:</strong> agent-facing tools — the PlugKit and Post Bridge category — just got cheaper to run and easier to scale; if your product exposes tools to agents, being well-described and on-demand-loaded is now a competitive requirement, not a nice-to-have.</p>
+<p><strong>The free-tier floor dropped again this week (perq.sh tracker, verified November 22):</strong> Groq’s free plan, Gemini API’s rate-limited free tier, OpenRouter’s free model variants at 50 requests a day, and Cloudflare Workers AI at 10,000 Neurons per day all remained live, with Windsurf adding a $0 plan on November 22. <strong>What it means for you:</strong> your MVP’s model bill can be literally $0 until traction arrives — the only unavoidable costs are a domain and your time, which is exactly how three people on this page started for under $300 combined.</p>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Figure</th>
+<th>Source, Date</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PlugKit startup cost</td>
+<td>~$40 (domain + free tiers + API buffer)</td>
+<td>Agent Money List est., Nov 2026</td>
+</tr>
+<tr>
+<td>PlugKit MRR</td>
+<td>$6,297 (Nov 9) → $10,046, 198 subs (Nov 20)</td>
+<td>TrustMRR, Whop-verified</td>
+</tr>
+<tr>
+<td>PlugKit timeline</td>
+<td>Founded Aug 2026; first revenue Sep 2026</td>
+<td>TrustMRR</td>
+</tr>
+<tr>
+<td>PlugKit acquisition cost</td>
+<td>~€269 per customer via Meta ads</td>
+<td>Founder on X, Nov 20, 2026</td>
+</tr>
+<tr>
+<td>Laper monthly revenue</td>
+<td>$595 (Apr) → $5,136 (May) → $27,108 (Jul) → $46,079 (Sep)</td>
+<td>TrustMRR Stripe data via Haowenji</td>
+</tr>
+<tr>
+<td>Laper MRR &#x2F; subs</td>
+<td>$46,865 MRR, 1,444 subscriptions</td>
+<td>TrustMRR, Nov 2026</td>
+</tr>
+<tr>
+<td>Laper traffic mix</td>
+<td>~40% organic non-brand search; ~45% from China</td>
+<td>Similarweb analysis, Nov 2026</td>
+</tr>
+<tr>
+<td>Laper build stack</td>
+<td>“100% Built by Claude Code” (site footer)</td>
+<td>laper.ai, Nov 2026</td>
+</tr>
+<tr>
+<td>Post Bridge MRR</td>
+<td>~$48,500, 1,600 subs, $582K all-time</td>
+<td>TrustMRR Stripe-verified, mid-Nov 2026</td>
+</tr>
+<tr>
+<td>Post Bridge infra cost</td>
+<td>&lt;$2,000&#x2F;mo (Supabase, Vercel, Trigger.dev, Unkey)</td>
+<td>Founder cost breakdown on X, 2026</td>
+</tr>
+<tr>
+<td>Post Bridge unlock</td>
+<td>ChatGPT plugin listing (Sep 2026) → record signup days</td>
+<td>IndieFounder interview, Nov 2026</td>
+</tr>
+<tr>
+<td>Free model tiers live</td>
+<td>Groq, Gemini, OpenRouter, Cloudflare Workers AI</td>
+<td>perq.sh, verified Nov 22, 2026</td>
+</tr>
+</tbody></table>
+<p>All revenue figures are payment-processor-verified via TrustMRR unless marked as estimates; verify current numbers before making decisions, since MRR moves week to week.</p>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>Solo Founder</category>
+        <category>One-Person-Company</category>
+      </categories>
+      <tags>
+        <tag>Indie-Hacker</tag>
+        <tag>Bootstrapped</tag>
+        <tag>MCP</tag>
+        <tag>SEO</tag>
+        <tag>Copy-This</tag>
+        <tag>PlugKit</tag>
+        <tag>Laper</tag>
+        <tag>Post Bridge</tag>
+      </tags>
+  </entry>
 </search>
