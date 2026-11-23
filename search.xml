@@ -129933,4 +129933,247 @@
         <tag>Post Bridge</tag>
       </tags>
   </entry>
+  <entry>
+    <title>$39K in Three Weeks: A Solo Founder&#39;s Pay-Once Dev Tool Play</title>
+    <url>/opc-report-2026-11-23-1320/</url>
+    <content><![CDATA[<p>Three developers, three products, and one shared decision: none of them bet on subscriptions. Lorenzo Cabra turned a library of interactive React components into roughly $39,000 within about three weeks of opening paid access — most of it from €129 one-time purchases. A solo engineer in India has quietly collected about $106,000 over four years selling chip-design interview challenges, and his monthly membership sold exactly zero. And a Toronto founder building a to-do app publishes his $8 MRR next to a $59.99 lifetime plan, because honest numbers are part of the product. If you can build something developers want to copy-paste, the pay-once model may be the fastest cash path a one-person company has right now.</p>
+<h2 id="This-Week’s-Playbook"><a href="#This-Week’s-Playbook" class="headerlink" title="This Week’s Playbook"></a>This Week’s Playbook</h2><h3 id="Bencho-—-interactive-React-components-paid-in-three-weeks"><a href="#Bencho-—-interactive-React-components-paid-in-three-weeks" class="headerlink" title="Bencho — interactive React components, paid in three weeks"></a>Bencho — interactive React components, paid in three weeks</h3><p><strong>Who:</strong> Lorenzo Cabra, a solo front-end developer, with 7,170 followers on X and an open GitHub repo.</p>
+<p><strong>What:</strong> Bencho (bencho.dev) is a library of 160+ interactive React components and micro-interactions — hover states, drag gestures, typing effects, loading patterns — that you can explore live in the browser, tweak, and copy straight into your project. There is also a library of 140+ UI sounds and an MCP server, so AI coding assistants can search the library and insert blocks into your codebase.</p>
+<p><strong>The numbers (Dodo Payments verified, Nov 22, 2026):</strong> $39,251 all-time revenue, $23,008 in the last 30 days (up 47% over the previous period), paid access opened roughly three weeks ago. The subscription part is almost an afterthought: 54 active subscriptions and $432 MRR. The rest — the overwhelming majority — is one-time money. Reported profit margin: 80%.</p>
+<p><strong>Pricing:</strong> Free tier with 47 blocks and 24 sounds; Pro at €99&#x2F;year; “Forever” at €129 once, no renewal, future content included. The lifetime tier is doing the heavy lifting.</p>
+<p><strong>Distribution:</strong> Content marketing and SEO on a site pulling about 300K page views a month, plus X and LinkedIn posts, plus the GitHub repo as a trust anchor. Domain rating 31 — built, not bought.</p>
+<p><strong>Stack:</strong> Next.js, TypeScript, Supabase, Cloudflare, Resend, Dodo Payments. Cloud-tier hosting costs are negligible; the 80% margin tells you the total bill.</p>
+<p><strong>Timeline:</strong> Audience and free library first, monetization last — the component library accumulated page views and followers for months before the paywall went up, and then converted in weeks.</p>
+<h3 id="QuickSilicon-—-chip-design-interview-challenges-106K-over-four-years"><a href="#QuickSilicon-—-chip-design-interview-challenges-106K-over-four-years" class="headerlink" title="QuickSilicon — chip design interview challenges, $106K over four years"></a>QuickSilicon — chip design interview challenges, $106K over four years</h3><p><strong>Who:</strong> A solo engineer in India who runs QuickSilicon, a platform where engineers practice real chip-design problems — RTL design and verification challenges — and get back actual synthesis and timing reports, not a pass&#x2F;fail quiz.</p>
+<p><strong>The numbers (Razorpay verified):</strong> roughly $106,000 cumulative over about four years, from around 8,000 engineers who have used the platform. Notably, the founder discloses that after launching a monthly membership, the payment records show zero subscription revenue — engineers buy individual challenge packs and pay-per-use instead, and the recurring plan just sits there.</p>
+<p><strong>The lesson:</strong> this is the mirror image of the Bencho story, from a completely different niche, arriving at the same conclusion. A highly technical audience with a hard problem (cracking RTL interview loops at places like Tenstorrent, whose engineers now publish PPA challenges on the platform) will pay for concrete, verifiable practice — but they will not subscribe to it.</p>
+<h3 id="Task-Pocket-—-what-honest-numbers-look-like"><a href="#Task-Pocket-—-what-honest-numbers-look-like" class="headerlink" title="Task Pocket — what honest numbers look like"></a>Task Pocket — what honest numbers look like</h3><p><strong>Who:</strong> Bohdan Stefaniuk, solo founder in Toronto, founded April 2026.</p>
+<p><strong>What:</strong> A deliberately small to-do app — inbox, today, upcoming, projects grouped into areas, natural-language parsing (“water the plants every other Saturday at 10am”), browser plus offline iPhone app. No AI inside. Instead: a public API and an MCP server so you can attach your own AI.</p>
+<p><strong>The numbers (Stripe verified, Nov 21, 2026):</strong> $193 all-time, $8 MRR, 2 active subscriptions. Pricing: free plan, $3.99&#x2F;month, $34.99&#x2F;year, or $59.99 once.</p>
+<p><strong>Why it is in here:</strong> because most pay-once experiments do not look like Bencho’s first three weeks, and the platforms now verify that publicly. Task Pocket’s listing — free-tier generous, lifetime option available, ASO and Product Hunt and Hacker News as channels, DR 12 — is what the median first-year dev tool actually earns. The model is the same as Bencho’s; the execution surface is smaller. Put both on your wall: one is the ceiling, the other is the floor, and both are true at the same time.</p>
+<h2 id="How-to-Copy-This"><a href="#How-to-Copy-This" class="headerlink" title="How to Copy This"></a>How to Copy This</h2><p>The strongest replication target here is Bencho, because every input is observable: the site, the pricing, the repo, the free-tier limits.</p>
+<ol>
+<li><strong>Pick a category where developers judge quality in 10 seconds.</strong> Bencho chose UI micro-interactions: you see the component animating, you know instantly if it is good. QuickSilicon chose interview problems with real synthesis reports. Choose a niche where your artifact <em>demonstrates itself</em>.</li>
+<li><strong>Build the free layer as the marketing.</strong> 47 free blocks out of 160+. Free tier limits are the distribution budget — generous enough to be shared, tight enough that heavy users pay. Cost: $0 beyond your time.</li>
+<li><strong>Ship “copy-paste” as the core feature, not AI.</strong> Every block is live, tweakable, and paste-ready. The MCP server rides the existing AI-assistant wave without paying for a model — the user brings their own subscription.</li>
+<li><strong>Price the lifetime plan higher than feels comfortable.</strong> €129 once versus €99&#x2F;year means the lifetime plan pays for itself in 16 months — and most buyers in the first wave are exactly the people who will never churn into it. The €129 one-timer is where the three weeks of revenue came from.</li>
+<li><strong>Route billing through an indie-first MoR.</strong> Bencho uses Dodo Payments, Task Pocket uses Stripe, QuickSilicon uses Razorpay. Pick the one that covers your customers’ countries and handles tax, so a €129 purchase from anywhere is one checkout away.</li>
+<li><strong>Publish the numbers.</strong> Verified revenue dashboards are themselves a marketing channel now — the TrustMRR&#x2F;AI Receipts ecosystem links back, and “payment-verified” beats “7-figure founder” for trust.</li>
+</ol>
+<p><strong>Costs to expect:</strong> domain + hosting under $20&#x2F;month on Cloudflare free tiers; Supabase free tier until you have real traffic; payment platform fees 3-5% + payout costs. Total pre-revenue spend: well under $100 plus your evenings.</p>
+<p><strong>Pitfalls:</strong> the component library took months of free publishing before any revenue — if you paywall a library nobody has bookmarked yet, nothing converts. And the license matters: Bencho allows use in commercial projects but forbids reselling the blocks as-is; write yours before launch, not after the first scraper.</p>
+<p><strong>Your first step this week:</strong> open a file and list 20 things developers in one narrow niche copy-paste by hand — SQL snippets, regex patterns, chart configs, CSS layouts, test fixtures. Circle the three you know cold. That list is your component library; next week you build the first ten free ones in public.</p>
+<h2 id="Micro-Opportunities"><a href="#Micro-Opportunities" class="headerlink" title="Micro-Opportunities"></a>Micro-Opportunities</h2><ul>
+<li><strong>Copy-paste libraries for non-JS stacks.</strong> Bencho owns React interactions. Nobody owns the equivalent for Swift&#x2F;SwiftUI micro-interactions, Flutter animations, or shadcn-compatible chart configs. Same pricing: free 30, €99&#x2F;year, €129 lifetime. Starting cost: a weekend and a $12 domain.</li>
+<li><strong>Interview-prep platforms for trades with no simulator.</strong> QuickSilicon did chip design because no one else gave real synthesis feedback. SQL performance profiling, Kubernetes troubleshooting with real clusters, embedded C debugging in-browser — every one has candidates who would pay $20 per graded attempt. Start with one challenge type.</li>
+<li><strong>UI sound packs with permissive licensing.</strong> 140+ interface sounds was enough to be a paid feature, not a product. Sourcing and licensing sound libraries for app UIs is a sub-$100 side project with a near-zero marginal cost.</li>
+<li><strong>MCP servers for existing content libraries.</strong> Any searchable asset collection — components, sounds, snippets, templates — becomes AI-assistant-distributable with a thin MCP wrapper. If you already own the content, the wrapper is a weekend.</li>
+<li><strong>Lifetime-deal audits for solo founders.</strong> The €129-forever math (16-month crossover) generalizes to any subscription product. A small calculator-plus-template site for indie makers pricing their first product: free tool, paid spreadsheet, pay-once pricing modeled on itself.</li>
+</ul>
+<h2 id="Signals-Worth-Knowing"><a href="#Signals-Worth-Knowing" class="headerlink" title="Signals Worth Knowing"></a>Signals Worth Knowing</h2><ul>
+<li><strong>Indie-first payment rails are now verification infrastructure, not just checkout.</strong> Dodo Payments verified Bencho’s $39K, Razorpay verified QuickSilicon’s $106K, RevenueCat verified the app cases, and TrustMRR syndicates all of them into leaderboards that journalists and aggregators quote. What it means for you: pick a billing platform with a public verification story early — the dashboard becomes a distribution channel that no payment fee schedule can price.</li>
+<li><strong>The MCP wrapper is becoming the new freemium hook.</strong> Bencho gates its MCP server behind Pro; Task Pocket ships one for a $8-MRR app; CallCloud added one so AI agents can dial. The pattern costs a weekend and rides other people’s AI subscriptions. What it means for you: if your product has a searchable catalog, an MCP endpoint is the cheapest new distribution surface of 2026 — and “bring your own AI” keeps your costs at zero.</li>
+</ul>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Bencho</th>
+<th>QuickSilicon</th>
+<th>Task Pocket</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Founder</td>
+<td>Lorenzo Cabra (solo)</td>
+<td>Solo engineer, India (unnamed)</td>
+<td>Bohdan Stefaniuk (solo)</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>Interactive React component library</td>
+<td>Chip-design interview challenges</td>
+<td>Minimalist to-do app</td>
+</tr>
+<tr>
+<td>Verified revenue</td>
+<td>$39,251 all-time &#x2F; $23,008 last 30d (+47%)</td>
+<td>~$106K over 4 years</td>
+<td>$193 all-time &#x2F; $8 MRR</td>
+</tr>
+<tr>
+<td>Subscriptions</td>
+<td>54 ($432 MRR)</td>
+<td>0 on the monthly plan</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Pricing</td>
+<td>Free &#x2F; €99 yr &#x2F; €129 once</td>
+<td>Per-challenge packs</td>
+<td>Free &#x2F; $3.99 mo &#x2F; $59.99 once</td>
+</tr>
+<tr>
+<td>Main channels</td>
+<td>SEO (300K pv&#x2F;mo), X, GitHub</td>
+<td>Direct + platform mentions</td>
+<td>ASO, Product Hunt, HN</td>
+</tr>
+<tr>
+<td>Stack</td>
+<td>Next.js, Supabase, Cloudflare, Dodo</td>
+<td>Razorpay, browser synthesis</td>
+<td>React Native, C#, Stripe</td>
+</tr>
+<tr>
+<td>Timeline</td>
+<td>Months free → ~3 weeks paid → $39K</td>
+<td>4 years cumulative</td>
+<td>April 2026 → Nov 2026</td>
+</tr>
+<tr>
+<td>Verification</td>
+<td>Dodo Payments, Nov 22, 2026</td>
+<td>Razorpay</td>
+<td>Stripe, Nov 21, 2026</td>
+</tr>
+</tbody></table>
+<p>Sources: TrustMRR listings for Bencho and Task Pocket (Nov 21-22, 2026), The AI Receipts one-person leaderboard (Nov 20-22, 2026), bencho.dev pricing and docs, The Digital Electronics Blog (FIFO series referencing QuickSilicon PPA challenges).</p>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>Solo Founder</category>
+        <category>One-Person-Company</category>
+        <category>Dev Tools</category>
+      </categories>
+      <tags>
+        <tag>Indie-Hacker</tag>
+        <tag>Bootstrapped</tag>
+        <tag>Dev-Tools</tag>
+        <tag>Pricing</tag>
+        <tag>Bencho</tag>
+        <tag>Pay-Once</tag>
+        <tag>QuickSilicon</tag>
+        <tag>Task-Pocket</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>One Person, $16.5K a Month: The Vertical B2B Tool Play</title>
+    <url>/opc-report-2026-11-23-1350/</url>
+    <content><![CDATA[<p>The most reliable solo-founder revenue on the verified boards this week is not an AI product — it is a dialer. CallCloud, run by one person since October 2022, just verified about $16,500 in 30 days from 183 subscriptions by doing two unglamorous things: undercutting every published price in its category, and showing up in the places where AI assistants answer “what’s the cheapest parallel dialer.” Alongside it, a three-month-old video rewriting tool is compounding at 274% a month, and two Estonian twins sell bar trivia nights to venues at €199 a month. Different trades, same pattern: pick a workflow a specific business already does daily, make one step measurably better, price per seat or per venue.</p>
+<h2 id="This-Week’s-Playbook"><a href="#This-Week’s-Playbook" class="headerlink" title="This Week’s Playbook"></a>This Week’s Playbook</h2><h3 id="CallCloud-—-a-solo-built-dialer-that-sales-teams-pay-for-every-month"><a href="#CallCloud-—-a-solo-built-dialer-that-sales-teams-pay-for-every-month" class="headerlink" title="CallCloud — a solo-built dialer that sales teams pay for every month"></a>CallCloud — a solo-built dialer that sales teams pay for every month</h3><p><strong>Who:</strong> Richard Tattory, one person, United States. Founded October 2022 — four years in, no team page, no funding round.</p>
+<p><strong>What:</strong> CallCloud (callcloud.app) is a browser-based parallel dialer for outbound sales teams. Reps dial up to five prospects at once and connect the instant someone picks up — “zero lag” is the pitch. Unlimited US and Canada calling, local numbers included, AI call notes and an AI score on every call, native sync with thirteen CRMs and sequencers (HubSpot, Salesforce, GoHighLevel, Pipedrive, Apollo, Outreach, Close, Attio and more), plus iPhone and iPad apps. Over 930,000 calls dialed in the last 30 days.</p>
+<p><strong>The numbers (Stripe verified):</strong> $280,304 all-time revenue; 183 active subscriptions; The AI Receipts’ 30-day read on November 20 came to $16.5K, which matches the seat math — 183 seats at roughly $60-$125 each. TrustMRR’s MRR field reads $33,022 as of November 22; take the conservative $16.5K&#x2F;month figure as the floor.</p>
+<p><strong>Pricing — the actual weapon:</strong> Power Dialer $60&#x2F;seat&#x2F;month, Parallel Dialer $125&#x2F;seat&#x2F;month (up to five lines), CallCloud+ add-on +$40&#x2F;seat. Month-to-month, no annual contract, free three-day trial with no card. Compare the category: Trellus publishes $99.99-$149.99 per seat, WAVV $149, PhoneBurner $165, Salesfinity $299. CallCloud prints a price 40-60% below all of them and lets teams walk away monthly.</p>
+<p><strong>Distribution:</strong> LinkedIn posts and SEO, plus — and this is the 2026 part — AI search. The founder’s own reporting and The AI Receipts’ case study both point to ChatGPT-style answers as a live lead channel: when a sales manager asks an assistant to recommend a budget parallel dialer, CallCloud’s transparent published pricing makes it the answer the model can actually quote.</p>
+<p><strong>Stack:</strong> published as Stripe plus calling infrastructure. The plumbing — carrier compliance, spam ratings, CRM write-back — took years, and that unsexy depth is the moat.</p>
+<p><strong>Timeline:</strong> four years from launch to $280K cumulative, with the AI-notes layer and MCP-era integrations added on top of a working dialer — the AI rides the tool, not the reverse.</p>
+<h3 id="Aisma-—-three-months-in-274-month-over-month"><a href="#Aisma-—-three-months-in-274-month-over-month" class="headerlink" title="Aisma — three months in, +274% month over month"></a>Aisma — three months in, +274% month over month</h3><p><strong>Who:</strong> A solo founder (TrustMRR listing: Aisma Lab), product at aisma.</p>
+<p><strong>What:</strong> a one-sentence rewrite editor for footage you have already shot — upload a finished video, change what it says, and the tool re-renders speech to match. Aimed at creators and small businesses who cannot afford a reshoot.</p>
+<p><strong>The numbers (Stripe verified):</strong> $4,993 cumulative in about three months; last 30 days $3,928, up 274% over the previous period; MRR $1,948; 35 subscriptions. Small in absolute terms, but the curve is the point: this is what the month-three slope looks like for a tool that solves an expensive, emotionally urgent problem (reshoots cost money nobody budgeted).</p>
+<p><strong>The lesson:</strong> you do not need $16.5K a month for the pattern to work. One painful step in someone’s workflow, one AI capability wrapped around it, priced as a work tool — and the verified leaderboard becomes your progress bar.</p>
+<h3 id="Quizado-—-selling-the-event-not-the-software"><a href="#Quizado-—-selling-the-event-not-the-software" class="headerlink" title="Quizado — selling the event, not the software"></a>Quizado — selling the event, not the software</h3><p><strong>Who:</strong> Twin brothers in Estonia (team of two), running Quizado.</p>
+<p><strong>What:</strong> they took the American bar trivia night — normally an expensive third-party booking — and turned it into a subscription: a hosted quiz platform that venues run themselves.</p>
+<p><strong>The numbers:</strong> roughly $3,989 in the last 30 days from 27 paying venues, at €199&#x2F;month list price, with 5,000 hosts and users across 150+ countries around the product.</p>
+<p><strong>The lesson:</strong> B2B pricing does not have to follow SaaS seat conventions. A venue that books one trivia night pays a host hundreds of dollars; €199&#x2F;month to run unlimited nights in-house is an easy yes. Same logic applies to every “service you can productize” — wedding DJ packs, gym class plans, market stall inventory sheets.</p>
+<h2 id="How-to-Copy-This"><a href="#How-to-Copy-This" class="headerlink" title="How to Copy This"></a>How to Copy This</h2><p>CallCloud is the hardest of the three to replicate outright (calling infrastructure takes years), so copy the <em>pricing and distribution</em> decisions instead, and pair them with a product you can build in a month.</p>
+<ol>
+<li><strong>Choose a workflow with a daily-use tool and a published-price cartel.</strong> Dialers, schedulers, transcription, invoicing: incumbents hide pricing or charge $150+. Find a category where “request a demo” is the norm — that is your opening. Cost of research: one afternoon.</li>
+<li><strong>Print your price.</strong> Every comparison site, and increasingly every AI assistant, can only recommend products with public prices. Month-to-month beats annual contracts for small teams; CallCloud’s no-commitment stance is a conversion feature, not lost revenue.</li>
+<li><strong>Price 40-60% below the cheapest named incumbent.</strong> You have no sales team, no office, no support staff to fund. $60 against $99.99 is the entire pitch in one number.</li>
+<li><strong>Add AI where it saves the user’s time, not as the product.</strong> AI call notes and call scores are worth $40&#x2F;seat on top of a dialer because they replace post-call admin. The tool still works if the AI is mediocre — that is the difference between a feature and a dependency.</li>
+<li><strong>Be quotable.</strong> Transparent pricing pages, a short trial with no card, and clear “for insurance agencies &#x2F; SDR teams &#x2F; recruiters” landing pages give both human referrers and AI models exactly what they need to name you. CallCloud’s leads come from LinkedIn <em>and</em> from assistants doing the comparison for buyers.</li>
+<li><strong>Start at Aisma’s scale and publish the slope.</strong> $4K months with +274% growth, verified, is enough to attract attention, affiliates, and eventually acquisition interest. Verification is the flywheel: Stripe or an MoR like Dodo feeds TrustMRR, which feeds the aggregators, which feed the AI answers.</li>
+</ol>
+<p><strong>Costs to expect:</strong> a web product on Supabase&#x2F;Vercel free tiers plus Stripe (2.9% + 30¢) starts near zero. Avoid categories with per-use infrastructure (telephony, SMS, video streaming) for your first product — that is where the years of plumbing live.</p>
+<p><strong>Pitfalls:</strong> per-seat pricing with no annual plan attracts churn-prone customers — watch net revenue, not gross signups. And do not let the AI layer become the moat: CallCloud’s defense is four years of CRM integrations and carrier plumbing, not prompts.</p>
+<p><strong>Your first step this week:</strong> pick one business type you can name five real examples of (dental clinics, real-estate photographers, cafés with trivia nights). Call or message two of them and ask what repetitive tool they pay for that annoys them and what it costs. One real quote from a real buyer is worth more than a month of idea lists.</p>
+<h2 id="Micro-Opportunities"><a href="#Micro-Opportunities" class="headerlink" title="Micro-Opportunities"></a>Micro-Opportunities</h2><ul>
+<li><strong>Undercut-one-product audits.</strong> Pick any crowded B2B category with quote-only pricing (employee scheduling, field service dispatch, proposal software). A single-product clone at a published 50% lower seat price, month-to-month, is a viable solo wedge — the category demand already exists.</li>
+<li><strong>Reshoot insurance for content teams.</strong> Aisma’s wedge: video is expensive to redo. The adjacent openings — subtitle re-timing, product-shot relighting, voice replacement for compliance updates — all monetize “already-shot footage” and cost nothing to demo on portfolios.</li>
+<li><strong>Venue-priced event kits.</strong> Quizado’s €199&#x2F;month works anywhere a venue currently books a human: quiz nights, painting classes, kids’ party hosts. One template product, one venue type, per-venue pricing instead of per-seat.</li>
+<li><strong>AI-notes layers for vertical CRMs.</strong> CallCloud charges +$40&#x2F;seat for call notes. Every vertical tool with an interaction log (property management, tutoring centers, mobile detailing) lacks one. Sell the notes layer to the existing tool’s users instead of competing with the tool.</li>
+<li><strong>“Quotable pricing” consulting for solo founders.</strong> Most indie B2B products still hide prices. A checklist-plus-service that rewrites a pricing page to be AI-assistant-friendly (published rates, no-card trial, comparison-page copy) charges $300-500 a project and teaches you the channel while you sell it.</li>
+</ul>
+<h2 id="Signals-Worth-Knowing"><a href="#Signals-Worth-Knowing" class="headerlink" title="Signals Worth Knowing"></a>Signals Worth Knowing</h2><ul>
+<li><strong>AI search is now a measurable B2B lead channel with a documented case.</strong> CallCloud’s founder attributes live leads to ChatGPT-style answers naming his product, because transparent published pricing makes it quotable. What it means for you: your pricing page is now an SEO asset in a second search ecosystem — publish numbers, keep trial friction at zero, and structure landing pages by buyer type so assistants can cite you.</li>
+<li><strong>The seat-price floor in sales tooling keeps dropping while incumbents quote-only.</strong> CallCloud at $60&#x2F;seat month-to-month against PhoneBurner’s $165 and Salesfinity’s $299 shows solo operators can sustainably price below every published competitor and still clear five figures a month. What it means for you: when choosing a niche, prefer ones where the incumbent’s price is not a price — the unquoted category is the underpriced category.</li>
+</ul>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>CallCloud</th>
+<th>Aisma</th>
+<th>Quizado</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Team</td>
+<td>Richard Tattory (solo)</td>
+<td>Solo founder</td>
+<td>Estonian twins (2)</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>Parallel sales dialer + AI notes</td>
+<td>One-sentence video rewrite editor</td>
+<td>Bar trivia night subscription</td>
+</tr>
+<tr>
+<td>Revenue (verified)</td>
+<td>$280K all-time; ~$16.5K&#x2F;30d</td>
+<td>$4,993 cumulative; $3,928 last 30d (+274%)</td>
+<td>~$3,989 last 30d</td>
+</tr>
+<tr>
+<td>Subscriptions</td>
+<td>183 seats</td>
+<td>35 ($1,948 MRR)</td>
+<td>27 venues</td>
+</tr>
+<tr>
+<td>Pricing</td>
+<td>$60&#x2F;$125 per seat, +$40 AI, monthly</td>
+<td>Subscription (MRR $1,948)</td>
+<td>€199&#x2F;month per venue</td>
+</tr>
+<tr>
+<td>Main channels</td>
+<td>LinkedIn, SEO, AI search</td>
+<td>Organic, product listings</td>
+<td>Direct venue sales, 150+ countries</td>
+</tr>
+<tr>
+<td>Started</td>
+<td>October 2022</td>
+<td>~3 months ago</td>
+<td>Months into scaling (5,000 hosts)</td>
+</tr>
+<tr>
+<td>Verification</td>
+<td>Stripe (Nov 22, 2026)</td>
+<td>Stripe</td>
+<td>TrustMRR listing</td>
+</tr>
+</tbody></table>
+<p>Sources: TrustMRR listings for CallCloud (Nov 22, 2026) and Aisma Lab, The AI Receipts one-person leaderboard case studies (Nov 20, 2026), Trellus pricing comparison guide (Nov 11-17, 2026) for incumbent per-seat prices, TrustMRR listing for Quizado.</p>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>Solo Founder</category>
+        <category>One-Person-Company</category>
+        <category>B2B</category>
+      </categories>
+      <tags>
+        <tag>SaaS</tag>
+        <tag>AI-Search</tag>
+        <tag>Pricing</tag>
+        <tag>CallCloud</tag>
+        <tag>Aisma</tag>
+        <tag>Quizado</tag>
+        <tag>B2B</tag>
+        <tag>LinkedIn</tag>
+      </tags>
+  </entry>
 </search>
