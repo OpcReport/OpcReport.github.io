@@ -130176,4 +130176,204 @@
         <tag>LinkedIn</tag>
       </tags>
   </entry>
+  <entry>
+    <title>From $0 to $6K MRR in 90 Days: The Solo Agent Skills Play</title>
+    <url>/opc-report-2026-11-24-0925/</url>
+    <content><![CDATA[<p>Three payment-verified numbers landed this week, and each one kills an excuse. A Chinese solo founder sells instruction packs for AI coding agents and just crossed $6,085 MRR — roughly triple what he reported six weeks ago, from a product that cost nothing to produce. A UK founder with no disclosed coding background built a home-renovation visualization app that pulls in $8,179 MRR from exactly one acquisition channel: TikTok carousels of before-and-after rooms, zero ad spend. And a British developer who lost his biggest client in February now makes $3,014 MRR from AI tools that run entirely on the user’s device, meaning his model bill is $0 forever. All three fit inside the under-$300-to-start, one-person, sustainable bracket. Here is how each one actually works.</p>
+<h2 id="This-Week’s-Blueprint"><a href="#This-Week’s-Blueprint" class="headerlink" title="This Week’s Blueprint"></a>This Week’s Blueprint</h2><p><strong>Skillry — Yihui (@yihui_indie), one person, roughly $0 invested, $6,085 verified MRR in month four</strong> (TrustMRR, Stripe-verified, November 19 sync; founder’s posts on X). Skillry sells Agent Skills: packaged instruction sets that plug into Claude Code, Codex and Cursor so the agent follows a fixed, professional workflow — producing websites, slides, images or video in a consistent style instead of improvising. The product is literally knowledge work: markdown files describing how an expert would sequence the task. The trust mechanic is the clever part — every skill’s real output is previewable before you install, so the buyer judges the product by what it makes, not by a landing page. The revenue trajectory is the steepest we have tracked in this category: $1,673 MRR on October 8, $4,184 by October 30, $6,085 with 475 subscriptions by November 19, $12,188 collected in the last 30 days and $21,337 all-time. (We first covered Skillry on October 19 at $2,170 MRR; everything above the October numbers is the increment.) Pricing is a three-rung ladder: a free tier that does the demand testing, Premium at $9.99 a month or $79 a year, and a $169 lifetime plan for the people who hate subscriptions. Real revenue began around late September when the paid tier went live; the founder posted on October 22 that cumulative revenue had passed $10,000 about three weeks in. Total startup cost: his existing Claude Code subscription and time.</p>
+<p><strong>House Goals — founder Jordan, UK, $8,179 MRR five months after launch, acquired exclusively through TikTok</strong> (TrustMRR, RevenueCat-verified, November 20 update; Starter Story interview, October 4; TrustMRR listing page). House Goals shows homeowners what a renovation would look like before they spend on one: upload a room photo, see the transformed version, then decide whether to buy furniture, paint, or hire a designer. The scope is deliberately narrow — show the after, sell the confidence. The numbers: launched June 2026 with $277 in the first month, roughly $20,685 collected in August alone, and a verified current state of $8,179 MRR from 623 subscriptions, $9,124 in the last 30 days and $60,532 all-time. Distribution is the entire story here: the only channel is TikTok, and the only content is before-and-after carousels — the product’s own output doubles as the ad creative, and no paid ads run at all. Monetization is a hard paywall with no free tier: $12.99 per week or $39.99 per year, no monthly option — the weekly price makes trying it cheap while the annual price anchors it as a bargain. Two honest caveats: the founder’s background and build stack are not publicly documented, so do not assume vibe coding; and ad spend is undisclosed (though he states the channel is organic TikTok). The kicker: he listed the app for sale on TrustMRR on November 17 at $600,000 — about six times annualized revenue — because he has too many projects. Build-then-sell is a live exit at this size.</p>
+<p><strong>Yaps — Rich (@RichDoesTech), one person, bootstrapped, $3,014 MRR with a $0 model bill</strong> (TrustMRR, Stripe-verified, November 19; profitable.app; yaps.ai). Rich had built products before (Nack AI among them), but Yaps started in March 2026 for the least glamorous reason possible: his biggest client ran out of money in February. Yaps is a suite of AI utilities — dictation, speech generation, notes, captioning, transcription — where the models run on the user’s device. Audio and notes never leave the machine, which is both the privacy pitch and the cost structure: no per-user inference bill, ever. It ships on Mac, Windows, Linux, Android and iOS. TrustMRR reads $3,014 MRR from 226 active subscriptions and $17,525 all-time, with profitable.app confirming the $15&#x2F;month or $144&#x2F;year Pro tier and fully bootstrapped status. The wedge is a genuinely free Android voice-typing keyboard ($0 forever, runs locally) that feeds the paid desktop suite — a competitor’s independent teardown (Lexo Keyboard, August 2026) confirmed the local-first claims check out, which in this market is rare enough to be a moat. Honest weak spot: a 2.7&#x2F;5 rating across 47 Google Play reviews, and $3K MRR is the smallest number on this page — but it is also the most literal template: one developer, local open-weight models, a privacy promise, five platforms.</p>
+<h2 id="The-Tool-Stack"><a href="#The-Tool-Stack" class="headerlink" title="The Tool Stack"></a>The Tool Stack</h2><table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Tool</th>
+<th>Why this one</th>
+<th>Free tier &#x2F; actual cost</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Build</td>
+<td>Your own AI coding agent (Claude Code &#x2F; Codex &#x2F; Cursor)</td>
+<td>Skillry’s product IS the skill pack for these tools — the author is his own power user, so quality control is free</td>
+<td>One $20&#x2F;mo subscription is the entire production line</td>
+</tr>
+<tr>
+<td>Build</td>
+<td>No-code &#x2F; low-code app builder</td>
+<td>House Goals’ build stack is undisclosed, but the no-code route is the standard path for photo-to-visualization consumer apps</td>
+<td>Typically $20-100&#x2F;mo while building</td>
+</tr>
+<tr>
+<td>Build</td>
+<td>On-device open-weight models (whisper-class speech, small LLMs)</td>
+<td>Yaps’ entire economics: inference happens on the customer’s hardware, so marginal cost per user is zero</td>
+<td>$0 model bill, permanently</td>
+</tr>
+<tr>
+<td>Subscriptions</td>
+<td>RevenueCat</td>
+<td>House Goals’ numbers are RevenueCat-verified; it handles mobile subscription plumbing across stores</td>
+<td>Free tier for small revenue; scales with you</td>
+</tr>
+<tr>
+<td>Payments</td>
+<td>Stripe</td>
+<td>The verification rail for Skillry and Yaps; TrustMRR reads it directly, which doubles as free credibility</td>
+<td>2.9% + 30¢ per transaction</td>
+</tr>
+<tr>
+<td>Distribution</td>
+<td>TikTok before&#x2F;after carousels</td>
+<td>House Goals’ only channel — the product output is the content; nothing to explain, nothing to spend</td>
+<td>$0 + daily posting discipline</td>
+</tr>
+<tr>
+<td>Distribution</td>
+<td>Build in public on X</td>
+<td>Skillry’s $10K cumulative announcement traveled on the founder’s own posts; costs nothing but consistency</td>
+<td>$0</td>
+</tr>
+<tr>
+<td>Distribution</td>
+<td>Free-forever wedge feature</td>
+<td>Yaps’ Android keyboard at $0 forever earns installs and reviews that feed the paid desktop suite</td>
+<td>$0 (your local models)</td>
+</tr>
+<tr>
+<td>Monetization</td>
+<td>Weekly pricing under an annual anchor</td>
+<td>$12.99&#x2F;week vs $39.99&#x2F;year makes the trial feel trivial while the year looks smart — House Goals’ exact frame</td>
+<td>$0 to implement</td>
+</tr>
+<tr>
+<td>Exit</td>
+<td>TrustMRR marketplace listing</td>
+<td>House Goals listed at $600K (Nov 17); your verified Stripe data is the listing’s whole substance</td>
+<td>Free listing</td>
+</tr>
+</tbody></table>
+<p>Note what all three have in common: no paid acquisition, no per-user AI cost. Yaps eliminated the model bill with on-device models, Skillry’s product contains no inference at all, and House Goals’ AI costs are buried in a hard paywall priced to cover them. If your plan needs an ad budget or a GPU bill before the first subscriber, you are playing a harder game than these three.</p>
+<h2 id="0-to-1-Steps"><a href="#0-to-1-Steps" class="headerlink" title="0 to 1 Steps"></a>0 to 1 Steps</h2><p>The five-question self-diagnosis first — all three founders pass cleanly:</p>
+<ol>
+<li>What am I genuinely good at? (Yihui: squeezing professional workflows out of coding agents. Jordan: seeing what a room could become. Rich: shipping cross-platform utilities.)</li>
+<li>Which niche group has a painful, repeated task? (Agent users rebuilding the same workflow daily; homeowners paralyzed before renovating; anyone who types more than they write.)</li>
+<li>Can AI make the work 10x cheaper or faster? (Skillry: the customer’s agent does the labor. Yaps: the customer’s device does the compute. House Goals: one photo replaces a design consultation.)</li>
+<li>What is broken about existing solutions? (Generic agents improvise inconsistently; renovation decisions are made blind; cloud AI tools leak your audio and charge monthly forever.)</li>
+<li>Can I ship an MVP in three months? (Skillry’s paid tier was live in about six weeks; House Goals launched in its first month.)</li>
+</ol>
+<p>Then the 30-day sprint, with the cases’ real numbers as calibration:</p>
+<ul>
+<li><strong>Week 1 — interviews and output tests.</strong> Talk to at least 10 people in your niche. Then run the decisive experiment: produce five before&#x2F;after samples by hand (renovations, documents, code reviews — whatever your niche’s “after” is). If strangers react to the after-picture without explanation, House Goals’ mechanism works for you. Cost: $0.</li>
+<li><strong>Week 2 — build the thinnest deliverable.</strong> Three shapes, cheapest first: a skill&#x2F;instruction pack (days of writing, $0), a photo-in&#x2F;visualization-out app (no-code builder + RevenueCat, ~$100), or a local-model utility (whisper-class models, $0 inference). Ship one platform, one job. Cost: under $100.</li>
+<li><strong>Week 3 — let the output market itself.</strong> Post the before&#x2F;after pairs daily on TikTok or the platform where your niche scrolls. Make the real output previewable before purchase — Skillry’s preview-before-install is why 475 people subscribe. Add one free-forever wedge feature, Yaps-style. Cost: $0.</li>
+<li><strong>Week 4 — paywall from day one.</strong> All three charged early: hard paywall with a weekly price under an annual anchor (House Goals), or free tier → $9.99&#x2F;mo → lifetime (Skillry). Target one paying customer. Keep every payment on RevenueCat or Stripe so your revenue is third-party verifiable — that verification is what later turns into a $600K listing. Cost: $0.</li>
+</ul>
+<p><strong>Your first step this week:</strong> open your AI coding agent, pick the one workflow you repeat most — the way you always set up a repo, always format a document, always review a contract — and write it out as a numbered step-by-step instruction pack. Publish it free. If people install it, you have validated demand for the paid version of exactly this play, at a total cost of one afternoon.</p>
+<h2 id="Micro-Opportunities"><a href="#Micro-Opportunities" class="headerlink" title="Micro-Opportunities"></a>Micro-Opportunities</h2><ol>
+<li><strong>Skill packs for one profession’s agent workflows.</strong> Target: lawyers, accountants, QA engineers and analysts who drive Claude Code, Codex or Cursor daily but rebuild the same prompt sequence every session. Entry: package their workflow as a previewable skill, free tier plus $9.99&#x2F;mo. Starting cost: ~$0 — this is Skillry’s exact ladder, still only months old with room in every vertical.</li>
+<li><strong>Before&#x2F;after visualization for a different vertical.</strong> Target: garden redesign, hairstyles, fitness transformations, furniture placement — anywhere a photo “after” is self-explanatory and the decision that follows is expensive. Entry: no-code builder, hard weekly paywall, TikTok carousels of your own output. Starting cost: ~$100&#x2F;month in tools; House Goals proves no ad budget is required.</li>
+<li><strong>An on-device privacy tool for one regulated audience.</strong> Target: doctors, lawyers, therapists, journalists — people whose recordings cannot touch a cloud server. Entry: wrap local speech models into one job (meeting notes, dictation, transcription) on desktop first, Android free wedge second. Starting cost: ~$0 model bill; Yaps runs the whole playbook at $3K MRR.</li>
+<li><strong>AI-crawler audit and fix for small business sites.</strong> Target: SMB owners whose sites silently block ChatGPT’s crawler — of 640 sites tested in a recent audit, 100 blocked AI crawlers and only 4 had declared it in robots.txt (details in Signals). Entry: a $50-100 detection script plus a fixed-price “detect + repair” package sold to local businesses. Starting cost: ~$50.</li>
+<li><strong>Free-forever wedge into a paid cross-platform suite.</strong> Target: any utility where one feature can be genuinely free (Yaps’ Android voice keyboard) while the pro features live in a paid desktop app. Entry: ship the free wedge on the platform with the most users, the paid suite where the power users are. Starting cost: ~$0 — your distribution is the review section of the free app.</li>
+</ol>
+<h2 id="Signals-Worth-Knowing"><a href="#Signals-Worth-Knowing" class="headerlink" title="Signals Worth Knowing"></a>Signals Worth Knowing</h2><p><strong>Open-weight models now carry almost a third of enterprise token traffic (SaaStr, reading Databricks Unity Gateway data, November 20):</strong> open-weight share of enterprise tokens jumped from 7.3% to 30.9% in four months, single-provider dependence fell from 64% to 28%, and GLM 5.2 alone accounts for about 40% of open-weight traffic. <strong>What it means for you:</strong> the cost floor under any AI product keeps dropping — route your high-volume, low-difficulty inference (classification, summarization, formatting) to open-weight models and your gross margin starts looking like Yaps’, even if you stay in the cloud. COGS is now a product decision, not a fixed tax.</p>
+<p><strong>Most sites are accidentally invisible to AI search (HackerNoon audit, November 20):</strong> the author tested 640 websites and found 100 blocking AI crawlers — but only 4 had declared it in robots.txt; the other 96 were silently blocked by Cloudflare or host-level firewalls. ChatGPT cites third-party reviews over vendor sites precisely because it can parse them, so being accidentally blocked means being absent from the answers your buyers read. <strong>What it means for you:</strong> spend one hour this week checking whether OAI-SearchBot and the major agent crawlers can actually reach your site (remember robots.txt changes take about 24 hours to propagate) — and if you can write the detection script, item 4 above is a service business hiding in this statistic.</p>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Figure</th>
+<th>Source, Date</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Skillry MRR trajectory</td>
+<td>$1,673 (Oct 8) → $4,184 (Oct 30) → $6,085 (Nov 19)</td>
+<td>TrustMRR, Stripe-verified</td>
+</tr>
+<tr>
+<td>Skillry volume</td>
+<td>475 subs; $12,188 last 30d; $21,337 all-time</td>
+<td>TrustMRR, Nov 19, 2026</td>
+</tr>
+<tr>
+<td>Skillry pricing</td>
+<td>Free skills; $9.99&#x2F;mo, $79&#x2F;yr, $169 lifetime</td>
+<td>yihui’s listing, Nov 2026</td>
+</tr>
+<tr>
+<td>Skillry prior coverage</td>
+<td>$2,170 MRR &#x2F; 220 subs (Oct 12)</td>
+<td>This site, Oct 19, 2026</td>
+</tr>
+<tr>
+<td>House Goals launch curve</td>
+<td>$277 (Jun) → ~$20,685 30-day cash (Aug)</td>
+<td>TrustMRR monthly data</td>
+</tr>
+<tr>
+<td>House Goals current</td>
+<td>$8,179 MRR, 623 subs, $9,124 last 30d, $60,532 all-time</td>
+<td>TrustMRR, RevenueCat-verified, Nov 20, 2026</td>
+</tr>
+<tr>
+<td>House Goals pricing</td>
+<td>Hard paywall: $12.99&#x2F;week or $39.99&#x2F;year, no monthly</td>
+<td>TrustMRR, Nov 2026</td>
+</tr>
+<tr>
+<td>House Goals channel</td>
+<td>TikTok before&#x2F;after carousels only; no ads</td>
+<td>Starter Story interview, Oct 4, 2026</td>
+</tr>
+<tr>
+<td>House Goals exit</td>
+<td>Listed for sale at $600,000</td>
+<td>TrustMRR listing, Nov 17, 2026</td>
+</tr>
+<tr>
+<td>Yaps MRR</td>
+<td>$3,014, 226 subs, $17,525 all-time</td>
+<td>TrustMRR, Stripe-verified, Nov 19, 2026</td>
+</tr>
+<tr>
+<td>Yaps pricing</td>
+<td>$15&#x2F;mo or $144&#x2F;yr; Android voice keyboard free forever</td>
+<td>yaps.ai &#x2F; profitable.app, Nov 2026</td>
+</tr>
+<tr>
+<td>Yaps cost structure</td>
+<td>On-device models; $0 inference bill; bootstrapped</td>
+<td>profitable.app, Nov 2026</td>
+</tr>
+<tr>
+<td>Open-weight enterprise share</td>
+<td>7.3% → 30.9% in 4 months; GLM 5.2 ≈ 40% of it</td>
+<td>SaaStr &#x2F; Databricks data, Nov 20, 2026</td>
+</tr>
+<tr>
+<td>AI-crawler audit</td>
+<td>100 of 640 sites block AI crawlers; 4 declared in robots.txt</td>
+<td>HackerNoon, Nov 20, 2026</td>
+</tr>
+</tbody></table>
+<p>All revenue figures are payment-processor-verified via TrustMRR unless marked otherwise; House Goals’ build stack and ad spend are undisclosed, and Yaps carries a 2.7&#x2F;5 Google Play rating — small numbers are still real numbers, but verify current figures before making decisions, since MRR moves week to week.</p>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>Solo Founder</category>
+        <category>One-Person-Company</category>
+      </categories>
+      <tags>
+        <tag>Indie-Hacker</tag>
+        <tag>Bootstrapped</tag>
+        <tag>Agent-Skills</tag>
+        <tag>Copy-This</tag>
+        <tag>Skillry</tag>
+        <tag>House-Goals</tag>
+        <tag>Yaps</tag>
+        <tag>TikTok-Marketing</tag>
+      </tags>
+  </entry>
 </search>
