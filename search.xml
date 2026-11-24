@@ -130508,4 +130508,98 @@
         <tag>Niche-B2B</tag>
       </tags>
   </entry>
+  <entry>
+    <title>$19 to $40K MRR in a Year: The Reddit Reply Play You Can Copy</title>
+    <url>/opc-report-2026-11-24-1740/</url>
+    <content><![CDATA[<p>Three numbers, three very different lessons about the same bottleneck. A self-taught developer in North Macedonia spent seven years building products nobody paid for, then turned one boring idea — replying to Reddit threads on behalf of other founders — into $40,000 MRR and a $500K ARR run rate inside twelve months. A UK engineer watched LinkedIn’s lawyers kill his free Chrome extension with 60,000 users, rebuilt it as a paid AI writing tool in four weeks, and cleared $62K MRR in under two months without spending a dollar on ads. And a Vietnamese solo founder shipped twelve desktop apps in twelve months, verified $10,540 in lifetime revenue on a payment API, and is now openly telling buyers the truth most builders won’t say out loud: the product was never the hard part. One of these founders self-reports, one has a payment dashboard on camera, one has an audited API feed — and all three point at the same conclusion: distribution is decided before you write the first line of code.</p>
+<h2 id="This-Week’s-Playbook"><a href="#This-Week’s-Playbook" class="headerlink" title="This Week’s Playbook"></a>This Week’s Playbook</h2><h3 id="Bazzly-—-the-Reddit-reply-machine-Filip-Panoski-North-Macedonia"><a href="#Bazzly-—-the-Reddit-reply-machine-Filip-Panoski-North-Macedonia" class="headerlink" title="Bazzly — the Reddit reply machine (Filip Panoski, North Macedonia)"></a>Bazzly — the Reddit reply machine (Filip Panoski, North Macedonia)</h3><p>Filip Panoski is a self-taught developer in Skopje who spent roughly seven years building side projects after work: five-plus products, B2C tools, one-time-payment apps, and essentially zero meaningful revenue from any of them. In 2025 he quit his $7,000-a-month developer job to go all-in on one product — and the first six months after quitting were still stuck near $100 MRR. He has said the salary’s safety net had made it easy to keep starting over; going all-in removed that option.</p>
+<p>The product that broke the pattern is Bazzly, a Reddit marketing platform operated by Meeteo Labs. It scans Reddit for high-intent posts and threads that already rank on Google, scores them, drafts replies that follow subreddit norms, and posts them either through the customer’s own account (via a Chrome extension) or through warmed accounts, with refunds if posts get removed early. It also handles DMs, brand tracking, and exposes an MCP&#x2F;API so coding agents can act on it. The service matched its first Reddit post for a customer on June 2, 2025, according to the company’s own about page.</p>
+<p>The growth curve, self-reported on X on November 19, 2026, reads like this: $0 to $100 MRR took six months, $100 to $1K took two months, $1K to $5K took three months, $5K to $10K took 2.5 months, $10K to $25K took seven weeks, and $25K to $40K took two weeks. Mid-November he posted that Bazzly had hit $500,000 ARR, about a year after sitting at $19 MRR, and that the product was adding roughly $5K MRR per week — growth so fast they closed signups and reopened a waitlist to protect existing customers.</p>
+<p>Two decisions carried the curve. At ~$100 MRR the bottleneck was the offer, so he made the core package more valuable and repositioned. At $1K the bottleneck was him being solo, so he offered 50% of the company to Tibo (Tibo Louis-Lucas), who joined; the team is now two people. At $10K the bottleneck was demand versus capacity, so they doubled prices and kept the higher-value customers. His acquisition engine was dogfooding: he used Bazzly itself to find customers on Reddit, plus X (where he had only ~7.5K followers — no big personal brand) and Indie Hackers. One caveat you should know: these figures are founder-stated on X, with no Stripe screenshots or third-party audit, so treat the shape of the curve as the lesson and the exact numbers as directional.</p>
+<h3 id="Kleo-—-the-killed-extension-that-came-back-paid-Cameron-Trew-UK"><a href="#Kleo-—-the-killed-extension-that-came-back-paid-Cameron-Trew-UK" class="headerlink" title="Kleo — the killed extension that came back paid (Cameron Trew, UK)"></a>Kleo — the killed extension that came back paid (Cameron Trew, UK)</h3><p>Cameron Trew spent six years as a software engineer in London, made senior at 26, then quit because — in his own telling — the work felt meaningless, moved back to his parents’ house, and started building with friends. Their first product, Kleo 1.0, was a free Chrome extension that pulled LinkedIn data to show content trends in your niche. It grew past 60,000 users. Then LinkedIn’s cease-and-desist arrived and the product had to come down.</p>
+<p>Most people stop there. Instead, the team studied the same-category tools, concluded every one of them had a mediocre writing experience, and rebuilt from zero as Kleo 2.0: instead of showing you data, it writes LinkedIn posts in your voice using AI. Trew shipped the usable version solo in four weeks, and the stack is a masterclass in refusing over-engineering: TypeScript, Next.js, Vercel for hosting, Neon for the database, Inngest for async workflows, Claude for the model, Clerk for auth — every piece an off-the-shelf, high-integration service started from templates.</p>
+<p>The launch mechanics came from co-founders who are marketers, not engineers: Jake Ward (200K LinkedIn followers, who originally built the extension for his own content) and Lara Acosta (350K followers). They ran what Acosta calls edu-selling — posts that solve the audience’s real problem in public with no call to action — fed a waitlist that was the product’s only entrance (there was literally no checkout on the landing page), warmed the list with about ten emails over four weeks, and ran webinars before launch, each clearing $5,000 in sales. The first drop of 500 beta spots at $59&#x2F;month with a lifetime discount sold out in four days. The second 500 at $79&#x2F;month sold out in nine days. Standard price is now $99&#x2F;month, billed through Polar. On Acosta’s Starter Story appearance, the Polar dashboard on screen showed $62K MRR and 932 active subscriptions — within roughly two months of the October 2025 launch. No ads, no Product Hunt, no cold traffic. The same caveat applies: dashboard-shown and self-reported, not audited, and cohort discounts mean the MRR mix shifts as discounts expire or users churn.</p>
+<h3 id="StoicSoft-—-the-honest-floor-Khoa-Nguyen-Vietnam"><a href="#StoicSoft-—-the-honest-floor-Khoa-Nguyen-Vietnam" class="headerlink" title="StoicSoft — the honest floor (Khoa Nguyen, Vietnam)"></a>StoicSoft — the honest floor (Khoa Nguyen, Vietnam)</h3><p>Not every case is a rocket, and the floor cases teach as much as the ceiling ones. Khoa Nguyen built twelve focused desktop apps solo in twelve months — for coding, design, video, marketing, servers and private AI — with 300+ releases and 270K+ downloads. Ten of the twelve ship an MCP server, meaning they hand real capabilities to the AI agent you already use (Claude Code, Codex and friends) on your own machine. Pricing is $29 one-time per app or $199 for all twelve, with an optional $19&#x2F;month All Access. Users bring their own AI keys, so there is no inference cost and the profit margin runs at 76%.</p>
+<p>The numbers, verified against his LemonSqueezy API on TrustMRR as of November 23, 2026: $10,540 all-time revenue, $1,736 in the last 30 days (up 76% versus the previous period), $19 MRR, one active subscription. And the founder’s own listing message is worth quoting: “I built StoicSoft alone, one app at a time… I’m good at building. I’m not good at selling. Only 1DevTool ever got real marketing. The other eleven get SEO and nothing else… So the next 10x here is distribution, not product.” The business is now listed for sale at a $500,000 asking price — roughly 24x annualized revenue — pitched as a build-done, needs-an-operator asset.</p>
+<p>Why include a case whose MRR is $19? Because it is the honest mirror of the other two. Nguyen shipped twelve products and could not buy distribution. Panoski spent seven years shipping and only converted when he picked one channel and worked it relentlessly. Trew’s team distributed before they built. Same variable every time.</p>
+<h2 id="How-to-Copy-This"><a href="#How-to-Copy-This" class="headerlink" title="How to Copy This"></a>How to Copy This</h2><p>The single most copyable play here is Bazzly’s: one high-intent channel, worked with obsessive consistency, monetized as a service. Here is the numbered version.</p>
+<ol>
+<li><strong>Pick a channel where intent is visible.</strong> Reddit, LinkedIn, X, niche forums — anywhere people publicly describe a problem your product solves. Bazzly’s wedge was that its own target customers (SaaS founders) publicly ask “how do I get users?” on Reddit every day. Cost: $0.</li>
+<li><strong>Validate that people already pay for a solution.</strong> Panoski deliberately chose a market with existing competitors, because competitors are proof of willingness to pay. If nobody sells into this channel, that is usually a warning, not an opportunity.</li>
+<li><strong>Dogfood your own tool from day one.</strong> Bazzly’s first customers came from Bazzly-style replies written by its founder. Whatever your tool does for customers, do it manually for yourself first — it is simultaneously product research, marketing, and your first revenue.</li>
+<li><strong>Fix one bottleneck at a time.</strong> Offer (make the core package undeniably valuable) → capacity (bring in a partner or automation, even at the cost of equity) → pricing (double it when demand outruns you). Panoski’s speed came from never fighting two bottlenecks at once.</li>
+<li><strong>Throttle growth instead of letting quality die.</strong> When signups outran service quality, Bazzly closed the door and opened a waitlist. A slower curve you can retain beats a fast one that churns out.</li>
+</ol>
+<p>The Kleo variant, if you have an audience or a partner who does: pre-sell before the product exists. Edu-selling posts (no CTA), a waitlist as the only entrance, ten warm-up emails over four weeks, capped beta drops with a lifetime discount. The webinars alone cleared $5,000 each before launch. If you have zero audience, the Bazzly path is the one to copy; the Kleo path works at small follower counts too, it just fills the list slower.</p>
+<p>The StoicSoft lesson if you are a builder who dreads marketing: ship one product, not twelve, and spend 50% of your time on distribution from week one. Twelve apps with SEO-only marketing verified $1,736 a month; one app with a worked channel cleared $40K.</p>
+<p><strong>Your first step this week:</strong> open Reddit, search your niche for posts from the last 30 days where someone describes the exact problem you want to solve, and reply helpfully to five of them with no link, no pitch. That is the entire Bazzly thesis in manual form — and it costs nothing but an hour.</p>
+<h2 id="Micro-Opportunities"><a href="#Micro-Opportunities" class="headerlink" title="Micro-Opportunities"></a>Micro-Opportunities</h2><ul>
+<li><strong>Vertical Reddit-intent monitoring for one industry.</strong> Bazzly is horizontal. A version tuned for one vertical — dental clinics, HVAC contractors, B2B logistics — that watches three subreddits and drafts compliant replies can start as a $49&#x2F;month service you run semi-manually. Start-up cost: under $100 for scraping and LLM API calls.</li>
+<li><strong>Voice-cloned LinkedIn (or niche-platform) writing tool for one profession.</strong> Kleo charges $99&#x2F;month to coaches and founders. The same pattern works for real estate agents, recruiters, or Fractional CFOs on any platform where your target buyers post. Start-up cost: a weekend with Claude API + Clerk + Vercel, under $50&#x2F;month to run.</li>
+<li><strong>MCP desktop tool for one trade.</strong> StoicSoft sells $29 one-time desktop apps that give coding agents real capabilities. The unbundled version — one MCP-wrapped tool for one profession (an MCP server that reads a law firm’s document templates, or an accountant’s ledger formats) — is a weekend build. Start-up cost: $0 plus your LemonSqueezy account.</li>
+<li><strong>Waitlist-as-the-product launch service.</strong> Kleo’s mechanism (capped drops, lifetime discounts, webinar-led selling) is itself a sellable skill. Offer it to small SaaS founders as a done-for-you launch: $500-1,500 per launch, cost is your time.</li>
+<li><strong>AR lenses built by agents.</strong> Snap paid Lens creators $1.8M in a single month, per Half Baked #745, and coding agents can now produce working lenses from a one-sentence brief. A tiny studio shipping branded lenses for local businesses is a realistic solo gig.</li>
+</ul>
+<h2 id="Signals-Worth-Knowing"><a href="#Signals-Worth-Knowing" class="headerlink" title="Signals Worth Knowing"></a>Signals Worth Knowing</h2><ul>
+<li><strong>a16z has formally staked on the “B2A economy.”</strong> Partners Olivia Moore and Justine Moore published the thesis that AI agents are becoming the internet’s primary users — and will become the primary customers for every product, deciding which services to subscribe to and where money gets spent. What it means for you: the cheapest distribution you can build in 2027 is a product an agent can discover, evaluate and use without a human babysitter — an MCP server, a clean API, machine-readable pricing. StoicSoft and Bazzly both already ship MCP surfaces; that is not a coincidence.</li>
+<li><strong>Platform risk cuts both ways.</strong> LinkedIn’s cease-and-desist killed Kleo 1.0 with 60,000 users, and Reddit’s moderation is a standing threat to Bazzly’s channel — yet Kleo’s team converted the kill event into a paid rebuild, and Bazzly deliberately reduces ban risk with warmed accounts and refunds on removals. What it means for you: build on channels where you can survive the rules changing, and treat any free-tier audience you scrape as rented, not owned.</li>
+</ul>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Founder</th>
+<th>Product</th>
+<th>Start-up investment</th>
+<th>Revenue (source)</th>
+<th>Main channel</th>
+<th>Timeline</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Bazzly</td>
+<td>Filip Panoski (Skopje, MK)</td>
+<td>Reddit intent-scoring + reply platform</td>
+<td>~$0 code &#x2F; 7 years of failures; quit $7K&#x2F;mo job</td>
+<td>$40K MRR, $500K ARR (self-reported, X, Nov 19 2026)</td>
+<td>Dogfooded Reddit replies + X + IH</td>
+<td>First match Jun 2 2025; $19→$40K MRR in ~12 months</td>
+</tr>
+<tr>
+<td>Kleo</td>
+<td>Cameron Trew, Jake Ward, Lara Acosta (UK)</td>
+<td>AI LinkedIn post writer in your voice</td>
+<td>4 weeks solo rebuild; off-the-shelf stack</td>
+<td>$30K MRR in 4 days; $62K MRR &#x2F; 932 subs (Polar dashboard, Starter Story)</td>
+<td>Edu-selling + waitlist + webinars; zero ads</td>
+<td>Killed 2025 → rebuilt in 4 weeks → Oct 2025 launch</td>
+</tr>
+<tr>
+<td>StoicSoft</td>
+<td>Khoa Nguyen (Vietnam)</td>
+<td>12 MCP-enabled desktop apps, $29 each</td>
+<td>12 months solo, 300+ releases</td>
+<td>$10,540 all-time, $1,736&#x2F;30d +76% (LemonSqueezy-verified, TrustMRR)</td>
+<td>SEO only — founder says distribution is the gap</td>
+<td>Nov 2025 founded; listed for sale at $500K ask</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>Solo Founder</category>
+        <category>One-Person-Company</category>
+      </categories>
+      <tags>
+        <tag>Indie-Hacker</tag>
+        <tag>Bootstrapped</tag>
+        <tag>Bazzly</tag>
+        <tag>Kleo</tag>
+        <tag>StoicSoft</tag>
+        <tag>Reddit-Marketing</tag>
+        <tag>LinkedIn-Content</tag>
+        <tag>MCP-Desktop-Apps</tag>
+        <tag>Distribution-First</tag>
+      </tags>
+  </entry>
 </search>
