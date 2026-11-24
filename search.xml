@@ -130376,4 +130376,136 @@
         <tag>TikTok-Marketing</tag>
       </tags>
   </entry>
+  <entry>
+    <title>How a Solo Dev Hit $40K MRR in Six Months: Faceless Video Play</title>
+    <url>/opc-report-2026-11-24-1325/</url>
+    <content><![CDATA[<p>Four verified numbers, one honest lesson about direction. Eric Smith built a faceless-video generation tool for exactly one workflow — his own daily posting habit — and it crossed $40,000 MRR in under six months at roughly 75% margin, with the growth curve bending upward the day he turned his best customers into affiliates. Jason Zook, a 15-year internet operator, aimed a $99-a-month AI writing app at one profession (coaches) and passed $3,626 MRR with 64 customers. And then the caution: PostClaw, a chat-first social media manager built on the open-source OpenClaw agent, hit $670 MRR in its first month with zero ad spend — and now shows $154 MRR from 2 subscriptions, with the founder listing it for sale. Payment-verified dashboards now show you both the ceiling and the decay curve in public. Here is what each number actually breaks down into, and which one you should copy.</p>
+<h2 id="This-Week’s-Playbook"><a href="#This-Week’s-Playbook" class="headerlink" title="This Week’s Playbook"></a>This Week’s Playbook</h2><h3 id="AutoShorts-—-faceless-video-on-autopilot-40K-MRR-in-six-months"><a href="#AutoShorts-—-faceless-video-on-autopilot-40K-MRR-in-six-months" class="headerlink" title="AutoShorts — faceless video on autopilot, $40K MRR in six months"></a>AutoShorts — faceless video on autopilot, $40K MRR in six months</h3><p><strong>Who:</strong> Eric Smith, a solo founder who started from a personal pain, not a market map. He wanted to run several faceless short-video accounts with daily uploads, and the manual loop — script, voiceover, visuals, queue, publish — was eating his evenings.</p>
+<p><strong>What:</strong> AutoShorts is a web tool that turns one prompt into a finished, schedulable short video: an LLM writes the script, Replicate handles image generation and animation, and a text-to-speech pipeline does the voice. The interface is deliberately minimal — no multi-track timeline, no editing timeline at all. You type what the video is about, minutes later you have a complete video attached to a publishing queue. The product insight is that the audience is not editors; it is operators who want volume without touching a timeline.</p>
+<p><strong>The numbers (MRR Story, self-reported, not audited):</strong> first paying subscriber on February 1; roughly $1,000 MRR by the end of February, driven by targeted ads that let prospects watch the machine generate a finished video before signup; then $2,000, and a jump to about $40,000 MRR within roughly six months of launch. Total monthly costs — cloud compute, model API calls, and the early ad spend — run about $10,000 a month, implying a margin near 75%. No outside funding.</p>
+<p><strong>The distribution mechanism is the case.</strong> Eric noticed his first cohort of paying users were themselves experienced account operators with existing audiences, and they were screen-recording themselves batching a week of videos with the tool. Instead of treating that as leakage, he launched an affiliate program and turned the customers’ own demo recordings into the referral engine. The users who knew how to grow faceless accounts were the perfect salespeople to the next thousand operators — the product demo and the customer’s workflow were the same video.</p>
+<p><strong>Honest flags:</strong> the numbers come from MRR Story’s editorial case write-up, not a Stripe-verified dashboard, and ad spend versus organic split inside the growth curve is not itemized. The cost structure also means this is a volume business — at $10K&#x2F;month of burn, a churn spike bites fast. Treat $40K as the reported ceiling, not a verified floor.</p>
+<h3 id="Solo-Content-Studio-—-one-profession-99-a-month-64-customers"><a href="#Solo-Content-Studio-—-one-profession-99-a-month-64-customers" class="headerlink" title="Solo Content Studio — one profession, $99 a month, 64 customers"></a>Solo Content Studio — one profession, $99 a month, 64 customers</h3><p><strong>Who:</strong> Jason Zook, United States, 28,000 followers on X, a serial maker with a long public track record of selling things (his previous ventures include buy-my-future style offers). Founded April 2026, one person.</p>
+<p><strong>What:</strong> Solo Content Studio (solocontent.studio) is an AI writing app built for one customer: coaches — business, marketing, and lifestyle coaches who work solo or with a virtual assistant. The pitch is volume without voice loss: produce team-level content output that still sounds like the coach, not like a model. That is a positioning sentence, and it is the whole product.</p>
+<p><strong>The numbers (TrustMRR, Stripe-verified, November 21, 2026):</strong> $31,203 all-time revenue, $3,626 MRR from 64 active subscriptions, $3,604 collected in the last 30 days (up 9% versus the previous period). Pricing: 7-day free trial, Standard at $99&#x2F;month, Pro at $199&#x2F;month. Two pricing tiers, one audience.</p>
+<p><strong>Stack and channel:</strong> React frontend, Convex backend, Cloudflare hosting, Stripe billing. Distribution is the founder’s own audience — 28K followers on X plus his email list — with a domain rating of 14, meaning the site has essentially no SEO footprint yet; the revenue is relationship-driven, not search-driven.</p>
+<p><strong>Why it matters here:</strong> this is the small-but-real middle of the market, inside our target band (under $300 to start, above $2,800&#x2F;month, one person). Sixty-four customers at $99 is a business you can count on one spreadsheet. Nothing about it required funding, a model bill beyond API costs, or a technical co-founder — it required an audience and a niche sentence sharp enough that a coach self-selects on the landing page.</p>
+<h3 id="PostClaw-—-the-decay-curve-published-in-real-time"><a href="#PostClaw-—-the-decay-curve-published-in-real-time" class="headerlink" title="PostClaw — the decay curve, published in real time"></a>PostClaw — the decay curve, published in real time</h3><p><strong>Who:</strong> Adrien, France, solo, founded February 2026, 525 followers on X.</p>
+<p><strong>What:</strong> PostClaw is an AI social media manager built on top of OpenClaw, the open-source agent framework: each user gets a private chat-first AI agent that learns the brand voice, writes platform-native posts, and publishes to 13 platforms on schedule. No dashboard, no editor. Stack: Next.js 16, React 19, Stripe billing, per-user container isolation.</p>
+<p><strong>The numbers (TrustMRR, Stripe-verified, November 23, 2026):</strong> $2,485 all-time, current MRR $154 from 2 active subscriptions. The founder’s own message on the listing says it grew from $0 to $670+ MRR in one month with zero ad spend, fully organic — and that he is selling the project to focus on other things.</p>
+<p><strong>Why it is in here:</strong> because it is the first case we have covered where the verification dashboard shows the whole lifecycle — launch spike, decay, sale listing — in one Stripe-backed page. The lesson is not “OpenClaw wrappers fail.” The lesson is that a thin wrapper’s early MRR is trial-driven, not retention-driven: 670 became 154 because users who came for the novelty of “a chat that posts for me” churned once the novelty settled. If you build on an open-source agent framework, the wrapper must add a retention reason — memory, integrations, data history — or the verified dashboard will eventually publish your decay for you.</p>
+<h3 id="LocalEditor-—-the-floor-at-131-000-lines-of-code"><a href="#LocalEditor-—-the-floor-at-131-000-lines-of-code" class="headerlink" title="LocalEditor — the floor, at 131,000 lines of code"></a>LocalEditor — the floor, at 131,000 lines of code</h3><p><strong>Who:</strong> Nikhil Yadav, solo, founded June 2026, 2,488 followers on X, bootstrapped, one person.</p>
+<p><strong>What:</strong> A local Mac workspace where the files your AI coding agents write appear live for human review — Markdown with slash commands, HTML preview, a canvas for sketching flows — connected to Claude Code, Codex, or Cursor via MCP. Files never leave the machine. Built with React, Tauri, and Rust, at 131,100 lines of code contributed in the past year.</p>
+<p><strong>The numbers (TrustMRR, Dodo Payments-verified, November 23, 2026):</strong> $24 all-time revenue. Ten paid users at $15 each in two months, zero paid marketing, 150 free beta signups. Pricing: $25 lifetime during the early offer, $35 after, 14-day trial, no subscription.</p>
+<p><strong>Why it is in here:</strong> because the verified floor is as instructive as the ceiling. A year of engineering output, a real product, a real beta list — and $24. The lesson is not “don’t build.” It is that distribution starts before the product: Jason Zook converted an existing audience in month one; Eric Smith bought the first $1K MRR with targeted ads on a demo that demos itself. LocalEditor built first and is only now starting to tell anyone. Capacity and distribution are two different budgets, and only one of them compounds by writing code.</p>
+<h2 id="How-to-Copy-This"><a href="#How-to-Copy-This" class="headerlink" title="How to Copy This"></a>How to Copy This</h2><p>The strongest replication target is AutoShorts, because the growth mechanism — affiliate-led, demo-as-advertising — is visible in the product itself. The adaptation path:</p>
+<ol>
+<li><strong>Find a batch workflow you personally repeat, and automate only the loop.</strong> Eric did not build a video editor; he automated script-to-voiceover-to-schedule for one format. Write down the content or operations loop you repeat weekly. Cost: $0.</li>
+<li><strong>Make the output the marketing.</strong> The demo must produce a finished artifact in minutes, on the landing page, without a sales call. A tool whose result is immediately visible converts cold traffic without trust — this is the same mechanic House Goals used on TikTok. Cost: $0; it is a design constraint, not a budget.</li>
+<li><strong>Buy the first thousand with targeting, then stop.</strong> Roughly $1K MRR by end of February came from targeted ads pointed at the live demo. Set a hard cap (Eric’s total spend sits inside the ~$10K&#x2F;month cost line, ads included), watch trial-to-paid conversion, and kill spend the moment organic or referral outruns it.</li>
+<li><strong>Launch an affiliate program when customers demo the product unprompted — not before.</strong> The trigger is behavioral: users screen-recording your tool for their own audiences. Then give those exact people a cut. Affiliate percentage is your only “ad budget” from month three onward; at 75% margin there is room for 20-30% commission without touching the floor.</li>
+<li><strong>Watch the unit economics like a hawk.</strong> Every generated video costs you model API money. Price above your marginal cost with headroom (AutoShorts’ implied ~75% margin is the target), and cap free trials by generation count, not days.</li>
+<li><strong>Or copy Jason Zook’s version: rent an audience you already have.</strong> If you have any follower base, one niche sentence (“AI writing that still sounds like a coach”) plus a $99 tier converted 64 people in seven months with no ads. The startup cost is a weekend of wiring Stripe to a Convex&#x2F;Cloudflare app — under $50&#x2F;month of infrastructure.</li>
+</ol>
+<p><strong>Pitfalls:</strong> AutoShorts’ numbers are self-reported — build your own dashboard on Stripe or a verification platform from day one, because verified numbers now close sales (and sales of the company). PostClaw is the counter-example: $670 MRR that decayed to $154 within months because a wrapper with no retention moat churns its novelty users; add memory, history, or integration lock-in before you scale acquisition.</p>
+<p><strong>Your first step this week:</strong> open a document and write down every content-creation task you repeated more than three times last week. Circle the one where the output is instantly judgeable by a stranger in ten seconds. That candidate — not the most ambitious one — is your AutoShorts-shaped wedge. Sketch the one-prompt demo for it before writing any code.</p>
+<h2 id="Micro-Opportunities"><a href="#Micro-Opportunities" class="headerlink" title="Micro-Opportunities"></a>Micro-Opportunities</h2><ul>
+<li><strong>Faceless video for one vertical’s compliance format.</strong> AutoShorts is general-purpose. A tool that generates only, say, real-estate listing walkthroughs or local restaurant promo clips — templated, brand-locked, export-ready — charges $49-99&#x2F;month to agencies who currently pay editors. Start: one template, one niche, Replicate + TTS, under $100&#x2F;month.</li>
+<li><strong>Affiliate storefronts for AI tool operators.</strong> Eric’s customers were operators with audiences. A directory that packages affiliate deals across faceless-video&#x2F;caption&#x2F;scheduling tools, marketed to exactly that cohort, monetizes the same traffic he discovered — without building a model bill. Start: a Notion or static site and existing affiliate programs, $0.</li>
+<li><strong>Voice-locked content tools for certified professionals.</strong> Solo Content Studio picked coaches; the same “team volume, personal voice” promise applies to therapists’ psychoeducation content, financial advisors’ compliant newsletters, or physiotherapists’ patient handouts — professions where trust and liability make generic AI output unsellable. Start: $99&#x2F;month tier, one profession, your own niche audience or one partnership with a professional association.</li>
+<li><strong>Retention layers for OpenClaw-built agents.</strong> PostClaw proves wrappers decay without memory and history. A small product that adds shared memory, audit logs, and account history to any OpenClaw deployment — sold to other wrapper builders — sells the moat instead of the wrapper. Start: open-source contribution plus a paid hosted tier.</li>
+<li><strong>Agent-context review tools, repositioned for teams.</strong> LocalEditor solves “review what the agent wrote” for individuals. The same live-file review surface pointed at agencies reviewing AI-generated client deliverables (approval flows, client-facing previews) is a $199&#x2F;month B2B sell with the same code core. Start: one agency design partner, free, for the workflow tape.</li>
+</ul>
+<h2 id="Signals-Worth-Knowing"><a href="#Signals-Worth-Knowing" class="headerlink" title="Signals Worth Knowing"></a>Signals Worth Knowing</h2><ul>
+<li><strong>The indie-maker baseline is now public data, and it is sobering.</strong> IndieMakerList’s research hub (data as of November 24, 2026) covers 867 hand-researched maker profiles: only 172 publish a usable revenue figure, their median is $24,000&#x2F;month — but solo founders specifically have a median of $9,000&#x2F;month, versus $88,000 for duos — and the median time to reach $10K MRR is five years. 80% of profiled makers publish no usable number at all. What it means for you: the visible numbers are survivorship-skewed, the typical solo operation is a multi-year grind to a good salary, and teams dramatically out-earn solo founders — so pick a partner when the workload justifies it, and give your own project a runway measured in years, not months.</li>
+<li><strong>Verification dashboards are now a market, with a freshness problem.</strong> The AI Receipts tracks 33 processor-verified, solo-replicable AI side hustles — from a $1,200 MRR Chrome extension to a $197K MRR AI-search agency — and it surfaced that Adspirer’s $54,700 MRR figure had not synced since June 29, 2026, excluding it from rankings. What it means for you: a verified badge with a stale sync date is marketing, not data — always check the sync timestamp before trusting any MRR (including every figure in this report), and if you list your own product, keep the feed current, because aggregators demote stale dashboards.</li>
+</ul>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>AutoShorts</th>
+<th>Solo Content Studio</th>
+<th>PostClaw</th>
+<th>LocalEditor</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Founder</td>
+<td>Eric Smith (solo)</td>
+<td>Jason Zook (solo, US)</td>
+<td>Adrien (solo, France)</td>
+<td>Nikhil Yadav (solo)</td>
+</tr>
+<tr>
+<td>Started</td>
+<td>Feb 2026</td>
+<td>April 2026</td>
+<td>February 2026</td>
+<td>June 2026</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>One-prompt faceless video + queue</td>
+<td>AI writing for coaches</td>
+<td>OpenClaw chat social manager</td>
+<td>Local Mac agent-review workspace</td>
+</tr>
+<tr>
+<td>Revenue</td>
+<td>~$40K MRR (self-reported)</td>
+<td>$3,626 MRR, $31,203 all-time (Stripe)</td>
+<td>$154 MRR now, $670 peak, $2,485 all-time (Stripe)</td>
+<td>$24 all-time (Dodo)</td>
+</tr>
+<tr>
+<td>Costs</td>
+<td>~$10K&#x2F;month, ~75% margin</td>
+<td>Under $50&#x2F;month infra</td>
+<td>Per-user containers</td>
+<td>Near-zero (local app)</td>
+</tr>
+<tr>
+<td>Channel</td>
+<td>Targeted ads → affiliate loop</td>
+<td>Founder’s 28K X audience</td>
+<td>Organic launch spike</td>
+<td>None yet (150 beta signups)</td>
+</tr>
+<tr>
+<td>Pricing</td>
+<td>Subscription</td>
+<td>$99 &#x2F; $199 per month</td>
+<td>$49&#x2F;month</td>
+<td>$25 lifetime</td>
+</tr>
+<tr>
+<td>Timeline</td>
+<td>Feb 1 first sale → $1K MRR end of Feb → ~$40K in 6 months</td>
+<td>64 customers in ~7 months</td>
+<td>$670 MRR month 1 → decay → listed for sale</td>
+<td>10 paid users in 2 months</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>Solo Founder</category>
+        <category>One-Person-Company</category>
+        <category>AI Video</category>
+      </categories>
+      <tags>
+        <tag>Indie-Hacker</tag>
+        <tag>OpenClaw</tag>
+        <tag>Bootstrapped</tag>
+        <tag>Faceless-Video</tag>
+        <tag>TrustMRR</tag>
+        <tag>AutoShorts</tag>
+        <tag>Solo-Content-Studio</tag>
+        <tag>PostClaw</tag>
+        <tag>LocalEditor</tag>
+        <tag>Affiliate-Marketing</tag>
+        <tag>Niche-B2B</tag>
+      </tags>
+  </entry>
 </search>
