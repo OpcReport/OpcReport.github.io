@@ -130602,4 +130602,193 @@
         <tag>Distribution-First</tag>
       </tags>
   </entry>
+  <entry>
+    <title>One Month to $35K MRR: The Solo Alert App Play You Can Copy</title>
+    <url>/opc-report-2026-11-25-0915/</url>
+    <content><![CDATA[<p>Three payment-verified numbers on TrustMRR’s mover board this week, and all three come from ideas small enough to explain in one sentence. An iPhone stock-alert app built by one person crossed $35,220 MRR in roughly its first month of existence — 4,605 people paying $5 to $20 a month to get pinged when a specific phone lands in a specific store. A job board that scrapes company career pages went from $3,903 in its launch month to $27,090 MRR four months later, on a website with a domain rating of zero. And an AI clipping SaaS that turns one long video into ten scheduled shorts grew from $8,581 MRR in August to $25,914 this week, +118% month over month. None of these has a moat. All of them are one or two people, bootstrapped, with startup costs measured in tens of dollars. Two of the three are already listed for sale. Here is exactly how each works and how you would copy the cheapest one.</p>
+<h2 id="This-Week’s-Blueprint"><a href="#This-Week’s-Blueprint" class="headerlink" title="This Week’s Blueprint"></a>This Week’s Blueprint</h2><p><strong>Store Stock Checker — Bryce, United States, one person, bootstrapped, $35,220 MRR about one month after founding</strong> (TrustMRR, Stripe-verified, updated November 24, 2026; TrustMRR homepage mover board). The product does one thing: it watches Apple Store inventory and notifies you the moment your exact iPhone model, color and storage configuration becomes available for pickup near you. That is the entire product. The numbers: $35,220 MRR from 4,605 active subscriptions, roughly $36,319 collected all-time — which, given an October 2026 founding date, means essentially all of its revenue happened this month — with $31,101 in the last 30 days, +704% versus the previous period, and about 14,970 users overall. Pricing is a clean three-rung ladder: Starter $5&#x2F;month, Plus $10&#x2F;month, Max $20&#x2F;month, which averages out to roughly $7.65 per paying subscriber. The stack is Rust on Cloudflare with Stripe for billing — infrastructure costs for a monitoring service like this run in the tens of dollars per month, making the total investment trivial against $31K monthly revenue. Distribution is listed as SEO, Reddit, X, email marketing, Product Hunt, press and a referral program, on a domain rating of just 8&#x2F;100 — this grew on community chatter and launch press, not backlinks. The kicker: it is already flagged for sale on TrustMRR, with the mover board showing +472% month-over-month growth at the time of the listing snapshot. One month from nothing to a five-figure-MRR asset. Honest caveats: the founder’s build timeline and ad spend are undisclosed, and alert-type apps are seasonal — the question is whether 4,605 subscribers stay paying once iPhone restocks normalize.</p>
+<p><strong>DirectRoles — Sam, founded July 14, 2026, from $3,903 in month one to $27,090 MRR in month five</strong> (TrustMRR, Whop-verified, November 2026 snapshots; listing page). The pitch is one line: “Find jobs not on LinkedIn or Indeed.” DirectRoles crawls openings posted on company career pages, filters out recruiter and agency reposts, and sells job seekers a membership to browse and apply direct — skipping the middlemen entirely. The revenue curve, month by month from TrustMRR’s own timeline: July $3,903, August $9,364, September $16,268, October $27,764 in monthly revenue, with MRR now reading $27,090 (up 1,121% versus the prior month on the mover board) from 565 active subscriptions and $58,910 all-time — about $27 per subscription, roughly 7,488 users, and a claimed ~70% profit margin. Growth channels are “proven social media marketing and referrals” per the founder’s sale message, on a domain rating of 0&#x2F;100: zero SEO foundation, pure social distribution. It runs on Whop for payments and membership delivery, is bootstrapped, and was listed for sale on November 2 at $79,950 — about 0.3x annualized revenue, a bargain-priced ask that tells you the founder would rather build the next one than polish this one. Honest caveats: the TrustMRR listing says team size 2–5 people, so this may not be strictly solo; and revenue can be pushed up before a listing goes live, per the verification platform’s own warnings — read the curve, not just the headline.</p>
+<p><strong>AutoClip (autoclip.dev) — George, United States, founded February 2026, $8,581 MRR in August to $25,914 this week</strong> (TrustMRR, Whop-verified: August 4 snapshot $8,581 MRR &#x2F; 292 subs &#x2F; $14,293 all-time; November 11 snapshot $12,129 MRR &#x2F; 385 subs &#x2F; $47,393 all-time; mover board November 24: $25,914, +118% MoM). You paste a YouTube, Twitch or Kick link, and AutoClip scans the video with a multimodal model, scores every segment on hook, retention, shareability, trend fit and emotional pull, cuts about ten vertical shorts with face-tracking reframing and word-synced subtitles, then auto-schedules them across TikTok, Reels, Shorts, YouTube, Facebook, LinkedIn and X. Point it at a channel once and every future upload gets clipped and posted without you. Pricing charges by workload: Starter $19.99&#x2F;month (200 credits, roughly one credit per source-video minute), Pro $39.99 (500 credits), Scale $79.99 (1,200 credits) — so the heaviest users self-select into the top tier. Distribution is TikTok plus a programmatic-SEO layer of scene pages (Podcast Clip Maker, Twitch Clip Maker, YouTube to Shorts, comparison pages) on a domain rating of 1&#x2F;100; a third-party traffic estimate (MRRTrack, October) put the site at ~55,955 monthly visits with search at ~55% — meaning the SEO pages do the pulling and TikTok does the demonstrating. Note: there is an unrelated free open-source Python project also called AutoClip that went viral on GitHub this month (13,500+ stars); the SaaS profiled here is the Whop-verified business at autoclip.dev. Honest caveat: three price tiers grew 3x in three months, but churn at $20-80 subscriptions to an AI tool is the silent variable TrustMRR cannot show you.</p>
+<p>The shared pattern across all three: a utility that ships in weeks, a price low enough that nobody deliberates ($5-27), a distribution channel that costs nothing (Reddit chatter, social posts, programmatic pages), and payment rails that double as public proof of revenue.</p>
+<h2 id="The-Tool-Stack"><a href="#The-Tool-Stack" class="headerlink" title="The Tool Stack"></a>The Tool Stack</h2><table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Tool</th>
+<th>Why this one</th>
+<th>Free tier &#x2F; actual cost</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Monitoring</td>
+<td>Cloudflare Workers (cron triggers)</td>
+<td>Store Stock Checker’s class of product is a scheduled fetch plus a diff — Workers’ free tier of 100,000 requests&#x2F;day covers most alert apps entirely</td>
+<td>Free up to 100K req&#x2F;day; ~$5&#x2F;mo paid</td>
+</tr>
+<tr>
+<td>Backend</td>
+<td>Rust or Node on Cloudflare</td>
+<td>Alert latency is the product; edge deployment keeps it cheap at 15K users (Store Stock Checker’s exact stack)</td>
+<td>$0-20&#x2F;mo</td>
+</tr>
+<tr>
+<td>Payments + proof</td>
+<td>Stripe</td>
+<td>Store Stock Checker’s rail — and the Stripe API key is what makes the revenue publicly verifiable, which doubles as marketing</td>
+<td>2.9% + 30¢ per transaction</td>
+</tr>
+<tr>
+<td>Payments + distribution</td>
+<td>Whop</td>
+<td>DirectRoles and AutoClip both run on it: membership delivery, a marketplace with 22M+ MAU for free listing, and payment-verified badges</td>
+<td>Free to list; ~2.7% + 30¢ starting fees</td>
+</tr>
+<tr>
+<td>Notifications</td>
+<td>Resend or web push</td>
+<td>Email&#x2F;push alerts are the deliverable; Resend’s free tier (~3K emails&#x2F;mo) covers launch-scale alerting</td>
+<td>$0 until ~3K emails&#x2F;mo</td>
+</tr>
+<tr>
+<td>Content SEO</td>
+<td>Programmatic scene pages</td>
+<td>AutoClip’s DR-1 site still pulls ~55% search traffic via per-use-case pages (“Twitch Clip Maker”) — one template, many keywords</td>
+<td>$0 + one template built once</td>
+</tr>
+<tr>
+<td>Distribution</td>
+<td>Reddit + X build-in-public</td>
+<td>DirectRoles’ entire growth was social media + referrals at DR 0; the community finds utility apps faster than Google does</td>
+<td>$0</td>
+</tr>
+<tr>
+<td>Pricing</td>
+<td>Credit packs priced by input</td>
+<td>AutoClip prices by source-video minutes, so heavy users pay more automatically — no enterprise sales calls needed</td>
+<td>$0 to implement</td>
+</tr>
+</tbody></table>
+<p>The recurring lesson in the stack column: two of three founders chose a payment provider specifically because its API can be read by verification platforms. In 2026, “Stripe-verified” or “Whop-verified” on your landing page is not bookkeeping — it is a conversion asset that costs nothing extra.</p>
+<h2 id="0-to-1-Steps"><a href="#0-to-1-Steps" class="headerlink" title="0 to 1 Steps"></a>0 to 1 Steps</h2><p>The five-question self-diagnosis, calibrated against this week’s cases:</p>
+<ol>
+<li>What am I genuinely good at? (Bryce: low-latency monitoring plumbing. Sam: seeing what aggregators miss. George: video pipeline engineering.)</li>
+<li>Which niche has a painful, repeated, time-sensitive task? (Shoppers refreshing stock pages; job seekers drowning in stale aggregator spam; creators manually clipping podcasts.)</li>
+<li>Can AI make it 10x faster or cheaper? (AutoClip: a model scores 18-33 candidate segments in minutes. DirectRoles: filtering agency spam is a classification job. Store Stock Checker barely needs AI at all — it needs reliability.)</li>
+<li>What is broken about existing solutions? (Stock-checker Discords are manual and laggy; job boards are pay-to-post middlemen; clipping tools make you upload, wait, download.)</li>
+<li>Can I ship an MVP in three months? (All three shipped in under two: Store Stock Checker was founded and revenue-generating within roughly a month.)</li>
+</ol>
+<p>The 30-day sprint, with their real numbers as calibration:</p>
+<ul>
+<li><strong>Week 1 — pick the window and interview 10 people.</strong> Alert businesses live and die by the event calendar. List the next five high-demand launches or restock seasons in your niche (December restocks, holiday drops, ticket on-sales). Then interview 10 people who refresh pages manually today: what exactly do they check, how often, what would they pay to never check again? Cost: $0.</li>
+<li><strong>Week 2 — build the thinnest monitor.</strong> A scheduled fetch on Cloudflare Workers + a diff + email&#x2F;push alert + one Stripe or Whop checkout link. This is one week of work with an AI coding agent. Do not build an app — build a notification. Cost: under $50 in infrastructure.</li>
+<li><strong>Week 3 — seed it where the checkers already gather.</strong> Post the alert in the subreddits, Discords and X threads where people manually report stock today (Store Stock Checker’s Reddit&#x2F;press playbook; DirectRoles’ social-only growth at DR 0 proves you need zero SEO to start). Free tier for one product line, paid for full coverage. Cost: $0.</li>
+<li><strong>Week 4 — charge from day one.</strong> Three tiers like Bryce ($5&#x2F;$10&#x2F;$20) or credit packs like George ($19.99&#x2F;$39.99&#x2F;$79.99). Target: one paying customer, even at $5. Keep payments on Stripe or Whop so the revenue is third-party verifiable — that verification is what later turns into an acquisition listing, as it did for DirectRoles. Cost: $0.</li>
+</ul>
+<p><strong>Your first step this week:</strong> open a spreadsheet and list every high-demand product or drop launching or restocking in the next 60 days in a niche you already follow — phones, GPUs, consoles, sneakers, concert tickets, even the January course-cohort windows for tools you use. Pick the one with the most desperate, most organized community around it. That community is your Week-1 interview list and your Week-3 distribution channel, and the whole validation costs you one afternoon and zero dollars.</p>
+<h2 id="Micro-Opportunities"><a href="#Micro-Opportunities" class="headerlink" title="Micro-Opportunities"></a>Micro-Opportunities</h2><ol>
+<li><strong>Restock alerts for the next launch window.</strong> Target: the communities around December console&#x2F;GPU&#x2F;holiday restocks and January product drops — the exact mechanic that just printed $35K MRR for one person. Entry: Cloudflare Workers monitor + $5-10&#x2F;mo tiers, seeded in existing fan communities. Starting cost: ~$20&#x2F;month in infrastructure. Mind platform terms of service and rate limits.</li>
+<li><strong>Career-page-only job feeds for one profession.</strong> Target: nurses, electricians, teachers, city-government workers — segments where aggregator spam is worst and “apply direct” is a real edge. This is DirectRoles’ model verbatim, verticalized. Entry: a crawler + Whop membership at ~$27&#x2F;sub; no SEO required if you go social-first. Starting cost: ~$0.</li>
+<li><strong>Auto-clipping for one neglected language or format.</strong> Target: podcasters, webinar hosts, church services, course creators in languages and platform mixes the big clippers ignore (the open-source AutoClip already supports Douyin&#x2F;Bilibili&#x2F;Xiaohongshu templates — the paid gap is in hosted, scheduled, done-for-you). Entry: one pipeline, credit pricing by input minutes. Starting cost: ~$50&#x2F;month in model API spend.</li>
+<li><strong>Price-drop and trade-in monitors.</strong> Target: shoppers waiting on a specific item — and note that Apple itself reprices and adjusts trade-in values mid-cycle (multiple Chinese retail channels cut iPhone prices and raised trade-in values in November 2026), so the trigger events recur even outside launch season. Entry: wishlist-monitoring with an alert-at-target-price mechanic. Starting cost: ~$20&#x2F;month.</li>
+<li><strong>Change-monitoring as a service for small agencies.</strong> Target: marketing and recruiting agencies that need alerts when a client’s or competitor’s career page, pricing page or stock list changes. You already built the diff engine for opportunity #1 — sell it B2B at $49&#x2F;mo instead of B2C at $5. Starting cost: ~$0 incremental.</li>
+</ol>
+<h2 id="Signals-Worth-Knowing"><a href="#Signals-Worth-Knowing" class="headerlink" title="Signals Worth Knowing"></a>Signals Worth Knowing</h2><p><strong>Whop raised a $200M Series D at a $5.1B valuation (announced October 21, 2026), co-led by Sequoia — Doug Leone’s first deal since returning as Senior Steward — and Shopify Ventures; Bloomberg-reported annualized revenue has passed $400M, sellers earned $300M+ on the platform last month, and Whop’s Blueprints feature spawned 21,000+ stores in six weeks (Whop announcement; Sequoia; markreadfintech teardown).</strong> The platform that powers DirectRoles’ memberships and AutoClip’s billing is consolidating payments, distribution (22M+ monthly marketplace users, free listing), and public revenue verification into one signup, with fees starting around 2.7% + 30¢. <strong>What it means for you:</strong> the boring rails of a one-person business — checkout, membership, marketplace traffic, verifiable receipts — are now a five-minute setup instead of a stack you assemble; if your idea fits a membership shape, listing on Whop puts you in front of marketplace traffic your DR-0 site will never earn, and the verification badge does trust-building your copy cannot.</p>
+<p><strong>Formulaic “how I hit $10K MRR” milestone posts are flooding Reddit’s indie communities, and readers are learning to distrust them (Vynixal analysis, November 18, 2026):</strong> the write-ups that still earn trust share non-integer numbers, real spend breakdowns, failures, and time-to-first-customer; round numbers and zero-failure stories now read as marketing. <strong>What it means for you:</strong> if you build in public, your distribution advantage is precisely the honesty the fakes cannot copy — post the ugly numbers, connect a verification platform, and note that this week’s three cases all got their coverage because their numbers were payment-verified, not because the founders were famous.</p>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Figure</th>
+<th>Source, Date</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Store Stock Checker MRR &#x2F; subs</td>
+<td>$35,220 &#x2F; 4,605 subs</td>
+<td>TrustMRR, Stripe-verified, Nov 24, 2026</td>
+</tr>
+<tr>
+<td>Store Stock Checker volume</td>
+<td>$36,319 all-time; $31,101 last 30d (+704%)</td>
+<td>TrustMRR, Nov 24, 2026</td>
+</tr>
+<tr>
+<td>Store Stock Checker pricing</td>
+<td>$5 &#x2F; $10 &#x2F; $20 per month; ~14,970 users</td>
+<td>TrustMRR listing, Nov 2026</td>
+</tr>
+<tr>
+<td>Store Stock Checker profile</td>
+<td>Founded Oct 2026; 1 person; bootstrapped; Rust + Cloudflare + Stripe; DR 8; for sale</td>
+<td>TrustMRR, Nov 2026</td>
+</tr>
+<tr>
+<td>DirectRoles revenue curve</td>
+<td>Jul $3,903 → Aug $9,364 → Sep $16,268 → Oct $27,764 (monthly revenue)</td>
+<td>TrustMRR timeline, Nov 2026</td>
+</tr>
+<tr>
+<td>DirectRoles current</td>
+<td>$27,090 MRR (+1,121% MoM); 565 subs; $58,910 all-time; ~70% margin</td>
+<td>TrustMRR, Nov 24, 2026</td>
+</tr>
+<tr>
+<td>DirectRoles profile</td>
+<td>Founded Jul 14, 2026; 2–5 per listing; bootstrapped; Whop; DR 0; ~7,488 users</td>
+<td>TrustMRR, Nov 2026</td>
+</tr>
+<tr>
+<td>DirectRoles exit</td>
+<td>Listed Nov 2, 2026 at $79,950 (~0.3x ARR)</td>
+<td>TrustMRR listing, Nov 2, 2026</td>
+</tr>
+<tr>
+<td>AutoClip trajectory</td>
+<td>$8,581 (Aug 4) → $12,129 (Nov 11) → $25,914 (+118% MoM)</td>
+<td>TrustMRR, Whop-verified, Nov 24, 2026</td>
+</tr>
+<tr>
+<td>AutoClip pricing</td>
+<td>$19.99 &#x2F; $39.99 &#x2F; $79.99 per month, credit-based (1 credit ≈ 1 source minute)</td>
+<td>autoclip.dev, Nov 2026</td>
+</tr>
+<tr>
+<td>AutoClip channels</td>
+<td>TikTok + programmatic scene pages; DR 1; ~55% search share of ~55,955 Oct visits</td>
+<td>TrustMRR &#x2F; MRRTrack est., Oct-Nov 2026</td>
+</tr>
+<tr>
+<td>Whop funding</td>
+<td>$200M Series D at $5.1B; Sequoia + Shopify Ventures; sellers earned $300M+ last month</td>
+<td>Whop &#x2F; Bloomberg relay, Oct 21, 2026</td>
+</tr>
+<tr>
+<td>Whop volume</td>
+<td>27,000+ businesses; Blueprints → 21,000+ stores in 6 weeks; fees from ~2.7% + 30¢</td>
+<td>Whop, Oct-Nov 2026</td>
+</tr>
+<tr>
+<td>Reddit milestone-post audit</td>
+<td>Formulaic $10K-MRR posts eroding community trust; non-integer + spend breakdowns win</td>
+<td>Vynixal, Nov 18, 2026</td>
+</tr>
+</tbody></table>
+<p>All revenue figures are payment-processor-verified via TrustMRR (Stripe or Whop API) unless marked as estimates. Store Stock Checker’s build costs and ad spend are undisclosed; DirectRoles lists a 2–5 person team and revenue can shift around sale listings; AutoClip’s churn is not public. Two of these three businesses are actively for sale — treat that as both proof that small utilities are acquirable and a reminder that founders sell for reasons worth asking about. Verify current figures before making decisions; MRR moves week to week.</p>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>Solo Founder</category>
+        <category>One-Person-Company</category>
+      </categories>
+      <tags>
+        <tag>Indie-Hacker</tag>
+        <tag>Micro-SaaS</tag>
+        <tag>Bootstrapped</tag>
+        <tag>Copy-This</tag>
+        <tag>Store-Stock-Checker</tag>
+        <tag>DirectRoles</tag>
+        <tag>AutoClip</tag>
+        <tag>Build-and-Sell</tag>
+      </tags>
+  </entry>
 </search>
