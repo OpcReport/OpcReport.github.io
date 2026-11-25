@@ -130791,4 +130791,99 @@
         <tag>Build-and-Sell</tag>
       </tags>
   </entry>
+  <entry>
+    <title>AI QR Codes to $343K: Three Boring Tools With Real Revenue</title>
+    <url>/opc-report-2026-11-25-1330/</url>
+    <content><![CDATA[<p>The most useful revenue numbers this week are not from a viral launch. They come from three products with no story at all: a QR-code generator that has quietly collected $342,987 over two and a half years, an AI agent that answers brand-deal emails for TikTok Shop creators, and a one-man AI prospecting tool in France. All three figures are payment-provider verified — Stripe numbers synced to public revenue dashboards, not screenshots. Combined, they clear $48,000 a month, and not one of them required a novel idea, a big audience, or more than a few hundred dollars to start. One is 9 days from its last public snapshot and grew +28% in that window. Here is what each one actually does, who pays, and the copyable mechanics underneath.</p>
+<h2 id="This-Week’s-Playbook"><a href="#This-Week’s-Playbook" class="headerlink" title="This Week’s Playbook"></a>This Week’s Playbook</h2><p><strong>Confidential Startup — Glenn, United States, one person, bootstrapped, $22,985 MRR less than four months after launch</strong> (TrustMRR, Stripe-verified, updated November 23, 2026; prior snapshot covered in our November 16 report — this is the fresh increment). The product runs a TikTok Shop creator’s entire brand-deal inbox: connect Gmail, set your rates, and the AI replies to brands within minutes, negotiates, counters, flags scam offers, and closes with a signed agreement, all tracked in a built-in CRM. The increment since November 15: MRR $19,556 → $22,985 (+28% in the 30-day comparison, $21,730 collected in the last 30 days), subscriptions 65 → 76, all-time revenue $48,023 → $59,965 — roughly $1,300 a day of new verified revenue during a window when the founder was actively trying to sell the thing. Pricing runs $129&#x2F;month (Starter), $349 (Pro), $599 (Elite), with a 14-day card-required trial; the implied average is about $300 per subscriber, which is B2B pricing attached to a creator-facing product. The founder’s sale message claims $1.7M+ in brand deals have been closed through the product and roughly 90% of the workflow is automated, at ~60% margin. Stack: Supabase, Resend, Cloudflare, Anthropic, Stripe, plus an iOS app. Distribution is paid-first: Meta Ads, TikTok Ads, an affiliate program, and content marketing. Honest caveats: the founder is anonymous (the listing is under NDA), the margin and brand-deal figures are self-reported, and he is selling — “to focus on other projects,” which at +28% monthly growth reads as building the next one, not fleeing a corpse.</p>
+<p><strong>MimikFlow — Mo Alani (@_so_bored), France, one person, bootstrapped, $10,886 MRR</strong> (Profitable.app, Stripe-verified, updated November 24, 2026). The product is AI prospecting and call-setting for sales teams: it automates the outbound grind of finding leads, personalizing outreach, and booking the meeting. That is an old, crowded category — which is exactly the point. Alani did not invent anything; he shipped another entrant into a market where buyers already have budget and pay for saved hours. The verified numbers: $10,886 MRR, $130,632 ARR, founded and grown to this within 2026. Pricing is a clean three-tier ladder: Discovery €49&#x2F;month, Pro €97, Agency €167 — averaging out high enough that the ARR figure implies somewhere north of 100 paying customers on a mostly self-serve funnel. Tech stack and acquisition channel are not publicly detailed, which we flag rather than invent; what is verifiable is that the revenue is Stripe-confirmed, fully bootstrapped, and reached within a single year by a solo founder in France. The lesson is less about the tool and more about the category choice: pick a market where the buyer already spends money on the problem, ship a competent version, and the ceiling is real revenue, not validation.</p>
+<p><strong>QR Code AI (qrcode-ai.com) — Supernovae SAS, Juvisy-sur-Orge, France, founded June 2023, $342,987 lifetime revenue, ~$15,560 last 30 days</strong> (VibeCrowd source-listed observations + WhyItEarns Stripe-synced data, November 2026; The AI Receipts lists it at $14,300 verified MRR as of November 24). This is the long-game case. The product does two things a commodity QR generator does not: it makes QR codes <em>look good</em> — an AI art generator produces scannable, branded designs with your logo and colors — and it tracks scan analytics, supporting 60+ content types, bulk generation, and Google Analytics integration. The revenue history from 23 recorded observations tells the honest story: roughly $13,600&#x2F;month flat from June through August 2026, then a step up to $15,000-$17,800 through September–October, a small dip in early November, and +38% in the most recent 7-day comparison on WhyItEarns. No hockey stick. Two and a half years of steady compounding. Distribution, per The AI Receipts’ classification: <strong>SEO only</strong> — a free generator (with 1,200+ templates, no credit card) ranks for the enormous “qr code generator” query family, converts free users to paid plans for tracking and art, and needs no ad budget, no founder audience, no launch. One honesty note: Supernovae is registered as a SAS (a French company form), and the verified dashboard does not disclose headcount — The AI Receipts lists it among one-person AI businesses, but treat “solo” as unconfirmed even though the model is trivially solo-runnable.</p>
+<p>The shared pattern: each founder picked a purchase-decision people already make (grow your brand deals, book more sales calls, get a QR code that fits your brand), wrapped AI around one tedious step, and put a free entry point in front of an existing search or ad channel. Nobody needed permission, funding, or a novel idea.</p>
+<h2 id="How-to-Copy-This"><a href="#How-to-Copy-This" class="headerlink" title="How to Copy This"></a>How to Copy This</h2><p>Copy the <strong>QR Code AI</strong> play if you want compounding and can wait; copy the <strong>Confidential Startup</strong> play if you want speed and can spend $50-100 on test ads. Pick one.</p>
+<p><strong>Path A — the free-tool SEO engine (QR Code AI, slower, near-zero cost):</strong></p>
+<ol>
+<li>Pick a utility query family with huge, evergreen search volume and a “make it prettier&#x2F;more trackable&#x2F;team-ready” upsell: QR codes, invoice generators, signature generators, screenshot mockups, favicon makers. Check volume with a free keyword tool before writing anything.</li>
+<li>Build the free tier as the marketing. It must be genuinely useful with no card required — that is what earns the links and rankings. Cost: a Vercel&#x2F;Cloudflare free tier plus one image-model API (~$10-20&#x2F;month at low traffic). Time: 2-3 weeks with AI coding tools.</li>
+<li>Gate the boring-but-valuable half: analytics, bulk operations, brand kits, high-res exports. Price at $9-19&#x2F;month, not $49 — utility tools live on volume. QR Code AI’s step from ~$13.6K to ~$15.6K&#x2F;month took years, not weeks; plan for that.</li>
+<li>Publish template and use-case pages (menu QR, wedding QR, real-estate QR — one page per niche). This is programmatic SEO against long-tail queries, and it is the entire growth model here.</li>
+<li>Pitfall: commodity tools attract commodity competitors. Your moat is the tracked&#x2F;bulk&#x2F;brand layer and page count, so build those before someone else does.</li>
+</ol>
+<p><strong>Path B — the paid-channel agent (Confidential Startup, faster, needs ad spend):</strong></p>
+<ol>
+<li>Find a tedious <em>inbox</em> somebody rich drowns in: brand deals, sponsorships, freelance briefs, wholesale inquiries, influencer collabs. The buyer must already lose real money to slow replies — that is what justifies $129-599&#x2F;month.</li>
+<li>Build the workflow, not the chatbot: Gmail connection, rate setting, auto-reply, negotiation rules, scam flagging, e-signature close, CRM. Anthropic API + Supabase + Resend + Stripe covers all of it; budget ~$50-150&#x2F;month in API and hosting while validating.</li>
+<li>Charge B2B prices even if the user is a consumer. Confidential Startup averages ~$300 per subscriber because a missed brand deal costs the creator thousands.</li>
+<li>Validate with $50&#x2F;day of Meta or TikTok ads pointed at one creator niche. Kill it in two weeks if trial-to-paid does not clear a few percent. The affiliate program (give creators 20-30% for referring other creators) is how you turn paid ads into a flywheel instead of a treadmill.</li>
+<li>Pitfall: this product lives inside someone else’s platform (TikTok Shop’s deal ecosystem). One policy change can cut your market. Diversify to Instagram and YouTube creators early.</li>
+</ol>
+<p><strong>Your first step this week:</strong> open a spreadsheet, list ten “boring utility” queries you could check search volume for tonight, and for each write one sentence in the exact words a buyer would type into Google or ChatGPT — then pick the one where a free version is genuinely useful without your paid features. That sentence is your landing page headline and your first template page.</p>
+<h2 id="Micro-Opportunities"><a href="#Micro-Opportunities" class="headerlink" title="Micro-Opportunities"></a>Micro-Opportunities</h2><ul>
+<li><strong>AI QR codes for one non-English market</strong> — QR Code AI sells in English; menu-art, Wi-Fi and payment QR generators localized for restaurant-heavy markets (Italian, Japanese, Brazilian Portuguese) face far weaker SEO competition. Target: small restaurant and retail owners. Start: free generator + $9&#x2F;month tracking tier. Cost: &lt;$50 plus one image-model API.</li>
+<li><strong>Brand-deal agent for a different creator vertical</strong> — Confidential Startup only serves TikTok Shop. Instagram UGC creators, YouTube Shorts channels and Twitch streamers drown in the same inbox with no tool. Target: mid-size creators (10K-500K followers). Start: Gmail integration + rate card + contract templates. Cost: ~$100&#x2F;month API spend while validating.</li>
+<li><strong>Prospecting clone for one service vertical</strong> — MimikFlow is horizontal sales outreach. A wedding-vendor, tutoring-agency or recruiting-boutique version with industry-specific lead sources and email templates can charge the same €49-167 with less competition. Target: 1-5 person agencies already buying leads. Start: scrape one public lead source, AI-personalize outreach, book calls.</li>
+<li><strong>Live translation for events beyond church</strong> — AI live-translation products for congregations (attendees listen on their phones in 100+ languages) are clearing five figures a month; conferences, wedding ceremonies, courtroom support and community lectures are unserved adjacent rooms. Target: event organizers and venues. Start: phone-audio-in, translated captions out, per-event pricing.</li>
+<li><strong>The “tracked upgrade” for any free tool</strong> — every free utility on the internet (URL shorteners, screenshot tools, form builders) has users who would pay $9&#x2F;month for analytics and bulk mode. Find an old free tool with no paid tier, build the tracked version beside it.</li>
+</ul>
+<h2 id="Signals-Worth-Knowing"><a href="#Signals-Worth-Knowing" class="headerlink" title="Signals Worth Knowing"></a>Signals Worth Knowing</h2><p><strong>AI chatbots have quietly become an acquisition channel for tiny products.</strong> A 9-month-old solo Mac&#x2F;Windows meeting companion (Observer, by Rohit Malhotra) crossed $100 MRR this month on 5 paying customers — and its very first customer found it not through Google or Product Hunt but by asking an AI chatbot for such a tool. The founder’s domain authority is near zero; his site simply describes the product in plain, specific language, which is exactly what an LLM picks up and repeats. <em>What it means for you:</em> write your landing page copy in the words a buyer would type into ChatGPT — “tool that answers questions during my calls” — not in brand-speak. AI-search recommendations are free right now, while Google rankings take months; you can win the former this week with better sentences.</p>
+<p><strong>AI product gross margins are collapsing upward.</strong> Base44 — the app builder one solo founder built and sold to Wix for ~$80M — ran at near-zero gross margin in Q1 2026 and reached 58% non-GAAP gross margin by Q3 (Wix earnings, November 10, 2026), with 60%+ expected in Q4, roughly 4x ARR growth in ten months to ~$250M. The same model-cost curve applies to products built on top of frontier APIs. <em>What it means for you:</em> do not price your AI product on today’s token costs — per-user serving costs are dropping fast, so your margin improves every quarter without you touching anything, and prices that look unprofitable today may be your best offers in six months.</p>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Product</th>
+<th>Who</th>
+<th>Founded</th>
+<th>Verified revenue</th>
+<th>Startup cost</th>
+<th>Main channel</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Confidential Startup</td>
+<td>Glenn, US (solo)</td>
+<td>Aug 2026</td>
+<td>$22,985 MRR &#x2F; $59,965 all-time (Stripe)</td>
+<td>Ad spend + ~$100&#x2F;mo infra</td>
+<td>Meta&#x2F;TikTok ads + affiliate</td>
+<td>Listed for sale, +28% MoM</td>
+</tr>
+<tr>
+<td>MimikFlow</td>
+<td>Mo Alani, France (solo)</td>
+<td>2026</td>
+<td>$10,886 MRR &#x2F; $130,632 ARR (Stripe)</td>
+<td>Bootstrapped, undisclosed</td>
+<td>Self-serve, undisclosed</td>
+<td>Growing organically</td>
+</tr>
+<tr>
+<td>QR Code AI</td>
+<td>Supernovae SAS, France</td>
+<td>Jun 2023</td>
+<td>~$15,560&#x2F;30d &#x2F; $342,987 lifetime (Stripe)</td>
+<td>&lt; a few hundred dollars</td>
+<td>SEO only (free tool)</td>
+<td>+38% last 7 days</td>
+</tr>
+</tbody></table>
+<p>Sources: TrustMRR (Nov 23, 2026 snapshots), Profitable.app (Nov 24), VibeCrowd + WhyItEarns Stripe-synced observations, The AI Receipts (Nov 24), Indie Hackers (Observer post), Wix Q3 2026 earnings. All revenue figures payment-provider verified unless noted self-reported.</p>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>Solo Founder</category>
+        <category>One-Person-Company</category>
+        <category>Micro-SaaS</category>
+      </categories>
+      <tags>
+        <tag>Indie-Hacker</tag>
+        <tag>Bootstrapped</tag>
+        <tag>Verified-Revenue</tag>
+        <tag>SEO</tag>
+        <tag>Build-and-Sell</tag>
+        <tag>Case-Study</tag>
+        <tag>QR-Code-AI</tag>
+        <tag>MimikFlow</tag>
+        <tag>Confidential-Startup</tag>
+      </tags>
+  </entry>
 </search>
