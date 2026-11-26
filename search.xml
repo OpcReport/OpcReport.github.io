@@ -131070,4 +131070,103 @@
         <tag>Pivot</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Copy These 4 Solo AI Apps: $0 Start to $5,212 a Month</title>
+    <url>/opc-report-2026-11-26-1335/</url>
+    <content><![CDATA[<p>Every number in this issue is read off a payment provider, not a screenshot. Four one-person businesses, four different distribution models, one shared trait: none of them started with funding, a team, or a novel model. One founder built a scanner for his wife’s thrift habit and let SEO do the rest. Another turned a growing X following into a small subscription tool. A third sold curated taste to people whose AI builds ugly websites, and the fourth photographs Pokémon cards. Together they map the four realistic roads into one-person AI income in late 2026: build for someone you know, build for the audience you grew, build for people building with AI, and build for a hobby that already spends money.</p>
+<h2 id="This-Week’s-Playbook"><a href="#This-Week’s-Playbook" class="headerlink" title="This Week’s Playbook"></a>This Week’s Playbook</h2><p><strong>Underpriced AI (underpricedai.com) — Frank Kratzer, one person, AI item scanner for resellers, $28,031 from January to September 2026 and $5,212 in the last 30 days, Stripe-verified on Indie Hackers</strong> (Shipped &amp; Paid case file, checked November 9, 2026; founder launch post on Indie Hackers, January 24, 2026). Snap a photo of any thrift-store or estate-sale item; the app identifies it with Claude’s vision model, estimates what it actually sells for, and drafts the eBay or Etsy listing. Kratzer did not start with market research — he started with his wife, a reseller who spent hours every night looking up prices by hand. He built the first version for her using Claude Code, “only using prompt engineering,” with no prior audience in the niche. The distribution is the most copyable part: he writes plain SEO articles for the exact searches resellers type — “antique identifier apps,” “thrift store apps,” “WorthPoint alternatives” — and organic sessions went from 2 in January 2026 to 1,303 in March, barely ninety days later. He posts weekly build-in-public updates on Indie Hackers and built a small admin CRM to find estate-sale companies for partnership outreach. The honest part of the file matters too: he discovered his per-scan AI costs were ten times his estimate and had to reprice, he had to block free-tier abuse early, and he had to test on the cheap phones his users actually own. Total cash investment was close to zero — API credits and a domain. This is what “small and beautiful” looks like: a $5K-month business at roughly a domain’s cost of capital, run by one person, serving a niche of people who photograph objects for a living.</p>
+<p><strong>ClimbX — Daniel Smidstrup, 26, Denmark, one person, X growth co-pilot, $1,276 MRR from 44 subscriptions, Stripe-verified on TrustMRR, November 2, 2026</strong> (Shipped &amp; Paid case file, checked November 9; founder article on X, October 18, 2026). ClimbX finds posts doing well in your niche, drafts posts in your own voice, schedules them through X’s official API, and surfaces posts worth replying to. Smidstrup — a former CTO at a startup that did $700K ARR, so not a beginner — built the base version in about five days with Claude Code and Codex on Next.js, Vercel and Supabase. The product was born from his audience: starting April 1, 2026, he posted and replied relentlessly — 50+ replies a day at first, later 8 posts and 250–400 replies a day — reaching 2,000 followers by the May 16 launch and about 12,900 by October. When followers kept asking how he grew so fast, he built the answer and sold it to them with a $1 trial; the first paying users arrived around day 7. The honest numbers: a Reddit post in r&#x2F;indiehackers got discussion but almost no signups; an $867 Meta ads test brought zero paying customers; and he admits his roughly $7K month in September came mostly from paid writing work, not ClimbX. Read that as calibration, not failure — one channel (the audience he built) converts, and he killed the ones that didn’t. $1,276 MRR is below this site’s usual band, but the case earns its place because it documents the full cost of audience-first distribution in real dollars and real dead channels.</p>
+<p><strong>cuedesign (cuedesign.space) — Alok, India, one person, a “taste layer” for AI-built websites, $900+ in the first 16 days and $4,331 all-time, Dodo-verified, founded September 2026</strong> (TrustMRR listing, updated November 22, 2026). His thesis is one sentence: AI can build any website now, but it can’t make it look good. cuedesign ships 300+ hand-picked interactions from Awwwards-level sites, each with the code and an AI prompt tuned over 30–80 rounds against real reference sites, delivered straight into AI editors through the Cue MCP server. Pricing is deliberately shallow: $99 lifetime founding (first 50 members), $79 lifetime standard, $49&#x2F;month, or $12 for a single component — 30+ components free as the funnel. Results: first paid user 15 minutes after launch, $2,859 in the last 30 days (+381% vs. prior period), 2 active subscriptions on top of the lifetime sales, Domain Rating 25, channels listed as SEO, X, Instagram and Product Hunt. He is now selling the whole thing for a fixed $50K, offering to keep building components on retainer. Whether or not the sale happens, the pattern is the point: the demand being monetized is not “AI” but the taste gap AI created — and the product is a curated library, which costs nothing per user to serve. A one-person info-product wearing an MCP as a distribution channel.</p>
+<p><strong>Scan ‘Em All — unnamed solo iOS developer, one person, trading-card scanner app, $550 MRR and $1,836 all-time, RevenueCat-verified, founded September 2026</strong> (TrustMRR listing, last synced November 2, 2026; relayed via @trust_mrr on X, November 3). Collectors photograph Pokémon and other trading cards; the app identifies the card and shows market price and collection value. Ten scans are free; a Pro subscription unlocks unlimited scans, live prices and valuation, with in-app purchases at $14.99, $44.99 and $89.99 through RevenueCat on the App Store. The numbers are small but the slope is the story: $1,836 all-time, $1,069 in the last 30 days (+49.5%), MRR up +123.7% to $550 across 75 subscriptions, roughly 70% profit margin, a 5.0 App Store rating on 13 ratings. Revenue per subscription averages about $7.30, consistent with mixed weekly and promotional plans. It is a floor case in this week’s set — not yet at this site’s $2,800 threshold — but it demonstrates the fastest clean 0-to-1 in the group: founded September 2026, first meaningful revenue in October, verified and compounding by November. A hobby market that already spends money, one AI vision call per scan, one platform, no marketing spend yet.</p>
+<h2 id="How-to-Copy-This"><a href="#How-to-Copy-This" class="headerlink" title="How to Copy This"></a>How to Copy This</h2><p>The two most copyable plays are Underpriced AI (distribution by SEO in an unsexy niche) and ClimbX (distribution by audience). Pick one based on what you already have.</p>
+<p><strong>Path 1 — Build for someone you know, rank for what they search (the Underpriced AI play):</strong></p>
+<ol>
+<li>Watch one person you know do a repetitive, money-related workflow for one hour — a reseller pricing items, a landlord screening tenants, a photographer culling shots. Write down every manual lookup.</li>
+<li>Build the thinnest tool that removes one lookup, using Claude Code or Codex through prompting alone; Kratzer shipped with vision-model identification and nothing else. Budget: API credits, under $50 to start.</li>
+<li>Before you set prices, meter your real per-use AI cost. Kratzer’s scans cost ten times his estimate — this single check saved the business’s margin.</li>
+<li>Write 10 SEO articles answering the exact queries your niche types: “[niche] identifier app,” “[incumbent] alternatives,” “best app for [task].”</li>
+<li>Post a build-in-public update weekly on one platform, and set up free-tier abuse limits before launch, not after.</li>
+</ol>
+<p><strong>Path 2 — Grow the audience first, then sell it the answer (the ClimbX play):</strong></p>
+<ol>
+<li>Pick one niche and post daily for 30 days: 50+ replies a day to bigger accounts plus a few original posts. Cost: $0, one hour a day.</li>
+<li>When the same question keeps arriving in your replies, build the answer as a tool — Smidstrup’s base version took five days on Next.js, Vercel and Supabase.</li>
+<li>Launch to your followers with a $1 trial so the first conversion happens in week one.</li>
+<li>Run cheap channel tests and keep a kill list: his Reddit post cost nothing and converted nothing; $867 of Meta ads converted nothing; the audience converted from day 7.</li>
+<li>Publish your real numbers monthly, including the failed ones — the honesty is itself a distribution asset.</li>
+</ol>
+<p><strong>Your first step this week:</strong> open a spreadsheet with two columns — “one repetitive lookup someone I know does weekly” and “the exact phrase they’d Google for a fix.” Fill five rows by Friday from real conversations or your own work week. That spreadsheet is the intersection of both paths, and it costs nothing.</p>
+<h2 id="Micro-Opportunities"><a href="#Micro-Opportunities" class="headerlink" title="Micro-Opportunities"></a>Micro-Opportunities</h2><ol>
+<li><strong>Listing tools for older resellers</strong> — estate-sale and flea-market sellers skew older, and Underpriced AI’s market leaves room for a voice-first, large-text variant targeting eBay and Etsy listing backlogs. Entry: $50 of API credits plus one weekend of prompting.</li>
+<li><strong>MCP asset libraries for vertical niches</strong> — cuedesign did generic web design; the same shelf model works for vertical prompt-and-component packs (interior-design prompt kits for architects, listing-description kits for real-estate agents). Entry: $0, curation time only, distributed through the MCP directories.</li>
+<li><strong>Agent plumbing for one platform</strong> — PostPeer unified a dozen social APIs for agents at $23–$84&#x2F;month; the same unification is unsolved for niche platforms (Reddit-only posting, newsletter APIs, marketplace listings). Entry: one careful API integration and a landing page.</li>
+<li><strong>Scanner apps for other collector markets</strong> — Scan ‘Em All’s pattern (photo → identify → price) ports to sneakers, vinyl, watches or fountain pens, where price data exists in public feeds. Entry: a price-data source and a vision API; test with 10 free scans.</li>
+<li><strong>Reply-first growth tools per profession</strong> — ClimbX serves generic X growth; a reply-suggestion tool tuned for one profession’s platform habits (realtors on Instagram, recruiters on LinkedIn) faces almost no direct competition. Entry: prompt engineering and one platform’s official API.</li>
+</ol>
+<h2 id="Signals-Worth-Knowing"><a href="#Signals-Worth-Knowing" class="headerlink" title="Signals Worth Knowing"></a>Signals Worth Knowing</h2><ol>
+<li><p><strong>Agent infrastructure is becoming its own indie niche.</strong> PostPeer, a unified posting endpoint for AI agents across a dozen platform APIs, reports $7,422 MRR from 184 subscriptions (Starter $23.10&#x2F;month to Pro $84&#x2F;month) since launching in April 2026, with revenue read from payment data (whyitearns, November 25, 2026). Every agent that posts to social media needs exactly this plumbing, and demand scales with agent adoption rather than with any single model’s popularity. What it means for you: the reliable money in an agent gold rush is boring connectors — pick one platform’s API, wrap it well, charge monthly, and let the agent ecosystem do your marketing.</p>
+</li>
+<li><p><strong>Free tiers are scaffolding, not foundations.</strong> In one November week: Google deprecated Gemini 2.5 Flash and Pro with calls auto-routing to newer models from December 1; Google’s Antigravity free tier removed Claude Sonnet 4.6, Claude Opus 4.6 and GPT-OSS-120b effective November 18; and an OpenRouter check found only 7 of 14 listed free models actually responding (taptoagent, November 2–10, 2026). What it means for you: never hardcode a single model string in a paid product — route all model calls through one config file so a deprecation is a one-line fix, and never let your revenue depend on a free tier someone else can revoke on a Friday.</p>
+</li>
+</ol>
+<h2 id="Quick-Data-Reference"><a href="#Quick-Data-Reference" class="headerlink" title="Quick Data Reference"></a>Quick Data Reference</h2><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Founder</th>
+<th>Founded</th>
+<th>Verified numbers</th>
+<th>Main channel</th>
+<th>Cash in</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Underpriced AI</td>
+<td>Frank Kratzer (US, solo)</td>
+<td>Jan 2026</td>
+<td>$28,031 Jan–Sep; $5,212 last 30 days (Stripe&#x2F;Indie Hackers)</td>
+<td>SEO content (2 → 1,303 organic sessions in 90 days)</td>
+<td>~$0 (API credits)</td>
+</tr>
+<tr>
+<td>ClimbX</td>
+<td>Daniel Smidstrup (Denmark, solo)</td>
+<td>May 2026</td>
+<td>$1,276 MRR &#x2F; 44 subs (Stripe&#x2F;TrustMRR, Nov 2)</td>
+<td>Own X audience (2K at launch, 12.9K by Oct)</td>
+<td>5 days + $867 ad test (failed)</td>
+</tr>
+<tr>
+<td>cuedesign</td>
+<td>Alok (India, solo)</td>
+<td>Sep 2026</td>
+<td>$4,331 all-time; $2,859 last 30 days +381% (Dodo)</td>
+<td>SEO + X + Product Hunt, MCP as delivery</td>
+<td>~$0 (curation)</td>
+</tr>
+<tr>
+<td>Scan ‘Em All</td>
+<td>One person (unnamed)</td>
+<td>Sep 2026</td>
+<td>$550 MRR &#x2F; 75 subs; $1,836 all-time +49% 30d (RevenueCat)</td>
+<td>App Store + free-scan funnel</td>
+<td>API + price feed</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>AI Startup</category>
+        <category>Solo Founder</category>
+        <category>One-Person-Company</category>
+      </categories>
+      <tags>
+        <tag>Indie-Hacker</tag>
+        <tag>Micro-SaaS</tag>
+        <tag>Bootstrapped</tag>
+        <tag>Case-Study</tag>
+        <tag>Side-Income</tag>
+        <tag>AI-Side-Hustle</tag>
+        <tag>Copy-This-Lite</tag>
+      </tags>
+  </entry>
 </search>
